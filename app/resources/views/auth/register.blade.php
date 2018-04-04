@@ -12,7 +12,7 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('First Name') }}</label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
@@ -26,28 +26,28 @@
                         </div>
 
                         <div class="form-group row">
-                                <label for="LastName" class="col-md-4 col-form-label text-md-right">{{ __('LastName') }}</label>
+                                <label for="lastname" class="col-md-4 col-form-label text-md-right">{{ __('Last Name') }}</label>
     
                                 <div class="col-md-6">
-                                    <input id="LastName" type="text" class="form-control{{ $errors->has('LastName') ? ' is-invalid' : '' }}" name="LastName" value="{{ old('LastName') }}" required autofocus>
+                                    <input id="lastname" type="text" class="form-control{{ $errors->has('lastname') ? ' is-invalid' : '' }}" name="lastname" value="{{ old('lastname') }}" required >
     
-                                    @if ($errors->has('name'))
+                                    @if ($errors->has('lastname'))
                                         <span class="invalid-feedback">
-                                            <strong>{{ $errors->first('LastName') }}</strong>
+                                            <strong>{{ $errors->first('lastname') }}</strong>
                                         </span>
                                     @endif
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <label for="NickName" class="col-md-4 col-form-label text-md-right">{{ __('NickName') }}</label>
+                                <label for="nickname" class="col-md-4 col-form-label text-md-right">{{ __('Nickname') }}</label>
     
                                 <div class="col-md-6">
-                                    <input id="NickName" type="text" class="form-control{{ $errors->has('NickName') ? ' is-invalid' : '' }}" name="NickName" value="{{ old('NickName') }}" required autofocus>
+                                    <input id="nickname" type="text" class="form-control{{ $errors->has('nickname') ? ' is-invalid' : '' }}" name="nickname" value="{{ old('nickname') }}" required >
     
-                                    @if ($errors->has('name'))
+                                    @if ($errors->has('nickname'))
                                         <span class="invalid-feedback">
-                                            <strong>{{ $errors->first('NickName') }}</strong>
+                                            <strong>{{ $errors->first('nickname') }}</strong>
                                         </span>
                                     @endif
                                 </div>
@@ -67,19 +67,19 @@
                             </div>
                         </div>
     
-                        <div class="form-group row">
+                        {{-- <div class="form-group row">
                             <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Repeat Password') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
-                        </div>
+                        </div> --}}
 
                         <div class="form-group row">
-                                <label for="email" class="col-md-4 col-form-label text-md-right">{{ __(' E-Mail') }}</label>
+                                <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail') }}</label>
                                 
                                 <div class="col-md-6">
-                                    <input id="repeat-email" type="repeat_email" class="form-control{{ $errors->has('repeat_email') ? ' is-invalid' : '' }}" name="repeat_email" value="{{ old('repeat_email') }}" required>
+                                    <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
                                         @if ($errors->has('email'))
                                             <span class="invalid-feedback">
                                                 <strong>{{ $errors->first('email') }}</strong>
@@ -89,61 +89,58 @@
                         </div>
 
                         <div class="form-group row">
-                                <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Repeat E-Mail') }}</label>
+                                <label for="repeatemail" class="col-md-4 col-form-label text-md-right">{{ __('Repeat E-Mail') }}</label>
                                 
                                 <div class="col-md-6">
-                                    <input id="repeat-email" type="email" class="form-control{{ $errors->has('repeat_email') ? ' is-invalid' : '' }}" name="repeat_email" value="{{ old('repeat_email') }}" required>
-                                        @if ($errors->has('email'))
+                                    <input id="repeatemail" type="email" class="form-control{{ $errors->has('repeatemail') ? ' is-invalid' : '' }}" name="repeatemail" value="{{ old('repeatemail') }}" required>
+                                        @if ($errors->has('repeatemail'))repeatemail
                                             <span class="invalid-feedback">
-                                                <strong>{{ $errors->first('email') }}</strong>
+                                                <strong>{{ $errors->first('repeatemail') }}</strong>
                                             </span>
                                         @endif
                                 </div>
                         </div>
 
                         <div class="form-group row">
-                                <label for="City" class="col-md-4 col-form-label text-md-right">{{ __('City') }}</label>
+                                <label for="city" class="col-md-4 col-form-label text-md-right">{{ __('City') }}</label>
                                 
                                 <div class="col-md-6">
-                                    <input id="City" type="" class="form-control{{ $errors->has('City') ? ' is-invalid' : '' }}" name="City" value="{{ old('city') }}" required>
-                                        @if ($errors->has('City'))
+                                    <input id="city" type="text" class="form-control{{ $errors->has('city') ? ' is-invalid' : '' }}" name="city" value="{{ old('city') }}" required>
+                                        @if ($errors->has('city'))
                                             <span class="invalid-feedback">
-                                                <strong>{{ $errors->first('City') }}</strong>
+                                                <strong>{{ $errors->first('city') }}</strong>
                                             </span>
                                         @endif
                                 </div>
                         </div>
 
                         <div class="form-group row">
-                                <label for="Cellphone" class="col-md-4 col-form-label text-md-right">{{ __('Cellphone') }}</label>
+                                <label for="cellphone" class="col-md-4 col-form-label text-md-right">{{ __('Cellphone') }}</label>
                                 
                                 <div class="col-md-6">
-                                    <input id="Cellphone" type="" class="form-control{{ $errors->has('Cellphone') ? ' is-invalid' : '' }}" name="Cellphone" value="{{ old('Cellphone') }}" required>
-                                        @if ($errors->has('Cellphone'))
+                                    <input id="cellphone" type="text" class="form-control{{ $errors->has('cellphone') ? ' is-invalid' : '' }}" name="cellphone" value="{{ old('cellphone') }}" required>
+                                        @if ($errors->has('cellphone'))
                                             <span class="invalid-feedback">
-                                                <strong>{{ $errors->first('Cellphone') }}</strong>
+                                                <strong>{{ $errors->first('cellphone') }}</strong>
                                             </span>
                                         @endif
                                 </div>
                         </div>
 
                         <div class="form-group row">
-                                <label for="Referred_By" class="col-md-4 col-form-label text-md-right">{{ __('Referred By') }}</label>
+                                <label for="referredby" class="col-md-4 col-form-label text-md-right">{{ __('Referred By') }}</label>
                                 
                                 <div class="col-md-6">
-                                    <input id="Referred_By" type="" class="form-control{{ $errors->has('Referred_By') ? ' is-invalid' : '' }}" name="Referred_By" value="{{ old('Referred_By') }}" required>
-                                        @if ($errors->has('Referred_By'))
+                                    <input id="referredby" type="text" class="form-control{{ $errors->has('referredby') ? ' is-invalid' : '' }}" name="referredby" value="{{ old('referredby') }}" required>
+                                        @if ($errors->has('referredby'))
                                             <span class="invalid-feedback">
-                                                <strong>{{ $errors->first('Referred_By') }}</strong>
+                                                <strong>{{ $errors->first('referredby') }}</strong>
                                             </span>
                                         @endif
                                 </div>
                         </div>
 
-                       
-
-
-
+                    
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
