@@ -33,7 +33,8 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/awaitingconfirmation';
+    // protected $redirectTo = '/awaitingconfirmation';
+    protected $redirectTo = '/home';
 
      /**
      * Handle a registration request for the application.
