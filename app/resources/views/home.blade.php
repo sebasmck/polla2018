@@ -9,18 +9,33 @@
                 <table id="myTable" class="display">
                     <thead>
                         <tr>
-                            <th>Column 1</th>
-                            <th>Column 2</th>
+                            <th>Nickname Polla</th>
+                            <th>Pago</th>
+                            <th>Acción</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Row 1 Data 1</td>
                             <td>Row 1 Data 2</td>
+                            <td><div class="form-group row mb-0">
+                                <div class="col-md-6 offset-md-4">
+                                    <button type="submit" class="btn btn-primary">
+                                        {{ __('Seleccionar') }}
+                                    </button>
+                                </div>
+                            </div></td>
                         </tr>
                         <tr>
                             <td>Row 2 Data 1</td>
                             <td>Row 2 Data 2</td>
+                            <td><div class="form-group row mb-0">
+                                <div class="col-md-6 offset-md-4">
+                                    <button type="submit" class="btn btn-primary">
+                                        {{ __('Seleccionar') }}
+                                    </button>
+                                </div>
+                            </div></td>
                         </tr>
                     </tbody>
                 </table>
