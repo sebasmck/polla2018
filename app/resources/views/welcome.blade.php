@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Polla World Cup 2018
                 </div>
 
                 <div class="links">
