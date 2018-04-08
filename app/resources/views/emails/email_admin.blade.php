@@ -104,8 +104,7 @@
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Hi {!!$nickname!!},</p>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Thank you for registering in pollaworldcup.com! On behalf of the team at pollaworldcup.com, we are excited to have you in our Rusia 2018 World Cup Pool. Please allow up to 24 hours for your registration to be accepted. Once accepted, you can log in to the web site and choose your scores and qualified teams for the World Cup 2018.</p>
 
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Your username is: {!!$email!!},</p>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Your password is: {!!$password!!},</p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Your username is: {!!$email!!},</p>em
                        
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Once you enter your picks, you will find a link to print your picks. In addition, on June 9th, after the registration deadline, you will be able to view and print every participant’s picks. You can register as many World Cup Pools as you like, with the same email, just make sure to select a different nickname for every Pool.</p>
 

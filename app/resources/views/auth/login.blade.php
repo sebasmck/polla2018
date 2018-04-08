@@ -1,10 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="container">
+
     <div class="row justify-content-center">
+
         <div class="col-md-8">
+            <div class="title m-b-md" style="font-size: 64px; margin-bottom: 30px; text-align: center;">
+                Polla World Cup 2018
+            </div>
             <div class="card">
+
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">

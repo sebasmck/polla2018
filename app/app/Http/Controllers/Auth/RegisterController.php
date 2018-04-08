@@ -49,6 +49,12 @@ class RegisterController extends Controller
 
         event(new Registered($user = $this->create($request->all())));
 
+        $data = array('nickname' => $user->nickname,
+                      'email' => $user->email,
+                      'password' => $user->password);
+
+        Emails::email_registration_user($user->email, $data);
+        Emails::email_registration_admin($data);
         // $this->guard()->login($user);
 
         return $this->registered($request, $user)
@@ -107,9 +113,6 @@ class RegisterController extends Controller
             'referredby' => $data['referredby'],
             'is_approved' => 0,
         ]);
-
-        // Emails::email_registration_user($data);
-        // Emails::email_registration_user($data);
     }
 
 }
