@@ -20,4 +20,8 @@ class HomeController extends Controller
     public function awaiting(){
         return view('awaiting');
     }
+
+    public function rules(){
+        return view('usermenu.rules');
+    }
 }
