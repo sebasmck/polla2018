@@ -2755,8 +2755,8 @@ fieldset:disabled a.btn {
 
 .btn-info {
     color: #fff;
-    background-color: #17a2b8;
-    border-color: #17a2b8
+    background-color: #004782;
+    border-color: #004782
 }
 
 .btn-info:hover {
@@ -5750,7 +5750,8 @@ button.close {
     padding: 1rem;
     border-bottom: 1px solid #e9ecef;
     border-top-left-radius: .3rem;
-    border-top-right-radius: .3rem
+    border-top-right-radius: .3rem;
+    background-color: rgba(235, 191, 129, .7);
 }
 
 .modal-header .close {
@@ -5760,7 +5761,9 @@ button.close {
 
 .modal-title {
     margin-bottom: 0;
-    line-height: 1.6
+    font-weight: 700;
+    line-height: 28px;
+    color: #004783;
 }
 
 .modal-body {
@@ -9260,7 +9263,7 @@ a.text-dark:hover {
         page-break-inside: avoid
     }
     thead {
-        display: table-header-group
+        display: table-header-group;
     }
     img,
     tr {
@@ -9347,5 +9350,13 @@ a.text-dark:hover {
 	    background-size: auto;
 	    background-repeat: no-repeat;
 	}
+}
+
+.addbutton{
+    position: absolute;
+    right: 8px;
+    width: 35px;
+    height: 35px;
+
 }
 
