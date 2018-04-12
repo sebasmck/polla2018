@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\User;
+
 class HomeController extends Controller
 {
     
@@ -17,11 +19,20 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function awaiting(){
+    public function indexAdmin()
+    {   
+        $users = User::all();
+
+        return view('admin.home')->with('users', $users);
+    }
+
+    public function awaiting()
+    {
         return view('awaiting');
     }
 
-    public function rules(){
+    public function rules()
+    {
         return view('usermenu.rules');
     }
 }
