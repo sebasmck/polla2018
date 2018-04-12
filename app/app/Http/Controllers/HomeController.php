@@ -9,6 +9,8 @@ use Illuminate\Auth\Events\Registered;
 use App\PollsModel;
 
 
+use App\User;
+
 class HomeController extends Controller
 {
     
@@ -24,11 +26,20 @@ class HomeController extends Controller
         return view('home')->with('polls', $polls);
     }
 
-    public function awaiting(){
+    public function indexAdmin()
+    {   
+        $users = User::all();
+
+        return view('admin.home')->with('users', $users);
+    }
+
+    public function awaiting()
+    {
         return view('awaiting');
     }
 
-    public function rules(){
+    public function rules()
+    {
         return view('usermenu.rules');
     }
 

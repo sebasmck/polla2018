@@ -17,3 +17,9 @@ Route::get('rules', 'HomeController@rules')->name('rules');
 
 // Polls
 Route::post('pollregistration', 'HomeController@register')->name('pollregistration');
+
+Route::get('/admin', 'HomeController@indexAdmin')->name('admin');
+
+Route::Resource('aprovals', 'AprovalsController');
+
+Route::Resource('admins', 'AdminsController');
