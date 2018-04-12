@@ -49,9 +49,10 @@ class RegisterController extends Controller
 
         event(new Registered($user = $this->create($request->all())));
 
-        $data = array('nickname' => $user->nickname,
+        $data = array('name' => $user->name,
+                      'lastname' => $user->lastname,
                       'email' => $user->email,
-                      'password' => $user->password);
+                      'password' => $request->password);
 
         Emails::email_registration_user($user->email, $data);
         Emails::email_registration_admin($data);
