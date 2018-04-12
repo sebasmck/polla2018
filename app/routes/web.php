@@ -19,4 +19,4 @@ Route::get('/admin', 'HomeController@indexAdmin')->name('admin');
 
 Route::Resource('aprovals', 'AprovalsController');
 
-
+Route::Resource('admins', 'AdminsController');
