@@ -3,10 +3,59 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
+use App\User;
+use App\Rep;
 use DB;
 
 class AdminsController extends Controller
 {
+
+
+    public function assignRep(){
+
+        $users = User::all();
+        $reps = Rep::all();
+
+        return view('admin.assign_rep')->with('users', $users)->with('reps', $reps);
+
+    }
+
+    public function assignToUser(Request $req){
+
+        $user = User::find($req->input('id'));
+
+        $user->id_rep = $req->input('id_rep');
+        $user->save();
+
+        return redirect()->back();
+
+    }
+
+    public function addRep(){
+        return view('admin.add_rep');
+    }
+
+
+    public function storeRep(Request $req){
+
+        $rep = new Rep;
+
+        $users = User::all();
+        $reps = Rep::all();
+
+
+        $rep->name = $req->input('name');
+        $rep->email = $req->input('email');
+
+        $rep->save();
+
+        return view('admin.assign_rep')->with('users', $users)->with('reps', $reps);
+
+    }
+
+
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +63,7 @@ class AdminsController extends Controller
      */
     public function index()
     {
-        //
+    //
     }
 
     /**
@@ -33,9 +82,16 @@ class AdminsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $req)
     {
-        //
+        $rep = new Rep;
+
+        $rep->name = $req->input('name');
+        $rep->email = $req->input('email');
+
+        $rep->save();
+
+        return redirect()->back();
     }
 
     /**

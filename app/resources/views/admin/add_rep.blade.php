@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Admin | Pending users</title>
+        <title>Polla2018 |Assign Rep</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -45,12 +45,12 @@
                       <div class="container">
                         <nav class="tabs is-boxed">
                           <ul>
+                            <li>
+                              <a href="/admin">Pendientes</a>
+                            </li>
                             <li class="is-active">
-                              <a href="/admin">Pending Users</a>
-                            </li>
-                            <li >
-                              <a href="/assign">Assign Rep</a>
-                            </li>
+                                <a href="/assign">Assign Rep</a>
+                              </li>
                           </ul>
                         </nav></div>
                       </div>
@@ -59,46 +59,44 @@
 
                   <section class="section">
                     <div class="container">
-                      <h1 class="title"><b> Pending Aprovals </b></h1>                  
-                      <hr style="margin-bottom: 0;">
-                      <table id="pendings" class="display">
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>email</th>
-                                    <th>Aprove</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            @foreach($users as $user)
-                                @if($user->is_approved == 0)
-                                <tr>
-                                    <td>{{$user->nickname}}</td>
-                                    <td>{{$user->email}}</td>
-                                    <td><a class="button is-danger" href="{{route('admins.edit', $user->id)}}"> Aprobar </a></td>
-                                </tr>
-                                @endif
-                            @endforeach
-                            </tbody>
-                            
-                        </table>
-
-
+                                        <div class="modal-card">
+                                          <header class="modal-card-head">
+                                            <p class="modal-card-title">Add Rep</p>
+                                          </header>
+                                          <section class="modal-card-body">
+                                          <form action="/storerep" method="POST">
+                                              @csrf
+                                                <div class="field">
+                                                <div class="control">
+                                                    <input name="name" class="input is-danger" type="text" placeholder="Name" required>
+                                                </div>
+                                                <br>
+                                                <div class="field">
+                                                <div class="control">
+                                                    <input name="email" class="input is-danger" type="text" placeholder="Email" required>
+                                                </div>
+                                                </div>
+                                          </section>
+                                          <footer class="modal-card-foot">
+                                              <button type="submit" class="button is-success">Save</button>
+                                            </form>
+                                            <button class="button" id="close">Cancel</button>
+                                          </footer>
+                                        </div>
                     </div>
                   </section>
+
+    {{-- BEGIN CREATE MODAL --}}
     </body>
+
+
+   
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
     
-    <script>
-        
-        $(document).ready( function () {
-            $('#pendings').DataTable();
-        } );
-        
-    </script>
+    
 
 
 </html>

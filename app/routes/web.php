@@ -20,6 +20,16 @@ Route::post('pollregistration', 'HomeController@register')->name('pollregistrati
 
 Route::get('/admin', 'HomeController@indexAdmin')->name('admin');
 
-Route::Resource('aprovals', 'AprovalsController');
+Route::get('/assign', 'AdminsController@assignRep')->name('assign');
+
+Route::post('/assigntouser', 'AdminsController@assignToUser');
+
+Route::get('/addrep', 'AdminsController@addRep')->name('addRep');
+
+Route::post('/storerep', 'AdminsController@storeRep')->name('storerep');
+
+
 
 Route::Resource('admins', 'AdminsController');
+
+

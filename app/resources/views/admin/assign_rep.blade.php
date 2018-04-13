@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Admin | Pending users</title>
+        <title>Polla2018 |Assign Rep</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -45,12 +45,12 @@
                       <div class="container">
                         <nav class="tabs is-boxed">
                           <ul>
+                            <li>
+                              <a href="/admin">Pendientes</a>
+                            </li>
                             <li class="is-active">
-                              <a href="/admin">Pending Users</a>
-                            </li>
-                            <li >
-                              <a href="/assign">Assign Rep</a>
-                            </li>
+                                <a href="/assign">Assign Rep</a>
+                              </li>
                           </ul>
                         </nav></div>
                       </div>
@@ -59,23 +59,25 @@
 
                   <section class="section">
                     <div class="container">
-                      <h1 class="title"><b> Pending Aprovals </b></h1>                  
+                    <a class="button is-success is-pulled-right" href="/addrep">Add Rep</a>
+                      <h1 class="title"><b> Assign a Rep </b></h1>                  
                       <hr style="margin-bottom: 0;">
                       <table id="pendings" class="display">
                             <thead>
                                 <tr>
                                     <th>Name</th>
-                                    <th>email</th>
-                                    <th>Aprove</th>
+                                    <th>e-mail</th>
+                                    <th>Asign</th>
                                 </tr>
                             </thead>
                             <tbody>
                             @foreach($users as $user)
-                                @if($user->is_approved == 0)
+                                @if($user->is_approved == 1 && $user->role != 'admin')
                                 <tr>
                                     <td>{{$user->nickname}}</td>
                                     <td>{{$user->email}}</td>
-                                    <td><a class="button is-danger" href="{{route('admins.edit', $user->id)}}"> Aprobar </a></td>
+                                    <td><button class="button is-primary is-pulled-right" id="showModal"
+                                    data-target="modal-ter" data-id="{{$user->id}}" aria-haspopup="true">Assign Rep</button></td>
                                 </tr>
                                 @endif
                             @endforeach
@@ -86,7 +88,33 @@
 
                     </div>
                   </section>
+
+    {{-- BEGIN CREATE MODAL --}}
     </body>
+
+
+    <div class="modal">
+            <div class="modal-background"></div>
+                <div class="modal-card">
+                  <header class="modal-card-head">
+                    <p class="modal-card-title">Add Rep</p>
+                  </header>
+                  <section class="modal-card-body">
+                  <form action="/assigntouser" method="POST">
+                      @csrf
+                      <input type="hidden" id="id" name="id">
+                      <div class="select">
+                          {{ Form::select('id_rep', $reps->pluck('name', 'id_rep'), null, ['class' => 'form-control', 'id' => 'id_rep']) }}
+                      </div>
+                  </section>
+                  <footer class="modal-card-foot">
+                      <button type="submit" class="button is-success">Save</button>
+                    </form>
+                    <button class="button" id="close">Cancel</button>
+                  </footer>
+                </div>
+      </div>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -95,9 +123,29 @@
     <script>
         
         $(document).ready( function () {
-            $('#pendings').DataTable();
-        } );
-        
+
+        $('#pendings').DataTable();
+
+           // Modal 1 (create Rep)
+
+        // $("#showModal").click(function() {
+        //     $(".modal").addClass("is-active");  
+        // });
+
+        $("#close").click(function() {
+            $(".modal").removeClass("is-active");
+        });
+
+      
+        });
+
+        $(document).on('click', '#showModal', function(){
+
+        $('#id').val($(this).data('id'));
+        $(".modal").addClass("is-active");  
+
+        });
+
     </script>
 
 
