@@ -6,7 +6,10 @@ use Illuminate\Http\Request;
 
 use App\User;
 use App\Rep;
+use App\PollsModel;
 use DB;
+
+
 
 class AdminsController extends Controller
 {
@@ -107,7 +110,11 @@ class AdminsController extends Controller
      */
     public function show($id)
     {
-        //
+        $polls = User::find($id)->polls;
+        $user = User::find($id);
+
+        return view('admin.user_polls')->with('polls', $polls)->with('user', $user);
+
     }
 
     /**

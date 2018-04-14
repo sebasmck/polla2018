@@ -30,4 +30,9 @@ class User extends Authenticatable
     public function rep(){
         return $this->hasOne('App\Rep', 'id_rep', 'id_rep');
     }
+
+    public function polls(){
+        return $this->hasMany('App\PollsModel', 'id_User', 'id');
+    }
+    
 }

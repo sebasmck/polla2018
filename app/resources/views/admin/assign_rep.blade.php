@@ -78,7 +78,7 @@
                                 <tr>
                                     <td>{{$user->nickname}}</td>
                                     <td>{{$user->email}}</td>
-                                <td> <a href="{{route('admins.show', $user->id)}}"></a> </td>
+                                <td> <a class="button is-danger" href="{{route('admins.show', $user->id)}}"> View Picks</a> </td>
                                     @if(empty($user->id_rep))
                                     <td><button class="button is-primary is-pulled-left" id="showModal"
                                       data-target="modal-ter" data-id="{{$user->id}}" aria-haspopup="true">Assign Rep</button></td>
