@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12 title_polla">
-            Polla World Cup 2018
+            Polla World Cup
         </div>
     </div>
     <div class="row justify-content-center">
