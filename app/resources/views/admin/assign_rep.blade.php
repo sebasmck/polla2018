@@ -66,8 +66,10 @@
                             <thead>
                                 <tr>
                                     <th>Name</th>
-                                    <th>e-mail</th>
-                                    <th>Asign</th>
+                                    <th>Email</th>
+                                    <th>Picks</th>
+                                    <th>Assign</th>
+                                    <th>Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -76,8 +78,18 @@
                                 <tr>
                                     <td>{{$user->nickname}}</td>
                                     <td>{{$user->email}}</td>
-                                    <td><button class="button is-primary is-pulled-right" id="showModal"
-                                    data-target="modal-ter" data-id="{{$user->id}}" aria-haspopup="true">Assign Rep</button></td>
+                                <td> <a href="{{route('admins.show', $user->id)}}"></a> </td>
+                                    @if(empty($user->id_rep))
+                                    <td><button class="button is-primary is-pulled-left" id="showModal"
+                                      data-target="modal-ter" data-id="{{$user->id}}" aria-haspopup="true">Assign Rep</button></td>
+                                    @else
+                                    <td> <p class="is-pulled-left">{{$user->rep->name}}</p></td>
+                                    @endif
+                                    <td> {!! Form::open(['route' => ['admins.destroy', $user->id], 'method' => 'DELETE']) !!}
+
+                                        {!!Form::submit('x', ['class' => 'button is-danger']) !!}
+                          
+                                        {!! Form::close() !!} </td>
                                 </tr>
                                 @endif
                             @endforeach

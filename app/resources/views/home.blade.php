@@ -44,11 +44,16 @@
                                                     <td>{{$poll->status}}</td>
                                                     <td></td>
                                                     <td><div class="form-group row mb-0">
+
+                                                        @if($poll->status == 'Unauthorized')
+
+                                                        @else
                                                         <div class="col-md-6 offset-md-4">
                                                             <div class="control">
-                                                                <button class="button is-link">Edit mi picks</button>
+                                                                <button class="button is-link">Edit my picks</button>
                                                             </div>
                                                         </div>
+                                                        @endif
                                                     </div></td>
                                                 </tr>
                                                 @endforeach

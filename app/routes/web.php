@@ -28,7 +28,10 @@ Route::get('/addrep', 'AdminsController@addRep')->name('addRep');
 
 Route::post('/storerep', 'AdminsController@storeRep')->name('storerep');
 
-
+Route::delete('users/{id}', [
+    'as' => 'delete_user', 
+    'uses' => 'AdminsController@deleteUser'
+]);
 
 Route::Resource('admins', 'AdminsController');
 

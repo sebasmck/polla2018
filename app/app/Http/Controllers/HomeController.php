@@ -53,9 +53,10 @@ class HomeController extends Controller
     public function pollregistration(Request $req)
     {
         $polls = new PollsModel;
+
         $polls->id_User = $req->input('user_id');
         $polls->poll_name = $req->input('poll_name');
-        $polls->status = 'pending';
+        $polls->status = 'Unauthorized';
 
         $polls->save();
 
