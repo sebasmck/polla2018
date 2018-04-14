@@ -14,6 +14,8 @@ class PollsModel extends Model
     	return "iduser_poll";
 	}
 
+	protected $fillable = ['poll_name', 'status', 'id_user'];
+
 	public static function getBbyUser($idUser)
 	{
 		return PollsModel::where('id_User','=',$idUser)->get();

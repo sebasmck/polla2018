@@ -16,7 +16,7 @@ Route::get('home', 'HomeController@index')->name('home');
 Route::get('rules', 'HomeController@rules')->name('rules');
 
 // Polls
-Route::post('pollregistration', 'HomeController@register')->name('pollregistration');
+Route::post('/pollregistration', 'HomeController@pollregistration')->name('pollregistration');
 
 Route::get('/admin', 'HomeController@indexAdmin')->name('admin');
 

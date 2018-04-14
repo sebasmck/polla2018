@@ -40,9 +40,9 @@
                                             <tbody>
                                                 @foreach ($polls as $poll)
                                                 <tr>
-                                                    <td>{{$poll->poll_name}}}</td>
-                                                    <td>{{$poll->status}}}</td>
-                                                    <td>{{$poll->poll_name}}}</td>
+                                                    <td>{{$poll->poll_name}}</td>
+                                                    <td>{{$poll->status}}</td>
+                                                    <td></td>
                                                     <td><div class="form-group row mb-0">
                                                         <div class="col-md-6 offset-md-4">
                                                             <div class="control">
@@ -119,12 +119,12 @@
             
             <!-- Modal body -->
             <div class="modal-body">
-              <form method="POST" action="{{ route('pollregistration') }}">
+            <form  action="{{route('pollregistration')}}" method="POST">
                     @csrf
 
-                    <div class="form-group row">
-                        {{-- <label for="email" class="col-sm-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label> --}}
+            <input type="hidden" value="{{Auth::user()->id}}" name="user_id">
 
+                    <div class="form-group row">
                         <div class="col-md-12">
                             <input id="poll_name" type="text" class="form-control{{ $errors->has('poll_name') ? ' is-invalid' : '' }}" name="poll_name" value="{{ old('poll_name') }}" required placeholder="Poll Name">
 
