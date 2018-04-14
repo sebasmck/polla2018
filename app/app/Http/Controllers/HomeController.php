@@ -19,6 +19,8 @@ class HomeController extends Controller
         $this->middleware('auth');
     }
 
+
+
     public function index()
     {
         $id_user = auth()->user()->id;
@@ -33,10 +35,14 @@ class HomeController extends Controller
         return view('admin.home')->with('users', $users);
     }
 
+    // Clients awaiting for confirmation.
+
     public function awaiting()
     {
         return view('awaiting');
     }
+
+    // Display Rules
 
     public function rules()
     {
@@ -44,60 +50,39 @@ class HomeController extends Controller
     }
 
 
-    /**
-     * Handle a registration request for the application.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function register(Request $request)
+    public function pollregistration(Request $req)
     {
-        $this->validator($request->all())->validate();
+        $polls = new PollsModel;
+        $polls->id_User = $req->input('user_id');
+        $polls->poll_name = $req->input('poll_name');
+        $polls->status = 'pending';
 
-        $this->create($request->all());
+        $polls->save();
 
-        // $this->guard()->login($user);
 
-        // return $this->registered($request, $poll_name)
-        //                 ?: redirect($this->redirectPath());
+        // $polls = $req->validate([
+        //     'poll_name' => 'required|unique:user_poll|string|max:255'
+        // ]);
+
+        // $polls->create($polls);
+        
+        return back();
     }
 
-
-    // /**
-    //  * Create a new controller instance.
-    //  *
-    //  * @return void
-    //  */
-    // public function __construct()
-    // {
-    //     $this->middleware('guest');
+    // protected function validator(array $data)
+    // {   
+    //     return Validator::make($data, [
+    //         'poll_name' => 'required|unique:user_poll|string|max:255'
+    //     ]);
     // }
 
-    /**
-     * Get a validator for an incoming registration request.
-     *
-     * @param  array  $data
-     * @return \Illuminate\Contracts\Validation\Validator
-     */
-    protected function validator(array $data)
-    {   
-        return Validator::make($data, [
-            'poll_name' => 'required|unique:user_poll|string|max:255'
-        ]);
-    }
-
-    /**
-     * Create a new user instance after a valid registration.
-     *
-     * @param  array  $data
-     * @return \App\User
-     */
-    protected function create(array $data)
-    {
-        return PollsModel::create([
-            'id_User' => auth()->user()->id,
-            'poll_name' =>$data['poll_name'],
-            'status' => 'Pending Activation',
-        ]);
-    }
+   
+    // protected function create(array $data)
+    // {
+    //     return PollsModel::create([
+    //         'id_User' => auth()->user()->id,
+    //         'poll_name' =>$data['poll_name'],
+    //         'status' => 'Pending Activation',
+    //     ]);
+    // }
 }
