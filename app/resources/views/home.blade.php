@@ -48,9 +48,9 @@
                                                         @if($poll->status == 'Unauthorized')
 
                                                         @else
-                                                        <div class="col-md-6 offset-md-4">
+                                                        <div class="col-md-8 offset-md-4">
                                                             <div class="control">
-                                                                <button class="button is-link">Edit my picks</button>
+                                                                <button class="btn btn-primary" onclick="window.location='{{ route('picks.index') }}'">Edit my picks</button>
                                                             </div>
                                                         </div>
                                                         @endif
@@ -67,6 +67,7 @@
         </div>
         <br>
 
+        {{-- MENU --}}
         <div class="row justify-content-center">
             <div class="col-md-4">
                 <div class="card">
@@ -163,64 +164,6 @@
           </div>
         </div>
       </div>
-
-   {{--  <div id="id1" class="modal" style="">
-
-        <div class="modal-content" style="width:60%;">
-
-            <div class="card-head style-primary">
-                <header>Crear ATA</header>
-                <span style="margin-right: 20px;" onclick="document.getElementById('id1').style.display='none'"
-                class="close">x</span>
-            </div>
-
-            <div class="card">
-                <div class="card-body floating-label">
-                    <form method="POST" action="{{ route('home') }}">
-                    @csrf
-
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="cATA" name="ATA" required>
-                                        <label for="ATA">ATA</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="cCodATA" name="CodATA" required>
-                                        <label for="CodATA">CodATA</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="cGeneral" name="General" required>
-                                        <label for="General">General</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <button type="submit" style="" class="btn btn-info btn-block">Crear</button>
-                        </div>
-                        <div class="col-sm-6">
-                            <button type="button" onclick="document.getElementById('id1').style.display='none'" style="" class="btn btn-danger btn-block">Cancelar</button>
-                        </div>
-                    </div>
-
-                </form>
-                </div>
-            </div>
-        </div>
-
-    </div> --}}
-
 
 {{-- END CREATEMODAL --}}
 @endsection

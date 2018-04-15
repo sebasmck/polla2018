@@ -35,4 +35,7 @@ Route::delete('users/{id}', [
 
 Route::Resource('admins', 'AdminsController');
 
+// PICKS
+Route::Resource('picks', 'PicksController');
+
 
