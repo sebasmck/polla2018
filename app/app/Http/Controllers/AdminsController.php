@@ -57,13 +57,7 @@ class AdminsController extends Controller
 
     }
 
-    public function deleteUser($id){
-
-        
-    }
-
-
-
+    
     /**
      * Display a listing of the resource.
      *
@@ -137,9 +131,25 @@ class AdminsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $req, $iduser_poll)
     {
-        //
+        $poll = PollsModel::find($iduser_poll);
+        $poll->status = $req->input('status');
+
+        return redirect()->back();
+
+    }
+
+
+    public function editStatus(Request $req){
+
+        $poll = PollsModel::find($req->iduser_poll);
+
+        $poll->status = $req->status;
+        $poll->save();
+
+        return response()->json($poll);
+
     }
 
     /**

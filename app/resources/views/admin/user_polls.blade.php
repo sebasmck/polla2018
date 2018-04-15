@@ -33,8 +33,7 @@
                           </div>
                           <div class="column is-narrow">
                             <div id="carboncontainer">
-                                <marquee style="font-size:400%;"> {{$user->name}} </marquee> <br>
-                                <marquee style="font-size:200%;" behavior="down" direction="right"> Current user</marquee>
+                                <p style="font-size:400%;"> {{$user->name}} </p> 
                             </div>
                   
                           </div>
@@ -76,7 +75,8 @@
                                 <tr>
                                     <td>{{$poll->poll_name}}</td>
                                     <td>{{$poll->status}}</td>
-                                {{-- <td> <a class="button is-danger" href="{{route('admins.show', $user->id)}}"> View Picks</a> </td> --}}
+                                    <td><button class="button is-primary is-pulled-left" id="showModal"
+                                    data-target="modal-ter" data-id="{{$poll->iduser_poll}}" aria-haspopup="true">Edit Status</button></td>
                                 </tr>
 
                             @endforeach
@@ -92,6 +92,32 @@
     </body>
 
 
+
+    <div class="modal">
+        <div class="modal-background"></div>
+            <div class="modal-card">
+              <header class="modal-card-head">
+                <p class="modal-card-title">Change Status</p>
+              </header>
+              <section class="modal-card-body">
+                <form class="form-horizontal" role="form">
+                  @csrf
+                  <input type="hidden" id="iduser_poll" name="iduser_poll">
+                  <div class="select">
+                      <select id="status" name="status">
+                          <option value="Unauthorized">Unauthorized</option>
+                          <option value="Pending">Pending</option>
+                          <option value="Active">Active</option>
+                        </select>
+                  </div>
+              </section>
+              <footer class="modal-card-foot">
+                  <button type="submit" id="submit" class="button is-success">Save</button>
+                </form>
+                <button class="button" id="close">Cancel</button>
+              </footer>
+            </div>
+    </div>
     
 
 
@@ -103,8 +129,46 @@
         
         $(document).ready( function () {
 
-        $('#pendings').DataTable();        
-  
+          $('#pendings').DataTable();   
+
+          $(document).on('click', '#showModal', function(){
+
+              $('#iduser_poll').val($(this).data('id'));
+              $(".modal").addClass("is-active");  
+
+          });
+
+
+          $("#close").click(function() {
+              $(".modal").removeClass("is-active");
+          });
+
+          $(document).on('click', '#submit', function(){
+
+            $.ajaxSetup({
+              headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+              }
+            });
+
+            $.ajax({
+
+            type: 'post',
+            url: '/editstatus',
+            data: {
+              
+            'iduser_poll': $("#iduser_poll").val(),
+            'status': $("#status").val(),
+            },
+
+            success: function(data){
+                    alert("Status changed");
+            }
+
+            });
+
+            });
+
         });
 
 
