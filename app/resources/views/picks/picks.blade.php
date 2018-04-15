@@ -122,15 +122,17 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
-                                                                                <div class="col-md-8">
-                                                                                    Saudi Arabia
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
                                                                                 </div>
-                                                                                <div class="col-md-2">
-                                                                                    <input type="text" name="" class="form-control">
+                                                                                <div class="col-md-8">
+                                                                                    Saudi Arabia
                                                                                 </div>
+                                                                                
+                                                                                
                                                                             </div>
                                                                         </td>
                                                                     </tr>
