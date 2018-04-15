@@ -101,8 +101,16 @@
                                                                             </div>
                                                                         </td>
                                                                         <td>
-                                                                            <div class="col-md-12">
-                                                                                Russia
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Russia
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="">
+                                                                                </div>
                                                                             </div>
                                                                         </td>
                                                                         <td>
@@ -111,8 +119,16 @@
                                                                             </div>
                                                                         </td>
                                                                         <td>
-                                                                            <div class="col-md-12">
-                                                                                Saudi Arabia
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Saudi Arabia
+                                                                                </div>
+                                                                            <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="">
+                                                                                </div>
                                                                             </div>
                                                                         </td>
                                                                     </tr>
@@ -133,8 +149,10 @@
                                                                             </div>
                                                                         </td>
                                                                         <td>
-                                                                            <div class="col-md-12">
-                                                                                EgyptE22
+                                                                            <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    EgyptE22
+                                                                                </div>
                                                                             </div>
                                                                         </td>
                                                                         <td>
