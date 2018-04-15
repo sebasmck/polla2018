@@ -109,7 +109,9 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-2">
-                                                                                    <input type="text" name="">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -123,11 +125,11 @@
                                                                                 <div class="col-md-8">
                                                                                     Saudi Arabia
                                                                                 </div>
-                                                                            <div class="col-md-2">
+                                                                                <div class="col-md-2">
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-2">
-                                                                                    <input type="text" name="">
+                                                                                    <input type="text" name="" class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                         </td>
