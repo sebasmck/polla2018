@@ -136,6 +136,7 @@
                                                                             </div>
                                                                         </td>
                                                                     </tr>
+
                                                                     <tr>
                                                                         <td>
                                                                             <div class="col-md-2">
@@ -154,8 +155,16 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
-                                                                                <div class="col-md-12">
-                                                                                    EgyptE22
+                                                                                <div class="col-md-8">
+                                                                                    Egypt
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -165,30 +174,235 @@
                                                                             </div>
                                                                         </td>
                                                                         <td>
-                                                                            <div class="col-md-12">
-                                                                                UruguayK22
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Uruguay
+                                                                                </div>
+                                                                                
+                                                                                
                                                                             </div>
                                                                         </td>
                                                                     </tr>
-                                                                    {{-- @foreach ($polls as $poll)
+
                                                                     <tr>
-                                                                        <td>{{$poll->poll_name}}</td>
-                                                                        <td>{{$poll->status}}</td>
-                                                                        <td></td>
-                                                                        <td><div class="form-group row mb-0">
-
-                                                                            @if($poll->status == 'Unauthorized')
-
-                                                                            @else
-                                                                            <div class="col-md-8 offset-md-4">
-                                                                                <div class="control">
-                                                                                    <button class="btn btn-primary" onclick="window.location='{{ route('picks.index') }}'">Edit my picks</button>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                3
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Tue 19/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Saint Petersburg
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Russia
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
-                                                                            @endif
-                                                                        </div></td>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Egypt
+                                                                                </div>
+                                                                                
+                                                                                
+                                                                            </div>
+                                                                        </td>
                                                                     </tr>
-                                                                    @endforeach --}}
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                4
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Wed 20/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Rostov-on-Don
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Uruguay
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Saudi Arabia
+                                                                                </div>
+                                                                                
+                                                                                
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                5
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Mon 25/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Samara
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Uruguay
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Russia
+                                                                                </div>
+                                                                                
+                                                                                
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Mon 25/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Volgograd
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Saudi Arabia
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Egypt
+                                                                                </div>
+                                                                                
+                                                                                
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    
+                                                                    
                                                                 </tbody>
                                                         </table> 
                                                 </div>
@@ -197,17 +411,15 @@
                                     </div>  {{--  end card --}}
                                 </div> {{--  end col div --}}
                             </div>  {{-- tab pane --}}
-                            <div class="tab-pane container" id="grupob">
+                            <div class="tab-pane container" id="grupob"> <br>
                                 <div class="col-md-12">
                                     <div class="card">
                                         <div class="card-header">
                                             <div class="row">
                                                 <div class="col-md-4">
-                                                    <h4>{{ __('Gruop A') }} </h4>
+                                                    <h4>{{ __('Gruop B') }} </h4>
                                                 </div>
                                             </div>
-                                            
-                                            
                                         </div>
 
                                         <div class="card-body">
@@ -544,13 +756,2063 @@
                                     
                             </div>
                             <div class="tab-pane container" id="grupoc">
-                                <h5>Grupo C</h5>
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h4>{{ __('Gruop B') }} </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                
+                                                        <table id="myTable" class="table table-striped table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>No</th>
+                                                                        <th>Date</th>
+                                                                        <th>Venue</th>
+                                                                        <th>1st Team</th>
+                                                                        <th></th>
+                                                                        <th>2st Team</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                1
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Fri 15/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Sochi
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Portugal
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Spain
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                2
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Fri 15/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Saint Petersburg
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Morocco
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Iran
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                3
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Wed 20/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Moscow
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Portugal
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Morocco
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                4
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Wed 20/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Kazan
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Iran
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Spain
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                5
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Mon 25/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Saransk
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Iran
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Portugal
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Mon 25/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Kaliningrad
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Spain
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Morocco
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                        </table> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  {{--  end card --}}
+                                </div> {{--  end col div --}}
                             </div>
-                            <div class="tab-pane container" id="grupod">...</div>
-                            <div class="tab-pane container" id="grupoe">...</div>
-                            <div class="tab-pane container" id="grupof">...</div>
-                            <div class="tab-pane container" id="grupof">...</div>
-                            <div class="tab-pane container" id="grupoh">...</div>
+                            <div class="tab-pane container" id="grupod">
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h4>{{ __('Gruop B') }} </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                
+                                                        <table id="myTable" class="table table-striped table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>No</th>
+                                                                        <th>Date</th>
+                                                                        <th>Venue</th>
+                                                                        <th>1st Team</th>
+                                                                        <th></th>
+                                                                        <th>2st Team</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                1
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Fri 15/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Sochi
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Portugal
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Spain
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                2
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Fri 15/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Saint Petersburg
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Morocco
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Iran
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                3
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Wed 20/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Moscow
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Portugal
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Morocco
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                4
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Wed 20/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Kazan
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Iran
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Spain
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                5
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Mon 25/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Saransk
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Iran
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Portugal
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Mon 25/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Kaliningrad
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Spain
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Morocco
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                        </table> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  {{--  end card --}}
+                                </div> {{--  end col div --}}
+                            </div>
+                            <div class="tab-pane container" id="grupoe">
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h4>{{ __('Gruop B') }} </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                
+                                                        <table id="myTable" class="table table-striped table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>No</th>
+                                                                        <th>Date</th>
+                                                                        <th>Venue</th>
+                                                                        <th>1st Team</th>
+                                                                        <th></th>
+                                                                        <th>2st Team</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                1
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Fri 15/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Sochi
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Portugal
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Spain
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                2
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Fri 15/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Saint Petersburg
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Morocco
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Iran
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                3
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Wed 20/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Moscow
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Portugal
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Morocco
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                4
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Wed 20/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Kazan
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Iran
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Spain
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                5
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Mon 25/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Saransk
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Iran
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Portugal
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Mon 25/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Kaliningrad
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Spain
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Morocco
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                        </table> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  {{--  end card --}}
+                                </div> {{--  end col div --}}
+                            </div>
+                            <div class="tab-pane container" id="grupof">
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h4>{{ __('Gruop B') }} </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                
+                                                        <table id="myTable" class="table table-striped table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>No</th>
+                                                                        <th>Date</th>
+                                                                        <th>Venue</th>
+                                                                        <th>1st Team</th>
+                                                                        <th></th>
+                                                                        <th>2st Team</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                1
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Fri 15/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Sochi
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Portugal
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Spain
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                2
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Fri 15/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Saint Petersburg
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Morocco
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Iran
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                3
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Wed 20/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Moscow
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Portugal
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Morocco
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                4
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Wed 20/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Kazan
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Iran
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Spain
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                5
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Mon 25/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Saransk
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Iran
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Portugal
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Mon 25/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Kaliningrad
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Spain
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Morocco
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                        </table> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  {{--  end card --}}
+                                </div> {{--  end col div --}}
+                            </div>
+                            <div class="tab-pane container" id="grupof">
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h4>{{ __('Gruop B') }} </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                
+                                                        <table id="myTable" class="table table-striped table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>No</th>
+                                                                        <th>Date</th>
+                                                                        <th>Venue</th>
+                                                                        <th>1st Team</th>
+                                                                        <th></th>
+                                                                        <th>2st Team</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                1
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Fri 15/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Sochi
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Portugal
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Spain
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                2
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Fri 15/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Saint Petersburg
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Morocco
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Iran
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                3
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Wed 20/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Moscow
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Portugal
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Morocco
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                4
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Wed 20/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Kazan
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Iran
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Spain
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                5
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Mon 25/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Saransk
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Iran
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Portugal
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Mon 25/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Kaliningrad
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Spain
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Morocco
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                        </table> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  {{--  end card --}}
+                                </div> {{--  end col div --}}
+                            </div>
+                            <div class="tab-pane container" id="grupoh">
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h4>{{ __('Gruop B') }} </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                
+                                                        <table id="myTable" class="table table-striped table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>No</th>
+                                                                        <th>Date</th>
+                                                                        <th>Venue</th>
+                                                                        <th>1st Team</th>
+                                                                        <th></th>
+                                                                        <th>2st Team</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                1
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Fri 15/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Sochi
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Portugal
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Spain
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                2
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Fri 15/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Saint Petersburg
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Morocco
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Iran
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                3
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Wed 20/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Moscow
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Portugal
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Morocco
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                4
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Wed 20/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Kazan
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Iran
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Spain
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                5
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Mon 25/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Saransk
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Iran
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Portugal
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Mon 25/6
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-12">
+                                                                                Kaliningrad
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    Spain
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <div class="form-group">
+                                                                                        <input type="text" name="" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col-md-2">
+                                                                                V
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <input type="text" name="" class="form-control">
+                                                                                </div>
+                                                                                <div class="col-md-2">
+                                                                                    <img src="">
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    Morocco
+                                                                                </div>  
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                        </table> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  {{--  end card --}}
+                                </div> {{--  end col div --}}
+                            </div>
                         </div>
                     </div>
                 </div>
