@@ -61,7 +61,7 @@
                                         <div class="card-header">
                                             <div class="row">
                                                 <div class="col-md-4">
-                                                    <h4>{{ __('Gruop A') }} </h4>
+                                                    <h4>{{ __('Group A') }} </h4>
                                                 </div>
                                             </div>
                                             
@@ -417,7 +417,7 @@
                                         <div class="card-header">
                                             <div class="row">
                                                 <div class="col-md-4">
-                                                    <h4>{{ __('Gruop B') }} </h4>
+                                                    <h4>{{ __('Group B') }} </h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -755,13 +755,13 @@
                                 </div> {{--  end col div --}}
                                     
                             </div>
-                            <div class="tab-pane container" id="grupoc">
+                            <div class="tab-pane container" id="grupoc"> <br>
                                 <div class="col-md-12">
                                     <div class="card">
                                         <div class="card-header">
                                             <div class="row">
                                                 <div class="col-md-4">
-                                                    <h4>{{ __('Gruop B') }} </h4>
+                                                    <h4>{{ __('Group C') }} </h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -790,18 +790,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Fri 15/6
+                                                                                Sat 16/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Sochi
+                                                                                Kazan
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Portugal
+                                                                                    France
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -827,7 +827,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Spain
+                                                                                    Australia
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -841,18 +841,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Fri 15/6
+                                                                                Sat 16/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Saint Petersburg
+                                                                                Saransk
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Morocco
+                                                                                    Peru
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -878,7 +878,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Iran
+                                                                                    Denmark
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -892,18 +892,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Wed 20/6
+                                                                                Thu 21/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Moscow
+                                                                                Ekaterinburg
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Portugal
+                                                                                    France
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -929,7 +929,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Morocco
+                                                                                    Peru
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -943,18 +943,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Wed 20/6
+                                                                                Thu 21/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Kazan
+                                                                                Samara
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Iran
+                                                                                    Denmark
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -980,7 +980,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Spain
+                                                                                    Australia
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -995,18 +995,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Mon 25/6
+                                                                                Tue 26/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Saransk
+                                                                                Moscow
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Iran
+                                                                                    Denmark
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -1032,7 +1032,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Portugal
+                                                                                    France
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -1047,18 +1047,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Mon 25/6
+                                                                                Tue 26/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Kaliningrad
+                                                                                Sochi
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Spain
+                                                                                    Australia
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -1084,7 +1084,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Morocco
+                                                                                    Peru
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -1098,13 +1098,13 @@
                                     </div>  {{--  end card --}}
                                 </div> {{--  end col div --}}
                             </div>
-                            <div class="tab-pane container" id="grupod">
+                            <div class="tab-pane container" id="grupod"> <br>
                                 <div class="col-md-12">
                                     <div class="card">
                                         <div class="card-header">
                                             <div class="row">
                                                 <div class="col-md-4">
-                                                    <h4>{{ __('Gruop B') }} </h4>
+                                                    <h4>{{ __('Group D') }} </h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -1133,18 +1133,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Fri 15/6
+                                                                                Sat 16/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Sochi
+                                                                                Moscow
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Portugal
+                                                                                    Argentina
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -1170,7 +1170,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Spain
+                                                                                    Iceland
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -1184,18 +1184,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Fri 15/6
+                                                                                Sat 16/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Saint Petersburg
+                                                                                Kaliningrad
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Morocco
+                                                                                    Croatia
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -1221,7 +1221,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Iran
+                                                                                    Nigeria
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -1235,18 +1235,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Wed 20/6
+                                                                                Thu 21/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Moscow
+                                                                                Nizhny Novgorod
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Portugal
+                                                                                    Argentina
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -1272,7 +1272,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Morocco
+                                                                                    Croatia
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -1286,18 +1286,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Wed 20/6
+                                                                                Fri 22/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Kazan
+                                                                                Volgograd
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Iran
+                                                                                    Nigeria
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -1323,7 +1323,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Spain
+                                                                                    Iceland
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -1338,18 +1338,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Mon 25/6
+                                                                                Tue 26/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Saransk
+                                                                                Saint Petersburg
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Iran
+                                                                                    Nigeria
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -1375,7 +1375,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Portugal
+                                                                                    Argentina
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -1390,18 +1390,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Mon 25/6
+                                                                                Tue 26/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Kaliningrad
+                                                                                Rostov-on-Don
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Spain
+                                                                                    Iceland
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -1427,7 +1427,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Morocco
+                                                                                    Croatia
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -1441,13 +1441,13 @@
                                     </div>  {{--  end card --}}
                                 </div> {{--  end col div --}}
                             </div>
-                            <div class="tab-pane container" id="grupoe">
+                            <div class="tab-pane container" id="grupoe"> <br>
                                 <div class="col-md-12">
                                     <div class="card">
                                         <div class="card-header">
                                             <div class="row">
                                                 <div class="col-md-4">
-                                                    <h4>{{ __('Gruop B') }} </h4>
+                                                    <h4>{{ __('Group E') }} </h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -1476,18 +1476,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Fri 15/6
+                                                                                Sun 17/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Sochi
+                                                                                Rostov-on-Don
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Portugal
+                                                                                    Brazil
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -1513,7 +1513,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Spain
+                                                                                    Switzerland
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -1527,18 +1527,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Fri 15/6
+                                                                                Sun 17/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Saint Petersburg
+                                                                                Samara
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Morocco
+                                                                                    Costa Rica
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -1564,7 +1564,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Iran
+                                                                                    Serbia
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -1578,18 +1578,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Wed 20/6
+                                                                                Fri 22/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Moscow
+                                                                                Saint Petersburg
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Portugal
+                                                                                    Brazil
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -1615,7 +1615,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Morocco
+                                                                                    Costa Rica
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -1629,18 +1629,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Wed 20/6
+                                                                                Fri 22/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Kazan
+                                                                                Kaliningrad
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Iran
+                                                                                    Serbia
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -1666,7 +1666,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Spain
+                                                                                    Switzerland
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -1681,18 +1681,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Mon 25/6
+                                                                                Wed 27/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Saransk
+                                                                                Moscow
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Iran
+                                                                                    Serbia
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -1718,7 +1718,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Portugal
+                                                                                    Brazil
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -1733,18 +1733,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Mon 25/6
+                                                                                Mon 27/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Kaliningrad
+                                                                                Nizhny Novgorod
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Spain
+                                                                                    Switzerland
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -1770,7 +1770,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Morocco
+                                                                                    Costa Rica
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -1784,13 +1784,13 @@
                                     </div>  {{--  end card --}}
                                 </div> {{--  end col div --}}
                             </div>
-                            <div class="tab-pane container" id="grupof">
+                            <div class="tab-pane container" id="grupof"> <br>
                                 <div class="col-md-12">
                                     <div class="card">
                                         <div class="card-header">
                                             <div class="row">
                                                 <div class="col-md-4">
-                                                    <h4>{{ __('Gruop B') }} </h4>
+                                                    <h4>{{ __('Group F') }} </h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -1819,18 +1819,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Fri 15/6
+                                                                                Fri 17/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Sochi
+                                                                                Moscow
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Portugal
+                                                                                    Germany
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -1856,7 +1856,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Spain
+                                                                                    Mexico
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -1870,18 +1870,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Fri 15/6
+                                                                                Mon 18/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Saint Petersburg
+                                                                                Nizhny Novgorod
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Morocco
+                                                                                    Sweden
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -1907,7 +1907,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Iran
+                                                                                    South Korea
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -1921,18 +1921,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Wed 20/6
+                                                                                Sat 23/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Moscow
+                                                                                Sochi
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Portugal
+                                                                                    Germany
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -1958,7 +1958,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Morocco
+                                                                                    Sweden
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -1972,18 +1972,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Wed 20/6
+                                                                                Sat 23/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Kazan
+                                                                                Rostov-on-Don
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Iran
+                                                                                    South Korea
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -2009,7 +2009,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Spain
+                                                                                    Mexico
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -2024,18 +2024,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Mon 25/6
+                                                                                Wed 27/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Saransk
+                                                                                Kazan
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Iran
+                                                                                    South Korea
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -2061,7 +2061,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Portugal
+                                                                                    Germany
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -2076,18 +2076,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Mon 25/6
+                                                                                Wed 27/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Kaliningrad
+                                                                                Ekaterinburg
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Spain
+                                                                                    Mexico
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -2113,7 +2113,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Morocco
+                                                                                    Sweden
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -2127,13 +2127,13 @@
                                     </div>  {{--  end card --}}
                                 </div> {{--  end col div --}}
                             </div>
-                            <div class="tab-pane container" id="grupof">
+                            <div class="tab-pane container" id="grupog"> <br>
                                 <div class="col-md-12">
                                     <div class="card">
                                         <div class="card-header">
                                             <div class="row">
                                                 <div class="col-md-4">
-                                                    <h4>{{ __('Gruop B') }} </h4>
+                                                    <h4>{{ __('Group G') }} </h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -2162,7 +2162,7 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Fri 15/6
+                                                                                Mon 18/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
@@ -2173,7 +2173,7 @@
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Portugal
+                                                                                    Belgium
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -2199,7 +2199,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Spain
+                                                                                    Panama
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -2213,18 +2213,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Fri 15/6
+                                                                                Mon 18/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Saint Petersburg
+                                                                                Volgograd
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Morocco
+                                                                                    Tunisia
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -2250,7 +2250,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Iran
+                                                                                    England
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -2264,7 +2264,7 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Wed 20/6
+                                                                                Sat 23/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
@@ -2275,7 +2275,7 @@
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Portugal
+                                                                                    Belgium
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -2301,7 +2301,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Morocco
+                                                                                    Tunisia
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -2315,18 +2315,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Wed 20/6
+                                                                                Sun 24/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Kazan
+                                                                                Nizhny Novgorod
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Iran
+                                                                                    England
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -2352,7 +2352,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Spain
+                                                                                    Panama
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -2367,18 +2367,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Mon 25/6
+                                                                                Thu 28/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Saransk
+                                                                                Kaliningrad
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Iran
+                                                                                    England
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -2404,7 +2404,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Portugal
+                                                                                    Belgium
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -2419,18 +2419,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Mon 25/6
+                                                                                Thu 28/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Kaliningrad
+                                                                                Saransk
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Spain
+                                                                                    Panama
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -2456,7 +2456,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Morocco
+                                                                                    Tunisia
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -2470,13 +2470,13 @@
                                     </div>  {{--  end card --}}
                                 </div> {{--  end col div --}}
                             </div>
-                            <div class="tab-pane container" id="grupoh">
+                            <div class="tab-pane container" id="grupoh"> <br>
                                 <div class="col-md-12">
                                     <div class="card">
                                         <div class="card-header">
                                             <div class="row">
                                                 <div class="col-md-4">
-                                                    <h4>{{ __('Gruop B') }} </h4>
+                                                    <h4>{{ __('Group H') }} </h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -2505,18 +2505,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Fri 15/6
+                                                                                Tue 19/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Sochi
+                                                                                Moscow
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Portugal
+                                                                                    Poland
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -2542,7 +2542,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Spain
+                                                                                    Senegal
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -2556,18 +2556,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Fri 15/6
+                                                                                Tue 19/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Saint Petersburg
+                                                                                Saransk
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Morocco
+                                                                                    Colombia
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -2593,7 +2593,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Iran
+                                                                                    Japan
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -2607,18 +2607,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Wed 20/6
+                                                                                Sun 24/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Moscow
+                                                                                Kazan
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Portugal
+                                                                                    Poland
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -2644,7 +2644,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Morocco
+                                                                                    Colombia
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -2658,18 +2658,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Wed 20/6
+                                                                                Sun 24/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Kazan
+                                                                                Ekaterinburg
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Iran
+                                                                                    Japan
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -2695,7 +2695,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Spain
+                                                                                    Senegal
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -2710,18 +2710,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Mon 25/6
+                                                                                Thu 28/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Saransk
+                                                                                Volgograd
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Iran
+                                                                                    Japan
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -2747,7 +2747,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Portugal
+                                                                                    Poland
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
@@ -2762,18 +2762,18 @@
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Mon 25/6
+                                                                                Thu 28/6
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="col-md-12">
-                                                                                Kaliningrad
+                                                                                Samara
                                                                             </div>
                                                                         </td>
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-8">
-                                                                                    Spain
+                                                                                    Senegal
                                                                                 </div>
                                                                                 <div class="col-md-2">
                                                                                     <img src="">
@@ -2799,7 +2799,7 @@
                                                                                     <img src="">
                                                                                 </div>
                                                                                 <div class="col-md-8">
-                                                                                    Morocco
+                                                                                    Colombia
                                                                                 </div>  
                                                                             </div>
                                                                         </td>
