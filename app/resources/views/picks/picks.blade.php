@@ -2277,7 +2277,9 @@
                                                                         <td>
                                                                             <div class="row">
                                                                                 <div class="col-md-3">
-                                                                                    <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                    <div class="form-group pikcs">
+                                                                                        <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                    </div>
                                                                                 </div>
                                                                                 <div class="col-md-3">
                                                                                     <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
