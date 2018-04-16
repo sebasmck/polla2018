@@ -118,7 +118,7 @@
 
                         <div class="form-group row">                                
                             <div class="col-md-12">
-                                <input id="referredby" type="text" class="form-control{{ $errors->has('referredby') ? ' is-invalid' : '' }}" name="referredby" value="{{ old('referredby') }}" required placeholder="Referred By'">
+                                <input id="referredby" type="text" class="form-control{{ $errors->has('referredby') ? ' is-invalid' : '' }}" name="referredby" value="{{ old('referredby') }}" required placeholder="Referred By">
                                     @if ($errors->has('referredby'))
                                         <span class="invalid-feedback">
                                             <strong>{{ $errors->first('referredby') }}</strong>
@@ -139,7 +139,7 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-2">
                                 <button type="" class="btn btn-primary" onclick="window.location='{{ route('login') }}'" style="width: 100%;">
-                                    {{ __('login') }}
+                                    {{ __('Login') }}
                                 </button>
                             </div>
                         </div>

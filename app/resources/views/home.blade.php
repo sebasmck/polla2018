@@ -92,7 +92,7 @@
                             <div class="col-md-10 offset-md-1 ">
                                 <div class="form-group">
                                     <button type="" class="btn btn-primary" onclick="window.location='{{ route('login') }}'" style="width: 100%;">
-                                        {{ __('Wolrdcup Results') }}
+                                        {{ __('Worldcup Results') }}
                                     </button>
                                 </div>
                             </div>

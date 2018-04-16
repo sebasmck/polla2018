@@ -63,6 +63,13 @@
                             </div>
                         </div>
                     </form>
+                        <div class="form-group row mb-0">
+                            <div class="col-md-6 offset-md-4">
+                                <button type="" class="btn btn-primary" onclick="window.location='{{ route('login') }}'" style="width: 100%;">
+                                    {{ __('Login') }}
+                                </button>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
