@@ -33,6 +33,8 @@ Route::delete('users/{id}', [
     'uses' => 'AdminsController@deleteUser'
 ]);
 
+Route::post('editstatus', 'AdminsController@editStatus')->name('editstatus');
+
 Route::Resource('admins', 'AdminsController');
 
 // PICKS
