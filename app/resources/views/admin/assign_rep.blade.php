@@ -144,18 +144,18 @@
         //     $(".modal").addClass("is-active");  
         // });
 
-        $("#close").click(function() {
-            $(".modal").removeClass("is-active");
-        });
-
-      
-        });
-
         $(document).on('click', '#showModal', function(){
 
         $('#id').val($(this).data('id'));
         $(".modal").addClass("is-active");  
 
+        });
+
+        $("#close").click(function() {
+            $(".modal").removeClass("is-active");
+        });
+
+      
         });
 
     </script>
