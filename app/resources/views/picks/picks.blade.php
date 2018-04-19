@@ -116,7 +116,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" onKeyPress="return soloNumeros(event)">
+                                                                                            <input id="fa1" type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" onKeyPress="return soloNumeros(event)">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -130,7 +130,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input  id="fa2" type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -169,7 +169,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input id="fa3" type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -183,7 +183,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input id="fa4" type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -421,6 +421,9 @@
                                                                         
                                                                     </tbody>
                                                             </table> 
+
+                                                            <a href="" id="submita"><button class="button btn-primary">click here</button></a>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -4253,6 +4256,26 @@
 </script>
 <script>
     $(document).ready( function () {
+
+    $(function(){
+            //Set button disabled
+            $('#submita').attr('disabled', 'disabled');
+
+            //Append a change event listener to your input
+            $('#submita').change(function(){
+
+                    if(($('fa1').val().length > 0) && ($('fa2').val().length > 0) && ($('fa3').val().length > 0) && ($('fa4').val().length > 0)) {
+                    $('#submita').removeAttr('disabled');  
+                    }                            
+            });
+
+            // You could then trigger the a change event on load just to check
+            $('#submita').trigger('change');
+        });
+
+
+
+
         $('#myTable').DataTable({
             paging: false,
             searching: false,
