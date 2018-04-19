@@ -131,24 +131,20 @@ class AdminsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $req, $iduser_poll)
+    public function update(Request $req)
     {
-        $poll = PollsModel::find($iduser_poll);
-        $poll->status = $req->input('status');
-
-        return redirect()->back();
-
+        
     }
 
 
     public function editStatus(Request $req){
 
-        $poll = PollsModel::find($req->iduser_poll);
+        $poll = PollsModel::find($req->input('iduser_poll'));
 
-        $poll->status = $req->status;
+        $poll->status = 'Active';
         $poll->save();
 
-        return response()->json($poll);
+        return redirect()->back();
 
     }
 

@@ -387,6 +387,9 @@
                                                                         
                                                                     </tbody>
                                                             </table> 
+
+                                                            <a href="" id="submita"><button class="button btn-primary">click here</button></a>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -4290,7 +4293,23 @@
 </script>
 <script>
     $(document).ready( function () {
-        
+
+    $(function(){
+            //Set button disabled
+            $('#submita').attr('disabled', 'disabled');
+
+            //Append a change event listener to your input
+            $('#submita').change(function(){
+
+                    if(($('fa1').val().length > 0) && ($('fa2').val().length > 0) && ($('fa3').val().length > 0) && ($('fa4').val().length > 0)) {
+                    $('#submita').removeAttr('disabled');  
+                    }                            
+            });
+
+            // You could then trigger the a change event on load just to check
+            $('#submita').trigger('change');
+        });
+
     } );
 </script>
 
