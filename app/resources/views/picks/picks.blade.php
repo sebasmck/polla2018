@@ -62,7 +62,7 @@
                             <div class="tab-pane active container" id="grupoa">
                                 <br>
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div class="col-md-7 col_group">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -70,35 +70,27 @@
                                                         <h4>{{ __('Group A') }} </h4>
                                                     </div>
                                                 </div>
-                                                
-                                                
                                             </div>
 
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                     
-                                                            <table id="myTable" class="table table-striped table-hover table_picks">
+                                                            <table id="myTable" class="display table_picks">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th>No</th>
-                                                                            <th>Date</th>
+                                                                            <th class="th-date">Date</th>
                                                                             <th>Venue</th>
                                                                             <th>1st Team</th>
-                                                                            <th></th>
+                                                                            {{-- <th></th> --}}
                                                                             <th>2st Team</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
                                                                         <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    1
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
+                                                                            <td class="td-date">
                                                                                 <div class="col-md-12">
-                                                                                    Thu 14/6
+                                                                                     6/14/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
@@ -116,21 +108,19 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-team="A1">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    V
-                                                                                </div>
-                                                                            </td>
+                                                                           {{--  <td>
+                                                                                V
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-team="A2">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -144,14 +134,9 @@
                                                                         </tr>
 
                                                                         <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    2
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
+                                                                            <td class="td-date">
                                                                                 <div class="col-md-12">
-                                                                                    Fri 15/6
+                                                                                    6/15/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
@@ -169,21 +154,21 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-team="A3">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-team="A4">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -199,14 +184,10 @@
                                                                         </tr>
 
                                                                         <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    3
-                                                                                </div>
                                                                             </td>
-                                                                            <td>
+                                                                            <td class="td-date">
                                                                                 <div class="col-md-12">
-                                                                                    Tue 19/6
+                                                                                    6/19/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
@@ -224,21 +205,21 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-team="A1">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-team="A3">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -254,12 +235,7 @@
                                                                         </tr>
 
                                                                         <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    4
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
+                                                                            <td class="td-date">
                                                                                 <div class="col-md-12">
                                                                                     Wed 20/6
                                                                                 </div>
@@ -279,21 +255,21 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-team="A4">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-team="A2">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -309,12 +285,7 @@
                                                                         </tr>
 
                                                                         <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    5
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
+                                                                            <td class="td-date"> 
                                                                                 <div class="col-md-12">
                                                                                     Mon 25/6
                                                                                 </div>
@@ -334,21 +305,21 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-team="A4">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-team="A1">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -364,12 +335,7 @@
                                                                         </tr>
 
                                                                         <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    6
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
+                                                                            <td class="td-date">
                                                                                 <div class="col-md-12">
                                                                                     Mon 25/6
                                                                                 </div>
@@ -389,21 +355,21 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-team="A2">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-team="A3">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -426,116 +392,187 @@
                                             </div>
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
-                                </div>
-                                <br>
-                                {{-- Group Standings --}}
-                                <div class="row justify-content-center">
-                                    <div class="col-md-8">
-                                        <div class="card">
-                                            <div class="card-header"><h4>{{ __('Group Standings') }}</h4></div>
+                                    <div class="col-md-5">
+                                        {{-- Group Standings --}}
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-12">
+                                                <div class="card">
+                                                    <div class="card-header"><h4>{{ __('Group Standings') }}</h4></div>
 
-                                            <div class="card-body">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                
-                                                        <table id="Standings1" class="display">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th style="width: 60%;"></th>
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                        
+                                                                <table id="Standings1" class="display table_picks">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th style="width: 60%;"></th>
 
-                                                                    <th style="width: 5%;">P</th>
-                                                                    <th style="width: 5%;">W</th>
-                                                                    <th style="width: 5%;">D</th>
-                                                                    <th style="width: 5%;">L</th>
-                                                                    <th style="width: 5%;">F</th>
-                                                                    <th style="width: 5%;">A</th>
-                                                                    <th style="width: 5%;">GD</th>
-                                                                    <th style="width: 5%;">PTS</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/russia.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Russia
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/uruguay.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Uruguay
-                                                                            </div>
-                                                                        </div></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Saudi Arabia
-                                                                            </div>
-                                                                        </div></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/egypt.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Egypt
-                                                                            </div>
-                                                                        </div></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                                            <th style="width: 5%;">P</th>
+                                                                            <th style="width: 5%;">W</th>
+                                                                            <th style="width: 5%;">D</th>
+                                                                            <th style="width: 5%;">L</th>
+                                                                            <th style="width: 5%;">F</th>
+                                                                            <th style="width: 5%;">A</th>
+                                                                            <th style="width: 5%;">GD</th>
+                                                                            <th style="width: 5%;">PTS</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/russia.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Russia
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/uruguay.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Uruguay
+                                                                                    </div>
+                                                                                </div></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Saudi Arabia
+                                                                                    </div>
+                                                                                </div></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/egypt.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Egypt
+                                                                                    </div>
+                                                                                </div></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div style="height: 8px;"></div>
+
+                                        {{-- Winners --}}
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <h4>{{ __('Winners') }} </h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        
+                                                    </div>
+
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <div class="col-md-12">Group A winner</div>
+
+                                                                            <select id="WA1" class="form-control">
+                                                                                <option></option>
+                                                                                <option id="A1" value="Russia">Russia</option>                                                                                
+                                                                                <option id="A2" value="Saudi Arabia">Saudi Arabia</option>
+                                                                                <option id="A3" value="Egypt">Egypt</option>
+                                                                                <option id="A4" value="Uruguay">Uruguay</option>
+                                                                            </select>
+                                                                        </div>
+                                                                            
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <div class="col-md-12">Group A runner-up</div>
+
+                                                                            <select id="WA2" class="form-control">
+                                                                                <option></option>
+                                                                                <option id="A1" value="Russia">Russia</option>                                                                                
+                                                                                <option id="A2" value="Saudi Arabia">Saudi Arabia</option>
+                                                                                <option id="A3" value="Egypt">Egypt</option>
+                                                                                <option id="A4" value="Uruguay">Uruguay</option>
+                                                                            </select>
+                                                                        </div>
+                                                                            
+                                                                    </div>
+                                                                </div>    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>  {{--  end card --}}
+                                            </div>
+                                            
+                                        </div>
                                     </div>
                                 </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                         <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and go home') }}
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6">
+                                         <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and continue') }}
+                                        </button>
+                                    </div>
+                                </div>
+                                
                             </div>
 
                             {{-- GRUPO B --}}
@@ -599,11 +636,11 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
@@ -4253,119 +4290,7 @@
 </script>
 <script>
     $(document).ready( function () {
-        $('#myTable').DataTable({
-            paging: false,
-            searching: false,
-            ordering:  false,
-            paging:  false
-        });
-
-        $('#myTableb').DataTable({
-            paging: false,
-            searching: false,
-            ordering:  false,
-            paging:  false
-        });
-
-        $('#myTablec').DataTable({
-            paging: false,
-            searching: false,
-            ordering:  false,
-            paging:  false
-        });
-
-        $('#myTabled').DataTable({
-            paging: false,
-            searching: false,
-            ordering:  false,
-            paging:  false
-        });
-
-        $('#myTablee').DataTable({
-            paging: false,
-            searching: false,
-            ordering:  false,
-            paging:  false
-        });
-
-        $('#myTablef').DataTable({
-            paging: false,
-            searching: false,
-            ordering:  false,
-            paging:  false
-        });
-
-        $('#myTableg').DataTable({
-            paging: false,
-            searching: false,
-            ordering:  false,
-            paging:  false
-        });
-
-        $('#myTableh').DataTable({
-            paging: false,
-            searching: false,
-            ordering:  false,
-            paging:  false
-        });
-
-        // tablas satnding
-        $('#Standings1').DataTable({
-            paging: false,
-            searching: false,
-            ordering:  false,
-            paging:  false,
-            scrollX: true
-        });
-
-        $('#Standings2').DataTable({
-            paging: false,
-            searching: false,
-            ordering:  false,
-            paging:  false
-        });
-
-        $('#Standings3').DataTable({
-            paging: false,
-            searching: false,
-            ordering:  false,
-            paging:  false
-        });
-
-        $('#Standings4').DataTable({
-            paging: false,
-            searching: false,
-            ordering:  false,
-            paging:  false
-        });
-
-        $('#Standings5').DataTable({
-            paging: false,
-            searching: false,
-            ordering:  false,
-            paging:  false
-        });
-
-        $('#Standings6').DataTable({
-            paging: false,
-            searching: false,
-            ordering:  false,
-            paging:  false
-        });
-
-        $('#Standings7').DataTable({
-            paging: false,
-            searching: false,
-            ordering:  false,
-            paging:  false
-        });
-
-        $('#Standings8').DataTable({
-            paging: false,
-            searching: false,
-            ordering:  false,
-            paging:  false
-        });
+        
     } );
 </script>
 
