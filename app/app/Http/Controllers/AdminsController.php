@@ -141,7 +141,7 @@ class AdminsController extends Controller
 
         $poll = PollsModel::find($req->input('iduser_poll'));
 
-        $poll->status = 'Active';
+        $poll->status = $req->input('status');
         $poll->save();
 
         return redirect()->back();
