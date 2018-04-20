@@ -289,9 +289,9 @@
             // Partidos Ganados t2
             if (m6_A3 > m6_A2)
             {
-                win2++;
-                lose3++;
-                pts2 = pts2 + 3;
+                win3++;
+                lose2++;
+                pts3 = pts3 + 3;
             }
 
             // Partidos Empatados t1, t2
