@@ -108,7 +108,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1A1">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1A1" onblur="match_games()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -120,7 +120,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1A2">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1A2" onblur="match_games()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -154,7 +154,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2A3">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2A3" onblur="match_games()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -168,7 +168,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2A4">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2A4" onblur="match_games()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -205,7 +205,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3A1">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3A1" onblur="match_games()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -219,7 +219,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3A3">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3A3" onblur="match_games()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -255,7 +255,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4A4">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4A4" onblur="match_games()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -269,7 +269,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4A2">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4A2" onblur="match_games()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -305,7 +305,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5A4">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5A4" onblur="match_games()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -319,7 +319,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5A1">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5A1" onblur="match_games()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -355,7 +355,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6A2">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6A2" onblur="match_games()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -369,7 +369,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6A3">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6A3" onblur="match_games()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -449,6 +449,24 @@
                                                                                         Uruguay
                                                                                     </div>
                                                                                 </div></td>
+                                                                            <td id="AP4"></td>
+                                                                            <td id="AW4"></td>
+                                                                            <td id="AD4"></td>
+                                                                            <td id="AL4"></td>
+                                                                            <td id="AF4"></td>
+                                                                            <td id="AA4"></td>
+                                                                            <td id="AGD4"></td>
+                                                                            <td id="APTS4"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Saudi Arabia
+                                                                                    </div>
+                                                                                </div></td>
                                                                             <td id="AP2"></td>
                                                                             <td id="AW2"></td>
                                                                             <td id="AD2"></td>
@@ -461,10 +479,10 @@
                                                                         <tr>
                                                                             <td><div class="row">
                                                                                     <div class="col-md-4">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/egypt.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-8">
-                                                                                        Saudi Arabia
+                                                                                        Egypt
                                                                                     </div>
                                                                                 </div></td>
                                                                             <td id="AP3"></td>
@@ -475,24 +493,6 @@
                                                                             <td id="AA3"></td>
                                                                             <td id="AGD3"></td>
                                                                             <td id="APTS3"></td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td><div class="row">
-                                                                                    <div class="col-md-4">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/egypt.png')}}">
-                                                                                    </div>
-                                                                                    <div class="col-md-8">
-                                                                                        Egypt
-                                                                                    </div>
-                                                                                </div></td>
-                                                                            <td id="AP4"></td>
-                                                                            <td id="AW4"></td>
-                                                                            <td id="AD4"></td>
-                                                                            <td id="AL4"></td>
-                                                                            <td id="AF4"></td>
-                                                                            <td id="AA4"></td>
-                                                                            <td id="AGD4"></td>
-                                                                            <td id="APTS4"></td>
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
@@ -967,6 +967,24 @@
                                                                                         Spain
                                                                                     </div>
                                                                                 </div></td>
+                                                                            <td id="BP4"></td>
+                                                                            <td id="BW4"></td>
+                                                                            <td id="BD4"></td>
+                                                                            <td id="BL4"></td>
+                                                                            <td id="BF4"></td>
+                                                                            <td id="BA4"></td>
+                                                                            <td id="BGD4"></td>
+                                                                            <td id="BPTS4"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/morocco.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Morocco
+                                                                                    </div>
+                                                                                </div></td>
                                                                             <td id="BP2"></td>
                                                                             <td id="BW2"></td>
                                                                             <td id="BD2"></td>
@@ -979,10 +997,10 @@
                                                                         <tr>
                                                                             <td><div class="row">
                                                                                     <div class="col-md-4">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/morocco.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/iran.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-8">
-                                                                                        Morocco
+                                                                                        Iran
                                                                                     </div>
                                                                                 </div></td>
                                                                             <td id="BP3"></td>
@@ -993,24 +1011,6 @@
                                                                             <td id="BA3"></td>
                                                                             <td id="BGD3"></td>
                                                                             <td id="BPTS3"></td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td><div class="row">
-                                                                                    <div class="col-md-4">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/iran.png')}}">
-                                                                                    </div>
-                                                                                    <div class="col-md-8">
-                                                                                        Iran
-                                                                                    </div>
-                                                                                </div></td>
-                                                                            <td id="BP4"></td>
-                                                                            <td id="BW4"></td>
-                                                                            <td id="BD4"></td>
-                                                                            <td id="BL4"></td>
-                                                                            <td id="BF4"></td>
-                                                                            <td id="BA4"></td>
-                                                                            <td id="BGD4"></td>
-                                                                            <td id="BPTS4"></td>
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
@@ -4337,6 +4337,7 @@
         return (key >= 48 && key <= 57)
     }
 </script>
+<script src="{{URL::asset('scripts/calculate_A.js')}}"></script>
 <script>
     $(document).ready( function () {
 
@@ -4355,27 +4356,9 @@
             // You could then trigger the a change event on load just to check
             $('#submita').trigger('change');
         });
-
-        $(".A1-A2 #A1").blur(function(){
-            calculateA();
-        });
-
     } );
 
-
-
-
-    function calculateA(){
-
-        var a1a2_A1 = $('.A1-A2 #A1').val();
-        var a1a2_A2 = $('.A1-A2 #A2').val();
-        if (a1a2_A1 != '' && a1a2_A2 != '')
-        {
-            $('#AP1').append('1');
-            console.log(a1a2_A1, a1a2_A2);
-        }
-        
-    }
+    
 </script>
 
 
