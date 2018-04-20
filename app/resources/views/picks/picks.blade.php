@@ -563,7 +563,7 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-md-6">
-                                         <button type="" class="btn btn-primary" style="width: 100%;" onclick="calculateA();">
+                                         <button type="" class="btn btn-primary" style="width: 100%;">
                                             {{ __('Save and go home') }}
                                         </button>
                                     </div>
@@ -605,7 +605,7 @@
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
-                                                                        <tr class="B1-B2">
+                                                                        <tr class="A1-A2">
                                                                             <td class="td-date">
                                                                                 <div class="col-md-12">
                                                                                      6/15/2018
@@ -626,7 +626,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="B1">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1B1" onblur="match_games_B()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -638,7 +638,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="B2">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1B2" onblur="match_games_B()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -651,7 +651,7 @@
                                                                             </td>
                                                                         </tr>
 
-                                                                        <tr class="B3-B4">
+                                                                        <tr class="A3-A4">
                                                                             <td class="td-date">
                                                                                 <div class="col-md-12">
                                                                                     6/15/2018
@@ -659,7 +659,7 @@
                                                                             </td>
                                                                             <td>
                                                                                 <div class="col-md-12">
-                                                                                     Saint Petersburg
+                                                                                    Saint Petersburg
                                                                                 </div>
                                                                             </td>
                                                                             <td>
@@ -672,7 +672,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="B3">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2B3" onblur="match_games_B()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -686,7 +686,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="B4">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2B4" onblur="match_games_B()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -701,7 +701,7 @@
                                                                             </td>
                                                                         </tr>
 
-                                                                        <tr class="B1-B3">
+                                                                        <tr class="A1-A3">
                                                                             </td>
                                                                             <td class="td-date">
                                                                                 <div class="col-md-12">
@@ -723,7 +723,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="B1">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3B1" onblur="match_games_B()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -737,7 +737,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="B3">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3B3" onblur="match_games_B()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -752,7 +752,7 @@
                                                                             </td>
                                                                         </tr>
 
-                                                                        <tr class="B4-B2">
+                                                                        <tr class="A4-A2">
                                                                             <td class="td-date">
                                                                                 <div class="col-md-12">
                                                                                     6/20/2018
@@ -760,7 +760,7 @@
                                                                             </td>
                                                                             <td>
                                                                                 <div class="col-md-12">
-                                                                                    KazanD28
+                                                                                    Kazan
                                                                                 </div>
                                                                             </td>
                                                                             <td>
@@ -773,7 +773,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="B4">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4B4" onblur="match_games_B()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -787,7 +787,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="B2">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4B2" onblur="match_games_B()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -802,7 +802,7 @@
                                                                             </td>
                                                                         </tr>
 
-                                                                        <tr class="B4-B1">
+                                                                        <tr class="A4-A1">
                                                                             <td class="td-date"> 
                                                                                 <div class="col-md-12">
                                                                                     6/25/2018
@@ -823,7 +823,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="B4">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5B4" onblur="match_games_B()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -837,7 +837,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="B1">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5B1" onblur="match_games_B()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -852,7 +852,7 @@
                                                                             </td>
                                                                         </tr>
 
-                                                                        <tr class="B2-B3">
+                                                                        <tr class="A2-A3">
                                                                             <td class="td-date">
                                                                                 <div class="col-md-12">
                                                                                     6/25/2018
@@ -873,7 +873,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="B2">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6B2" onblur="match_games_B()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -887,14 +887,14 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="B3">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6B3" onblur="match_games_B()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <img class="img_flags" src="{{asset('img/flags/morocco.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
-                                                                                        MoroccoK34
+                                                                                        Morocco
                                                                                     </div>
                                                                                     
                                                                                     
@@ -922,7 +922,7 @@
                                                         <div class="row">
                                                             <div class="col-md-12">
                                                         
-                                                                <table id="Standings1" class="display table_picks">
+                                                                <table id="Standings2" class="display table_picks">
                                                                     <thead>
                                                                         <tr>
                                                                             <th style="width: 60%;"></th>
@@ -961,10 +961,10 @@
                                                                         <tr>
                                                                             <td><div class="row">
                                                                                     <div class="col-md-4">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/spain.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/iran.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-8">
-                                                                                        Spain
+                                                                                        Iran
                                                                                     </div>
                                                                                 </div></td>
                                                                             <td id="BP4"></td>
@@ -979,10 +979,10 @@
                                                                         <tr>
                                                                             <td><div class="row">
                                                                                     <div class="col-md-4">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/morocco.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/spain.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-8">
-                                                                                        Morocco
+                                                                                        Spain
                                                                                     </div>
                                                                                 </div></td>
                                                                             <td id="BP2"></td>
@@ -997,10 +997,10 @@
                                                                         <tr>
                                                                             <td><div class="row">
                                                                                     <div class="col-md-4">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/iran.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/Morocco.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-8">
-                                                                                        Iran
+                                                                                        Morocco
                                                                                     </div>
                                                                                 </div></td>
                                                                             <td id="BP3"></td>
@@ -1042,12 +1042,12 @@
                                                                 <div class="row">
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
-                                                                            <div class="col-md-12">Group A winner</div>
+                                                                            <div class="col-md-12">Group B winner</div>
 
                                                                             <select id="WB1" class="form-control">
                                                                                 <option></option>
                                                                                 <option id="B1" value="Portugal">Portugal</option>
-                                                                                <option id="B2" value="Spain">Spain</option>
+                                                                                <option id="B2" value="Spain Arabia">Spain</option>
                                                                                 <option id="B3" value="Morocco">Morocco</option>
                                                                                 <option id="B4" value="Iran">Iran</option>
                                                                             </select>
@@ -1056,7 +1056,7 @@
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
-                                                                            <div class="col-md-12">Group A runner-up</div>
+                                                                            <div class="col-md-12">Group B runner-up</div>
 
                                                                             <select id="WB2" class="form-control">
                                                                                 <option></option>
@@ -1081,7 +1081,7 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-md-6">
-                                         <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                         <button type="" class="btn btn-primary" style="width: 100%;">
                                             {{ __('Save and go home') }}
                                         </button>
                                     </div>
@@ -1097,7 +1097,7 @@
                             <div class="tab-pane container" id="grupoc"> 
                                 <br>
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div class="col-md-7 col_group">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -1111,27 +1111,21 @@
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                     
-                                                            <table id="myTablec" class="table table-striped table-hover table_picks">
+                                                            <table id="myTable" class="display table_picks">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th>No</th>
-                                                                            <th>Date</th>
+                                                                            <th class="th-date">Date</th>
                                                                             <th>Venue</th>
                                                                             <th>1st Team</th>
-                                                                            <th></th>
+                                                                            {{-- <th></th> --}}
                                                                             <th>2st Team</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    1
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
+                                                                        <tr class="A1-A2">
+                                                                            <td class="td-date">
                                                                                 <div class="col-md-12">
-                                                                                    Sat 16/6
+                                                                                     6/16/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
@@ -1141,7 +1135,7 @@
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         France
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1149,21 +1143,19 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1C1" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    V
-                                                                                </div>
-                                                                            </td>
+                                                                           {{--  <td>
+                                                                                V
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1C2" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1171,20 +1163,15 @@
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Australia
-                                                                                    </div>  
+                                                                                    </div>
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    2
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
+                                                                        <tr class="A3-A4">
+                                                                            <td class="td-date">
                                                                                 <div class="col-md-12">
-                                                                                    Sat 16/6
+                                                                                    6/16/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
@@ -1194,7 +1181,7 @@
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Peru
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1202,21 +1189,21 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2C3" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2C4" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1224,20 +1211,18 @@
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Denmark
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    3
-                                                                                </div>
+                                                                        <tr class="A1-A3">
                                                                             </td>
-                                                                            <td>
+                                                                            <td class="td-date">
                                                                                 <div class="col-md-12">
-                                                                                    Thu 21/6
+                                                                                    6/21/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
@@ -1247,7 +1232,7 @@
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         France
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1255,21 +1240,21 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3C1" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3C3" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1277,20 +1262,17 @@
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Peru
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    4
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
+                                                                        <tr class="A4-A2">
+                                                                            <td class="td-date">
                                                                                 <div class="col-md-12">
-                                                                                    Thu 21/6
+                                                                                    6/21/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
@@ -1300,7 +1282,7 @@
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Denmark
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1308,21 +1290,21 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4C4" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4C2" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1330,21 +1312,17 @@
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Australia
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    5
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
+                                                                        <tr class="A4-A1">
+                                                                            <td class="td-date"> 
                                                                                 <div class="col-md-12">
-                                                                                    Tue 26/6
+                                                                                    6/26/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
@@ -1354,7 +1332,7 @@
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Denmark
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1362,21 +1340,21 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5C4" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5C1" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1384,21 +1362,17 @@
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         France
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    6
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
+                                                                        <tr class="A2-A3">
+                                                                            <td class="td-date">
                                                                                 <div class="col-md-12">
-                                                                                    Tue 26/6
+                                                                                    6/26/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
@@ -1408,7 +1382,7 @@
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Australia
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1416,21 +1390,21 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6C2" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6C3" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1438,126 +1412,200 @@
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Peru
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
-
+                                                                        
+                                                                        
                                                                     </tbody>
                                                             </table> 
+
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
-                                </div>
-                                 <br>
-                                {{-- Group Standings --}}
-                                <div class="row justify-content-center">
-                                    <div class="col-md-8">
-                                        <div class="card">
-                                            <div class="card-header"><h4>{{ __('Group Standings') }}</h4></div>
+                                    <div class="col-md-5">
+                                        {{-- Group Standings --}}
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-12">
+                                                <div class="card">
+                                                    <div class="card-header"><h4>{{ __('Group Standings') }}</h4></div>
 
-                                            <div class="card-body">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                
-                                                        <table id="Standings3" class="display">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th style="width: 40%;"></th>
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                        
+                                                                <table id="Standings3" class="display table_picks">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th style="width: 60%;"></th>
 
-                                                                    <th style="width: 5%;">P</th>
-                                                                    <th style="width: 5%;">W</th>
-                                                                    <th style="width: 5%;">D</th>
-                                                                    <th style="width: 5%;">L</th>
-                                                                    <th style="width: 5%;">F</th>
-                                                                    <th style="width: 5%;">A</th>
-                                                                    <th style="width: 5%;">GD</th>
-                                                                    <th style="width: 5%;">PTS</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/russia.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Russia
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/uruguay.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Uruguay
-                                                                            </div>
-                                                                        </div></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Saudi Arabia
-                                                                            </div>
-                                                                        </div></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/egypt.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Egypt
-                                                                            </div>
-                                                                        </div></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                                            <th style="width: 5%;">P</th>
+                                                                            <th style="width: 5%;">W</th>
+                                                                            <th style="width: 5%;">D</th>
+                                                                            <th style="width: 5%;">L</th>
+                                                                            <th style="width: 5%;">F</th>
+                                                                            <th style="width: 5%;">A</th>
+                                                                            <th style="width: 5%;">GD</th>
+                                                                            <th style="width: 5%;">PTS</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/france.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        France
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td id="CP1"></td>
+                                                                            <td id="CW1"></td>
+                                                                            <td id="CD1"></td>
+                                                                            <td id="CL1"></td>
+                                                                            <td id="CF1"></td>
+                                                                            <td id="CA1"></td>
+                                                                            <td id="CGD1"></td>
+                                                                            <td id="CPTS1"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/denmark.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Denmark
+                                                                                    </div>
+                                                                                </div></td>
+                                                                            <td id="CP4"></td>
+                                                                            <td id="CW4"></td>
+                                                                            <td id="CD4"></td>
+                                                                            <td id="CL4"></td>
+                                                                            <td id="CF4"></td>
+                                                                            <td id="CA4"></td>
+                                                                            <td id="CGD4"></td>
+                                                                            <td id="CPTS4"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/australia.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Australia
+                                                                                    </div>
+                                                                                </div></td>
+                                                                            <td id="CP2"></td>
+                                                                            <td id="CW2"></td>
+                                                                            <td id="CD2"></td>
+                                                                            <td id="CL2"></td>
+                                                                            <td id="CF2"></td>
+                                                                            <td id="CA2"></td>
+                                                                            <td id="CGD2"></td>
+                                                                            <td id="CPTS2"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/peru.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Peru
+                                                                                    </div>
+                                                                                </div></td>
+                                                                            <td id="CP3"></td>
+                                                                            <td id="CW3"></td>
+                                                                            <td id="CD3"></td>
+                                                                            <td id="CL3"></td>
+                                                                            <td id="CF3"></td>
+                                                                            <td id="CA3"></td>
+                                                                            <td id="CGD3"></td>
+                                                                            <td id="CPTS3"></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div style="height: 8px;"></div>
+
+                                        {{-- Winners --}}
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <h4>{{ __('Winners') }} </h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        
+                                                    </div>
+
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <div class="col-md-12">Group C winner</div>
+
+                                                                            <select id="WC1" class="form-control">
+                                                                                <option></option>
+                                                                                <option id="C1" value="France">France</option>
+                                                                                <option id="C2" value="Australia">Australia</option>
+                                                                                <option id="C3" value="Peru">Peru</option>
+                                                                                <option id="C4" value="Denmark">Denmark</option>
+                                                                            </select>
+                                                                        </div>
+                                                                            
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <div class="col-md-12">Group C runner-up</div>
+
+                                                                            <select id="WC2" class="form-control">
+                                                                                <option></option>
+                                                                                <option id="C1" value="France">France</option>
+                                                                                <option id="C2" value="Australia">Australia</option>
+                                                                                <option id="C3" value="Peru">Peru</option>
+                                                                                <option id="C4" value="Denmark">Denmark</option>
+                                                                            </select>
+                                                                        </div>
+                                                                            
+                                                                    </div>
+                                                                </div>    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>  {{--  end card --}}
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                         <button type="" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and go home') }}
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6">
+                                         <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and continue') }}
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -1566,7 +1614,7 @@
                             <div class="tab-pane container" id="grupod"> 
                                 <br>
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div class="col-md-7 col_group">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -1580,27 +1628,21 @@
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                     
-                                                            <table id="myTabled" class="table table-striped table-hover table_picks">
+                                                            <table id="myTable" class="display table_picks">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th>No</th>
-                                                                            <th>Date</th>
+                                                                            <th class="th-date">Date</th>
                                                                             <th>Venue</th>
                                                                             <th>1st Team</th>
-                                                                            <th></th>
+                                                                            {{-- <th></th> --}}
                                                                             <th>2st Team</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    1
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
+                                                                        <tr class="A1-A2">
+                                                                            <td class="td-date">
                                                                                 <div class="col-md-12">
-                                                                                    Sat 16/6
+                                                                                     6/16/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
@@ -1610,50 +1652,43 @@
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Argentina
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/argentina.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1D1" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    V
-                                                                                </div>
-                                                                            </td>
+                                                                           {{--  <td>
+                                                                                V
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1D2" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/iceland.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Iceland
-                                                                                    </div>  
+                                                                                    </div>
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    2
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
+                                                                        <tr class="A3-A4">
+                                                                            <td class="td-date">
                                                                                 <div class="col-md-12">
-                                                                                    Sat 16/6
+                                                                                    6/16/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
@@ -1663,50 +1698,48 @@
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Croatia
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/croatia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2D3" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2D4" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/nigeria.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Nigeria
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    3
-                                                                                </div>
+                                                                        <tr class="A1-A3">
                                                                             </td>
-                                                                            <td>
+                                                                            <td class="td-date">
                                                                                 <div class="col-md-12">
-                                                                                    Thu 21/6
+                                                                                    6/21/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
@@ -1716,50 +1749,47 @@
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Argentina
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/argentina.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3D1" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3D3" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/croatia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Croatia
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    4
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
+                                                                        <tr class="A4-A2">
+                                                                            <td class="td-date">
                                                                                 <div class="col-md-12">
-                                                                                    Fri 22/6
+                                                                                    6/22/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
@@ -1769,105 +1799,97 @@
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Nigeria
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/nigeria.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4D4" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4D2" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/iceland.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Iceland
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    5
+                                                                        <tr class="A4-A1">
+                                                                            <td class="td-date"> 
+                                                                                <div class="col-md-12">
+                                                                                    6/26/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="col-md-12">
-                                                                                    Tue 26/6
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="col-md-12">
-                                                                                    Saint Petersburg
+                                                                                     Saint Petersburg
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Nigeria
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/nigeria.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5D4" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5D1" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/argentina.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Argentina
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    6
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
+                                                                        <tr class="A2-A3">
+                                                                            <td class="td-date">
                                                                                 <div class="col-md-12">
-                                                                                    Tue 26/6
+                                                                                    6/26/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
@@ -1877,156 +1899,230 @@
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Iceland
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/iceland.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6D2" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6D3" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/croatia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Croatia
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
-
+                                                                        
+                                                                        
                                                                     </tbody>
                                                             </table> 
+
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
-                                </div>
-                                 <br>
-                                {{-- Group Standings --}}
-                                <div class="row justify-content-center">
-                                    <div class="col-md-8">
-                                        <div class="card">
-                                            <div class="card-header"><h4>{{ __('Group Standings') }}</h4></div>
+                                    <div class="col-md-5">
+                                        {{-- Group Standings --}}
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-12">
+                                                <div class="card">
+                                                    <div class="card-header"><h4>{{ __('Group Standings') }}</h4></div>
 
-                                            <div class="card-body">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                
-                                                        <table id="Standings4" class="display">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th style="width: 40%;"></th>
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                        
+                                                                <table id="Standings4" class="display table_picks">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th style="width: 60%;"></th>
 
-                                                                    <th style="width: 5%;">P</th>
-                                                                    <th style="width: 5%;">W</th>
-                                                                    <th style="width: 5%;">D</th>
-                                                                    <th style="width: 5%;">L</th>
-                                                                    <th style="width: 5%;">F</th>
-                                                                    <th style="width: 5%;">A</th>
-                                                                    <th style="width: 5%;">GD</th>
-                                                                    <th style="width: 5%;">PTS</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/russia.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Russia
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/uruguay.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Uruguay
-                                                                            </div>
-                                                                        </div></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Saudi Arabia
-                                                                            </div>
-                                                                        </div></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/egypt.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Egypt
-                                                                            </div>
-                                                                        </div></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                                            <th style="width: 5%;">P</th>
+                                                                            <th style="width: 5%;">W</th>
+                                                                            <th style="width: 5%;">D</th>
+                                                                            <th style="width: 5%;">L</th>
+                                                                            <th style="width: 5%;">F</th>
+                                                                            <th style="width: 5%;">A</th>
+                                                                            <th style="width: 5%;">GD</th>
+                                                                            <th style="width: 5%;">PTS</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/argentina.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Argentina
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td id="DP1"></td>
+                                                                            <td id="DW1"></td>
+                                                                            <td id="DD1"></td>
+                                                                            <td id="DL1"></td>
+                                                                            <td id="DF1"></td>
+                                                                            <td id="DA1"></td>
+                                                                            <td id="DGD1"></td>
+                                                                            <td id="DPTS1"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/nigeria.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Nigeria
+                                                                                    </div>
+                                                                                </div></td>
+                                                                            <td id="DP4"></td>
+                                                                            <td id="DW4"></td>
+                                                                            <td id="DD4"></td>
+                                                                            <td id="DL4"></td>
+                                                                            <td id="DF4"></td>
+                                                                            <td id="DA4"></td>
+                                                                            <td id="DGD4"></td>
+                                                                            <td id="DPTS4"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/iceland.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Iceland
+                                                                                    </div>
+                                                                                </div></td>
+                                                                            <td id="DP2"></td>
+                                                                            <td id="DW2"></td>
+                                                                            <td id="DD2"></td>
+                                                                            <td id="DL2"></td>
+                                                                            <td id="DF2"></td>
+                                                                            <td id="DA2"></td>
+                                                                            <td id="DGD2"></td>
+                                                                            <td id="DPTS2"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/croatia.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Croatia
+                                                                                    </div>
+                                                                                </div></td>
+                                                                            <td id="DP3"></td>
+                                                                            <td id="DW3"></td>
+                                                                            <td id="DD3"></td>
+                                                                            <td id="DL3"></td>
+                                                                            <td id="DF3"></td>
+                                                                            <td id="DA3"></td>
+                                                                            <td id="DGD3"></td>
+                                                                            <td id="DPTS3"></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div style="height: 8px;"></div>
+
+                                        {{-- Winners --}}
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <h4>{{ __('Winners') }} </h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        
+                                                    </div>
+
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <div class="col-md-12">Group D winner</div>
+
+                                                                            <select id="WD1" class="form-control">
+                                                                                <option></option>
+                                                                                <option id="D1" value="Argentina">Argentina</option>
+                                                                                <option id="D2" value="Iceland">Iceland</option>
+                                                                                <option id="D3" value="Croatia">Croatia</option>
+                                                                                <option id="D4" value="Nigeria">Nigeria</option>
+                                                                            </select>
+                                                                        </div>
+                                                                            
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <div class="col-md-12">Group D runner-up</div>
+
+                                                                            <select id="WD2" class="form-control">
+                                                                                <option></option>
+                                                                                <option id="D1" value="Argentina">Argentina</option>
+                                                                                <option id="D2" value="Iceland">Iceland</option>
+                                                                                <option id="D3" value="Croatia">Croatia</option>
+                                                                                <option id="D4" value="Nigeria">Nigeria</option>
+                                                                            </select>
+                                                                        </div>
+                                                                            
+                                                                    </div>
+                                                                </div>    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>  {{--  end card --}}
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                         <button type="" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and go home') }}
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6">
+                                         <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and continue') }}
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -2035,7 +2131,7 @@
                             <div class="tab-pane container" id="grupoe">
                                 <br>
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div class="col-md-7 col_group">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -2049,80 +2145,67 @@
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                     
-                                                            <table id="myTablee" class="table table-striped table-hover table_picks">
+                                                            <table id="myTable" class="display table_picks">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th>No</th>
-                                                                            <th>Date</th>
+                                                                            <th class="th-date">Date</th>
                                                                             <th>Venue</th>
                                                                             <th>1st Team</th>
-                                                                            <th></th>
+                                                                            {{-- <th></th> --}}
                                                                             <th>2st Team</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    1
+                                                                        <tr class="A1-A2">
+                                                                            <td class="td-date">
+                                                                                <div class="col-md-12">
+                                                                                     6/17/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="col-md-12">
-                                                                                    Sun 17/6
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="col-md-12">
-                                                                                    Rostov-on-Don
+                                                                                     Rostov-on-Don
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Brazil
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/brazil.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1E1" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    V
-                                                                                </div>
-                                                                            </td>
+                                                                           {{--  <td>
+                                                                                V
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1E2" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/switzerland.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Switzerland
-                                                                                    </div>  
+                                                                                    </div>
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    2
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
+                                                                        <tr class="A3-A4">
+                                                                            <td class="td-date">
                                                                                 <div class="col-md-12">
-                                                                                    Sun 17/6
+                                                                                    6/17/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
@@ -2132,50 +2215,48 @@
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Costa Rica
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/costa_rica.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2E3" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2E4" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/serbia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Serbia
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    3
-                                                                                </div>
+                                                                        <tr class="A1-A3">
                                                                             </td>
-                                                                            <td>
+                                                                            <td class="td-date">
                                                                                 <div class="col-md-12">
-                                                                                    Fri 22/6
+                                                                                    6/22/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
@@ -2185,50 +2266,47 @@
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Brazil
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/brazil.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3E1" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3E3" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/costa_rica.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Costa Rica
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    4
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
+                                                                        <tr class="A4-A2">
+                                                                            <td class="td-date">
                                                                                 <div class="col-md-12">
-                                                                                    Fri 22/6
+                                                                                    6/22/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
@@ -2238,264 +2316,330 @@
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Serbia
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/serbia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4E4" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4E2" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/switzerland.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Switzerland
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    5
+                                                                        <tr class="A4-A1">
+                                                                            <td class="td-date"> 
+                                                                                <div class="col-md-12">
+                                                                                    6/27/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="col-md-12">
-                                                                                    Wed 27/6
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="col-md-12">
-                                                                                    Moscow
+                                                                                     Moscow
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Serbia
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/serbia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5E4" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5E1" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/brazil.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Brazil
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    6
+                                                                        <tr class="A2-A3">
+                                                                            <td class="td-date">
+                                                                                <div class="col-md-12">
+                                                                                    6/27/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="col-md-12">
-                                                                                    Mon 27/6
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="col-md-12">
-                                                                                    Nizhny Novgorod
+                                                                                     Nizhny Novgorod
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Switzerland
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/switzerland.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6E2" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6E3" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/costa_rica.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Costa Rica
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
-
+                                                                        
+                                                                        
                                                                     </tbody>
                                                             </table> 
+
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
-                                </div>
-                                 <br>
-                                {{-- Group Standings --}}
-                                <div class="row justify-content-center">
-                                    <div class="col-md-8">
-                                        <div class="card">
-                                            <div class="card-header"><h4>{{ __('Group Standings') }}</h4></div>
+                                    <div class="col-md-5">
+                                        {{-- Group Standings --}}
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-12">
+                                                <div class="card">
+                                                    <div class="card-header"><h4>{{ __('Group Standings') }}</h4></div>
 
-                                            <div class="card-body">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                
-                                                        <table id="Standings5" class="display">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th style="width: 40%;"></th>
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                        
+                                                                <table id="Standings5" class="display table_picks">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th style="width: 60%;"></th>
 
-                                                                    <th style="width: 5%;">P</th>
-                                                                    <th style="width: 5%;">W</th>
-                                                                    <th style="width: 5%;">D</th>
-                                                                    <th style="width: 5%;">L</th>
-                                                                    <th style="width: 5%;">F</th>
-                                                                    <th style="width: 5%;">A</th>
-                                                                    <th style="width: 5%;">GD</th>
-                                                                    <th style="width: 5%;">PTS</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/russia.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Russia
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/uruguay.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Uruguay
-                                                                            </div>
-                                                                        </div></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Saudi Arabia
-                                                                            </div>
-                                                                        </div></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/egypt.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Egypt
-                                                                            </div>
-                                                                        </div></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                                            <th style="width: 5%;">P</th>
+                                                                            <th style="width: 5%;">W</th>
+                                                                            <th style="width: 5%;">D</th>
+                                                                            <th style="width: 5%;">L</th>
+                                                                            <th style="width: 5%;">F</th>
+                                                                            <th style="width: 5%;">A</th>
+                                                                            <th style="width: 5%;">GD</th>
+                                                                            <th style="width: 5%;">PTS</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/brazil.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Brazil
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td id="EP1"></td>
+                                                                            <td id="EW1"></td>
+                                                                            <td id="ED1"></td>
+                                                                            <td id="EL1"></td>
+                                                                            <td id="EF1"></td>
+                                                                            <td id="EA1"></td>
+                                                                            <td id="EGD1"></td>
+                                                                            <td id="EPTS1"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/serbia.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Serbia
+                                                                                    </div>
+                                                                                </div></td>
+                                                                            <td id="EP4"></td>
+                                                                            <td id="EW4"></td>
+                                                                            <td id="ED4"></td>
+                                                                            <td id="EL4"></td>
+                                                                            <td id="EF4"></td>
+                                                                            <td id="EA4"></td>
+                                                                            <td id="EGD4"></td>
+                                                                            <td id="EPTS4"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/switzerland.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Switzerland
+                                                                                    </div>
+                                                                                </div></td>
+                                                                            <td id="EP2"></td>
+                                                                            <td id="EW2"></td>
+                                                                            <td id="ED2"></td>
+                                                                            <td id="EL2"></td>
+                                                                            <td id="EF2"></td>
+                                                                            <td id="EA2"></td>
+                                                                            <td id="EGD2"></td>
+                                                                            <td id="EPTS2"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/costa_rica.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Costa Rica
+                                                                                    </div>
+                                                                                </div></td>
+                                                                            <td id="EP3"></td>
+                                                                            <td id="EW3"></td>
+                                                                            <td id="ED3"></td>
+                                                                            <td id="EL3"></td>
+                                                                            <td id="EF3"></td>
+                                                                            <td id="EA3"></td>
+                                                                            <td id="EGD3"></td>
+                                                                            <td id="EPTS3"></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div style="height: 8px;"></div>
+
+                                        {{-- Winners --}}
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <h4>{{ __('Winners') }} </h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        
+                                                    </div>
+
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <div class="col-md-12">Group E winner</div>
+
+                                                                            <select id="WE1" class="form-control">
+                                                                                <option></option>
+                                                                                <option id="E1" value="Brazil">Brazil</option>
+                                                                                <option id="E2" value="Switzerland">Switzerland</option>
+                                                                                <option id="E3" value="Costa Rica">Costa Rica</option>
+                                                                                <option id="E4" value="Serbia">Serbia</option>
+                                                                            </select>
+                                                                        </div>
+                                                                            
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <div class="col-md-12">Group E runner-up</div>
+
+                                                                            <select id="WE2" class="form-control">
+                                                                                <option></option>
+                                                                                <option id="E1" value="Brazil">Brazil</option>
+                                                                                <option id="E2" value="Switzerland">Switzerland</option>
+                                                                                <option id="E3" value="Costa Rica">Costa Rica</option>
+                                                                                <option id="E4" value="Serbia">Serbia</option>
+                                                                            </select>
+                                                                        </div>
+                                                                            
+                                                                    </div>
+                                                                </div>    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>  {{--  end card --}}
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                         <button type="" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and go home') }}
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6">
+                                         <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and continue') }}
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -2504,7 +2648,7 @@
                             <div class="tab-pane container" id="grupof">
                                 <br>
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div class="col-md-7 col_group">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -2518,133 +2662,118 @@
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                     
-                                                            <table id="myTablef" class="table table-striped table-hover table_picks">
+                                                            <table id="myTable" class="display table_picks">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th>No</th>
-                                                                            <th>Date</th>
+                                                                            <th class="th-date">Date</th>
                                                                             <th>Venue</th>
                                                                             <th>1st Team</th>
-                                                                            <th></th>
+                                                                            {{-- <th></th> --}}
                                                                             <th>2st Team</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    1
+                                                                        <tr class="A1-A2">
+                                                                            <td class="td-date">
+                                                                                <div class="col-md-12">
+                                                                                     6/17/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="col-md-12">
-                                                                                    Fri 17/6
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="col-md-12">
-                                                                                    Moscow
+                                                                                     Moscow
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Germany
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/Germany.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1F1" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    V
-                                                                                </div>
-                                                                            </td>
+                                                                           {{--  <td>
+                                                                                V
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1F2" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/mexico.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Mexico
-                                                                                    </div>  
+                                                                                    </div>
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    2
+                                                                        <tr class="A3-A4">
+                                                                            <td class="td-date">
+                                                                                <div class="col-md-12">
+                                                                                    6/18/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="col-md-12">
-                                                                                    Mon 18/6
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="col-md-12">
-                                                                                    Nizhny Novgorod
+                                                                                     Nizhny Novgorod
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Sweden
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/sweden.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2F3" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2F4" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/south_korea.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         South Korea
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    3
-                                                                                </div>
+                                                                        <tr class="A1-A3">
                                                                             </td>
-                                                                            <td>
+                                                                            <td class="td-date">
                                                                                 <div class="col-md-12">
-                                                                                    Sat 23/6
+                                                                                    6/23/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
@@ -2654,317 +2783,380 @@
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Germany
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/Germany.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3F1" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3F3" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/sweden.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Sweden
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    4
+                                                                        <tr class="A4-A2">
+                                                                            <td class="td-date">
+                                                                                <div class="col-md-12">
+                                                                                    6/23/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="col-md-12">
-                                                                                    Sat 23/6
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="col-md-12">
-                                                                                    Rostov-on-Don
+                                                                                     Rostov-on-Don
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         South Korea
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/south_korea.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4F4" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4F2" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/mexico.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Mexico
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    5
+                                                                        <tr class="A4-A1">
+                                                                            <td class="td-date"> 
+                                                                                <div class="col-md-12">
+                                                                                    6/27/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="col-md-12">
-                                                                                    Wed 27/6
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="col-md-12">
-                                                                                    Kazan
+                                                                                     Kazan
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         South Korea
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/south_korea.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5F4" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5F1" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/Germany.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Germany
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    6
+                                                                        <tr class="A2-A3">
+                                                                            <td class="td-date">
+                                                                                <div class="col-md-12">
+                                                                                    6/27/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="col-md-12">
-                                                                                    Wed 27/6
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="col-md-12">
-                                                                                    Ekaterinburg
+                                                                                     Ekaterinburg
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Mexico
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/mexico.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6F2" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6F3" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/sweden.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Sweden
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
-
+                                                                        
+                                                                        
                                                                     </tbody>
                                                             </table> 
+
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
-                                </div>
-                                 <br>
-                                {{-- Group Standings --}}
-                                <div class="row justify-content-center">
-                                    <div class="col-md-8">
-                                        <div class="card">
-                                            <div class="card-header"><h4>{{ __('Group Standings') }}</h4></div>
+                                    <div class="col-md-5">
+                                        {{-- Group Standings --}}
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-12">
+                                                <div class="card">
+                                                    <div class="card-header"><h4>{{ __('Group Standings') }}</h4></div>
 
-                                            <div class="card-body">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                
-                                                        <table id="Standings6" class="display">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th style="width: 40%;"></th>
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                        
+                                                                <table id="Standings6" class="display table_picks">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th style="width: 60%;"></th>
 
-                                                                    <th style="width: 5%;">P</th>
-                                                                    <th style="width: 5%;">W</th>
-                                                                    <th style="width: 5%;">D</th>
-                                                                    <th style="width: 5%;">L</th>
-                                                                    <th style="width: 5%;">F</th>
-                                                                    <th style="width: 5%;">A</th>
-                                                                    <th style="width: 5%;">GD</th>
-                                                                    <th style="width: 5%;">PTS</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/russia.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Russia
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/uruguay.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Uruguay
-                                                                            </div>
-                                                                        </div></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Saudi Arabia
-                                                                            </div>
-                                                                        </div></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/egypt.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Egypt
-                                                                            </div>
-                                                                        </div></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                                            <th style="width: 5%;">P</th>
+                                                                            <th style="width: 5%;">W</th>
+                                                                            <th style="width: 5%;">D</th>
+                                                                            <th style="width: 5%;">L</th>
+                                                                            <th style="width: 5%;">F</th>
+                                                                            <th style="width: 5%;">A</th>
+                                                                            <th style="width: 5%;">GD</th>
+                                                                            <th style="width: 5%;">PTS</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/Germany.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Germany
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td id="FP1"></td>
+                                                                            <td id="FW1"></td>
+                                                                            <td id="FD1"></td>
+                                                                            <td id="FL1"></td>
+                                                                            <td id="FF1"></td>
+                                                                            <td id="FA1"></td>
+                                                                            <td id="FGD1"></td>
+                                                                            <td id="FPTS1"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/south_korea.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        South Korea
+                                                                                    </div>
+                                                                                </div></td>
+                                                                            <td id="FP4"></td>
+                                                                            <td id="FW4"></td>
+                                                                            <td id="FD4"></td>
+                                                                            <td id="FL4"></td>
+                                                                            <td id="FF4"></td>
+                                                                            <td id="FA4"></td>
+                                                                            <td id="FGD4"></td>
+                                                                            <td id="FPTS4"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/mexico.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Mexico
+                                                                                    </div>
+                                                                                </div></td>
+                                                                            <td id="FP2"></td>
+                                                                            <td id="FW2"></td>
+                                                                            <td id="FD2"></td>
+                                                                            <td id="FL2"></td>
+                                                                            <td id="FF2"></td>
+                                                                            <td id="FA2"></td>
+                                                                            <td id="FGD2"></td>
+                                                                            <td id="FPTS2"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/sweden.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Sweden
+                                                                                    </div>
+                                                                                </div></td>
+                                                                            <td id="FP3"></td>
+                                                                            <td id="FW3"></td>
+                                                                            <td id="FD3"></td>
+                                                                            <td id="FL3"></td>
+                                                                            <td id="FF3"></td>
+                                                                            <td id="FA3"></td>
+                                                                            <td id="FGD3"></td>
+                                                                            <td id="FPTS3"></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div style="height: 8px;"></div>
+
+                                        {{-- Winners --}}
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <h4>{{ __('Winners') }} </h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        
+                                                    </div>
+
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <div class="col-md-12">Group F winner</div>
+
+                                                                            <select id="WF1" class="form-control">
+                                                                                <option></option>
+                                                                                <option id="F1" value="Germany">Germany</option>
+                                                                                <option id="F2" value="Mexico">Mexico</option>
+                                                                                <option id="F3" value="Sweden">Sweden</option>
+                                                                                <option id="F4" value="South Korea">South Korea</option>
+                                                                            </select>
+                                                                        </div>
+                                                                            
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <div class="col-md-12">Group F runner-up</div>
+
+                                                                            <select id="WF2" class="form-control">
+                                                                                <option></option>
+                                                                                <option id="F1" value="Germany">Germany</option>
+                                                                                <option id="F2" value="Mexico">Mexico</option>
+                                                                                <option id="F3" value="Sweden">Sweden</option>
+                                                                                <option id="F4" value="South Korea">South Korea</option>
+                                                                            </select>
+                                                                        </div>
+                                                                            
+                                                                    </div>
+                                                                </div>    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>  {{--  end card --}}
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                         <button type="" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and go home') }}
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6">
+                                         <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and continue') }}
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -2973,7 +3165,7 @@
                             <div class="tab-pane container" id="grupog">
                                 <br>
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div class="col-md-7 col_group">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -2987,133 +3179,118 @@
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                     
-                                                            <table id="myTableg" class="table table-striped table-hover table_picks">
+                                                            <table id="myTable" class="display table_picks">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th>No</th>
-                                                                            <th>Date</th>
+                                                                            <th class="th-date">Date</th>
                                                                             <th>Venue</th>
                                                                             <th>1st Team</th>
-                                                                            <th></th>
+                                                                            {{-- <th></th> --}}
                                                                             <th>2st Team</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    1
+                                                                        <tr class="A1-A2">
+                                                                            <td class="td-date">
+                                                                                <div class="col-md-12">
+                                                                                     6/18/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="col-md-12">
-                                                                                    Mon 18/6
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="col-md-12">
-                                                                                    Sochi
+                                                                                     Sochi
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Belgium
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/belgium.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1G1" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    V
-                                                                                </div>
-                                                                            </td>
+                                                                           {{--  <td>
+                                                                                V
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1G2" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/panama.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Panama
-                                                                                    </div>  
+                                                                                    </div>
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    2
+                                                                        <tr class="A3-A4">
+                                                                            <td class="td-date">
+                                                                                <div class="col-md-12">
+                                                                                    6/18/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="col-md-12">
-                                                                                    Mon 18/6
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="col-md-12">
-                                                                                    Volgograd
+                                                                                     Volgograd
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Tunisia
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/tunisia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2G3" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2G4" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/england.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         England
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    3
-                                                                                </div>
+                                                                        <tr class="A1-A3">
                                                                             </td>
-                                                                            <td>
+                                                                            <td class="td-date">
                                                                                 <div class="col-md-12">
-                                                                                    Sat 23/6
+                                                                                    6/23/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
@@ -3123,317 +3300,380 @@
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Belgium
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/belgium.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3G1" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3G3" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/tunisia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Tunisia
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    4
+                                                                        <tr class="A4-A2">
+                                                                            <td class="td-date">
+                                                                                <div class="col-md-12">
+                                                                                    6/24/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="col-md-12">
-                                                                                    Sun 24/6
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="col-md-12">
-                                                                                    Nizhny Novgorod
+                                                                                      Nizhny Novgorod
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         England
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/england.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4G4" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4G2" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/panama.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Panama
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    5
+                                                                        <tr class="A4-A1">
+                                                                            <td class="td-date"> 
+                                                                                <div class="col-md-12">
+                                                                                    6/28/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="col-md-12">
-                                                                                    Thu 28/6
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="col-md-12">
-                                                                                    Kaliningrad
+                                                                                     Kaliningrad
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         England
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/england.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5G4" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5G1" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/belgium.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Belgium
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    6
+                                                                        <tr class="A2-A3">
+                                                                            <td class="td-date">
+                                                                                <div class="col-md-12">
+                                                                                    6/28/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="col-md-12">
-                                                                                    Thu 28/6
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="col-md-12">
-                                                                                    Saransk
+                                                                                     Saransk
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Panama
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/panama.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6G2" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6G3" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/tunisia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Tunisia
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
-
+                                                                        
+                                                                        
                                                                     </tbody>
                                                             </table> 
+
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
-                                </div>
-                                 <br>
-                                {{-- Group Standings --}}
-                                <div class="row justify-content-center">
-                                    <div class="col-md-8">
-                                        <div class="card">
-                                            <div class="card-header"><h4>{{ __('Group Standings') }}</h4></div>
+                                    <div class="col-md-5">
+                                        {{-- Group Standings --}}
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-12">
+                                                <div class="card">
+                                                    <div class="card-header"><h4>{{ __('Group Standings') }}</h4></div>
 
-                                            <div class="card-body">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                
-                                                        <table id="Standings7" class="display">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th style="width: 40%;"></th>
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                        
+                                                                <table id="Standings7" class="display table_picks">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th style="width: 60%;"></th>
 
-                                                                    <th style="width: 5%;">P</th>
-                                                                    <th style="width: 5%;">W</th>
-                                                                    <th style="width: 5%;">D</th>
-                                                                    <th style="width: 5%;">L</th>
-                                                                    <th style="width: 5%;">F</th>
-                                                                    <th style="width: 5%;">A</th>
-                                                                    <th style="width: 5%;">GD</th>
-                                                                    <th style="width: 5%;">PTS</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/russia.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Russia
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/uruguay.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Uruguay
-                                                                            </div>
-                                                                        </div></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Saudi Arabia
-                                                                            </div>
-                                                                        </div></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/egypt.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Egypt
-                                                                            </div>
-                                                                        </div></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                                            <th style="width: 5%;">P</th>
+                                                                            <th style="width: 5%;">W</th>
+                                                                            <th style="width: 5%;">D</th>
+                                                                            <th style="width: 5%;">L</th>
+                                                                            <th style="width: 5%;">F</th>
+                                                                            <th style="width: 5%;">A</th>
+                                                                            <th style="width: 5%;">GD</th>
+                                                                            <th style="width: 5%;">PTS</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/belgium.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Belgium
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td id="GP1"></td>
+                                                                            <td id="GW1"></td>
+                                                                            <td id="GD1"></td>
+                                                                            <td id="GL1"></td>
+                                                                            <td id="GF1"></td>
+                                                                            <td id="GA1"></td>
+                                                                            <td id="GGD1"></td>
+                                                                            <td id="GPTS1"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/england.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        England
+                                                                                    </div>
+                                                                                </div></td>
+                                                                            <td id="GP4"></td>
+                                                                            <td id="GW4"></td>
+                                                                            <td id="GD4"></td>
+                                                                            <td id="GL4"></td>
+                                                                            <td id="GF4"></td>
+                                                                            <td id="GA4"></td>
+                                                                            <td id="GGD4"></td>
+                                                                            <td id="GPTS4"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/panama.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Panama
+                                                                                    </div>
+                                                                                </div></td>
+                                                                            <td id="GP2"></td>
+                                                                            <td id="GW2"></td>
+                                                                            <td id="GD2"></td>
+                                                                            <td id="GL2"></td>
+                                                                            <td id="GF2"></td>
+                                                                            <td id="GA2"></td>
+                                                                            <td id="GGD2"></td>
+                                                                            <td id="GPTS2"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/tunisia.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Tunisia
+                                                                                    </div>
+                                                                                </div></td>
+                                                                            <td id="GP3"></td>
+                                                                            <td id="GW3"></td>
+                                                                            <td id="GD3"></td>
+                                                                            <td id="GL3"></td>
+                                                                            <td id="GF3"></td>
+                                                                            <td id="GA3"></td>
+                                                                            <td id="GGD3"></td>
+                                                                            <td id="GPTS3"></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div style="height: 8px;"></div>
+
+                                        {{-- Winners --}}
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <h4>{{ __('Winners') }} </h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        
+                                                    </div>
+
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <div class="col-md-12">Group G winner</div>
+
+                                                                            <select id="WG1" class="form-control">
+                                                                                <option></option>
+                                                                                <option id="G1" value="Belgium">Belgium</option>
+                                                                                <option id="G2" value="Panama">Panama</option>
+                                                                                <option id="G3" value="Tunisia">Tunisia</option>
+                                                                                <option id="G4" value="England">England</option>
+                                                                            </select>
+                                                                        </div>
+                                                                            
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <div class="col-md-12">Group G runner-up</div>
+
+                                                                            <select id="WG2" class="form-control">
+                                                                                <option></option>
+                                                                                <option id="G1" value="Belgium">Belgium</option>
+                                                                                <option id="G2" value="Panama">Panama</option>
+                                                                                <option id="G3" value="Tunisia">Tunisia</option>
+                                                                                <option id="G4" value="England">England</option>
+                                                                            </select>
+                                                                        </div>
+                                                                            
+                                                                    </div>
+                                                                </div>    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>  {{--  end card --}}
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                         <button type="" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and go home') }}
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6">
+                                         <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and continue') }}
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -3442,7 +3682,7 @@
                             <div class="tab-pane container" id="grupoh">
                                 <br>
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div class="col-md-7 col_group">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -3456,453 +3696,501 @@
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                     
-                                                            <table id="myTableh" class="table table-striped table-hover table_picks">
+                                                            <table id="myTable" class="display table_picks">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th>No</th>
-                                                                            <th>Date</th>
+                                                                            <th class="th-date">Date</th>
                                                                             <th>Venue</th>
                                                                             <th>1st Team</th>
-                                                                            <th></th>
+                                                                            {{-- <th></th> --}}
                                                                             <th>2st Team</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    1
+                                                                        <tr class="A1-A2">
+                                                                            <td class="td-date">
+                                                                                <div class="col-md-12">
+                                                                                     6/19/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="col-md-12">
-                                                                                    Tue 19/6
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="col-md-12">
-                                                                                    Moscow
+                                                                                     Moscow
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Poland
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/poland.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1H1" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    V
-                                                                                </div>
-                                                                            </td>
+                                                                           {{--  <td>
+                                                                                V
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1H2" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/senegal.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Senegal
-                                                                                    </div>  
+                                                                                    </div>
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    2
+                                                                        <tr class="A3-A4">
+                                                                            <td class="td-date">
+                                                                                <div class="col-md-12">
+                                                                                    6/19/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="col-md-12">
-                                                                                    Tue 19/6
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="col-md-12">
-                                                                                    Saransk
+                                                                                     Saransk
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Colombia
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/Colombia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2H3" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2H4" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/japan.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Japan
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    3
+                                                                        <tr class="A1-A3">
+                                                                            </td>
+                                                                            <td class="td-date">
+                                                                                <div class="col-md-12">
+                                                                                    6/24/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="col-md-12">
-                                                                                    Sun 24/6
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="col-md-12">
-                                                                                    Kazan
+                                                                                     Kazan
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Poland
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/poland.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3H1" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3H3" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/Colombia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Colombia
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    4
+                                                                        <tr class="A4-A2">
+                                                                            <td class="td-date">
+                                                                                <div class="col-md-12">
+                                                                                    6/24/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="col-md-12">
-                                                                                    Sun 24/6
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="col-md-12">
-                                                                                    Ekaterinburg
+                                                                                      Ekaterinburg
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Japan
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/japan.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4H4" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4H2" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/senegal.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Senegal
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    5
+                                                                        <tr class="A4-A1">
+                                                                            <td class="td-date"> 
+                                                                                <div class="col-md-12">
+                                                                                    6/28/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="col-md-12">
-                                                                                    Thu 28/6
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="col-md-12">
-                                                                                    Volgograd
+                                                                                     Volgograd
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Japan
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/japan.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5H4" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5H1" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/poland.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Poland
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
 
-
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="col-md-2">
-                                                                                    6
+                                                                        <tr class="A2-A3">
+                                                                            <td class="td-date">
+                                                                                <div class="col-md-12">
+                                                                                    6/28/2018
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="col-md-12">
-                                                                                    Thu 28/6
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="col-md-12">
-                                                                                    Samara
+                                                                                     Samara
                                                                                 </div>
                                                                             </td>
                                                                             <td>
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-5 team_left">
                                                                                         Senegal
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/senegal.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6H2" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
-                                                                            <td>
+                                                                            {{-- <td>
                                                                                 <div class="col-md-2">
                                                                                     V
                                                                                 </div>
-                                                                            </td>
+                                                                            </td> --}}
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)">
+                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6H3" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/Colombia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
                                                                                         Colombia
-                                                                                    </div>  
+                                                                                    </div>
+                                                                                    
+                                                                                    
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
-
+                                                                        
+                                                                        
                                                                     </tbody>
                                                             </table> 
+
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
-                                </div>
-                                 <br>
-                                {{-- Group Standings --}}
-                                <div class="row justify-content-center">
-                                    <div class="col-md-8">
-                                        <div class="card">
-                                            <div class="card-header"><h4>{{ __('Group Standings') }}</h4></div>
+                                    <div class="col-md-5">
+                                        {{-- Group Standings --}}
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-12">
+                                                <div class="card">
+                                                    <div class="card-header"><h4>{{ __('Group Standings') }}</h4></div>
 
-                                            <div class="card-body">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                
-                                                        <table id="Standings8" class="display">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th style="width: 40%;"></th>
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                        
+                                                                <table id="Standings8" class="display table_picks">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th style="width: 60%;"></th>
 
-                                                                    <th style="width: 5%;">P</th>
-                                                                    <th style="width: 5%;">W</th>
-                                                                    <th style="width: 5%;">D</th>
-                                                                    <th style="width: 5%;">L</th>
-                                                                    <th style="width: 5%;">F</th>
-                                                                    <th style="width: 5%;">A</th>
-                                                                    <th style="width: 5%;">GD</th>
-                                                                    <th style="width: 5%;">PTS</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/russia.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Russia
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/uruguay.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Uruguay
-                                                                            </div>
-                                                                        </div></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Saudi Arabia
-                                                                            </div>
-                                                                        </div></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/egypt.png')}}">
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                Egypt
-                                                                            </div>
-                                                                        </div></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                                            <th style="width: 5%;">P</th>
+                                                                            <th style="width: 5%;">W</th>
+                                                                            <th style="width: 5%;">D</th>
+                                                                            <th style="width: 5%;">L</th>
+                                                                            <th style="width: 5%;">F</th>
+                                                                            <th style="width: 5%;">A</th>
+                                                                            <th style="width: 5%;">GD</th>
+                                                                            <th style="width: 5%;">PTS</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/poland.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Poland
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td id="HP1"></td>
+                                                                            <td id="HW1"></td>
+                                                                            <td id="HD1"></td>
+                                                                            <td id="HL1"></td>
+                                                                            <td id="HF1"></td>
+                                                                            <td id="HA1"></td>
+                                                                            <td id="HGD1"></td>
+                                                                            <td id="HPTS1"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/japan.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Japan
+                                                                                    </div>
+                                                                                </div></td>
+                                                                            <td id="HP4"></td>
+                                                                            <td id="HW4"></td>
+                                                                            <td id="HD4"></td>
+                                                                            <td id="HL4"></td>
+                                                                            <td id="HF4"></td>
+                                                                            <td id="HA4"></td>
+                                                                            <td id="HGD4"></td>
+                                                                            <td id="HPTS4"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/senegal.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Senegal
+                                                                                    </div>
+                                                                                </div></td>
+                                                                            <td id="HP2"></td>
+                                                                            <td id="HW2"></td>
+                                                                            <td id="HD2"></td>
+                                                                            <td id="HL2"></td>
+                                                                            <td id="HF2"></td>
+                                                                            <td id="HA2"></td>
+                                                                            <td id="HGD2"></td>
+                                                                            <td id="HPTS2"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/Colombia.png')}}">
+                                                                                    </div>
+                                                                                    <div class="col-md-8">
+                                                                                        Colombia
+                                                                                    </div>
+                                                                                </div></td>
+                                                                            <td id="HP3"></td>
+                                                                            <td id="HW3"></td>
+                                                                            <td id="HD3"></td>
+                                                                            <td id="HL3"></td>
+                                                                            <td id="HF3"></td>
+                                                                            <td id="HA3"></td>
+                                                                            <td id="HGD3"></td>
+                                                                            <td id="HPTS3"></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div style="height: 8px;"></div>
+
+                                        {{-- Winners --}}
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <h4>{{ __('Winners') }} </h4>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        
+                                                    </div>
+
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <div class="col-md-12">Group H winner</div>
+
+                                                                            <select id="WH1" class="form-control">
+                                                                                <option></option>
+                                                                                <option id="H1" value="Poland">Poland</option>
+                                                                                <option id="H2" value="Senegal">Senegal</option>
+                                                                                <option id="H3" value="Colombia">Colombia</option>
+                                                                                <option id="H4" value="Japan">Japan</option>
+                                                                            </select>
+                                                                        </div>
+                                                                            
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <div class="col-md-12">Group H runner-up</div>
+
+                                                                            <select id="WH2" class="form-control">
+                                                                                <option></option>
+                                                                                <option id="H1" value="Poland">Poland</option>
+                                                                                <option id="H2" value="Senegal">Senegal</option>
+                                                                                <option id="H3" value="Colombia">Colombia</option>
+                                                                                <option id="H4" value="Japan">Japan</option>
+                                                                            </select>
+                                                                        </div>
+                                                                            
+                                                                    </div>
+                                                                </div>    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>  {{--  end card --}}
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                         <button type="" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and go home') }}
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6">
+                                         <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and continue') }}
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -4337,7 +4625,17 @@
         return (key >= 48 && key <= 57)
     }
 </script>
+<script src="{{URL::asset('scripts/tools.js')}}"></script>
 <script src="{{URL::asset('scripts/calculate_A.js')}}"></script>
+<script src="{{URL::asset('scripts/calculate_B.js')}}"></script>
+<script src="{{URL::asset('scripts/calculate_C.js')}}"></script>
+<script src="{{URL::asset('scripts/calculate_D.js')}}"></script>
+<script src="{{URL::asset('scripts/calculate_E.js')}}"></script>
+<script src="{{URL::asset('scripts/calculate_F.js')}}"></script>
+<script src="{{URL::asset('scripts/calculate_G.js')}}"></script>
+<script src="{{URL::asset('scripts/calculate_H.js')}}"></script>
+
+
 <script>
     $(document).ready( function () {
 

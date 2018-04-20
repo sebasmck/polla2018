@@ -1,5 +1,5 @@
 // match, group
-    function match_games(){
+    function match_games_F(){
         // Partidos Jugados
         var cont1 = 0;
         var cont2 = 0;
@@ -49,8 +49,8 @@
         var pts4 = 0;
 
         // matchs1
-        var m1_A1 = $('#M1A1').val();
-        var m1_A2 = $('#M1A2').val();
+        var m1_A1 = $('#M1F1').val();
+        var m1_A2 = $('#M1F2').val();
         if (m1_A1 != '' && m1_A2 != '')
         {
             // Partidos Jugados
@@ -94,8 +94,8 @@
         }
 
         // match2
-        var m2_A3 = $('#M2A3').val();
-        var m2_A4 = $('#M2A4').val();
+        var m2_A3 = $('#M2F3').val();
+        var m2_A4 = $('#M2F4').val();
         if (m2_A3 != '' && m2_A4 != '')
         {
             // Partidos Jugados
@@ -138,8 +138,8 @@
         }
 
         // match3
-        var m3_A1 = $('#M3A1').val();
-        var m3_A3 = $('#M3A3').val();
+        var m3_A1 = $('#M3F1').val();
+        var m3_A3 = $('#M3F3').val();
         if (m3_A1 != '' && m3_A3 != '')
         {
             // Partidos Jugados
@@ -182,8 +182,8 @@
         }
 
         // match4
-        var m4_A4 = $('#M4A4').val();
-        var m4_A2 = $('#M4A2').val();
+        var m4_A4 = $('#M4F4').val();
+        var m4_A2 = $('#M4F2').val();
         if (m4_A4 != '' && m4_A2 != '')
         {
             // Partidos Jugados
@@ -226,8 +226,8 @@
         }
 
         // match5
-        var m5_A4 = $('#M5A4').val();
-        var m5_A1 = $('#M5A1').val();
+        var m5_A4 = $('#M5F4').val();
+        var m5_A1 = $('#M5F1').val();
         if (m5_A4 != '' && m5_A1 != '')
         {
             // Partidos Jugados
@@ -270,8 +270,8 @@
         }
 
         // match6
-        var m6_A2 = $('#M6A2').val();
-        var m6_A3 = $('#M6A3').val();
+        var m6_A2 = $('#M6F2').val();
+        var m6_A3 = $('#M6F3').val();
         if (m6_A2 != '' && m6_A3 != '')
         {
             // Partidos Jugados
@@ -314,92 +314,92 @@
         }
 
         // Partidos Jugados
-        $('#AP1').empty();
-        $('#AP2').empty();
-        $('#AP3').empty();
-        $('#AP4').empty();
+        $('#FP1').empty();
+        $('#FP2').empty();
+        $('#FP3').empty();
+        $('#FP4').empty();
 
-        $('#AP1').html(cont1);
-        $('#AP2').html(cont2);
-        $('#AP3').html(cont3);
-        $('#AP4').html(cont4);
-
-        // Partidos Ganados
-        $('#AW1').empty();
-        $('#AW2').empty();
-        $('#AW3').empty();
-        $('#AW4').empty();
-
-        $('#AW1').html(win1);
-        $('#AW2').html(win2);
-        $('#AW3').html(win3);
-        $('#AW4').html(win4);
+        $('#FP1').html(cont1);
+        $('#FP2').html(cont2);
+        $('#FP3').html(cont3);
+        $('#FP4').html(cont4);
 
         // Partidos Ganados
-        $('#AD1').empty();
-        $('#AD2').empty();
-        $('#AD3').empty();
-        $('#AD4').empty();
+        $('#FW1').empty();
+        $('#FW2').empty();
+        $('#FW3').empty();
+        $('#FW4').empty();
 
-        $('#AD1').html(emp1);
-        $('#AD2').html(emp2);
-        $('#AD3').html(emp3);
-        $('#AD4').html(emp4);
+        $('#FW1').html(win1);
+        $('#FW2').html(win2);
+        $('#FW3').html(win3);
+        $('#FW4').html(win4);
+
+        // Partidos Ganados
+        $('#FD1').empty();
+        $('#FD2').empty();
+        $('#FD3').empty();
+        $('#FD4').empty();
+
+        $('#FD1').html(emp1);
+        $('#FD2').html(emp2);
+        $('#FD3').html(emp3);
+        $('#FD4').html(emp4);
 
         // Partidos Perdidos
-        $('#AL1').empty();
-        $('#AL2').empty();
-        $('#AL3').empty();
-        $('#AL4').empty();
+        $('#FL1').empty();
+        $('#FL2').empty();
+        $('#FL3').empty();
+        $('#FL4').empty();
 
-        $('#AL1').html(lose1);
-        $('#AL2').html(lose2);
-        $('#AL3').html(lose3);
-        $('#AL4').html(lose4);
+        $('#FL1').html(lose1);
+        $('#FL2').html(lose2);
+        $('#FL3').html(lose3);
+        $('#FL4').html(lose4);
 
         // Goles A favor
-        $('#AF1').empty();
-        $('#AF2').empty();
-        $('#AF3').empty();
-        $('#AF4').empty();
+        $('#FF1').empty();
+        $('#FF2').empty();
+        $('#FF3').empty();
+        $('#FF4').empty();
 
-        $('#AF1').html(afavor1);
-        $('#AF2').html(afavor2);
-        $('#AF3').html(afavor3);
-        $('#AF4').html(afavor4);
+        $('#FF1').html(afavor1);
+        $('#FF2').html(afavor2);
+        $('#FF3').html(afavor3);
+        $('#FF4').html(afavor4);
 
         // Goles en contra
-        $('#AA1').empty();
-        $('#AA2').empty();
-        $('#AA3').empty();
-        $('#AA4').empty();
+        $('#FA1').empty();
+        $('#FA2').empty();
+        $('#FA3').empty();
+        $('#FA4').empty();
 
-        $('#AA1').html(encontra1);
-        $('#AA2').html(encontra2);
-        $('#AA3').html(encontra3);
-        $('#AA4').html(encontra4);
-
-        // Goles de diferencia
-        $('#AGD1').empty();
-        $('#AGD2').empty();
-        $('#AGD3').empty();
-        $('#AGD4').empty();
-
-        $('#AGD1').html(diferen1);
-        $('#AGD2').html(diferen2);
-        $('#AGD3').html(diferen3);
-        $('#AGD4').html(diferen4);
+        $('#FA1').html(encontra1);
+        $('#FA2').html(encontra2);
+        $('#FA3').html(encontra3);
+        $('#FA4').html(encontra4);
 
         // Goles de diferencia
-        $('#APTS1').empty();
-        $('#APTS2').empty();
-        $('#APTS3').empty();
-        $('#APTS4').empty();
+        $('#FGD1').empty();
+        $('#FGD2').empty();
+        $('#FGD3').empty();
+        $('#FGD4').empty();
 
-        $('#APTS1').html(pts1);
-        $('#APTS2').html(pts2);
-        $('#APTS3').html(pts3);
-        $('#APTS4').html(pts4);
+        $('#FGD1').html(diferen1);
+        $('#FGD2').html(diferen2);
+        $('#FGD3').html(diferen3);
+        $('#FGD4').html(diferen4);
 
-        sortTable("Standings1");
+        // Goles de diferencia
+        $('#FPTS1').empty();
+        $('#FPTS2').empty();
+        $('#FPTS3').empty();
+        $('#FPTS4').empty();
+
+        $('#FPTS1').html(pts1);
+        $('#FPTS2').html(pts2);
+        $('#FPTS3').html(pts3);
+        $('#FPTS4').html(pts4);
+
+        sortTable("Standings6");
     }
