@@ -1,8 +1,20 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
-    
-    @include('admin.partials.head')
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <title>Polla2018 |Edit Rep</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{asset('css/bulma.css')}}">
+        <!-- Styles -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+
+        
+    </head>
     <body>
 
            @include('partials.header')
@@ -49,24 +61,20 @@
                     <div class="container">
                       <div class="modal-card">
                         <header class="modal-card-head">
-                          <p class="modal-card-title">Add Rep</p>
+                          <p class="modal-card-title">Edit Rep</p>
                         </header>
                         <section class="modal-card-body">
-                          <form action="/storerep" method="POST">
+                          <form action="/updaterep" method="POST">
                             @csrf
                             <div class="field">
-                              <div class="control">
-                                <input name="name" class="input is-danger" type="text" placeholder="Name" required>
-                              </div>
-                              <br>
-                              <div class="field">
-                                <div class="control">
-                                  <input name="email" class="input is-danger" type="text" placeholder="Email" required>
+                              <input type="hidden" value="{{$user->id}}" name="id">
+                                <div class="select">
+                                {{ Form::select('id_rep', $reps->pluck('name', 'id_rep'), null, ['class' => 'form-control', 'id' => 'id_rep']) }}
                                 </div>
                               </div>
                             </section>
                             <footer class="modal-card-foot">
-                              <button type="submit" class="button is-success">Save</button>
+                              <button type="submit" class="button is-success">Edit</button>
                             </form>
                             <a href="{{url('/assign')}}"><button class="button" id="close">Cancel</button></a>
                           </footer>
@@ -75,11 +83,9 @@
                     </section>
 
     {{-- BEGIN CREATE MODAL --}}
-    
-
     </body>
 
-    @include('admin.partials.js')
+
    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

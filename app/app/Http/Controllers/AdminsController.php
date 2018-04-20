@@ -36,7 +36,13 @@ class AdminsController extends Controller
     }
 
     public function addRep(){
-        return view('admin.add_rep');
+
+        $notification = array(
+            'message' => 'I am a successful message!', 
+            'alert-type' => 'success'
+        );
+
+        return view('admin.add_rep')->with($notification);;
     }
 
 
@@ -142,10 +148,33 @@ class AdminsController extends Controller
         $poll = PollsModel::find($req->input('iduser_poll'));
 
         $poll->status = $req->input('status');
+        
         $poll->save();
 
         return redirect()->back();
 
+    }
+
+
+    public function editRep($id){
+
+        $user = User::find($id);
+        $reps = Rep::all();
+        return view ('admin.editrep')->with('user', $user)->with('reps', $reps);
+
+    }
+
+
+    public function updateRep(Request $req){
+        $user = User::find($req->input('id'));
+        $user->id_rep = $req->input('id_rep');
+
+        $user->save();
+
+        $users = User::all();
+        $reps = Rep::all();
+
+        return view('admin.assign_rep')->with('users', $users)->with('reps', $reps);
     }
 
     /**
@@ -160,7 +189,10 @@ class AdminsController extends Controller
         
         $user->delete();
 
-        return redirect()->back();
+        
+
+
+
 
     }
 }

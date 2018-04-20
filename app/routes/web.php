@@ -15,6 +15,9 @@ Route::get('home', 'HomeController@index')->name('home');
 
 Route::get('rules', 'HomeController@rules')->name('rules');
 
+
+Route::group(['middleware' => ['auth']], function() {
+
 // Polls
 Route::post('/pollregistration', 'HomeController@pollregistration')->name('pollregistration');
 
@@ -35,9 +38,16 @@ Route::delete('users/{id}', [
 
 Route::post('/editstatus', 'AdminsController@editStatus')->name('editstatus');
 
+Route::get('/editrep/{id}', 'AdminsController@editRep')->name('editrep');
+
+Route::post('/updaterep', 'AdminsController@updateRep')->name('updaterep');
+
 Route::Resource('admins', 'AdminsController');
 
 // PICKS
 Route::Resource('picks', 'PicksController');
 
 
+
+
+});

@@ -28,7 +28,6 @@
                               Admin
                             </p>
                             <p class="subtitle">
-                              Nuevos Usuarios
                             </p>
                           </div>
                           <div class="column is-narrow">
@@ -46,10 +45,10 @@
                         <nav class="tabs is-boxed">
                           <ul>
                             <li class="is-active">
-                              <a href="/admin">Pending Users</a>
+                              <a href="/admin">Pending Aprovals</a>
                             </li>
                             <li >
-                              <a href="/assign">Assign Rep</a>
+                              <a href="/assign">User Management</a>
                             </li>
                           </ul>
                         </nav></div>

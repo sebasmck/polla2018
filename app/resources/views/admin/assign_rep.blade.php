@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Polla2018 |Assign Rep</title>
+        <title>Polla2018 |User Management</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -28,7 +28,7 @@
                               Admin
                             </p>
                             <p class="subtitle">
-                              Nuevos Usuarios
+                              Users
                             </p>
                           </div>
                           <div class="column is-narrow">
@@ -46,10 +46,10 @@
                         <nav class="tabs is-boxed">
                           <ul>
                             <li>
-                              <a href="/admin">Pendientes</a>
+                              <a href="/admin">Aprovals</a>
                             </li>
                             <li class="is-active">
-                                <a href="/assign">Assign Rep</a>
+                                <a href="/assign">user Management</a>
                               </li>
                           </ul>
                         </nav></div>
@@ -79,19 +79,26 @@
                                     <td>{{$user->nickname}}</td>
                                     <td>{{$user->email}}</td>
                                 <td> <a class="button is-danger" href="{{route('admins.show', $user->id)}}"> View Picks</a> </td>
+                                <td>
                                     @if(empty($user->id_rep))
-                                    <td><button class="button is-primary is-pulled-left" id="showModal"
-                                      data-target="modal-ter" data-id="{{$user->id}}" aria-haspopup="true">Assign Rep</button></td>
+                                    <button class="button is-primary is-pulled-left" id="showModal"
+                                      data-target="modal-ter" data-id="{{$user->id}}" aria-haspopup="true">Assign Rep</button>
                                     @else
-                                    <td> <p class="is-pulled-left">{{$user->rep->name}}</p></td>
+                                    <a href="/editrep/{{$user->id}}"> <button class="button is-primary is-pulled-right">Edit Rep</button></a>
+                                    <p class="is-pulled-left">{{$user->rep->name}}</p>
                                     @endif
-                                    <td> {!! Form::open(['route' => ['admins.destroy', $user->id], 'method' => 'DELETE']) !!}
+                                    </td>
+                                    <td>
+                                        <div class="col-md-6">
+                                          {!! Form::open(['route' => ['admins.destroy', $user->id], 'method' => 'DELETE']) !!}
 
-                                        {!!Form::submit('x', ['class' => 'button is-danger']) !!}
-                          
-                                        {!! Form::close() !!} </td>
+                                          {!!Form::submit('x', ['class' => 'button is-danger']) !!}
+                            
+                                          {!! Form::close() !!}
+                                        </div>
+                                    </td>
                                 </tr>
-                                @endif
+                               @endif 
                             @endforeach
                             </tbody>
                             
@@ -128,6 +135,9 @@
       </div>
 
 
+
+    <script src="{{URL::asset('js/bulma.js')}}"></script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
@@ -138,18 +148,15 @@
 
         $('#pendings').DataTable();
 
-           // Modal 1 (create Rep)
-
-        // $("#showModal").click(function() {
-        //     $(".modal").addClass("is-active");  
-        // });
-
+        
         $(document).on('click', '#showModal', function(){
 
         $('#id').val($(this).data('id'));
         $(".modal").addClass("is-active");  
 
         });
+
+        
 
         $("#close").click(function() {
             $(".modal").removeClass("is-active");
