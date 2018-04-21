@@ -75,7 +75,15 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <form action="/storegroupa" method="POST">
+
+                                                    {{-- FORM GROUP A --}}
+                                                        <form action="/storea" method="POST">
+
+                                                            <input type="hiddent" name="" value="">
+
+                                                            <input type="hiddent" name="" value="">
+
+
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
                                                                         <tr>
@@ -574,7 +582,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             </form>
 
 
