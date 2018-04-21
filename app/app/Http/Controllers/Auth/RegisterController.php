@@ -66,9 +66,13 @@ class RegisterController extends Controller
 
         $polls->save();
         
+        $notification = array(
+            'message' => 'I am a successful message!', 
+            'alert-type' => 'success'
+        );
 
         return $this->registered($request, $user)
-                        ?: redirect($this->redirectPath());
+                        ?: redirect($this->redirectPath())->with($notification);
     }
 
 
