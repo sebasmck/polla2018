@@ -150,3 +150,17 @@
 </div>
 <script src="{{URL::asset('js/app.js')}}"></script>
 @endsection
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+
+    <script>
+      $(document).ready( function () {
+        toastr.success('HI');
+      });
+    </script>
+
+
+
