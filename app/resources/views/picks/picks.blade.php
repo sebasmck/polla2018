@@ -71,11 +71,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-
+                                        
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                    
+                                                        <form action="/storegroupa" method="POST">
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
                                                                         <tr>
@@ -573,8 +573,13 @@
                                         </button>
                                     </div>
                                 </div>
-                                
                             </div>
+                            
+                            </form>
+
+
+
+
 
                             {{-- GRUPO B --}}
                             <div class="tab-pane container" id="grupob">

@@ -20,4 +20,9 @@ class PollsModel extends Model
 	{
 		return PollsModel::where('id_User','=',$idUser)->get();
 	}
+
+	public function picks(){
+		return $this->hasMany('App\Pick');
+	}
+
 }
