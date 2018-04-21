@@ -151,6 +151,8 @@ return [
          * Package Service Providers...
          */
 
+        Artdarek\Toastr\Providers\ToastrServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
@@ -208,6 +210,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Toastr' => Artdarek\Toastr\Facades\Toastr::class,
 
     ],
 

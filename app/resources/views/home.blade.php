@@ -14,10 +14,10 @@
                     <div class="card-header">
                         <div class="row">
                             <div class="col-md-4">
-                                <h4>{{ __('My polls') }} </h4>
+                                <h4>{{ __('My pools') }} </h4>
                             </div>
                             <div class="col-md-8">
-                                <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary addbutton" id="myBtn"><span class="fa fa-plus">+</span></button>
+                                <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary addbutton" id="myBtn" style="width: 165px; padding-top: 0;">Add Additional Pool <span style="font-size: 19px;     font-weight: 700;"> +</span></button>
                             </div>
                         </div>
                         
@@ -31,9 +31,10 @@
                                     <table id="myTable" class="display">
                                             <thead>
                                                 <tr>
-                                                    <th>Nickname Poll</th>
+                                                    <th>Nickname</th>
                                                     <th>Status</th>
-                                                    <th>Picks Complete</th>
+                                                    <th>Complete Pool</th>
+                                                    <th></th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
@@ -41,11 +42,16 @@
                                                 @foreach ($polls as $poll)
                                                 <tr>
                                                     <td>{{$poll->poll_name}}</td>
-                                                    <td>{{$poll->status}}</td>
+                                                    @if($poll->status == 'Pending')
+                                                        <td style="color: #FF0000;">{{$poll->status}}</td>
+                                                    @else
+                                                        <td style="color: #38610B;">{{$poll->status}}</td>
+                                                    @endif
+
                                                     <td></td>
                                                     <td><div class="form-group row mb-0">
 
-                                                        @if($poll->status == 'Unauthorized')
+                                                        @if($poll->status == 'Pending')
 
                                                         @else
                                                         <div class="col-md-8 offset-md-4">
@@ -55,6 +61,17 @@
                                                         </div>
                                                         @endif
                                                     </div></td>
+                                                    <td>
+                                                        @if($poll->status == 'Pending')
+                                                        <div class="col-md-8 offset-md-4">
+                                                            <div class="control">
+                                                                <button class="btn btn-primary" onclick="window.location='{{ route('picks.show', $poll->iduser_poll) }}'">Delete Pool</button>
+                                                            </div>
+                                                        </div>
+                                                        @else
+                                                        
+                                                        @endif
+                                                    </td>
                                                 </tr>
                                                 @endforeach
                                             </tbody>
@@ -91,14 +108,14 @@
                             </div>
                             <div class="col-md-10 offset-md-1 ">
                                 <div class="form-group">
-                                    <button type="" class="btn btn-primary" onclick="window.location='{{ route('login') }}'" style="width: 100%;">
-                                        {{ __('Worldcup Results') }}
+                                    <button type="" class="btn btn-primary" style="width: 100%;">
+                                        {{ __('Worldcup Results (starts June 12th)') }}
                                     </button>
                                 </div>
                             </div>
                             <div class="col-md-10 offset-md-1 ">
                                  <div class="form-group">
-                                    <button type="" class="btn btn-primary" onclick="window.location='{{ route('login') }}'" style="width: 100%;">
+                                    <button type="" class="btn btn-primary" style="width: 100%;">
                                         {{ __('Ranking and Poolwide picks') }}
                                     </button>
                                 </div>
@@ -119,7 +136,7 @@
           
             <!-- Modal Header -->
             <div class="modal-header">
-              <h4 class="modal-title">Create poll</h4>
+              <h4 class="modal-title">Create pool</h4>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             
@@ -132,10 +149,10 @@
 
                     <div class="form-group row">
                         <div class="col-md-12">
-                            <input id="poll_name" type="text" class="form-control{{ $errors->has('poll_name') ? ' is-invalid' : '' }}" name="poll_name" value="{{ old('poll_name') }}" required placeholder="Poll Name">
+                            <input id="poll_name" type="text" class="form-control{{ $errors->has('poll_name') ? ' is-invalid' : '' }}" name="poll_name" value="{{ old('poll_name') }}" required placeholder="Pool Name">
 
                                 @if ($errors->has('poll_name'))
-                                    <span class="invalid-feedback">
+                                    <span class="invalid-feFFedback">
                                         <strong>{{ $errors->first('poll_name') }}</strong>
                                     </span>
                                 @endif
