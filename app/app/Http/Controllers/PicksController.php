@@ -5,37 +5,38 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\PollsModel;
-use App\Pick;
+use App\PickGroupA;
 
 class PicksController extends Controller
 {	
 
 	// show pick
-	public function show($id_userpoll)
+	public function index()
     {	
-
-    	$poll = PollsModel::find($id_userpoll);
-
-        return view('picks.picks')->with('poll', $poll);
+        return view('picks.picks');
     }   
 
-    public function storeGroupA(Request $req ){
+    public function storeGroupA(Request $req){
 
-    	$pick = new Pick;
+    	$pick = new PickGroupA;
 
-    	$pick->id_userpoll = $req->input('id_userpoll');
-    	$pick->id_poll = $req->input('id_poll');
-    	$pick->id_fase = $req->input('id_fase');
-    	$pick->team1 = $req->input('team1');
-    	$pick->team2 = $req->input('team2');
-    	$pick->pickt1 = $req->input('pickt1');
-    	$pick->pickt2 = $req->input('pickt2');
+    	$pick->M1A1 = $req->M1A1;
+    	$pick->M1A2 = $req->M1A2;
+    	$pick->M2A3 = $req->M2A3;
+    	$pick->M2A4 = $req->M2A4;
+    	$pick->M3A1 = $req->M3A1;
+    	$pick->M3A3 = $req->M3A3;
+    	$pick->M4A4 = $req->M4A4;
+    	$pick->M4A2 = $req->M4A2;
+    	$pick->M5A4 = $req->M5A4;
+    	$pick->M5A1 = $req->M5A1;
+    	$pick->M6A2 = $req->M6A2;
+    	$pick->M6A3 = $req->M6A3;
 
     	$pick->save();
-
-    	return view ('picks.picks');
-
-
+    	
+    	return response()->json($pick);
+    	
     }
 
 

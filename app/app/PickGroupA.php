@@ -4,13 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Pick extends Model
+class PickGroupA extends Model
 {
-    protected $table = 'picks';
+    protected $table = 'picks_group_a';
 
 	public $timestamps = false;
 
 	public $primaryKey = 'id';
-
-	
 }

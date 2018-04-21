@@ -47,7 +47,7 @@ Route::Resource('admins', 'AdminsController');
 // PICKS
 
 
-Route::get('/storea', 'PicksController@storeGroupA')->name('storea');
+Route::post('/storea', 'PicksController@storeGroupA')->name('storea');
 
 Route::Resource('picks', 'PicksController');
 
