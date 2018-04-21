@@ -575,9 +575,7 @@
                                     </div>
                                     <div class="col-md-6">
 
-                                        <input type="button" name="submitgroupa" id="submitgroupa" class="btn btn-info btn-block" value="Guardar" />
-
-
+                                        <input type="button" name="submitgroupa" id="submitgroupa" class="btn btn-info btn-block" value="Save and Continue" />
                                          {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
                                             {{ __('Save and continue') }} --}}
                                         </button>
@@ -587,11 +585,11 @@
 
                             </form>
 
-
-
     
 
                             {{-- GRUPO B FORM --}}
+
+
                             <div class="tab-pane container" id="grupob">
                                 <br>
                                 <div class="row">
@@ -608,7 +606,10 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-md-12 table-responsive">
-                                                    
+
+                                                        <form name="groupb" id="groupb"> 
+                                                            {{ csrf_field() }}
+                                                        
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
                                                                         <tr>
@@ -1101,12 +1102,15 @@
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                         <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and continue') }}
+                                        <input type="button" name="submitgroupb" id="submitgroupb" class="btn btn-info btn-block" value="Save and Continue" />
+                                         {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and continue') }} --}}
                                         </button>
                                     </div>
                                 </div>
                             </div>
+
+                        </form>
 
                             {{-- GRUPO C --}}
                             <div class="tab-pane container" id="grupoc"> 
@@ -1125,6 +1129,9 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-md-12 table-responsive">
+
+                                                        <form name="groupc" id="groupc"> 
+                                                            {{ csrf_field() }}
                                                     
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
@@ -1158,7 +1165,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1C1" onblur="match_games_C()">
+                                                                                            <input type="text" name="M1C1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1C1" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -1170,7 +1177,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1C2" onblur="match_games_C()">
+                                                                                            <input type="text" name="M1C2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1C2" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1204,7 +1211,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2C3" onblur="match_games_C()">
+                                                                                            <input type="text" name="M2C3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2C3" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -1218,7 +1225,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2C4" onblur="match_games_C()">
+                                                                                            <input type="text" name="M2C4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2C4" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1255,7 +1262,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3C1" onblur="match_games_C()">
+                                                                                            <input type="text" name="M3C1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3C1" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -1269,7 +1276,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3C3" onblur="match_games_C()">
+                                                                                            <input type="text" name="M3C3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3C3" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1305,7 +1312,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4C4" onblur="match_games_C()">
+                                                                                            <input type="text" name="M4C4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4C4" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -1319,7 +1326,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4C2" onblur="match_games_C()">
+                                                                                            <input type="text" name="M4C2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4C2" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1355,7 +1362,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5C4" onblur="match_games_C()">
+                                                                                            <input type="text" name="M5C4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5C4" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -1369,7 +1376,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5C1" onblur="match_games_C()">
+                                                                                            <input type="text" name="M5C1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5C1" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1405,7 +1412,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6C2" onblur="match_games_C()">
+                                                                                            <input type="text" name="M6C2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6C2" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -1419,7 +1426,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6C3" onblur="match_games_C()">
+                                                                                            <input type="text" name="M6C3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6C3" onblur="match_games_C()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1618,12 +1625,15 @@
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                         <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and continue') }}
+                                        <input type="button" name="submitgroupc" id="submitgroupc" class="btn btn-info btn-block" value="Save and Continue" />
+                                         {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and continue') }} --}}
                                         </button>
                                     </div>
                                 </div>
                             </div>
+
+                        </form>
 
                             {{-- GRUPO D --}}
                             <div class="tab-pane container" id="grupod"> 
@@ -1642,6 +1652,9 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-md-12 table-responsive">
+
+                                                        <form name="groupd" id="groupd"> 
+                                                            {{ csrf_field() }}
                                                     
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
@@ -1675,7 +1688,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1D1" onblur="match_games_D()">
+                                                                                            <input type="text" name="M1D1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1D1" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -1687,7 +1700,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1D2" onblur="match_games_D()">
+                                                                                            <input type="text" name="M1D2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1D2" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1721,7 +1734,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2D3" onblur="match_games_D()">
+                                                                                            <input type="text" name="M2D3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2D3" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -1735,7 +1748,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2D4" onblur="match_games_D()">
+                                                                                            <input type="text" name="M2D4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2D4" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1772,7 +1785,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3D1" onblur="match_games_D()">
+                                                                                            <input type="text" name="M3D1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3D1" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -1786,7 +1799,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3D3" onblur="match_games_D()">
+                                                                                            <input type="text" name="M3D3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3D3" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1822,7 +1835,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4D4" onblur="match_games_D()">
+                                                                                            <input type="text" name="M4D4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4D4" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -1836,7 +1849,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4D2" onblur="match_games_D()">
+                                                                                            <input type="text" name="M4D2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4D2" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1872,7 +1885,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5D4" onblur="match_games_D()">
+                                                                                            <input type="text" name="M5D4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5D4" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -1886,7 +1899,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5D1" onblur="match_games_D()">
+                                                                                            <input type="text" name="M5D1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5D1" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1922,7 +1935,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6D2" onblur="match_games_D()">
+                                                                                            <input type="text" name="M6D2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6D2" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -1936,7 +1949,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6D3" onblur="match_games_D()">
+                                                                                            <input type="text" name="M6D3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6D3" onblur="match_games_D()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -2135,12 +2148,15 @@
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                         <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and continue') }}
+                                        <input type="button" name="submitgroupd" id="submitgroupd" class="btn btn-info btn-block" value="Save and Continue" />
+                                         {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and continue') }} --}}
                                         </button>
                                     </div>
                                 </div>
                             </div>
+
+                        </form>
 
                             {{-- GRUPO E --}}
                             <div class="tab-pane container" id="grupoe">
@@ -2159,6 +2175,9 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-md-12 table-responsive">
+
+                                                        <form name="groupe" id="groupe"> 
+                                                            {{ csrf_field() }}
                                                     
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
@@ -2192,7 +2211,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1E1" onblur="match_games_E()">
+                                                                                            <input type="text" name="M1E1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1E1" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -2204,7 +2223,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1E2" onblur="match_games_E()">
+                                                                                            <input type="text" name="M1E2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1E2" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -2238,7 +2257,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2E3" onblur="match_games_E()">
+                                                                                            <input type="text" name="M2E3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2E3" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -2252,7 +2271,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2E4" onblur="match_games_E()">
+                                                                                            <input type="text" name="M2E4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2E4" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -2289,7 +2308,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3E1" onblur="match_games_E()">
+                                                                                            <input type="text" name="M3E1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3E1" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -2303,7 +2322,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3E3" onblur="match_games_E()">
+                                                                                            <input type="text" name="M3E3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3E3" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -2339,7 +2358,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4E4" onblur="match_games_E()">
+                                                                                            <input type="text" name="M4E4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4E4" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -2353,7 +2372,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4E2" onblur="match_games_E()">
+                                                                                            <input type="text" name="M4E2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4E2" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -2389,7 +2408,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5E4" onblur="match_games_E()">
+                                                                                            <input type="text" name="M5E4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5E4" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -2403,7 +2422,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5E1" onblur="match_games_E()">
+                                                                                            <input type="text" name="M5E1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5E1" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -2439,7 +2458,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6E2" onblur="match_games_E()">
+                                                                                            <input type="text" name="M6E2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6E2" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -2453,7 +2472,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6E3" onblur="match_games_E()">
+                                                                                            <input type="text" name="M6E3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6E3" onblur="match_games_E()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -2652,12 +2671,15 @@
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                         <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and continue') }}
+                                        <input type="button" name="submitgroupe" id="submitgroupe" class="btn btn-info btn-block" value="Save and Continue" />
+                                         {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and continue') }} --}}
                                         </button>
                                     </div>
                                 </div>
                             </div>
+
+                        </form>
 
                             {{-- GRUPO F --}}
                             <div class="tab-pane container" id="grupof">
@@ -2676,6 +2698,9 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-md-12 table-responsive">
+
+                                                        <form name="groupf" id="groupf"> 
+                                                            {{ csrf_field() }}
                                                     
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
@@ -2709,7 +2734,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1F1" onblur="match_games_F()">
+                                                                                            <input type="text" name="M1F1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1F1" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -2721,7 +2746,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1F2" onblur="match_games_F()">
+                                                                                            <input type="text" name="M1F2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1F2" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -2755,7 +2780,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2F3" onblur="match_games_F()">
+                                                                                            <input type="text" name="M2F3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2F3" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -2769,7 +2794,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2F4" onblur="match_games_F()">
+                                                                                            <input type="text" name="M2F4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2F4" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -2806,7 +2831,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3F1" onblur="match_games_F()">
+                                                                                            <input type="text" name="M3F1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3F1" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -2820,7 +2845,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3F3" onblur="match_games_F()">
+                                                                                            <input type="text" name="M3F3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3F3" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -2856,7 +2881,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4F4" onblur="match_games_F()">
+                                                                                            <input type="text" name="M4F4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4F4" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -2870,7 +2895,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4F2" onblur="match_games_F()">
+                                                                                            <input type="text" name="M4F2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4F2" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -2906,7 +2931,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5F4" onblur="match_games_F()">
+                                                                                            <input type="text" name="M5F4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5F4" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -2920,7 +2945,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5F1" onblur="match_games_F()">
+                                                                                            <input type="text" name="M5F1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5F1" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -2956,7 +2981,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6F2" onblur="match_games_F()">
+                                                                                            <input type="text" name="M6F2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6F2" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -2970,7 +2995,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6F3" onblur="match_games_F()">
+                                                                                            <input type="text" name="M6F3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6F3" onblur="match_games_F()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -3169,12 +3194,15 @@
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                         <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and continue') }}
+                                        <input type="button" name="submitgroupf" id="submitgroupf" class="btn btn-info btn-block" value="Save and Continue" />
+                                         {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and continue') }} --}}
                                         </button>
                                     </div>
                                 </div>
                             </div>
+
+                        </form>
 
                             {{-- GRUPO G --}}
                             <div class="tab-pane container" id="grupog">
@@ -3193,6 +3221,9 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-md-12 table-responsive">
+
+                                                        <form name="groupg" id="groupg"> 
+                                                            {{ csrf_field() }}
                                                     
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
@@ -3226,7 +3257,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1G1" onblur="match_games_G()">
+                                                                                            <input type="text" name="M1G1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1G1" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -3238,7 +3269,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1G2" onblur="match_games_G()">
+                                                                                            <input type="text" name="M1G2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1G2" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -3272,7 +3303,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2G3" onblur="match_games_G()">
+                                                                                            <input type="text" name="M2G3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2G3" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -3286,7 +3317,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2G4" onblur="match_games_G()">
+                                                                                            <input type="text" name="M2G4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2G4" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -3323,7 +3354,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3G1" onblur="match_games_G()">
+                                                                                            <input type="text" name="M3G1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3G1" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -3337,7 +3368,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3G3" onblur="match_games_G()">
+                                                                                            <input type="text" name="M3G3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3G3" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -3373,7 +3404,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4G4" onblur="match_games_G()">
+                                                                                            <input type="text" name="M4G4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4G4" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -3387,7 +3418,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4G2" onblur="match_games_G()">
+                                                                                            <input type="text" name="M4G2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4G2" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -3423,7 +3454,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5G4" onblur="match_games_G()">
+                                                                                            <input type="text" name="M5G4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5G4" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -3437,7 +3468,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5G1" onblur="match_games_G()">
+                                                                                            <input type="text" name="M5G1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5G1" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -3473,7 +3504,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6G2" onblur="match_games_G()">
+                                                                                            <input type="text" name="M6G2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6G2" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -3487,7 +3518,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6G3" onblur="match_games_G()">
+                                                                                            <input type="text" name="M6G3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6G3" onblur="match_games_G()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -3686,12 +3717,15 @@
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                         <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and continue') }}
+                                        <input type="button" name="submitgroupg" id="submitgroupg" class="btn btn-info btn-block" value="Save and Continue" />
+                                         {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and continue') }} --}}
                                         </button>
                                     </div>
                                 </div>
                             </div>
+
+                        </form>
 
                             {{-- GRUPO H --}}
                             <div class="tab-pane container" id="grupoh">
@@ -3710,6 +3744,9 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-md-12 table-responsive">
+
+                                                        <form name="grouph" id="grouph"> 
+                                                            {{ csrf_field() }}
                                                     
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
@@ -3743,7 +3780,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1H1" onblur="match_games_H()">
+                                                                                            <input type="text" name="M1H1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1H1" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -3755,7 +3792,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1H2" onblur="match_games_H()">
+                                                                                            <input type="text" name="M1H2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1H2" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -3789,7 +3826,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2H3" onblur="match_games_H()">
+                                                                                            <input type="text" name="M2H3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2H3" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -3803,7 +3840,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2H4" onblur="match_games_H()">
+                                                                                            <input type="text" name="M2H4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2H4" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -3840,7 +3877,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3H1" onblur="match_games_H()">
+                                                                                            <input type="text" name="M3H1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3H1" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -3854,7 +3891,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3H3" onblur="match_games_H()">
+                                                                                            <input type="text" name="M3H3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3H3" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -3890,7 +3927,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4H4" onblur="match_games_H()">
+                                                                                            <input type="text" name="M4H4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4H4" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -3904,7 +3941,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4H2" onblur="match_games_H()">
+                                                                                            <input type="text" name="M4H2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4H2" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -3940,7 +3977,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5H4" onblur="match_games_H()">
+                                                                                            <input type="text" name="M5H4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5H4" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -3954,7 +3991,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5H1" onblur="match_games_H()">
+                                                                                            <input type="text" name="M5H1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5H1" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -3990,7 +4027,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6H2" onblur="match_games_H()">
+                                                                                            <input type="text" name="M6H2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6H2" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -4004,7 +4041,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6H3" onblur="match_games_H()">
+                                                                                            <input type="text" name="M6H3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6H3" onblur="match_games_H()">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -4203,12 +4240,15 @@
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                         <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and continue') }}
+                                        <input type="button" name="submitgrouph" id="submitgrouph" class="btn btn-info btn-block" value="Save and Continue" />
+                                         {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and continue') }} --}}
                                         </button>
                                     </div>
                                 </div>
                             </div>
+
+                        </form>
 
                             {{-- SECOND STAGE --}}
                             <div class="tab-pane container" id="grupoRoun">
@@ -4627,10 +4667,14 @@
 
 
     
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"> </script>
+
 <script src="{{URL::asset('js/app.js')}}"></script>
 {{-- Solo Numeros --}}
 <script type="text/javascript">
@@ -4641,11 +4685,189 @@
     }
 </script>
 
+
+{{-- <script src="{{URL::asset('js/picks/group_A.js')}}"></script> --}}
+
 {{-- ajax --}}
 
 
+<script>
 
-<script src="{{URL::asset('js/picks/group_A.js')}}"></script>
+    $(document).ready(function(){
+
+        var postURLA = "<?php echo url('/storea'); ?>";
+        var postURLB = "<?php echo url('/storeb'); ?>";
+        var postURLC = "<?php echo url('/storec'); ?>";
+        var postURLD = "<?php echo url('/stored'); ?>";
+        var postURLE = "<?php echo url('/storee'); ?>";
+        var postURLF = "<?php echo url('/storef'); ?>";
+        var postURLG = "<?php echo url('/storeg'); ?>";
+        var postURLH = "<?php echo url('/storeh'); ?>";
+
+        $.ajaxSetup({
+          headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+         });
+
+        $('#submitgroupa').click(function(){
+
+            $.ajax({  
+                url:postURLA,  
+                method:"POST",  
+                data:$('#groupa').serialize(),
+                type:'json',
+                success:function(data){
+                    if(data.error){
+                        printErrorMsg(data.error);
+                    }else{
+                        toastr.success('Saved');
+                    }
+                }  
+            }); 
+
+        });
+
+        $('#submitgroupb').click(function(){
+
+            $.ajax({  
+                url:postURLB,  
+                method:"POST",  
+                data:$('#groupb').serialize(),
+                type:'json',
+                success:function(data){
+                    if(data.error){
+                        printErrorMsg(data.error);
+                    }else{
+                        toastr.success('Saved');
+                    }
+                }  
+            }); 
+
+        });
+
+
+        $('#submitgroupc').click(function(){
+
+            $.ajax({  
+                url:postURLC,  
+                method:"POST",  
+                data:$('#groupc').serialize(),
+                type:'json',
+                success:function(data){
+                    if(data.error){
+                        printErrorMsg(data.error);
+                    }else{
+                        toastr.success('Saved');
+                    }
+                }  
+            }); 
+
+        });
+
+
+
+        $('#submitgroupd').click(function(){
+
+            $.ajax({  
+                url:postURLD,  
+                method:"POST",  
+                data:$('#groupd').serialize(),
+                type:'json',
+                success:function(data){
+                    if(data.error){
+                        printErrorMsg(data.error);
+                    }else{
+                        toastr.success('Saved');
+                    }
+                }  
+            }); 
+
+        });
+
+
+
+        $('#submitgroupe').click(function(){
+
+            $.ajax({  
+                url:postURLE,  
+                method:"POST",  
+                data:$('#groupe').serialize(),
+                type:'json',
+                success:function(data){
+                    if(data.error){
+                        printErrorMsg(data.error);
+                    }else{
+                        toastr.success('Saved');
+                    }
+                }  
+            }); 
+
+        });
+
+
+
+        $('#submitgroupf').click(function(){
+
+            $.ajax({  
+                url:postURLF,  
+                method:"POST",  
+                data:$('#groupf').serialize(),
+                type:'json',
+                success:function(data){
+                    if(data.error){
+                        printErrorMsg(data.error);
+                    }else{
+                        toastr.success('Saved');
+                    }
+                }  
+            }); 
+
+        });
+
+
+
+        $('#submitgroupg').click(function(){
+
+            $.ajax({  
+                url:postURLG,  
+                method:"POST",  
+                data:$('#groupg').serialize(),
+                type:'json',
+                success:function(data){
+                    if(data.error){
+                        printErrorMsg(data.error);
+                    }else{
+                        toastr.success('Saved');
+                    }
+                }  
+            }); 
+
+        });
+
+
+
+        $('#submitgrouph').click(function(){
+
+            $.ajax({  
+                url:postURLH,  
+                method:"POST",  
+                data:$('#grouph').serialize(),
+                type:'json',
+                success:function(data){
+                    if(data.error){
+                        printErrorMsg(data.error);
+                    }else{
+                        toastr.success('Saved');
+                    }
+                }  
+            }); 
+
+        });
+
+
+    });
+</script>
 
 {{-- calculations --}}
 <script src="{{URL::asset('scripts/tools.js')}}"></script>
@@ -4681,5 +4903,8 @@
 
     
 </script>
+
+
+
 
 

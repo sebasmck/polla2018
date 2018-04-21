@@ -48,6 +48,13 @@ Route::Resource('admins', 'AdminsController');
 
 
 Route::post('/storea', 'PicksController@storeGroupA')->name('storea');
+Route::post('/storeb', 'PicksController@storeGroupB')->name('storeb');
+Route::post('/storec', 'PicksController@storeGroupC')->name('storec');
+Route::post('/stored', 'PicksController@storeGroupD')->name('stored');
+Route::post('/storee', 'PicksController@storeGroupE')->name('storee');
+Route::post('/storef', 'PicksController@storeGroupF')->name('storef');
+Route::post('/storeg', 'PicksController@storeGroupG')->name('storeg');
+Route::post('/storeh', 'PicksController@storeGroupH')->name('storeh');
 
 Route::Resource('picks', 'PicksController');
 
