@@ -25,6 +25,7 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+
 </head>
 <body>
     <div id="app">
@@ -35,6 +36,7 @@
                 <a class="navbar-brand" href="{{ url('/home') }}">
                     Polla World Cup
                 </a>
+                <p id="demo" style="text-align: center; font-size: 20px;"></p>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -76,6 +78,7 @@
             @yield('content')
         </main>
     </div>
+    
 </body>
 </html>
 

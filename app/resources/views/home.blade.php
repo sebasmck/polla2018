@@ -7,17 +7,16 @@
                 Polla World Cup 2018
             </div>
         </div>
-
         <div class="row justify-content-center">
             <div class="col-md-10">
                 <div class="card">
                     <div class="card-header">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-8">
                                 <h4>{{ __('My pools') }} </h4>
                             </div>
-                            <div class="col-md-8">
-                                <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary addbutton" id="myBtn" style="width: 165px; padding-top: 0;">Add Additional Pool <span style="font-size: 19px;     font-weight: 700;"> +</span></button>
+                            <div class="col-md-4">
+                                <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary" id="myBtn" style="width: 100%; padding-top: 0;">Add Additional Pool <span style="font-size: 19px;     font-weight: 700;"> +</span></button>
                             </div>
                         </div>
                         
@@ -25,57 +24,58 @@
                     </div>
 
                     <div class="card-body">
-                        <div class="columns">
-                            <div class="column is-two-thirds">
-                            
-                                    <table id="myTable" class="display">
-                                            <thead>
-                                                <tr>
-                                                    <th>Nickname</th>
-                                                    <th>Status</th>
-                                                    <th>Complete Pool</th>
-                                                    <th></th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                @foreach ($polls as $poll)
-                                                <tr>
-                                                    <td>{{$poll->poll_name}}</td>
+                         <div class="row">
+                            <div class="col-md-12 table-responsive">
+                        
+                                <table id="myTable" class="table table_pool">
+                                        <thead>
+                                            <tr>
+                                                <th>Nickname</th>
+                                                <th>Status</th>
+                                                <th>Complete Pool</th>
+                                                <th></th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach ($polls as $poll)
+                                            <tr>
+                                                <td>{{$poll->poll_name}}</td>
+                                                @if($poll->status == 'Pending')
+                                                    <td style="color: #FF0000;">{{$poll->status}}</td>
+                                                @else
+                                                    <td style="color: #38610B;">{{$poll->status}}</td>
+                                                @endif
+
+                                                <td></td>
+                                                <td><div class="form-group row mb-0">
+
                                                     @if($poll->status == 'Pending')
-                                                        <td style="color: #FF0000;">{{$poll->status}}</td>
+                                                        <div class="col-md-8 offset-md-4">
+                                                            <div class="control">
+                                                                <button class="btn btn-primary" onclick="window.location='{{ route('picks.index') }}'">Edit my picks</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                     @else
-                                                        <td style="color: #38610B;">{{$poll->status}}</td>
+                                                    
                                                     @endif
-
-                                                    <td></td>
-                                                    <td><div class="form-group row mb-0">
-
-                                                        @if($poll->status == 'Pending')
-
-                                                        @else
-                                                        <div class="col-md-8 offset-md-4">
-                                                            <div class="control">
-                                                                <button class="btn btn-primary" onclick="window.location='{{ route('picks.show', $poll->iduser_poll) }}'">Edit my picks</button>
-                                                            </div>
+                                                </div></td>
+                                                <td>
+                                                    @if($poll->status == 'Pending')
+                                                    <div class="col-md-8 offset-md-4">
+                                                        <div class="control">
+                                                            <button class="btn btn-primary" onclick="window.location='{{ route('picks.show', $poll->iduser_poll) }}'">Delete Pool</button>
                                                         </div>
-                                                        @endif
-                                                    </div></td>
-                                                    <td>
-                                                        @if($poll->status == 'Pending')
-                                                        <div class="col-md-8 offset-md-4">
-                                                            <div class="control">
-                                                                <button class="btn btn-primary" onclick="window.location='{{ route('picks.show', $poll->iduser_poll) }}'">Delete Pool</button>
-                                                            </div>
-                                                        </div>
-                                                        @else
-                                                        
-                                                        @endif
-                                                    </td>
-                                                </tr>
-                                                @endforeach
-                                            </tbody>
-                                    </table> 
+                                                    </div>
+                                                    @else
+                                                    
+                                                    @endif
+                                                </td>
+                                            </tr>
+                                            @endforeach
+                                        </tbody>
+                                </table> 
                             </div>
                         </div>
                     </div>
@@ -192,13 +192,17 @@
 
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"> </script>
 <script src="{{URL::asset('js/app.js')}}"></script>
+<script src="{{URL::asset('scripts/countdown.js')}}"></script>
 
 <script>
-    $(document).ready( function () {
-        $('#myTable').DataTable({
-            paging: false,
-        });
-    } );
+    // $(document).ready( function () {
+    //     $('#myTable').DataTable({
+    //         paging: false,
+    //     });
+    // } );
+
+
+
 </script>
 
 
