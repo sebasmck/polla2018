@@ -88,8 +88,8 @@
     <table border="0" cellpadding="0" cellspacing="0" class="body" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background-color: #f6f6f6;">
       <tr>
         <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">&nbsp;</td>
-        <td class="container" style="font-family: sans-serif; font-size: 14px; vertical-align: top; display: block; Margin: 0 auto; max-width: 580px; padding: 10px; width: 580px;">
-          <div class="content" style="box-sizing: border-box; display: block; Margin: 0 auto; max-width: 580px; padding: 10px;">
+        <td class="container" style="font-family: sans-serif; font-size: 14px; vertical-align: top; display: block; margin: 0 auto; max-width: 580px; padding: 10px; width: 580px;">
+          <div class="content" style="box-sizing: border-box; display: block; margin: 0 auto; max-width: 580px; padding: 10px;">
 
             <!-- START CENTERED WHITE CONTAINER -->
             <span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">This is preheader text. Some clients will show this text as a preview.</span>
@@ -101,22 +101,23 @@
                   <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
                     <tr>
                       <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Hi {!!$name!!} {!!$lastname!!},</p>
+                        <h1 style="font-size: 60px; text-align: center; color: #004782; font-weight: 700; font-family:Raleway, sans-serif;">Polla World Cup</h1>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Hi {!!$name!!} {!!$lastname!!},</p>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0;">Your registration has been accepted!!!</p>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Please log in to the web site and choose your scores and qualified teams for the World Cup 2018.</p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Please log in to the web site and choose your scores and qualified teams for the World Cup 2018.</p>
 
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0;">Your username is: <strong>{!!$email!!}</strong></p>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Your password is: <strong>{!!$password!!}</strong></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Your username is: <strong>{!!$email!!}</strong></p>
+                        {{-- <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Your password is: <strong>{!!$password!!}</strong></p> --}}
                        
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Once you enter your picks, you will find a link to print your picks. In addition, on June 11th, after the registration deadline, you will be able to view and print every participant’s picks. You can register as many World Cup Pools as you like, with the same email, just make sure to select a different nickname for every Pool.</p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Once you enter your picks, you will find a link to print your picks. In addition, on June 11th, after the registration deadline, you will be able to view and print every participant’s picks. You can register as many World Cup Pools as you like, with the same email, just make sure to select a different nickname for every Pool.</p>
 
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Remember, only 300 Active Pools will be accepted so contact your city representative ASAP.</p>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Good luck!
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Remember, only 300 Active Pools will be accepted so contact your city representative ASAP.</p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Good luck!
                             <br><strong>PollaWorldCup.com</strong> 
                             <br>Teamcontact@PollaWorldCup.com  
                             <br>miami@PollaWorldCup.com 
                             <br>newyork@PollaWorldCup.com
-                            <br>bogotá@PollaWorldCup.com</p>
+                            <br>bogota@PollaWorldCup.com
                             <br>barranquilla@PollaWorldCup.com</p>
                       </td>
                     </tr>
@@ -128,7 +129,7 @@
             </table>
 
             <!-- START FOOTER -->
-           <!--  <div class="footer" style="clear: both; Margin-top: 10px; text-align: center; width: 100%;">
+           <!--  <div class="footer" style="clear: both; margin-top: 10px; text-align: center; width: 100%;">
               <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
                 <tr>
                   <td class="content-block" style="font-family: sans-serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; font-size: 12px; color: #999999; text-align: center;">

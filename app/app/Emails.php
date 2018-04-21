@@ -17,7 +17,7 @@ class Emails
     public static function email_registration_admin( $data){
         Mail::send('emails.email_admin',  $data, function($message){
             $message->from('contact@pollaworldcup.com', 'PollaWorldCup.com Registration');
-            $message->to('miami@pollaworldcup.com')
+            $message->to('contact@pollaworldcup.com')
                      ->subject('PollaWorldCup.com Registration');
         });
     }

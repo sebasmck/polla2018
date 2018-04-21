@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use App\Emails;
+use App\PollsModel;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -57,6 +58,14 @@ class RegisterController extends Controller
         Emails::email_registration_user($user->email, $data);
         Emails::email_registration_admin($data);
         // $this->guard()->login($user);
+
+        $polls = new PollsModel;
+        $polls->id_User = $user->id;
+        $polls->poll_name = $user->nickname;
+        $polls->status = 'Pending';
+
+        $polls->save();
+        
 
         return $this->registered($request, $user)
                         ?: redirect($this->redirectPath());
