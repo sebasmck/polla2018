@@ -53,7 +53,7 @@
                                                     @if($poll->status == 'Pending')
                                                         <div class="col-md-8 offset-md-4">
                                                             <div class="control">
-                                                                <button class="btn btn-primary" onclick="window.location='{{ route('picks.index') }}'">Edit my picks</button>
+                                                                <button class="btn btn-primary" onclick="window.location='{{ route('picks.show', $poll->iduser_poll) }}'">Edit my picks</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -63,11 +63,11 @@
                                                 </div></td>
                                                 <td>
                                                     @if($poll->status == 'Pending')
-                                                    <div class="col-md-8 offset-md-4">
+                                                    {{-- <div class="col-md-8 offset-md-4">
                                                         <div class="control">
                                                             <button class="btn btn-primary" onclick="window.location='{{ route('picks.show', $poll->iduser_poll) }}'">Delete Pool</button>
                                                         </div>
-                                                    </div>
+                                                    </div> --}}
                                                     @else
                                                     
                                                     @endif

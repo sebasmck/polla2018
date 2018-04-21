@@ -80,7 +80,9 @@
                                                         <form name="groupa" id="groupa"> 
                                                             {{ csrf_field() }}
 
-                                                            <input type="hidden" name="group_name" value="groupa">
+                                                            <input type="hidden" name="group_name" value="Group A">
+
+                                                            <input type="hidden" name="id_poll" value="{{$poll->iduser_poll}}"> 
 
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
@@ -609,6 +611,10 @@
 
                                                         <form name="groupb" id="groupb"> 
                                                             {{ csrf_field() }}
+
+                                                            <input type="hidden" name="group_name" value="Group B">
+
+                                                            <input type="hidden" name="id_poll" value="{{$poll->iduser_poll}}"> 
                                                         
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
@@ -1132,6 +1138,10 @@
 
                                                         <form name="groupc" id="groupc"> 
                                                             {{ csrf_field() }}
+
+                                                            <input type="hidden" name="group_name" value="Group C">
+
+                                                            <input type="hidden" name="id_poll" value="{{$poll->iduser_poll}}"> 
                                                     
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
@@ -1655,6 +1665,10 @@
 
                                                         <form name="groupd" id="groupd"> 
                                                             {{ csrf_field() }}
+
+                                                            <input type="hidden" name="group_name" value="Group D">
+
+                                                            <input type="hidden" name="id_poll" value="{{$poll->iduser_poll}}"> 
                                                     
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
@@ -2178,6 +2192,10 @@
 
                                                         <form name="groupe" id="groupe"> 
                                                             {{ csrf_field() }}
+
+                                                            <input type="hidden" name="group_name" value="Group E">
+
+                                                            <input type="hidden" name="id_poll" value="{{$poll->iduser_poll}}"> 
                                                     
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
@@ -2701,6 +2719,10 @@
 
                                                         <form name="groupf" id="groupf"> 
                                                             {{ csrf_field() }}
+
+                                                            <input type="hidden" name="group_name" value="Group F">
+
+                                                            <input type="hidden" name="id_poll" value="{{$poll->iduser_poll}}"> 
                                                     
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
@@ -3224,7 +3246,11 @@
 
                                                         <form name="groupg" id="groupg"> 
                                                             {{ csrf_field() }}
-                                                    
+
+                                                            <input type="hidden" name="group_name" value="Group G">
+
+                                                            <input type="hidden" name="id_poll" value="{{$poll->iduser_poll}}"> 
+                                                            
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
                                                                         <tr>
@@ -3747,6 +3773,10 @@
 
                                                         <form name="grouph" id="grouph"> 
                                                             {{ csrf_field() }}
+
+                                                            <input type="hidden" name="group_name" value="Group H">
+
+                                                            <input type="hidden" name="id_poll" value="{{$poll->iduser_poll}}"> 
                                                     
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
