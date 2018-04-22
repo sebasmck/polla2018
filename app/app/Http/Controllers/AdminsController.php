@@ -38,12 +38,7 @@ class AdminsController extends Controller
 
     public function addRep(){
 
-        $notification = array(
-            'message' => 'I am a successful message!', 
-            'alert-type' => 'success'
-        );
-
-        return view('admin.add_rep')->with($notification);;
+        return view('admin.add_rep');
     }
 
 
@@ -60,7 +55,12 @@ class AdminsController extends Controller
 
         $rep->save();
 
-        return view('admin.assign_rep')->with('users', $users)->with('reps', $reps);
+        $notification = array(
+            'message' => 'I am a successful message!', 
+            'alert-type' => 'success'
+        );
+
+        return view('admin.assign_rep')->with('users', $users)->with('reps', $reps)->with($notification);
 
     }
 

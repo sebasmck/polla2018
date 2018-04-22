@@ -21,8 +21,35 @@ class PollsModel extends Model
 		return PollsModel::where('id_User','=',$idUser)->get();
 	}
 
-	public function picks(){
-		return $this->hasMany('App\Pick');
+	public function groupa(){
+		return $this->hasOne('App\PickGroupA', 'id_poll', 'iduser_poll');
 	}
 
+	public function groupb(){
+		return $this->hasOne('App\PickGroupB', 'id_poll', 'iduser_poll');
+	}
+
+	public function groupc(){
+		return $this->hasOne('App\PickGroupC', 'id_poll', 'iduser_poll');
+	}
+
+	public function groupd(){
+		return $this->hasOne('App\PickGroupD', 'id_poll', 'iduser_poll');
+	}
+
+	public function groupe(){
+		return $this->hasOne('App\PickGroupE', 'id_poll', 'iduser_poll');
+	}
+
+	public function groupf(){
+		return $this->hasOne('App\PickGroupF', 'id_poll', 'iduser_poll');
+	}
+
+	public function groupg(){
+		return $this->hasOne('App\PickGroupG', 'id_poll', 'iduser_poll');
+	}
+
+	public function grouph(){
+		return $this->hasOne('App\PickGroupH', 'id_poll', 'iduser_poll');
+	}
 }

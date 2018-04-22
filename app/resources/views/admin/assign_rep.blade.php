@@ -13,7 +13,9 @@
         <!-- Styles -->
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
       
-        
+        @include('admin.partials.head')
+
+
     </head>
     <body>
 
@@ -134,7 +136,7 @@
                 </div>
       </div>
 
-
+    @include('admin.partials.js')
 
     <script src="{{URL::asset('js/bulma.js')}}"></script>
     
@@ -167,5 +169,10 @@
 
     </script>
 
+
+
+    
+
+    
 
 </html>

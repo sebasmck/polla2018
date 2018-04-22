@@ -28,8 +28,16 @@ class PicksController extends Controller
     public function show($iduser_poll){
 
         $poll = PollsModel::find($iduser_poll);
+        $ga = PollsModel::find($iduser_poll)->groupa;
+        $gb = PollsModel::find($iduser_poll)->groupb;
+        $gc = PollsModel::find($iduser_poll)->groupc;
+        $gd = PollsModel::find($iduser_poll)->groupd;
+        $ge = PollsModel::find($iduser_poll)->groupe;
+        $gf = PollsModel::find($iduser_poll)->groupf;
+        $gg = PollsModel::find($iduser_poll)->groupg;
+        $gh = PollsModel::find($iduser_poll)->grouph;
 
-        return view('picks.picks')->with('poll', $poll);
+        return view('picks.picks')->with('poll', $poll)->with('ga', $ga)->with('gb', $gb)->with('gc', $gc)->with('gd', $gd)->with('ge', $ge)->with('gf', $gf)->with('gg', $gg)->with('gh', $gh);
 
     }
 
@@ -77,23 +85,29 @@ class PicksController extends Controller
         // $clasificado-> = $req->;
         // $clasificado-> = $req->;
         // $clasificado->save();
-        $pick->group_name = $req->group_name;
-        $pick->id_poll = $req->id_poll;
 
-        $pick->M1B1 = $req->M1B1;
-        $pick->M1B2 = $req->M1B2;
-        $pick->M2B3 = $req->M2B3;
-        $pick->M2B4 = $req->M2B4;
-        $pick->M3B1 = $req->M3B1;
-        $pick->M3B3 = $req->M3B3;
-        $pick->M4B4 = $req->M4B4;
-        $pick->M4B2 = $req->M4B2;
-        $pick->M5B4 = $req->M5B4;
-        $pick->M5B1 = $req->M5B1;
-        $pick->M6B2 = $req->M6B2;
-        $pick->M6B3 = $req->M6B3;
 
-        $pick->save();
+        PickGroupB::updateOrCreate(
+
+             ['id_poll' => $req->id_poll,],
+
+             [  
+                'id_poll' => $req->id_poll,
+                'group_name' => $req->group_name,
+                'M1B1' => $req->M1B1,
+                'M1B2' => $req->M1B2,
+                'M2B3' => $req->M2B3,
+                'M2B4' => $req->M2B4,
+                'M3B1' => $req->M3B1,
+                'M3B3' => $req->M3B3,
+                'M4B4' => $req->M4B4,
+                'M4B2' => $req->M4B2,
+                'M5B4' => $req->M5B4,
+                'M5B1' => $req->M5B1,
+                'M6B2' => $req->M6B2,
+                'M6B3' => $req->M6B3,
+
+             ]);
         
         return response()->json($pick);
         
@@ -107,23 +121,29 @@ class PicksController extends Controller
         // $clasificado-> = $req->;
         // $clasificado-> = $req->;
         // $clasificado->save();
-        $pick->group_name = $req->group_name;
-        $pick->id_poll = $req->id_poll;
 
-        $pick->M1C1 = $req->M1C1;
-        $pick->M1C2 = $req->M1C2;
-        $pick->M2C3 = $req->M2C3;
-        $pick->M2C4 = $req->M2C4;
-        $pick->M3C1 = $req->M3C1;
-        $pick->M3C3 = $req->M3C3;
-        $pick->M4C4 = $req->M4C4;
-        $pick->M4C2 = $req->M4C2;
-        $pick->M5C4 = $req->M5C4;
-        $pick->M5C1 = $req->M5C1;
-        $pick->M6C2 = $req->M6C2;
-        $pick->M6C3 = $req->M6C3;
 
-        $pick->save();
+       PickGroupC::updateOrCreate(
+
+             ['id_poll' => $req->id_poll,],
+
+             [  
+                'id_poll' => $req->id_poll,
+                'group_name' => $req->group_name,
+                'M1C1' => $req->M1C1,
+                'M1C2' => $req->M1C2,
+                'M2C3' => $req->M2C3,
+                'M2C4' => $req->M2C4,
+                'M3C1' => $req->M3C1,
+                'M3C3' => $req->M3C3,
+                'M4C4' => $req->M4C4,
+                'M4C2' => $req->M4C2,
+                'M5C4' => $req->M5C4,
+                'M5C1' => $req->M5C1,
+                'M6C2' => $req->M6C2,
+                'M6C3' => $req->M6C3,
+
+             ]);
         
         return response()->json($pick);
         
@@ -137,25 +157,29 @@ class PicksController extends Controller
         // $clasificado-> = $req->;
         // $clasificado-> = $req->;
         // $clasificado->save();
-        $pick->group_name = $req->group_name;
-        $pick->id_poll = $req->id_poll;
 
+        PickGroupD::updateOrCreate(
 
-        $pick->M1D1 = $req->M1D1;
-        $pick->M1D2 = $req->M1D2;
-        $pick->M2D3 = $req->M2D3;
-        $pick->M2D4 = $req->M2D4;
-        $pick->M3D1 = $req->M3D1;
-        $pick->M3D3 = $req->M3D3;
-        $pick->M4D4 = $req->M4D4;
-        $pick->M4D2 = $req->M4D2;
-        $pick->M5D4 = $req->M5D4;
-        $pick->M5D1 = $req->M5D1;
-        $pick->M6D2 = $req->M6D2;
-        $pick->M6D3 = $req->M6D3;
+             ['id_poll' => $req->id_poll,],
 
-        $pick->save();
-        
+             [  
+                'id_poll' => $req->id_poll,
+                'group_name' => $req->group_name,
+                'M1D1' => $req->M1D1,
+                'M1D2' => $req->M1D2,
+                'M2D3' => $req->M2D3,
+                'M2D4' => $req->M2D4,
+                'M3D1' => $req->M3D1,
+                'M3D3' => $req->M3D3,
+                'M4D4' => $req->M4D4,
+                'M4D2' => $req->M4D2,
+                'M5D4' => $req->M5D4,
+                'M5D1' => $req->M5D1,
+                'M6D2' => $req->M6D2,
+                'M6D3' => $req->M6D3,
+
+             ]);
+
         return response()->json($pick);
         
     }
@@ -167,23 +191,28 @@ class PicksController extends Controller
         // $clasificado-> = $req->;
         // $clasificado-> = $req->;
         // $clasificado->save();
-        $pick->group_name = $req->group_name;
-        $pick->id_poll = $req->id_poll;
 
-        $pick->M1E1 = $req->M1E1;
-        $pick->M1E2 = $req->M1E2;
-        $pick->M2E3 = $req->M2E3;
-        $pick->M2E4 = $req->M2E4;
-        $pick->M3E1 = $req->M3E1;
-        $pick->M3E3 = $req->M3E3;
-        $pick->M4E4 = $req->M4E4;
-        $pick->M4E2 = $req->M4E2;
-        $pick->M5E4 = $req->M5E4;
-        $pick->M5E1 = $req->M5E1;
-        $pick->M6E2 = $req->M6E2;
-        $pick->M6E3 = $req->M6E3;
+        PickGroupE::updateOrCreate(
 
-        $pick->save();
+             ['id_poll' => $req->id_poll,],
+
+             [  
+                'id_poll' => $req->id_poll,
+                'group_name' => $req->group_name,
+                'M1E1' => $req->M1E1,
+                'M1E2' => $req->M1E2,
+                'M2E3' => $req->M2E3,
+                'M2E4' => $req->M2E4,
+                'M3E1' => $req->M3E1,
+                'M3E3' => $req->M3E3,
+                'M4E4' => $req->M4E4,
+                'M4E2' => $req->M4E2,
+                'M5E4' => $req->M5E4,
+                'M5E1' => $req->M5E1,
+                'M6E2' => $req->M6E2,
+                'M6E3' => $req->M6E3,
+
+             ]);
         
         return response()->json($pick);
         
@@ -198,23 +227,27 @@ class PicksController extends Controller
         // $clasificado-> = $req->;
         // $clasificado->save();
 
-        $pick->group_name = $req->group_name;
-        $pick->id_poll = $req->id_poll;
+       PickGroupF::updateOrCreate(
 
-        $pick->M1F1 = $req->M1F1;
-        $pick->M1F2 = $req->M1F2;
-        $pick->M2F3 = $req->M2F3;
-        $pick->M2F4 = $req->M2F4;
-        $pick->M3F1 = $req->M3F1;
-        $pick->M3F3 = $req->M3F3;
-        $pick->M4F4 = $req->M4F4;
-        $pick->M4F2 = $req->M4F2;
-        $pick->M5F4 = $req->M5F4;
-        $pick->M5F1 = $req->M5F1;
-        $pick->M6F2 = $req->M6F2;
-        $pick->M6F3 = $req->M6F3;
+             ['id_poll' => $req->id_poll,],
 
-        $pick->save();
+             [  
+                'id_poll' => $req->id_poll,
+                'group_name' => $req->group_name,
+                'M1F1' => $req->M1F1,
+                'M1F2' => $req->M1F2,
+                'M2F3' => $req->M2F3,
+                'M2F4' => $req->M2F4,
+                'M3F1' => $req->M3F1,
+                'M3F3' => $req->M3F3,
+                'M4F4' => $req->M4F4,
+                'M4F2' => $req->M4F2,
+                'M5F4' => $req->M5F4,
+                'M5F1' => $req->M5F1,
+                'M6F2' => $req->M6F2,
+                'M6F3' => $req->M6F3,
+
+             ]);
         
         return response()->json($pick);
         
@@ -229,23 +262,31 @@ class PicksController extends Controller
         // $clasificado-> = $req->;
         // $clasificado->save();
 
-        $pick->group_name = $req->group_name;
-        $pick->id_poll = $req->id_poll;
 
-        $pick->M1G1 = $req->M1G1;
-        $pick->M1G2 = $req->M1G2;
-        $pick->M2G3 = $req->M2G3;
-        $pick->M2G4 = $req->M2G4;
-        $pick->M3G1 = $req->M3G1;
-        $pick->M3G3 = $req->M3G3;
-        $pick->M4G4 = $req->M4G4;
-        $pick->M4G2 = $req->M4G2;
-        $pick->M5G4 = $req->M5G4;
-        $pick->M5G1 = $req->M5G1;
-        $pick->M6G2 = $req->M6G2;
-        $pick->M6G3 = $req->M6G3;
 
-        $pick->save();
+        PickGroupG::updateOrCreate(
+
+             ['id_poll' => $req->id_poll,],
+
+             [  
+                'id_poll' => $req->id_poll,
+                'group_name' => $req->group_name,
+                'M1G1' => $req->M1G1,
+                'M1G2' => $req->M1G2,
+                'M2G3' => $req->M2G3,
+                'M2G4' => $req->M2G4,
+                'M3G1' => $req->M3G1,
+                'M3G3' => $req->M3G3,
+                'M4G4' => $req->M4G4,
+                'M4G2' => $req->M4G2,
+                'M5G4' => $req->M5G4,
+                'M5G1' => $req->M5G1,
+                'M6G2' => $req->M6G2,
+                'M6G3' => $req->M6G3,
+
+             ]);
+
+  
         
         return response()->json($pick);
         
@@ -257,26 +298,31 @@ class PicksController extends Controller
         // $clasificado = new Clasificado;
         // $clasificado-> = $req->;
         // $clasificado-> = $req->;
-        // $clasificado->save();
+       // $clasificado->save();
+        
 
+        PickGroupH::updateOrCreate(
 
-        $pick->group_name = $req->group_name;
-        $pick->id_poll = $req->id_poll;
+             ['id_poll' => $req->id_poll,],
 
-        $pick->M1H1 = $req->M1H1;
-        $pick->M1H2 = $req->M1H2;
-        $pick->M2H3 = $req->M2H3;
-        $pick->M2H4 = $req->M2H4;
-        $pick->M3H1 = $req->M3H1;
-        $pick->M3H3 = $req->M3H3;
-        $pick->M4H4 = $req->M4H4;
-        $pick->M4H2 = $req->M4H2;
-        $pick->M5H4 = $req->M5H4;
-        $pick->M5H1 = $req->M5H1;
-        $pick->M6H2 = $req->M6H2;
-        $pick->M6H3 = $req->M6H3;
+             [  
+                'id_poll' => $req->id_poll,
+                'group_name' => $req->group_name,
+                'M1H1' => $req->M1H1,
+                'M1H2' => $req->M1H2,
+                'M2H3' => $req->M2H3,
+                'M2H4' => $req->M2H4,
+                'M3H1' => $req->M3H1,
+                'M3H3' => $req->M3H3,
+                'M4H4' => $req->M4H4,
+                'M4H2' => $req->M4H2,
+                'M5H4' => $req->M5H4,
+                'M5H1' => $req->M5H1,
+                'M6H2' => $req->M6H2,
+                'M6H3' => $req->M6H3,
 
-        $pick->save();
+             ]);
+
         
         return response()->json($pick);
         
