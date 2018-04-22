@@ -14,6 +14,7 @@ use App\PickGroupF;
 use App\PickGroupG;
 use App\PickGroupH;
 use App\clasificado;
+use App\Team;
 
 class PicksController extends Controller
 {	
@@ -36,8 +37,9 @@ class PicksController extends Controller
         $gf = PollsModel::find($iduser_poll)->groupf;
         $gg = PollsModel::find($iduser_poll)->groupg;
         $gh = PollsModel::find($iduser_poll)->grouph;
+        $teams = Team::all();
 
-        return view('picks.picks')->with('poll', $poll)->with('ga', $ga)->with('gb', $gb)->with('gc', $gc)->with('gd', $gd)->with('ge', $ge)->with('gf', $gf)->with('gg', $gg)->with('gh', $gh);
+        return view('picks.picks')->with('poll', $poll)->with('ga', $ga)->with('gb', $gb)->with('gc', $gc)->with('gd', $gd)->with('ge', $ge)->with('gf', $gf)->with('gg', $gg)->with('gh', $gh)->with('teams', $teams);
 
     }
 
@@ -45,11 +47,19 @@ class PicksController extends Controller
     public function storeGroupA(Request $req){
 
     	$pick = new PickGroupA;
-        // $clasificado = new Clasificado;
-        // $clasificado-> = $req->;
-        // $clasificado-> = $req->;
-        // $clasificado->save();
 
+        Clasificado::updateOrCreate(
+
+            ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
+
+             [  
+                'id_poll' => $req->id_poll,
+                'id_winner_team' => $req->WA1,
+                'id_runnerup' => $req->WA2,
+                'id_fase' => $req->id_fase,
+             ]);
+
+        
 
 
         PickGroupA::updateOrCreate(
@@ -81,11 +91,17 @@ class PicksController extends Controller
     public function storeGroupB(Request $req){
 
         $pick = new PickGroupB;
-        // $clasificado = new Clasificado;
-        // $clasificado-> = $req->;
-        // $clasificado-> = $req->;
-        // $clasificado->save();
 
+         Clasificado::updateOrCreate(
+
+            ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
+
+             [  
+                'id_poll' => $req->id_poll,
+                'id_winner_team' => $req->WB1,
+                'id_runnerup' => $req->WB2,
+                'id_fase' => $req->id_fase,
+             ]);
 
         PickGroupB::updateOrCreate(
 
@@ -117,10 +133,17 @@ class PicksController extends Controller
     public function storeGroupC(Request $req){
 
         $pick = new PickGroupC;
-        // $clasificado = new Clasificado;
-        // $clasificado-> = $req->;
-        // $clasificado-> = $req->;
-        // $clasificado->save();
+        
+        Clasificado::updateOrCreate(
+
+            ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
+
+             [  
+                'id_poll' => $req->id_poll,
+                'id_winner_team' => $req->WC1,
+                'id_runnerup' => $req->WC2,
+                'id_fase' => $req->id_fase,
+             ]);
 
 
        PickGroupC::updateOrCreate(
@@ -153,10 +176,17 @@ class PicksController extends Controller
     public function storeGroupD(Request $req){
 
         $pick = new PickGroupD;
-        // $clasificado = new Clasificado;
-        // $clasificado-> = $req->;
-        // $clasificado-> = $req->;
-        // $clasificado->save();
+        
+        Clasificado::updateOrCreate(
+
+            ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
+
+             [  
+                'id_poll' => $req->id_poll,
+                'id_winner_team' => $req->WD1,
+                'id_runnerup' => $req->WD2,
+                'id_fase' => $req->id_fase,
+             ]);
 
         PickGroupD::updateOrCreate(
 
@@ -187,10 +217,17 @@ class PicksController extends Controller
     public function storeGroupE(Request $req){
 
         $pick = new PickGroupE;
-        // $clasificado = new Clasificado;
-        // $clasificado-> = $req->;
-        // $clasificado-> = $req->;
-        // $clasificado->save();
+        
+        Clasificado::updateOrCreate(
+
+            ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
+
+             [  
+                'id_poll' => $req->id_poll,
+                'id_winner_team' => $req->WE1,
+                'id_runnerup' => $req->WE2,
+                'id_fase' => $req->id_fase,
+             ]);
 
         PickGroupE::updateOrCreate(
 
@@ -222,10 +259,17 @@ class PicksController extends Controller
     public function storeGroupF(Request $req){
 
         $pick = new PickGroupF;
-        // $clasificado = new Clasificado;
-        // $clasificado-> = $req->;
-        // $clasificado-> = $req->;
-        // $clasificado->save();
+
+        Clasificado::updateOrCreate(
+
+            ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
+
+             [  
+                'id_poll' => $req->id_poll,
+                'id_winner_team' => $req->WF1,
+                'id_runnerup' => $req->WF2,
+                'id_fase' => $req->id_fase,
+             ]);
 
        PickGroupF::updateOrCreate(
 
@@ -257,11 +301,17 @@ class PicksController extends Controller
     public function storeGroupG(Request $req){
 
         $pick = new PickGroupG;
-        // $clasificado = new Clasificado;
-        // $clasificado-> = $req->;
-        // $clasificado-> = $req->;
-        // $clasificado->save();
+        
+        Clasificado::updateOrCreate(
 
+            ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
+
+             [  
+                'id_poll' => $req->id_poll,
+                'id_winner_team' => $req->WG1,
+                'id_runnerup' => $req->WG2,
+                'id_fase' => $req->id_fase,
+             ]);
 
 
         PickGroupG::updateOrCreate(
@@ -295,10 +345,17 @@ class PicksController extends Controller
     public function storeGroupH(Request $req){
 
         $pick = new PickGroupH;
-        // $clasificado = new Clasificado;
-        // $clasificado-> = $req->;
-        // $clasificado-> = $req->;
-       // $clasificado->save();
+        
+        Clasificado::updateOrCreate(
+
+            ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
+
+             [  
+                'id_poll' => $req->id_poll,
+                'id_winner_team' => $req->WH1,
+                'id_runnerup' => $req->WH2,
+                'id_fase' => $req->id_fase,
+             ]);
         
 
         PickGroupH::updateOrCreate(

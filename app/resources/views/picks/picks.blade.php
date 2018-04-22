@@ -82,6 +82,8 @@
 
                                                             <input type="hidden" name="group_name" value="Group A">
 
+                                                            <input type="hidden" name="id_fase" value="1">
+
                                                             <input type="hidden" name="id_poll" value="{{$poll->iduser_poll}}"> 
 
                                                             <table id="myTable" class="display table_picks">
@@ -534,26 +536,28 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group A winner</div>
 
-                                                                            <select id="WA1" class="form-control">
+                                                                            <select id="WA1" name="WA1" class="form-control">
                                                                                 <option></option>
-                                                                                <option id="A1" value="Russia">Russia</option>
-                                                                                <option id="A2" value="Saudi Arabia">Saudi Arabia</option>
-                                                                                <option id="A3" value="Egypt">Egypt</option>
-                                                                                <option id="A4" value="Uruguay">Uruguay</option>
+                                                                                <option id="A1" value="1">Russia</option>
+                                                                                <option id="A2" value="3">Saudi Arabia</option>
+                                                                                <option id="A3" value="4">Egypt</option>
+                                                                                <option id="A4" value="2">Uruguay</option>
                                                                             </select>
+                                                                            {{-- {{ Form::select('WA1', $teams->pluck('team_name', 'id'), null, ['class' => 'form-control', 'id' => 'WA1']) }} --}}
                                                                         </div>
+
                                                                             
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group A runner-up</div>
 
-                                                                            <select id="WA2" class="form-control">
+                                                                            <select id="WA2" name="WA2" class="form-control">
                                                                                 <option></option>
-                                                                                <option id="A1" value="Russia">Russia</option>
-                                                                                <option id="A2" value="Saudi Arabia">Saudi Arabia</option>
-                                                                                <option id="A3" value="Egypt">Egypt</option>
-                                                                                <option id="A4" value="Uruguay">Uruguay</option>
+                                                                                <option id="A1" value="1">Russia</option>
+                                                                                <option id="A2" value="3">Saudi Arabia</option>
+                                                                                <option id="A3" value="4">Egypt</option>
+                                                                                <option id="A4" value="2">Uruguay</option>
                                                                             </select>
                                                                         </div>
                                                                             
@@ -613,6 +617,8 @@
                                                             {{ csrf_field() }}
 
                                                             <input type="hidden" name="group_name" value="Group B">
+
+                                                            <input type="hidden" name="id_fase" value="2">
 
                                                             <input type="hidden" name="id_poll" value="{{$poll->iduser_poll}}"> 
                                                         
@@ -1066,12 +1072,12 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group B winner</div>
 
-                                                                            <select id="WB1" class="form-control">
+                                                                            <select id="WB1" name="WB1" class="form-control">
                                                                                 <option></option>
-                                                                                <option id="B1" value="Portugal">Portugal</option>
-                                                                                <option id="B2" value="Spain Arabia">Spain</option>
-                                                                                <option id="B3" value="Morocco">Morocco</option>
-                                                                                <option id="B4" value="Iran">Iran</option>
+                                                                                <option id="B1" value="5">Portugal</option>
+                                                                                <option id="B2" value="7">Spain</option>
+                                                                                <option id="B3" value="8">Morocco</option>
+                                                                                <option id="B4" value="6">Iran</option>
                                                                             </select>
                                                                         </div>
                                                                             
@@ -1080,12 +1086,12 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group B runner-up</div>
 
-                                                                            <select id="WB2" class="form-control">
+                                                                            <select id="WB2" name="WB2" class="form-control">
                                                                                 <option></option>
-                                                                                <option id="B1" value="Portugal">Portugal</option>
-                                                                                <option id="B2" value="Spain">Spain</option>
-                                                                                <option id="B3" value="Morocco">Morocco</option>
-                                                                                <option id="B4" value="Iran">Iran</option>
+                                                                                <option id="B1" value="5">Portugal</option>
+                                                                                <option id="B2" value="7">Spain</option>
+                                                                                <option id="B3" value="8">Morocco</option>
+                                                                                <option id="B4" value="6">Iran</option>
                                                                             </select>
                                                                         </div>
                                                                             
@@ -1140,6 +1146,8 @@
                                                             {{ csrf_field() }}
 
                                                             <input type="hidden" name="group_name" value="Group C">
+
+                                                            <input type="hidden" name="id_fase" value="3">
 
                                                             <input type="hidden" name="id_poll" value="{{$poll->iduser_poll}}"> 
                                                     
@@ -1593,12 +1601,12 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group C winner</div>
 
-                                                                            <select id="WC1" class="form-control">
+                                                                            <select id="WC1" name="WC1" class="form-control">
                                                                                 <option></option>
-                                                                                <option id="C1" value="France">France</option>
-                                                                                <option id="C2" value="Australia">Australia</option>
-                                                                                <option id="C3" value="Peru">Peru</option>
-                                                                                <option id="C4" value="Denmark">Denmark</option>
+                                                                                <option id="C1" value="9">France</option>
+                                                                                <option id="C2" value="11">Australia</option>
+                                                                                <option id="C3" value="12">Peru</option>
+                                                                                <option id="C4" value="10">Denmark</option>
                                                                             </select>
                                                                         </div>
                                                                             
@@ -1607,12 +1615,12 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group C runner-up</div>
 
-                                                                            <select id="WC2" class="form-control">
+                                                                            <select id="WC2" name="WC2" class="form-control">
                                                                                 <option></option>
-                                                                                <option id="C1" value="France">France</option>
-                                                                                <option id="C2" value="Australia">Australia</option>
-                                                                                <option id="C3" value="Peru">Peru</option>
-                                                                                <option id="C4" value="Denmark">Denmark</option>
+                                                                                <option id="C1" value="9">France</option>
+                                                                                <option id="C2" value="11">Australia</option>
+                                                                                <option id="C3" value="12">Peru</option>
+                                                                                <option id="C4" value="10">Denmark</option>
                                                                             </select>
                                                                         </div>
                                                                             
@@ -1667,6 +1675,8 @@
                                                             {{ csrf_field() }}
 
                                                             <input type="hidden" name="group_name" value="Group D">
+
+                                                            <input type="hidden" name="id_fase" value="4">
 
                                                             <input type="hidden" name="id_poll" value="{{$poll->iduser_poll}}"> 
                                                     
@@ -2120,12 +2130,12 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group D winner</div>
 
-                                                                            <select id="WD1" class="form-control">
+                                                                            <select id="WD1" name="WD1" class="form-control">
                                                                                 <option></option>
-                                                                                <option id="D1" value="Argentina">Argentina</option>
-                                                                                <option id="D2" value="Iceland">Iceland</option>
-                                                                                <option id="D3" value="Croatia">Croatia</option>
-                                                                                <option id="D4" value="Nigeria">Nigeria</option>
+                                                                                <option id="D1" value="13">Argentina</option>
+                                                                                <option id="D2" value="15">Iceland</option>
+                                                                                <option id="D3" value="16">Croatia</option>
+                                                                                <option id="D4" value="14">Nigeria</option>
                                                                             </select>
                                                                         </div>
                                                                             
@@ -2134,12 +2144,12 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group D runner-up</div>
 
-                                                                            <select id="WD2" class="form-control">
+                                                                            <select id="WD2" name="WD2" class="form-control">
                                                                                 <option></option>
-                                                                                <option id="D1" value="Argentina">Argentina</option>
-                                                                                <option id="D2" value="Iceland">Iceland</option>
-                                                                                <option id="D3" value="Croatia">Croatia</option>
-                                                                                <option id="D4" value="Nigeria">Nigeria</option>
+                                                                                <option id="D1" value="13">Argentina</option>
+                                                                                <option id="D2" value="15">Iceland</option>
+                                                                                <option id="D3" value="16">Croatia</option>
+                                                                                <option id="D4" value="14">Nigeria</option>
                                                                             </select>
                                                                         </div>
                                                                             
@@ -2194,6 +2204,8 @@
                                                             {{ csrf_field() }}
 
                                                             <input type="hidden" name="group_name" value="Group E">
+
+                                                            <input type="hidden" name="id_fase" value="5">
 
                                                             <input type="hidden" name="id_poll" value="{{$poll->iduser_poll}}"> 
                                                     
@@ -2647,12 +2659,12 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group E winner</div>
 
-                                                                            <select id="WE1" class="form-control">
+                                                                            <select id="WE1" name="WE1" class="form-control">
                                                                                 <option></option>
-                                                                                <option id="E1" value="Brazil">Brazil</option>
-                                                                                <option id="E2" value="Switzerland">Switzerland</option>
-                                                                                <option id="E3" value="Costa Rica">Costa Rica</option>
-                                                                                <option id="E4" value="Serbia">Serbia</option>
+                                                                                <option id="E1" value="17">Brazil</option>
+                                                                                <option id="E2" value="19">Switzerland</option>
+                                                                                <option id="E3" value="20">Costa Rica</option>
+                                                                                <option id="E4" value="18">Serbia</option>
                                                                             </select>
                                                                         </div>
                                                                             
@@ -2661,12 +2673,12 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group E runner-up</div>
 
-                                                                            <select id="WE2" class="form-control">
+                                                                            <select id="WE2" name="WE2" class="form-control">
                                                                                 <option></option>
-                                                                                <option id="E1" value="Brazil">Brazil</option>
-                                                                                <option id="E2" value="Switzerland">Switzerland</option>
-                                                                                <option id="E3" value="Costa Rica">Costa Rica</option>
-                                                                                <option id="E4" value="Serbia">Serbia</option>
+                                                                                <option id="E1" value="17">Brazil</option>
+                                                                                <option id="E2" value="19">Switzerland</option>
+                                                                                <option id="E3" value="20">Costa Rica</option>
+                                                                                <option id="E4" value="18">Serbia</option>
                                                                             </select>
                                                                         </div>
                                                                             
@@ -2721,6 +2733,8 @@
                                                             {{ csrf_field() }}
 
                                                             <input type="hidden" name="group_name" value="Group F">
+
+                                                            <input type="hidden" name="id_fase" value="6">
 
                                                             <input type="hidden" name="id_poll" value="{{$poll->iduser_poll}}"> 
                                                     
@@ -3174,12 +3188,12 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group F winner</div>
 
-                                                                            <select id="WF1" class="form-control">
+                                                                            <select id="WF1" name="WF1" class="form-control">
                                                                                 <option></option>
-                                                                                <option id="F1" value="Germany">Germany</option>
-                                                                                <option id="F2" value="Mexico">Mexico</option>
-                                                                                <option id="F3" value="Sweden">Sweden</option>
-                                                                                <option id="F4" value="South Korea">South Korea</option>
+                                                                                <option id="F1" value="21">Germany</option>
+                                                                                <option id="F2" value="23">Mexico</option>
+                                                                                <option id="F3" value="24">Sweden</option>
+                                                                                <option id="F4" value="22">South Korea</option>
                                                                             </select>
                                                                         </div>
                                                                             
@@ -3188,12 +3202,12 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group F runner-up</div>
 
-                                                                            <select id="WF2" class="form-control">
+                                                                            <select id="WF2" name="WF2" class="form-control">
                                                                                 <option></option>
-                                                                                <option id="F1" value="Germany">Germany</option>
-                                                                                <option id="F2" value="Mexico">Mexico</option>
-                                                                                <option id="F3" value="Sweden">Sweden</option>
-                                                                                <option id="F4" value="South Korea">South Korea</option>
+                                                                                <option id="F1" value="21">Germany</option>
+                                                                                <option id="F2" value="23">Mexico</option>
+                                                                                <option id="F3" value="24">Sweden</option>
+                                                                                <option id="F4" value="22">South Korea</option>
                                                                             </select>
                                                                         </div>
                                                                             
@@ -3248,6 +3262,8 @@
                                                             {{ csrf_field() }}
 
                                                             <input type="hidden" name="group_name" value="Group G">
+
+                                                            <input type="hidden" name="id_fase" value="7">
 
                                                             <input type="hidden" name="id_poll" value="{{$poll->iduser_poll}}"> 
                                                             
@@ -3701,12 +3717,12 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group G winner</div>
 
-                                                                            <select id="WG1" class="form-control">
+                                                                            <select id="WG1" name="WG1" class="form-control">
                                                                                 <option></option>
-                                                                                <option id="G1" value="Belgium">Belgium</option>
-                                                                                <option id="G2" value="Panama">Panama</option>
-                                                                                <option id="G3" value="Tunisia">Tunisia</option>
-                                                                                <option id="G4" value="England">England</option>
+                                                                                <option id="G1" value="25">Belgium</option>
+                                                                                <option id="G2" value="27">Panama</option>
+                                                                                <option id="G3" value="28">Tunisia</option>
+                                                                                <option id="G4" value="26">England</option>
                                                                             </select>
                                                                         </div>
                                                                             
@@ -3715,12 +3731,12 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group G runner-up</div>
 
-                                                                            <select id="WG2" class="form-control">
+                                                                            <select id="WG2" name="WG2" class="form-control">
                                                                                 <option></option>
-                                                                                <option id="G1" value="Belgium">Belgium</option>
-                                                                                <option id="G2" value="Panama">Panama</option>
-                                                                                <option id="G3" value="Tunisia">Tunisia</option>
-                                                                                <option id="G4" value="England">England</option>
+                                                                                <option id="G1" value="25">Belgium</option>
+                                                                                <option id="G2" value="27">Panama</option>
+                                                                                <option id="G3" value="28">Tunisia</option>
+                                                                                <option id="G4" value="26">England</option>
                                                                             </select>
                                                                         </div>
                                                                             
@@ -3775,6 +3791,8 @@
                                                             {{ csrf_field() }}
 
                                                             <input type="hidden" name="group_name" value="Group H">
+
+                                                            <input type="hidden" name="id_fase" value="8">
 
                                                             <input type="hidden" name="id_poll" value="{{$poll->iduser_poll}}"> 
                                                     
@@ -4228,12 +4246,12 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group H winner</div>
 
-                                                                            <select id="WH1" class="form-control">
+                                                                            <select id="WH1" name="WH1" class="form-control">
                                                                                 <option></option>
-                                                                                <option id="H1" value="Poland">Poland</option>
-                                                                                <option id="H2" value="Senegal">Senegal</option>
-                                                                                <option id="H3" value="Colombia">Colombia</option>
-                                                                                <option id="H4" value="Japan">Japan</option>
+                                                                                <option id="H1" value="29">Poland</option>
+                                                                                <option id="H2" value="31">Senegal</option>
+                                                                                <option id="H3" value="32">Colombia</option>
+                                                                                <option id="H4" value="30">Japan</option>
                                                                             </select>
                                                                         </div>
                                                                             
@@ -4242,12 +4260,12 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group H runner-up</div>
 
-                                                                            <select id="WH2" class="form-control">
+                                                                            <select id="WH2" name="WH2" class="form-control">
                                                                                 <option></option>
-                                                                                <option id="H1" value="Poland">Poland</option>
-                                                                                <option id="H2" value="Senegal">Senegal</option>
-                                                                                <option id="H3" value="Colombia">Colombia</option>
-                                                                                <option id="H4" value="Japan">Japan</option>
+                                                                                <option id="H1" value="29">Poland</option>
+                                                                                <option id="H2" value="31">Senegal</option>
+                                                                                <option id="H3" value="32">Colombia</option>
+                                                                                <option id="H4" value="30">Japan</option>
                                                                             </select>
                                                                         </div>
                                                                             
