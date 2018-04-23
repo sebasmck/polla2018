@@ -543,7 +543,12 @@
                                                                                 <option id="A3" value="4">Egypt</option>
                                                                                 <option id="A4" value="2">Uruguay</option>
                                                                             </select>
-                                                                            {{-- {{ Form::select('WA1', $teams->pluck('team_name', 'id'), null, ['class' => 'form-control', 'id' => 'WA1']) }} --}}
+                                                                            {!! Form::select('WA1', [
+                                                                                 '' => '',
+                                                                                 '' => '',
+                                                                                 '' => '',
+                                                                                 '' => '',
+                                                                                 ], old('value', isset($clasificado->) ? $gestioncalidad->SGCImplementado : null ), [ 'class' =>  'pull-right form-control', 'style' => 'width: 20%', 'required']) !!}
                                                                         </div>
 
                                                                             

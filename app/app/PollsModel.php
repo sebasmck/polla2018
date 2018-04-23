@@ -52,4 +52,9 @@ class PollsModel extends Model
 	public function grouph(){
 		return $this->hasOne('App\PickGroupH', 'id_poll', 'iduser_poll');
 	}
+
+	public function clasificado(){
+		return $this->hasOne('App\Clasificado', 'id_poll', 'iduser_poll');
+	}	
+
 }

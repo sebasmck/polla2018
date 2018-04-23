@@ -37,9 +37,35 @@ class PicksController extends Controller
         $gf = PollsModel::find($iduser_poll)->groupf;
         $gg = PollsModel::find($iduser_poll)->groupg;
         $gh = PollsModel::find($iduser_poll)->grouph;
-        $teams = Team::all();
+        
+        $wa = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 1)->get();
+        $wb = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 2)->get();
+        $wc = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 3)->get();
+        $wd = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 4)->get();
+        $we = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 5)->get();
+        $wf = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 6)->get();
+        $wg= Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 7)->get();
+        $wh = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 8)->get();
 
-        return view('picks.picks')->with('poll', $poll)->with('ga', $ga)->with('gb', $gb)->with('gc', $gc)->with('gd', $gd)->with('ge', $ge)->with('gf', $gf)->with('gg', $gg)->with('gh', $gh)->with('teams', $teams);
+
+        return view('picks.picks')
+        ->with('poll', $poll)
+        ->with('ga', $ga)
+        ->with('gb', $gb)
+        ->with('gc', $gc)
+        ->with('gd', $gd)
+        ->with('ge', $ge)
+        ->with('gf', $gf)
+        ->with('gg', $gg)
+        ->with('gh', $gh)
+        ->with('wa', $wa)
+        ->with('wb', $wb)
+        ->with('wc', $wc)
+        ->with('wd', $wd)
+        ->with('we', $we)
+        ->with('wf', $wf)
+        ->with('wg', $wg)
+        ->with('wh', $wh);
 
     }
 
