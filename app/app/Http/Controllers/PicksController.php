@@ -15,6 +15,7 @@ use App\PickGroupG;
 use App\PickGroupH;
 use App\clasificado;
 use App\Team;
+use DB;
 
 class PicksController extends Controller
 {	
@@ -37,14 +38,26 @@ class PicksController extends Controller
         $gf = PollsModel::find($iduser_poll)->groupf;
         $gg = PollsModel::find($iduser_poll)->groupg;
         $gh = PollsModel::find($iduser_poll)->grouph;
+
+
         
-        $wa = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 1)->get();
+        // $wa = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 1)->get();
+
+        // raw query
+
+        $wa = DB::table('clasificado')
+                    ->select(DB::raw('select team_name from teams'))
+                    ->where('id', '=' , '1')
+                    ->get();
+
+        dd($wa);
+
         $wb = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 2)->get();
         $wc = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 3)->get();
         $wd = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 4)->get();
         $we = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 5)->get();
         $wf = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 6)->get();
-        $wg= Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 7)->get();
+        $wg=  Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 7)->get();
         $wh = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 8)->get();
 
 

@@ -536,19 +536,23 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group A winner</div>
 
-                                                                            <select id="WA1" name="WA1" class="form-control">
+                                                                            {{-- <select id="WA1" name="WA1" class="form-control">
                                                                                 <option></option>
                                                                                 <option id="A1" value="1">Russia</option>
                                                                                 <option id="A2" value="3">Saudi Arabia</option>
                                                                                 <option id="A3" value="4">Egypt</option>
                                                                                 <option id="A4" value="2">Uruguay</option>
-                                                                            </select>
-                                                                            {!! Form::select('WA1', [
-                                                                                 '' => '',
-                                                                                 '' => '',
-                                                                                 '' => '',
-                                                                                 '' => '',
-                                                                                 ], old('value', isset($clasificado->) ? $gestioncalidad->SGCImplementado : null ), [ 'class' =>  'pull-right form-control', 'style' => 'width: 20%', 'required']) !!}
+                                                                            </select> --}}
+                                                                            {{-- {!! Form::select('wa', [
+                                                                                 ' ' => '',
+                                                                                 '1' => 'Russia',
+                                                                                 '3' => 'Saudi Arabia',
+                                                                                 '4' => 'Egypt',
+                                                                                 '2' => 'Uruguay',
+                                                                                 ], old('value', isset($wa->id_winner_team) ? $wa->id_winner_team : null ), [ 'class' =>  'form-control', 'required']) !!} --}}
+
+                                                                                 {{-- {{isset($wa->id_winner_team) ? $wa->id_winner_team : null }} --}}
+                                                                                 {{$wa->id_winner_team}}
                                                                         </div>
 
                                                                             
