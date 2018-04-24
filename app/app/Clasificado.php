@@ -18,4 +18,9 @@ class Clasificado extends Model
 		'id_fase',
 		'id_runnerup',
 	];
+
+	// public function team(){
+	// 	return $this->hasOne('App\Team', 'id')
+	// }
+
 }
