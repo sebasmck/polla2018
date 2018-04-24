@@ -552,7 +552,7 @@
                                                                                  ], old('value', isset($wa->id_winner_team) ? $wa->id_winner_team : null ), [ 'class' =>  'form-control', 'required']) !!} --}}
 
                                                                                  {{-- {{isset($wa->id_winner_team) ? $wa->id_winner_team : null }} --}}
-                                                                                 {{$wa->id_winner_team}}
+                                                                                 {{-- {{$wa->id_winner_team}} --}}
                                                                         </div>
 
                                                                             

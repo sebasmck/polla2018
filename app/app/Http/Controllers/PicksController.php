@@ -41,16 +41,16 @@ class PicksController extends Controller
 
 
         
-        // $wa = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 1)->get();
+        $wa = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 1)->get();
 
         // raw query
 
-        $wa = DB::table('clasificado')
-                    ->select(DB::raw('select team_name from teams'))
-                    ->where('id', '=' , '1')
-                    ->get();
+        // $wa = DB::table('clasificado')
+        //             ->select(DB::raw('select team_name from teams'))
+        //             ->where('id', '=' , '1')
+        //             ->get();
 
-        dd($wa);
+        // dd($wa);
 
         $wb = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 2)->get();
         $wc = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 3)->get();
