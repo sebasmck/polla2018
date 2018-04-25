@@ -13,10 +13,10 @@
                     <div class="card-header">
                         <div class="row">
                             <div class="col-md-8">
-                                <h4>{{ __('My pools') }} </h4>
+                                <h4>{{ __('My Pools') }} </h4>
                             </div>
                             <div class="col-md-4">
-                                <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary" id="myBtn" style="width: 100%; padding-top: 0;">Add Additional Pool <span style="font-size: 19px;     font-weight: 700;"> +</span></button>
+                                <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary" id="myBtn" style="width: 100%; padding-top: 0;"> Add additional Pool <span style="font-size: 19px;     font-weight: 700;"></span></button>
                             </div>
                         </div>
                         
@@ -24,6 +24,16 @@
                     </div>
 
                     <div class="card-body">
+                        <br>
+                        <ul style="line-height:80%" >
+                            <li>
+                                <p>Your registered Pool is below. To enter your picks, select “Edit my Picks”.</p>
+                            </li>
+                            <li>
+                                <p>To participate in additional Pools, please click “Add Additional Pool”.</p>
+                            </li>
+                        </ul>
+                        
                          <div class="row">
                             <div class="col-md-12 table-responsive">
                         
@@ -63,11 +73,11 @@
                                                 </div></td>
                                                 <td>
                                                     @if($poll->status == 'Pending')
-                                                    {{-- <div class="col-md-8 offset-md-4">
+                                                    <div class="col-md-8 offset-md-4">
                                                         <div class="control">
-                                                            <button class="btn btn-primary" onclick="window.location='{{ route('picks.show', $poll->iduser_poll) }}'">Delete Pool</button>
+                                                            <button class="btn btn-primary" onclick="window.location='{{ route('picks.destroy', $poll->iduser_poll) }}'">Delete Pool</button>
                                                         </div>
-                                                    </div> --}}
+                                                    </div>
                                                     @else
                                                     
                                                     @endif
