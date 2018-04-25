@@ -55,6 +55,6 @@ class PollsModel extends Model
 
 	public function clasificado(){
 		return $this->hasOne('App\Clasificado', 'id_poll', 'iduser_poll');
-	}	
+	}
 
 }

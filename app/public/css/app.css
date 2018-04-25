@@ -469,10 +469,10 @@ h6 {
 }
 
 hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: 0;
-    border-top: 1px solid rgba(0, 0, 0, .1)
+    border-top: 1px solid rgba(228, 11, 61, 0.93)
 }
 
 .small,
@@ -9464,4 +9464,37 @@ a.text-dark:hover {
 
 .table_pool td{
     border: solid 0.2px #cccccc40;
+}
+
+.table_second_stage{
+    width: 100%;
+    font-size: 12px!important;
+    /*width: 581px;*/
+    /*height: 294px;*/
+}
+
+.table_second_stage th{
+    text-align: center;
+}
+
+.table_second_stage td{
+    border: solid 0.2px #cccccc40;
+}
+
+.table_second_stage input {
+    display: block;
+    text-align: center;
+    width: 30px;
+    padding: 1px 5px;
+    font-size: .9rem;
+    line-height: 1.6;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 }
