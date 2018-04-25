@@ -418,6 +418,18 @@ class PicksController extends Controller
     }
 
 
+    public function destroy($iduser_poll)
+    {
+        
+        $poll = PollsModel::find($iduser_poll);
+        $poll->delete();
+
+        return redirect()->back();
+
+
+    }
+
+
 
 
 }
