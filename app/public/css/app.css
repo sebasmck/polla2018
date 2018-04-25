@@ -469,10 +469,10 @@ h6 {
 }
 
 hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: 0;
-    border-top: 1px solid rgba(0, 0, 0, .1)
+    border-top: 1px solid rgba(228, 11, 61, 0.93)
 }
 
 .small,
@@ -9467,6 +9467,7 @@ a.text-dark:hover {
 }
 
 .table_second_stage{
+    width: 100%;
     font-size: 12px!important;
     /*width: 581px;*/
     /*height: 294px;*/

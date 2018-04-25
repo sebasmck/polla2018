@@ -4301,117 +4301,701 @@
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <div class="card-body">
+                                                {{-- 1A --}}
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <table id="Standings8" class="display table_second_stage">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th style="width: 40%;"></th>
-                                                                    <th style="width: 40%;"></th>
-                                                                    <th style="width: 20%;"></th>
-                                                                    
-                                                                </tr>
-                                                            </thead>
+                                                        
+                                                        <table class="display table_second_stage">
                                                             <tbody>
+                                                                 @if($winA == null)
                                                                 <tr>
-                                                                    <td>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 50%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/poland.png')}}">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winA->team_name)).'.png'}}">
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td>
+                                                                    <td style="width: 50%; height: 30px;">
                                                                         <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                Poland
+                                                                            <div class="col-md-12" >
+                                                                                <label>{{$winA->team_name}}</label>
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td>
+                                                                    <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input type="text" name="M6H2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6H2" onblur="match_games_H()" value="{{ old('M6H2',  isset($gh->M6H2) ? $gh->M6H2 : null) }}">
+                                                                                    <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
                                                                             </div>
                                                                         </div>
                                                                     </td>
                                                                 </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/poland.png')}}">
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td>
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                Poland
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td>
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                    <input type="text" name="M6H2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6H2" onblur="match_games_H()" value="{{ old('M6H2',  isset($gh->M6H2) ? $gh->M6H2 : null) }}">
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/poland.png')}}">
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td>
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                Poland
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td>
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                    <input type="text" name="M6H2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6H2" onblur="match_games_H()" value="{{ old('M6H2',  isset($gh->M6H2) ? $gh->M6H2 : null) }}">
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <img class="img_flags" src="{{asset('img/flags/poland.png')}}">
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td>
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                Poland
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td>
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                    <input type="text" name="M6H2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6H2" onblur="match_games_H()" value="{{ old('M6H2',  isset($gh->M6H2) ? $gh->M6H2 : null) }}">
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
+                                                                @endif
                                                             </tbody>
                                                         </table>
-                                                         
                                                     </div>
                                                 </div>
+
+                                                <div style="height: 10px;"></div>
+
+                                                {{-- 2B --}}
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <table class="display table_second_stage">
+                                                            <tbody>
+                                                                @if($winB == null)
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 50%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winB->team_rumup)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 50%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12" >
+                                                                                <label>{{$winB->team_rumup}}</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 20%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                    <input id="pick2B" name="pick2B" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winB->id_runnerup}}"{{-- value="{{ old('pick1A',  isset($winB->pick) ? $winB->pick : null) }}" --}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <hr>
+
+                                                {{-- 1C --}}
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        
+                                                        <table class="display table_second_stage">
+                                                            <tbody>
+                                                                 @if($winC == null)
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 50%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winC->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 50%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12" >
+                                                                                <label>{{$winC->team_name}}</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 20%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                    <input id="pick1C" name="pick1C" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winC->id_winner_team}}"{{-- value="{{ old('pick1',  isset($winC->pick) ? $winC->pick : null) }}" --}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div style="height: 10px;"></div>
+                                                
+                                                {{-- 2D --}}
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <table class="display table_second_stage">
+                                                            <tbody>
+                                                                @if($winD == null)
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 50%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winD->team_rumup)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 50%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12" >
+                                                                                <label>{{$winD->team_rumup}}</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 20%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                    <input id="pick1D" name="pick1D" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winD->id_runnerup}}"{{-- value="{{ old('pick1A',  isset($winD->pick) ? $winD->pick : null) }}" --}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <hr>
+
+                                                {{-- 1E --}}
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        
+                                                        <table class="display table_second_stage">
+                                                            <tbody>
+                                                                 @if($winE == null)
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 50%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winE->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 50%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12" >
+                                                                                <label>{{$winE->team_name}}</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 20%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                    <input id="pick1E" name="pick1E" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winE->id_winner_team}}"{{-- value="{{ old('pick1',  isset($winE->pick) ? $winE->pick : null) }}" --}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div style="height: 10px;"></div>
+                                                
+                                                {{-- 2F --}}
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <table class="display table_second_stage">
+                                                            <tbody>
+                                                                @if($winF == null)
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 50%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winF->team_rumup)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 50%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12" >
+                                                                                <label>{{$winF->team_rumup}}</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 20%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                    <input id="pick2F" name="pick2F" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winF->id_runnerup}}"{{-- value="{{ old('pick1A',  isset($winF->pick) ? $winF->pick : null) }}" --}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <hr>
+
+                                                {{-- 1G --}}
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        
+                                                        <table class="display table_second_stage">
+                                                            <tbody>
+                                                                 @if($winG == null)
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 50%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winG->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 50%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12" >
+                                                                                <label>{{$winG->team_name}}</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 20%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                    <input id="pick1G" name="pick1G" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winG->id_winner_team}}"{{-- value="{{ old('pick1',  isset($winG->pick) ? $winG->pick : null) }}" --}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div style="height: 10px;"></div>
+                                                
+                                                {{-- 2H --}}
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <table class="display table_second_stage">
+                                                            <tbody>
+                                                                @if($winH == null)
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 50%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winH->team_rumup)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 50%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12" >
+                                                                                <label>{{$winH->team_rumup}}</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 20%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                    <input id="pick2H" name="pick2H" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winH->id_runnerup}}"{{-- value="{{ old('pick1A',  isset($winH->pick) ? $winH->pick : null) }}" --}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <hr>
+
+                                                {{-- 1B --}}
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        
+                                                        <table class="display table_second_stage">
+                                                            <tbody>
+                                                                 @if($winB == null)
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 50%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winB->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 50%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12" >
+                                                                                <label>{{$winB->team_name}}</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 20%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                    <input id="pick1B" name="pick1B" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winB->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winB->pick) ? $winB->pick : null) }}" --}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div style="height: 10px;"></div>
+
+                                                {{-- 2A --}}
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <table class="display table_second_stage">
+                                                            <tbody>
+                                                                @if($winA == null)
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 50%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winA->team_rumup)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 50%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12" >
+                                                                                <label>{{$winA->team_rumup}}</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 20%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                    <input id="pick2A" name="pick2A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_runnerup}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <hr>
+
+                                                {{-- 1D --}}
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        
+                                                        <table class="display table_second_stage">
+                                                            <tbody>
+                                                                 @if($winD == null)
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 50%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winD->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 50%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12" >
+                                                                                <label>{{$winD->team_name}}</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 20%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                    <input id="pick1D" name="pick1D" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winD->id_winner_team}}"{{-- value="{{ old('pick1',  isset($winD->pick) ? $winD->pick : null) }}" --}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div style="height: 10px;"></div>
+                                                
+                                                {{-- 2C --}}
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <table class="display table_second_stage">
+                                                            <tbody>
+                                                                @if($winC == null)
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 50%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winC->team_rumup)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 50%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12" >
+                                                                                <label>{{$winC->team_rumup}}</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 20%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                    <input id="pick2C" name="pick2C" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winC->id_runnerup}}"{{-- value="{{ old('pick1A',  isset($winC->pick) ? $winC->pick : null) }}" --}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <hr>
+
+                                                {{-- 1F --}}
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        
+                                                        <table class="display table_second_stage">
+                                                            <tbody>
+                                                                 @if($winF == null)
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 50%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winF->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 50%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12" >
+                                                                                <label>{{$winF->team_name}}</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 20%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                    <input id="pick1F" name="pick1F" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winF->id_winner_team}}"{{-- value="{{ old('pick1',  isset($winF->pick) ? $winF->pick : null) }}" --}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div style="height: 10px;"></div>
+                                                
+                                                {{-- 2E --}}
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <table class="display table_second_stage">
+                                                            <tbody>
+                                                                @if($winE == null)
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 50%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winE->team_rumup)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 50%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12" >
+                                                                                <label>{{$winE->team_rumup}}</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 20%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                    <input id="pick2E" name="pick2E" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winE->id_runnerup}}"{{-- value="{{ old('pick1A',  isset($winE->pick) ? $winE->pick : null) }}" --}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <hr>
+
+                                                {{-- 1H --}}
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        
+                                                        <table class="display table_second_stage">
+                                                            <tbody>
+                                                                 @if($winH == null)
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 50%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winH->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 50%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12" >
+                                                                                <label>{{$winH->team_name}}</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 20%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                    <input id="pick1H" name="pick1H" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winH->id_winner_team}}"{{-- value="{{ old('pick1',  isset($winH->pick) ? $winH->pick : null) }}" --}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div style="height: 10px;"></div>
+                                                
+                                                {{-- 2G --}}
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <table class="display table_second_stage">
+                                                            <tbody>
+                                                                @if($winG == null)
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 50%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winG->team_rumup)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 50%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12" >
+                                                                                <label>{{$winG->team_rumup}}</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 20%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                    <input id="pick2G" name="pick2G" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winG->id_runnerup}}"{{-- value="{{ old('pick1A',  isset($winG->pick) ? $winG->pick : null) }}" --}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
@@ -4428,10 +5012,83 @@
                                             </div>
 
                                             <div class="card-body">
+                                                {{-- 1A --}}
+                                                <div class="form-group row">
+                                                    <div class="col-md-12">
+                                                        
+                                                        <table class="display table_second_stage">
+                                                            <tbody>
+                                                                 @if($winA == null)
+                                                                <tr>
+                                                                    <td style="width: 80%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 80%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                {!! Form::select('WH1', [
+                                                                                 ' ' => '',
+                                                                                 'Ganador1' => 'Ganador1'
+                                                                                 ], [ 'class' =>  'form-control', 'required']) !!}
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 20%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                    <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div style="height: 10px;"></div>
+
+                                                {{-- 2B --}}
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                    
-                                                         
+                                                        <table class="display table_second_stage">
+                                                            <tbody>
+                                                                @if($winB == null)
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 50%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winB->team_rumup)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 50%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12" >
+                                                                                <label>{{$winB->team_rumup}}</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 20%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                    <input id="pick2B" name="pick2B" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winB->id_runnerup}}"{{-- value="{{ old('pick1A',  isset($winB->pick) ? $winB->pick : null) }}" --}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
                                                     </div>
                                                 </div>
                                             </div>
