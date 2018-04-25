@@ -417,19 +417,24 @@ class PicksController extends Controller
         
     }
 
+    public function update($iduser_poll){
 
-    public function destroy($iduser_poll)
-    {
+        $id_user = Auth::user()->id;
         
         $poll = PollsModel::find($iduser_poll);
-        $poll->delete();
+        $poll->active = 0;
+        $poll->save();
 
-        return redirect()->back();
-
+        $polls = PollsModel::getBbyUser($id_user);
+        return view('home')->with('polls', $polls);
 
     }
 
 
+    public function destroy($iduser_poll)
+    {
+
+    }
 
 
 }
