@@ -58,13 +58,19 @@
 
                   <section class="section">
                     <div class="container">
+                      <a class="button is-success is-pulled-right" href="/allusers">All Users</a>
                       <h1 class="title"><b> Pending Aprovals </b></h1>                  
                       <hr style="margin-bottom: 0;">
                       <table id="pendings" class="display">
                             <thead>
                                 <tr>
                                     <th>Name</th>
-                                    <th>email</th>
+                                    <th>Last Name</th>
+                                    <th>Nickname</th>
+                                    <th>E-mail</th>
+                                    <th>City</th>
+                                    <th>Cellphone</th>
+                                    <th>Referred By</th>
                                     <th>Aprove</th>
                                 </tr>
                             </thead>
@@ -72,9 +78,14 @@
                             @foreach($users as $user)
                                 @if($user->is_approved == 0)
                                 <tr>
+                                    <td>{{$user->name}}</td>
+                                    <td>{{$user->lastname}}</td>
                                     <td>{{$user->nickname}}</td>
                                     <td>{{$user->email}}</td>
-                                    <td><a class="button is-danger" href="{{route('admins.edit', $user->id)}}"> Aprobar </a></td>
+                                    <td>{{$user->city}}</td>
+                                    <td>{{$user->cellphone}}</td>
+                                    <td>{{$user->referredby}}</td>
+                                    <td><a class="button is-danger" href="{{route('admins.edit', $user->id)}}"> Aprove </a></td>
                                 </tr>
                                 @endif
                             @endforeach

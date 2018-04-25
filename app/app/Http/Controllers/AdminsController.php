@@ -15,6 +15,13 @@ use DB;
 class AdminsController extends Controller
 {
 
+    public function allUsers(){
+
+        $users = User::all();
+
+        return view('admin.all_users')->with('users', $users);
+
+    }
 
     public function assignRep(){
 
@@ -49,9 +56,8 @@ class AdminsController extends Controller
         $users = User::all();
         $reps = Rep::all();
 
-
         $rep->name = $req->input('name');
-        $rep->email = $req->input('email');
+
 
         $rep->save();
 
@@ -197,10 +203,6 @@ class AdminsController extends Controller
         $user = User::find($id);
         
         $user->delete();
-
-        
-
-
 
 
     }
