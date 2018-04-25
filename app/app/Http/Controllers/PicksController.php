@@ -41,24 +41,17 @@ class PicksController extends Controller
 
 
         
-        // $wa = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 1)->get();
+        
 
         // raw query
-
-        $wa = DB::table('clasificado')
-                    ->select(DB::raw('select team_name from teams'))
-                    ->where('id', '=' , '1')
-                    ->get();
-
-        dd($wa);
-
-        $wb = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 2)->get();
-        $wc = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 3)->get();
-        $wd = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 4)->get();
-        $we = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 5)->get();
-        $wf = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 6)->get();
-        $wg=  Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 7)->get();
-        $wh = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 8)->get();
+        $wa = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 1)->get()->first();
+        $wb = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 2)->get()->first();
+        $wc = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 3)->get()->first();
+        $wd = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 4)->get()->first();
+        $we = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 5)->get()->first();
+        $wf = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 6)->get()->first();
+        $wg=  Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 7)->get()->first();
+        $wh = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 8)->get()->first();
 
 
         return view('picks.picks')

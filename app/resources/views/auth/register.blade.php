@@ -85,12 +85,7 @@
 
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <input id="repeatemail" type="email" class="form-control{{ $errors->has('repeatemail') ? ' is-invalid' : '' }}" name="repeatemail" value="{{ old('repeatemail') }}" required placeholder="Repeat E-Mail">
-                                    @if ($errors->has('repeatemail'))repeatemail
-                                        <span class="invalid-feedback">
-                                            <strong>{{ $errors->first('repeatemail') }}</strong>
-                                        </span>
-                                    @endif
+                                <input id="email-confirm" type="email" class="form-control" name="email_confirmation" required placeholder="Repeat E-Mail">
                             </div>
                         </div>
 

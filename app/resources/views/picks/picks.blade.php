@@ -535,24 +535,14 @@
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group A winner</div>
-
-                                                                            {{-- <select id="WA1" name="WA1" class="form-control">
-                                                                                <option></option>
-                                                                                <option id="A1" value="1">Russia</option>
-                                                                                <option id="A2" value="3">Saudi Arabia</option>
-                                                                                <option id="A3" value="4">Egypt</option>
-                                                                                <option id="A4" value="2">Uruguay</option>
-                                                                            </select> --}}
-                                                                            {{-- {!! Form::select('wa', [
+                                                                            {!! Form::select('WA1', [
                                                                                  ' ' => '',
                                                                                  '1' => 'Russia',
                                                                                  '3' => 'Saudi Arabia',
                                                                                  '4' => 'Egypt',
                                                                                  '2' => 'Uruguay',
-                                                                                 ], old('value', isset($wa->id_winner_team) ? $wa->id_winner_team : null ), [ 'class' =>  'form-control', 'required']) !!} --}}
+                                                                                 ], old('value', isset($wa->id_winner_team) ? $wa->id_winner_team : null ), [ 'class' =>  'form-control', 'required']) !!}
 
-                                                                                 {{-- {{isset($wa->id_winner_team) ? $wa->id_winner_team : null }} --}}
-                                                                                 {{$wa->id_winner_team}}
                                                                         </div>
 
                                                                             
@@ -560,14 +550,13 @@
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group A runner-up</div>
-
-                                                                            <select id="WA2" name="WA2" class="form-control">
-                                                                                <option></option>
-                                                                                <option id="A1" value="1">Russia</option>
-                                                                                <option id="A2" value="3">Saudi Arabia</option>
-                                                                                <option id="A3" value="4">Egypt</option>
-                                                                                <option id="A4" value="2">Uruguay</option>
-                                                                            </select>
+                                                                            {!! Form::select('WA2', [
+                                                                                 ' ' => '',
+                                                                                 '1' => 'Russia',
+                                                                                 '3' => 'Saudi Arabia',
+                                                                                 '4' => 'Egypt',
+                                                                                 '2' => 'Uruguay',
+                                                                                 ], old('value', isset($wa->id_runnerup) ? $wa->id_runnerup : null ), [ 'class' =>  'form-control', 'required']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -824,7 +813,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4B2" onblur="match_games_B()" value="{{ old('M4B2',  isset($gb->M4B2) ? $gb->M4B2 : null) }}">
+                                                                                            <input type="text" name="M4B2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4B2" onblur="match_games_B()" value="{{ old('M4B2',  isset($gb->M4B2) ? $gb->M4B2 : null) }}">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -874,7 +863,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5B1" onblur="match_games_B()" value="{{ old('M5B1',  isset($gb->M5B1) ? $gb->M5B1 : null) }}">
+                                                                                            <input type="text" name="M5B1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5B1" onblur="match_games_B()" value="{{ old('M5B1',  isset($gb->M5B1) ? $gb->M5B1 : null) }}">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -910,7 +899,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6B2" onblur="match_games_B()" value="{{ old('M6B2',  isset($gb->M6B2) ? $gb->M6B2 : null) }}">
+                                                                                            <input type="text" name="M6B2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6B2" onblur="match_games_B()" value="{{ old('M6B2',  isset($gb->M6B2) ? $gb->M6B2 : null) }}">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -924,7 +913,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group pikcs">
-                                                                                            <input type="text" name="" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6B3" onblur="match_games_B()" value="{{ old('M6B3',  isset($gb->M6B3) ? $gb->M6B3 : null) }}"> 
+                                                                                            <input type="text" name="M6B3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6B3" onblur="match_games_B()" value="{{ old('M6B3',  isset($gb->M6B3) ? $gb->M6B3 : null) }}"> 
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3">
@@ -1080,28 +1069,26 @@
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group B winner</div>
-
-                                                                            <select id="WB1" name="WB1" class="form-control">
-                                                                                <option></option>
-                                                                                <option id="B1" value="5">Portugal</option>
-                                                                                <option id="B2" value="7">Spain</option>
-                                                                                <option id="B3" value="8">Morocco</option>
-                                                                                <option id="B4" value="6">Iran</option>
-                                                                            </select>
+                                                                            {!! Form::select('WB1', [
+                                                                                 ' ' => '',
+                                                                                 '5' => 'Portugal',
+                                                                                 '7' => 'Spain',
+                                                                                 '8' => 'Morocco',
+                                                                                 '6' => 'Iran',
+                                                                                 ], old('value', isset($wb->id_winner_team) ? $wb->id_winner_team : null ), [ 'class' =>  'form-control', 'required']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group B runner-up</div>
-
-                                                                            <select id="WB2" name="WB2" class="form-control">
-                                                                                <option></option>
-                                                                                <option id="B1" value="5">Portugal</option>
-                                                                                <option id="B2" value="7">Spain</option>
-                                                                                <option id="B3" value="8">Morocco</option>
-                                                                                <option id="B4" value="6">Iran</option>
-                                                                            </select>
+                                                                            {!! Form::select('WB2', [
+                                                                                 ' ' => '',
+                                                                                 '5' => 'Portugal',
+                                                                                 '7' => 'Spain',
+                                                                                 '8' => 'Morocco',
+                                                                                 '6' => 'Iran',
+                                                                                 ], old('value', isset($wb->id_runnerup) ? $wb->id_runnerup : null ), [ 'class' =>  'form-control', 'required']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -1609,28 +1596,26 @@
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group C winner</div>
-
-                                                                            <select id="WC1" name="WC1" class="form-control">
-                                                                                <option></option>
-                                                                                <option id="C1" value="9">France</option>
-                                                                                <option id="C2" value="11">Australia</option>
-                                                                                <option id="C3" value="12">Peru</option>
-                                                                                <option id="C4" value="10">Denmark</option>
-                                                                            </select>
+                                                                            {!! Form::select('WC1', [
+                                                                                 ' ' => '',
+                                                                                 '9' => 'France',
+                                                                                 '11' => 'Australia',
+                                                                                 '12' => 'Peru',
+                                                                                 '10' => 'Denmark',
+                                                                                 ], old('value', isset($wc->id_winner_team) ? $wc->id_winner_team : null ), [ 'class' =>  'form-control', 'required']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group C runner-up</div>
-
-                                                                            <select id="WC2" name="WC2" class="form-control">
-                                                                                <option></option>
-                                                                                <option id="C1" value="9">France</option>
-                                                                                <option id="C2" value="11">Australia</option>
-                                                                                <option id="C3" value="12">Peru</option>
-                                                                                <option id="C4" value="10">Denmark</option>
-                                                                            </select>
+                                                                            {!! Form::select('WC2', [
+                                                                                 ' ' => '',
+                                                                                 '9' => 'France',
+                                                                                 '11' => 'Australia',
+                                                                                 '12' => 'Peru',
+                                                                                 '10' => 'Denmark',
+                                                                                 ], old('value', isset($wc->id_runnerup) ? $wc->id_runnerup : null ), [ 'class' =>  'form-control', 'required']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -2138,14 +2123,13 @@
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group D winner</div>
-
-                                                                            <select id="WD1" name="WD1" class="form-control">
-                                                                                <option></option>
-                                                                                <option id="D1" value="13">Argentina</option>
-                                                                                <option id="D2" value="15">Iceland</option>
-                                                                                <option id="D3" value="16">Croatia</option>
-                                                                                <option id="D4" value="14">Nigeria</option>
-                                                                            </select>
+                                                                            {!! Form::select('WD1', [
+                                                                                 ' ' => '',
+                                                                                 '13' => 'Argentina',
+                                                                                 '15' => 'Iceland',
+                                                                                 '16' => 'Croatia',
+                                                                                 '14' => 'Nigeria',
+                                                                                 ], old('value', isset($wd->id_winner_team) ? $wd->id_winner_team : null ), [ 'class' =>  'form-control', 'required']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -2153,13 +2137,13 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group D runner-up</div>
 
-                                                                            <select id="WD2" name="WD2" class="form-control">
-                                                                                <option></option>
-                                                                                <option id="D1" value="13">Argentina</option>
-                                                                                <option id="D2" value="15">Iceland</option>
-                                                                                <option id="D3" value="16">Croatia</option>
-                                                                                <option id="D4" value="14">Nigeria</option>
-                                                                            </select>
+                                                                            {!! Form::select('WD2', [
+                                                                                 ' ' => '',
+                                                                                 '13' => 'Argentina',
+                                                                                 '15' => 'Iceland',
+                                                                                 '16' => 'Croatia',
+                                                                                 '14' => 'Nigeria',
+                                                                                 ], old('value', isset($wd->id_runnerup) ? $wd->id_runnerup : null ), [ 'class' =>  'form-control', 'required']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -2667,28 +2651,26 @@
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group E winner</div>
-
-                                                                            <select id="WE1" name="WE1" class="form-control">
-                                                                                <option></option>
-                                                                                <option id="E1" value="17">Brazil</option>
-                                                                                <option id="E2" value="19">Switzerland</option>
-                                                                                <option id="E3" value="20">Costa Rica</option>
-                                                                                <option id="E4" value="18">Serbia</option>
-                                                                            </select>
+                                                                            {!! Form::select('WE1', [
+                                                                                 ' ' => '',
+                                                                                 '17' => 'Brazil',
+                                                                                 '19' => 'Switzerland',
+                                                                                 '20' => 'Costa Rica',
+                                                                                 '18' => 'Serbia',
+                                                                                 ], old('value', isset($we->id_winner_team) ? $we->id_winner_team : null ), [ 'class' =>  'form-control', 'required']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group E runner-up</div>
-
-                                                                            <select id="WE2" name="WE2" class="form-control">
-                                                                                <option></option>
-                                                                                <option id="E1" value="17">Brazil</option>
-                                                                                <option id="E2" value="19">Switzerland</option>
-                                                                                <option id="E3" value="20">Costa Rica</option>
-                                                                                <option id="E4" value="18">Serbia</option>
-                                                                            </select>
+                                                                            {!! Form::select('WE2', [
+                                                                                 ' ' => '',
+                                                                                 '17' => 'Brazil',
+                                                                                 '19' => 'Switzerland',
+                                                                                 '20' => 'Costa Rica',
+                                                                                 '18' => 'Serbia',
+                                                                                 ], old('value', isset($we->id_runnerup) ? $we->id_runnerup : null ), [ 'class' =>  'form-control', 'required']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -3196,28 +3178,26 @@
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group F winner</div>
-
-                                                                            <select id="WF1" name="WF1" class="form-control">
-                                                                                <option></option>
-                                                                                <option id="F1" value="21">Germany</option>
-                                                                                <option id="F2" value="23">Mexico</option>
-                                                                                <option id="F3" value="24">Sweden</option>
-                                                                                <option id="F4" value="22">South Korea</option>
-                                                                            </select>
+                                                                            {!! Form::select('WF1', [
+                                                                                 ' ' => '',
+                                                                                 '21' => 'Germany',
+                                                                                 '23' => 'Mexico',
+                                                                                 '24' => 'Sweden',
+                                                                                 '22' => 'South Korea',
+                                                                                 ], old('value', isset($wf->id_winner_team) ? $wf->id_winner_team : null ), [ 'class' =>  'form-control', 'required']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group F runner-up</div>
-
-                                                                            <select id="WF2" name="WF2" class="form-control">
-                                                                                <option></option>
-                                                                                <option id="F1" value="21">Germany</option>
-                                                                                <option id="F2" value="23">Mexico</option>
-                                                                                <option id="F3" value="24">Sweden</option>
-                                                                                <option id="F4" value="22">South Korea</option>
-                                                                            </select>
+                                                                            {!! Form::select('WF2', [
+                                                                                 ' ' => '',
+                                                                                 '21' => 'Germany',
+                                                                                 '23' => 'Mexico',
+                                                                                 '24' => 'Sweden',
+                                                                                 '22' => 'South Korea',
+                                                                                 ], old('value', isset($wf->id_runnerup) ? $wf->id_runnerup : null ), [ 'class' =>  'form-control', 'required']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -3726,13 +3706,13 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group G winner</div>
 
-                                                                            <select id="WG1" name="WG1" class="form-control">
-                                                                                <option></option>
-                                                                                <option id="G1" value="25">Belgium</option>
-                                                                                <option id="G2" value="27">Panama</option>
-                                                                                <option id="G3" value="28">Tunisia</option>
-                                                                                <option id="G4" value="26">England</option>
-                                                                            </select>
+                                                                            {!! Form::select('WG1', [
+                                                                                 ' ' => '',
+                                                                                 '25' => 'Belgium',
+                                                                                 '27' => 'Panama',
+                                                                                 '28' => 'Tunisia',
+                                                                                 '26' => 'England',
+                                                                                 ], old('value', isset($wg->id_winner_team) ? $wg->id_winner_team : null ), [ 'class' =>  'form-control', 'required']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -3740,13 +3720,13 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group G runner-up</div>
 
-                                                                            <select id="WG2" name="WG2" class="form-control">
-                                                                                <option></option>
-                                                                                <option id="G1" value="25">Belgium</option>
-                                                                                <option id="G2" value="27">Panama</option>
-                                                                                <option id="G3" value="28">Tunisia</option>
-                                                                                <option id="G4" value="26">England</option>
-                                                                            </select>
+                                                                           {!! Form::select('WG2', [
+                                                                                 ' ' => '',
+                                                                                 '25' => 'Belgium',
+                                                                                 '27' => 'Panama',
+                                                                                 '28' => 'Tunisia',
+                                                                                 '26' => 'England',
+                                                                                 ], old('value', isset($wg->id_runnerup) ? $wg->id_runnerup : null ), [ 'class' =>  'form-control', 'required']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -4255,13 +4235,13 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group H winner</div>
 
-                                                                            <select id="WH1" name="WH1" class="form-control">
-                                                                                <option></option>
-                                                                                <option id="H1" value="29">Poland</option>
-                                                                                <option id="H2" value="31">Senegal</option>
-                                                                                <option id="H3" value="32">Colombia</option>
-                                                                                <option id="H4" value="30">Japan</option>
-                                                                            </select>
+                                                                            {!! Form::select('WH1', [
+                                                                                 ' ' => '',
+                                                                                 '29' => 'Poland',
+                                                                                 '31' => 'Senegal',
+                                                                                 '32' => 'Colombia',
+                                                                                 '30' => 'Japan',
+                                                                                 ], old('value', isset($wh->id_winner_team) ? $wh->id_winner_team : null ), [ 'class' =>  'form-control', 'required']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -4269,13 +4249,13 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group H runner-up</div>
 
-                                                                            <select id="WH2" name="WH2" class="form-control">
-                                                                                <option></option>
-                                                                                <option id="H1" value="29">Poland</option>
-                                                                                <option id="H2" value="31">Senegal</option>
-                                                                                <option id="H3" value="32">Colombia</option>
-                                                                                <option id="H4" value="30">Japan</option>
-                                                                            </select>
+                                                                            {!! Form::select('WH2', [
+                                                                                 ' ' => '',
+                                                                                 '29' => 'Poland',
+                                                                                 '31' => 'Senegal',
+                                                                                 '32' => 'Colombia',
+                                                                                 '30' => 'Japan',
+                                                                                 ], old('value', isset($wh->id_runnerup) ? $wh->id_runnerup : null ), [ 'class' =>  'form-control', 'required']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
