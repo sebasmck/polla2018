@@ -9465,3 +9465,35 @@ a.text-dark:hover {
 .table_pool td{
     border: solid 0.2px #cccccc40;
 }
+
+.table_second_stage{
+    font-size: 12px!important;
+    /*width: 581px;*/
+    /*height: 294px;*/
+}
+
+.table_second_stage th{
+    text-align: center;
+}
+
+.table_second_stage td{
+    border: solid 0.2px #cccccc40;
+}
+
+.table_second_stage input {
+    display: block;
+    text-align: center;
+    width: 30px;
+    padding: 1px 5px;
+    font-size: .9rem;
+    line-height: 1.6;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+}
