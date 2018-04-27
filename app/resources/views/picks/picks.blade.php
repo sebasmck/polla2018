@@ -536,7 +536,7 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group A winner</div>
                                                                             {!! Form::select('WA1', [
-                                                                                 ' ' => '',
+                                                                                  '' => 'Pick a Team',
                                                                                  '1' => 'Russia',
                                                                                  '3' => 'Saudi Arabia',
                                                                                  '4' => 'Egypt',
@@ -551,7 +551,7 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group A runner-up</div>
                                                                             {!! Form::select('WA2', [
-                                                                                 ' ' => '',
+                                                                                  '' => 'Pick a Team',
                                                                                  '1' => 'Russia',
                                                                                  '3' => 'Saudi Arabia',
                                                                                  '4' => 'Egypt',
@@ -1070,7 +1070,7 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group B winner</div>
                                                                             {!! Form::select('WB1', [
-                                                                                 ' ' => '',
+                                                                                  '' => 'Pick a Team',
                                                                                  '5' => 'Portugal',
                                                                                  '7' => 'Spain',
                                                                                  '8' => 'Morocco',
@@ -1083,7 +1083,7 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group B runner-up</div>
                                                                             {!! Form::select('WB2', [
-                                                                                 ' ' => '',
+                                                                                  '' => 'Pick a Team',
                                                                                  '5' => 'Portugal',
                                                                                  '7' => 'Spain',
                                                                                  '8' => 'Morocco',
@@ -1597,7 +1597,7 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group C winner</div>
                                                                             {!! Form::select('WC1', [
-                                                                                 ' ' => '',
+                                                                                  '' => 'Pick a Team',
                                                                                  '9' => 'France',
                                                                                  '11' => 'Australia',
                                                                                  '12' => 'Peru',
@@ -1610,7 +1610,7 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group C runner-up</div>
                                                                             {!! Form::select('WC2', [
-                                                                                 ' ' => '',
+                                                                                  '' => 'Pick a Team',
                                                                                  '9' => 'France',
                                                                                  '11' => 'Australia',
                                                                                  '12' => 'Peru',
@@ -2124,7 +2124,7 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group D winner</div>
                                                                             {!! Form::select('WD1', [
-                                                                                 ' ' => '',
+                                                                                  '' => 'Pick a Team',
                                                                                  '13' => 'Argentina',
                                                                                  '15' => 'Iceland',
                                                                                  '16' => 'Croatia',
@@ -2138,7 +2138,7 @@
                                                                             <div class="col-md-12">Group D runner-up</div>
 
                                                                             {!! Form::select('WD2', [
-                                                                                 ' ' => '',
+                                                                                  '' => 'Pick a Team',
                                                                                  '13' => 'Argentina',
                                                                                  '15' => 'Iceland',
                                                                                  '16' => 'Croatia',
@@ -2652,7 +2652,7 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group E winner</div>
                                                                             {!! Form::select('WE1', [
-                                                                                 ' ' => '',
+                                                                                  '' => 'Pick a Team',
                                                                                  '17' => 'Brazil',
                                                                                  '19' => 'Switzerland',
                                                                                  '20' => 'Costa Rica',
@@ -2665,7 +2665,7 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group E runner-up</div>
                                                                             {!! Form::select('WE2', [
-                                                                                 ' ' => '',
+                                                                                  '' => 'Pick a Team',
                                                                                  '17' => 'Brazil',
                                                                                  '19' => 'Switzerland',
                                                                                  '20' => 'Costa Rica',
@@ -3179,7 +3179,7 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group F winner</div>
                                                                             {!! Form::select('WF1', [
-                                                                                 ' ' => '',
+                                                                                  '' => 'Pick a Team',
                                                                                  '21' => 'Germany',
                                                                                  '23' => 'Mexico',
                                                                                  '24' => 'Sweden',
@@ -3192,7 +3192,7 @@
                                                                         <div class="form-group row">
                                                                             <div class="col-md-12">Group F runner-up</div>
                                                                             {!! Form::select('WF2', [
-                                                                                 ' ' => '',
+                                                                                  '' => 'Pick a Team',
                                                                                  '21' => 'Germany',
                                                                                  '23' => 'Mexico',
                                                                                  '24' => 'Sweden',
@@ -3707,7 +3707,7 @@
                                                                             <div class="col-md-12">Group G winner</div>
 
                                                                             {!! Form::select('WG1', [
-                                                                                 ' ' => '',
+                                                                                  '' => 'Pick a Team',
                                                                                  '25' => 'Belgium',
                                                                                  '27' => 'Panama',
                                                                                  '28' => 'Tunisia',
@@ -3721,7 +3721,7 @@
                                                                             <div class="col-md-12">Group G runner-up</div>
 
                                                                            {!! Form::select('WG2', [
-                                                                                 ' ' => '',
+                                                                                  '' => 'Pick a Team',
                                                                                  '25' => 'Belgium',
                                                                                  '27' => 'Panama',
                                                                                  '28' => 'Tunisia',
@@ -4236,7 +4236,7 @@
                                                                             <div class="col-md-12">Group H winner</div>
 
                                                                             {!! Form::select('WH1', [
-                                                                                 ' ' => '',
+                                                                                  '' => 'Pick a Team',
                                                                                  '29' => 'Poland',
                                                                                  '31' => 'Senegal',
                                                                                  '32' => 'Colombia',
@@ -4250,7 +4250,7 @@
                                                                             <div class="col-md-12">Group H runner-up</div>
 
                                                                             {!! Form::select('WH2', [
-                                                                                 ' ' => '',
+                                                                                  '' => 'Pick a Team',
                                                                                  '29' => 'Poland',
                                                                                  '31' => 'Senegal',
                                                                                  '32' => 'Colombia',
