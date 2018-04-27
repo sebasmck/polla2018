@@ -59,11 +59,7 @@
                                 <input name="name" class="input is-danger" type="text" placeholder="Name" required>
                               </div>
                               <br>
-                              <div class="field">
-                                <div class="control">
-                                  <input name="email" class="input is-danger" type="text" placeholder="Email" required>
-                                </div>
-                              </div>
+                            </div>
                             </section>
                             <footer class="modal-card-foot">
                               <button type="submit" class="button is-success">Save</button>

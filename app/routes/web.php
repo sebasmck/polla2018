@@ -42,6 +42,8 @@ Route::get('/editrep/{id}', 'AdminsController@editRep')->name('editrep');
 
 Route::post('/updaterep', 'AdminsController@updateRep')->name('updaterep');
 
+Route::get('/allusers', 'AdminsController@allUsers')->name('allusers');
+
 Route::Resource('admins', 'AdminsController');
 
 // PICKS

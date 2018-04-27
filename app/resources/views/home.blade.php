@@ -79,7 +79,10 @@
                                                     @if($poll->status == 'Pending')
                                                     <div class="col-md-8 offset-md-4">
                                                         <div class="control">
-                                                            <button class="btn btn-primary" onclick="window.location='{{ route('picks.destroy', $poll->iduser_poll) }}'">Delete Pool</button>
+                                                            {{-- <a href="{{route('picks.destroy', $poll->iduser_poll)}}" class="btn btn-primary">Delete Poll</a> --}}
+                                                            {!! Form::open(['method' => 'DELETE','route' => ['picks.destroy', $poll->iduser_poll],'style'=>'display:inline']) !!}
+                                                            {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
+                                                            {!! Form::close() !!}
                                                         </div>
                                                     </div>
                                                     @else

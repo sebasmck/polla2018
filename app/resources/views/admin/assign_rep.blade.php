@@ -48,7 +48,7 @@
                         <nav class="tabs is-boxed">
                           <ul>
                             <li>
-                              <a href="/admin">Aprovals</a>
+                              <a href="/admin">Pending aprovals</a>
                             </li>
                             <li class="is-active">
                                 <a href="/assign">user Management</a>
@@ -62,14 +62,14 @@
                   <section class="section">
                     <div class="container">
                     <a class="button is-success is-pulled-right" href="/addrep">Add Rep</a>
-                      <h1 class="title"><b> Assign a Rep </b></h1>                  
+                      <h1 class="title"><b> User Management </b></h1>                  
                       <hr style="margin-bottom: 0;">
                       <table id="pendings" class="display">
                             <thead>
                                 <tr>
                                     <th>Name</th>
                                     <th>Email</th>
-                                    <th>Picks</th>
+                                    <th>Pools</th>
                                     <th>Assign</th>
                                     <th>Delete</th>
                                 </tr>
@@ -80,7 +80,7 @@
                                 <tr>
                                     <td>{{$user->nickname}}</td>
                                     <td>{{$user->email}}</td>
-                                <td> <a class="button is-danger" href="{{route('admins.show', $user->id)}}"> View Picks</a> </td>
+                                <td> <a class="button is-danger" href="{{route('admins.show', $user->id)}}"> View Pools</a> </td>
                                 <td>
                                     @if(empty($user->id_rep))
                                     <button class="button is-primary is-pulled-left" id="showModal"
