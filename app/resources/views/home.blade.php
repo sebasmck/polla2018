@@ -33,6 +33,7 @@
                                 <p>To participate in additional Pools, please click “Add Additional Pool”.</p>
                             </li>
                         </ul>
+
                         
                          <div class="row">
                             <div class="col-md-12 table-responsive">
@@ -142,6 +143,11 @@
                 </div>
             </div>
         </div>
+
+    
+
+
+
 
      </div>
 
