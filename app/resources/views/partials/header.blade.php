@@ -5,14 +5,9 @@
                   <a class="navbar-item" href="/home">
                     Polla World Cup
                   </a>
-                  <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
                 </div>
               
-                <div id="navbarExampleTransparentExample" class="navbar-menu">
+
                   
               
                   <div class="navbar-end">
@@ -45,8 +40,6 @@
                     </div>
                   </div>
 
-
-                </div>
               </nav>
 
               

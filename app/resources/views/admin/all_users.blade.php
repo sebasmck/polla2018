@@ -45,7 +45,7 @@
                         <nav class="tabs is-boxed">
                           <ul>
                             <li class="is-active">
-                              <a href="/admin">Pending Aprovals</a>
+                              <a href="/admin">Pending Approvals</a>
                             </li>
                             <li >
                               <a href="/assign">User Management</a>

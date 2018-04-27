@@ -45,7 +45,7 @@
                         <nav class="tabs is-boxed">
                           <ul>
                             <li class="is-active">
-                              <a href="/admin">Pending Aprovals</a>
+                              <a href="/admin">Pending Approvals</a>
                             </li>
                             <li >
                               <a href="/assign">User Management</a>
@@ -59,7 +59,7 @@
                   <section class="section">
                     <div class="container">
                       <a class="button is-success is-pulled-right" href="/allusers">All Users</a>
-                      <h1 class="title"><b> Pending Aprovals </b></h1>                  
+                      <h1 class="title"><b> Pending Approvals </b></h1>                  
                       <hr style="margin-bottom: 0;">
                       <table id="pendings" class="display">
                             <thead>
@@ -101,6 +101,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+
+
     
     <script>
         
