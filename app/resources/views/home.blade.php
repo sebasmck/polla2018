@@ -57,7 +57,11 @@
                                                     <td style="color: #38610B;">{{$poll->status}}</td>
                                                 @endif
 
-                                                <td></td>
+                                                @if($poll->complete == 'Incomplete')
+                                                    <td style="color: #FF0000;">{{$poll->complete}}</td>
+                                                @else
+                                                    <td style="color: #38610B;">{{$poll->complete}}</td>
+                                                @endif
                                                 <td><div class="form-group row mb-0">
 
                                                     @if($poll->status == 'Pending')

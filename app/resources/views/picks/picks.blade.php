@@ -27,31 +27,31 @@
                     <div class="card-body">
                         <ul class="nav nav-tabs">
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#grupoa">Group A</a>
+                                <a class="nav-link active" data-toggle="tab" href="#grupoa" id="idgrupoa">Group A</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#grupob">Group B</a>
+                                <a class="nav-link" data-toggle="tab" href="#grupob" id="idgrupob">Group B</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#grupoc">Group C</a>
+                                <a class="nav-link" data-toggle="tab" href="#grupoc" id="idgrupoc">Group C</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#grupod">Group D</a>
+                                <a class="nav-link" data-toggle="tab" href="#grupod" id="idgrupod">Group D</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#grupoe">Group E</a>
+                                <a class="nav-link" data-toggle="tab" href="#grupoe" id="idgrupoe">Group E</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#grupof">Group F</a>
+                                <a class="nav-link" data-toggle="tab" href="#grupof" id="idgrupof">Group F</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#grupog">Group G</a>
+                                <a class="nav-link" data-toggle="tab" href="#grupog" id="idgrupog">Group G</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#grupoh">Group H</a>
+                                <a class="nav-link" data-toggle="tab" href="#grupoh" id="idgrupoh">Group H</a>
                             </li>
                              <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#grupoRoun">Second Stage</a>
+                                <a class="nav-link" data-toggle="tab" href="#grupoRoun" id="idgrupoRoun">Second Stage</a>
                             </li>
                         </ul>
 
@@ -541,7 +541,7 @@
                                                                                  '3' => 'Saudi Arabia',
                                                                                  '4' => 'Egypt',
                                                                                  '2' => 'Uruguay',
-                                                                                 ], old('value', isset($wa->id_winner_team) ? $wa->id_winner_team : null ), [ 'class' =>  'form-control', 'required']) !!}
+                                                                                 ], old('value', isset($wa->id_winner_team) ? $wa->id_winner_team : null ), [ 'class' =>  'form-control', 'required', 'id' => 'WA1']) !!}
 
                                                                         </div>
 
@@ -556,7 +556,7 @@
                                                                                  '3' => 'Saudi Arabia',
                                                                                  '4' => 'Egypt',
                                                                                  '2' => 'Uruguay',
-                                                                                 ], old('value', isset($wa->id_runnerup) ? $wa->id_runnerup : null ), [ 'class' =>  'form-control', 'required']) !!}
+                                                                                 ], old('value', isset($wa->id_runnerup) ? $wa->id_runnerup : null ), [ 'class' =>  'form-control', 'required', 'id' => 'WA2']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -573,15 +573,15 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-md-6">
-                                         <button type="" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go home') }}
+                                         <button type="button" name="submitgroupahome" id="submitgroupahome" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and go to Home Page') }}
                                         </button>
                                     </div>
                                     <div class="col-md-6">
 
-                                        <input type="button" name="submitgroupa" id="submitgroupa" class="btn btn-info btn-block" value="Save and Continue" />
+                                        <input type="button" name="submitgroupa" id="submitgroupa" class="btn btn-info btn-block" value="Save and go to Next Group" />
                                          {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and continue') }} --}}
+                                            {{ __('Save and go to Next Group') }} --}}
                                         </button>
                                     </div>
                                 </div>
@@ -1075,7 +1075,7 @@
                                                                                  '7' => 'Spain',
                                                                                  '8' => 'Morocco',
                                                                                  '6' => 'Iran',
-                                                                                 ], old('value', isset($wb->id_winner_team) ? $wb->id_winner_team : null ), [ 'class' =>  'form-control', 'required']) !!}
+                                                                                 ], old('value', isset($wb->id_winner_team) ? $wb->id_winner_team : null ), [ 'class' =>  'form-control', 'required', 'id' => 'WB1']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -1088,7 +1088,7 @@
                                                                                  '7' => 'Spain',
                                                                                  '8' => 'Morocco',
                                                                                  '6' => 'Iran',
-                                                                                 ], old('value', isset($wb->id_runnerup) ? $wb->id_runnerup : null ), [ 'class' =>  'form-control', 'required']) !!}
+                                                                                 ], old('value', isset($wb->id_runnerup) ? $wb->id_runnerup : null ), [ 'class' =>  'form-control', 'required', 'id' => 'WB2']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -1105,14 +1105,14 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-md-6">
-                                         <button type="" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go home') }}
+                                         <button type="button" name="submitgroupbhome" id="submitgroupbhome" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and go to Home Page') }}
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="button" name="submitgroupb" id="submitgroupb" class="btn btn-info btn-block" value="Save and Continue" />
+                                        <input type="button" name="submitgroupb" id="submitgroupb" class="btn btn-info btn-block" value="Save and go to Next Group" />
                                          {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and continue') }} --}}
+                                            {{ __('Save and go to Next Group') }} --}}
                                         </button>
                                     </div>
                                 </div>
@@ -1602,7 +1602,7 @@
                                                                                  '11' => 'Australia',
                                                                                  '12' => 'Peru',
                                                                                  '10' => 'Denmark',
-                                                                                 ], old('value', isset($wc->id_winner_team) ? $wc->id_winner_team : null ), [ 'class' =>  'form-control', 'required']) !!}
+                                                                                 ], old('value', isset($wc->id_winner_team) ? $wc->id_winner_team : null ), [ 'class' =>  'form-control', 'required', 'id' => 'WC1']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -1615,7 +1615,7 @@
                                                                                  '11' => 'Australia',
                                                                                  '12' => 'Peru',
                                                                                  '10' => 'Denmark',
-                                                                                 ], old('value', isset($wc->id_runnerup) ? $wc->id_runnerup : null ), [ 'class' =>  'form-control', 'required']) !!}
+                                                                                 ], old('value', isset($wc->id_runnerup) ? $wc->id_runnerup : null ), [ 'class' =>  'form-control', 'required', 'id' => 'WC2']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -1632,14 +1632,14 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-md-6">
-                                         <button type="" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go home') }}
+                                         <button type="button" id="submitgroupchome" name="submitgroupchome" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and go to Home Page') }}
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="button" name="submitgroupc" id="submitgroupc" class="btn btn-info btn-block" value="Save and Continue" />
+                                        <input type="button" name="submitgroupc" id="submitgroupc" class="btn btn-info btn-block" value="Save and go to Next Group" />
                                          {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and continue') }} --}}
+                                            {{ __('Save and go to Next Group') }} --}}
                                         </button>
                                     </div>
                                 </div>
@@ -2129,7 +2129,7 @@
                                                                                  '15' => 'Iceland',
                                                                                  '16' => 'Croatia',
                                                                                  '14' => 'Nigeria',
-                                                                                 ], old('value', isset($wd->id_winner_team) ? $wd->id_winner_team : null ), [ 'class' =>  'form-control', 'required']) !!}
+                                                                                 ], old('value', isset($wd->id_winner_team) ? $wd->id_winner_team : null ), [ 'class' =>  'form-control', 'required', 'id' => 'WD1']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -2143,7 +2143,7 @@
                                                                                  '15' => 'Iceland',
                                                                                  '16' => 'Croatia',
                                                                                  '14' => 'Nigeria',
-                                                                                 ], old('value', isset($wd->id_runnerup) ? $wd->id_runnerup : null ), [ 'class' =>  'form-control', 'required']) !!}
+                                                                                 ], old('value', isset($wd->id_runnerup) ? $wd->id_runnerup : null ), [ 'class' =>  'form-control', 'required', 'id' => 'WD2']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -2160,14 +2160,14 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-md-6">
-                                         <button type="" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go home') }}
+                                         <button type="button" name="submitgroupdhome" id="submitgroupdhome" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and go to Home Page') }}
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="button" name="submitgroupd" id="submitgroupd" class="btn btn-info btn-block" value="Save and Continue" />
+                                        <input type="button" name="submitgroupd" id="submitgroupd" class="btn btn-info btn-block" value="Save and go to Next Group" />
                                          {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and continue') }} --}}
+                                            {{ __('Save and go to Next Group') }} --}}
                                         </button>
                                     </div>
                                 </div>
@@ -2657,7 +2657,7 @@
                                                                                  '19' => 'Switzerland',
                                                                                  '20' => 'Costa Rica',
                                                                                  '18' => 'Serbia',
-                                                                                 ], old('value', isset($we->id_winner_team) ? $we->id_winner_team : null ), [ 'class' =>  'form-control', 'required']) !!}
+                                                                                 ], old('value', isset($we->id_winner_team) ? $we->id_winner_team : null ), [ 'class' =>  'form-control', 'required', 'id' => 'WE1']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -2670,7 +2670,7 @@
                                                                                  '19' => 'Switzerland',
                                                                                  '20' => 'Costa Rica',
                                                                                  '18' => 'Serbia',
-                                                                                 ], old('value', isset($we->id_runnerup) ? $we->id_runnerup : null ), [ 'class' =>  'form-control', 'required']) !!}
+                                                                                 ], old('value', isset($we->id_runnerup) ? $we->id_runnerup : null ), [ 'class' =>  'form-control', 'required', 'id' => 'WE2']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -2687,14 +2687,14 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-md-6">
-                                         <button type="" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go home') }}
+                                         <button type="button" name="submitgroupehome" id="submitgroupehome" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and go to Home Page') }}
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="button" name="submitgroupe" id="submitgroupe" class="btn btn-info btn-block" value="Save and Continue" />
+                                        <input type="button" name="submitgroupe" id="submitgroupe" class="btn btn-info btn-block" value="Save and go to Next Group" />
                                          {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and continue') }} --}}
+                                            {{ __('Save and go to Next Group') }} --}}
                                         </button>
                                     </div>
                                 </div>
@@ -3184,7 +3184,7 @@
                                                                                  '23' => 'Mexico',
                                                                                  '24' => 'Sweden',
                                                                                  '22' => 'South Korea',
-                                                                                 ], old('value', isset($wf->id_winner_team) ? $wf->id_winner_team : null ), [ 'class' =>  'form-control', 'required']) !!}
+                                                                                 ], old('value', isset($wf->id_winner_team) ? $wf->id_winner_team : null ), [ 'class' =>  'form-control', 'required', 'id' => 'WF1']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -3197,7 +3197,7 @@
                                                                                  '23' => 'Mexico',
                                                                                  '24' => 'Sweden',
                                                                                  '22' => 'South Korea',
-                                                                                 ], old('value', isset($wf->id_runnerup) ? $wf->id_runnerup : null ), [ 'class' =>  'form-control', 'required']) !!}
+                                                                                 ], old('value', isset($wf->id_runnerup) ? $wf->id_runnerup : null ), [ 'class' =>  'form-control', 'required', 'id' => 'WF2']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -3214,14 +3214,14 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-md-6">
-                                         <button type="" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go home') }}
+                                         <button type="button" name="submitgroupfhome" id="submitgroupfhome" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and go to Home Page') }}
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="button" name="submitgroupf" id="submitgroupf" class="btn btn-info btn-block" value="Save and Continue" />
+                                        <input type="button" name="submitgroupf" id="submitgroupf" class="btn btn-info btn-block" value="Save and go to Next Group" />
                                          {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and continue') }} --}}
+                                            {{ __('Save and go to Next Group') }} --}}
                                         </button>
                                     </div>
                                 </div>
@@ -3712,7 +3712,7 @@
                                                                                  '27' => 'Panama',
                                                                                  '28' => 'Tunisia',
                                                                                  '26' => 'England',
-                                                                                 ], old('value', isset($wg->id_winner_team) ? $wg->id_winner_team : null ), [ 'class' =>  'form-control', 'required']) !!}
+                                                                                 ], old('value', isset($wg->id_winner_team) ? $wg->id_winner_team : null ), [ 'class' =>  'form-control', 'required', 'id' => 'WG1']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -3726,7 +3726,7 @@
                                                                                  '27' => 'Panama',
                                                                                  '28' => 'Tunisia',
                                                                                  '26' => 'England',
-                                                                                 ], old('value', isset($wg->id_runnerup) ? $wg->id_runnerup : null ), [ 'class' =>  'form-control', 'required']) !!}
+                                                                                 ], old('value', isset($wg->id_runnerup) ? $wg->id_runnerup : null ), [ 'class' =>  'form-control', 'required', 'id' => 'WG2']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -3743,14 +3743,14 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-md-6">
-                                         <button type="" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go home') }}
+                                         <button type="button" name="submitgroupghome" id="submitgroupghome" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and go to Home Page') }}
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="button" name="submitgroupg" id="submitgroupg" class="btn btn-info btn-block" value="Save and Continue" />
+                                        <input type="button" name="submitgroupg" id="submitgroupg" class="btn btn-info btn-block" value="Save and go to Second Stage" />
                                          {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and continue') }} --}}
+                                            {{ __('Save and go to Next Group') }} --}}
                                         </button>
                                     </div>
                                 </div>
@@ -4241,7 +4241,7 @@
                                                                                  '31' => 'Senegal',
                                                                                  '32' => 'Colombia',
                                                                                  '30' => 'Japan',
-                                                                                 ], old('value', isset($wh->id_winner_team) ? $wh->id_winner_team : null ), [ 'class' =>  'form-control', 'required']) !!}
+                                                                                 ], old('value', isset($wh->id_winner_team) ? $wh->id_winner_team : null ), [ 'class' =>  'form-control', 'required', 'id' => 'WH1']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -4255,7 +4255,7 @@
                                                                                  '31' => 'Senegal',
                                                                                  '32' => 'Colombia',
                                                                                  '30' => 'Japan',
-                                                                                 ], old('value', isset($wh->id_runnerup) ? $wh->id_runnerup : null ), [ 'class' =>  'form-control', 'required']) !!}
+                                                                                 ], old('value', isset($wh->id_runnerup) ? $wh->id_runnerup : null ), [ 'class' =>  'form-control', 'required', 'id' => 'WH2']) !!}
                                                                         </div>
                                                                             
                                                                     </div>
@@ -4272,14 +4272,14 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-md-6">
-                                         <button type="" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go home') }}
+                                         <button type="button" name="submitgrouphhome" id="submitgrouphhome" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and go to Home Page') }}
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="button" name="submitgrouph" id="submitgrouph" class="btn btn-info btn-block" value="Save and Continue" />
+                                        <input type="button" name="submitgrouph" id="submitgrouph" class="btn btn-info btn-block" value="Save and go to Next Group" />
                                          {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and continue') }} --}}
+                                            {{ __('Save and go to Next Group') }} --}}
                                         </button>
                                     </div>
                                 </div>
@@ -4319,7 +4319,7 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winA->team_name)).'.png'}}">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winA->team_name)).'.png'}}">
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4362,7 +4362,7 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winB->team_rumup)).'.png'}}">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winB->team_rumup)).'.png'}}">
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4406,7 +4406,7 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winC->team_name)).'.png'}}">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winC->team_name)).'.png'}}">
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4449,7 +4449,7 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winD->team_rumup)).'.png'}}">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winD->team_rumup)).'.png'}}">
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4493,7 +4493,7 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winE->team_name)).'.png'}}">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winE->team_name)).'.png'}}">
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4536,7 +4536,7 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winF->team_rumup)).'.png'}}">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winF->team_rumup)).'.png'}}">
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4580,7 +4580,7 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winG->team_name)).'.png'}}">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winG->team_name)).'.png'}}">
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4623,7 +4623,7 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winH->team_rumup)).'.png'}}">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winH->team_rumup)).'.png'}}">
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4667,7 +4667,7 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winB->team_name)).'.png'}}">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winB->team_name)).'.png'}}">
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4710,7 +4710,7 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winA->team_rumup)).'.png'}}">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winA->team_rumup)).'.png'}}">
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4754,7 +4754,7 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winD->team_name)).'.png'}}">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winD->team_name)).'.png'}}">
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4797,7 +4797,7 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winC->team_rumup)).'.png'}}">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winC->team_rumup)).'.png'}}">
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4841,7 +4841,7 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winF->team_name)).'.png'}}">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winF->team_name)).'.png'}}">
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4884,7 +4884,7 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winE->team_rumup)).'.png'}}">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winE->team_rumup)).'.png'}}">
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4928,7 +4928,7 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winH->team_name)).'.png'}}">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winH->team_name)).'.png'}}">
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4971,7 +4971,7 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winG->team_rumup)).'.png'}}">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winG->team_rumup)).'.png'}}">
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5012,13 +5012,14 @@
                                             </div>
 
                                             <div class="card-body">
-                                                {{-- 1A --}}
-                                                <div class="form-group row">
+                                                <div style="height: 40px;"></div>
+                                                {{-- 1A - 2B --}}
+                                                <div class="row">
                                                     <div class="col-md-12">
                                                         
                                                         <table class="display table_second_stage">
                                                             <tbody>
-                                                                 @if($winA == null)
+                                                                @if($winA == null && $winA)
                                                                 <tr>
                                                                     <td style="width: 80%; height: 30px;"></td>
                                                                     <td style="width: 20%; height: 30px;"></td>
@@ -5028,10 +5029,13 @@
                                                                     <td style="width: 80%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                {!! Form::select('WH1', [
-                                                                                 ' ' => '',
-                                                                                 'Ganador1' => 'Ganador1'
-                                                                                 ], [ 'class' =>  'form-control', 'required']) !!}
+                                                                                 <div class="form-group">
+                                                                                    {!! Form::select('WRound1A', [
+                                                                                        '' => '',
+                                                                                         $winA->id_winner_team => $winA->team_name ,
+                                                                                         $winB->id_runnerup => $winB->team_rumup,
+                                                                                         ], {{-- old('value', isset($wh->id_runnerup) ? $wh->id_runnerup : null ), --}} [ 'class' =>  'form-control', 'required', 'id' => 'WRound1']) !!}
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5051,37 +5055,35 @@
 
                                                 <div style="height: 10px;"></div>
 
-                                                {{-- 2B --}}
+                                                {{-- 1C - 2D --}}
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <table class="display table_second_stage">
                                                             <tbody>
-                                                                @if($winB == null)
+                                                                 @if($winC == null && $winD)
                                                                 <tr>
-                                                                    <td style="width: 30%; height: 30px;"></td>
-                                                                    <td style="width: 50%; height: 30px;"></td>
+                                                                    <td style="width: 80%; height: 30px;"></td>
                                                                     <td style="width: 20%; height: 30px;"></td>
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 30%; height: 30px;">
+                                                                    <td style="width: 80%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '-', strtolower($winB->team_rumup)).'.png'}}">
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td style="width: 50%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12" >
-                                                                                <label>{{$winB->team_rumup}}</label>
+                                                                                 <div class="form-group">
+                                                                                    {!! Form::select('WRoundA2', [
+                                                                                        '' => '',
+                                                                                         $winC->id_winner_team => $winC->team_name ,
+                                                                                         $winD->id_runnerup => $winD->team_rumup,
+                                                                                         ], [ 'class' =>  'form-control', 'required']) !!}
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </td>
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick2B" name="pick2B" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winB->id_runnerup}}"{{-- value="{{ old('pick1A',  isset($winB->pick) ? $winB->pick : null) }}" --}}>
+                                                                                    <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5091,6 +5093,254 @@
                                                         </table>
                                                     </div>
                                                 </div>
+
+                                                <div style="height: 95px;"></div>
+
+                                                {{-- 1E - 2F --}}
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <table class="display table_second_stage">
+                                                            <tbody>
+                                                                 @if($winE == null && $winF)
+                                                                <tr>
+                                                                    <td style="width: 80%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 80%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                 <div class="form-group">
+                                                                                    {!! Form::select('WRoundA2', [
+                                                                                        '' => '',
+                                                                                         $winE->id_winner_team => $winE->team_name ,
+                                                                                         $winF->id_runnerup => $winF->team_rumup,
+                                                                                         ], [ 'class' =>  'form-control', 'required']) !!}
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 20%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                    <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div style="height: 10px;"></div>
+
+                                                {{-- 1G - 2H --}}
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <table class="display table_second_stage">
+                                                            <tbody>
+                                                                 @if($winG == null && $winH)
+                                                                <tr>
+                                                                    <td style="width: 80%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 80%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                 <div class="form-group">
+                                                                                    {!! Form::select('WRoundA2', [
+                                                                                        '' => '',
+                                                                                         $winG->id_winner_team => $winG->team_name ,
+                                                                                         $winH->id_runnerup => $winH->team_rumup,
+                                                                                         ], [ 'class' =>  'form-control', 'required']) !!}
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 20%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                    <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div style="height: 98px;"></div>
+
+                                                {{-- 1B - 2A --}}
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <table class="display table_second_stage">
+                                                            <tbody>
+                                                                 @if($winB == null && $winA)
+                                                                <tr>
+                                                                    <td style="width: 80%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 80%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                 <div class="form-group">
+                                                                                    {!! Form::select('WRoundA2', [
+                                                                                        '' => '',
+                                                                                         $winB->id_winner_team => $winB->team_name ,
+                                                                                         $winA->id_runnerup => $winA->team_rumup,
+                                                                                         ], [ 'class' =>  'form-control', 'required']) !!}
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 20%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                    <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div style="height: 10px;"></div>
+
+                                                {{-- 1D - 2C --}}
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <table class="display table_second_stage">
+                                                            <tbody>
+                                                                 @if($winD == null && $winC)
+                                                                <tr>
+                                                                    <td style="width: 80%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 80%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                 <div class="form-group">
+                                                                                    {!! Form::select('WRoundA2', [
+                                                                                        '' => '',
+                                                                                         $winD->id_winner_team => $winD->team_name ,
+                                                                                         $winC->id_runnerup => $winC->team_rumup,
+                                                                                         ], [ 'class' =>  'form-control', 'required']) !!}
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 20%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                    <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div style="height: 100px;"></div>
+
+                                                {{-- 1F - 2E --}}
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <table class="display table_second_stage">
+                                                            <tbody>
+                                                                 @if($winF == null && $winE)
+                                                                <tr>
+                                                                    <td style="width: 80%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 80%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                 <div class="form-group">
+                                                                                    {!! Form::select('WRoundA2', [
+                                                                                        '' => '',
+                                                                                         $winF->id_winner_team => $winF->team_name ,
+                                                                                         $winE->id_runnerup => $winE->team_rumup,
+                                                                                         ], [ 'class' =>  'form-control', 'required']) !!}
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 20%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                    <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div style="height: 10px;"></div>
+
+                                                {{-- 1H - 2G --}}
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <table class="display table_second_stage">
+                                                            <tbody>
+                                                                 @if($winH == null && $winG)
+                                                                <tr>
+                                                                    <td style="width: 80%; height: 30px;"></td>
+                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 80%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                 <div class="form-group">
+                                                                                    {!! Form::select('WRoundA2', [
+                                                                                        '' => '',
+                                                                                         $winH->id_winner_team => $winH->team_name ,
+                                                                                         $winG->id_runnerup => $winG->team_rumup,
+                                                                                         ], [ 'class' =>  'form-control', 'required']) !!}
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 20%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                    <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div style="height: 38px;"></div>
                                             </div>
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
@@ -5109,8 +5359,171 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                    
-                                                         
+                                                        <div style="height: 130px;"></div>
+                                                        {{-- 1A - 2B --}}
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                
+                                                                <table class="display table_second_stage">
+                                                                    <tbody>
+                                                                        @if($winA == null && $winA)
+                                                                        <tr>
+                                                                            <td style="width: 80%; height: 30px;"></td>
+                                                                            <td style="width: 20%; height: 30px;"></td>
+                                                                        </tr>
+                                                                        @else
+                                                                        <tr>
+                                                                            <td style="width: 80%; height: 30px;">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                         <div class="form-group">
+                                                                                            {!! Form::select('WRound1A', [
+                                                                                                '' => '',
+                                                                                                 $winA->id_winner_team => $winA->team_name ,
+                                                                                                 $winB->id_runnerup => $winB->team_rumup,
+                                                                                                 ], {{-- old('value', isset($wh->id_runnerup) ? $wh->id_runnerup : null ), --}} [ 'class' =>  'form-control', 'required', 'id' => 'WRound1']) !!}
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td style="width: 20%; height: 30px;">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                            <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        @endif
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+
+                                                        <div style="height: 10px;"></div>
+
+                                                        {{-- 1C - 2D --}}
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <table class="display table_second_stage">
+                                                                    <tbody>
+                                                                         @if($winC == null && $winD)
+                                                                        <tr>
+                                                                            <td style="width: 80%; height: 30px;"></td>
+                                                                            <td style="width: 20%; height: 30px;"></td>
+                                                                        </tr>
+                                                                        @else
+                                                                        <tr>
+                                                                            <td style="width: 80%; height: 30px;">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                         <div class="form-group">
+                                                                                            {!! Form::select('WRoundA2', [
+                                                                                                '' => '',
+                                                                                                 $winC->id_winner_team => $winC->team_name ,
+                                                                                                 $winD->id_runnerup => $winD->team_rumup,
+                                                                                                 ], [ 'class' =>  'form-control', 'required']) !!}
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td style="width: 20%; height: 30px;">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                            <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        @endif
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+
+                                                        <div style="height: 100px;"></div>
+
+                                                        {{-- 1E - 2F --}}
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <table class="display table_second_stage">
+                                                                    <tbody>
+                                                                         @if($winE == null && $winF)
+                                                                        <tr>
+                                                                            <td style="width: 80%; height: 30px;"></td>
+                                                                            <td style="width: 20%; height: 30px;"></td>
+                                                                        </tr>
+                                                                        @else
+                                                                        <tr>
+                                                                            <td style="width: 80%; height: 30px;">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                         <div class="form-group">
+                                                                                            {!! Form::select('WRoundA2', [
+                                                                                                '' => '',
+                                                                                                 $winE->id_winner_team => $winE->team_name ,
+                                                                                                 $winF->id_runnerup => $winF->team_rumup,
+                                                                                                 ], [ 'class' =>  'form-control', 'required']) !!}
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td style="width: 20%; height: 30px;">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                            <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        @endif
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+
+                                                        <div style="height: 10px;"></div>
+
+                                                        {{-- 1G - 2H --}}
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <table class="display table_second_stage">
+                                                                    <tbody>
+                                                                         @if($winG == null && $winH)
+                                                                        <tr>
+                                                                            <td style="width: 80%; height: 30px;"></td>
+                                                                            <td style="width: 20%; height: 30px;"></td>
+                                                                        </tr>
+                                                                        @else
+                                                                        <tr>
+                                                                            <td style="width: 80%; height: 30px;">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                         <div class="form-group">
+                                                                                            {!! Form::select('WRoundA2', [
+                                                                                                '' => '',
+                                                                                                 $winG->id_winner_team => $winG->team_name ,
+                                                                                                 $winH->id_runnerup => $winH->team_rumup,
+                                                                                                 ], [ 'class' =>  'form-control', 'required']) !!}
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td style="width: 20%; height: 30px;">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                            <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        @endif
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+
+                                                        <div style="height: 317px;"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -5131,14 +5544,111 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                    
+                                                        <div style="height: 130px;"></div>
+                                                        {{-- 1A - 2B --}}
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                
+                                                                <table class="display table_second_stage">
+                                                                    <tbody>
+                                                                        @if($winA == null && $winA)
+                                                                        <tr>
+                                                                            <td style="width: 80%; height: 30px;"></td>
+                                                                            <td style="width: 20%; height: 30px;"></td>
+                                                                        </tr>
+                                                                        @else
+                                                                        <tr>
+                                                                            <td style="width: 80%; height: 30px;">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                         <div class="form-group">
+                                                                                            {!! Form::select('WRound1A', [
+                                                                                                '' => '',
+                                                                                                 $winA->id_winner_team => $winA->team_name ,
+                                                                                                 $winB->id_runnerup => $winB->team_rumup,
+                                                                                                 ], {{-- old('value', isset($wh->id_runnerup) ? $wh->id_runnerup : null ), --}} [ 'class' =>  'form-control', 'required', 'id' => 'WRound1']) !!}
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td style="width: 20%; height: 30px;">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                            <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        @endif
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+
+                                                        <div style="height: 10px;"></div>
+
+                                                        {{-- 1C - 2D --}}
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <table class="display table_second_stage">
+                                                                    <tbody>
+                                                                         @if($winC == null && $winD)
+                                                                        <tr>
+                                                                            <td style="width: 80%; height: 30px;"></td>
+                                                                            <td style="width: 20%; height: 30px;"></td>
+                                                                        </tr>
+                                                                        @else
+                                                                        <tr>
+                                                                            <td style="width: 80%; height: 30px;">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                         <div class="form-group">
+                                                                                            {!! Form::select('WRoundA2', [
+                                                                                                '' => '',
+                                                                                                 $winC->id_winner_team => $winC->team_name ,
+                                                                                                 $winD->id_runnerup => $winD->team_rumup,
+                                                                                                 ], [ 'class' =>  'form-control', 'required']) !!}
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td style="width: 20%; height: 30px;">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                            <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        @endif
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
                                                          
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div style="height: 505px;"></div>
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
 
+
+
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                         <button type="button" name="submitgrouphhome" id="submitgrouphhome" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and go to Home Page') }}
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="button" name="submitgrouph" id="submitgrouph" class="btn btn-info btn-block" value="Save and go to Next Group" />
+                                         {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                            {{ __('Save and go to Next Group') }} --}}
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -5255,6 +5765,28 @@
                         printErrorMsg(data.error);
                     }else{
                         toastr.success('Saved');
+                        $('#idgrupoa').removeClass( "active show" );
+                        $('#idgrupob').addClass( "active show" );
+                        $('#grupoa').removeClass( "active show" );
+                        $('#grupob').addClass( "active show" );
+                    }
+                }  
+            }); 
+
+        });
+
+        $('#submitgroupahome').click(function(){
+            $.ajax({  
+                url:postURLA,  
+                method:"POST",  
+                data:$('#groupa').serialize(),
+                type:'json',
+                success:function(data){
+                    if(data.error){
+                        printErrorMsg(data.error);
+                    }else{
+                        toastr.success('Saved');
+                        window.location='{{ route("home") }}';
                     }
                 }  
             }); 
@@ -5273,6 +5805,28 @@
                         printErrorMsg(data.error);
                     }else{
                         toastr.success('Saved');
+                        $('#idgrupob').removeClass( "active show" );
+                        $('#idgrupoc').addClass( "active show" );
+                        $('#grupob').removeClass( "active show" );
+                        $('#grupoc').addClass( "active show" );
+                    }
+                }  
+            }); 
+
+        });
+        $('#submitgroupbhome').click(function(){
+
+            $.ajax({  
+                url:postURLB,  
+                method:"POST",  
+                data:$('#groupb').serialize(),
+                type:'json',
+                success:function(data){
+                    if(data.error){
+                        printErrorMsg(data.error);
+                    }else{
+                        toastr.success('Saved');
+                        window.location='{{ route("home") }}';
                     }
                 }  
             }); 
@@ -5292,6 +5846,28 @@
                         printErrorMsg(data.error);
                     }else{
                         toastr.success('Saved');
+                        $('#idgrupoc').removeClass( "active show" );
+                        $('#idgrupod').addClass( "active show" );
+                        $('#grupoc').removeClass( "active show" );
+                        $('#grupod').addClass( "active show" );
+                    }
+                }  
+            }); 
+
+        });
+        $('#submitgroupchome').click(function(){
+
+            $.ajax({  
+                url:postURLC,  
+                method:"POST",  
+                data:$('#groupc').serialize(),
+                type:'json',
+                success:function(data){
+                    if(data.error){
+                        printErrorMsg(data.error);
+                    }else{
+                        toastr.success('Saved');
+                        window.location='{{ route("home") }}';
                     }
                 }  
             }); 
@@ -5312,6 +5888,28 @@
                         printErrorMsg(data.error);
                     }else{
                         toastr.success('Saved');
+                        $('#idgrupod').removeClass( "active show" );
+                        $('#idgrupoe').addClass( "active show" );
+                        $('#grupod').removeClass( "active show" );
+                        $('#grupoe').addClass( "active show" );
+                    }
+                }  
+            }); 
+
+        });
+        $('#submitgroupdhome').click(function(){
+
+            $.ajax({  
+                url:postURLD,  
+                method:"POST",  
+                data:$('#groupd').serialize(),
+                type:'json',
+                success:function(data){
+                    if(data.error){
+                        printErrorMsg(data.error);
+                    }else{
+                        toastr.success('Saved');
+                        window.location='{{ route("home") }}';
                     }
                 }  
             }); 
@@ -5332,6 +5930,28 @@
                         printErrorMsg(data.error);
                     }else{
                         toastr.success('Saved');
+                        $('#idgrupoe').removeClass( "active show" );
+                        $('#idgrupof').addClass( "active show" );
+                        $('#grupoe').removeClass( "active show" );
+                        $('#grupof').addClass( "active show" );
+                    }
+                }  
+            }); 
+
+        });
+        $('#submitgroupehome').click(function(){
+
+            $.ajax({  
+                url:postURLE,  
+                method:"POST",  
+                data:$('#groupe').serialize(),
+                type:'json',
+                success:function(data){
+                    if(data.error){
+                        printErrorMsg(data.error);
+                    }else{
+                        toastr.success('Saved');
+                        window.location='{{ route("home") }}';
                     }
                 }  
             }); 
@@ -5352,6 +5972,28 @@
                         printErrorMsg(data.error);
                     }else{
                         toastr.success('Saved');
+                        $('#idgrupof').removeClass( "active show" );
+                        $('#idgrupog').addClass( "active show" );
+                        $('#grupof').removeClass( "active show" );
+                        $('#grupog').addClass( "active show" );
+                    }
+                }  
+            }); 
+
+        });
+        $('#submitgroupfhome').click(function(){
+
+            $.ajax({  
+                url:postURLF,  
+                method:"POST",  
+                data:$('#groupf').serialize(),
+                type:'json',
+                success:function(data){
+                    if(data.error){
+                        printErrorMsg(data.error);
+                    }else{
+                        toastr.success('Saved');
+                        window.location='{{ route("home") }}';
                     }
                 }  
             }); 
@@ -5372,6 +6014,28 @@
                         printErrorMsg(data.error);
                     }else{
                         toastr.success('Saved');
+                        $('#idgrupog').removeClass( "active show" );
+                        $('#idgrupoh').addClass( "active show" );
+                        $('#grupog').removeClass( "active show" );
+                        $('#grupoh').addClass( "active show" );
+                    }
+                }  
+            }); 
+
+        });
+        $('#submitgroupghome').click(function(){
+
+            $.ajax({  
+                url:postURLG,  
+                method:"POST",  
+                data:$('#groupg').serialize(),
+                type:'json',
+                success:function(data){
+                    if(data.error){
+                        printErrorMsg(data.error);
+                    }else{
+                        toastr.success('Saved');
+                        window.location='{{ route("home") }}';
                     }
                 }  
             }); 
@@ -5392,6 +6056,28 @@
                         printErrorMsg(data.error);
                     }else{
                         toastr.success('Saved');
+                        $('#idgrupoh').removeClass( "active show" );
+                        $('#idgrupoRoun').addClass( "active show" );
+                        $('#grupoh').removeClass( "active show" );
+                        $('#grupoRoun').addClass( "active show" );
+                    }
+                }  
+            }); 
+
+        });
+        $('#submitgrouphhome').click(function(){
+
+            $.ajax({  
+                url:postURLH,  
+                method:"POST",  
+                data:$('#grouph').serialize(),
+                type:'json',
+                success:function(data){
+                    if(data.error){
+                        printErrorMsg(data.error);
+                    }else{
+                        toastr.success('Saved');
+                        window.location='{{ route("home") }}';
                     }
                 }  
             }); 
@@ -5399,7 +6085,170 @@
         });
 
 
+        // dont repet winner by group
+        $('#WA2').change(function(event) {
+            var espP = $('#WA1').val();
+            var espS = event.target.value;
+            if(espP == espS)
+            {
+                toastr.warning('Please make sure to select different teams in the Winners section');
+                $('#WA2').val($("#WA2 option:first").val());
+            }
+        });
+
+        $('#WA1').change(function(event) {
+            var espS = $('#WA2').val();
+            var espP = event.target.value;
+            if(espP == espS)
+            {
+                toastr.warning('Please make sure to select different teams in the Winners section');
+                $('#WA1').val($("#WA1 option:first").val());
+            }
+        });
+
+        $('#WB2').change(function(event) {
+            var espP = $('#WB1').val();
+            var espS = event.target.value;
+            if(espP == espS)
+            {
+                toastr.warning('Please make sure to select different teams in the Winners section');
+                $('#WB2').val($("#WB2 option:first").val());
+            }
+        });
+
+        $('#WB1').change(function(event) {
+            var espS = $('#WB2').val();
+            var espP = event.target.value;
+            if(espP == espS)
+            {
+                toastr.warning('Please make sure to select different teams in the Winners section');
+                $('#WB1').val($("#WB1 option:first").val());
+            }
+        });
+
+        $('#WC2').change(function(event) {
+            var espP = $('#WC1').val();
+            var espS = event.target.value;
+            if(espP == espS)
+            {
+                toastr.warning('Please make sure to select different teams in the Winners section');
+                $('#WC2').val($("#WC2 option:first").val());
+            }
+        });
+
+        $('#WC1').change(function(event) {
+            var espS = $('#WC2').val();
+            var espP = event.target.value;
+            if(espP == espS)
+            {
+                toastr.warning('Please make sure to select different teams in the Winners section');
+                $('#WC1').val($("#WC1 option:first").val());
+            }
+        });
+
+        $('#WD2').change(function(event) {
+            var espP = $('#WD1').val();
+            var espS = event.target.value;
+            if(espP == espS)
+            {
+                toastr.warning('Please make sure to select different teams in the Winners section');
+                $('#WD2').val($("#WD2 option:first").val());
+            }
+        });
+
+        $('#WD1').change(function(event) {
+            var espS = $('#WD2').val();
+            var espP = event.target.value;
+            if(espP == espS)
+            {
+                toastr.warning('Please make sure to select different teams in the Winners section');
+                $('#WD1').val($("#WD1 option:first").val());
+            }
+        });
+
+        $('#WE2').change(function(event) {
+            var espP = $('#WE1').val();
+            var espS = event.target.value;
+            if(espP == espS)
+            {
+                toastr.warning('Please make sure to select different teams in the Winners section');
+                $('#WE2').val($("#WE2 option:first").val());
+            }
+        });
+
+        $('#WE1').change(function(event) {
+            var espS = $('#WE2').val();
+            var espP = event.target.value;
+            if(espP == espS)
+            {
+                toastr.warning('Please make sure to select different teams in the Winners section');
+                $('#WE1').val($("#WE1 option:first").val());
+            }
+        });
+
+        $('#WF2').change(function(event) {
+            var espP = $('#WF1').val();
+            var espS = event.target.value;
+            if(espP == espS)
+            {
+                toastr.warning('Please make sure to select different teams in the Winners section');
+                $('#WF2').val($("#WF2 option:first").val());
+            }
+        });
+
+        $('#WF1').change(function(event) {
+            var espS = $('#WF2').val();
+            var espP = event.target.value;
+            if(espP == espS)
+            {
+                toastr.warning('Please make sure to select different teams in the Winners section');
+                $('#WF1').val($("#WF1 option:first").val());
+            }
+        });
+
+        $('#WG2').change(function(event) {
+            var espP = $('#WG1').val();
+            var espS = event.target.value;
+            if(espP == espS)
+            {
+                toastr.warning('Please make sure to select different teams in the Winners section');
+                $('#WG2').val($("#WG2 option:first").val());
+            }
+        });
+
+        $('#WG1').change(function(event) {
+            var espS = $('#WG2').val();
+            var espP = event.target.value;
+            if(espP == espS)
+            {
+                toastr.warning('Please make sure to select different teams in the Winners section');
+                $('#WG1').val($("#WG1 option:first").val());
+            }
+        });
+
+        $('#WH2').change(function(event) {
+            var espP = $('#WH1').val();
+            var espS = event.target.value;
+            if(espP == espS)
+            {
+                toastr.warning('Please make sure to select different teams in the Winners section');
+                $('#WH2').val($("#WH2 option:first").val());
+            }
+        });
+
+        $('#WH1').change(function(event) {
+            var espS = $('#WH2').val();
+            var espP = event.target.value;
+            if(espP == espS)
+            {
+                toastr.warning('Please make sure to select different teams in the Winners section');
+                $('#WH1').val($("#WH1 option:first").val());
+            }
+        });
     });
+
+
+    
 </script>
 
 {{-- calculations --}}
@@ -5417,7 +6266,16 @@
 <script>
     $(document).ready( function () {
 
-    $(function(){
+        match_games();
+        match_games_B();
+        match_games_C();
+        match_games_D();
+        match_games_E();
+        match_games_F();
+        match_games_G();
+        match_games_H();
+
+        $(function(){
             //Set button disabled
             $('#submita').attr('disabled', 'disabled');
 
@@ -5432,6 +6290,8 @@
             // You could then trigger the a change event on load just to check
             $('#submita').trigger('change');
         });
+
+
     });
 
     

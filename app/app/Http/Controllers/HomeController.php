@@ -57,6 +57,7 @@ class HomeController extends Controller
         $polls = new PollsModel;
         $polls->id_User = $req->input('user_id');
         $polls->poll_name = $req->input('poll_name');
+        $polls->complete = 'Incomplete';
         $polls->status = 'Pending';
 
         $polls->save();

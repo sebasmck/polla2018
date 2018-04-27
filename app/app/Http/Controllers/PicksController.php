@@ -62,6 +62,10 @@ class PicksController extends Controller
         $winG = Clasificado::teamsClasificadosWin($iduser_poll,7);
         $winH = Clasificado::teamsClasificadosWin($iduser_poll,8);
 
+        // $round16_1 = Clasificado::teamsClasificadosWin($iduser_poll,9);
+        // $round16_2 = Clasificado::teamsClasificadosWin($iduser_poll,10);
+        // $round16_3 = Clasificado::teamsClasificadosWin($iduser_poll,11);
+        // $round16_4 = Clasificado::teamsClasificadosWin($iduser_poll,12);
 
 
         return view('picks.picks')

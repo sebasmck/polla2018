@@ -62,6 +62,7 @@ class RegisterController extends Controller
         $polls = new PollsModel;
         $polls->id_User = $user->id;
         $polls->poll_name = $user->nickname;
+        $polls->complete = 'Incomplete';
         $polls->status = 'Pending';
 
         $polls->save();
