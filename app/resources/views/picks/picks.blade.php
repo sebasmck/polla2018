@@ -5031,10 +5031,8 @@
                                                                             <div class="col-md-12">
                                                                                  <div class="form-group">
                                                                                     {!! Form::select('WRound1A', [
-                                                                                        '' => '',
-                                                                                         $winA->id_winner_team => $winA->team_name ,
-                                                                                         $winB->id_runnerup => $winB->team_rumup,
-                                                                                         ], {{-- old('value', isset($wh->id_runnerup) ? $wh->id_runnerup : null ), --}} [ 'class' =>  'form-control', 'required', 'id' => 'WRound1']) !!}
+                                                                                        $drop1->pluck('team_name', 'id')
+                                                                                         ], null, [ 'class' =>  'form-control', 'required', 'id' => 'WRound1']) !!}
                                                                                 </div>
                                                                             </div>
                                                                         </div>

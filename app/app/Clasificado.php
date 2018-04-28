@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use DB;
 
 class Clasificado extends Model
 {
@@ -33,12 +34,4 @@ class Clasificado extends Model
 					->get()
 					->first();
 	}
-
-	// public static function teamsClasificadosRun($iduser_poll, $id_fase){
-	// 	return Clasificado::join('teams', 'clasificado.id_runnerup', '=', 'teams.id')
-	// 				->where('id_poll', $iduser_poll)
-	// 				->where('id_fase', $id_fase)
-	// 				->get()
-	// 				->first();
-	// }
 }
