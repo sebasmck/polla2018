@@ -66,8 +66,8 @@ class AdminsController extends Controller
             'alert-type' => 'success'
         );
 
-        return view('admin.assign_rep')->with('users', $users)->with('reps', $reps)->with($notification);
-
+        // return view('admin.assign_rep')->with('users', $users)->with('reps', $reps)->with($notification);
+        return redirect()->back()->with($notification);
     }
 
     
