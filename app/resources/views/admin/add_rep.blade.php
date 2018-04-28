@@ -34,7 +34,7 @@
                         <nav class="tabs is-boxed">
                           <ul>
                             <li>
-                              <a href="/admin">Approvals</a>
+                              <a href="/admin">Pending Approvals</a>
                             </li>
                             <li class="is-active">
                                 <a href="/assign">User Management</a>
@@ -84,7 +84,29 @@
 
     <script>
       $(document).ready( function () {
-        toastr.success('z');
+        // toastr.success('z');
+
+        @if(Session::has('message'))
+        var type = "{{ Session::get('alert-type', 'info') }}";
+        switch(type){
+                case 'info':
+                toastr.info("{{ Session::get('message') }}");
+                break;
+                
+                case 'warning':
+                toastr.warning("{{ Session::get('message') }}");
+                break;
+
+                case 'success':
+                toastr.success("{{ Session::get('message') }}");
+                break;
+
+                case 'error':
+                toastr.error("{{ Session::get('message') }}");
+                break;
+        }
+        @endif
+        
       });
     </script>
     

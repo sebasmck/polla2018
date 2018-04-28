@@ -51,7 +51,7 @@
                               <a href="/admin">Pending approvals</a>
                             </li>
                             <li class="is-active">
-                                <a href="/assign">user Management</a>
+                                <a href="/assign">User Management</a>
                               </li>
                           </ul>
                         </nav></div>
