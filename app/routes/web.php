@@ -21,13 +21,13 @@ Route::group(['middleware' => ['auth']], function() {
 // Polls
 Route::post('/pollregistration', 'HomeController@pollregistration')->name('pollregistration');
 
-Route::get('/admin', 'HomeController@indexAdmin')->name('admin');
+Route::get('admin', 'HomeController@indexAdmin')->name('admin');
 
-Route::get('/assign', 'AdminsController@assignRep')->name('assign');
+Route::get('assign', 'AdminsController@assignRep')->name('assign');
 
 Route::post('/assigntouser', 'AdminsController@assignToUser');
 
-Route::get('/addrep', 'AdminsController@addRep')->name('addRep');
+Route::get('addrep', 'AdminsController@addRep')->name('addRep');
 
 Route::post('/storerep', 'AdminsController@storeRep')->name('storerep');
 
@@ -38,11 +38,11 @@ Route::delete('users/{id}', [
 
 Route::post('/editstatus', 'AdminsController@editStatus')->name('editstatus');
 
-Route::get('/editrep/{id}', 'AdminsController@editRep')->name('editrep');
+Route::get('editrep/{id}', 'AdminsController@editRep')->name('editrep');
 
 Route::post('/updaterep', 'AdminsController@updateRep')->name('updaterep');
 
-Route::get('/allusers', 'AdminsController@allUsers')->name('allusers');
+Route::get('allusers', 'AdminsController@allUsers')->name('allusers');
 
 Route::Resource('admins', 'AdminsController');
 
