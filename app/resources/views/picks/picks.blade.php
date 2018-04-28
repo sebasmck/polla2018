@@ -4311,8 +4311,8 @@
                                                                  @if($winA == null)
                                                                 <tr>
                                                                     <td style="width: 30%; height: 30px;"></td>
-                                                                    <td style="width: 50%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
+                                                                    
                                                                 </tr>
                                                                 @else
                                                                 <tr>
@@ -4323,17 +4323,10 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 50%; height: 30px;">
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12" >
                                                                                 <label>{{$winA->team_name}}</label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                    
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4354,8 +4347,7 @@
                                                                 @if($winB == null)
                                                                 <tr>
                                                                     <td style="width: 30%; height: 30px;"></td>
-                                                                    <td style="width: 50%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
                                                                 </tr>
                                                                 @else
                                                                 <tr>
@@ -4366,20 +4358,14 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 50%; height: 30px;">
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12" >
                                                                                 <label>{{$winB->team_rumup}}</label>
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                    
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
+
                                                                 </tr>
                                                                 @endif
                                                             </tbody>
@@ -4398,8 +4384,7 @@
                                                                  @if($winC == null)
                                                                 <tr>
                                                                     <td style="width: 30%; height: 30px;"></td>
-                                                                    <td style="width: 50%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
                                                                 </tr>
                                                                 @else
                                                                 <tr>
@@ -4410,20 +4395,14 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 50%; height: 30px;">
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12" >
                                                                                 <label>{{$winC->team_name}}</label>
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                    
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
+
                                                                 </tr>
                                                                 @endif
                                                             </tbody>
@@ -4441,8 +4420,8 @@
                                                                 @if($winD == null)
                                                                 <tr>
                                                                     <td style="width: 30%; height: 30px;"></td>
-                                                                    <td style="width: 50%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
+                                                                    
                                                                 </tr>
                                                                 @else
                                                                 <tr>
@@ -4453,20 +4432,14 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 50%; height: 30px;">
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12" >
                                                                                 <label>{{$winD->team_rumup}}</label>
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                    
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
+
                                                                 </tr>
                                                                 @endif
                                                             </tbody>
@@ -4485,8 +4458,7 @@
                                                                  @if($winE == null)
                                                                 <tr>
                                                                     <td style="width: 30%; height: 30px;"></td>
-                                                                    <td style="width: 50%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
                                                                 </tr>
                                                                 @else
                                                                 <tr>
@@ -4497,20 +4469,14 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 50%; height: 30px;">
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12" >
                                                                                 <label>{{$winE->team_name}}</label>
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                    
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
+
                                                                 </tr>
                                                                 @endif
                                                             </tbody>
@@ -4528,8 +4494,7 @@
                                                                 @if($winF == null)
                                                                 <tr>
                                                                     <td style="width: 30%; height: 30px;"></td>
-                                                                    <td style="width: 50%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
                                                                 </tr>
                                                                 @else
                                                                 <tr>
@@ -4540,20 +4505,14 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 50%; height: 30px;">
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12" >
                                                                                 <label>{{$winF->team_rumup}}</label>
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                    
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
+
                                                                 </tr>
                                                                 @endif
                                                             </tbody>
@@ -4572,8 +4531,7 @@
                                                                  @if($winG == null)
                                                                 <tr>
                                                                     <td style="width: 30%; height: 30px;"></td>
-                                                                    <td style="width: 50%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
                                                                 </tr>
                                                                 @else
                                                                 <tr>
@@ -4584,17 +4542,10 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 50%; height: 30px;">
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12" >
                                                                                 <label>{{$winG->team_name}}</label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                   
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4615,8 +4566,7 @@
                                                                 @if($winH == null)
                                                                 <tr>
                                                                     <td style="width: 30%; height: 30px;"></td>
-                                                                    <td style="width: 50%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
                                                                 </tr>
                                                                 @else
                                                                 <tr>
@@ -4627,17 +4577,10 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 50%; height: 30px;">
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12" >
                                                                                 <label>{{$winH->team_rumup}}</label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                   
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4659,8 +4602,7 @@
                                                                  @if($winB == null)
                                                                 <tr>
                                                                     <td style="width: 30%; height: 30px;"></td>
-                                                                    <td style="width: 50%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
                                                                 </tr>
                                                                 @else
                                                                 <tr>
@@ -4671,20 +4613,14 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 50%; height: 30px;">
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12" >
                                                                                 <label>{{$winB->team_name}}</label>
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                    
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
+
                                                                 </tr>
                                                                 @endif
                                                             </tbody>
@@ -4702,8 +4638,7 @@
                                                                 @if($winA == null)
                                                                 <tr>
                                                                     <td style="width: 30%; height: 30px;"></td>
-                                                                    <td style="width: 50%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
                                                                 </tr>
                                                                 @else
                                                                 <tr>
@@ -4714,20 +4649,14 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 50%; height: 30px;">
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12" >
                                                                                 <label>{{$winA->team_rumup}}</label>
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                    
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
+
                                                                 </tr>
                                                                 @endif
                                                             </tbody>
@@ -4746,8 +4675,7 @@
                                                                  @if($winD == null)
                                                                 <tr>
                                                                     <td style="width: 30%; height: 30px;"></td>
-                                                                    <td style="width: 50%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
                                                                 </tr>
                                                                 @else
                                                                 <tr>
@@ -4758,17 +4686,10 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 50%; height: 30px;">
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12" >
                                                                                 <label>{{$winD->team_name}}</label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                   
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4789,8 +4710,7 @@
                                                                 @if($winC == null)
                                                                 <tr>
                                                                     <td style="width: 30%; height: 30px;"></td>
-                                                                    <td style="width: 50%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
                                                                 </tr>
                                                                 @else
                                                                 <tr>
@@ -4801,17 +4721,10 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 50%; height: 30px;">
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12" >
                                                                                 <label>{{$winC->team_rumup}}</label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                   
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4833,8 +4746,7 @@
                                                                  @if($winF == null)
                                                                 <tr>
                                                                     <td style="width: 30%; height: 30px;"></td>
-                                                                    <td style="width: 50%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
                                                                 </tr>
                                                                 @else
                                                                 <tr>
@@ -4845,20 +4757,14 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 50%; height: 30px;">
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12" >
                                                                                 <label>{{$winF->team_name}}</label>
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                    
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
+
                                                                 </tr>
                                                                 @endif
                                                             </tbody>
@@ -4876,8 +4782,7 @@
                                                                 @if($winE == null)
                                                                 <tr>
                                                                     <td style="width: 30%; height: 30px;"></td>
-                                                                    <td style="width: 50%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
                                                                 </tr>
                                                                 @else
                                                                 <tr>
@@ -4888,20 +4793,14 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 50%; height: 30px;">
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12" >
                                                                                 <label>{{$winE->team_rumup}}</label>
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                    
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
+
                                                                 </tr>
                                                                 @endif
                                                             </tbody>
@@ -4920,8 +4819,7 @@
                                                                  @if($winH == null)
                                                                 <tr>
                                                                     <td style="width: 30%; height: 30px;"></td>
-                                                                    <td style="width: 50%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
                                                                 </tr>
                                                                 @else
                                                                 <tr>
@@ -4932,20 +4830,14 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 50%; height: 30px;">
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12" >
                                                                                 <label>{{$winH->team_name}}</label>
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                    
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
+
                                                                 </tr>
                                                                 @endif
                                                             </tbody>
@@ -4964,7 +4856,6 @@
                                                                 <tr>
                                                                     <td style="width: 30%; height: 30px;"></td>
                                                                     <td style="width: 50%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
                                                                 </tr>
                                                                 @else
                                                                 <tr>
@@ -4975,20 +4866,14 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 50%; height: 30px;">
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12" >
                                                                                 <label>{{$winG->team_rumup}}</label>
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                    
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
+
                                                                 </tr>
                                                                 @endif
                                                             </tbody>
@@ -5021,29 +4906,22 @@
                                                             <tbody>
                                                                 @if($winA == null && $winA)
                                                                 <tr>
-                                                                    <td style="width: 80%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 80%; height: 30px;">
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                 <div class="form-group">
-                                                                                    {!! Form::select('WRound1A', [
-                                                                                        $drop1->pluck('team_name', 'id')
-                                                                                         ], null, [ 'class' =>  'form-control', 'required', 'id' => 'WRound1']) !!}
-                                                                                </div>
+                                                                                {!! Form::select('WRound1A', [
+                                                                                    $drop1->pluck('team_name', 'id')
+                                                                                     ], null, [ 'class' =>  'form-control', 'required', 'id' => 'WRound1']) !!}
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                    
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
+
                                                                 </tr>
                                                                 @endif
                                                             </tbody>
@@ -5060,12 +4938,13 @@
                                                             <tbody>
                                                                  @if($winC == null && $winD)
                                                                 <tr>
-                                                                    <td style="width: 80%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 80%; height: 30px;">
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
                                                                                  <div class="form-group">
@@ -5078,13 +4957,7 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                    
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
+
                                                                 </tr>
                                                                 @endif
                                                             </tbody>
@@ -5101,12 +4974,13 @@
                                                             <tbody>
                                                                  @if($winE == null && $winF)
                                                                 <tr>
-                                                                    <td style="width: 80%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 80%; height: 30px;">
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
                                                                                  <div class="form-group">
@@ -5119,13 +4993,7 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                    
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
+
                                                                 </tr>
                                                                 @endif
                                                             </tbody>
@@ -5142,12 +5010,13 @@
                                                             <tbody>
                                                                  @if($winG == null && $winH)
                                                                 <tr>
-                                                                    <td style="width: 80%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 80%; height: 30px;">
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
                                                                                  <div class="form-group">
@@ -5160,13 +5029,7 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                    
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
+
                                                                 </tr>
                                                                 @endif
                                                             </tbody>
@@ -5183,12 +5046,13 @@
                                                             <tbody>
                                                                  @if($winB == null && $winA)
                                                                 <tr>
-                                                                    <td style="width: 80%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 80%; height: 30px;">
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
                                                                                  <div class="form-group">
@@ -5201,13 +5065,7 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                    
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
+
                                                                 </tr>
                                                                 @endif
                                                             </tbody>
@@ -5224,12 +5082,13 @@
                                                             <tbody>
                                                                  @if($winD == null && $winC)
                                                                 <tr>
-                                                                    <td style="width: 80%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 80%; height: 30px;">
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
                                                                                  <div class="form-group">
@@ -5242,13 +5101,7 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                    
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
+
                                                                 </tr>
                                                                 @endif
                                                             </tbody>
@@ -5265,12 +5118,13 @@
                                                             <tbody>
                                                                  @if($winF == null && $winE)
                                                                 <tr>
-                                                                    <td style="width: 80%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 80%; height: 30px;">
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
                                                                                  <div class="form-group">
@@ -5283,13 +5137,7 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                    
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
+
                                                                 </tr>
                                                                 @endif
                                                             </tbody>
@@ -5306,12 +5154,13 @@
                                                             <tbody>
                                                                  @if($winH == null && $winG)
                                                                 <tr>
-                                                                    <td style="width: 80%; height: 30px;"></td>
-                                                                    <td style="width: 20%; height: 30px;"></td>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 80%; height: 30px;">
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
                                                                                  <div class="form-group">
@@ -5324,13 +5173,7 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td style="width: 20%; height: 30px;">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                    
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
+
                                                                 </tr>
                                                                 @endif
                                                             </tbody>
@@ -5366,12 +5209,13 @@
                                                                     <tbody>
                                                                         @if($winA == null && $winA)
                                                                         <tr>
-                                                                            <td style="width: 80%; height: 30px;"></td>
-                                                                            <td style="width: 20%; height: 30px;"></td>
+                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 70%; height: 30px;"></td>
                                                                         </tr>
                                                                         @else
                                                                         <tr>
-                                                                            <td style="width: 80%; height: 30px;">
+                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
                                                                                          <div class="form-group">
@@ -5381,13 +5225,6 @@
                                                                                                  $winB->id_runnerup => $winB->team_rumup,
                                                                                                  ], {{-- old('value', isset($wh->id_runnerup) ? $wh->id_runnerup : null ), --}} [ 'class' =>  'form-control', 'required', 'id' => 'WRound1']) !!}
                                                                                         </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td style="width: 20%; height: 30px;">
-                                                                                <div class="row">
-                                                                                    <div class="col-md-12">
-                                                                                            
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
@@ -5407,12 +5244,13 @@
                                                                     <tbody>
                                                                          @if($winC == null && $winD)
                                                                         <tr>
-                                                                            <td style="width: 80%; height: 30px;"></td>
-                                                                            <td style="width: 20%; height: 30px;"></td>
+                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 70%; height: 30px;"></td>
                                                                         </tr>
                                                                         @else
                                                                         <tr>
-                                                                            <td style="width: 80%; height: 30px;">
+                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
                                                                                          <div class="form-group">
@@ -5422,13 +5260,6 @@
                                                                                                  $winD->id_runnerup => $winD->team_rumup,
                                                                                                  ], [ 'class' =>  'form-control', 'required']) !!}
                                                                                         </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td style="width: 20%; height: 30px;">
-                                                                                <div class="row">
-                                                                                    <div class="col-md-12">
-                                                                                            
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
@@ -5448,11 +5279,12 @@
                                                                     <tbody>
                                                                          @if($winE == null && $winF)
                                                                         <tr>
-                                                                            <td style="width: 80%; height: 30px;"></td>
-                                                                            <td style="width: 20%; height: 30px;"></td>
+                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 70%; height: 30px;"></td>
                                                                         </tr>
                                                                         @else
                                                                         <tr>
+                                                                            <td style="width: 30%; height: 30px;"></td>
                                                                             <td style="width: 80%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
@@ -5463,13 +5295,6 @@
                                                                                                  $winF->id_runnerup => $winF->team_rumup,
                                                                                                  ], [ 'class' =>  'form-control', 'required']) !!}
                                                                                         </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td style="width: 20%; height: 30px;">
-                                                                                <div class="row">
-                                                                                    <div class="col-md-12">
-                                                                                            
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
@@ -5489,12 +5314,13 @@
                                                                     <tbody>
                                                                          @if($winG == null && $winH)
                                                                         <tr>
-                                                                            <td style="width: 80%; height: 30px;"></td>
-                                                                            <td style="width: 20%; height: 30px;"></td>
+                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 70%; height: 30px;"></td>
                                                                         </tr>
                                                                         @else
                                                                         <tr>
-                                                                            <td style="width: 80%; height: 30px;">
+                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
                                                                                          <div class="form-group">
@@ -5504,13 +5330,6 @@
                                                                                                  $winH->id_runnerup => $winH->team_rumup,
                                                                                                  ], [ 'class' =>  'form-control', 'required']) !!}
                                                                                         </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td style="width: 20%; height: 30px;">
-                                                                                <div class="row">
-                                                                                    <div class="col-md-12">
-                                                                                            
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
@@ -5551,12 +5370,13 @@
                                                                     <tbody>
                                                                         @if($winA == null && $winA)
                                                                         <tr>
-                                                                            <td style="width: 80%; height: 30px;"></td>
-                                                                            <td style="width: 20%; height: 30px;"></td>
+                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 70%; height: 30px;"></td>
                                                                         </tr>
                                                                         @else
                                                                         <tr>
-                                                                            <td style="width: 80%; height: 30px;">
+                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
                                                                                          <div class="form-group">
@@ -5564,15 +5384,8 @@
                                                                                                 '' => '',
                                                                                                  $winA->id_winner_team => $winA->team_name ,
                                                                                                  $winB->id_runnerup => $winB->team_rumup,
-                                                                                                 ], {{-- old('value', isset($wh->id_runnerup) ? $wh->id_runnerup : null ), --}} [ 'class' =>  'form-control', 'required', 'id' => 'WRound1']) !!} --}}
+                                                                                                 ], {{-- old('value', isset($wh->id_runnerup) ? $wh->id_runnerup : null ), [ 'class' =>  'form-control', 'required', 'id' => 'WRound1']) !!} --}}
                                                                                         </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td style="width: 20%; height: 30px;">
-                                                                                <div class="row">
-                                                                                    <div class="col-md-12">
-                                                                                            
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
@@ -5592,11 +5405,12 @@
                                                                     <tbody>
                                                                          @if($winC == null && $winD)
                                                                         <tr>
-                                                                            <td style="width: 80%; height: 30px;"></td>
+                                                                            <td style="width: 30%; height: 30px;"></td>
                                                                             <td style="width: 20%; height: 30px;"></td>
                                                                         </tr>
                                                                         @else
                                                                         <tr>
+                                                                            <td style="width: 30%; height: 30px;"></td>
                                                                             <td style="width: 80%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
@@ -5607,13 +5421,6 @@
                                                                                                  $winD->id_runnerup => $winD->team_rumup,
                                                                                                  ], [ 'class' =>  'form-control', 'required']) !!}
                                                                                         </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td style="width: 20%; height: 30px;">
-                                                                                <div class="row">
-                                                                                    <div class="col-md-12">
-                                                                                            
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
