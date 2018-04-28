@@ -4333,7 +4333,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                                    
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4376,7 +4376,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick2B" name="pick2B" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winB->id_runnerup}}"{{-- value="{{ old('pick1A',  isset($winB->pick) ? $winB->pick : null) }}" --}}>
+                                                                                    
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4420,7 +4420,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick1C" name="pick1C" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winC->id_winner_team}}"{{-- value="{{ old('pick1',  isset($winC->pick) ? $winC->pick : null) }}" --}}>
+                                                                                    
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4463,7 +4463,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick1D" name="pick1D" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winD->id_runnerup}}"{{-- value="{{ old('pick1A',  isset($winD->pick) ? $winD->pick : null) }}" --}}>
+                                                                                    
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4507,7 +4507,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick1E" name="pick1E" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winE->id_winner_team}}"{{-- value="{{ old('pick1',  isset($winE->pick) ? $winE->pick : null) }}" --}}>
+                                                                                    
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4550,7 +4550,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick2F" name="pick2F" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winF->id_runnerup}}"{{-- value="{{ old('pick1A',  isset($winF->pick) ? $winF->pick : null) }}" --}}>
+                                                                                    
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4594,7 +4594,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick1G" name="pick1G" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winG->id_winner_team}}"{{-- value="{{ old('pick1',  isset($winG->pick) ? $winG->pick : null) }}" --}}>
+                                                                                   
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4637,7 +4637,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick2H" name="pick2H" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winH->id_runnerup}}"{{-- value="{{ old('pick1A',  isset($winH->pick) ? $winH->pick : null) }}" --}}>
+                                                                                   
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4681,7 +4681,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick1B" name="pick1B" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winB->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winB->pick) ? $winB->pick : null) }}" --}}>
+                                                                                    
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4724,7 +4724,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick2A" name="pick2A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_runnerup}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                                    
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4768,7 +4768,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick1D" name="pick1D" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winD->id_winner_team}}"{{-- value="{{ old('pick1',  isset($winD->pick) ? $winD->pick : null) }}" --}}>
+                                                                                   
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4811,7 +4811,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick2C" name="pick2C" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winC->id_runnerup}}"{{-- value="{{ old('pick1A',  isset($winC->pick) ? $winC->pick : null) }}" --}}>
+                                                                                   
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4855,7 +4855,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick1F" name="pick1F" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winF->id_winner_team}}"{{-- value="{{ old('pick1',  isset($winF->pick) ? $winF->pick : null) }}" --}}>
+                                                                                    
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4898,7 +4898,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick2E" name="pick2E" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winE->id_runnerup}}"{{-- value="{{ old('pick1A',  isset($winE->pick) ? $winE->pick : null) }}" --}}>
+                                                                                    
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4942,7 +4942,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick1H" name="pick1H" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winH->id_winner_team}}"{{-- value="{{ old('pick1',  isset($winH->pick) ? $winH->pick : null) }}" --}}>
+                                                                                    
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4985,7 +4985,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick2G" name="pick2G" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winG->id_runnerup}}"{{-- value="{{ old('pick1A',  isset($winG->pick) ? $winG->pick : null) }}" --}}>
+                                                                                    
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5040,7 +5040,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                                    
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5081,7 +5081,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                                    
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5122,7 +5122,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                                    
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5163,7 +5163,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                                    
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5204,7 +5204,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                                    
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5245,7 +5245,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                                    
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5286,7 +5286,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                                    
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5327,7 +5327,7 @@
                                                                     <td style="width: 20%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                                    
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5387,7 +5387,7 @@
                                                                             <td style="width: 20%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                            <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                                            
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
@@ -5428,7 +5428,7 @@
                                                                             <td style="width: 20%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                            <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                                            
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
@@ -5469,7 +5469,7 @@
                                                                             <td style="width: 20%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                            <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                                            
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
@@ -5510,7 +5510,7 @@
                                                                             <td style="width: 20%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                            <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                                            
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
@@ -5572,7 +5572,7 @@
                                                                             <td style="width: 20%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                            <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                                            
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
@@ -5613,7 +5613,7 @@
                                                                             <td style="width: 20%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                            <input id="pick1A" name="pick1A" type="text" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" data-id="{{$winA->id_winner_team}}"{{-- value="{{ old('pick1A',  isset($winA->pick) ? $winA->pick : null) }}" --}}>
+                                                                                            
                                                                                     </div>
                                                                                 </div>
                                                                             </td>

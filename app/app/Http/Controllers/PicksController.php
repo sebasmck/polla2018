@@ -64,7 +64,7 @@ class PicksController extends Controller
         $winH = Clasificado::teamsClasificadosWin($iduser_poll,8);
 
         $drop1 = rivals::teamsQuarter($iduser_poll,1, 2);
-        dd($drop1);
+        //dd($drop1);
         // $drop1->prepend('None');
         //dd($drop1);
 
