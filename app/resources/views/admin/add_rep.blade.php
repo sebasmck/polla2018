@@ -70,47 +70,71 @@
                       </div>
                     </section>
 
+
+                 <section class="section">
+                    <div class="container">
+                      <h1 class="title"><b> Reps Management </b></h1>                  
+                      <hr style="margin-bottom: 0;">
+                      <table id="pendings" class="display">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>update</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            @foreach($reps as $rep)
+
+                                <tr>
+                                    {{-- <td>{{$user->nickname}}</td>
+                                    <td>{{$user->email}}</td> --}}
+                                {{-- <td> <a class="button is-danger" href="{{route('admins.show', $user->id)}}"> View Pools</a> </td> --}}
+                                <td>
+                                    {{$rep->name}}
+                                    {{-- <a href="/editrep/{{$user->id}}"> <button class="button is-primary is-pulled-right">Edit Rep</button></a>
+                                    <p class="is-pulled-left">{{$user->rep->name}}</p> --}}
+                                </td>
+                                    {{-- <td>
+                                        <div class="col-md-6">
+                                          {!! Form::open(['route' => ['admins.destroy', $user->id], 'method' => 'DELETE']) !!}
+
+                                          {!!Form::submit('x', ['class' => 'button is-danger']) !!}
+                            
+                                          {!! Form::close() !!}
+                                        </div>
+                                    </td> --}}
+                                </tr>
+
+                            @endforeach
+                            </tbody>
+                            
+                        </table>
+
+
+                    </div>
+                  </section>
+
     {{-- BEGIN CREATE MODAL --}}
     
 
     </body>
+    @include('admin.partials.js')
 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
 
-    @include('admin.partials.js')
 
+    
     <script>
-      $(document).ready( function () {
-        // toastr.success('z');
-
-        @if(Session::has('message'))
-        var type = "{{ Session::get('alert-type', 'info') }}";
-        switch(type){
-                case 'info':
-                toastr.info("{{ Session::get('message') }}");
-                break;
-                
-                case 'warning':
-                toastr.warning("{{ Session::get('message') }}");
-                break;
-
-                case 'success':
-                toastr.success("{{ Session::get('message') }}");
-                break;
-
-                case 'error':
-                toastr.error("{{ Session::get('message') }}");
-                break;
-        }
-        @endif
         
-      });
-    </script>
-    
-    
+        $(document).ready( function () {
 
+          $('#pendings').DataTable();
+
+        });
+
+    </script>
 
 </html>
