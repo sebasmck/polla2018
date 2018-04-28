@@ -4923,8 +4923,10 @@
                                                                                      ], null, [ 'class' =>  'form-control', 'required', 'id' => 'WRound1']) !!} --}}
                                                                                 <select class="form-control" id="WRound1A2B" name="WRound1A2B">
                                                                                     <option>Pick a Team...</option>
+                                                                                    @if($winA != null && $winB != null)
                                                                                     <option value="{{$winA->id_winner_team}}">{{$winA->team_name}}</option>
                                                                                     <option value="{{$winB->id_runnerup}}">{{$winB->team_rumup}}</option>
+                                                                                    @endif
                                                                                 </select>
                                                                             </div>
                                                                         </div>
@@ -4963,8 +4965,10 @@
 
                                                                                 <select class="form-control" id="WRound1C2D" name="WRound1C2D">
                                                                                     <option>Pick a Team...</option>
+                                                                                    @if($winC != null && $winD != null)
                                                                                     <option value="{{$winC->id_winner_team}}">{{$winC->team_name}}</option>
                                                                                     <option value="{{$winD->id_runnerup}}">{{$winD->team_rumup}}</option>
+                                                                                    @endif
                                                                                 </select>
                                                                             </div>
                                                                         </div>
@@ -5002,8 +5006,10 @@
                                                                                          ], [ 'class' =>  'form-control', 'required']) !!} --}}
                                                                                     <select class="form-control" id="WRound1E2F" name="WRound1E2F">
                                                                                         <option>Pick a Team...</option>
+                                                                                        @if($winE != null && $winF != null)
                                                                                         <option value="{{$winE->id_winner_team}}">{{$winE->team_name}}</option>
                                                                                         <option value="{{$winF->id_runnerup}}">{{$winF->team_rumup}}</option>
+                                                                                        @endif
                                                                                     </select>
                                                                             </div>
                                                                         </div>
@@ -5042,8 +5048,10 @@
                                                                                          ], [ 'class' =>  'form-control', 'required']) !!} --}}
                                                                                     <select class="form-control" id="WRound1G2H" name="WRound1G2H">
                                                                                         <option>Pick a Team...</option>
+                                                                                        @if($winG != null && $winH != null)
                                                                                         <option value="{{$winG->id_winner_team}}">{{$winG->team_name}}</option>
                                                                                         <option value="{{$winH->id_runnerup}}">{{$winH->team_rumup}}</option>
+                                                                                        @endif
                                                                                     </select>
                                                                                 
                                                                             </div>
@@ -5083,8 +5091,10 @@
                                                                                          ], [ 'class' =>  'form-control', 'required']) !!} --}}
                                                                                 <select class="form-control" id="WRound1B2A" name="WRound1B2A">
                                                                                     <option>Pick a Team...</option>
+                                                                                    @if($winB != null && $winA != null)
                                                                                     <option value="{{$winB->id_winner_team}}">{{$winB->team_name}}</option>
                                                                                     <option value="{{$winA->id_runnerup}}">{{$winA->team_rumup}}</option>
+                                                                                    @endif
                                                                                 </select>
                                                                             </div>
                                                                         </div>
@@ -5122,8 +5132,10 @@
                                                                                          ], [ 'class' =>  'form-control', 'required']) !!} --}}
                                                                                 <select class="form-control" id="WRound1D2C" name="WRound1D2C">
                                                                                     <option>Pick a Team...</option>
+                                                                                    @if($winD != null && $winC != null)
                                                                                     <option value="{{$winD->id_winner_team}}">{{$winD->team_name}}</option>
                                                                                     <option value="{{$winC->id_runnerup}}">{{$winC->team_rumup}}</option>
+                                                                                    @endif
                                                                                 </select>
                                                                             </div>
                                                                         </div>
@@ -5161,8 +5173,10 @@
                                                                                          ], [ 'class' =>  'form-control', 'required']) !!} --}}
                                                                                 <select class="form-control" id="WRound1F2E" name="WRound1F2E">
                                                                                     <option>Pick a Team...</option>
+                                                                                    @if($winF != null && $winE != null)
                                                                                     <option value="{{$winF->id_winner_team}}">{{$winF->team_name}}</option>
                                                                                     <option value="{{$winE->id_runnerup}}">{{$winE->team_rumup}}</option>
+                                                                                    @endif
                                                                                 </select>
                                                                             </div>
                                                                         </div>
@@ -5201,8 +5215,10 @@
                                                                                          ], [ 'class' =>  'form-control', 'required']) !!} --}}
                                                                                 <select class="form-control" id="WRound1H2G" name="WRound1H2G">
                                                                                     <option>Pick a Team...</option>
+                                                                                    @if($winH != null && $winG != null)
                                                                                     <option value="{{$winH->id_winner_team}}">{{$winH->team_name}}</option>
                                                                                     <option value="{{$winG->id_runnerup}}">{{$winG->team_rumup}}</option>
+                                                                                    @endif
                                                                                 </select>
                                                                             </div>
                                                                         </div>

@@ -48,10 +48,10 @@
                         <nav class="tabs is-boxed">
                           <ul>
                             <li>
-                              <a href="/admin">Pending approvals</a>
+                              <a href="{{ route('admin') }}">Pending approvals</a>
                             </li>
                             <li class="is-active">
-                                <a href="/assign">user Management</a>
+                                <a href="{{ route('assign') }}">user Management</a>
                               </li>
                           </ul>
                         </nav></div>

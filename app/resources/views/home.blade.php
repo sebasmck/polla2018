@@ -65,16 +65,16 @@
                                                 @endif
                                                 <td><div class="form-group row mb-0">
 
-                                                    @if($poll->status == 'Pending')
+                                                    {{-- @if($poll->status == 'Pending') --}}
                                                         <div class="col-md-8 offset-md-4">
                                                             <div class="control">
                                                                 <button class="btn btn-primary" onclick="window.location='{{ route('picks.show', $poll->iduser_poll) }}'">Edit my picks</button>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    @else
+                                                    {{-- @else
                                                     
-                                                    @endif
+                                                    @endif --}}
                                                 </div></td>
                                                 <td>
                                                     @if($poll->status == 'Pending')
