@@ -4911,13 +4911,21 @@
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                         <img class="img_flags_WRound1A2B" src="">
+                                                                    </td>
+                                                                       
                                                                     <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                {!! Form::select('WRound1A', [
-                                                                                    $drop1->pluck('team_name', 'id')
-                                                                                     ], null, [ 'class' =>  'form-control', 'required', 'id' => 'WRound1']) !!}
+                                                                                {{-- {!! Form::select('WRound1A', [
+                                                                                    $drop1
+                                                                                     ], null, [ 'class' =>  'form-control', 'required', 'id' => 'WRound1']) !!} --}}
+                                                                                <select class="form-control" id="WRound1A2B" name="WRound1A2B">
+                                                                                    <option>Pick a Team...</option>
+                                                                                    <option value="{{$winA->id_winner_team}}">{{$winA->team_name}}</option>
+                                                                                    <option value="{{$winB->id_runnerup}}">{{$winB->team_rumup}}</option>
+                                                                                </select>
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4947,13 +4955,17 @@
                                                                     <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                 <div class="form-group">
-                                                                                    {!! Form::select('WRoundA2', [
-                                                                                        '' => '',
-                                                                                         $winC->id_winner_team => $winC->team_name ,
-                                                                                         $winD->id_runnerup => $winD->team_rumup,
-                                                                                         ], [ 'class' =>  'form-control', 'required']) !!}
-                                                                                </div>
+                                                                                {{-- {!! Form::select('WRoundA2', [
+                                                                                    '' => '',
+                                                                                     $winC->id_winner_team => $winC->team_name ,
+                                                                                     $winD->id_runnerup => $winD->team_rumup,
+                                                                                     ], [ 'class' =>  'form-control', 'required']) !!} --}}
+
+                                                                                <select class="form-control" id="WRound1C2D" name="WRound1C2D">
+                                                                                    <option>Pick a Team...</option>
+                                                                                    <option value="{{$winC->id_winner_team}}">{{$winC->team_name}}</option>
+                                                                                    <option value="{{$winD->id_runnerup}}">{{$winD->team_rumup}}</option>
+                                                                                </select>
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4983,13 +4995,16 @@
                                                                     <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                 <div class="form-group">
-                                                                                    {!! Form::select('WRoundA2', [
+                                                                                    {{-- {!! Form::select('WRoundA2', [
                                                                                         '' => '',
                                                                                          $winE->id_winner_team => $winE->team_name ,
                                                                                          $winF->id_runnerup => $winF->team_rumup,
-                                                                                         ], [ 'class' =>  'form-control', 'required']) !!}
-                                                                                </div>
+                                                                                         ], [ 'class' =>  'form-control', 'required']) !!} --}}
+                                                                                    <select class="form-control" id="WRound1E2F" name="WRound1E2F">
+                                                                                        <option>Pick a Team...</option>
+                                                                                        <option value="{{$winE->id_winner_team}}">{{$winE->team_name}}</option>
+                                                                                        <option value="{{$winF->id_runnerup}}">{{$winF->team_rumup}}</option>
+                                                                                    </select>
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5019,13 +5034,18 @@
                                                                     <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                 <div class="form-group">
-                                                                                    {!! Form::select('WRoundA2', [
+                                                                                 
+                                                                                    {{-- {!! Form::select('WRoundA2', [
                                                                                         '' => '',
                                                                                          $winG->id_winner_team => $winG->team_name ,
                                                                                          $winH->id_runnerup => $winH->team_rumup,
-                                                                                         ], [ 'class' =>  'form-control', 'required']) !!}
-                                                                                </div>
+                                                                                         ], [ 'class' =>  'form-control', 'required']) !!} --}}
+                                                                                    <select class="form-control" id="WRound1G2H" name="WRound1G2H">
+                                                                                        <option>Pick a Team...</option>
+                                                                                        <option value="{{$winG->id_winner_team}}">{{$winG->team_name}}</option>
+                                                                                        <option value="{{$winH->id_runnerup}}">{{$winH->team_rumup}}</option>
+                                                                                    </select>
+                                                                                
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5055,13 +5075,17 @@
                                                                     <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                 <div class="form-group">
-                                                                                    {!! Form::select('WRoundA2', [
+                                                                                 
+                                                                                    {{-- {!! Form::select('WRoundA2', [
                                                                                         '' => '',
                                                                                          $winB->id_winner_team => $winB->team_name ,
                                                                                          $winA->id_runnerup => $winA->team_rumup,
-                                                                                         ], [ 'class' =>  'form-control', 'required']) !!}
-                                                                                </div>
+                                                                                         ], [ 'class' =>  'form-control', 'required']) !!} --}}
+                                                                                <select class="form-control" id="WRound1B2A" name="WRound1B2A">
+                                                                                    <option>Pick a Team...</option>
+                                                                                    <option value="{{$winB->id_winner_team}}">{{$winB->team_name}}</option>
+                                                                                    <option value="{{$winA->id_runnerup}}">{{$winA->team_rumup}}</option>
+                                                                                </select>
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5091,13 +5115,16 @@
                                                                     <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                 <div class="form-group">
-                                                                                    {!! Form::select('WRoundA2', [
+                                                                                    {{-- {!! Form::select('WRoundA2', [
                                                                                         '' => '',
                                                                                          $winD->id_winner_team => $winD->team_name ,
                                                                                          $winC->id_runnerup => $winC->team_rumup,
-                                                                                         ], [ 'class' =>  'form-control', 'required']) !!}
-                                                                                </div>
+                                                                                         ], [ 'class' =>  'form-control', 'required']) !!} --}}
+                                                                                <select class="form-control" id="WRound1D2C" name="WRound1D2C">
+                                                                                    <option>Pick a Team...</option>
+                                                                                    <option value="{{$winD->id_winner_team}}">{{$winD->team_name}}</option>
+                                                                                    <option value="{{$winC->id_runnerup}}">{{$winC->team_rumup}}</option>
+                                                                                </select>
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5127,13 +5154,16 @@
                                                                     <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                 <div class="form-group">
-                                                                                    {!! Form::select('WRoundA2', [
+                                                                                   {{--  {!! Form::select('WRoundA2', [
                                                                                         '' => '',
                                                                                          $winF->id_winner_team => $winF->team_name ,
                                                                                          $winE->id_runnerup => $winE->team_rumup,
-                                                                                         ], [ 'class' =>  'form-control', 'required']) !!}
-                                                                                </div>
+                                                                                         ], [ 'class' =>  'form-control', 'required']) !!} --}}
+                                                                                <select class="form-control" id="WRound1F2E" name="WRound1F2E">
+                                                                                    <option>Pick a Team...</option>
+                                                                                    <option value="{{$winF->id_winner_team}}">{{$winF->team_name}}</option>
+                                                                                    <option value="{{$winE->id_runnerup}}">{{$winE->team_rumup}}</option>
+                                                                                </select>
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5163,13 +5193,17 @@
                                                                     <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                 <div class="form-group">
-                                                                                    {!! Form::select('WRoundA2', [
+                                                                                 
+                                                                                    {{-- {!! Form::select('WRoundA2', [
                                                                                         '' => '',
                                                                                          $winH->id_winner_team => $winH->team_name ,
                                                                                          $winG->id_runnerup => $winG->team_rumup,
-                                                                                         ], [ 'class' =>  'form-control', 'required']) !!}
-                                                                                </div>
+                                                                                         ], [ 'class' =>  'form-control', 'required']) !!} --}}
+                                                                                <select class="form-control" id="WRound1H2G" name="WRound1H2G">
+                                                                                    <option>Pick a Team...</option>
+                                                                                    <option value="{{$winH->id_winner_team}}">{{$winH->team_name}}</option>
+                                                                                    <option value="{{$winG->id_runnerup}}">{{$winG->team_rumup}}</option>
+                                                                                </select>
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5207,29 +5241,19 @@
                                                                 
                                                                 <table class="display table_second_stage">
                                                                     <tbody>
-                                                                        @if($winA == null && $winA)
-                                                                        <tr>
-                                                                            <td style="width: 30%; height: 30px;"></td>
-                                                                            <td style="width: 70%; height: 30px;"></td>
-                                                                        </tr>
-                                                                        @else
                                                                         <tr>
                                                                             <td style="width: 30%; height: 30px;"></td>
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                         <div class="form-group">
-                                                                                            {!! Form::select('WRound1A', [
-                                                                                                '' => '',
-                                                                                                 $winA->id_winner_team => $winA->team_name ,
-                                                                                                 $winB->id_runnerup => $winB->team_rumup,
-                                                                                                 ], {{-- old('value', isset($wh->id_runnerup) ? $wh->id_runnerup : null ), --}} [ 'class' =>  'form-control', 'required', 'id' => 'WRound1']) !!}
-                                                                                        </div>
+                                                                                         <select class="form-control" id="Wquarter1_2" name="Wquarter1_2">
+                                                                                            <option>Pick a Team...</option>
+                                                                                            
+                                                                                        </select>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
-                                                                        @endif
                                                                     </tbody>
                                                                 </table>
                                                             </div>
@@ -5242,29 +5266,20 @@
                                                             <div class="col-md-12">
                                                                 <table class="display table_second_stage">
                                                                     <tbody>
-                                                                         @if($winC == null && $winD)
-                                                                        <tr>
-                                                                            <td style="width: 30%; height: 30px;"></td>
-                                                                            <td style="width: 70%; height: 30px;"></td>
-                                                                        </tr>
-                                                                        @else
+                                                                         
                                                                         <tr>
                                                                             <td style="width: 30%; height: 30px;"></td>
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                         <div class="form-group">
-                                                                                            {!! Form::select('WRoundA2', [
-                                                                                                '' => '',
-                                                                                                 $winC->id_winner_team => $winC->team_name ,
-                                                                                                 $winD->id_runnerup => $winD->team_rumup,
-                                                                                                 ], [ 'class' =>  'form-control', 'required']) !!}
-                                                                                        </div>
+                                                                                        <select class="form-control" id="Wquarter1_2" name="Wquarter1_2">
+                                                                                            <option>Pick a Team...</option>
+                                                                                            
+                                                                                        </select>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
-                                                                        @endif
                                                                     </tbody>
                                                                 </table>
                                                             </div>
@@ -5277,29 +5292,20 @@
                                                             <div class="col-md-12">
                                                                 <table class="display table_second_stage">
                                                                     <tbody>
-                                                                         @if($winE == null && $winF)
-                                                                        <tr>
-                                                                            <td style="width: 30%; height: 30px;"></td>
-                                                                            <td style="width: 70%; height: 30px;"></td>
-                                                                        </tr>
-                                                                        @else
+                                                                        
                                                                         <tr>
                                                                             <td style="width: 30%; height: 30px;"></td>
                                                                             <td style="width: 80%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                         <div class="form-group">
-                                                                                            {!! Form::select('WRoundA2', [
-                                                                                                '' => '',
-                                                                                                 $winE->id_winner_team => $winE->team_name ,
-                                                                                                 $winF->id_runnerup => $winF->team_rumup,
-                                                                                                 ], [ 'class' =>  'form-control', 'required']) !!}
-                                                                                        </div>
+                                                                                         <select class="form-control" id="Wquarter3_4" name="Wquarter3_4">
+                                                                                            <option>Pick a Team...</option>
+                                                                                            
+                                                                                        </select>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
-                                                                        @endif
                                                                     </tbody>
                                                                 </table>
                                                             </div>
@@ -5312,29 +5318,20 @@
                                                             <div class="col-md-12">
                                                                 <table class="display table_second_stage">
                                                                     <tbody>
-                                                                         @if($winG == null && $winH)
-                                                                        <tr>
-                                                                            <td style="width: 30%; height: 30px;"></td>
-                                                                            <td style="width: 70%; height: 30px;"></td>
-                                                                        </tr>
-                                                                        @else
                                                                         <tr>
                                                                             <td style="width: 30%; height: 30px;"></td>
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                         <div class="form-group">
-                                                                                            {!! Form::select('WRoundA2', [
-                                                                                                '' => '',
-                                                                                                 $winG->id_winner_team => $winG->team_name ,
-                                                                                                 $winH->id_runnerup => $winH->team_rumup,
-                                                                                                 ], [ 'class' =>  'form-control', 'required']) !!}
+                                                                                            <select class="form-control" id="Wquarter5_6" name="Wquarter5_6">
+                                                                                                <option>Pick a Team...</option>
+                                                                                                
+                                                                                            </select>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
-                                                                        @endif
                                                                     </tbody>
                                                                 </table>
                                                             </div>
@@ -5361,7 +5358,7 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <div style="height: 130px;"></div>
+                                                        <div style="height: 230px;"></div>
                                                         {{-- 1A - 2B --}}
                                                         <div class="row">
                                                             <div class="col-md-12">
@@ -5379,13 +5376,10 @@
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                         <div class="form-group">
-                                                                                            {{-- {!! Form::select('WRound1A', [
-                                                                                                '' => '',
-                                                                                                 $winA->id_winner_team => $winA->team_name ,
-                                                                                                 $winB->id_runnerup => $winB->team_rumup,
-                                                                                                 ], {{-- old('value', isset($wh->id_runnerup) ? $wh->id_runnerup : null ), [ 'class' =>  'form-control', 'required', 'id' => 'WRound1']) !!} --}}
-                                                                                        </div>
+                                                                                         <select class="form-control" id="WSemi1_2" name="WSemi1_2">
+                                                                                                <option>Pick a Team...</option>
+                                                                                                
+                                                                                            </select>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
@@ -5403,29 +5397,19 @@
                                                             <div class="col-md-12">
                                                                 <table class="display table_second_stage">
                                                                     <tbody>
-                                                                         @if($winC == null && $winD)
-                                                                        <tr>
-                                                                            <td style="width: 30%; height: 30px;"></td>
-                                                                            <td style="width: 20%; height: 30px;"></td>
-                                                                        </tr>
-                                                                        @else
                                                                         <tr>
                                                                             <td style="width: 30%; height: 30px;"></td>
                                                                             <td style="width: 80%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                         <div class="form-group">
-                                                                                            {!! Form::select('WRoundA2', [
-                                                                                                '' => '',
-                                                                                                 $winC->id_winner_team => $winC->team_name ,
-                                                                                                 $winD->id_runnerup => $winD->team_rumup,
-                                                                                                 ], [ 'class' =>  'form-control', 'required']) !!}
-                                                                                        </div>
+                                                                                         <select class="form-control" id="WSemi3_4" name="WSemi3_4">
+                                                                                                <option>Pick a Team...</option>
+                                                                                                
+                                                                                            </select>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
-                                                                        @endif
                                                                     </tbody>
                                                                 </table>
                                                             </div>
@@ -5449,7 +5433,7 @@
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="button" name="submitgrouph" id="submitgrouph" class="btn btn-info btn-block" value="Save and go to Next Group" />
+                                        <input type="button" name="submitgrouph" id="submitgrouph" class="btn btn-info btn-block" value="Save" />
                                          {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
                                             {{ __('Save and go to Next Group') }} --}}
                                         </button>
@@ -6050,6 +6034,13 @@
                 $('#WH1').val($("#WH1 option:first").val());
             }
         });
+
+        $('#WRound1A2B').change(function(event) {
+            var team_name =$('#WRound1A2B').val();
+            //$("#img_flags_WRound1A2B").attr('src', '/mg/flags/' + team_name + '.png');
+            
+        });
+
     });
 
 

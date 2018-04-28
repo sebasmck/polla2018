@@ -18,8 +18,8 @@ class rivals extends Model
 
 		$queryResult = DB::select("call rivals($iduser_poll, $id_fase1, $id_fase2)");
 
-		$result = collect($queryResult);
+		//$result = collect($queryResult);
 
-		return $result;
+		return $queryResult;
 	}
 }
