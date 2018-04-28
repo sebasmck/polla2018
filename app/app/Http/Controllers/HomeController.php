@@ -62,13 +62,6 @@ class HomeController extends Controller
 
         $polls->save();
 
-
-        // $polls = $req->validate([
-        //     'poll_name' => 'required|unique:user_poll|string|max:255'
-        // ]);
-
-        // $polls->create($polls);
-        
         return back();
     }
 

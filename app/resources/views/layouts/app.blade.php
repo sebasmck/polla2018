@@ -39,11 +39,16 @@
                 <a class="navbar-brand" href="{{ url('/home') }}">
                     Polla World Cup
                 </a>
-                <p id="demo" style="text-align: center; font-size: 20px;"></p>
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
+                
+                <div style="text-align: center; margin-left: 50%; padding-top:8px;">
+                    <ul style="line-height:50%; list-style-type: none;">
+                        <li><p style="font-size: 0.7em;">Countdown to worldcup</p></li>
+                        <li><p id="demo"></p></div></li>
+                    </ul>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
