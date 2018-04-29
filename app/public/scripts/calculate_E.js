@@ -53,6 +53,9 @@
         var m1_A2 = $('#M1E2').val();
         if (m1_A1 != '' && m1_A2 != '')
         {
+            m1_A1 = parseInt(m1_A1);
+            m1_A2 = parseInt(m1_A2);
+
             // Partidos Jugados
             cont1++;
             cont2++;
@@ -98,6 +101,9 @@
         var m2_A4 = $('#M2E4').val();
         if (m2_A3 != '' && m2_A4 != '')
         {
+            m2_A3 = parseInt(m2_A3);
+            m2_A4 = parseInt(m2_A4);
+
             // Partidos Jugados
             cont3++;
             cont4++;
@@ -142,6 +148,9 @@
         var m3_A3 = $('#M3E3').val();
         if (m3_A1 != '' && m3_A3 != '')
         {
+            m3_A1 = parseInt(m3_A1);
+            m3_A3 = parseInt(m3_A3);
+
             // Partidos Jugados
             cont1++;
             cont3++;
@@ -186,6 +195,9 @@
         var m4_A2 = $('#M4E2').val();
         if (m4_A4 != '' && m4_A2 != '')
         {
+            m4_A4 = parseInt(m4_A4);
+            m4_A2 = parseInt(m4_A2);
+
             // Partidos Jugados
             cont4++;
             cont2++;
@@ -230,6 +242,9 @@
         var m5_A1 = $('#M5E1').val();
         if (m5_A4 != '' && m5_A1 != '')
         {
+            m5_A4 = parseInt(m5_A4);
+            m5_A1 = parseInt(m5_A1);
+
             // Partidos Jugados
             cont4++;
             cont1++;
@@ -274,6 +289,9 @@
         var m6_A3 = $('#M6E3').val();
         if (m6_A2 != '' && m6_A3 != '')
         {
+            m6_A2 = parseInt(m6_A2);
+            m6_A3 = parseInt(m6_A3);
+            
             // Partidos Jugados
             cont2++;
             cont3++;

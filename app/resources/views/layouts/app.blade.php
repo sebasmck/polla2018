@@ -47,7 +47,7 @@
                 <div style="text-align: center; margin-left: 50%; padding-top:8px;">
                     <ul style="line-height:50%; list-style-type: none;">
                         <li><p style="font-size: 0.7em;">Countdown to worldcup</p></li>
-                        <li><p id="demo"></p></div></li>
+                        <li><p id="demo" style='margin-bottom: 1px;'></p></div></li>
                     </ul>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
