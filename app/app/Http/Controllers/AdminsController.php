@@ -45,7 +45,9 @@ class AdminsController extends Controller
 
     public function addRep(){
 
-        return view('admin.add_rep');
+        $reps = Rep::all();
+
+        return view('admin.add_rep')->with('reps', $reps);
     }
 
 
@@ -62,11 +64,11 @@ class AdminsController extends Controller
         $rep->save();
 
         $notification = array(
-            'message' => 'I am a successful message!', 
+            'message' => 'Rep ' . "$rep->name" . ' Was added Successfully', 
             'alert-type' => 'success'
         );
 
-        // return view('admin.assign_rep')->with('users', $users)->with('reps', $reps)->with($notification);
+        // return view('admin.assign_rep')->with($notification)->with('users', $users)->with('reps', $reps);
         return redirect()->back()->with($notification);
     }
 
@@ -140,9 +142,14 @@ class AdminsController extends Controller
                       'lastname' => $user->lastname,
                       'email' => $user->email);
 
-        Emails::email_registration_user_approved($user->email, $data);
+        // Emails::email_registration_user_approved($user->email, $data);
 
-        return back();
+        $notification = array(
+            'message' => " $user->name " . 'Has been approved', 
+            'alert-type' => 'success'
+        );
+
+        return redirect()->back()->with($notification);
     }
 
     /**
@@ -166,7 +173,12 @@ class AdminsController extends Controller
         
         $poll->save();
 
-        return redirect()->back();
+        $notification = array(
+            'message' => " $poll->poll_name " . 'Has changed to: ' . "$poll->status", 
+            'alert-type' => 'success'
+        );
+
+        return redirect()->back()->with($notification);
 
     }
 
