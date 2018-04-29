@@ -468,7 +468,7 @@ class PicksController extends Controller
     {
         $id_user = Auth::user()->id;
 
-        $poll  PollsModel::find($iduser_poll);
+        $poll = PollsModel::find($iduser_poll);
         $poll->delete();
 
         $polls = PollsModel::getBbyUser($id_user);

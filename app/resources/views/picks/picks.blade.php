@@ -19,8 +19,7 @@
                             <div class="col-md-8">
                                 {{-- <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary addbutton" id="myBtn"><span class="fa fa-plus">+</span></button> --}}
                             </div>
-                        </div>
-                        
+                        </div>                        
                         
                     </div>
 
@@ -4921,13 +4920,15 @@
                                                                                 {{-- {!! Form::select('WRound1A', [
                                                                                     $drop1
                                                                                      ], null, [ 'class' =>  'form-control', 'required', 'id' => 'WRound1']) !!} --}}
-                                                                                <select class="form-control" id="WRound1A2B" name="WRound1A2B">
+                                                                                <select class="form-control WRound1A2B" id="WRound1A2B" name="WRound1A2B">
                                                                                     <option>Pick a Team...</option>
                                                                                     @if($winA != null && $winB != null)
                                                                                     <option value="{{$winA->id_winner_team}}">{{$winA->team_name}}</option>
                                                                                     <option value="{{$winB->id_runnerup}}">{{$winB->team_rumup}}</option>
                                                                                     @endif
                                                                                 </select>
+
+
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4963,7 +4964,7 @@
                                                                                      $winD->id_runnerup => $winD->team_rumup,
                                                                                      ], [ 'class' =>  'form-control', 'required']) !!} --}}
 
-                                                                                <select class="form-control" id="WRound1C2D" name="WRound1C2D">
+                                                                                <select class="form-control WRound1C2D" id="WRound1C2D" name="WRound1C2D">
                                                                                     <option>Pick a Team...</option>
                                                                                     @if($winC != null && $winD != null)
                                                                                     <option value="{{$winC->id_winner_team}}">{{$winC->team_name}}</option>
@@ -5004,7 +5005,7 @@
                                                                                          $winE->id_winner_team => $winE->team_name ,
                                                                                          $winF->id_runnerup => $winF->team_rumup,
                                                                                          ], [ 'class' =>  'form-control', 'required']) !!} --}}
-                                                                                    <select class="form-control" id="WRound1E2F" name="WRound1E2F">
+                                                                                    <select class="form-control WRound1E2F" id="WRound1E2F" name="WRound1E2F">
                                                                                         <option>Pick a Team...</option>
                                                                                         @if($winE != null && $winF != null)
                                                                                         <option value="{{$winE->id_winner_team}}">{{$winE->team_name}}</option>
@@ -5046,7 +5047,7 @@
                                                                                          $winG->id_winner_team => $winG->team_name ,
                                                                                          $winH->id_runnerup => $winH->team_rumup,
                                                                                          ], [ 'class' =>  'form-control', 'required']) !!} --}}
-                                                                                    <select class="form-control" id="WRound1G2H" name="WRound1G2H">
+                                                                                    <select class="form-control WRound1G2H" id="WRound1G2H" name="WRound1G2H">
                                                                                         <option>Pick a Team...</option>
                                                                                         @if($winG != null && $winH != null)
                                                                                         <option value="{{$winG->id_winner_team}}">{{$winG->team_name}}</option>
@@ -5089,7 +5090,7 @@
                                                                                          $winB->id_winner_team => $winB->team_name ,
                                                                                          $winA->id_runnerup => $winA->team_rumup,
                                                                                          ], [ 'class' =>  'form-control', 'required']) !!} --}}
-                                                                                <select class="form-control" id="WRound1B2A" name="WRound1B2A">
+                                                                                <select class="form-control WRound1B2A" id="WRound1B2A" name="WRound1B2A">
                                                                                     <option>Pick a Team...</option>
                                                                                     @if($winB != null && $winA != null)
                                                                                     <option value="{{$winB->id_winner_team}}">{{$winB->team_name}}</option>
@@ -5130,7 +5131,7 @@
                                                                                          $winD->id_winner_team => $winD->team_name ,
                                                                                          $winC->id_runnerup => $winC->team_rumup,
                                                                                          ], [ 'class' =>  'form-control', 'required']) !!} --}}
-                                                                                <select class="form-control" id="WRound1D2C" name="WRound1D2C">
+                                                                                <select class="form-control WRound1D2C" id="WRound1D2C" name="WRound1D2C">
                                                                                     <option>Pick a Team...</option>
                                                                                     @if($winD != null && $winC != null)
                                                                                     <option value="{{$winD->id_winner_team}}">{{$winD->team_name}}</option>
@@ -5171,7 +5172,7 @@
                                                                                          $winF->id_winner_team => $winF->team_name ,
                                                                                          $winE->id_runnerup => $winE->team_rumup,
                                                                                          ], [ 'class' =>  'form-control', 'required']) !!} --}}
-                                                                                <select class="form-control" id="WRound1F2E" name="WRound1F2E">
+                                                                                <select class="form-control WRound1F2E" id="WRound1F2E" name="WRound1F2E">
                                                                                     <option>Pick a Team...</option>
                                                                                     @if($winF != null && $winE != null)
                                                                                     <option value="{{$winF->id_winner_team}}">{{$winF->team_name}}</option>
@@ -5213,7 +5214,7 @@
                                                                                          $winH->id_winner_team => $winH->team_name ,
                                                                                          $winG->id_runnerup => $winG->team_rumup,
                                                                                          ], [ 'class' =>  'form-control', 'required']) !!} --}}
-                                                                                <select class="form-control" id="WRound1H2G" name="WRound1H2G">
+                                                                                <select class="form-control WRound1H2G" id="WRound1H2G" name="WRound1H2G">
                                                                                     <option>Pick a Team...</option>
                                                                                     @if($winH != null && $winG != null)
                                                                                     <option value="{{$winH->id_winner_team}}">{{$winH->team_name}}</option>
@@ -5262,7 +5263,7 @@
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                         <select class="form-control" id="Wquarter1_2" name="Wquarter1_2">
+                                                                                         <select class="form-control Wquarter1_2" id="Wquarter1_2" name="Wquarter1_2">
                                                                                             <option>Pick a Team...</option>
                                                                                             
                                                                                         </select>
@@ -5288,7 +5289,7 @@
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                        <select class="form-control" id="Wquarter1_2" name="Wquarter1_2">
+                                                                                        <select class="form-control Wquarter3_4" id="Wquarter3_4" name="Wquarter3_4">
                                                                                             <option>Pick a Team...</option>
                                                                                             
                                                                                         </select>
@@ -5314,7 +5315,7 @@
                                                                             <td style="width: 80%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                         <select class="form-control" id="Wquarter3_4" name="Wquarter3_4">
+                                                                                         <select class="form-control Wquarter5_6" id="Wquarter5_6" name="Wquarter5_6">
                                                                                             <option>Pick a Team...</option>
                                                                                             
                                                                                         </select>
@@ -5339,7 +5340,7 @@
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                            <select class="form-control" id="Wquarter5_6" name="Wquarter5_6">
+                                                                                            <select class="form-control Wquarter7_8" id="Wquarter7_8" name="Wquarter7_8">
                                                                                                 <option>Pick a Team...</option>
                                                                                                 
                                                                                             </select>
@@ -5392,7 +5393,7 @@
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                         <select class="form-control" id="WSemi1_2" name="WSemi1_2">
+                                                                                         <select class="form-control WSemi1_2" id="WSemi1_2" name="WSemi1_2">
                                                                                                 <option>Pick a Team...</option>
                                                                                                 
                                                                                             </select>
@@ -5418,7 +5419,7 @@
                                                                             <td style="width: 80%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                         <select class="form-control" id="WSemi3_4" name="WSemi3_4">
+                                                                                         <select class="form-control WSemi3_4" id="WSemi3_4" name="WSemi3_4">
                                                                                                 <option>Pick a Team...</option>
                                                                                                 
                                                                                             </select>
@@ -5542,6 +5543,157 @@
 <script>
 
     $(document).ready(function(){
+
+        // QUARTER FINALS
+
+         $("select.WRound1A2B").change(function(){
+            // save variables on change
+            var selectedTeamAvalue = $(".WRound1A2B option:selected").val();
+            var selectedTeamAtext = $(".WRound1A2B option:selected").text();
+
+
+            $('select.Wquarter1_2').html('');
+            $('select.Wquarter1_2').append($('<option/>', { 
+                value: selectedTeamAvalue,
+                text : selectedTeamAtext 
+            }));
+
+        });
+
+         $("select.WRound1C2D").change(function(){
+            var selectedTeamBvalue = $(".WRound1C2D option:selected").val();
+            var selectedTeamBtext = $(".WRound1C2D option:selected").text();
+            $('select.Wquarter1_2').html('');
+            $('select.Wquarter1_2').append($('<option/>', { 
+                value: selectedTeamBvalue,
+                text : selectedTeamBtext 
+            }));
+        });
+
+
+
+        $("select.WRound1E2F").change(function(){
+            var selectedTeamCvalue = $(".WRound1E2F option:selected").val();
+            var selectedTeamCtext = $(".WRound1E2F option:selected").text();
+            
+            $('select.Wquarter3_4').append($('<option/>', { 
+                value: selectedTeamCvalue,
+                text : selectedTeamCtext 
+            }));
+
+        });
+
+        $("select.WRound1G2H").change(function(){
+            var selectedTeamDvalue = $(".WRound1G2H option:selected").val();
+            var selectedTeamDtext = $(".WRound1G2H option:selected").text();
+
+            $('select.Wquarter3_4').append($('<option/>', { 
+                value: selectedTeamDvalue,
+                text : selectedTeamDtext 
+            }));
+
+        });
+
+        $("select.WRound1B2A").change(function(){
+            var selectedTeamEvalue = $(".WRound1B2A option:selected").val();
+            var selectedTeamEtext = $(".WRound1B2A option:selected").text();
+
+            $('select.Wquarter5_6').append($('<option/>', { 
+                value: selectedTeamEvalue,
+                text : selectedTeamEtext 
+            }));
+            
+        });
+
+        $("select.WRound1D2C").change(function(){
+            var selectedTeamFvalue = $(".WRound1D2C option:selected").val();
+            var selectedTeamFtext = $(".WRound1D2C option:selected").text();
+            
+            $('select.Wquarter5_6').append($('<option/>', { 
+                value: selectedTeamFvalue,
+                text : selectedTeamFtext 
+            }));
+        });
+
+        $("select.WRound1F2E").change(function(){
+            var selectedTeamGvalue = $(".WRound1F2E option:selected").val();
+            var selectedTeamGtext = $(".WRound1F2E option:selected").text();
+            
+            $('select.Wquarter7_8').append($('<option/>', { 
+                value: selectedTeamGvalue,
+                text : selectedTeamGtext 
+            }));
+        });
+
+        $("select.WRound1H2G").change(function(){
+            var selectedTeamHvalue = $(".WRound1H2G option:selected").val();
+            var selectedTeamHtext = $(".WRound1H2G option:selected").text();
+            
+            $('select.Wquarter7_8').append($('<option/>', { 
+                value: selectedTeamHvalue,
+                text : selectedTeamHtext 
+            }));
+        });
+
+
+        // FINALS
+
+        $("select.Wquarter1_2").change(function(){
+            var selectedSemi1Value = $(".Wquarter1_2 option:selected").val();
+            var selectedSemi1Text = $(".Wquarter1_2 option:selected").text();
+            
+            $('select.WSemi1_2').append($('<option/>', { 
+                value: selectedSemi1Value,
+                text : selectedSemi1Text 
+            }));
+        });
+
+        $("select.Wquarter3_4").change(function(){
+            var selectedSemi2Value = $(".Wquarter3_4 option:selected").val();
+            var selectedSemi2Text = $(".Wquarter3_4 option:selected").text();
+            
+            $('select.WSemi1_2').append($('<option/>', { 
+                value: selectedSemi2Value,
+                text : selectedSemi2Text 
+            }));
+        });
+
+
+        $("select.Wquarter5_6").change(function(){
+            var selectedSemi3Value = $(".Wquarter5_6 option:selected").val();
+            var selectedSemi3Text = $(".Wquarter5_6 option:selected").text();
+            
+            $('select.WSemi3_4').append($('<option/>', { 
+                value: selectedSemi3Value,
+                text : selectedSemi3Text 
+            }));
+        });
+
+
+        $("select.Wquarter7_8").change(function(){
+            var selectedSemi4Value = $(".Wquarter7_8 option:selected").val();
+            var selectedSemi4Text = $(".Wquarter7_8 option:selected").text();
+            
+            $('select.WSemi3_4').append($('<option/>', { 
+                value: selectedSemi4Value,
+                text : selectedSemi4Text 
+            }));
+        });
+        
+        
+
+        
+        
+
+        
+        
+
+
+
+
+        
+
+
 
         var postURLA = "<?php echo url('/storea'); ?>";
         var postURLB = "<?php echo url('/storeb'); ?>";
@@ -6073,6 +6225,8 @@
 <script src="{{URL::asset('scripts/calculate_F.js')}}"></script>
 <script src="{{URL::asset('scripts/calculate_G.js')}}"></script>
 <script src="{{URL::asset('scripts/calculate_H.js')}}"></script>
+
+
 
 
 <script>
