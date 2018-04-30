@@ -507,13 +507,29 @@ class PicksController extends Controller
 
     public function destroy($iduser_poll)
     {
-        $id_user = Auth::user()->id;
+        $id_user = auth()->user()->id;
 
         $poll = PollsModel::find($iduser_poll);
+        $poll->clasificado()->delete();
+        $poll->groupa()->delete();
+        $poll->groupb()->delete();
+        $poll->groupc()->delete();
+        $poll->groupd()->delete();
+        $poll->groupe()->delete();
+        $poll->groupf()->delete();
+        $poll->groupg()->delete();
+        $poll->grouph()->delete();
+        // $poll->secondStage()->delete();
         $poll->delete();
 
         $polls = PollsModel::getBbyUser($id_user);
-        return view('home')->with('polls', $polls);
+
+        $notification = array(
+                'message' => 'Pool delete successfully!', 
+                'alert-type' => 'success'
+            );
+
+        return view('home')->with('polls', $polls)->with($notification);
     }
 
 

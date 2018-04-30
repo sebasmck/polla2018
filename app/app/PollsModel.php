@@ -57,4 +57,8 @@ class PollsModel extends Model
 		return $this->hasOne('App\Clasificado', 'id_poll', 'iduser_poll');
 	}
 
+	// public function secondStage(){
+	// 	return $this->hasOne('App\Clasificado', 'id_poll', 'iduser_poll');
+	// }
+
 }
