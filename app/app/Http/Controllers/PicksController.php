@@ -519,7 +519,7 @@ class PicksController extends Controller
         $poll->groupf()->delete();
         $poll->groupg()->delete();
         $poll->grouph()->delete();
-        // $poll->secondStage()->delete();
+        $poll->secondStage()->delete();
         $poll->delete();
 
         $polls = PollsModel::getBbyUser($id_user);
