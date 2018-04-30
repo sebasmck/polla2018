@@ -81,7 +81,7 @@
                                                     <div class="col-md-8 offset-md-4">
                                                         <div class="control">
                                                             {{-- <a href="{{route('picks.destroy', $poll->iduser_poll)}}" class="btn btn-primary">Delete Poll</a> --}}
-                                                            {!! Form::open(['method' => 'DELETE','route' => ['picks.destroy', $poll->iduser_poll],'style'=>'display:inline']) !!}
+                                                            {!! Form::open(['method' => 'DELETE','route' => ['picks.destroy', $poll->iduser_poll],'style'=>'display:inline', 'onsubmit' => 'return confirmDelete()']) !!}
                                                             {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
                                                             {!! Form::close() !!}
                                                         </div>
@@ -212,6 +212,7 @@
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"> </script>
 <script src="{{URL::asset('js/app.js')}}"></script>
@@ -224,6 +225,48 @@
     //     });
     // } );
 
+    function confirmDelete() {
+        var result = confirm('Are you sure you want to delete?');
+
+        if (result) {
+                return true;
+            } else {
+                return false;
+            }
+
+
+        // toastr.options = {
+        //   "closeButton": false,
+        //   "debug": false,
+        //   "newestOnTop": false,
+        //   "progressBar": false,
+        //   "positionClass": "toast-top-right",
+        //   "preventDuplicates": false,
+        //   "onclick": null,
+        //   "showDuration": "300",
+        //   "hideDuration": "1000",
+        //   "timeOut": 0,
+        //   "extendedTimeOut": 0,
+        //   "showEasing": "swing",
+        //   "hideEasing": "linear",
+        //   "showMethod": "fadeIn",
+        //   "hideMethod": "fadeOut",
+        //   "tapToDismiss": false
+        // };
+
+        // toastr.success("<br /><br /><button type='button' id='confirmationRevertYes' class='btn clear'>Yes</button>",'Are you sure you want to delete?');
+
+        // toastr.success("<br /><br /><button type='button' id='confirmationRevertYes' class='btn clear'>Yes</button>",'Are you sure you want to delete?',
+        // {
+        //   closeButton: false,
+        //   allowHtml: true,
+        //   onShown: function (toast) {
+        //       $("#confirmationRevertYes").click(function(){
+        //         console.log('clicked yes');
+        //       });
+        //     }
+        // });
+    }
 
 
 </script>

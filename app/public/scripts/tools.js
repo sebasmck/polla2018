@@ -1,7 +1,8 @@
 /* TOOLS */
 
 function sortTable(tableG) {
-    var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   table = document.getElementById(tableG);
   switching = true;
   //Set the sorting direction to ascending:
