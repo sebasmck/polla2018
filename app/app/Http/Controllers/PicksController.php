@@ -16,6 +16,9 @@ use App\PickGroupH;
 use App\clasificado;
 use App\Team;
 use App\rivals;
+
+use App\SecondStage;
+
 use DB;
 
 class PicksController extends Controller
@@ -30,6 +33,9 @@ class PicksController extends Controller
 
     public function show($iduser_poll){
 
+
+        // Groups input boxes
+
         $poll = PollsModel::find($iduser_poll);
         $ga = PollsModel::find($iduser_poll)->groupa;
         $gb = PollsModel::find($iduser_poll)->groupb;
@@ -40,11 +46,7 @@ class PicksController extends Controller
         $gg = PollsModel::find($iduser_poll)->groupg;
         $gh = PollsModel::find($iduser_poll)->grouph;
 
-
-        
-        
-
-        // raw query
+        // Sebastian's raw query winners
         $wa = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 1)->get()->first();
         $wb = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 2)->get()->first();
         $wc = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 3)->get()->first();
@@ -53,6 +55,8 @@ class PicksController extends Controller
         $wf = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 6)->get()->first();
         $wg=  Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 7)->get()->first();
         $wh = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 8)->get()->first();
+
+        // Ruben's query
 
         $winA = Clasificado::teamsClasificadosWin($iduser_poll,1);
         $winB = Clasificado::teamsClasificadosWin($iduser_poll,2);
@@ -63,17 +67,10 @@ class PicksController extends Controller
         $winG = Clasificado::teamsClasificadosWin($iduser_poll,7);
         $winH = Clasificado::teamsClasificadosWin($iduser_poll,8);
 
-        //$drop1 = rivals::teamsQuarter($iduser_poll,1, 2);
-        //dd($drop1);
-        // $drop1->prepend('None');
-        //dd($drop1);
+        
+        // second stage results
 
-       
-
-        // $round16_1 = Clasificado::teamsClasificadosWin($iduser_poll,9);
-        // $round16_2 = Clasificado::teamsClasificadosWin($iduser_poll,10);
-        // $round16_3 = Clasificado::teamsClasificadosWin($iduser_poll,11);
-        // $round16_4 = Clasificado::teamsClasificadosWin($iduser_poll,12);
+        $ss = SecondStage::where('id_poll', $iduser_poll)->get()->first();
 
 
         return view('picks.picks')
@@ -101,7 +98,8 @@ class PicksController extends Controller
         ->with('winE', $winE)
         ->with('winF', $winF)
         ->with('winG', $winG)
-        ->with('winH', $winH);
+        ->with('winH', $winH)
+        ->with('ss', $ss);
         // ->with('drop1', $drop1)
         
 
@@ -448,6 +446,49 @@ class PicksController extends Controller
         return response()->json($pick);
         
     }
+
+
+    public function storeSecondStage(Request $req){
+
+        $stage = new SecondStage;
+
+        SecondStage::updateOrCreate(
+
+             ['id_poll' => $req->id_poll,],
+
+             [  
+                'id_poll' => $req->id_poll,
+                'quarter_1' => $req->WRound1A2B,
+                'quarter_2' => $req->WRound1C2D,
+                'quarter_3' => $req->WRound1E2F,
+                'quarter_4' => $req->WRound1G2H,
+                'quarter_5' => $req->WRound1B2A,
+                'quarter_6' => $req->WRound1D2C,
+                'quarter_7' => $req->WRound1F2E,
+                'quarter_8' => $req->WRound1H2G,
+                'semi_1' => $req->Wquarter1_2,
+                'semi_2' => $req->Wquarter3_4,
+                'semi_3' => $req->Wquarter5_6,
+                'semi_4' => $req->Wquarter7_8,
+                'final_1' => $req->WSemi1_2,
+                'final_2' => $req->WSemi3_4,
+                'winner' => $req->Winner1,
+
+             ]);
+
+        return response()->json($stage);
+
+
+    }
+
+
+
+
+
+
+
+
+
 
     public function update($iduser_poll){
 
