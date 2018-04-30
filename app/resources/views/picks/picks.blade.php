@@ -4291,7 +4291,7 @@
                                 <br>
                                 <div class="row">
                                     {{-- Round of 16 --}}
-                                    <div class="col-md-3">
+                                    <div class="col-md-2.4">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -4844,7 +4844,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div style="height: 10px;"></div>
+                                                <div style="height: 28px;"></div>
                                                 
                                                 {{-- 2G --}}
                                                 <div class="row">
@@ -4872,7 +4872,6 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-
                                                                 </tr>
                                                                 @endif
                                                             </tbody>
@@ -4884,8 +4883,12 @@
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
 
+
+                        
+
+
                                     {{-- Quarter-finals --}}
-                                    <div class="col-md-3">
+                                    <div class="col-md-2.4">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -5232,13 +5235,13 @@
                                                     </div>
                                                 </div>
 
-                                                <div style="height: 38px;"></div>
+                                                <div style="height: 40px;"></div>
                                             </div>
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
 
                                     {{-- Semi-finals --}}
-                                    <div class="col-md-3">
+                                    <div class="col-md-2.4">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -5263,10 +5266,13 @@
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                         <select class="form-control Wquarter1_2" id="Wquarter1_2" name="Wquarter1_2">
+                                                                                         {{-- <select class="form-control Wquarter1_2" id="Wquarter1_2" name="Wquarter1_2">
                                                                                             <option>Pick a Team...</option>
                                                                                             
-                                                                                        </select>
+                                                                                        </select> --}}
+                                                                                        {!! Form::select('Wquarter1_2', [
+                                                                                            '' => 'Pick a Team',
+                                                                                            ], old('value', isset($ss->semi_1) ? $ss->semi_1 : null ), [ 'class' =>  'form-control Wquarter1_2', 'required', 'id' => 'Wquarter1_2']) !!}
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
@@ -5289,10 +5295,12 @@
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                        <select class="form-control Wquarter3_4" id="Wquarter3_4" name="Wquarter3_4">
+                                                                                        {{-- <select class="form-control Wquarter3_4" id="Wquarter3_4" name="Wquarter3_4">
                                                                                             <option>Pick a Team...</option>
-                                                                                            
-                                                                                        </select>
+                                                                                        </select> --}}
+                                                                                        {!! Form::select('Wquarter3_4', [
+                                                                                            '' => 'Pick a Team',
+                                                                                            ], old('value', isset($ss->semi_2) ? $ss->semi_2 : null ), [ 'class' =>  'form-control Wquarter3_4', 'required', 'id' => 'Wquarter3_4']) !!}
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
@@ -5315,10 +5323,13 @@
                                                                             <td style="width: 80%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                         <select class="form-control Wquarter5_6" id="Wquarter5_6" name="Wquarter5_6">
+                                                                                         {{-- <select class="form-control Wquarter5_6" id="Wquarter5_6" name="Wquarter5_6">
                                                                                             <option>Pick a Team...</option>
-                                                                                            
-                                                                                        </select>
+                                                                                        </select> --}}
+                                                                                        {!! Form::select('Wquarter5_6', [
+                                                                                            '' => 'Pick a Team',
+                                                                                            ], old('value', isset($ss->semi_3) ? $ss->semi_3 : null ), [ 'class' =>  'form-control Wquarter5_6', 'required', 'id' => 'Wquarter5_6']) !!}
+
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
@@ -5340,10 +5351,12 @@
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                            <select class="form-control Wquarter7_8" id="Wquarter7_8" name="Wquarter7_8">
+                                                                                            <{{-- select class="form-control Wquarter7_8" id="Wquarter7_8" name="Wquarter7_8">
                                                                                                 <option>Pick a Team...</option>
-                                                                                                
-                                                                                            </select>
+                                                                                            </select> --}}
+                                                                                            {!! Form::select('Wquarter7_8', [
+                                                                                            '' => 'Pick a Team',
+                                                                                            ], old('value', isset($ss->semi_4) ? $ss->semi_4 : null ), [ 'class' =>  'form-control Wquarter7_8', 'required', 'id' => 'Wquarter7_8']) !!}
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5354,7 +5367,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <div style="height: 317px;"></div>
+                                                        <div style="height: 327px;"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -5362,7 +5375,7 @@
                                     </div> {{--  end col div --}}
 
                                     {{-- Semi-finals --}}
-                                     <div class="col-md-3">
+                                     <div class="col-md-2.4">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -5393,10 +5406,12 @@
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                         <select class="form-control WSemi1_2" id="WSemi1_2" name="WSemi1_2">
+                                                                                         {{-- <select class="form-control WSemi1_2" id="WSemi1_2" name="WSemi1_2">
                                                                                                 <option>Pick a Team...</option>
-                                                                                                
-                                                                                            </select>
+                                                                                            </select> --}}
+                                                                                            {!! Form::select('WSemi1_2', [
+                                                                                            '' => 'Pick a Team',
+                                                                                            ], old('value', isset($ss->final_1) ? $ss->final_1 : null ), [ 'class' =>  'form-control WSemi1_2', 'required', 'id' => 'WSemi1_2']) !!}
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
@@ -5419,10 +5434,13 @@
                                                                             <td style="width: 80%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                         <select class="form-control WSemi3_4" id="WSemi3_4" name="WSemi3_4">
+                                                                                         {{-- <select class="form-control WSemi3_4" id="WSemi3_4" name="WSemi3_4">
                                                                                                 <option>Pick a Team...</option>
-                                                                                                
-                                                                                            </select>
+                                                                                            </select> --}}
+                                                                                        {!! Form::select('WSemi3_4', [
+                                                                                            '' => 'Pick a Team',
+                                                                                            ], old('value', isset($ss->final_2) ? $ss->final_2 : null ), [ 'class' =>  'form-control WSemi3_4', 'required', 'id' => 'WSemi3_4']) !!}
+
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
@@ -5435,29 +5453,85 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div style="height: 505px;"></div>
+                                            <div style="height: 420px;"></div>
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
 
+                                    <div class="col-md-2.4">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <h6>Winner</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
 
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div style="height: 230px;"></div>
+                                                        
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                
+                                                                <table class="display table_second_stage">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <br>
+                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 70%; height: 30px;">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                         {{-- <select class="form-control Winner1" id="Winner1" name="Winner1">
+                                                                                            <option>Pick a Team...</option>
+                                                                                        </select> --}}
+                                                                                        {!! Form::select('Winner1', [
+                                                                                            '' => 'Pick a Team',
+                                                                                            ], old('value', isset($ss->winner) ? $ss->winner : null ), [ 'class' =>  'form-control Winner1', 'required', 'id' => 'Winner1']) !!}
+
+                                                                                            {{$ss->winner}}
+
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                     </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+
+                                                        <div style="height: 10px;"></div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div style="height: 440px;"></div>
+                                        </div>  
+                                    </div>
 
                                 </div>
                                 <br>
                                 <div class="row">
                                     <div class="col-md-6">
-                                         <button type="button" name="submitgrouphhome" id="submitgrouphhome" class="btn btn-primary" style="width: 100%;">
+                                         <button type="button" name="" id="" class="btn btn-primary" style="width: 100%;">
                                             {{ __('Save and go to Home Page') }}
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="button" name="submitgrouph" id="submitgrouph" class="btn btn-info btn-block" value="Save" />
+                                        <input type="button" name="submitgrouph" id="submitSecondStage" class="btn btn-info btn-block" value="Save" />
                                          {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
                                             {{ __('Save and go to Next Group') }} --}}
                                         </button>
                                     </div>
                                 </div>
                             </div>
+
+
+
                         </div>
+
+
                         
                     </div>
                 </div>
@@ -5551,23 +5625,41 @@
             var selectedTeamAvalue = $(".WRound1A2B option:selected").val();
             var selectedTeamAtext = $(".WRound1A2B option:selected").text();
 
+            if (($('#Wquarter1_2 option').length) <= 2) {
 
-            $('select.Wquarter1_2').html('');
-            $('select.Wquarter1_2').append($('<option/>', { 
+                $('select.Wquarter1_2').append($('<option/>', { 
                 value: selectedTeamAvalue,
                 text : selectedTeamAtext 
-            }));
+            }));    
+            } else { 
+                $('#Wquarter1_2 option:gt(0)').remove();
+                $('select.Wquarter1_2').append($('<option/>', { 
+                value: selectedTeamAvalue,
+                text : selectedTeamAtext 
+            })); 
+            }
+            
 
         });
 
          $("select.WRound1C2D").change(function(){
             var selectedTeamBvalue = $(".WRound1C2D option:selected").val();
             var selectedTeamBtext = $(".WRound1C2D option:selected").text();
-            $('select.Wquarter1_2').html('');
-            $('select.Wquarter1_2').append($('<option/>', { 
+
+            
+
+            if (($('#Wquarter1_2 option').length) <= 2) {
+                $('select.Wquarter1_2').append($('<option/>', { 
                 value: selectedTeamBvalue,
                 text : selectedTeamBtext 
-            }));
+            }));   
+            } else { 
+                $('#Wquarter1_2 option:gt(0)').remove();
+                $('select.Wquarter1_2').append($('<option/>', { 
+                value: selectedTeamBvalue,
+                text : selectedTeamBtext 
+            })); 
+            }
         });
 
 
@@ -5683,15 +5775,38 @@
         
 
         
-        
+        // FINAL
 
         
+
+        $("select.WSemi1_2").change(function(){
+            var selectedSemi4Value = $(".WSemi1_2 option:selected").val();
+            var selectedSemi4Text = $(".WSemi1_2 option:selected").text();
+            
+            $('select.Winner1').append($('<option/>', { 
+                value: selectedSemi4Value,
+                text : selectedSemi4Text 
+            }));
+        });
+
+        $("select.WSemi3_4").change(function(){
+            var selectedSemi4Value = $(".WSemi3_4 option:selected").val();
+            var selectedSemi4Text = $(".WSemi3_4 option:selected").text();
+            
+            $('select.Winner1').append($('<option/>', { 
+                value: selectedSemi4Value,
+                text : selectedSemi4Text 
+            }));
+        });
+
+
+
         
 
 
 
 
-        
+
 
 
 
