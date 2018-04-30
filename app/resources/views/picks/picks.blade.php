@@ -5464,15 +5464,13 @@
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                         <select class="form-control WSemi1_2" id="WSemi1_2" name="WSemi1_2">
+                                                                                         <select class="form-control Winner1" id="Winner1" name="Winner1">
                                                                                                 <option>Pick a Team...</option>
-                                                                                                
-                                                                                            <option value="15">Iceland</option><option value="22">South Korea</option><option value="25">Belgium</option></select>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
-                                                                                                                                            </tbody>
+                                                                     </tbody>
                                                                 </table>
                                                             </div>
                                                         </div>
@@ -5750,15 +5748,38 @@
         
 
         
-        
+        // FINAL
 
         
+
+        $("select.WSemi1_2").change(function(){
+            var selectedSemi4Value = $(".WSemi1_2 option:selected").val();
+            var selectedSemi4Text = $(".WSemi1_2 option:selected").text();
+            
+            $('select.Winner1').append($('<option/>', { 
+                value: selectedSemi4Value,
+                text : selectedSemi4Text 
+            }));
+        });
+
+        $("select.WSemi3_4").change(function(){
+            var selectedSemi4Value = $(".WSemi3_4 option:selected").val();
+            var selectedSemi4Text = $(".WSemi3_4 option:selected").text();
+            
+            $('select.Winner1').append($('<option/>', { 
+                value: selectedSemi4Value,
+                text : selectedSemi4Text 
+            }));
+        });
+
+
+
         
 
 
 
 
-        
+
 
 
 
