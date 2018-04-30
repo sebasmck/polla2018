@@ -4844,7 +4844,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div style="height: 10px;"></div>
+                                                <div style="height: 28px;"></div>
                                                 
                                                 {{-- 2G --}}
                                                 <div class="row">
@@ -4872,7 +4872,6 @@
                                                                             </div>
                                                                         </div>
                                                                     </td>
-
                                                                 </tr>
                                                                 @endif
                                                             </tbody>
@@ -5232,7 +5231,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div style="height: 38px;"></div>
+                                                <div style="height: 40px;"></div>
                                             </div>
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
@@ -5354,7 +5353,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <div style="height: 317px;"></div>
+                                                        <div style="height: 327px;"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -5435,11 +5434,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div style="height: 505px;"></div>
+                                            <div style="height: 420px;"></div>
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
 
-                                    <div class="col-md-2.2">
+                                    <div class="col-md-2.4">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -5483,7 +5482,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div style="height: 505px;"></div>
+                                            <div style="height: 440px;"></div>
                                         </div>  
                                     </div>
 
