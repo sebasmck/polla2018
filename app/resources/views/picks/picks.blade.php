@@ -4885,7 +4885,7 @@
                                     </div> {{--  end col div --}}
 
                                     {{-- Quarter-finals --}}
-                                    <div class="col-md-3">
+                                    <div class="col-md-2">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -5238,7 +5238,7 @@
                                     </div> {{--  end col div --}}
 
                                     {{-- Semi-finals --}}
-                                    <div class="col-md-3">
+                                    <div class="col-md-2">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -5362,7 +5362,7 @@
                                     </div> {{--  end col div --}}
 
                                     {{-- Semi-finals --}}
-                                     <div class="col-md-3">
+                                     <div class="col-md-2">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -5438,6 +5438,56 @@
                                             <div style="height: 505px;"></div>
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
+
+                                    <div class="col-md-2">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <h6>Finals </h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div style="height: 230px;"></div>
+                                                        
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                
+                                                                <table class="display table_second_stage">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <br>
+                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 70%; height: 30px;">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                         <select class="form-control WSemi1_2" id="WSemi1_2" name="WSemi1_2">
+                                                                                                <option>Pick a Team...</option>
+                                                                                                
+                                                                                            <option value="15">Iceland</option><option value="22">South Korea</option><option value="25">Belgium</option></select>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                                                                                            </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+
+                                                        <div style="height: 10px;"></div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div style="height: 505px;"></div>
+                                        </div>  
+                                    </div>
+
+
 
 
 
@@ -5551,23 +5601,41 @@
             var selectedTeamAvalue = $(".WRound1A2B option:selected").val();
             var selectedTeamAtext = $(".WRound1A2B option:selected").text();
 
+            if (($('#Wquarter1_2 option').length) <= 2) {
 
-            $('select.Wquarter1_2').html('');
-            $('select.Wquarter1_2').append($('<option/>', { 
+                $('select.Wquarter1_2').append($('<option/>', { 
                 value: selectedTeamAvalue,
                 text : selectedTeamAtext 
-            }));
+            }));    
+            } else { 
+                $('#Wquarter1_2 option:gt(0)').remove();
+                $('select.Wquarter1_2').append($('<option/>', { 
+                value: selectedTeamAvalue,
+                text : selectedTeamAtext 
+            })); 
+            }
+            
 
         });
 
          $("select.WRound1C2D").change(function(){
             var selectedTeamBvalue = $(".WRound1C2D option:selected").val();
             var selectedTeamBtext = $(".WRound1C2D option:selected").text();
-            $('select.Wquarter1_2').html('');
-            $('select.Wquarter1_2').append($('<option/>', { 
+
+            
+
+            if (($('#Wquarter1_2 option').length) <= 2) {
+                $('select.Wquarter1_2').append($('<option/>', { 
                 value: selectedTeamBvalue,
                 text : selectedTeamBtext 
-            }));
+            }));   
+            } else { 
+                $('#Wquarter1_2 option:gt(0)').remove();
+                $('select.Wquarter1_2').append($('<option/>', { 
+                value: selectedTeamBvalue,
+                text : selectedTeamBtext 
+            })); 
+            }
         });
 
 
