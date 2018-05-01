@@ -30,4 +30,11 @@ class SecondStage extends Model
 		'final_2',
 		'winner',
 	];
+
+
+	public function team1(){
+		return $this->hasOne('App\Team', 'id', 'quarter_1');
+	}
+
+
 }
