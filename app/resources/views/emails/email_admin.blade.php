@@ -92,7 +92,6 @@
           <div class="content" style="box-sizing: border-box; display: block; Margin: 0 auto; max-width: 580px; padding: 10px;">
 
             <!-- START CENTERED WHITE CONTAINER -->
-            <span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">This is preheader text. Some clients will show this text as a preview.</span>
             <table class="main" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #ffffff; border-radius: 3px;">
 
               <!-- START MAIN CONTENT AREA -->
@@ -102,21 +101,20 @@
                     <tr>
                       <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
                         <h1></h1>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Hi {!!$name!!} {!!$lastname!!},</p>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Thank you for registering in pollaworldcup.com! On behalf of the team at pollaworldcup.com, we are excited to have you in our Russia 2018 World Cup Pool. Please allow up to 24 hours for your registration to be accepted. Once accepted, you can log into the website and choose your scores and qualified teams for the World Cup 2018.</p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Hi Admin,</p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">New user has registered <a href="http://www.pollaworldcup.com">pollaworldcup.com</a>!</p>
 
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Your username is: <strong>{!!$email!!},</strong></p>
-                       
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">nce you enter your picks, you will find a link to print them. In addition, on June 11th, after the registration deadline, you will be able to view and print every participant’s picks. You can register as many World Cup Pools as you like with the same email, but just make sure to create a different nickname for every Pool.</p>
-
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0;">Name: <strong>{!!$name!!},</strong></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0;">Last Name: <strong>{!!$lastname!!},</strong></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0;">Nickname: <strong>{!!$nickname!!},</strong></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0;">E-Mail: <strong>{!!$email!!},</strong></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0;">City: <strong>{!!$city!!},</strong></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Cell Phone: <strong>{!!$cellphone!!},</strong></p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Referral: <strong>{!!$referredby!!},</strong></p>
                       
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Good luck!
-                            <br><strong>PollaWorldCup.com</strong>
-                            <br>Teamcontact@PollaWorldCup.com  
-                            <br>miami@PollaWorldCup.com 
-                            <br>newyork@PollaWorldCup.com 
-                            <br>bogota@PollaWorldCup.com
-                            <br>barranquilla@PollaWorldCup.com</p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">
+                            <br><strong>PollaWorldCup.com</strong> Team
+                        </p>
                       </td>
                     </tr>
                   </table>

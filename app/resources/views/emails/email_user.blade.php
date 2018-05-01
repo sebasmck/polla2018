@@ -102,7 +102,7 @@
                       <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
                         <h1 style="font-size: 60px; text-align: center; color: #004782; font-weight: 700; font-family:Raleway, sans-serif;">Polla World Cup</h1>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Hi {!!$name!!} {!!$lastname!!},</p>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Thank you for registering in pollaworldcup.com! On behalf of the team at pollaworldcup.com, we are excited to have you in our Russia 2018 World Cup Pool. Please allow up to 24 hours for your registration to be accepted. Once accepted, you can log into the website and choose your scores and qualified teams for the World Cup 2018.</p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Thank you for registering in <a href="http://www.pollaworldcup.com">pollaworldcup.com</a>! On behalf of the team at <a href="http://www.pollaworldcup.com">pollaworldcup.com</a>, we are excited to have you in our Russia 2018 World Cup Pool. Please allow up to 24 hours for your registration to be accepted. Once accepted, you can log into the website and choose your scores and qualified teams for the World Cup 2018.</p>
 
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Your username is: <strong>{!!$email!!}</strong></p>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Your password is: <strong>{!!$password!!}</strong></p>
@@ -111,7 +111,7 @@
 
                         
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Good luck!
-                            <br><strong>PollaWorldCup.com Team</strong>
+                            <br><strong><a href="http://www.pollaworldcup.com">pollaworldcup.com</a> Team</strong>
                             <br>contact@PollaWorldCup.com  
                             <br>miami@PollaWorldCup.com 
                             <br>newyork@PollaWorldCup.com 
