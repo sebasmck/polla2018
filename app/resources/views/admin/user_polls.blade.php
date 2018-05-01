@@ -85,7 +85,6 @@
             <input type="hidden" id="iduser_poll" name="iduser_poll">
             <div class="select">
               <select id="status" name="status">
-                <option value="Unauthorized">Unauthorized</option>
                 <option value="Pending">Pending</option>
                 <option value="Active">Active</option>
               </select>

@@ -68,7 +68,7 @@
                                                     {{-- @if($poll->status == 'Pending') --}}
                                                         <div class="col-md-8 offset-md-4">
                                                             <div class="control">
-                                                                <button class="btn btn-primary" onclick="window.location='{{ route('picks.show', $poll->iduser_poll) }}'">Edit my picks</button>
+                                                                <button class="btn btn-primary" onclick="window.location='{{ route('picks.show', $poll->iduser_poll) }}'">Edit my Picks</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -135,6 +135,8 @@
                                  <div class="form-group">
                                     <button type="" class="btn btn-primary" style="width: 100%;">
                                         {{ __('Ranking and Poolwide picks') }}
+                                        <br>
+                                        {{(__('(starts June 12th)'))}}
                                     </button>
                                 </div>
                             </div>
