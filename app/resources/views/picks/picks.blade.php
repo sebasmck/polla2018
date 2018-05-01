@@ -4917,24 +4917,33 @@
                                                                 @else
                                                                 <tr>
                                                                     <td style="width: 30%; height: 30px;">
-                                                                         <img class="img_flags_WRound1A2B" src="">
+                                                                       <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter1->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
                                                                     </td>
                                                                        
                                                                     <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                {{-- {!! Form::select('WRound1A', [
-                                                                                    $drop1
-                                                                                     ], null, [ 'class' =>  'form-control', 'required', 'id' => 'WRound1']) !!} --}}
-                                                                                <select class="form-control WRound1A2B" id="WRound1A2B" name="WRound1A2B">
-                                                                                    <option>Pick a Team...</option>
-                                                                                    @if($winA != null && $winB != null)
-                                                                                    <option value="{{$winA->id_winner_team}}">{{$winA->team_name}}</option>
-                                                                                    <option value="{{$winB->id_runnerup}}">{{$winB->team_rumup}}</option>
-                                                                                    @endif
-                                                                                </select>
+                                                                                @if (isset($ss->quarter_1))
+                                                                                    {!! Form::select('WRound1A2B', [
+                                                                                      '' => 'Pick a Team',
+                                                                                      "$winA->id_winner_team" => "$winA->team_name",
+                                                                                      "$winB->id_runnerup" => "$winB->team_rumup",
+                                                                                      ], old('value', isset($ss->quarter_1) ? $ss->quarter_1 : null ), [ 'class' =>  'form-control WRound1A2B', 'required', 'id' => 'WRound1A2B']) !!}
+                                                                                @else
 
+                                                                                    <select class="form-control WRound1A2B" id="WRound1A2B" name="WRound1A2B">
+                                                                                        <option>Pick a Team...</option>
+                                                                                        @if($winA != null && $winB != null)
+                                                                                        <option value="{{$winA->id_winner_team}}">{{$winA->team_name}}</option>
 
+                                                                                        <option value="{{$winB->id_runnerup}}">{{$winB->team_rumup}}</option>
+                                                                                        @endif
+                                                                                    </select>
+                                                                                @endif
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4960,23 +4969,34 @@
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter2->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
                                                                     <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                {{-- {!! Form::select('WRoundA2', [
-                                                                                    '' => '',
-                                                                                     $winC->id_winner_team => $winC->team_name ,
-                                                                                     $winD->id_runnerup => $winD->team_rumup,
-                                                                                     ], [ 'class' =>  'form-control', 'required']) !!} --}}
+                                                                                @if (isset($ss->quarter_2))
+                                                                                    {!! Form::select('WRound1C2D', [
+                                                                                      '' => 'Pick a Team',
+                                                                                      "$winC->id_winner_team" => "$winC->team_name",
+                                                                                      "$winD->id_runnerup" => "$winD->team_rumup",
+                                                                                      ], old('value', isset($ss->quarter_2) ? $ss->quarter_2 : null ), [ 'class' =>  'form-control WRound1C2D', 'required', 'id' => 'WRound1C2D']) !!}
+                                                                                @else
+                                                                                
+                                                                                    <select class="form-control WRound1C2D" id="WRound1C2D" name="WRound1C2D">
+                                                                                        <option>Pick a Team...</option>
+                                                                                        @if($winC != null && $winD != null)
+                                                                                        <option value="{{$winC->id_winner_team}}">{{$winC->team_name}}</option>
+                                                                                        <option value="{{$winD->id_runnerup}}">{{$winD->team_rumup}}</option>
+                                                                                        @endif
+                                                                                    </select>
+                                                                                @endif
 
-                                                                                <select class="form-control WRound1C2D" id="WRound1C2D" name="WRound1C2D">
-                                                                                    <option>Pick a Team...</option>
-                                                                                    @if($winC != null && $winD != null)
-                                                                                    <option value="{{$winC->id_winner_team}}">{{$winC->team_name}}</option>
-                                                                                    <option value="{{$winD->id_runnerup}}">{{$winD->team_rumup}}</option>
-                                                                                    @endif
-                                                                                </select>
+                                                                                
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5002,15 +5022,25 @@
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter3->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
                                                                     <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    {{-- {!! Form::select('WRoundA2', [
-                                                                                        '' => '',
-                                                                                         $winE->id_winner_team => $winE->team_name ,
-                                                                                         $winF->id_runnerup => $winF->team_rumup,
-                                                                                         ], [ 'class' =>  'form-control', 'required']) !!} --}}
+                                                                                    
+                                                                                @if (isset($ss->quarter_3))
+                                                                                    {!! Form::select('WRound1E2F', [
+                                                                                      '' => 'Pick a Team',
+                                                                                      "$winE->id_winner_team" => "$winE->team_name",
+                                                                                      "$winF->id_runnerup" => "$winF->team_rumup",
+                                                                                      ], old('value', isset($ss->quarter_3) ? $ss->quarter_3 : null ), [ 'class' =>  'form-control WRound1E2F', 'required', 'id' => 'WRound1E2F']) !!}
+                                                                                @else
+                                                                                
                                                                                     <select class="form-control WRound1E2F" id="WRound1E2F" name="WRound1E2F">
                                                                                         <option>Pick a Team...</option>
                                                                                         @if($winE != null && $winF != null)
@@ -5018,6 +5048,9 @@
                                                                                         <option value="{{$winF->id_runnerup}}">{{$winF->team_rumup}}</option>
                                                                                         @endif
                                                                                     </select>
+                                                                                @endif
+
+                                                                                    
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5043,16 +5076,25 @@
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter4->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
                                                                     <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
                                                                                  
-                                                                                    {{-- {!! Form::select('WRoundA2', [
-                                                                                        '' => '',
-                                                                                         $winG->id_winner_team => $winG->team_name ,
-                                                                                         $winH->id_runnerup => $winH->team_rumup,
-                                                                                         ], [ 'class' =>  'form-control', 'required']) !!} --}}
+                                                                                @if (isset($ss->quarter_4))
+                                                                                    {!! Form::select('WRound1G2H', [
+                                                                                      '' => 'Pick a Team',
+                                                                                      "$winG->id_winner_team" => "$winG->team_name",
+                                                                                      "$winH->id_runnerup" => "$winH->team_rumup",
+                                                                                      ], old('value', isset($ss->quarter_4) ? $ss->quarter_4 : null ), [ 'class' =>  'form-control WRound1G2H', 'required', 'id' => 'WRound1G2H']) !!}
+                                                                                @else
+                                                                                
                                                                                     <select class="form-control WRound1G2H" id="WRound1G2H" name="WRound1G2H">
                                                                                         <option>Pick a Team...</option>
                                                                                         @if($winG != null && $winH != null)
@@ -5060,6 +5102,8 @@
                                                                                         <option value="{{$winH->id_runnerup}}">{{$winH->team_rumup}}</option>
                                                                                         @endif
                                                                                     </select>
+                                                                                @endif
+                                                                                    
                                                                                 
                                                                             </div>
                                                                         </div>
@@ -5086,16 +5130,25 @@
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter5->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
                                                                     <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
                                                                                  
-                                                                                    {{-- {!! Form::select('WRoundA2', [
-                                                                                        '' => '',
-                                                                                         $winB->id_winner_team => $winB->team_name ,
-                                                                                         $winA->id_runnerup => $winA->team_rumup,
-                                                                                         ], [ 'class' =>  'form-control', 'required']) !!} --}}
+                                                                                @if (isset($ss->quarter_5))
+                                                                                    {!! Form::select('WRound1B2A', [
+                                                                                      '' => 'Pick a Team',
+                                                                                      "$winB->id_winner_team" => "$winB->team_name",
+                                                                                      "$winA->id_runnerup" => "$winA->team_rumup",
+                                                                                      ], old('value', isset($ss->quarter_5) ? $ss->quarter_5 : null ), [ 'class' =>  'form-control WRound1B2A', 'required', 'id' => 'WRound1B2A']) !!}
+                                                                                @else
+                                                                                
                                                                                 <select class="form-control WRound1B2A" id="WRound1B2A" name="WRound1B2A">
                                                                                     <option>Pick a Team...</option>
                                                                                     @if($winB != null && $winA != null)
@@ -5103,6 +5156,9 @@
                                                                                     <option value="{{$winA->id_runnerup}}">{{$winA->team_rumup}}</option>
                                                                                     @endif
                                                                                 </select>
+                                                                                @endif
+
+                                                                                
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5128,22 +5184,34 @@
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter6->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
                                                                     <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                    {{-- {!! Form::select('WRoundA2', [
-                                                                                        '' => '',
-                                                                                         $winD->id_winner_team => $winD->team_name ,
-                                                                                         $winC->id_runnerup => $winC->team_rumup,
-                                                                                         ], [ 'class' =>  'form-control', 'required']) !!} --}}
-                                                                                <select class="form-control WRound1D2C" id="WRound1D2C" name="WRound1D2C">
+                                                                                @if (isset($ss->quarter_6))
+                                                                                    {!! Form::select('WRound1D2C', [
+                                                                                      '' => 'Pick a Team',
+                                                                                      "$winD->id_winner_team" => "$winD->team_name",
+                                                                                      "$winC->id_runnerup" => "$winC->team_rumup",
+                                                                                      ], old('value', isset($ss->quarter_6) ? $ss->quarter_6 : null ), [ 'class' =>  'form-control WRound1D2C', 'required', 'id' => 'WRound1D2C']) !!}
+                                                                                @else
+                                                                                
+                                                                                 <select class="form-control WRound1D2C" id="WRound1D2C" name="WRound1D2C">
                                                                                     <option>Pick a Team...</option>
                                                                                     @if($winD != null && $winC != null)
                                                                                     <option value="{{$winD->id_winner_team}}">{{$winD->team_name}}</option>
                                                                                     <option value="{{$winC->id_runnerup}}">{{$winC->team_rumup}}</option>
                                                                                     @endif
                                                                                 </select>
+                                                                                @endif
+
+                                                                               
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5169,15 +5237,25 @@
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter7->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
                                                                     <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                   {{--  {!! Form::select('WRoundA2', [
-                                                                                        '' => '',
-                                                                                         $winF->id_winner_team => $winF->team_name ,
-                                                                                         $winE->id_runnerup => $winE->team_rumup,
-                                                                                         ], [ 'class' =>  'form-control', 'required']) !!} --}}
+
+                                                                                @if (isset($ss->quarter_7))
+                                                                                    {!! Form::select('WRound1F2E', [
+                                                                                      '' => 'Pick a Team',
+                                                                                      "$winF->id_winner_team" => "$winF->team_name",
+                                                                                      "$winE->id_runnerup" => "$winE->team_rumup",
+                                                                                      ], old('value', isset($ss->quarter_7) ? $ss->quarter_7 : null ), [ 'class' =>  'form-control WRound1F2E', 'required', 'id' => 'WRound1F2E']) !!}
+                                                                                @else
+                                                                                
                                                                                 <select class="form-control WRound1F2E" id="WRound1F2E" name="WRound1F2E">
                                                                                     <option>Pick a Team...</option>
                                                                                     @if($winF != null && $winE != null)
@@ -5185,6 +5263,8 @@
                                                                                     <option value="{{$winE->id_runnerup}}">{{$winE->team_rumup}}</option>
                                                                                     @endif
                                                                                 </select>
+                                                                                @endif
+                                                                               
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5210,16 +5290,25 @@
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter8->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
                                                                     <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
                                                                                  
-                                                                                    {{-- {!! Form::select('WRoundA2', [
-                                                                                        '' => '',
-                                                                                         $winH->id_winner_team => $winH->team_name ,
-                                                                                         $winG->id_runnerup => $winG->team_rumup,
-                                                                                         ], [ 'class' =>  'form-control', 'required']) !!} --}}
+                                                                                @if (isset($ss->quarter_8))
+                                                                                    {!! Form::select('WRound1H2G', [
+                                                                                      '' => 'Pick a Team',
+                                                                                      "$winH->id_winner_team" => "$winH->team_name",
+                                                                                      "$winG->id_runnerup" => "$winG->team_rumup",
+                                                                                      ], old('value', isset($ss->quarter_8) ? $ss->quarter_8 : null ), [ 'class' =>  'form-control WRound1H2G', 'required', 'id' => 'WRound1H2G']) !!}
+                                                                                @else
+                                                                                
                                                                                 <select class="form-control WRound1H2G" id="WRound1H2G" name="WRound1H2G">
                                                                                     <option>Pick a Team...</option>
                                                                                     @if($winH != null && $winG != null)
@@ -5227,6 +5316,9 @@
                                                                                     <option value="{{$winG->id_runnerup}}">{{$winG->team_rumup}}</option>
                                                                                     @endif
                                                                                 </select>
+                                                                                @endif
+
+                                                                                
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5265,16 +5357,19 @@
                                                                 <table class="display table_second_stage">
                                                                     <tbody>
                                                                         <tr>
-                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 30%; height: 30px;">
+                                                                            <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->semi1->team_name)).'.png'}}">
+                                                                                </div>
+                                                                            </div>
+                                                                            </td>
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
-                                                                                    <div class="col-md-12">
-                                                                                         {{-- <select class="form-control Wquarter1_2" id="Wquarter1_2" name="Wquarter1_2">
-                                                                                            <option>Pick a Team...</option>
-                                                                                            
-                                                                                        </select> --}}
+                                                                                    <div class="col-md-12"> 
                                                                                         {!! Form::select('Wquarter1_2', [
                                                                                             '' => 'Pick a Team',
+                                                                                            "$ss->semi_1" => $ss->semi1->team_name,
                                                                                             ], old('value', isset($ss->semi_1) ? $ss->semi_1 : null ), [ 'class' =>  'form-control Wquarter1_2', 'required', 'id' => 'Wquarter1_2']) !!}
                                                                                     </div>
                                                                                 </div>
@@ -5294,15 +5389,19 @@
                                                                     <tbody>
                                                                          
                                                                         <tr>
-                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 30%; height: 30px;">
+                                                                                <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->semi2->team_name)).'.png'}}">
+                                                                                </div>
+                                                                            </div>
+                                                                            </td>
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                        {{-- <select class="form-control Wquarter3_4" id="Wquarter3_4" name="Wquarter3_4">
-                                                                                            <option>Pick a Team...</option>
-                                                                                        </select> --}}
                                                                                         {!! Form::select('Wquarter3_4', [
                                                                                             '' => 'Pick a Team',
+                                                                                            "$ss->semi_2" => $ss->semi2->team_name,
                                                                                             ], old('value', isset($ss->semi_2) ? $ss->semi_2 : null ), [ 'class' =>  'form-control Wquarter3_4', 'required', 'id' => 'Wquarter3_4']) !!}
                                                                                     </div>
                                                                                 </div>
@@ -5322,15 +5421,19 @@
                                                                     <tbody>
                                                                         
                                                                         <tr>
-                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 30%; height: 30px;">
+                                                                                <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->semi3->team_name)).'.png'}}">
+                                                                                </div>
+                                                                            </div>
+                                                                            </td>
                                                                             <td style="width: 80%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                         {{-- <select class="form-control Wquarter5_6" id="Wquarter5_6" name="Wquarter5_6">
-                                                                                            <option>Pick a Team...</option>
-                                                                                        </select> --}}
                                                                                         {!! Form::select('Wquarter5_6', [
                                                                                             '' => 'Pick a Team',
+                                                                                            "$ss->semi_3" => $ss->semi3->team_name,
                                                                                             ], old('value', isset($ss->semi_3) ? $ss->semi_3 : null ), [ 'class' =>  'form-control Wquarter5_6', 'required', 'id' => 'Wquarter5_6']) !!}
 
                                                                                     </div>
@@ -5350,15 +5453,19 @@
                                                                 <table class="display table_second_stage">
                                                                     <tbody>
                                                                         <tr>
-                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 30%; height: 30px;">
+                                                                                <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->semi4->team_name)).'.png'}}">
+                                                                                </div>
+                                                                            </div>
+                                                                            </td>
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                            {{-- select class="form-control Wquarter7_8" id="Wquarter7_8" name="Wquarter7_8">
-                                                                                                <option>Pick a Team...</option>
-                                                                                            </select> --}}
                                                                                             {!! Form::select('Wquarter7_8', [
                                                                                             '' => 'Pick a Team',
+                                                                                            "$ss->semi_4" => $ss->semi4->team_name,
                                                                                             ], old('value', isset($ss->semi_4) ? $ss->semi_4 : null ), [ 'class' =>  'form-control Wquarter7_8', 'required', 'id' => 'Wquarter7_8']) !!}
                                                                                         </div>
                                                                                     </div>
@@ -5405,16 +5512,22 @@
                                                                         </tr>
                                                                         @else
                                                                         <tr>
-                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 30%; height: 30px;">
+                                                                                <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->final1->team_name)).'.png'}}">
+                                                                                </div>
+                                                                            </div>
+                                                                            </td>
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                         {{-- <select class="form-control WSemi1_2" id="WSemi1_2" name="WSemi1_2">
-                                                                                                <option>Pick a Team...</option>
-                                                                                            </select> --}}
+ 
                                                                                             {!! Form::select('WSemi1_2', [
                                                                                             '' => 'Pick a Team',
+                                                                                            "$ss->final_1" => $ss->final1->team_name,
                                                                                             ], old('value', isset($ss->final_1) ? $ss->final_1 : null ), [ 'class' =>  'form-control WSemi1_2', 'required', 'id' => 'WSemi1_2']) !!}
+
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
@@ -5433,7 +5546,13 @@
                                                                 <table class="display table_second_stage">
                                                                     <tbody>
                                                                         <tr>
-                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 30%; height: 30px;">
+                                                                                <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->final2->team_name)).'.png'}}">
+                                                                                </div>
+                                                                            </div>
+                                                                            </td>
                                                                             <td style="width: 80%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
@@ -5442,6 +5561,7 @@
                                                                                             </select> --}}
                                                                                         {!! Form::select('WSemi3_4', [
                                                                                             '' => 'Pick a Team',
+                                                                                            "$ss->final_2" => $ss->final2->team_name,
                                                                                             ], old('value', isset($ss->final_2) ? $ss->final_2 : null ), [ 'class' =>  'form-control WSemi3_4', 'required', 'id' => 'WSemi3_4']) !!}
 
                                                                                     </div>
@@ -5482,7 +5602,13 @@
                                                                     <tbody>
                                                                         <tr>
                                                                             <br>
-                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 30%; height: 30px;">
+                                                                                <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->winner1->team_name)).'.png'}}">
+                                                                                </div>
+                                                                            </div>
+                                                                            </td>
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
@@ -5491,6 +5617,7 @@
                                                                                         </select> --}}
                                                                                         {!! Form::select('Winner1', [
                                                                                             '' => 'Pick a Team',
+                                                                                            "$ss->winner" => $ss->winner1->team_name,
                                                                                             ], old('value', isset($ss->winner) ? $ss->winner : null ), [ 'class' =>  'form-control Winner1', 'required', 'id' => 'Winner1']) !!}
 
                                                                                             {{-- {{$ss->winner}} --}}
