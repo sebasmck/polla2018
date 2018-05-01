@@ -4287,6 +4287,10 @@
                             {{-- SECOND STAGE --}}
                             <div class="tab-pane container" id="grupoRoun">
                                 <form name="secondstage" id="secondstage">
+
+                                    @csrf
+
+                                    <input type="hidden" name="id_poll" value="{{$poll->iduser_poll}}"> 
                                 <br>
                                 <div class="row">
                                     {{-- Round of 16 --}}
