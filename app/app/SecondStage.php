@@ -32,6 +32,46 @@ class SecondStage extends Model
 	];
 
 
+	// Quarters
+
+	public function quarter1(){
+		return $this->hasOne('App\Team', 'id', 'quarter_1');
+	}
+
+	public function quarter2(){
+		return $this->hasOne('App\Team', 'id', 'quarter_2');
+	}
+
+	public function quarter3(){
+		return $this->hasOne('App\Team', 'id', 'quarter_3');
+	}
+
+	public function quarter4(){
+		return $this->hasOne('App\Team', 'id', 'quarter_4');
+	}
+
+	public function quarter5(){
+		return $this->hasOne('App\Team', 'id', 'quarter_5');
+	}
+
+	public function quarter6(){
+		return $this->hasOne('App\Team', 'id', 'quarter_6');
+	}
+
+	public function quarter7(){
+		return $this->hasOne('App\Team', 'id', 'quarter_7');
+	}
+
+	public function quarter8(){
+		return $this->hasOne('App\Team', 'id', 'quarter_8');
+	}
+
+
+
+
+
+
+
 	// Semi 
 
 

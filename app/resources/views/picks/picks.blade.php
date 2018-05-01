@@ -4917,7 +4917,11 @@
                                                                 @else
                                                                 <tr>
                                                                     <td style="width: 30%; height: 30px;">
-                                                                         <img class="img_flags_WRound1A2B" src="">
+                                                                       <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter1->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
                                                                     </td>
                                                                        
                                                                     <td style="width: 70%; height: 30px;">
@@ -4965,7 +4969,13 @@
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter2->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
                                                                     <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
@@ -5012,7 +5022,13 @@
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter3->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
                                                                     <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
@@ -5060,7 +5076,13 @@
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter4->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
                                                                     <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
@@ -5108,7 +5130,13 @@
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter5->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
                                                                     <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
@@ -5156,7 +5184,13 @@
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter6->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
                                                                     <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
@@ -5203,7 +5237,13 @@
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter7->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
                                                                     <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
@@ -5250,7 +5290,13 @@
                                                                 </tr>
                                                                 @else
                                                                 <tr>
-                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter8->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
                                                                     <td style="width: 70%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
@@ -5311,7 +5357,13 @@
                                                                 <table class="display table_second_stage">
                                                                     <tbody>
                                                                         <tr>
-                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 30%; height: 30px;">
+                                                                            <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->semi1->team_name)).'.png'}}">
+                                                                                </div>
+                                                                            </div>
+                                                                            </td>
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12"> 
@@ -5337,7 +5389,13 @@
                                                                     <tbody>
                                                                          
                                                                         <tr>
-                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 30%; height: 30px;">
+                                                                                <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->semi2->team_name)).'.png'}}">
+                                                                                </div>
+                                                                            </div>
+                                                                            </td>
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
@@ -5363,7 +5421,13 @@
                                                                     <tbody>
                                                                         
                                                                         <tr>
-                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 30%; height: 30px;">
+                                                                                <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->semi3->team_name)).'.png'}}">
+                                                                                </div>
+                                                                            </div>
+                                                                            </td>
                                                                             <td style="width: 80%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
@@ -5389,7 +5453,13 @@
                                                                 <table class="display table_second_stage">
                                                                     <tbody>
                                                                         <tr>
-                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 30%; height: 30px;">
+                                                                                <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->semi4->team_name)).'.png'}}">
+                                                                                </div>
+                                                                            </div>
+                                                                            </td>
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
@@ -5442,7 +5512,13 @@
                                                                         </tr>
                                                                         @else
                                                                         <tr>
-                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 30%; height: 30px;">
+                                                                                <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->final1->team_name)).'.png'}}">
+                                                                                </div>
+                                                                            </div>
+                                                                            </td>
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
@@ -5470,7 +5546,13 @@
                                                                 <table class="display table_second_stage">
                                                                     <tbody>
                                                                         <tr>
-                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 30%; height: 30px;">
+                                                                                <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->final2->team_name)).'.png'}}">
+                                                                                </div>
+                                                                            </div>
+                                                                            </td>
                                                                             <td style="width: 80%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
@@ -5520,7 +5602,13 @@
                                                                     <tbody>
                                                                         <tr>
                                                                             <br>
-                                                                            <td style="width: 30%; height: 30px;"></td>
+                                                                            <td style="width: 30%; height: 30px;">
+                                                                                <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->winner1->team_name)).'.png'}}">
+                                                                                </div>
+                                                                            </div>
+                                                                            </td>
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
