@@ -4919,7 +4919,12 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                        <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter1->team_name)).'.png'}}">
+                                                                                @if (isset($ss->quarter1->team_name))
+                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter1->team_name)).'.png'}}">
+                                                                                @else
+                                                                                    <img class="img_flags" src="">
+                                                                                @endif
+                                                                                
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -4972,7 +4977,12 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter2->team_name)).'.png'}}">
+                                                                                @if (isset($ss->quarter2->team_name))
+                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter2->team_name)).'.png'}}">
+                                                                                @else
+                                                                                    <img class="img_flags" src="">
+                                                                                @endif
+                                                                                
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5025,7 +5035,12 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter3->team_name)).'.png'}}">
+                                                                                @if (isset($ss->quarter3->team_name))
+                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter3->team_name)).'.png'}}">
+                                                                                @else
+                                                                                    <img class="img_flags" src="">
+                                                                                @endif
+                                                                                
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5079,7 +5094,11 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter4->team_name)).'.png'}}">
+                                                                                @if (isset($ss->quarter4->team_name))
+                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter4->team_name)).'.png'}}">
+                                                                                @else
+                                                                                    <img class="img_flags" src="">
+                                                                                @endif
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5133,7 +5152,11 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter5->team_name)).'.png'}}">
+                                                                                @if (isset($ss->quarter5->team_name))
+                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter5->team_name)).'.png'}}">
+                                                                                @else
+                                                                                    <img class="img_flags" src="">
+                                                                                @endif
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5187,7 +5210,11 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter6->team_name)).'.png'}}">
+                                                                                @if (isset($ss->quarter6->team_name))
+                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter6->team_name)).'.png'}}">
+                                                                                @else
+                                                                                    <img class="img_flags" src="">
+                                                                                @endif
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5240,7 +5267,11 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter7->team_name)).'.png'}}">
+                                                                                @if (isset($ss->quarter7->team_name))
+                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter7->team_name)).'.png'}}">
+                                                                                @else
+                                                                                    <img class="img_flags" src="">
+                                                                                @endif
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5293,7 +5324,11 @@
                                                                     <td style="width: 30%; height: 30px;">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter8->team_name)).'.png'}}">
+                                                                                @if (isset($ss->quarter8->team_name))
+                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter8->team_name)).'.png'}}">
+                                                                                @else
+                                                                                    <img class="img_flags" src="">
+                                                                                @endif
                                                                             </div>
                                                                         </div>
                                                                     </td>
@@ -5360,7 +5395,13 @@
                                                                             <td style="width: 30%; height: 30px;">
                                                                             <div class="row">
                                                                                 <div class="col-md-12">
+
+                                                                                    @if (isset($ss->semi1->team_name))
                                                                                     <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->semi1->team_name)).'.png'}}">
+                                                                                    @else
+                                                                                        <img class="img_flags" src="">
+                                                                                    @endif
+
                                                                                 </div>
                                                                             </div>
                                                                             </td>
@@ -5424,7 +5465,11 @@
                                                                             <td style="width: 30%; height: 30px;">
                                                                                 <div class="row">
                                                                                 <div class="col-md-12">
+                                                                                    @if (isset($ss->semi3->team_name))
                                                                                     <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->semi3->team_name)).'.png'}}">
+                                                                                    @else
+                                                                                        <img class="img_flags" src="">
+                                                                                    @endif
                                                                                 </div>
                                                                             </div>
                                                                             </td>
@@ -5456,7 +5501,11 @@
                                                                             <td style="width: 30%; height: 30px;">
                                                                                 <div class="row">
                                                                                 <div class="col-md-12">
+                                                                                    @if (isset($ss->semi4->team_name))
                                                                                     <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->semi4->team_name)).'.png'}}">
+                                                                                    @else
+                                                                                        <img class="img_flags" src="">
+                                                                                    @endif
                                                                                 </div>
                                                                             </div>
                                                                             </td>
@@ -5515,7 +5564,13 @@
                                                                             <td style="width: 30%; height: 30px;">
                                                                                 <div class="row">
                                                                                 <div class="col-md-12">
+
+                                                                                    @if (isset($ss->final1->team_name))
                                                                                     <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->final1->team_name)).'.png'}}">
+                                                                                    @else
+                                                                                        <img class="img_flags" src="">
+                                                                                    @endif
+
                                                                                 </div>
                                                                             </div>
                                                                             </td>
@@ -5549,7 +5604,13 @@
                                                                             <td style="width: 30%; height: 30px;">
                                                                                 <div class="row">
                                                                                 <div class="col-md-12">
+
+                                                                                    @if (isset($ss->final2->team_name))
                                                                                     <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->final2->team_name)).'.png'}}">
+                                                                                    @else
+                                                                                        <img class="img_flags" src="">
+                                                                                    @endif
+
                                                                                 </div>
                                                                             </div>
                                                                             </td>
@@ -5605,7 +5666,11 @@
                                                                             <td style="width: 30%; height: 30px;">
                                                                                 <div class="row">
                                                                                 <div class="col-md-12">
+                                                                                    @if (isset($ss->winner1->team_name))
                                                                                     <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->winner1->team_name)).'.png'}}">
+                                                                                    @else
+                                                                                        <img class="img_flags" src="">
+                                                                                    @endif
                                                                                 </div>
                                                                             </div>
                                                                             </td>
