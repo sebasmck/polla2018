@@ -9380,7 +9380,7 @@ a.text-dark:hover {
 
 .table_picks{
     border: solid 0.2px #cccccc40;
-    font-size: 12px!important;
+    font-size: 11px!important;
     /*width: 581px;*/
     /*height: 294px;*/
 }
@@ -9392,6 +9392,7 @@ a.text-dark:hover {
 
 .table_picks td{
     border: solid 0.2px #cccccc40;
+    text-align: center;
 }
 
 .team_left{

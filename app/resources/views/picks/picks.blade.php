@@ -14,7 +14,7 @@
                     <div class="card-header">
                         <div class="row">
                             <div class="col-md-4">
-                                <h4>{{ __('My picks') }} </h4>
+                                <h4>{{ __('My Picks') }} </h4>
                             </div>
                             <div class="col-md-8">
                                 {{-- <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary addbutton" id="myBtn"><span class="fa fa-plus">+</span></button> --}}
@@ -5768,6 +5768,8 @@
                                  <div class="form-group">
                                     <button type="" class="btn btn-primary" onclick="window.location='{{ route('login') }}'" style="width: 100%;">
                                         {{ __('Ranking and Poolwide picks') }}
+                                        <br>
+                                        {{(__('(starts June 12th)'))}}
                                     </button>
                                 </div>
                             </div>
