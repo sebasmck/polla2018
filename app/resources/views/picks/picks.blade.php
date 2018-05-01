@@ -4277,9 +4277,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <input type="button" name="submitgrouph" id="submitgrouph" class="btn btn-info btn-block" value="Save and go to Next Group" />
-                                         {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go to Next Group') }} --}}
-                                        </button>
+
                                     </div>
                                 </div>
                             </div>
@@ -4288,6 +4286,7 @@
 
                             {{-- SECOND STAGE --}}
                             <div class="tab-pane container" id="grupoRoun">
+                                <form name="secondstage" id="secondstage">
                                 <br>
                                 <div class="row">
                                     {{-- Round of 16 --}}
@@ -5351,7 +5350,7 @@
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                            <{{-- select class="form-control Wquarter7_8" id="Wquarter7_8" name="Wquarter7_8">
+                                                                                            {{-- select class="form-control Wquarter7_8" id="Wquarter7_8" name="Wquarter7_8">
                                                                                                 <option>Pick a Team...</option>
                                                                                             </select> --}}
                                                                                             {!! Form::select('Wquarter7_8', [
@@ -5490,7 +5489,7 @@
                                                                                             '' => 'Pick a Team',
                                                                                             ], old('value', isset($ss->winner) ? $ss->winner : null ), [ 'class' =>  'form-control Winner1', 'required', 'id' => 'Winner1']) !!}
 
-                                                                                            {{$ss->winner}}
+                                                                                            {{-- {{$ss->winner}} --}}
 
                                                                                     </div>
                                                                                 </div>
@@ -5523,18 +5522,16 @@
                                          {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
                                             {{ __('Save and go to Next Group') }} --}}
                                         </button>
+
+                                </form>
                                     </div>
                                 </div>
                             </div>
-
-
-
                         </div>
-
-
-                        
                     </div>
                 </div>
+
+
             </div>
         </div>
         <br>
@@ -5800,16 +5797,6 @@
         });
 
 
-
-        
-
-
-
-
-
-
-
-
         var postURLA = "<?php echo url('/storea'); ?>";
         var postURLB = "<?php echo url('/storeb'); ?>";
         var postURLC = "<?php echo url('/storec'); ?>";
@@ -5818,6 +5805,7 @@
         var postURLF = "<?php echo url('/storef'); ?>";
         var postURLG = "<?php echo url('/storeg'); ?>";
         var postURLH = "<?php echo url('/storeh'); ?>";
+        var postSECONDSTAGE = "<?php echo url('/storesecondstage'); ?>";
 
         $.ajaxSetup({
           headers: {
@@ -6150,6 +6138,28 @@
                     }else{
                         toastr.success('Saved');
                         window.location='{{ route("home") }}';
+                    }
+                }  
+            }); 
+
+        });
+
+        $('#submitSecondStage').click(function(){
+
+            $.ajax({  
+                url:postSECONDSTAGE,  
+                method:"POST",  
+                data:$('#secondstage').serialize(),
+                type:'json',
+                success:function(data){
+                    if(data.error){
+                        printErrorMsg(data.error);
+                    }else{
+                        toastr.success('Saved');
+                        // $('#idgrupoh').removeClass( "active show" );
+                        // $('#idgrupoRoun').addClass( "active show" );
+                        // $('#grupoh').removeClass( "active show" );
+                        // $('#grupoRoun').addClass( "active show" );
                     }
                 }  
             }); 

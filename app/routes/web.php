@@ -57,6 +57,7 @@ Route::post('/storee', 'PicksController@storeGroupE')->name('storee');
 Route::post('/storef', 'PicksController@storeGroupF')->name('storef');
 Route::post('/storeg', 'PicksController@storeGroupG')->name('storeg');
 Route::post('/storeh', 'PicksController@storeGroupH')->name('storeh');
+Route::post('/storesecondstage', 'PicksController@storeSecondStage')->name('storesecondstage');
 
 Route::Resource('picks', 'PicksController');
 
