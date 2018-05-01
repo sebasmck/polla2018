@@ -5407,11 +5407,18 @@
                                                                             </td>
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
-                                                                                    <div class="col-md-12"> 
-                                                                                        {!! Form::select('Wquarter1_2', [
+                                                                                    <div class="col-md-12">
+                                                                                        @if (isset($ss->semi_1))
+                                                                                            {!! Form::select('Wquarter1_2', [
                                                                                             '' => 'Pick a Team',
                                                                                             "$ss->semi_1" => $ss->semi1->team_name,
                                                                                             ], old('value', isset($ss->semi_1) ? $ss->semi_1 : null ), [ 'class' =>  'form-control Wquarter1_2', 'required', 'id' => 'Wquarter1_2']) !!}
+                                                                                        @else
+                                                                                        {!! Form::select('Wquarter1_2', [
+                                                                                            '' => 'Pick a Team',
+                                                                                            ], null, [ 'class' =>  'form-control Wquarter1_2', 'required', 'id' => 'Wquarter1_2']) !!}
+                                                                                        @endif
+                                                                                        
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
@@ -5433,17 +5440,30 @@
                                                                             <td style="width: 30%; height: 30px;">
                                                                                 <div class="row">
                                                                                 <div class="col-md-12">
+
+                                                                                    @if (isset($ss->semi1->team_name))
                                                                                     <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->semi2->team_name)).'.png'}}">
+                                                                                    @else
+                                                                                        <img class="img_flags" src="">
+                                                                                    @endif
+
+                                                                                    
                                                                                 </div>
                                                                             </div>
                                                                             </td>
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
+                                                                                        @if (isset($ss->semi_2))
                                                                                         {!! Form::select('Wquarter3_4', [
                                                                                             '' => 'Pick a Team',
                                                                                             "$ss->semi_2" => $ss->semi2->team_name,
                                                                                             ], old('value', isset($ss->semi_2) ? $ss->semi_2 : null ), [ 'class' =>  'form-control Wquarter3_4', 'required', 'id' => 'Wquarter3_4']) !!}
+                                                                                        @else
+                                                                                        {!! Form::select('Wquarter3_4', [
+                                                                                            '' => 'Pick a Team',
+                                                                                            ], null, [ 'class' =>  'form-control Wquarter3_4', 'required', 'id' => 'Wquarter3_4']) !!}
+                                                                                        @endif
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
@@ -5460,7 +5480,6 @@
                                                             <div class="col-md-12">
                                                                 <table class="display table_second_stage">
                                                                     <tbody>
-                                                                        
                                                                         <tr>
                                                                             <td style="width: 30%; height: 30px;">
                                                                                 <div class="row">
@@ -5476,11 +5495,18 @@
                                                                             <td style="width: 80%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                        {!! Form::select('Wquarter5_6', [
+
+                                                                                        @if (isset($ss->semi_3))
+                                                                                            {!! Form::select('Wquarter5_6', [
                                                                                             '' => 'Pick a Team',
                                                                                             "$ss->semi_3" => $ss->semi3->team_name,
                                                                                             ], old('value', isset($ss->semi_3) ? $ss->semi_3 : null ), [ 'class' =>  'form-control Wquarter5_6', 'required', 'id' => 'Wquarter5_6']) !!}
-
+                                                                                        @else
+                                                                                            {!! Form::select('Wquarter5_6', [
+                                                                                                '' => 'Pick a Team',
+                                                                                                ],null, [ 'class' =>  'form-control Wquarter5_6', 'required', 'id' => 'Wquarter5_6']) !!}
+                                                                                        @endif
+                                                                                        
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
@@ -5512,10 +5538,16 @@
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
+                                                                                        @if (isset($ss->semi_4))
                                                                                             {!! Form::select('Wquarter7_8', [
                                                                                             '' => 'Pick a Team',
                                                                                             "$ss->semi_4" => $ss->semi4->team_name,
                                                                                             ], old('value', isset($ss->semi_4) ? $ss->semi_4 : null ), [ 'class' =>  'form-control Wquarter7_8', 'required', 'id' => 'Wquarter7_8']) !!}
+                                                                                        @else
+                                                                                        {!! Form::select('Wquarter7_8',[
+                                                                                                '' => 'Pick a Team',
+                                                                                                ], null, [ 'class' =>  'form-control Wquarter7_8', 'required', 'id' => 'Wquarter7_8']) !!}
+                                                                                        @endif
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5577,11 +5609,17 @@
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
- 
+
+                                                                                        @if (isset($ss->final_1))
                                                                                             {!! Form::select('WSemi1_2', [
                                                                                             '' => 'Pick a Team',
                                                                                             "$ss->final_1" => $ss->final1->team_name,
                                                                                             ], old('value', isset($ss->final_1) ? $ss->final_1 : null ), [ 'class' =>  'form-control WSemi1_2', 'required', 'id' => 'WSemi1_2']) !!}
+                                                                                        @else
+                                                                                        {!! Form::select('WSemi1_2',[
+                                                                                                '' => 'Pick a Team',
+                                                                                                ], null, [ 'class' =>  'form-control WSemi1_2', 'required', 'id' => 'WSemi1_2']) !!}
+                                                                                        @endif
 
                                                                                     </div>
                                                                                 </div>
@@ -5617,13 +5655,17 @@
                                                                             <td style="width: 80%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                         {{-- <select class="form-control WSemi3_4" id="WSemi3_4" name="WSemi3_4">
-                                                                                                <option>Pick a Team...</option>
-                                                                                            </select> --}}
-                                                                                        {!! Form::select('WSemi3_4', [
+                                                                                         
+                                                                                         @if (isset($ss->final_2))
+                                                                                            {!! Form::select('WSemi3_4', [
                                                                                             '' => 'Pick a Team',
                                                                                             "$ss->final_2" => $ss->final2->team_name,
                                                                                             ], old('value', isset($ss->final_2) ? $ss->final_2 : null ), [ 'class' =>  'form-control WSemi3_4', 'required', 'id' => 'WSemi3_4']) !!}
+                                                                                        @else
+                                                                                        {!! Form::select('WSemi3_4',[
+                                                                                                '' => 'Pick a Team',
+                                                                                                ], null, [ 'class' =>  'form-control WSemi3_4', 'required', 'id' => 'WSemi3_4']) !!}
+                                                                                        @endif
 
                                                                                     </div>
                                                                                 </div>
@@ -5677,15 +5719,20 @@
                                                                             <td style="width: 70%; height: 30px;">
                                                                                 <div class="row">
                                                                                     <div class="col-md-12">
-                                                                                         {{-- <select class="form-control Winner1" id="Winner1" name="Winner1">
-                                                                                            <option>Pick a Team...</option>
-                                                                                        </select> --}}
-                                                                                        {!! Form::select('Winner1', [
+
+                                                                                         @if (isset($ss->winner))
+                                                                                            {!! Form::select('Winner1', [
                                                                                             '' => 'Pick a Team',
                                                                                             "$ss->winner" => $ss->winner1->team_name,
                                                                                             ], old('value', isset($ss->winner) ? $ss->winner : null ), [ 'class' =>  'form-control Winner1', 'required', 'id' => 'Winner1']) !!}
+                                                                                        @else
+                                                                                        {!! Form::select('Winner1',[
+                                                                                                '' => 'Pick a Team',
+                                                                                                ], null, [ 'class' =>  'form-control Winner1', 'required', 'id' => 'Winner1']) !!}
+                                                                                        @endif
 
-                                                                                            {{-- {{$ss->winner}} --}}
+                                                                                         
+                                                                                        
 
                                                                                     </div>
                                                                                 </div>
