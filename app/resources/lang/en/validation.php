@@ -29,7 +29,7 @@ return [
         'string'  => 'The :attribute must be between :min and :max characters.',
         'array'   => 'The :attribute must have between :min and :max items.',
     ],
-    'boolean'              => 'The :attribute field must be true or false.',
+    'boolean'              => 'You are registered but pending authorization, please contact your city rep to be authorized',
     'confirmed'            => 'The :attribute confirmation does not match.',
     'date'                 => 'The :attribute is not a valid date.',
     'date_format'          => 'The :attribute does not match the format :format.',

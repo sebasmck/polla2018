@@ -43,6 +43,15 @@ class LoginController extends Controller
         ];
     }
 
+    protected function validateLogin(Request $request)
+    {
+        $this->validate($request, [
+            $this->username() => 'required|string',
+            'password' => 'required|string'
+            'is_aproved' => 'boolean',
+        ]);
+    }
+
     protected function authenticated($request, $user)
     {
         if($user->role === 'admin') {
