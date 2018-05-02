@@ -219,7 +219,7 @@
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"> </script>
 <script src="{{URL::asset('js/app.js')}}"></script>
 <script src="{{URL::asset('scripts/countdown.js')}}"></script>
-
+@include('admin.partials.js')
 <script>
     // $(document).ready( function () {
     //     $('#myTable').DataTable({

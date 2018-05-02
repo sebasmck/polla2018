@@ -88,5 +88,8 @@
         </div>
     </div>
 </div>
+
+@include('admin.partials.js')
+
 <script src="{{URL::asset('js/app.js')}}"></script>
 @endsection
