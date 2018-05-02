@@ -144,16 +144,15 @@
     </div>
 </div>
 <script src="{{URL::asset('js/app.js')}}"></script>
+
 @endsection
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
+@section('addjs')
 <script>
     $(document).ready(function(){
-        toastr.success('hi');
+        toastr.success('Welcome');
     });
 </script>
-
-
+@endsection
 
