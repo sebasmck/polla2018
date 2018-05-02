@@ -34,10 +34,10 @@
                         <nav class="tabs is-boxed">
                           <ul>
                             <li>
-                              <a href="/admin">Pending Approvals</a>
+                              <a href="{{route('admin')}}">Pending Approvals</a>
                             </li>
                             <li class="is-active">
-                                <a href="/assign">User Management</a>
+                                <a href="{{route('assign')}}">User Management</a>
                               </li>
                           </ul>
                         </nav></div>
@@ -52,7 +52,7 @@
                           <p class="modal-card-title">Add Rep</p>
                         </header>
                         <section class="modal-card-body">
-                          <form action="/storerep" method="POST">
+                          <form action="{{route('storerep')}}" method="POST">
                             @csrf
                             <div class="field">
                               <div class="control">
@@ -64,7 +64,7 @@
                             <footer class="modal-card-foot">
                               <button type="submit" class="button is-success">Save</button>
                             </form>
-                            <a href="{{url('/assign')}}"><button class="button" id="close">Cancel</button></a>
+                            <a href="{{url('assign')}}"><button class="button" id="close">Cancel</button></a>
                           </footer>
                         </div>
                       </div>

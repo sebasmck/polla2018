@@ -46,10 +46,10 @@
                         <nav class="tabs is-boxed">
                           <ul>
                             <li>
-                              <a href="/admin">Approvals</a>
+                              <a href="{{route('admin')}}">Approvals</a>
                             </li>
                             <li class="is-active">
-                                <a href="/assign">User Management</a>
+                                <a href="{{route('assign')}}">User Management</a>
                               </li>
                           </ul>
                         </nav></div>
@@ -64,7 +64,7 @@
                           <p class="modal-card-title">Edit Rep</p>
                         </header>
                         <section class="modal-card-body">
-                          <form action="/updaterep" method="POST">
+                          <form action="{{route('updaterep')}}" method="POST">
                             @csrf
                             <div class="field">
                               <input type="hidden" value="{{$user->id}}" name="id">

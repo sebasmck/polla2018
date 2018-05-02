@@ -216,6 +216,9 @@ class AdminsController extends Controller
         
         $user->delete();
 
+        $users = User::all();
+        $reps = Rep::all();
 
+        return view('admin.assign_rep')->with('users', $users)->with('reps', $reps);
     }
 }

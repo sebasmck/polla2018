@@ -6361,6 +6361,7 @@
                         printErrorMsg(data.error);
                     }else{
                         toastr.success('Saved');
+                        location.reload();
                         $('#idgrupoh').removeClass( "active show" );
                         $('#idgrupoRoun').addClass( "active show" );
                         $('#grupoh').removeClass( "active show" );
@@ -6401,10 +6402,12 @@
                         printErrorMsg(data.error);
                     }else{
                         toastr.success('Saved');
-                        // $('#idgrupoh').removeClass( "active show" );
-                        // $('#idgrupoRoun').addClass( "active show" );
-                        // $('#grupoh').removeClass( "active show" );
-                        // $('#grupoRoun').addClass( "active show" );
+                        location.reload();
+                        $('#idgrupoh').removeClass( "active show" );
+                        $('#idgrupoRoun').addClass( "active show" );
+                        $('#grupoh').removeClass( "active show" );
+                        $('#grupoRoun').addClass( "active show" );
+                        location.reload();
                     }
                 }  
             }); 

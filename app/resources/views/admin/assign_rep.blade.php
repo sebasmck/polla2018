@@ -49,7 +49,7 @@
 
                   <section class="section">
                     <div class="container">
-                    <a class="button is-success is-pulled-right" href="/addrep">Add Rep</a>
+                    <a class="button is-success is-pulled-right" href="{{route('addRep')}}">Add Rep</a>
                       <h1 class="title"><b> User Management </b></h1>                  
                       <hr style="margin-bottom: 0;">
                       <table id="pendings" class="display">
@@ -74,7 +74,7 @@
                                     <button class="button is-primary is-pulled-left" id="showModal"
                                       data-target="modal-ter" data-id="{{$user->id}}" aria-haspopup="true">Assign Rep</button>
                                     @else
-                                    <a href="/editrep/{{$user->id}}"> <button class="button is-primary is-pulled-right">Edit Rep</button></a>
+                                    <a href="{{route('editrep', $user->id)}}"> <button class="button is-primary is-pulled-right">Edit Rep</button></a>
                                     <p class="is-pulled-left">{{$user->rep->name}}</p>
                                     @endif
                                     </td>
@@ -109,7 +109,7 @@
                     <p class="modal-card-title">Add Rep</p>
                   </header>
                   <section class="modal-card-body">
-                  <form action="/assigntouser" method="POST">
+                  <form action="{{ route('assigntouser')}}" method="POST">
                       @csrf
                       <input type="hidden" id="id" name="id">
                       <div class="select">

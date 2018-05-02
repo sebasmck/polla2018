@@ -25,11 +25,11 @@ Route::get('admin', 'HomeController@indexAdmin')->name('admin');
 
 Route::get('assign', 'AdminsController@assignRep')->name('assign');
 
-Route::post('/assigntouser', 'AdminsController@assignToUser');
+Route::post('assigntouser', 'AdminsController@assignToUser')->name('assigntouser');
 
 Route::get('addrep', 'AdminsController@addRep')->name('addRep');
 
-Route::post('/storerep', 'AdminsController@storeRep')->name('storerep');
+Route::post('storerep', 'AdminsController@storeRep')->name('storerep');
 
 Route::delete('users/{id}', [
     'as' => 'delete_user', 

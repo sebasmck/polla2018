@@ -46,7 +46,7 @@
 
                   <section class="section">
                     <div class="container">
-                      <a class="button is-success is-pulled-right" href="/allusers">All Users</a>
+                      <a class="button is-success is-pulled-right" href="{{ route('allusers')}}">All Users</a>
                       <h1 class="title"><b> Pending Approvals </b></h1>                  
                       <hr style="margin-bottom: 0;">
                       <table id="pendings" class="display">
