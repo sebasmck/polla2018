@@ -52,25 +52,39 @@ class HomeController extends Controller
 
     public function pollregistration(Request $req)
     {
-        $this->validator($req->all())->validate();
-        
-        $polls = new PollsModel;
-        $polls->id_User = $req->input('user_id');
-        $polls->poll_name = $req->input('poll_name');
-        $polls->complete = 'Incomplete';
-        $polls->status = 'Pending';
+        // $this->validator($req->all())->validate();
 
-        $polls->save();
+        $validator = Validator::make($req->all(), [
 
-        return back();
-    }
+            'poll_name' => 'required|unique:user_poll|string|max:255',
 
-    protected function validator(array $data)
-    {   
-        return Validator::make($data, [
-            'poll_name' => 'required|unique:user_poll|string|max:255'
         ]);
+
+        if ($validator->passes()) {
+
+            $polls = new PollsModel;
+            $polls->id_User = $req->input('user_id');
+            $polls->poll_name = $req->input('poll_name');
+            $polls->complete = 'Incomplete';
+            $polls->status = 'Pending';
+
+            $polls->save();
+
+            return response()->json(['success'=>'done']);
+             
+        }else{
+            return response()->json(['error'=>$validator->errors()->all()]);
+        }
+        
+        
     }
+
+    // protected function validator(array $data)
+    // {   
+    //     return Validator::make($data, [
+    //         'poll_name' => 'required|unique:user_poll|string|max:255'
+    //     ]);
+    // }
 
    
     // protected function create(array $data)

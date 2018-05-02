@@ -6414,7 +6414,7 @@
 
         });
 
-
+        
         // dont repet winner by group
         $('#WA2').change(function(event) {
             var espP = $('#WA1').val();

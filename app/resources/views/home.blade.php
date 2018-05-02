@@ -167,7 +167,7 @@
             
             <!-- Modal body -->
             <div class="modal-body">
-            <form  action="{{route('pollregistration')}}" method="POST">
+            <form name="poll" id="poll">
                     @csrf
 
             <input type="hidden" value="{{Auth::user()->id}}" name="user_id">
@@ -186,9 +186,10 @@
 
                     <div class="form-group row">
                         <div class="col-md-8 offset-md-2">
-                            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            {{-- <button id="submitPolla" class="btn btn-primary" style="width: 100%;">
                                 {{ __('Save') }}
-                            </button>
+                            </button> --}}
+                            <input type="button" name="submitPolla" id="submitPolla" class="btn btn-info btn-block" value="Save" />
 
                             {{-- <a class="btn btn-link" href="{{ route('password.request') }}">
                                 {{ __('Forgot Your Password?') }}
@@ -211,10 +212,12 @@
 @endsection
 
 
-    
+ 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+
 
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"> </script>
 <script src="{{URL::asset('js/app.js')}}"></script>
@@ -273,6 +276,48 @@
         // });
     }
 
+    $(document).ready(function(){
+
+        $.ajaxSetup({
+          headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+
+        var postURLPOLLA = "<?php echo url('/pollregistration'); ?>";
+
+        $('#submitPolla').click(function(){            
+           $.ajax({  
+              url:postURLPOLLA,  
+              method:"POST",
+              beforeSend: function (xhr) {
+                var token = $('meta[name="csrf_token"]').attr('content');
+
+                if (token) {
+                  return xhr.setRequestHeader('X-CSRF-TOKEN', token);
+              }
+          },  
+          data:$('#poll').serialize(),
+          type:'json',
+          success:function(data)  
+          {
+            if(data.error){
+              // toastr.warning(data.error);
+              $.each( data.error, function( key, value ) {
+                toastr.warning(value);
+      // $(".print-error-msg-gestioncalidadsi").find("ul").append('<li>'+value+'</li>');
+    });
+          }else{
+              location.reload();
+          }
+          } 
+    });  
+});  
+
+
+    });
+
+    
 
 </script>
 

@@ -44,7 +44,11 @@ class RegisterController extends Controller
         $data = array('name' => $user->name,
                       'lastname' => $user->lastname,
                       'email' => $user->email,
-                      'password' => $request->password);
+                      'password' => $request->password,
+                      'nickname' =>$request->nickname,
+                      'city' => $request->city,
+                      'cellphone' => $request->cellphone,
+                      'referredby' => $request->referredby);
 
         Emails::email_registration_user($user->email, $data);
         Emails::email_registration_admin($data);
@@ -63,8 +67,11 @@ class RegisterController extends Controller
             'alert-type' => 'warning'
         );
 
-        return $this->registered($request, $user)
-                        ?: redirect($this->redirectPath())->with($notification);
+        // Session::flash('message', 'This is a message!');
+         
+
+        return $this->registered($request, $user, $request->session()->put('message', 'Thank you for registering in pollaworldcup.com! Please allow up to 24 hours for your registration to be accepted.'))
+                        ?: redirect($this->redirectPath());
     }
 
 

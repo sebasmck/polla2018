@@ -149,10 +149,6 @@
 
 
 @section('addjs')
-<script>
-    $(document).ready(function(){
-        toastr.success('Welcome');
-    });
-</script>
+
 @endsection
 
