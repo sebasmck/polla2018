@@ -142,7 +142,7 @@ class AdminsController extends Controller
                       'lastname' => $user->lastname,
                       'email' => $user->email);
 
-        // Emails::email_registration_user_approved($user->email, $data);
+        Emails::email_registration_user_approved($user->email, $data);
 
         $notification = array(
             'message' => " $user->name " . 'Has been approved', 

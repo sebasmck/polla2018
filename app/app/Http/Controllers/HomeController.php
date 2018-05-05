@@ -58,7 +58,8 @@ class HomeController extends Controller
 
             'poll_name' => 'required|unique:user_poll|string|max:255',
 
-        ]);
+        ],
+        [   'poll_name.unique' => 'This Nickname has already been chosen.']);
 
         if ($validator->passes()) {
 
