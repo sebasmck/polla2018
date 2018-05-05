@@ -533,7 +533,7 @@ class PicksController extends Controller
                 'alert-type' => 'success'
             );
 
-        return view('home')->with('polls', $polls)->with($notification);
+        return redirect()->back()->with('polls', $polls)->with($notification);
     }
 
 

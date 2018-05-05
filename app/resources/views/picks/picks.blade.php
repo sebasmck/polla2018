@@ -13,17 +13,21 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-8">
                                 <h4>{{ __('My Picks') }} </h4>
                             </div>
-                            <div class="col-md-8">
-                                {{-- <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary addbutton" id="myBtn"><span class="fa fa-plus">+</span></button> --}}
+                            <div class="col-md-4">
+                                <h4 class="nickname_pool">Pool Nickname: {{$poll->poll_name}} </h4>
                             </div>
                         </div>                        
                         
                     </div>
 
+
+                    <div class="card-body maincontainers">
+
                     <div class="card-body">
+
                         <ul class="nav nav-tabs">
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#grupoa" id="idgrupoa">Group A</a>
@@ -3218,9 +3222,9 @@
                                         </button>
                                     </div>
                                     <div class="col-md-6">
+
+                                        
                                         <input type="button" name="submitgroupf" id="submitgroupf" class="btn btn-info btn-block" value="Save and go to Next Group" />
-                                         {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go to Next Group') }} --}}
                                         </button>
                                     </div>
                                 </div>
@@ -3747,7 +3751,7 @@
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="button" name="submitgroupg" id="submitgroupg" class="btn btn-info btn-block" value="Save and go to Second Stage" />
+                                        <input type="button" name="submitgroupg" id="submitgroupg" class="btn btn-info btn-block" value="Save and go to Next Group" />
                                          {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
                                             {{ __('Save and go to Next Group') }} --}}
                                         </button>
@@ -4276,7 +4280,7 @@
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="button" name="submitgrouph" id="submitgrouph" class="btn btn-info btn-block" value="Save and go to Next Group" />
+                                        <input type="button" name="submitgrouph" id="submitgrouph" class="btn btn-info btn-block" value="Save and go to Second Stage" />
 
                                     </div>
                                 </div>
@@ -4303,7 +4307,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="card-body">
+                                            <div class="card-body flagsbody">
                                                 {{-- 1A --}}
                                                 <div class="row">
                                                     <div class="col-md-12">
@@ -4891,7 +4895,7 @@
 
 
                                     {{-- Quarter-finals --}}
-                                    <div class="col-md-2.4">
+                                    <div class="col-md-2.4 quarters">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -5864,20 +5868,29 @@
 
          $("select.WRound1A2B").change(function(){
             // save variables on change
+
+            
+
             var selectedTeamAvalue = $(".WRound1A2B option:selected").val();
             var selectedTeamAtext = $(".WRound1A2B option:selected").text();
 
-            if (($('#Wquarter1_2 option').length) <= 2) {
+            var selectedTeamBvalue = $(".WRound1C2D option:selected").val();
+            var selectedTeamBtext = $(".WRound1C2D option:selected").text();
+
+            if (($('#Wquarter1_2 option').length) < 2) {
 
                 $('select.Wquarter1_2').append($('<option/>', { 
                 value: selectedTeamAvalue,
                 text : selectedTeamAtext 
             }));    
             } else { 
-                $('#Wquarter1_2 option:gt(0)').remove();
-                $('select.Wquarter1_2').append($('<option/>', { 
+                $('#Wquarter1_2').empty().append($('<option/>', { 
                 value: selectedTeamAvalue,
                 text : selectedTeamAtext 
+            }));
+                $('#Wquarter1_2').append($('<option/>', { 
+                value: selectedTeamBvalue,
+                text : selectedTeamBtext 
             })); 
             }
             
@@ -5885,89 +5898,204 @@
         });
 
          $("select.WRound1C2D").change(function(){
+
+            var selectedTeamAvalue = $(".WRound1A2B option:selected").val();
+            var selectedTeamAtext = $(".WRound1A2B option:selected").text();
+
             var selectedTeamBvalue = $(".WRound1C2D option:selected").val();
             var selectedTeamBtext = $(".WRound1C2D option:selected").text();
-
             
 
-            if (($('#Wquarter1_2 option').length) <= 2) {
+            if (($('#Wquarter1_2 option').length) < 2) {
+
                 $('select.Wquarter1_2').append($('<option/>', { 
                 value: selectedTeamBvalue,
                 text : selectedTeamBtext 
-            }));   
+            }));    
             } else { 
-                $('#Wquarter1_2 option:gt(0)').remove();
-                $('select.Wquarter1_2').append($('<option/>', { 
+                $('#Wquarter1_2').empty().append($('<option/>', { 
+                value: selectedTeamAvalue,
+                text : selectedTeamAtext 
+            }));
+                $('#Wquarter1_2').append($('<option/>', { 
                 value: selectedTeamBvalue,
                 text : selectedTeamBtext 
             })); 
             }
         });
 
+         // -----------------------
+
 
 
         $("select.WRound1E2F").change(function(){
+
             var selectedTeamCvalue = $(".WRound1E2F option:selected").val();
             var selectedTeamCtext = $(".WRound1E2F option:selected").text();
             
-            $('select.Wquarter3_4').append($('<option/>', { 
+            var selectedTeamDvalue = $(".WRound1G2H option:selected").val();
+            var selectedTeamDtext = $(".WRound1G2H option:selected").text();
+
+            if (($('#Wquarter3_4 option').length) < 2) {
+
+                $('select.Wquarter3_4').append($('<option/>', { 
+                value: selectedTeamCvalue,
+                text : selectedTeamCtext 
+            }));    
+            } else { 
+                $('#Wquarter3_4').empty().append($('<option/>', { 
                 value: selectedTeamCvalue,
                 text : selectedTeamCtext 
             }));
+                $('#Wquarter3_4').append($('<option/>', { 
+                value: selectedTeamDvalue,
+                text : selectedTeamDtext 
+            })); 
+            }
 
         });
 
         $("select.WRound1G2H").change(function(){
+
+            var selectedTeamCvalue = $(".WRound1E2F option:selected").val();
+            var selectedTeamCtext = $(".WRound1E2F option:selected").text();
+
             var selectedTeamDvalue = $(".WRound1G2H option:selected").val();
             var selectedTeamDtext = $(".WRound1G2H option:selected").text();
 
-            $('select.Wquarter3_4').append($('<option/>', { 
+            if (($('#Wquarter3_4 option').length) < 2) {
+
+                $('select.Wquarter3_4').append($('<option/>', { 
+                value: selectedTeamDvalue,
+                text : selectedTeamDtext 
+            }));    
+            } else { 
+                $('#Wquarter3_4').empty().append($('<option/>', { 
                 value: selectedTeamDvalue,
                 text : selectedTeamDtext 
             }));
+                $('#Wquarter3_4').append($('<option/>', { 
+                value: selectedTeamCvalue,
+                text : selectedTeamCtext 
+            })); 
+            }
 
         });
 
+
+        // -----------------------------
+
         $("select.WRound1B2A").change(function(){
+
             var selectedTeamEvalue = $(".WRound1B2A option:selected").val();
             var selectedTeamEtext = $(".WRound1B2A option:selected").text();
 
-            $('select.Wquarter5_6').append($('<option/>', { 
+            var selectedTeamFvalue = $(".WRound1D2C option:selected").val();
+            var selectedTeamFtext = $(".WRound1D2C option:selected").text();
+
+            if (($('#Wquarter5_6 option').length) < 2) {
+
+                $('select.Wquarter5_6').append($('<option/>', { 
+                value: selectedTeamEvalue,
+                text : selectedTeamEtext 
+            }));    
+            } else { 
+                $('#Wquarter5_6').empty().append($('<option/>', { 
                 value: selectedTeamEvalue,
                 text : selectedTeamEtext 
             }));
-            
+                $('#Wquarter5_6').append($('<option/>', { 
+                value: selectedTeamFvalue,
+                text : selectedTeamFtext 
+            })); 
+            }
+
         });
 
         $("select.WRound1D2C").change(function(){
+
+            var selectedTeamEvalue = $(".WRound1B2A option:selected").val();
+            var selectedTeamEtext = $(".WRound1B2A option:selected").text();
+
             var selectedTeamFvalue = $(".WRound1D2C option:selected").val();
             var selectedTeamFtext = $(".WRound1D2C option:selected").text();
+
+
             
-            $('select.Wquarter5_6').append($('<option/>', { 
+           if (($('#Wquarter5_6 option').length) < 2) {
+
+                $('select.Wquarter5_6').append($('<option/>', { 
+                value: selectedTeamFvalue,
+                text : selectedTeamFtext 
+            }));    
+            } else { 
+                $('#Wquarter5_6').empty().append($('<option/>', { 
                 value: selectedTeamFvalue,
                 text : selectedTeamFtext 
             }));
+                $('#Wquarter5_6').append($('<option/>', { 
+                value: selectedTeamEvalue,
+                text : selectedTeamEtext 
+            })); 
+            }
         });
+
+        //  -----------------------------
 
         $("select.WRound1F2E").change(function(){
+
             var selectedTeamGvalue = $(".WRound1F2E option:selected").val();
             var selectedTeamGtext = $(".WRound1F2E option:selected").text();
-            
-            $('select.Wquarter7_8').append($('<option/>', { 
-                value: selectedTeamGvalue,
-                text : selectedTeamGtext 
-            }));
-        });
 
-        $("select.WRound1H2G").change(function(){
             var selectedTeamHvalue = $(".WRound1H2G option:selected").val();
             var selectedTeamHtext = $(".WRound1H2G option:selected").text();
             
-            $('select.Wquarter7_8').append($('<option/>', { 
+            if (($('#Wquarter7_8 option').length) < 2) {
+
+                $('select.Wquarter7_8').append($('<option/>', { 
+                value: selectedTeamGvalue,
+                text : selectedTeamGtext 
+            }));    
+            } else { 
+                $('#Wquarter7_8').empty().append($('<option/>', { 
+                value: selectedTeamGvalue,
+                text : selectedTeamGtext 
+            }));
+                $('#Wquarter7_8').append($('<option/>', { 
+                value: selectedTeamHvalue,
+                text : selectedTeamHtext 
+            })); 
+            }
+
+        });
+
+        $("select.WRound1H2G").change(function(){
+
+            var selectedTeamGvalue = $(".WRound1F2E option:selected").val();
+            var selectedTeamGtext = $(".WRound1F2E option:selected").text();
+
+            var selectedTeamHvalue = $(".WRound1H2G option:selected").val();
+            var selectedTeamHtext = $(".WRound1H2G option:selected").text();
+            
+            if (($('#Wquarter7_8 option').length) < 2) {
+
+                $('select.Wquarter7_8').append($('<option/>', { 
+                value: selectedTeamHvalue,
+                text : selectedTeamHtext 
+            }));    
+            } else { 
+                $('#Wquarter7_8').empty().append($('<option/>', { 
                 value: selectedTeamHvalue,
                 text : selectedTeamHtext 
             }));
+                $('#Wquarter7_8').append($('<option/>', { 
+                value: selectedTeamGvalue,
+                text : selectedTeamGtext 
+            })); 
+            }
         });
+
+        //   ------------------------------
 
 
         // FINALS
@@ -5975,44 +6103,110 @@
         $("select.Wquarter1_2").change(function(){
             var selectedSemi1Value = $(".Wquarter1_2 option:selected").val();
             var selectedSemi1Text = $(".Wquarter1_2 option:selected").text();
-            
-            $('select.WSemi1_2').append($('<option/>', { 
-                value: selectedSemi1Value,
-                text : selectedSemi1Text 
-            }));
-        });
 
-        $("select.Wquarter3_4").change(function(){
             var selectedSemi2Value = $(".Wquarter3_4 option:selected").val();
             var selectedSemi2Text = $(".Wquarter3_4 option:selected").text();
             
-            $('select.WSemi1_2').append($('<option/>', { 
+            if (($('#WSemi1_2 option').length) < 2) {
+
+                $('select.WSemi1_2').append($('<option/>', { 
+                value: selectedSemi1Value,
+                text : selectedSemi1Text 
+            }));    
+            } else { 
+                $('#WSemi1_2').empty().append($('<option/>', { 
+                value: selectedSemi1Value,
+                text : selectedSemi1Text 
+            }));
+                $('#WSemi1_2').append($('<option/>', { 
+                value: selectedSemi2Value,
+                text : selectedSemi2Text 
+            })); 
+            }
+        });
+
+        $("select.Wquarter3_4").change(function(){
+
+            var selectedSemi1Value = $(".Wquarter1_2 option:selected").val();
+            var selectedSemi1Text = $(".Wquarter1_2 option:selected").text();
+
+            var selectedSemi2Value = $(".Wquarter3_4 option:selected").val();
+            var selectedSemi2Text = $(".Wquarter3_4 option:selected").text();
+            
+            if (($('#WSemi1_2 option').length) < 2) {
+
+                $('select.WSemi1_2').append($('<option/>', { 
+                value: selectedSemi2Value,
+                text : selectedSemi2Text 
+            }));    
+            } else { 
+                $('#WSemi1_2').empty().append($('<option/>', { 
                 value: selectedSemi2Value,
                 text : selectedSemi2Text 
             }));
+                $('#WSemi1_2').append($('<option/>', { 
+                value: selectedSemi1Value,
+                text : selectedSemi1Text 
+            })); 
+            }
         });
+
+        //  ---------------------------------
 
 
         $("select.Wquarter5_6").change(function(){
             var selectedSemi3Value = $(".Wquarter5_6 option:selected").val();
             var selectedSemi3Text = $(".Wquarter5_6 option:selected").text();
+
+            var selectedSemi4Value = $(".Wquarter7_8 option:selected").val();
+            var selectedSemi4Text = $(".Wquarter7_8 option:selected").text();
             
-            $('select.WSemi3_4').append($('<option/>', { 
+            if (($('#WSemi3_4 option').length) < 2) {
+
+                $('select.WSemi3_4').append($('<option/>', { 
+                value: selectedSemi3Value,
+                text : selectedSemi3Text 
+            }));    
+            } else { 
+                $('#WSemi3_4').empty().append($('<option/>', { 
                 value: selectedSemi3Value,
                 text : selectedSemi3Text 
             }));
+                $('#WSemi3_4').append($('<option/>', { 
+                value: selectedSemi4Value,
+                text : selectedSemi4Text 
+            })); 
+            }
         });
 
 
         $("select.Wquarter7_8").change(function(){
+            var selectedSemi3Value = $(".Wquarter5_6 option:selected").val();
+            var selectedSemi3Text = $(".Wquarter5_6 option:selected").text();
+
             var selectedSemi4Value = $(".Wquarter7_8 option:selected").val();
             var selectedSemi4Text = $(".Wquarter7_8 option:selected").text();
             
-            $('select.WSemi3_4').append($('<option/>', { 
+            if (($('#WSemi3_4 option').length) < 2) {
+
+                $('select.WSemi3_4').append($('<option/>', { 
+                value: selectedSemi4Value,
+                text : selectedSemi4Text 
+            }));    
+            } else { 
+                $('#WSemi3_4').empty().append($('<option/>', { 
                 value: selectedSemi4Value,
                 text : selectedSemi4Text 
             }));
+                $('#WSemi3_4').append($('<option/>', { 
+                value: selectedSemi3Value,
+                text : selectedSemi3Text 
+            })); 
+            }
+            
         });
+
+        // ------------------------------------
         
         
 
@@ -6022,24 +6216,58 @@
         
 
         $("select.WSemi1_2").change(function(){
-            var selectedSemi4Value = $(".WSemi1_2 option:selected").val();
-            var selectedSemi4Text = $(".WSemi1_2 option:selected").text();
+            var selectedSemi5Value = $(".WSemi1_2 option:selected").val();
+            var selectedSemi5Text = $(".WSemi1_2 option:selected").text();
+
+            var selectedSemi6Value = $(".WSemi3_4 option:selected").val();
+            var selectedSemi6Text = $(".WSemi3_4 option:selected").text();
             
-            $('select.Winner1').append($('<option/>', { 
-                value: selectedSemi4Value,
-                text : selectedSemi4Text 
+            if (($('#Winner1 option').length) < 2) {
+
+                $('select.Winner1').append($('<option/>', { 
+                value: selectedSemi5Value,
+                text : selectedSemi5Text 
+            }));    
+            } else { 
+                $('#Winner1').empty().append($('<option/>', { 
+                value: selectedSemi5Value,
+                text : selectedSemi5Text 
             }));
+                $('#Winner1').append($('<option/>', { 
+                value: selectedSemi6Value,
+                text : selectedSemi6Text 
+            })); 
+            }
         });
 
         $("select.WSemi3_4").change(function(){
-            var selectedSemi4Value = $(".WSemi3_4 option:selected").val();
-            var selectedSemi4Text = $(".WSemi3_4 option:selected").text();
+
+            var selectedSemi5Value = $(".WSemi1_2 option:selected").val();
+            var selectedSemi5Text = $(".WSemi1_2 option:selected").text();
             
-            $('select.Winner1').append($('<option/>', { 
-                value: selectedSemi4Value,
-                text : selectedSemi4Text 
+            var selectedSemi6Value = $(".WSemi3_4 option:selected").val();
+            var selectedSemi6Text = $(".WSemi3_4 option:selected").text();
+            
+            if (($('#Winner1 option').length) < 2) {
+
+                $('select.Winner1').append($('<option/>', { 
+                value: selectedSemi6Value,
+                text : selectedSemi6Text 
+            }));    
+            } else { 
+                $('#Winner1').empty().append($('<option/>', { 
+                value: selectedSemi6Value,
+                text : selectedSemi6Text 
             }));
+                $('#Winner1').append($('<option/>', { 
+                value: selectedSemi5Value,
+                text : selectedSemi5Text 
+            })); 
+            }
         });
+
+
+        //  -----------------------------
 
 
         var postURLA = "<?php echo url('/storea'); ?>";
@@ -6348,6 +6576,11 @@
         });
 
 
+        function RefreshTable() {
+              $("#grupoRoun").load("{{route('picks.show', $poll->iduser_poll)}} #grupoRoun");
+     }
+
+
 
         $('#submitgrouph').click(function(){
 
@@ -6361,11 +6594,12 @@
                         printErrorMsg(data.error);
                     }else{
                         toastr.success('Saved');
-                        location.reload();
                         $('#idgrupoh').removeClass( "active show" );
                         $('#idgrupoRoun').addClass( "active show" );
                         $('#grupoh').removeClass( "active show" );
                         $('#grupoRoun').addClass( "active show" );
+                        RefreshTable();
+                        
                     }
                 }  
             }); 
@@ -6603,6 +6837,9 @@
 
 
 <script>
+
+
+
     $(document).ready( function () {
 
         match_games();
