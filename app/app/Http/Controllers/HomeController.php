@@ -20,6 +20,14 @@ class HomeController extends Controller
     }
 
 
+    public function pollManagement(){
+
+        $allpolls = PollsModel::all();
+
+        return view('admin.poll_management')->with('allpolls', $allpolls);
+
+    }
+
 
     public function index()
     {
@@ -80,20 +88,4 @@ class HomeController extends Controller
         
     }
 
-    // protected function validator(array $data)
-    // {   
-    //     return Validator::make($data, [
-    //         'poll_name' => 'required|unique:user_poll|string|max:255'
-    //     ]);
-    // }
-
-   
-    // protected function create(array $data)
-    // {
-    //     return PollsModel::create([
-    //         'id_User' => auth()->user()->id,
-    //         'poll_name' =>$data['poll_name'],
-    //         'status' => 'Pending Activation',
-    //     ]);
-    // }
 }

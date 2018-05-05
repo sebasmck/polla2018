@@ -50,7 +50,10 @@
                             </li>
                             <li class="is-active">
                                 <a href="{{route('assign')}}">User Management</a>
-                              </li>
+                            </li>
+                            <li>
+                              <a href="{{ route('pollmanagement') }}"> Pool Management</a>
+                            </li>
                           </ul>
                         </nav></div>
                       </div>

@@ -21,7 +21,6 @@
                           </div>
                           <div class="column is-narrow">
                             <div id="carboncontainer">
-                                <p style="font-size:400%;"> {{$user->name}} </p> 
                             </div>
                   
                           </div>
@@ -36,10 +35,10 @@
                             <li>
                               <a href="{{route('admin')}}">Pending Approvals</a>
                             </li>
-                            <li class="is-active">
+                            <li >
                                 <a href="{{route('assign')}}">User Management</a>
                             </li>
-                            <li>
+                            <li class="is-active">
                               <a href="{{ route('pollmanagement') }}">Pool Management</a>
                             </li>
                           </ul>
@@ -61,7 +60,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            @foreach($polls as $poll)
+                            @foreach($allpolls as $poll)
                                 <tr>
                                     <td>{{$poll->poll_name}}</td>
                                     <td>{{$poll->status}}</td>

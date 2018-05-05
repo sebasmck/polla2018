@@ -19,6 +19,9 @@ Route::get('rules', 'HomeController@rules')->name('rules');
 Route::group(['middleware' => ['auth']], function() {
 
 // Polls
+
+Route::get('/poolmanagement', 'HomeController@pollManagement')->name('pollmanagement');
+
 Route::post('/pollregistration', 'HomeController@pollregistration')->name('pollregistration');
 
 Route::get('admin', 'HomeController@indexAdmin')->name('admin');
