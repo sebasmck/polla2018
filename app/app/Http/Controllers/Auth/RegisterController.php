@@ -50,9 +50,6 @@ class RegisterController extends Controller
                       'cellphone' => $request->cellphone,
                       'referredby' => $request->referredby);
 
-        Emails::email_registration_user($user->email, $data);
-        Emails::email_registration_admin($data);
-        // $this->guard()->login($user);
 
         $polls = new PollsModel;
         $polls->id_User = $user->id;
@@ -61,6 +58,9 @@ class RegisterController extends Controller
         $polls->status = 'Pending';
 
         $polls->save();
+
+        Emails::email_registration_user($user->email, $data);
+        Emails::email_registration_admin($data);
         
         $notification = array(
             'message' => 'Please check your email', 

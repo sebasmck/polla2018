@@ -13,17 +13,18 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-8">
                                 <h4>{{ __('My Picks') }} </h4>
                             </div>
-                            <div class="col-md-8">
-                                {{-- <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary addbutton" id="myBtn"><span class="fa fa-plus">+</span></button> --}}
+                            <div class="col-md-4">
+                                <h4 class="nickname_pool">Pool Nickname: {{$poll->poll_name}} </h4>
                             </div>
                         </div>                        
                         
                     </div>
 
                     <div class="card-body">
+
                         <ul class="nav nav-tabs">
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#grupoa" id="idgrupoa">Group A</a>
@@ -3747,7 +3748,7 @@
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="button" name="submitgroupg" id="submitgroupg" class="btn btn-info btn-block" value="Save and go to Second Stage" />
+                                        <input type="button" name="submitgroupg" id="submitgroupg" class="btn btn-info btn-block" value="Save and go to Next Group" />
                                          {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
                                             {{ __('Save and go to Next Group') }} --}}
                                         </button>
@@ -4276,7 +4277,7 @@
                                         </button>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="button" name="submitgrouph" id="submitgrouph" class="btn btn-info btn-block" value="Save and go to Next Group" />
+                                        <input type="button" name="submitgrouph" id="submitgrouph" class="btn btn-info btn-block" value="Save and go to Second Stage" />
 
                                     </div>
                                 </div>

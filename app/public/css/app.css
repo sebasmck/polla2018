@@ -9327,6 +9327,10 @@ a.text-dark:hover {
 	font-weight: 700;
 }
 
+.nickname_pool{
+    text-align: right;
+}
+
 @media (max-width:768px) {
 	.title_polla{
 		font-size: 26px; 
@@ -9355,6 +9359,10 @@ a.text-dark:hover {
     .table_picks{
         border: solid 0.2px #cccccc40;
         font-size: 10px!important;
+    }
+
+    .nickname_pool{
+        text-align: left;
     }
 }
 

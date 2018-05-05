@@ -47,7 +47,7 @@ class LoginController extends Controller
     {
         $this->validate($request, [
             $this->username() => 'required|string',
-            'password' => 'required|string'
+            'password' => 'required|string',
             'is_aproved' => 'boolean',
         ]);
     }
