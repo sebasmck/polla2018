@@ -5782,12 +5782,15 @@
             </div>
         </div>
         <br>
+        <br>
+        <br>
+        <br>
 
         
 
 
         {{-- MENU --}}
-        <div class="row justify-content-center">
+        <div style="margin-top: 25px;" class="row justify-content-center">
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-header"><h4>{{ __('Menu') }}</h4></div>
@@ -5864,7 +5867,16 @@
 
     $(document).ready(function(){
 
-        
+        function RefreshTable() {
+            $("#gruporo").load("{{route('picks.show', $poll->iduser_poll)}} #gruporo");
+            // setValues();
+        }
+
+        // function setValues(){
+
+        // }
+
+
 
         // QUARTER FINALS
 
@@ -6302,6 +6314,7 @@
                         $('#idgrupob').addClass( "active show" );
                         $('#grupoa').removeClass( "active show" );
                         $('#grupob').addClass( "active show" );
+                        RefreshTable();
                     }
                 }  
             }); 
@@ -6342,6 +6355,7 @@
                         $('#idgrupoc').addClass( "active show" );
                         $('#grupob').removeClass( "active show" );
                         $('#grupoc').addClass( "active show" );
+                        RefreshTable();
                     }
                 }  
             }); 
@@ -6383,6 +6397,7 @@
                         $('#idgrupod').addClass( "active show" );
                         $('#grupoc').removeClass( "active show" );
                         $('#grupod').addClass( "active show" );
+                        RefreshTable();
                     }
                 }  
             }); 
@@ -6425,6 +6440,7 @@
                         $('#idgrupoe').addClass( "active show" );
                         $('#grupod').removeClass( "active show" );
                         $('#grupoe').addClass( "active show" );
+                        RefreshTable();
                     }
                 }  
             }); 
@@ -6467,6 +6483,7 @@
                         $('#idgrupof').addClass( "active show" );
                         $('#grupoe').removeClass( "active show" );
                         $('#grupof').addClass( "active show" );
+                        RefreshTable();
                     }
                 }  
             }); 
@@ -6509,6 +6526,7 @@
                         $('#idgrupog').addClass( "active show" );
                         $('#grupof').removeClass( "active show" );
                         $('#grupog').addClass( "active show" );
+                        RefreshTable();
                     }
                 }  
             }); 
@@ -6527,6 +6545,7 @@
                     }else{
                         toastr.success('Saved');
                         window.location='{{ route("home") }}';
+                        RefreshTable();
                     }
                 }  
             }); 
@@ -6551,6 +6570,7 @@
                         $('#idgrupoh').addClass( "active show" );
                         $('#grupog').removeClass( "active show" );
                         $('#grupoh').addClass( "active show" );
+                        RefreshTable();
                     }
                 }  
             }); 
@@ -6593,8 +6613,7 @@
                         $('#idgrupoRoun').addClass( "active show" );
                         $('#grupoh').removeClass( "active show" );
                         $('#grupoRoun').addClass( "active show" );
-                        location.reload();
-                        // RefreshTable();
+                        RefreshTable();
                         
                     }
                 }  

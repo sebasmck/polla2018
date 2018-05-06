@@ -31,7 +31,7 @@
                 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
-    <script>
+    {{-- <script>
         $(document).ready(function(){
 
             $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
@@ -48,7 +48,7 @@
            }
 
        });
-    </script>
+    </script> --}}
 
 </head>
 <body>
