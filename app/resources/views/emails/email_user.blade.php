@@ -100,7 +100,11 @@
                   <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
                     <tr>
                       <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
-                        <h1 style="font-size: 60px; text-align: center; color: #004782; font-weight: 700; font-family:Raleway, sans-serif;">Polla World Cup</h1>
+                        <div style="width: 100%; text-align: center;">
+                          <img src="{{ asset('img/logo.jpg') }}" style="text-align: center; height: 100px;">
+                        </div>
+                        
+                        {{-- <h1 style="font-size: 60px; text-align: center; color: #004782; font-weight: 700; font-family:Raleway, sans-serif;">Polla World Cup</h1> --}}
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Hi {!!$name!!} {!!$lastname!!},</p>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Thank you for registering in <a href="http://www.pollaworldcup.com">pollaworldcup.com</a>! On behalf of the team at <a href="http://www.pollaworldcup.com">pollaworldcup.com</a>, we are excited to have you in our Russia 2018 World Cup Pool. Please allow up to 24 hours for your registration to be accepted. Once accepted, you can log into the website and choose your scores and qualified teams for the World Cup 2018.</p>
 

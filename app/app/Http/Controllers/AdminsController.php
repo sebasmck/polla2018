@@ -140,7 +140,8 @@ class AdminsController extends Controller
 
         $data = array('name' => $user->name,
                       'lastname' => $user->lastname,
-                      'email' => $user->email);
+                      'email' => $user->email,
+                      'code' => $user->code);
 
         Emails::email_registration_user_approved($user->email, $data);
 

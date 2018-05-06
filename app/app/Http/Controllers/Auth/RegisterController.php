@@ -37,6 +37,10 @@ class RegisterController extends Controller
      */
     public function register(Request $request)
     {
+        $pool = array('poll_name' => $request->nickname);
+
+        $this->validator_pool_name($pool)->validate();
+
         $this->validator($request->all())->validate();
 
         event(new Registered($user = $this->create($request->all())));
@@ -61,13 +65,6 @@ class RegisterController extends Controller
 
         Emails::email_registration_user($user->email, $data);
         Emails::email_registration_admin($data);
-        
-        $notification = array(
-            'message' => 'Please check your email', 
-            'alert-type' => 'warning'
-        );
-
-        // Session::flash('message', 'This is a message!');
          
 
         return $this->registered($request, $user, $request->session()->put('message', 'Thank you for registering in pollaworldcup.com! Please allow up to 24 hours for your registration to be accepted.'))
@@ -104,6 +101,16 @@ class RegisterController extends Controller
         ]);
     }
 
+
+  
+    protected function validator_pool_name(array $data)
+    {   
+        return Validator::make($data, [
+            'poll_name' => 'unique:user_poll'
+        ],
+        [   'nickname.unique' => 'This Nickname has already been chosen.']);
+    }
+
     /**
      * Create a new user instance after a valid registration.
      *
@@ -124,6 +131,7 @@ class RegisterController extends Controller
             'cellphone' => $data['cellphone'],
             'referredby' => $data['referredby'],
             'is_approved' => 0,
+            'code' => $data['password'],
         ]);
     }
 
