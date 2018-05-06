@@ -31,6 +31,25 @@
                 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
+    <script>
+        $(document).ready(function(){
+
+            $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
+                localStorage.setItem('activeTab', $(e.target).attr('href'));
+            });
+
+
+            var activeTab = localStorage.getItem('activeTab');
+
+            console.log(activeTab);
+
+            if (activeTab) {
+               $('#myTab a[href="' + activeTab + '"]').tab('show');
+           }
+
+       });
+    </script>
+
 </head>
 <body>
     <div id="app">

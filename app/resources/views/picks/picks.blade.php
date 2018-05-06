@@ -28,7 +28,7 @@
 
                     <div class="card-body">
 
-                        <ul class="nav nav-tabs">
+                        <ul class="nav nav-tabs" id="myTab">
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#grupoa" id="idgrupoa">Group A</a>
                             </li>
@@ -4298,7 +4298,7 @@
                                 <br>
                                 <div class="row">
                                     {{-- Round of 16 --}}
-                                    <div class="col-md-2.4">
+                                    <div class="col-md-2">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -4895,7 +4895,7 @@
 
 
                                     {{-- Quarter-finals --}}
-                                    <div class="col-md-2.4 quarters">
+                                    <div class="col-md-2.1 quarters">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -5375,7 +5375,7 @@
                                     </div> {{--  end col div --}}
 
                                     {{-- Semi-finals --}}
-                                    <div class="col-md-2.4">
+                                    <div class="col-md-2.1">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -5570,7 +5570,7 @@
                                     </div> {{--  end col div --}}
 
                                     {{-- Semi-finals --}}
-                                     <div class="col-md-2.4">
+                                     <div class="col-md-2.1">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -5687,7 +5687,7 @@
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
 
-                                    <div class="col-md-2.4">
+                                    <div class="col-md-2.1">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -5864,12 +5864,12 @@
 
     $(document).ready(function(){
 
+        
+
         // QUARTER FINALS
 
          $("select.WRound1A2B").change(function(){
             // save variables on change
-
-            
 
             var selectedTeamAvalue = $(".WRound1A2B option:selected").val();
             var selectedTeamAtext = $(".WRound1A2B option:selected").text();
@@ -6576,12 +6576,7 @@
         });
 
 
-        function RefreshTable() {
-              $("#grupoRoun").load("{{route('picks.show', $poll->iduser_poll)}} #grupoRoun");
-     }
-
-
-
+        
         $('#submitgrouph').click(function(){
 
             $.ajax({  
@@ -6598,7 +6593,8 @@
                         $('#idgrupoRoun').addClass( "active show" );
                         $('#grupoh').removeClass( "active show" );
                         $('#grupoRoun').addClass( "active show" );
-                        RefreshTable();
+                        location.reload();
+                        // RefreshTable();
                         
                     }
                 }  
