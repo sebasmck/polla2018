@@ -5897,14 +5897,63 @@
 
         function reset(){
 
-            $('select.Wquarter1_2').empty().append("<option value=''> Pick a Team <option/>");
+            // $("#WRound1A2B").prepend("<option value='' selected='selected'>Pick a Team</option>");
+            // $("#WRound1A2B").val('');
+
+            // select quarters 
+
+            // 1
+            $("#WRound1A2B").find('option:eq(0)').prop('selected', true);
+            $(".iWRound1A2B").attr('src', '');
+            // 2
+            $("#WRound1C2D").find('option:eq(0)').prop('selected', true);
+            $(".iWRound1C2D").attr('src', '');
+            // 3
+            $("#WRound1E2F").find('option:eq(0)').prop('selected', true);
+            $(".iWRound1E2F").attr('src', '');
+            // 4
+            $("#WRound1G2H").find('option:eq(0)').prop('selected', true);
+            $(".iWRound1G2H").attr('src', '');
+            // 5
+            $("#WRound1B2A").find('option:eq(0)').prop('selected', true);
+            $(".iWRound1B2A").attr('src', '');
+            // 6
+            $("#WRound1D2C").find('option:eq(0)').prop('selected', true);
+            $(".iWRound1D2C").attr('src', '');
+            // 7
+            $("#WRound1F2E").find('option:eq(0)').prop('selected', true);
+            $(".iWRound1F2E").attr('src', '');
+            // 8
+            $("#WRound1H2G").find('option:eq(0)').prop('selected', true);
+            $(".iWRound1H2G").attr('src', '');
+
+
+            // Semi-finals
+            // 1
+            $('select.Wquarter1_2').find('option').not(':first').remove();
             $(".iWquarter1_2").attr('src', '');
-            $('select.Wquarter3_4').empty().append("<option value=''> Pick a Team <option/>");
+            // 2
+            $('select.Wquarter3_4').find('option').not(':first').remove();
             $(".iWquarter3_4").attr('src', '');
-            $('select.Wquarter5_6').empty().append("<option value=''> Pick a Team <option/>");
+            // 3
+            $('select.Wquarter5_6').find('option').not(':first').remove();
             $(".iWquarter5_6").attr('src', '');
-            $('select.Wquarter7_8').empty().append("<option value=''> Pick a Team <option/>");
+            // 4
+            $('select.Wquarter7_8').find('option').not(':first').remove();
             $(".iWquarter7_8").attr('src', '');
+
+            // Final
+            // 1
+            $('select.WSemi1_2').find('option').not(':first').remove();
+            $(".iWSemi1_2").attr('src', '');
+            // 2
+            $('select.WSemi3_4').find('option').not(':first').remove();
+            $(".iWSemi3_4").attr('src', '');
+
+            // Champion
+            // 1
+            $('select.Winner1').find('option').not(':first').remove();
+            $(".iWinner1").attr('src', '');
 
         }
 
