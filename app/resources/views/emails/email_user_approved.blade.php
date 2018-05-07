@@ -101,7 +101,7 @@
                     <tr>
                       <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
                         <div style="width: 100%; text-align: center;">
-                          <img src="{{ asset('img/logo.jpg') }}" style="text-align: center; height: 100px;">
+                          <img src="{{ asset('img/logo.png') }}" style="text-align: center; height: 100px;">
                         </div>
                        {{--  <h1 style="font-size: 60px; text-align: center; color: #004782; font-weight: 700; font-family:Raleway, sans-serif;">Polla World Cup</h1> --}}
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Hi {!!$name!!} {!!$lastname!!},</p>

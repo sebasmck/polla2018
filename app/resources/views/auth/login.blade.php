@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12 title_polla">
-            <img src="{{ asset('img/logo.jpg') }}" style="height: 120px;">
+            <img src="{{ asset('img/logo.png') }}" style="height: 205px;">
         </div>
     </div>
     <div class="row justify-content-center">

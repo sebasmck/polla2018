@@ -29,4 +29,12 @@ class Emails
                      ->subject('PollaWorldCup.com Pool Accepted');
         });
     }
+
+    public static function email_forgot_password($email, $data){
+        Mail::send('emails.email_user_forgot',  $data, function($message) use ($email){
+            $message->from('contact@pollaworldcup.com', 'PollaWorldCup.com forgot password');
+            $message->to($email)
+                     ->subject('PollaWorldCup.com Pool Accepted');
+        });
+    }
 }

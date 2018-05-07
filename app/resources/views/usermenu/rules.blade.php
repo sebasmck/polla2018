@@ -2,6 +2,11 @@
 
 @section('content')
 <div class="container">
+    <div class="row">
+        <div class="col-md-12 title_polla">
+            <img src="{{ asset('img/logo.png') }}" style="height: 150px;">
+        </div>
+    </div>
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="card">
