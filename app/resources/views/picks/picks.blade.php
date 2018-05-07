@@ -4,12 +4,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 title_polla">
-                Polla World Cup 2018
+                {{-- Polla World Cup 2018 --}}
+
             </div>
         </div>
 
         <div class="row justify-content-center">
-            <div class="col-md-12">
+            <div class="col-lg-12">
                 <div class="card">
                     <div class="card-header">
                         <div class="row">
@@ -22,6 +23,8 @@
                         </div>                        
                         
                     </div>
+
+                    
 
 
                     <div class="card-body maincontainers">
@@ -64,6 +67,7 @@
                             {{-- GRUPO A --}}
                             <div class="tab-pane active container" id="grupoa">
                                 <br>
+                                <p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p>
                                 <div class="row">
                                     <div class="col-12 col-md-7">
                                         <div class="card">
@@ -87,7 +91,7 @@
 
                                                             <input type="hidden" name="id_fase" value="1">
 
-                                                            <input type="hidden" name="id_poll" value="{{$poll->iduser_poll}}"> 
+                                                            <input type="hidden" name="id_poll" value="{{$poll->iduser_poll}}">
 
                                                             <table id="myTable" class="display table_picks">
                                                                     <thead>
@@ -599,6 +603,7 @@
 
                             <div class="tab-pane container" id="grupob">
                                 <br>
+                                <p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p>
                                 <div class="row">
                                     <div class="col-md-7">
                                         <div class="card">
@@ -1126,6 +1131,7 @@
                             {{-- GRUPO C --}}
                             <div class="tab-pane container" id="grupoc"> 
                                 <br>
+                                <p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p>
                                 <div class="row">
                                     <div class="col-md-7">
                                         <div class="card">
@@ -1653,6 +1659,7 @@
                             {{-- GRUPO D --}}
                             <div class="tab-pane container" id="grupod"> 
                                 <br>
+                                <p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p>
                                 <div class="row">
                                     <div class="col-md-7">
                                         <div class="card">
@@ -2181,6 +2188,7 @@
                             {{-- GRUPO E --}}
                             <div class="tab-pane container" id="grupoe">
                                 <br>
+                                <p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p>
                                 <div class="row">
                                     <div class="col-md-7">
                                         <div class="card">
@@ -2708,6 +2716,7 @@
                             {{-- GRUPO F --}}
                             <div class="tab-pane container" id="grupof">
                                 <br>
+                                <p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p>
                                 <div class="row">
                                     <div class="col-md-7">
                                         <div class="card">
@@ -3235,6 +3244,7 @@
                             {{-- GRUPO G --}}
                             <div class="tab-pane container" id="grupog">
                                 <br>
+                                <p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p>
                                 <div class="row">
                                     <div class="col-md-7">
                                         <div class="card">
@@ -3764,6 +3774,7 @@
                             {{-- GRUPO H --}}
                             <div class="tab-pane container" id="grupoh">
                                 <br>
+                                <p>Make sure to click on “Save and go to Second Stage” or “Save and go to Home Page” after you have made your Score and Winners selections.</p>
                                 <div class="row">
                                     <div class="col-md-7">
                                         <div class="card">
@@ -4307,7 +4318,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="card-body flagsbody">
+                                            <div class="card-body flagsbody" style="text-align: left;">
                                                 {{-- 1A --}}
                                                 <div class="row">
                                                     <div class="col-md-12">
@@ -4924,9 +4935,9 @@
                                                                        <div class="row">
                                                                             <div class="col-md-12">
                                                                                 @if (isset($ss->quarter1->team_name))
-                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter1->team_name)).'.png'}}">
+                                                                                    <img  class="img_flags iWRound1A2B" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter1->team_name)).'.png'}}">
                                                                                 @else
-                                                                                    <img class="img_flags" src="">
+                                                                                    <img  class="img_flags iWRound1A2B" src="">
                                                                                 @endif
                                                                                 
                                                                             </div>
@@ -4982,9 +4993,9 @@
                                                                         <div class="row">
                                                                             <div class="col-md-12">
                                                                                 @if (isset($ss->quarter2->team_name))
-                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter2->team_name)).'.png'}}">
+                                                                                    <img class="img_flags iWRound1C2D" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter2->team_name)).'.png'}}">
                                                                                 @else
-                                                                                    <img class="img_flags" src="">
+                                                                                    <img class="img_flags iWRound1C2D" src="">
                                                                                 @endif
                                                                                 
                                                                             </div>
@@ -5040,9 +5051,9 @@
                                                                         <div class="row">
                                                                             <div class="col-md-12">
                                                                                 @if (isset($ss->quarter3->team_name))
-                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter3->team_name)).'.png'}}">
+                                                                                    <img class="img_flags iWRound1E2F" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter3->team_name)).'.png'}}">
                                                                                 @else
-                                                                                    <img class="img_flags" src="">
+                                                                                    <img class="img_flags iWRound1E2F" src="">
                                                                                 @endif
                                                                                 
                                                                             </div>
@@ -5099,9 +5110,9 @@
                                                                         <div class="row">
                                                                             <div class="col-md-12">
                                                                                 @if (isset($ss->quarter4->team_name))
-                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter4->team_name)).'.png'}}">
+                                                                                    <img class="img_flags iWRound1G2H" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter4->team_name)).'.png'}}">
                                                                                 @else
-                                                                                    <img class="img_flags" src="">
+                                                                                    <img class="img_flags iWRound1G2H" src="">
                                                                                 @endif
                                                                             </div>
                                                                         </div>
@@ -5157,9 +5168,9 @@
                                                                         <div class="row">
                                                                             <div class="col-md-12">
                                                                                 @if (isset($ss->quarter5->team_name))
-                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter5->team_name)).'.png'}}">
+                                                                                    <img class="img_flags iWRound1B2A" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter5->team_name)).'.png'}}">
                                                                                 @else
-                                                                                    <img class="img_flags" src="">
+                                                                                    <img class="img_flags iWRound1B2A" src="">
                                                                                 @endif
                                                                             </div>
                                                                         </div>
@@ -5215,9 +5226,9 @@
                                                                         <div class="row">
                                                                             <div class="col-md-12">
                                                                                 @if (isset($ss->quarter6->team_name))
-                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter6->team_name)).'.png'}}">
+                                                                                    <img class="img_flags iWRound1D2C" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter6->team_name)).'.png'}}">
                                                                                 @else
-                                                                                    <img class="img_flags" src="">
+                                                                                    <img class="img_flags iWRound1D2C" src="">
                                                                                 @endif
                                                                             </div>
                                                                         </div>
@@ -5272,9 +5283,9 @@
                                                                         <div class="row">
                                                                             <div class="col-md-12">
                                                                                 @if (isset($ss->quarter7->team_name))
-                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter7->team_name)).'.png'}}">
+                                                                                    <img class="img_flags iWRound1F2E" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter7->team_name)).'.png'}}">
                                                                                 @else
-                                                                                    <img class="img_flags" src="">
+                                                                                    <img class="img_flags iWRound1F2E" src="">
                                                                                 @endif
                                                                             </div>
                                                                         </div>
@@ -5329,9 +5340,9 @@
                                                                         <div class="row">
                                                                             <div class="col-md-12">
                                                                                 @if (isset($ss->quarter8->team_name))
-                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter8->team_name)).'.png'}}">
+                                                                                    <img class="img_flags iWRound1H2G" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter8->team_name)).'.png'}}">
                                                                                 @else
-                                                                                    <img class="img_flags" src="">
+                                                                                    <img class="img_flags iWRound1H2G" src="">
                                                                                 @endif
                                                                             </div>
                                                                         </div>
@@ -5401,9 +5412,9 @@
                                                                                 <div class="col-md-12">
 
                                                                                     @if (isset($ss->semi1->team_name))
-                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->semi1->team_name)).'.png'}}">
+                                                                                    <img class="img_flags iWquarter1_2" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->semi1->team_name)).'.png'}}">
                                                                                     @else
-                                                                                        <img class="img_flags" src="">
+                                                                                        <img class="img_flags iWquarter1_2" src="">
                                                                                     @endif
 
                                                                                 </div>
@@ -5446,9 +5457,9 @@
                                                                                 <div class="col-md-12">
 
                                                                                     @if (isset($ss->semi1->team_name))
-                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->semi2->team_name)).'.png'}}">
+                                                                                    <img class="img_flags iWquarter3_4" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->semi2->team_name)).'.png'}}">
                                                                                     @else
-                                                                                        <img class="img_flags" src="">
+                                                                                        <img class="img_flags iWquarter3_4" src="">
                                                                                     @endif
 
                                                                                     
@@ -5489,9 +5500,9 @@
                                                                                 <div class="row">
                                                                                 <div class="col-md-12">
                                                                                     @if (isset($ss->semi3->team_name))
-                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->semi3->team_name)).'.png'}}">
+                                                                                    <img class="img_flags iWquarter5_6" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->semi3->team_name)).'.png'}}">
                                                                                     @else
-                                                                                        <img class="img_flags" src="">
+                                                                                        <img class="img_flags iWquarter5_6" src="">
                                                                                     @endif
                                                                                 </div>
                                                                             </div>
@@ -5532,9 +5543,9 @@
                                                                                 <div class="row">
                                                                                 <div class="col-md-12">
                                                                                     @if (isset($ss->semi4->team_name))
-                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->semi4->team_name)).'.png'}}">
+                                                                                    <img class="img_flags iWquarter7_8" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->semi4->team_name)).'.png'}}">
                                                                                     @else
-                                                                                        <img class="img_flags" src="">
+                                                                                        <img class="img_flags iWquarter7_8" src="">
                                                                                     @endif
                                                                                 </div>
                                                                             </div>
@@ -5602,9 +5613,9 @@
                                                                                 <div class="col-md-12">
 
                                                                                     @if (isset($ss->final1->team_name))
-                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->final1->team_name)).'.png'}}">
+                                                                                    <img class="img_flags iWSemi1_2" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->final1->team_name)).'.png'}}">
                                                                                     @else
-                                                                                        <img class="img_flags" src="">
+                                                                                        <img class="img_flags iWSemi1_2" src="">
                                                                                     @endif
 
                                                                                 </div>
@@ -5648,9 +5659,9 @@
                                                                                 <div class="col-md-12">
 
                                                                                     @if (isset($ss->final2->team_name))
-                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->final2->team_name)).'.png'}}">
+                                                                                    <img class="img_flags iWSemi3_4" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->final2->team_name)).'.png'}}">
                                                                                     @else
-                                                                                        <img class="img_flags" src="">
+                                                                                        <img class="img_flags iWSemi3_4" src="">
                                                                                     @endif
 
                                                                                 </div>
@@ -5713,9 +5724,9 @@
                                                                                 <div class="row">
                                                                                 <div class="col-md-12">
                                                                                     @if (isset($ss->winner1->team_name))
-                                                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->winner1->team_name)).'.png'}}">
+                                                                                    <img class="img_flags iWinner1" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->winner1->team_name)).'.png'}}">
                                                                                     @else
-                                                                                        <img class="img_flags" src="">
+                                                                                        <img class="img_flags iWinner1" src="">
                                                                                     @endif
                                                                                 </div>
                                                                             </div>
@@ -5833,6 +5844,9 @@
             </div>
         </div>
 
+
+        <input type="hidden" id="imgroute" value="{{asset('img/flags')}}">
+
      </div>
 @endsection
 
@@ -5867,35 +5881,41 @@
 
     $(document).ready(function(){
 
+        var url = $("#imgroute").val();
+
         function RefreshTable() {
-            $("#gruporo").load("{{route('picks.show', $poll->iduser_poll)}} #gruporo");
+            $(".flagsbody").load("{{route('picks.show', $poll->iduser_poll)}} .flagsbody");
             // setValues();
         }
 
         // function setValues(){
-
+        //     var selectedTeamAvalue = $(".WRound1A2B option:selected").val();
+        //     var selectedTeamAtext = $(".WRound1A2B option:selected").text();
         // }
-
-
 
         // QUARTER FINALS
 
-         $("select.WRound1A2B").change(function(){
+         $("select.WRound1A2B").on("input",function(){
             // save variables on change
 
             var selectedTeamAvalue = $(".WRound1A2B option:selected").val();
             var selectedTeamAtext = $(".WRound1A2B option:selected").text();
-
             var selectedTeamBvalue = $(".WRound1C2D option:selected").val();
             var selectedTeamBtext = $(".WRound1C2D option:selected").text();
 
-            if (($('#Wquarter1_2 option').length) < 2) {
 
+
+            $(".iWRound1A2B").attr('src', url + '/' + selectedTeamAtext.replace(/ /g,"_").toLowerCase() + '.png');
+
+            if (($('#Wquarter1_2 option').length) < 3) {
+                
                 $('select.Wquarter1_2').append($('<option/>', { 
                 value: selectedTeamAvalue,
                 text : selectedTeamAtext 
             }));    
             } else { 
+
+
                 $('#Wquarter1_2').empty().append($('<option/>', { 
                 value: selectedTeamAvalue,
                 text : selectedTeamAtext 
@@ -5909,16 +5929,20 @@
 
         });
 
-         $("select.WRound1C2D").change(function(){
+         $("select.WRound1C2D").on("input",function(){
 
             var selectedTeamAvalue = $(".WRound1A2B option:selected").val();
             var selectedTeamAtext = $(".WRound1A2B option:selected").text();
 
             var selectedTeamBvalue = $(".WRound1C2D option:selected").val();
             var selectedTeamBtext = $(".WRound1C2D option:selected").text();
+
+            $("select.Wquarter1_2").val("option:first");
+
+            $(".iWRound1C2D").attr('src', url + '/' + selectedTeamBtext.replace(/ /g,"_").toLowerCase() + '.png');
             
 
-            if (($('#Wquarter1_2 option').length) < 2) {
+            if (($('#Wquarter1_2 option').length) < 3) {
 
                 $('select.Wquarter1_2').append($('<option/>', { 
                 value: selectedTeamBvalue,
@@ -5940,7 +5964,7 @@
 
 
 
-        $("select.WRound1E2F").change(function(){
+        $("select.WRound1E2F").on("input",function(){
 
             var selectedTeamCvalue = $(".WRound1E2F option:selected").val();
             var selectedTeamCtext = $(".WRound1E2F option:selected").text();
@@ -5948,7 +5972,11 @@
             var selectedTeamDvalue = $(".WRound1G2H option:selected").val();
             var selectedTeamDtext = $(".WRound1G2H option:selected").text();
 
-            if (($('#Wquarter3_4 option').length) < 2) {
+            $("select.Wquarter3_4").val("option:first");
+
+            $(".iWRound1E2F").attr('src', url + '/' + selectedTeamCtext.replace(/ /g,"_").toLowerCase() + '.png');
+
+            if (($('#Wquarter3_4 option').length) < 3) {
 
                 $('select.Wquarter3_4').append($('<option/>', { 
                 value: selectedTeamCvalue,
@@ -5967,7 +5995,7 @@
 
         });
 
-        $("select.WRound1G2H").change(function(){
+        $("select.WRound1G2H").on("input",function(){
 
             var selectedTeamCvalue = $(".WRound1E2F option:selected").val();
             var selectedTeamCtext = $(".WRound1E2F option:selected").text();
@@ -5975,7 +6003,11 @@
             var selectedTeamDvalue = $(".WRound1G2H option:selected").val();
             var selectedTeamDtext = $(".WRound1G2H option:selected").text();
 
-            if (($('#Wquarter3_4 option').length) < 2) {
+            $("select.iWRound1G2H").val("option:first");
+
+            $(".iWRound1G2H").attr('src', url + '/' + selectedTeamDtext.replace(/ /g,"_").toLowerCase() + '.png');
+
+            if (($('#Wquarter3_4 option').length) < 3) {
 
                 $('select.Wquarter3_4').append($('<option/>', { 
                 value: selectedTeamDvalue,
@@ -5997,7 +6029,7 @@
 
         // -----------------------------
 
-        $("select.WRound1B2A").change(function(){
+        $("select.WRound1B2A").on("input",function(){
 
             var selectedTeamEvalue = $(".WRound1B2A option:selected").val();
             var selectedTeamEtext = $(".WRound1B2A option:selected").text();
@@ -6005,7 +6037,11 @@
             var selectedTeamFvalue = $(".WRound1D2C option:selected").val();
             var selectedTeamFtext = $(".WRound1D2C option:selected").text();
 
-            if (($('#Wquarter5_6 option').length) < 2) {
+            $("select.Wquarter5_6").val("option:first");
+
+            $(".iWRound1B2A").attr('src', url + '/' + selectedTeamEtext.replace(/ /g,"_").toLowerCase() + '.png');
+
+            if (($('#Wquarter5_6 option').length) < 3) {
 
                 $('select.Wquarter5_6').append($('<option/>', { 
                 value: selectedTeamEvalue,
@@ -6024,7 +6060,7 @@
 
         });
 
-        $("select.WRound1D2C").change(function(){
+        $("select.WRound1D2C").on("input",function(){
 
             var selectedTeamEvalue = $(".WRound1B2A option:selected").val();
             var selectedTeamEtext = $(".WRound1B2A option:selected").text();
@@ -6033,8 +6069,9 @@
             var selectedTeamFtext = $(".WRound1D2C option:selected").text();
 
 
+            $(".iWRound1D2C").attr('src', url + '/' + selectedTeamFtext.replace(/ /g,"_").toLowerCase() + '.png');
             
-           if (($('#Wquarter5_6 option').length) < 2) {
+           if (($('#Wquarter5_6 option').length) < 3) {
 
                 $('select.Wquarter5_6').append($('<option/>', { 
                 value: selectedTeamFvalue,
@@ -6054,15 +6091,17 @@
 
         //  -----------------------------
 
-        $("select.WRound1F2E").change(function(){
+        $("select.WRound1F2E").on("input",function(){
 
             var selectedTeamGvalue = $(".WRound1F2E option:selected").val();
             var selectedTeamGtext = $(".WRound1F2E option:selected").text();
 
             var selectedTeamHvalue = $(".WRound1H2G option:selected").val();
             var selectedTeamHtext = $(".WRound1H2G option:selected").text();
+
+            $(".iWRound1F2E").attr('src', url + '/' + selectedTeamGtext.replace(/ /g,"_").toLowerCase() + '.png');
             
-            if (($('#Wquarter7_8 option').length) < 2) {
+            if (($('#Wquarter7_8 option').length) < 3) {
 
                 $('select.Wquarter7_8').append($('<option/>', { 
                 value: selectedTeamGvalue,
@@ -6081,15 +6120,17 @@
 
         });
 
-        $("select.WRound1H2G").change(function(){
+        $("select.WRound1H2G").on("input",function(){
 
             var selectedTeamGvalue = $(".WRound1F2E option:selected").val();
             var selectedTeamGtext = $(".WRound1F2E option:selected").text();
 
             var selectedTeamHvalue = $(".WRound1H2G option:selected").val();
             var selectedTeamHtext = $(".WRound1H2G option:selected").text();
+
+            $(".iWRound1H2G").attr('src', url + '/' + selectedTeamHtext.replace(/ /g,"_").toLowerCase() + '.png');
             
-            if (($('#Wquarter7_8 option').length) < 2) {
+            if (($('#Wquarter7_8 option').length) < 3) {
 
                 $('select.Wquarter7_8').append($('<option/>', { 
                 value: selectedTeamHvalue,
@@ -6112,14 +6153,16 @@
 
         // FINALS
 
-        $("select.Wquarter1_2").change(function(){
+        $("select.Wquarter1_2").on("input",function(){
             var selectedSemi1Value = $(".Wquarter1_2 option:selected").val();
             var selectedSemi1Text = $(".Wquarter1_2 option:selected").text();
 
             var selectedSemi2Value = $(".Wquarter3_4 option:selected").val();
             var selectedSemi2Text = $(".Wquarter3_4 option:selected").text();
-            
-            if (($('#WSemi1_2 option').length) < 2) {
+
+            $(".iWquarter1_2").attr('src', url + '/' + selectedSemi1Text.replace(/ /g,"_").toLowerCase() + '.png');
+           
+            if (($('#WSemi1_2 option').length) < 3) {
 
                 $('select.WSemi1_2').append($('<option/>', { 
                 value: selectedSemi1Value,
@@ -6137,15 +6180,17 @@
             }
         });
 
-        $("select.Wquarter3_4").change(function(){
+        $("select.Wquarter3_4").on("input",function(){
 
             var selectedSemi1Value = $(".Wquarter1_2 option:selected").val();
             var selectedSemi1Text = $(".Wquarter1_2 option:selected").text();
 
             var selectedSemi2Value = $(".Wquarter3_4 option:selected").val();
             var selectedSemi2Text = $(".Wquarter3_4 option:selected").text();
+
+            $(".iWquarter3_4").attr('src', url + '/' + selectedSemi2Text.replace(/ /g,"_").toLowerCase() + '.png');
             
-            if (($('#WSemi1_2 option').length) < 2) {
+            if (($('#WSemi1_2 option').length) < 3) {
 
                 $('select.WSemi1_2').append($('<option/>', { 
                 value: selectedSemi2Value,
@@ -6166,15 +6211,17 @@
         //  ---------------------------------
 
 
-        $("select.Wquarter5_6").change(function(){
+        $("select.Wquarter5_6").on("input",function(){
             var selectedSemi3Value = $(".Wquarter5_6 option:selected").val();
             var selectedSemi3Text = $(".Wquarter5_6 option:selected").text();
 
             var selectedSemi4Value = $(".Wquarter7_8 option:selected").val();
             var selectedSemi4Text = $(".Wquarter7_8 option:selected").text();
-            
-            if (($('#WSemi3_4 option').length) < 2) {
 
+             $(".iWquarter5_6").attr('src', url + '/' + selectedSemi3Text.replace(/ /g,"_").toLowerCase() + '.png');
+            
+            if (($('#WSemi3_4 option').length) < 3) {
+                
                 $('select.WSemi3_4').append($('<option/>', { 
                 value: selectedSemi3Value,
                 text : selectedSemi3Text 
@@ -6192,14 +6239,16 @@
         });
 
 
-        $("select.Wquarter7_8").change(function(){
+        $("select.Wquarter7_8").on("input",function(){
             var selectedSemi3Value = $(".Wquarter5_6 option:selected").val();
             var selectedSemi3Text = $(".Wquarter5_6 option:selected").text();
 
             var selectedSemi4Value = $(".Wquarter7_8 option:selected").val();
             var selectedSemi4Text = $(".Wquarter7_8 option:selected").text();
+
+             $(".iWquarter7_8").attr('src', url + '/' + selectedSemi4Text.replace(/ /g,"_").toLowerCase() + '.png');
             
-            if (($('#WSemi3_4 option').length) < 2) {
+            if (($('#WSemi3_4 option').length) < 3) {
 
                 $('select.WSemi3_4').append($('<option/>', { 
                 value: selectedSemi4Value,
@@ -6227,14 +6276,16 @@
 
         
 
-        $("select.WSemi1_2").change(function(){
+        $("select.WSemi1_2").on("input",function(){
             var selectedSemi5Value = $(".WSemi1_2 option:selected").val();
             var selectedSemi5Text = $(".WSemi1_2 option:selected").text();
 
             var selectedSemi6Value = $(".WSemi3_4 option:selected").val();
             var selectedSemi6Text = $(".WSemi3_4 option:selected").text();
+
+            $(".iWSemi1_2").attr('src', url + '/' + selectedSemi5Text.replace(/ /g,"_").toLowerCase() + '.png');
             
-            if (($('#Winner1 option').length) < 2) {
+            if (($('#Winner1 option').length) < 3) {
 
                 $('select.Winner1').append($('<option/>', { 
                 value: selectedSemi5Value,
@@ -6252,15 +6303,17 @@
             }
         });
 
-        $("select.WSemi3_4").change(function(){
+        $("select.WSemi3_4").on("input",function(){
 
             var selectedSemi5Value = $(".WSemi1_2 option:selected").val();
             var selectedSemi5Text = $(".WSemi1_2 option:selected").text();
             
             var selectedSemi6Value = $(".WSemi3_4 option:selected").val();
             var selectedSemi6Text = $(".WSemi3_4 option:selected").text();
+
+            $(".iWSemi3_4").attr('src', url + '/' + selectedSemi6Text.replace(/ /g,"_").toLowerCase() + '.png');
             
-            if (($('#Winner1 option').length) < 2) {
+            if (($('#Winner1 option').length) < 3) {
 
                 $('select.Winner1').append($('<option/>', { 
                 value: selectedSemi6Value,
@@ -6276,6 +6329,16 @@
                 text : selectedSemi5Text 
             })); 
             }
+        });
+
+        $("select.Winner1").on("input",function(){
+
+            // var selectedSemi5Value = $(".Winner1 option:selected").val();
+            var selectedWinner = $(".Winner1 option:selected").text();
+
+            $(".iWinner1").attr('src', url + '/' + selectedWinner.replace(/ /g,"_").toLowerCase() + '.png');
+            
+            
         });
 
 
@@ -6825,11 +6888,7 @@
             }
         });
 
-        $('#WRound1A2B').change(function(event) {
-            var team_name =$('#WRound1A2B').val();
-            //$("#img_flags_WRound1A2B").attr('src', '/mg/flags/' + team_name + '.png');
-            
-        });
+        
 
     });
 
