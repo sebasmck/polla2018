@@ -9321,6 +9321,7 @@ a.text-dark:hover {
 	text-align: center; 
 	color: #004782;
 	font-weight: 700;
+    margin-top: 10px; 
 }
 
 .nickname_pool{
@@ -9334,6 +9335,7 @@ a.text-dark:hover {
 		text-align: center; 
 		color: #004782;
 		font-weight: 700;
+        margin-top: 10px; 
 	}
 
 	body {

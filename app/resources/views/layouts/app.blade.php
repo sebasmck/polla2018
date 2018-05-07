@@ -64,12 +64,15 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
-                <div style="text-align: center; margin-left: 50%; padding-top:8px;">
+                <div style="text-align: center; margin-left: 23%;">
+                    Registered Pools: {{-- {{$countpolls}} --}}
+                </div>
+                <div style="text-align: center; margin-left: 12%; padding-top:8px;">
                     <ul style="line-height:50%; list-style-type: none;">
                         <li><p style="font-size: 0.7em;">Countdown to worldcup</p></li>
-                        <li><p id="demo" style='margin-bottom: 1px;'></p></div></li>
+                        <li><p id="demo" style='margin-bottom: 1px;'></p></li>
                     </ul>
+                </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
