@@ -5488,7 +5488,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <div style="height: 100px;"></div>
+                                                        <div style="height: 280px;"></div>
 
                                                         {{-- 1E - 2F --}}
                                                         <div class="row">
@@ -5573,7 +5573,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <div style="height: 327px;"></div>
+                                                        <div style="height: 147px;"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -5586,7 +5586,7 @@
                                             <div class="card-header">
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <h6>{{ __('Finals') }} </h6>
+                                                        <h6>{{ __('Final') }} </h6>
                                                     </div>
                                                 </div>
                                             </div>
@@ -5594,7 +5594,7 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <div style="height: 230px;"></div>
+                                                        <div style="height: 300px;"></div>
                                                         {{-- 1A - 2B --}}
                                                         <div class="row">
                                                             <div class="col-md-12">
@@ -5694,7 +5694,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div style="height: 420px;"></div>
+                                            <div style="height: 348px;"></div>
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
 
@@ -5703,7 +5703,7 @@
                                             <div class="card-header">
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <h6>Winner</h6>
+                                                        <h6>Champion</h6>
                                                     </div>
                                                 </div>
                                             </div>
@@ -5711,7 +5711,7 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <div style="height: 230px;"></div>
+                                                        <div style="height: 310px;"></div>
                                                         
                                                         <div class="row">
                                                             <div class="col-md-12">
@@ -5763,7 +5763,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div style="height: 440px;"></div>
+                                            <div style="height: 358px;"></div>
                                         </div>  
                                     </div>
 
@@ -5771,14 +5771,11 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-md-6">
-                                         <button type="button" name="" id="" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go to Home Page') }}
+                                          <input type="button" name="reset" id="reset" class="btn btn-info btn-block" value="Reset" />
                                         </button>
                                     </div>
                                     <div class="col-md-6">
                                         <input type="button" name="submitgrouph" id="submitSecondStage" class="btn btn-info btn-block" value="Save" />
-                                         {{-- <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                            {{ __('Save and go to Next Group') }} --}}
                                         </button>
 
                                 </form>
@@ -5894,6 +5891,26 @@
         // }
 
         // QUARTER FINALS
+
+
+        // RESET
+
+        function reset(){
+
+            $('select.Wquarter1_2').empty().append("<option value=''> Pick a Team <option/>");
+            $(".iWquarter1_2").attr('src', '');
+            $('select.Wquarter3_4').empty().append("<option value=''> Pick a Team <option/>");
+            $(".iWquarter3_4").attr('src', '');
+            $('select.Wquarter5_6').empty().append("<option value=''> Pick a Team <option/>");
+            $(".iWquarter5_6").attr('src', '');
+            $('select.Wquarter7_8').empty().append("<option value=''> Pick a Team <option/>");
+            $(".iWquarter7_8").attr('src', '');
+
+        }
+
+        $('#reset').click(function(){
+            reset();
+        });
 
          $("select.WRound1A2B").on("input",function(){
             // save variables on change
