@@ -6402,8 +6402,39 @@
         });
 
 
-    });
-}
+        // submit second stage copy
+
+            $('#submitSecondStage').click(function(){
+
+            $.ajax({  
+                url:postSECONDSTAGE,  
+                method:"POST",  
+                data:$('#secondstage').serialize(),
+                type:'json',
+                success:function(data){
+                    if(data.error){
+                        printErrorMsg(data.error);
+                    }else{
+                        // toastr.success('Saved');
+                        // location.reload();
+                        // $('#idgrupoh').removeClass( "active show" );
+                        // $('#idgrupoRoun').addClass( "active show" );
+                        // $('#grupoh').removeClass( "active show" );
+                        // $('#grupoRoun').addClass( "active show" );
+                        // location.reload();
+                        toastr.success('Saved');
+                        window.location='{{ route("home") }}';
+                    }
+                }  
+            }); 
+
+        });
+
+
+
+
+            });
+        }
 
 
         // RESET
