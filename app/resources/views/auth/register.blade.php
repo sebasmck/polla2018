@@ -4,13 +4,14 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12 title_polla">
-            Polla World Cup
+            <img src="{{ asset('img/logo.png') }}" style="height: 205px;">
         </div>
     </div>
     <div class="row justify-content-center">
         <div class="col-md-4">
             <div class="card">
-                <div class="card-header"><h4>{{ __('Register') }}</h4></div>
+                <div class="card-header"><h4>{{ __('Register') }}</h4>
+                </div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('userregistration') }}">

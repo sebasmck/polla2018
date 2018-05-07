@@ -4,7 +4,7 @@
 <div class="container" style="padding-bottom: 16.5rem!important;">
      <div class="row">
         <div class="col-md-12 title_polla">
-            Polla World Cup
+            <img src="{{ asset('img/logo.png') }}" style="height: 205px;">
         </div>
     </div>
     <div class="row justify-content-center">

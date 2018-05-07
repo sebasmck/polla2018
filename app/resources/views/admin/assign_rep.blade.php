@@ -39,7 +39,7 @@
                               <a href="{{ route('admin') }}">Pending approvals</a>
                             </li>
                             <li class="is-active">
-                                <a href="{{ route('assign') }}">user Management</a>
+                                <a href="{{ route('assign') }}">User Management</a>
                             </li>
                             <li>
                               <a href="{{ route('pollmanagement') }}"> Pool Management </a>

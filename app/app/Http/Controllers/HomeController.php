@@ -33,7 +33,8 @@ class HomeController extends Controller
     {
         $id_user = auth()->user()->id;
         $polls = PollsModel::getBbyUser($id_user);
-        return view('home')->with('polls', $polls);
+        $countpolls = PollsModel::all()->count();
+        return view('home')->with('polls', $polls)->with('countpolls', $countpolls);
     }
 
     public function indexAdmin()
