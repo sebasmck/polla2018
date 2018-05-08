@@ -9378,10 +9378,12 @@ a.text-dark:hover {
     width: 37px;
     height: 27px;
     border-radius: 5px;
+    margin-top: 9px;
 }
 
 .pikcs input{
     width: 37px;
+    margin-top: 7px;
 }
 
 .table_picks{
@@ -9508,18 +9510,19 @@ a.text-dark:hover {
 
 .content_web{
     /*background-color: rgba(226, 224, 230, 0.7);*/
-    background-image: url(../img/fondo.jpg);
-    /*background-position: center;*/
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url(../img/fondo.png);
+    background-position: top center;
+    background-size: cover;
+    z-index: -1;
+    padding-bottom: 80px;
 }
 
-@media (min-height: 600px) { 
-    .content_web{
-        /*background-color: rgba(226, 224, 230, 0.7);*/
-        background-image: url(../img/fondo.jpg);
-        /*background-position: center;*/
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+
+.label_team{
+    padding-top: 15px;
+}
+
+.second_sta{
+    padding-right: 2px;
+    padding-left: 2px;
 }

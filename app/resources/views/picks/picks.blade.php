@@ -26,7 +26,7 @@
                     
 
 
-                    <div class="card-body maincontainers">
+                    {{-- <div class="card-body maincontainers"> --}}
 
                     <div class="card-body">
 
@@ -117,13 +117,13 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-5 team_left">
-                                                                                        Russia
+                                                                                        <label class="label_team">Russia</label>
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <img class="img_flags" src="{{asset('img/flags/russia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M1A1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1A1" onblur="match_games()" value="{{ old('M1A1',  isset($ga->M1A1) ? $ga->M1A1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -135,7 +135,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M1A2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1A2" onblur="match_games()" value="{{ old('M1A2',  isset($ga->M1A2) ? $ga->M1A2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -143,7 +143,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
-                                                                                        Saudi Arabia
+                                                                                        <label class="label_team">Saudi Arabia</label>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
@@ -163,13 +163,13 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-5 team_left">
-                                                                                        Egypt
+                                                                                        <label class="label_team">Egypt</label>
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <img class="img_flags" src="{{asset('img/flags/egypt.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M2A3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2A3" onblur="match_games()" value="{{ old('M2A3',  isset($ga->M2A3) ? $ga->M2A3 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -183,7 +183,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M2A4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2A4" onblur="match_games()" value="{{ old('M1A2',  isset($ga->M1A2) ? $ga->M1A2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -191,7 +191,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/uruguay.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
-                                                                                        Uruguay
+                                                                                        <label class="label_team">Uruguay</label>
                                                                                     </div>
                                                                                     
                                                                                     
@@ -214,13 +214,13 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-5 team_left">
-                                                                                        Russia
+                                                                                        <label class="label_team">Russia</label>
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <img class="img_flags" src="{{asset('img/flags/russia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M3A1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3A1" onblur="match_games()" value="{{ old('M3A1',  isset($ga->M3A1) ? $ga->M3A1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -234,7 +234,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M3A3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3A3" onblur="match_games()" value="{{ old('M3A3',  isset($ga->M3A3) ? $ga->M3A3 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -242,7 +242,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/egypt.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
-                                                                                        Egypt
+                                                                                        <label class="label_team">Egypt</label>
                                                                                     </div>
                                                                                     
                                                                                     
@@ -264,13 +264,13 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-5 team_left">
-                                                                                        Uruguay
+                                                                                        <label class="label_team">Uruguay</label>
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <img class="img_flags" src="{{asset('img/flags/uruguay.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M4A4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4A4" onblur="match_games()" value="{{ old('M4A4',  isset($ga->M4A4) ? $ga->M4A4 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -284,7 +284,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M4A2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4A2" onblur="match_games()" value="{{ old('M4A2',  isset($ga->M4A2) ? $ga->M4A2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -292,7 +292,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
-                                                                                        Saudi Arabia
+                                                                                        <label class="label_team">Saudi Arabia</label>
                                                                                     </div>
                                                                                     
                                                                                     
@@ -314,13 +314,13 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-5 team_left">
-                                                                                        Uruguay
+                                                                                        <label class="label_team">Uruguay</label>
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <img class="img_flags" src="{{asset('img/flags/uruguay.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M5A4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5A4" onblur="match_games()" value="{{ old('M5A4',  isset($ga->M5A4) ? $ga->M5A4 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -334,7 +334,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M5A1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5A1" onblur="match_games()" value="{{ old('M5A1',  isset($ga->M5A1) ? $ga->M5A1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -342,7 +342,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/russia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
-                                                                                        Russia
+                                                                                        <label class="label_team">Russia</label>
                                                                                     </div>
                                                                                     
                                                                                     
@@ -364,13 +364,13 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-5 team_left">
-                                                                                        Saudi Arabia
+                                                                                        <label class="label_team">Saudi Arabia</label>
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <img class="img_flags" src="{{asset('img/flags/saudi_arabia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M6A2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6A2" onblur="match_games()" value="{{ old('M6A2',  isset($ga->M6A2) ? $ga->M6A2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -384,7 +384,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M6A3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6A3" onblur="match_games()" value="{{ old('M6A3',  isset($ga->M6A3) ? $ga->M6A3 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -392,7 +392,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/egypt.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-6">
-                                                                                        Egypt
+                                                                                        <label class="label_team">Egypt</label>
                                                                                     </div>
                                                                                     
                                                                                     
@@ -443,7 +443,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/russia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-8">
-                                                                                        Russia
+                                                                                        <label class="label_team">Russia</label>
                                                                                     </div>
                                                                                 </div>
                                                                             </td>
@@ -658,7 +658,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/portugal.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M1B1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1B1" onblur="match_games_B()" value="{{ old('M1B1',  isset($gb->M1B1) ? $gb->M1B1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -670,7 +670,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M1B2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1B2" onblur="match_games_B()" value="{{ old('M1B2',  isset($gb->M1B2) ? $gb->M1B2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -704,7 +704,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/morocco.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M2B3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2B3" onblur="match_games_B()" value="{{ old('M2B3',  isset($gb->M2B3) ? $gb->M2B3 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -718,7 +718,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M2B4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2B4" onblur="match_games_B()" value="{{ old('M2B4',  isset($gb->M2B4) ? $gb->M2B4 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -755,7 +755,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/portugal.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M3B1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3B1" onblur="match_games_B()" value="{{ old('M3B1',  isset($gb->M3B1) ? $gb->M3B1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -769,7 +769,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M3B3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3B3" onblur="match_games_B()" value="{{ old('M3B3',  isset($gb->M3B3) ? $gb->M3B3 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -805,7 +805,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/iran.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M4B4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4B4" onblur="match_games_B()" value="{{ old('M4B4',  isset($gb->M4B4) ? $gb->M4B4 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -819,7 +819,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M4B2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4B2" onblur="match_games_B()" value="{{ old('M4B2',  isset($gb->M4B2) ? $gb->M4B2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -855,7 +855,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/iran.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M5B4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5B4" onblur="match_games_B()" value="{{ old('M5B4',  isset($gb->M5B4) ? $gb->M5B4 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -869,7 +869,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M5B1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5B1" onblur="match_games_B()" value="{{ old('M5B1',  isset($gb->M5B1) ? $gb->M5B1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -905,7 +905,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/spain.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M6B2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6B2" onblur="match_games_B()" value="{{ old('M6B2',  isset($gb->M6B2) ? $gb->M6B2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -919,7 +919,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M6B3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6B3" onblur="match_games_B()" value="{{ old('M6B3',  isset($gb->M6B3) ? $gb->M6B3 : null) }}"> 
                                                                                         </div>
                                                                                     </div>
@@ -1186,7 +1186,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/france.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M1C1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1C1" onblur="match_games_C()" value="{{ old('M1C1',  isset($gc->M1C1) ? $gc->M1C1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -1198,7 +1198,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M1C2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1C2" onblur="match_games_C()" value="{{ old('M1C2',  isset($gc->M1C2) ? $gc->M1C2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -1232,7 +1232,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/peru.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M2C3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2C3" onblur="match_games_C()" value="{{ old('M2C3',  isset($gc->M2C3) ? $gc->M2C3 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -1246,7 +1246,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M2C4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2C4" onblur="match_games_C()" value="{{ old('M2C4',  isset($gc->M2C4) ? $gc->M2C4 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -1283,7 +1283,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/france.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M3C1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3C1" onblur="match_games_C()" value="{{ old('M3C1',  isset($gc->M3C1) ? $gc->M3C1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -1297,7 +1297,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M3C3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3C3" onblur="match_games_C()" value="{{ old('M3C3',  isset($gc->M3C3) ? $gc->M3C3 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -1333,7 +1333,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/denmark.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M4C4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4C4" onblur="match_games_C()" value="{{ old('M4C4',  isset($gc->M4C4) ? $gc->M4C4 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -1347,7 +1347,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M4C2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4C2" onblur="match_games_C()" value="{{ old('M4C2',  isset($gc->M4C2) ? $gc->M4C2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -1383,7 +1383,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/denmark.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M5C4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5C4" onblur="match_games_C()" value="{{ old('M5C4',  isset($gc->M5C4) ? $gc->M5C4 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -1397,7 +1397,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M5C1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5C1" onblur="match_games_C()" value="{{ old('M5C1',  isset($gc->M5C1) ? $gc->M5C1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -1433,7 +1433,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/australia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M6C2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6C2" onblur="match_games_C()" value="{{ old('M6C2',  isset($gc->M6C2) ? $gc->M6C2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -1447,7 +1447,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M6C3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6C3" onblur="match_games_C()" value="{{ old('M6C3',  isset($gc->M6C3) ? $gc->M6C3 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -1714,7 +1714,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/argentina.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M1D1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1D1" onblur="match_games_D()" value="{{ old('M1D1',  isset($gd->M1D1) ? $gd->M1D1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -1726,7 +1726,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M1D2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1D2" onblur="match_games_D()" value="{{ old('M1D2',  isset($gd->M1D2) ? $gd->M1D2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -1760,7 +1760,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/croatia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M2D3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2D3" onblur="match_games_D()" value="{{ old('M2D3',  isset($gd->M2D3) ? $gd->M2D3 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -1774,7 +1774,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M2D4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2D4" onblur="match_games_D()" value="{{ old('M2D4',  isset($gd->M2D4) ? $gd->M2D4 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -1811,7 +1811,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/argentina.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M3D1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3D1" onblur="match_games_D()" value="{{ old('M3D1',  isset($gd->M3D1) ? $gd->M3D1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -1825,7 +1825,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M3D3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3D3" onblur="match_games_D()" value="{{ old('M3D3',  isset($gd->M3D3) ? $gd->M3D3 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -1861,7 +1861,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/nigeria.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M4D4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4D4" onblur="match_games_D()" value="{{ old('M4D4',  isset($gd->M4D4) ? $gd->M4D4 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -1875,7 +1875,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M4D2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4D2" onblur="match_games_D()" value="{{ old('M4D2',  isset($gd->M4D2) ? $gd->M4D2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -1911,7 +1911,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/nigeria.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M5D4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5D4" onblur="match_games_D()" value="{{ old('M5D4',  isset($gd->M5D4) ? $gd->M5D4 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -1925,7 +1925,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M5D1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5D1" onblur="match_games_D()" value="{{ old('M5D1',  isset($gd->M5D1) ? $gd->M5D1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -1961,7 +1961,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/iceland.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M6D2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6D2" onblur="match_games_D()" value="{{ old('M6D2',  isset($gd->M6D2) ? $gd->M6D2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -1975,7 +1975,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M6D3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6D3" onblur="match_games_D()" value="{{ old('M6D3',  isset($gd->M6D3) ? $gd->M6D3 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -2243,7 +2243,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/brazil.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M1E1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1E1" onblur="match_games_E()" value="{{ old('M1E1',  isset($ge->M1E1) ? $ge->M1E1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -2255,7 +2255,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M1E2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1E2" onblur="match_games_E()" value="{{ old('M1E2',  isset($ge->M1E2) ? $ge->M1E2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -2289,7 +2289,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/costa_rica.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M2E3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2E3" onblur="match_games_E()" value="{{ old('M2E3',  isset($ge->M2E3) ? $ge->M2E3 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -2303,7 +2303,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M2E4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2E4" onblur="match_games_E()" value="{{ old('M2E4',  isset($ge->M2E4) ? $ge->M2E4 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -2340,7 +2340,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/brazil.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M3E1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3E1" onblur="match_games_E()" value="{{ old('M3E1',  isset($ge->M3E1) ? $ge->M3E1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -2354,7 +2354,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M3E3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3E3" onblur="match_games_E()" value="{{ old('M3E3',  isset($ge->M3E3) ? $ge->M3E3 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -2390,7 +2390,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/serbia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M4E4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4E4" onblur="match_games_E()" value="{{ old('M4E4',  isset($ge->M4E4) ? $ge->M4E4 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -2404,7 +2404,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M4E2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4E2" onblur="match_games_E()" value="{{ old('M4E2',  isset($ge->M4E2) ? $ge->M4E2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -2440,7 +2440,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/serbia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M5E4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5E4" onblur="match_games_E()" value="{{ old('M5E4',  isset($ge->M5E4) ? $ge->M5E4 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -2454,7 +2454,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M5E1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5E1" onblur="match_games_E()" value="{{ old('M5E1',  isset($ge->M5E1) ? $ge->M5E1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -2490,7 +2490,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/switzerland.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M6E2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6E2" onblur="match_games_E()" value="{{ old('M6E2',  isset($ge->M6E2) ? $ge->M6E2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -2504,7 +2504,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M6E3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6E3" onblur="match_games_E()" value="{{ old('M6E3',  isset($ge->M6E3) ? $ge->M6E3 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -2771,7 +2771,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/Germany.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M1F1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1F1" onblur="match_games_F()" value="{{ old('M1F1',  isset($gf->M1F1) ? $gf->M1F1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -2783,7 +2783,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M1F2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1F2" onblur="match_games_F()" value="{{ old('M1F2',  isset($gf->M1F2) ? $gf->M1F2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -2817,7 +2817,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/sweden.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M2F3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2F3" onblur="match_games_F()" value="{{ old('M2F3',  isset($gf->M2F3) ? $gf->M2F3 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -2831,7 +2831,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M2F4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2F4" onblur="match_games_F()" value="{{ old('M2F4',  isset($gf->M2F4) ? $gf->M2F4 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -2868,7 +2868,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/Germany.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M3F1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3F1" onblur="match_games_F()" value="{{ old('M3F1',  isset($gf->M3F1) ? $gf->M3F1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -2882,7 +2882,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M3F3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3F3" onblur="match_games_F()" value="{{ old('M3F3',  isset($gf->M3F3) ? $gf->M3F3 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -2918,7 +2918,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/south_korea.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M4F4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4F4" onblur="match_games_F()" value="{{ old('M4F4',  isset($gf->M4F4) ? $gf->M4F4 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -2932,7 +2932,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M4F2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4F2" onblur="match_games_F()" value="{{ old('M4F2',  isset($gf->M4F2) ? $gf->M4F2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -2968,7 +2968,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/south_korea.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M5F4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5F4" onblur="match_games_F()" value="{{ old('M5F4',  isset($gf->M5F4) ? $gf->M5F4 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -2982,7 +2982,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M5F1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5F1" onblur="match_games_F()" value="{{ old('M5F1',  isset($gf->M5F1) ? $gf->M5F1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -3018,7 +3018,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/mexico.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M6F2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6F2" onblur="match_games_F()" value="{{ old('M6F2',  isset($gf->M6F2) ? $gf->M6F2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -3032,7 +3032,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M6F3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6F3" onblur="match_games_F()" value="{{ old('M6F3',  isset($gf->M6F3) ? $gf->M6F3 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -3299,7 +3299,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/belgium.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M1G1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1G1" onblur="match_games_G()" value="{{ old('M1G1',  isset($gg->M1G1) ? $gg->M1G1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -3311,7 +3311,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M1G2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1G2" onblur="match_games_G()" value="{{ old('M1G2',  isset($gg->M1G2) ? $gg->M1G2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -3345,7 +3345,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/tunisia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M2G3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2G3" onblur="match_games_G()" value="{{ old('M2G3',  isset($gg->M2G3) ? $gg->M2G3 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -3359,7 +3359,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M2G4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2G4" onblur="match_games_G()" value="{{ old('M2G4',  isset($gg->M2G4) ? $gg->M2G4 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -3396,7 +3396,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/belgium.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M3G1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3G1" onblur="match_games_G()" value="{{ old('M3G1',  isset($gg->M3G1) ? $gg->M3G1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -3410,7 +3410,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M3G3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3G3" onblur="match_games_G()" value="{{ old('M3G3',  isset($gg->M3G3) ? $gg->M3G3 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -3446,7 +3446,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/england.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M4G4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4G4" onblur="match_games_G()" value="{{ old('M4G4',  isset($gg->M4G4) ? $gg->M4G4 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -3460,7 +3460,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M4G2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4G2" onblur="match_games_G()" value="{{ old('M4G2',  isset($gg->M4G2) ? $gg->M4G2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -3496,7 +3496,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/england.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M5G4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5G4" onblur="match_games_G()" value="{{ old('M5G4',  isset($gg->M5G4) ? $gg->M5G4 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -3510,7 +3510,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M5G1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5G1" onblur="match_games_G()" value="{{ old('M5G1',  isset($gg->M5G1) ? $gg->M5G1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -3546,7 +3546,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/panama.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M6G2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6G2" onblur="match_games_G()" value="{{ old('M6G2',  isset($gg->M6G2) ? $gg->M6G2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -3560,7 +3560,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M6G3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6G3" onblur="match_games_G()" value="{{ old('M6G3',  isset($gg->M6G3) ? $gg->M6G3 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -3829,7 +3829,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/poland.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M1H1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1H1" onblur="match_games_H()" value="{{ old('M1H1',  isset($gh->M1H1) ? $gh->M1H1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -3841,7 +3841,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M1H2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1H2" onblur="match_games_H()" value="{{ old('M1H2',  isset($gh->M1H2) ? $gh->M1H2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -3875,7 +3875,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/Colombia.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M2H3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2H3" onblur="match_games_H()" value="{{ old('M2H3',  isset($gh->M2H3) ? $gh->M2H3 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -3889,7 +3889,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M2H4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2H4" onblur="match_games_H()" value="{{ old('M2H4',  isset($gh->M2H4) ? $gh->M2H4 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -3926,7 +3926,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/poland.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M3H1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3H1" onblur="match_games_H()" value="{{ old('M3H1',  isset($gh->M3H1) ? $gh->M3H1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -3940,7 +3940,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M3H3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3H3" onblur="match_games_H()" value="{{ old('M3H3',  isset($gh->M3H3) ? $gh->M3H3 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -3976,7 +3976,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/japan.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M4H4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4H4" onblur="match_games_H()" value="{{ old('M4H4',  isset($gh->M4H4) ? $gh->M4H4 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -3990,7 +3990,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M4H2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4H2" onblur="match_games_H()" value="{{ old('M4H2',  isset($gh->M4H2) ? $gh->M4H2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -4026,7 +4026,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/japan.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M5H4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5H4" onblur="match_games_H()" value="{{ old('M5H4',  isset($gh->M5H4) ? $gh->M5H4 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -4040,7 +4040,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M5H1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5H1" onblur="match_games_H()" value="{{ old('M5H1',  isset($gh->M5H1) ? $gh->M5H1 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -4076,7 +4076,7 @@
                                                                                         <img class="img_flags" src="{{asset('img/flags/senegal.png')}}">
                                                                                     </div>
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M6H2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6H2" onblur="match_games_H()" value="{{ old('M6H2',  isset($gh->M6H2) ? $gh->M6H2 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -4090,7 +4090,7 @@
                                                                             <td>
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
-                                                                                        <div class="form-group pikcs">
+                                                                                        <div class="pikcs">
                                                                                             <input type="text" name="M6H3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6H3" onblur="match_games_H()" value="{{ old('M6H3',  isset($gh->M6H3) ? $gh->M6H3 : null) }}">
                                                                                         </div>
                                                                                     </div>
@@ -4308,7 +4308,7 @@
                                 <br>
                                 <div class="row">
                                     {{-- Round of 16 --}}
-                                    <div class="col-md-2">
+                                    <div class="col-md-3 second_sta">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -4905,7 +4905,7 @@
 
 
                                     {{-- Quarter-finals --}}
-                                    <div class="col-md-2.1 quarters">
+                                    <div class="col-md-2 quarters second_sta">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -5385,7 +5385,7 @@
                                     </div> {{--  end col div --}}
 
                                     {{-- Semi-finals --}}
-                                    <div class="col-md-2.1">
+                                    <div class="col-md-2 second_sta">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -5580,7 +5580,7 @@
                                     </div> {{--  end col div --}}
 
                                     {{-- Semi-finals --}}
-                                     <div class="col-md-2.1">
+                                    <div class="col-md-2 second_sta">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -5697,7 +5697,7 @@
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
 
-                                    <div class="col-md-2.1">
+                                    <div class="col-md-3 second_sta">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -5789,28 +5789,16 @@
             </div>
         </div>
         <br>
-        <br>
-        <br>
-        <br>
-
         
 
-
         {{-- MENU --}}
-        <div style="margin-top: 25px;" class="row justify-content-center">
+        <div class="row justify-content-center">
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-header"><h4>{{ __('Menu') }}</h4></div>
 
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <div class="form-group">
-                                    <button type="" class="btn btn-primary" onclick="window.location='{{ route('login') }}'" style="width: 100%;">
-                                        {{ __('Printable Version of my Picks') }}
-                                    </button>
-                                </div>    
-                            </div>
                             <div class="col-md-10 offset-md-1 ">
                                 <div class="form-group">
                                     <button type="" class="btn btn-primary" onclick="window.location='{{ route('rules') }}'" style="width: 100%;">
@@ -5854,8 +5842,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"> </script>
-
 <script src="{{URL::asset('js/app.js')}}"></script>
 <script src="{{URL::asset('scripts/countdown.js')}}"></script>
 {{-- Solo Numeros --}}
@@ -5880,8 +5866,15 @@
 
 
     $(document).ready(function(){
-
-
+        
+        match_games();
+        match_games_B();
+        match_games_C();
+        match_games_D();
+        match_games_E();
+        match_games_F();
+        match_games_G();
+        match_games_H();
 
         var url = $("#imgroute").val();
 
@@ -5891,547 +5884,535 @@
 
             function reset(){
 
-            // $("#WRound1A2B").prepend("<option value='' selected='selected'>Pick a Team</option>");
-            // $("#WRound1A2B").val('');
+                // $("#WRound1A2B").prepend("<option value='' selected='selected'>Pick a Team</option>");
+                // $("#WRound1A2B").val('');
 
-            // select quarters 
+                // select quarters 
 
-            // 1
-            $("#WRound1A2B").find('option:eq(0)').prop('selected', true);
-            $(".iWRound1A2B").attr('src', '');
-            // 2
-            $("#WRound1C2D").find('option:eq(0)').prop('selected', true);
-            $(".iWRound1C2D").attr('src', '');
-            // 3
-            $("#WRound1E2F").find('option:eq(0)').prop('selected', true);
-            $(".iWRound1E2F").attr('src', '');
-            // 4
-            $("#WRound1G2H").find('option:eq(0)').prop('selected', true);
-            $(".iWRound1G2H").attr('src', '');
-            // 5
-            $("#WRound1B2A").find('option:eq(0)').prop('selected', true);
-            $(".iWRound1B2A").attr('src', '');
-            // 6
-            $("#WRound1D2C").find('option:eq(0)').prop('selected', true);
-            $(".iWRound1D2C").attr('src', '');
-            // 7
-            $("#WRound1F2E").find('option:eq(0)').prop('selected', true);
-            $(".iWRound1F2E").attr('src', '');
-            // 8
-            $("#WRound1H2G").find('option:eq(0)').prop('selected', true);
-            $(".iWRound1H2G").attr('src', '');
+                // 1
+                $("#WRound1A2B").find('option:eq(0)').prop('selected', true);
+                $(".iWRound1A2B").attr('src', '');
+                // 2
+                $("#WRound1C2D").find('option:eq(0)').prop('selected', true);
+                $(".iWRound1C2D").attr('src', '');
+                // 3
+                $("#WRound1E2F").find('option:eq(0)').prop('selected', true);
+                $(".iWRound1E2F").attr('src', '');
+                // 4
+                $("#WRound1G2H").find('option:eq(0)').prop('selected', true);
+                $(".iWRound1G2H").attr('src', '');
+                // 5
+                $("#WRound1B2A").find('option:eq(0)').prop('selected', true);
+                $(".iWRound1B2A").attr('src', '');
+                // 6
+                $("#WRound1D2C").find('option:eq(0)').prop('selected', true);
+                $(".iWRound1D2C").attr('src', '');
+                // 7
+                $("#WRound1F2E").find('option:eq(0)').prop('selected', true);
+                $(".iWRound1F2E").attr('src', '');
+                // 8
+                $("#WRound1H2G").find('option:eq(0)').prop('selected', true);
+                $(".iWRound1H2G").attr('src', '');
 
 
-            // Semi-finals
-            // 1
-            $('select.Wquarter1_2').find('option').not(':first').remove();
-            $(".iWquarter1_2").attr('src', '');
-            // 2
-            $('select.Wquarter3_4').find('option').not(':first').remove();
-            $(".iWquarter3_4").attr('src', '');
-            // 3
-            $('select.Wquarter5_6').find('option').not(':first').remove();
-            $(".iWquarter5_6").attr('src', '');
-            // 4
-            $('select.Wquarter7_8').find('option').not(':first').remove();
-            $(".iWquarter7_8").attr('src', '');
+                // Semi-finals
+                // 1
+                $('select.Wquarter1_2').find('option').not(':first').remove();
+                $(".iWquarter1_2").attr('src', '');
+                // 2
+                $('select.Wquarter3_4').find('option').not(':first').remove();
+                $(".iWquarter3_4").attr('src', '');
+                // 3
+                $('select.Wquarter5_6').find('option').not(':first').remove();
+                $(".iWquarter5_6").attr('src', '');
+                // 4
+                $('select.Wquarter7_8').find('option').not(':first').remove();
+                $(".iWquarter7_8").attr('src', '');
 
-            // Final
-            // 1
-            $('select.WSemi1_2').find('option').not(':first').remove();
-            $(".iWSemi1_2").attr('src', '');
-            // 2
-            $('select.WSemi3_4').find('option').not(':first').remove();
-            $(".iWSemi3_4").attr('src', '');
+                // Final
+                // 1
+                $('select.WSemi1_2').find('option').not(':first').remove();
+                $(".iWSemi1_2").attr('src', '');
+                // 2
+                $('select.WSemi3_4').find('option').not(':first').remove();
+                $(".iWSemi3_4").attr('src', '');
 
-            // Champion
-            // 1
-            $('select.Winner1').find('option').not(':first').remove();
-            $(".iWinner1").attr('src', '');
+                // Champion
+                // 1
+                $('select.Winner1').find('option').not(':first').remove();
+                $(".iWinner1").attr('src', '');
 
-        }
+            }
 
         $('#reset').click(function(){
             reset();
         });
 
-         $("select.WRound1A2B").on("input",function(){
+        $("select.WRound1A2B").on("input",function(){
             // save variables on change
 
-            var selectedTeamAvalue = $(".WRound1A2B option:selected").val();
-            var selectedTeamAtext = $(".WRound1A2B option:selected").text();
-            var selectedTeamBvalue = $(".WRound1C2D option:selected").val();
-            var selectedTeamBtext = $(".WRound1C2D option:selected").text();
-
-
-
-            $(".iWRound1A2B").attr('src', url + '/' + selectedTeamAtext.replace(/ /g,"_").toLowerCase() + '.png');
-
-            if (($('#Wquarter1_2 option').length) < 3) {
-                
-                $('select.Wquarter1_2').append($('<option/>', { 
-                value: selectedTeamAvalue,
-                text : selectedTeamAtext 
-            }));    
-            } else { 
-
-
-                $('#Wquarter1_2').empty().append($('<option/>', { 
-                value: selectedTeamAvalue,
-                text : selectedTeamAtext 
-            }));
-                $('#Wquarter1_2').append($('<option/>', { 
-                value: selectedTeamBvalue,
-                text : selectedTeamBtext 
-            })); 
-            }
-            
-
-        });
-
-         $("select.WRound1C2D").on("change",function(){
-
-            var selectedTeamAvalue = $(".WRound1A2B option:selected").val();
-            var selectedTeamAtext = $(".WRound1A2B option:selected").text();
-
-            var selectedTeamBvalue = $(".WRound1C2D option:selected").val();
-            var selectedTeamBtext = $(".WRound1C2D option:selected").text();
-
-            $("select.Wquarter1_2").val("option:first");
-
-            $(".iWRound1C2D").attr('src', url + '/' + selectedTeamBtext.replace(/ /g,"_").toLowerCase() + '.png');
-            
-
-            if (($('#Wquarter1_2 option').length) < 3) {
-
-                $('select.Wquarter1_2').append($('<option/>', { 
-                value: selectedTeamBvalue,
-                text : selectedTeamBtext 
-            }));    
-            } else { 
-                $('#Wquarter1_2').empty().append($('<option/>', { 
-                value: selectedTeamAvalue,
-                text : selectedTeamAtext 
-            }));
-                $('#Wquarter1_2').append($('<option/>', { 
-                value: selectedTeamBvalue,
-                text : selectedTeamBtext 
-            })); 
-            }
-        });
-
-         // -----------------------
-
-
-
-        $("select.WRound1E2F").on("change",function(){
-
-            var selectedTeamCvalue = $(".WRound1E2F option:selected").val();
-            var selectedTeamCtext = $(".WRound1E2F option:selected").text();
-            
-            var selectedTeamDvalue = $(".WRound1G2H option:selected").val();
-            var selectedTeamDtext = $(".WRound1G2H option:selected").text();
-
-            $("select.Wquarter3_4").val("option:first");
-
-            $(".iWRound1E2F").attr('src', url + '/' + selectedTeamCtext.replace(/ /g,"_").toLowerCase() + '.png');
-
-            if (($('#Wquarter3_4 option').length) < 3) {
-
-                $('select.Wquarter3_4').append($('<option/>', { 
-                value: selectedTeamCvalue,
-                text : selectedTeamCtext 
-            }));    
-            } else { 
-                $('#Wquarter3_4').empty().append($('<option/>', { 
-                value: selectedTeamCvalue,
-                text : selectedTeamCtext 
-            }));
-                $('#Wquarter3_4').append($('<option/>', { 
-                value: selectedTeamDvalue,
-                text : selectedTeamDtext 
-            })); 
-            }
-
-        });
-
-        $("select.WRound1G2H").on("change",function(){
-
-            var selectedTeamCvalue = $(".WRound1E2F option:selected").val();
-            var selectedTeamCtext = $(".WRound1E2F option:selected").text();
-
-            var selectedTeamDvalue = $(".WRound1G2H option:selected").val();
-            var selectedTeamDtext = $(".WRound1G2H option:selected").text();
-
-            $("select.iWRound1G2H").val("option:first");
-
-            $(".iWRound1G2H").attr('src', url + '/' + selectedTeamDtext.replace(/ /g,"_").toLowerCase() + '.png');
-
-            if (($('#Wquarter3_4 option').length) < 3) {
-
-                $('select.Wquarter3_4').append($('<option/>', { 
-                value: selectedTeamDvalue,
-                text : selectedTeamDtext 
-            }));    
-            } else { 
-                $('#Wquarter3_4').empty().append($('<option/>', { 
-                value: selectedTeamDvalue,
-                text : selectedTeamDtext 
-            }));
-                $('#Wquarter3_4').append($('<option/>', { 
-                value: selectedTeamCvalue,
-                text : selectedTeamCtext 
-            })); 
-            }
-
-        });
-
-
-        // -----------------------------
-
-        $("select.WRound1B2A").on("change",function(){
-
-            var selectedTeamEvalue = $(".WRound1B2A option:selected").val();
-            var selectedTeamEtext = $(".WRound1B2A option:selected").text();
-
-            var selectedTeamFvalue = $(".WRound1D2C option:selected").val();
-            var selectedTeamFtext = $(".WRound1D2C option:selected").text();
-
-            $("select.Wquarter5_6").val("option:first");
-
-            $(".iWRound1B2A").attr('src', url + '/' + selectedTeamEtext.replace(/ /g,"_").toLowerCase() + '.png');
-
-            if (($('#Wquarter5_6 option').length) < 3) {
-
-                $('select.Wquarter5_6').append($('<option/>', { 
-                value: selectedTeamEvalue,
-                text : selectedTeamEtext 
-            }));    
-            } else { 
-                $('#Wquarter5_6').empty().append($('<option/>', { 
-                value: selectedTeamEvalue,
-                text : selectedTeamEtext 
-            }));
-                $('#Wquarter5_6').append($('<option/>', { 
-                value: selectedTeamFvalue,
-                text : selectedTeamFtext 
-            })); 
-            }
-
-        });
-
-        $("select.WRound1D2C").on("change",function(){
-
-            var selectedTeamEvalue = $(".WRound1B2A option:selected").val();
-            var selectedTeamEtext = $(".WRound1B2A option:selected").text();
-
-            var selectedTeamFvalue = $(".WRound1D2C option:selected").val();
-            var selectedTeamFtext = $(".WRound1D2C option:selected").text();
-
-
-            $(".iWRound1D2C").attr('src', url + '/' + selectedTeamFtext.replace(/ /g,"_").toLowerCase() + '.png');
-            
-           if (($('#Wquarter5_6 option').length) < 3) {
-
-                $('select.Wquarter5_6').append($('<option/>', { 
-                value: selectedTeamFvalue,
-                text : selectedTeamFtext 
-            }));    
-            } else { 
-                $('#Wquarter5_6').empty().append($('<option/>', { 
-                value: selectedTeamFvalue,
-                text : selectedTeamFtext 
-            }));
-                $('#Wquarter5_6').append($('<option/>', { 
-                value: selectedTeamEvalue,
-                text : selectedTeamEtext 
-            })); 
-            }
-        });
-
-        //  -----------------------------
-
-        $("select.WRound1F2E").on("change",function(){
-
-            var selectedTeamGvalue = $(".WRound1F2E option:selected").val();
-            var selectedTeamGtext = $(".WRound1F2E option:selected").text();
-
-            var selectedTeamHvalue = $(".WRound1H2G option:selected").val();
-            var selectedTeamHtext = $(".WRound1H2G option:selected").text();
-
-            $(".iWRound1F2E").attr('src', url + '/' + selectedTeamGtext.replace(/ /g,"_").toLowerCase() + '.png');
-            
-            if (($('#Wquarter7_8 option').length) < 3) {
-
-                $('select.Wquarter7_8').append($('<option/>', { 
-                value: selectedTeamGvalue,
-                text : selectedTeamGtext 
-            }));    
-            } else { 
-                $('#Wquarter7_8').empty().append($('<option/>', { 
-                value: selectedTeamGvalue,
-                text : selectedTeamGtext 
-            }));
-                $('#Wquarter7_8').append($('<option/>', { 
-                value: selectedTeamHvalue,
-                text : selectedTeamHtext 
-            })); 
-            }
-
-        });
-
-        $("select.WRound1H2G").on("input",function(){
-
-            var selectedTeamGvalue = $(".WRound1F2E option:selected").val();
-            var selectedTeamGtext = $(".WRound1F2E option:selected").text();
-
-            var selectedTeamHvalue = $(".WRound1H2G option:selected").val();
-            var selectedTeamHtext = $(".WRound1H2G option:selected").text();
-
-            $(".iWRound1H2G").attr('src', url + '/' + selectedTeamHtext.replace(/ /g,"_").toLowerCase() + '.png');
-            
-            if (($('#Wquarter7_8 option').length) < 3) {
-
-                $('select.Wquarter7_8').append($('<option/>', { 
-                value: selectedTeamHvalue,
-                text : selectedTeamHtext 
-            }));    
-            } else { 
-                $('#Wquarter7_8').empty().append($('<option/>', { 
-                value: selectedTeamHvalue,
-                text : selectedTeamHtext 
-            }));
-                $('#Wquarter7_8').append($('<option/>', { 
-                value: selectedTeamGvalue,
-                text : selectedTeamGtext 
-            })); 
-            }
-        });
-
-        //   ------------------------------
-
-
-        // FINALS
-
-        $("select.Wquarter1_2").on("input",function(){
-            var selectedSemi1Value = $(".Wquarter1_2 option:selected").val();
-            var selectedSemi1Text = $(".Wquarter1_2 option:selected").text();
-
-            var selectedSemi2Value = $(".Wquarter3_4 option:selected").val();
-            var selectedSemi2Text = $(".Wquarter3_4 option:selected").text();
-
-            $(".iWquarter1_2").attr('src', url + '/' + selectedSemi1Text.replace(/ /g,"_").toLowerCase() + '.png');
-           
-            if (($('#WSemi1_2 option').length) < 3) {
-
-                $('select.WSemi1_2').append($('<option/>', { 
-                value: selectedSemi1Value,
-                text : selectedSemi1Text 
-            }));    
-            } else { 
-                $('#WSemi1_2').empty().append($('<option/>', { 
-                value: selectedSemi1Value,
-                text : selectedSemi1Text 
-            }));
-                $('#WSemi1_2').append($('<option/>', { 
-                value: selectedSemi2Value,
-                text : selectedSemi2Text 
-            })); 
-            }
-        });
-
-        $("select.Wquarter3_4").on("input",function(){
-
-            var selectedSemi1Value = $(".Wquarter1_2 option:selected").val();
-            var selectedSemi1Text = $(".Wquarter1_2 option:selected").text();
-
-            var selectedSemi2Value = $(".Wquarter3_4 option:selected").val();
-            var selectedSemi2Text = $(".Wquarter3_4 option:selected").text();
-
-            $(".iWquarter3_4").attr('src', url + '/' + selectedSemi2Text.replace(/ /g,"_").toLowerCase() + '.png');
-            
-            if (($('#WSemi1_2 option').length) < 3) {
-
-                $('select.WSemi1_2').append($('<option/>', { 
-                value: selectedSemi2Value,
-                text : selectedSemi2Text 
-            }));    
-            } else { 
-                $('#WSemi1_2').empty().append($('<option/>', { 
-                value: selectedSemi2Value,
-                text : selectedSemi2Text 
-            }));
-                $('#WSemi1_2').append($('<option/>', { 
-                value: selectedSemi1Value,
-                text : selectedSemi1Text 
-            })); 
-            }
-        });
-
-        //  ---------------------------------
-
-
-        $("select.Wquarter5_6").on("input",function(){
-            var selectedSemi3Value = $(".Wquarter5_6 option:selected").val();
-            var selectedSemi3Text = $(".Wquarter5_6 option:selected").text();
-
-            var selectedSemi4Value = $(".Wquarter7_8 option:selected").val();
-            var selectedSemi4Text = $(".Wquarter7_8 option:selected").text();
-
-             $(".iWquarter5_6").attr('src', url + '/' + selectedSemi3Text.replace(/ /g,"_").toLowerCase() + '.png');
-            
-            if (($('#WSemi3_4 option').length) < 3) {
-                
-                $('select.WSemi3_4').append($('<option/>', { 
-                value: selectedSemi3Value,
-                text : selectedSemi3Text 
-            }));    
-            } else { 
-                $('#WSemi3_4').empty().append($('<option/>', { 
-                value: selectedSemi3Value,
-                text : selectedSemi3Text 
-            }));
-                $('#WSemi3_4').append($('<option/>', { 
-                value: selectedSemi4Value,
-                text : selectedSemi4Text 
-            })); 
-            }
-        });
-
-
-        $("select.Wquarter7_8").on("input",function(){
-            var selectedSemi3Value = $(".Wquarter5_6 option:selected").val();
-            var selectedSemi3Text = $(".Wquarter5_6 option:selected").text();
-
-            var selectedSemi4Value = $(".Wquarter7_8 option:selected").val();
-            var selectedSemi4Text = $(".Wquarter7_8 option:selected").text();
-
-             $(".iWquarter7_8").attr('src', url + '/' + selectedSemi4Text.replace(/ /g,"_").toLowerCase() + '.png');
-            
-            if (($('#WSemi3_4 option').length) < 3) {
-
-                $('select.WSemi3_4').append($('<option/>', { 
-                value: selectedSemi4Value,
-                text : selectedSemi4Text 
-            }));    
-            } else { 
-                $('#WSemi3_4').empty().append($('<option/>', { 
-                value: selectedSemi4Value,
-                text : selectedSemi4Text 
-            }));
-                $('#WSemi3_4').append($('<option/>', { 
-                value: selectedSemi3Value,
-                text : selectedSemi3Text 
-            })); 
-            }
-            
-        });
-
-        // ------------------------------------
-        
-        
-
-        
-        // FINAL
-
-        
-
-        $("select.WSemi1_2").on("input",function(){
-            var selectedSemi5Value = $(".WSemi1_2 option:selected").val();
-            var selectedSemi5Text = $(".WSemi1_2 option:selected").text();
-
-            var selectedSemi6Value = $(".WSemi3_4 option:selected").val();
-            var selectedSemi6Text = $(".WSemi3_4 option:selected").text();
-
-            $(".iWSemi1_2").attr('src', url + '/' + selectedSemi5Text.replace(/ /g,"_").toLowerCase() + '.png');
-            
-            if (($('#Winner1 option').length) < 3) {
-
-                $('select.Winner1').append($('<option/>', { 
-                value: selectedSemi5Value,
-                text : selectedSemi5Text 
-            }));    
-            } else { 
-                $('#Winner1').empty().append($('<option/>', { 
-                value: selectedSemi5Value,
-                text : selectedSemi5Text 
-            }));
-                $('#Winner1').append($('<option/>', { 
-                value: selectedSemi6Value,
-                text : selectedSemi6Text 
-            })); 
-            }
-        });
-
-        $("select.WSemi3_4").on("input",function(){
-
-            var selectedSemi5Value = $(".WSemi1_2 option:selected").val();
-            var selectedSemi5Text = $(".WSemi1_2 option:selected").text();
-            
-            var selectedSemi6Value = $(".WSemi3_4 option:selected").val();
-            var selectedSemi6Text = $(".WSemi3_4 option:selected").text();
-
-            $(".iWSemi3_4").attr('src', url + '/' + selectedSemi6Text.replace(/ /g,"_").toLowerCase() + '.png');
-            
-            if (($('#Winner1 option').length) < 3) {
-
-                $('select.Winner1').append($('<option/>', { 
-                value: selectedSemi6Value,
-                text : selectedSemi6Text 
-            }));    
-            } else { 
-                $('#Winner1').empty().append($('<option/>', { 
-                value: selectedSemi6Value,
-                text : selectedSemi6Text 
-            }));
-                $('#Winner1').append($('<option/>', { 
-                value: selectedSemi5Value,
-                text : selectedSemi5Text 
-            })); 
-            }
-        });
-
-        $("select.Winner1").on("input",function(){
-
-            // var selectedSemi5Value = $(".Winner1 option:selected").val();
-            var selectedWinner = $(".Winner1 option:selected").text();
-
-            $(".iWinner1").attr('src', url + '/' + selectedWinner.replace(/ /g,"_").toLowerCase() + '.png');
-            
-            
-        });
-
-
-        // submit second stage copy
-
-            $('#submitSecondStage').click(function(){
-
-            $.ajax({  
-                url:postSECONDSTAGE,  
-                method:"POST",  
-                data:$('#secondstage').serialize(),
-                type:'json',
-                success:function(data){
-                    if(data.error){
-                        printErrorMsg(data.error);
-                    }else{
-                        // toastr.success('Saved');
-                        // location.reload();
-                        // $('#idgrupoh').removeClass( "active show" );
-                        // $('#idgrupoRoun').addClass( "active show" );
-                        // $('#grupoh').removeClass( "active show" );
-                        // $('#grupoRoun').addClass( "active show" );
-                        // location.reload();
-                        toastr.success('Saved');
-                        window.location='{{ route("home") }}';
+                var selectedTeamAvalue = $(".WRound1A2B option:selected").val();
+                var selectedTeamAtext = $(".WRound1A2B option:selected").text();
+                var selectedTeamBvalue = $(".WRound1C2D option:selected").val();
+                var selectedTeamBtext = $(".WRound1C2D option:selected").text();
+
+
+
+                $(".iWRound1A2B").attr('src', url + '/' + selectedTeamAtext.replace(/ /g,"_").toLowerCase() + '.png');
+
+                    if (($('#Wquarter1_2 option').length) < 3) {
+                        
+                        $('select.Wquarter1_2').append($('<option/>', { 
+                            value: selectedTeamAvalue,
+                            text : selectedTeamAtext 
+                        }));
+                    } else { 
+
+
+                        $('#Wquarter1_2').empty().append($('<option/>', { 
+                            value: selectedTeamAvalue,
+                            text : selectedTeamAtext 
+                        }));
+                        $('#Wquarter1_2').append($('<option/>', { 
+                            value: selectedTeamBvalue,
+                            text : selectedTeamBtext 
+                        })); 
                     }
-                }  
-            }); 
+                });
 
-        });
+                $("select.WRound1C2D").on("change",function(){
+
+                    var selectedTeamAvalue = $(".WRound1A2B option:selected").val();
+                    var selectedTeamAtext = $(".WRound1A2B option:selected").text();
+
+                    var selectedTeamBvalue = $(".WRound1C2D option:selected").val();
+                    var selectedTeamBtext = $(".WRound1C2D option:selected").text();
+
+                    $("select.Wquarter1_2").val("option:first");
+
+                    $(".iWRound1C2D").attr('src', url + '/' + selectedTeamBtext.replace(/ /g,"_").toLowerCase() + '.png');
+                    
+
+                    if (($('#Wquarter1_2 option').length) < 3) {
+
+                        $('select.Wquarter1_2').append($('<option/>', { 
+                            value: selectedTeamBvalue,
+                            text : selectedTeamBtext 
+                        }));
+                    } else { 
+                        $('#Wquarter1_2').empty().append($('<option/>', { 
+                            value: selectedTeamAvalue,
+                            text : selectedTeamAtext 
+                        }));
+                        $('#Wquarter1_2').append($('<option/>', { 
+                            value: selectedTeamBvalue,
+                            text : selectedTeamBtext 
+                        })); 
+                    }
+                });
+
+                 // -----------------------
 
 
 
+                $("select.WRound1E2F").on("change",function(){
+
+                    var selectedTeamCvalue = $(".WRound1E2F option:selected").val();
+                    var selectedTeamCtext = $(".WRound1E2F option:selected").text();
+                    
+                    var selectedTeamDvalue = $(".WRound1G2H option:selected").val();
+                    var selectedTeamDtext = $(".WRound1G2H option:selected").text();
+
+                    $("select.Wquarter3_4").val("option:first");
+
+                    $(".iWRound1E2F").attr('src', url + '/' + selectedTeamCtext.replace(/ /g,"_").toLowerCase() + '.png');
+
+                    if (($('#Wquarter3_4 option').length) < 3) {
+
+                        $('select.Wquarter3_4').append($('<option/>', { 
+                        value: selectedTeamCvalue,
+                        text : selectedTeamCtext 
+                    }));    
+                    } else { 
+                        $('#Wquarter3_4').empty().append($('<option/>', { 
+                        value: selectedTeamCvalue,
+                        text : selectedTeamCtext 
+                    }));
+                        $('#Wquarter3_4').append($('<option/>', { 
+                        value: selectedTeamDvalue,
+                        text : selectedTeamDtext 
+                    })); 
+                    }
+
+                });
+
+                $("select.WRound1G2H").on("change",function(){
+
+                    var selectedTeamCvalue = $(".WRound1E2F option:selected").val();
+                    var selectedTeamCtext = $(".WRound1E2F option:selected").text();
+
+                    var selectedTeamDvalue = $(".WRound1G2H option:selected").val();
+                    var selectedTeamDtext = $(".WRound1G2H option:selected").text();
+
+                    $("select.iWRound1G2H").val("option:first");
+
+                    $(".iWRound1G2H").attr('src', url + '/' + selectedTeamDtext.replace(/ /g,"_").toLowerCase() + '.png');
+
+                    if (($('#Wquarter3_4 option').length) < 3) {
+
+                        $('select.Wquarter3_4').append($('<option/>', { 
+                        value: selectedTeamDvalue,
+                        text : selectedTeamDtext 
+                    }));    
+                    } else { 
+                        $('#Wquarter3_4').empty().append($('<option/>', { 
+                        value: selectedTeamDvalue,
+                        text : selectedTeamDtext 
+                    }));
+                        $('#Wquarter3_4').append($('<option/>', { 
+                        value: selectedTeamCvalue,
+                        text : selectedTeamCtext 
+                    })); 
+                    }
+
+                });
+
+
+                // -----------------------------
+
+                $("select.WRound1B2A").on("change",function(){
+
+                    var selectedTeamEvalue = $(".WRound1B2A option:selected").val();
+                    var selectedTeamEtext = $(".WRound1B2A option:selected").text();
+
+                    var selectedTeamFvalue = $(".WRound1D2C option:selected").val();
+                    var selectedTeamFtext = $(".WRound1D2C option:selected").text();
+
+                    $("select.Wquarter5_6").val("option:first");
+
+                    $(".iWRound1B2A").attr('src', url + '/' + selectedTeamEtext.replace(/ /g,"_").toLowerCase() + '.png');
+
+                    if (($('#Wquarter5_6 option').length) < 3) {
+
+                        $('select.Wquarter5_6').append($('<option/>', { 
+                        value: selectedTeamEvalue,
+                        text : selectedTeamEtext 
+                    }));    
+                    } else { 
+                        $('#Wquarter5_6').empty().append($('<option/>', { 
+                        value: selectedTeamEvalue,
+                        text : selectedTeamEtext 
+                    }));
+                        $('#Wquarter5_6').append($('<option/>', { 
+                        value: selectedTeamFvalue,
+                        text : selectedTeamFtext 
+                    })); 
+                    }
+
+                });
+
+                $("select.WRound1D2C").on("change",function(){
+
+                    var selectedTeamEvalue = $(".WRound1B2A option:selected").val();
+                    var selectedTeamEtext = $(".WRound1B2A option:selected").text();
+
+                    var selectedTeamFvalue = $(".WRound1D2C option:selected").val();
+                    var selectedTeamFtext = $(".WRound1D2C option:selected").text();
+
+
+                    $(".iWRound1D2C").attr('src', url + '/' + selectedTeamFtext.replace(/ /g,"_").toLowerCase() + '.png');
+                    
+                   if (($('#Wquarter5_6 option').length) < 3) {
+
+                        $('select.Wquarter5_6').append($('<option/>', { 
+                        value: selectedTeamFvalue,
+                        text : selectedTeamFtext 
+                    }));    
+                    } else { 
+                        $('#Wquarter5_6').empty().append($('<option/>', { 
+                        value: selectedTeamFvalue,
+                        text : selectedTeamFtext 
+                    }));
+                        $('#Wquarter5_6').append($('<option/>', { 
+                        value: selectedTeamEvalue,
+                        text : selectedTeamEtext 
+                    })); 
+                    }
+                });
+
+                //  -----------------------------
+
+                $("select.WRound1F2E").on("change",function(){
+
+                    var selectedTeamGvalue = $(".WRound1F2E option:selected").val();
+                    var selectedTeamGtext = $(".WRound1F2E option:selected").text();
+
+                    var selectedTeamHvalue = $(".WRound1H2G option:selected").val();
+                    var selectedTeamHtext = $(".WRound1H2G option:selected").text();
+
+                    $(".iWRound1F2E").attr('src', url + '/' + selectedTeamGtext.replace(/ /g,"_").toLowerCase() + '.png');
+                    
+                    if (($('#Wquarter7_8 option').length) < 3) {
+
+                        $('select.Wquarter7_8').append($('<option/>', { 
+                        value: selectedTeamGvalue,
+                        text : selectedTeamGtext 
+                    }));    
+                    } else { 
+                        $('#Wquarter7_8').empty().append($('<option/>', { 
+                        value: selectedTeamGvalue,
+                        text : selectedTeamGtext 
+                    }));
+                        $('#Wquarter7_8').append($('<option/>', { 
+                        value: selectedTeamHvalue,
+                        text : selectedTeamHtext 
+                    })); 
+                    }
+
+                });
+
+                $("select.WRound1H2G").on("input",function(){
+
+                    var selectedTeamGvalue = $(".WRound1F2E option:selected").val();
+                    var selectedTeamGtext = $(".WRound1F2E option:selected").text();
+
+                    var selectedTeamHvalue = $(".WRound1H2G option:selected").val();
+                    var selectedTeamHtext = $(".WRound1H2G option:selected").text();
+
+                    $(".iWRound1H2G").attr('src', url + '/' + selectedTeamHtext.replace(/ /g,"_").toLowerCase() + '.png');
+                    
+                    if (($('#Wquarter7_8 option').length) < 3) {
+
+                        $('select.Wquarter7_8').append($('<option/>', { 
+                            value: selectedTeamHvalue,
+                            text : selectedTeamHtext 
+                        }));
+                    } else { 
+                        $('#Wquarter7_8').empty().append($('<option/>', { 
+                            value: selectedTeamHvalue,
+                            text : selectedTeamHtext 
+                        }));
+                        $('#Wquarter7_8').append($('<option/>', { 
+                            value: selectedTeamGvalue,
+                            text : selectedTeamGtext 
+                        })); 
+                    }
+                });
+
+                //   ------------------------------
+
+
+                // FINALS
+
+                $("select.Wquarter1_2").on("input",function(){
+                    var selectedSemi1Value = $(".Wquarter1_2 option:selected").val();
+                    var selectedSemi1Text = $(".Wquarter1_2 option:selected").text();
+
+                    var selectedSemi2Value = $(".Wquarter3_4 option:selected").val();
+                    var selectedSemi2Text = $(".Wquarter3_4 option:selected").text();
+
+                    $(".iWquarter1_2").attr('src', url + '/' + selectedSemi1Text.replace(/ /g,"_").toLowerCase() + '.png');
+                   
+                    if (($('#WSemi1_2 option').length) < 3) {
+
+                        $('select.WSemi1_2').append($('<option/>', { 
+                        value: selectedSemi1Value,
+                        text : selectedSemi1Text 
+                    }));    
+                    } else { 
+                        $('#WSemi1_2').empty().append($('<option/>', { 
+                        value: selectedSemi1Value,
+                        text : selectedSemi1Text 
+                    }));
+                        $('#WSemi1_2').append($('<option/>', { 
+                        value: selectedSemi2Value,
+                        text : selectedSemi2Text 
+                    })); 
+                    }
+                });
+
+                $("select.Wquarter3_4").on("input",function(){
+
+                    var selectedSemi1Value = $(".Wquarter1_2 option:selected").val();
+                    var selectedSemi1Text = $(".Wquarter1_2 option:selected").text();
+
+                    var selectedSemi2Value = $(".Wquarter3_4 option:selected").val();
+                    var selectedSemi2Text = $(".Wquarter3_4 option:selected").text();
+
+                    $(".iWquarter3_4").attr('src', url + '/' + selectedSemi2Text.replace(/ /g,"_").toLowerCase() + '.png');
+                    
+                    if (($('#WSemi1_2 option').length) < 3) {
+
+                        $('select.WSemi1_2').append($('<option/>', { 
+                        value: selectedSemi2Value,
+                        text : selectedSemi2Text 
+                    }));    
+                    } else { 
+                        $('#WSemi1_2').empty().append($('<option/>', { 
+                        value: selectedSemi2Value,
+                        text : selectedSemi2Text 
+                    }));
+                        $('#WSemi1_2').append($('<option/>', { 
+                        value: selectedSemi1Value,
+                        text : selectedSemi1Text 
+                    })); 
+                    }
+                });
+
+                //  ---------------------------------
+
+
+                $("select.Wquarter5_6").on("input",function(){
+                    var selectedSemi3Value = $(".Wquarter5_6 option:selected").val();
+                    var selectedSemi3Text = $(".Wquarter5_6 option:selected").text();
+
+                    var selectedSemi4Value = $(".Wquarter7_8 option:selected").val();
+                    var selectedSemi4Text = $(".Wquarter7_8 option:selected").text();
+
+                     $(".iWquarter5_6").attr('src', url + '/' + selectedSemi3Text.replace(/ /g,"_").toLowerCase() + '.png');
+                    
+                    if (($('#WSemi3_4 option').length) < 3) {
+                        
+                        $('select.WSemi3_4').append($('<option/>', { 
+                        value: selectedSemi3Value,
+                        text : selectedSemi3Text 
+                    }));    
+                    } else { 
+                        $('#WSemi3_4').empty().append($('<option/>', { 
+                        value: selectedSemi3Value,
+                        text : selectedSemi3Text 
+                    }));
+                        $('#WSemi3_4').append($('<option/>', { 
+                        value: selectedSemi4Value,
+                        text : selectedSemi4Text 
+                    })); 
+                    }
+                });
+
+
+                $("select.Wquarter7_8").on("input",function(){
+                    var selectedSemi3Value = $(".Wquarter5_6 option:selected").val();
+                    var selectedSemi3Text = $(".Wquarter5_6 option:selected").text();
+
+                    var selectedSemi4Value = $(".Wquarter7_8 option:selected").val();
+                    var selectedSemi4Text = $(".Wquarter7_8 option:selected").text();
+
+                     $(".iWquarter7_8").attr('src', url + '/' + selectedSemi4Text.replace(/ /g,"_").toLowerCase() + '.png');
+                    
+                    if (($('#WSemi3_4 option').length) < 3) {
+
+                        $('select.WSemi3_4').append($('<option/>', { 
+                        value: selectedSemi4Value,
+                        text : selectedSemi4Text 
+                    }));    
+                    } else { 
+                        $('#WSemi3_4').empty().append($('<option/>', { 
+                        value: selectedSemi4Value,
+                        text : selectedSemi4Text 
+                    }));
+                        $('#WSemi3_4').append($('<option/>', { 
+                        value: selectedSemi3Value,
+                        text : selectedSemi3Text 
+                    })); 
+                    }
+                    
+                });
+
+                // ------------------------------------
+
+        
+                // FINAL
+                $("select.WSemi1_2").on("input",function(){
+                    var selectedSemi5Value = $(".WSemi1_2 option:selected").val();
+                    var selectedSemi5Text = $(".WSemi1_2 option:selected").text();
+
+                    var selectedSemi6Value = $(".WSemi3_4 option:selected").val();
+                    var selectedSemi6Text = $(".WSemi3_4 option:selected").text();
+
+                    $(".iWSemi1_2").attr('src', url + '/' + selectedSemi5Text.replace(/ /g,"_").toLowerCase() + '.png');
+                    
+                    if (($('#Winner1 option').length) < 3) {
+
+                        $('select.Winner1').append($('<option/>', { 
+                            value: selectedSemi5Value,
+                            text : selectedSemi5Text 
+                        }));    
+                    } else { 
+                        $('#Winner1').empty().append($('<option/>', { 
+                            value: selectedSemi5Value,
+                            text : selectedSemi5Text 
+                        }));
+                        $('#Winner1').append($('<option/>', { 
+                            value: selectedSemi6Value,
+                            text : selectedSemi6Text 
+                        })); 
+                    }
+                });
+
+                $("select.WSemi3_4").on("input",function(){
+
+                    var selectedSemi5Value = $(".WSemi1_2 option:selected").val();
+                    var selectedSemi5Text = $(".WSemi1_2 option:selected").text();
+                    
+                    var selectedSemi6Value = $(".WSemi3_4 option:selected").val();
+                    var selectedSemi6Text = $(".WSemi3_4 option:selected").text();
+
+                    $(".iWSemi3_4").attr('src', url + '/' + selectedSemi6Text.replace(/ /g,"_").toLowerCase() + '.png');
+                    
+                    if (($('#Winner1 option').length) < 3) {
+
+                        $('select.Winner1').append($('<option/>', { 
+                            value: selectedSemi6Value,
+                            text : selectedSemi6Text 
+                        }));    
+                    } else { 
+                        $('#Winner1').empty().append($('<option/>', { 
+                            value: selectedSemi6Value,
+                            text : selectedSemi6Text 
+                        }));
+                        $('#Winner1').append($('<option/>', { 
+                            value: selectedSemi5Value,
+                            text : selectedSemi5Text 
+                        })); 
+                    }
+                });
+
+                $("select.Winner1").on("input",function(){
+
+                    // var selectedSemi5Value = $(".Winner1 option:selected").val();
+                    var selectedWinner = $(".Winner1 option:selected").text();
+
+                    $(".iWinner1").attr('src', url + '/' + selectedWinner.replace(/ /g,"_").toLowerCase() + '.png');
+                });
+
+
+                // submit second stage copy
+
+                $('#submitSecondStage').click(function(){
+
+                    $.ajax({  
+                        url:postSECONDSTAGE,  
+                        method:"POST",  
+                        data:$('#secondstage').serialize(),
+                        type:'json',
+                        success:function(data){
+                            if(data.error){
+                                printErrorMsg(data.error);
+                            }else{
+                                // toastr.success('Saved');
+                                // location.reload();
+                                // $('#idgrupoh').removeClass( "active show" );
+                                // $('#idgrupoRoun').addClass( "active show" );
+                                // $('#grupoh').removeClass( "active show" );
+                                // $('#grupoRoun').addClass( "active show" );
+                                // location.reload();
+                                toastr.success('Saved');
+                                window.location='{{ route("home") }}';
+                            }
+                        }  
+                    }); 
+
+                });
 
             });
         }
@@ -6505,7 +6486,7 @@
             reset();
         });
 
-         $("select.WRound1A2B").on("input",function(){
+        $("select.WRound1A2B").on("input",function(){
             // save variables on change
 
             var selectedTeamAvalue = $(".WRound1A2B option:selected").val();
@@ -6520,26 +6501,26 @@
             if (($('#Wquarter1_2 option').length) < 3) {
                 
                 $('select.Wquarter1_2').append($('<option/>', { 
-                value: selectedTeamAvalue,
-                text : selectedTeamAtext 
-            }));    
+                    value: selectedTeamAvalue,
+                    text : selectedTeamAtext 
+                }));    
             } else { 
 
 
                 $('#Wquarter1_2').empty().append($('<option/>', { 
-                value: selectedTeamAvalue,
-                text : selectedTeamAtext 
-            }));
+                    value: selectedTeamAvalue,
+                    text : selectedTeamAtext 
+                }));
                 $('#Wquarter1_2').append($('<option/>', { 
-                value: selectedTeamBvalue,
-                text : selectedTeamBtext 
-            })); 
+                    value: selectedTeamBvalue,
+                    text : selectedTeamBtext 
+                })); 
             }
             
 
         });
 
-         $("select.WRound1C2D").on("change",function(){
+        $("select.WRound1C2D").on("change",function(){
 
             var selectedTeamAvalue = $(".WRound1A2B option:selected").val();
             var selectedTeamAtext = $(".WRound1A2B option:selected").text();
@@ -6555,18 +6536,18 @@
             if (($('#Wquarter1_2 option').length) < 3) {
 
                 $('select.Wquarter1_2').append($('<option/>', { 
-                value: selectedTeamBvalue,
-                text : selectedTeamBtext 
-            }));    
+                    value: selectedTeamBvalue,
+                    text : selectedTeamBtext 
+                }));
             } else { 
                 $('#Wquarter1_2').empty().append($('<option/>', { 
-                value: selectedTeamAvalue,
-                text : selectedTeamAtext 
-            }));
+                    value: selectedTeamAvalue,
+                    text : selectedTeamAtext 
+                }));
                 $('#Wquarter1_2').append($('<option/>', { 
-                value: selectedTeamBvalue,
-                text : selectedTeamBtext 
-            })); 
+                    value: selectedTeamBvalue,
+                    text : selectedTeamBtext 
+                })); 
             }
         });
 
@@ -7510,7 +7491,7 @@
         });
 
         
-
+        
     });
 
 
@@ -7528,45 +7509,6 @@
 <script src="{{URL::asset('scripts/calculate_G.js')}}"></script>
 <script src="{{URL::asset('scripts/calculate_H.js')}}"></script>
 
-
-
-
-<script>
-
-
-
-    $(document).ready( function () {
-
-        match_games();
-        match_games_B();
-        match_games_C();
-        match_games_D();
-        match_games_E();
-        match_games_F();
-        match_games_G();
-        match_games_H();
-
-        $(function(){
-            //Set button disabled
-            $('#submita').attr('disabled', 'disabled');
-
-            //Append a change event listener to your input
-            $('#submita').change(function(){
-
-                    if(($('fa1').val().length > 0) && ($('fa2').val().length > 0) && ($('fa3').val().length > 0) && ($('fa4').val().length > 0)) {
-                    $('#submita').removeAttr('disabled');  
-                    }                            
-            });
-
-            // You could then trigger the a change event on load just to check
-            $('#submita').trigger('change');
-        });
-
-
-    });
-
-    
-</script>
 
 
 

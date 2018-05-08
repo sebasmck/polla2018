@@ -48,14 +48,11 @@
                                         <br>
                                         <li>
                                             <p>
-                                                Once activated, log in with your username and password
-                                                and fill out your picks by clicking on "Select and Edit Your Picks". 
+                                                Once activated, log in with your email and password. Once logged in, on the main menu page, please click on “Edit my Picks” to fill out your pool. If you would like to add more pools, click on “Add Additional Pool”. You will be prompted to create a unique nickname.
+                                                Each nickname can only be used once. You can then click on “Edit picks” to fill out your pools.
                                             </p>
                                             <p>
-                                                In the tabs group A through group H, guess a score for 
-                                                each game. You can update the group table ranking by clicking on 
-                                                "Update table according to My Picks". Then, pick the winner and 
-                                                runner up of each group. 
+                                                In the tabs group A through group H, predict a score for each game and pick the winner and runner up for each group. Click “Save and go to Next Group” to continue, click any of the group tabs to navigate scores and groups, or “Save and go to Home Page” to go back to Main Menu.
                                             </p>
                                             <p>
                                                 GO TO TAB: Second Round, and... <br>
@@ -73,19 +70,19 @@
                                                     activate your account as soon as possible. You will
                                                      be able, in the meantime, to modify your picks at will. 
                                                      <br>
-                                                       miami@pollaworldcup.com::  newyork@pollaworldcup.com  ::  boston@pollaworldcup.com  ::  barranquilla@pollaworldcup.com  ::  bogota@pollaworldcup.com   
+                                                       miami@pollaworldcup.com::  newyork@pollaworldcup.com  :: barranquilla@pollaworldcup.com  ::  bogota@pollaworldcup.com   
                                             </p>
                                         </li>
                                         <li>
                                             <p>
-                                                 You  will  be  able  log  in  to  www.pollaworldcup.com  with  your  created  nickname  and  password  and  change  your  results  as  much  as  you  want  BEFORE  JUNE  9,  2104  @  9:00  AM  EST  
+                                                 You will be able log in to www.pollaworldcup.com with your email and password and change your results as much as you want BEFORE JUNE 11, 2018 @ 6:00 PM EST
                                             </p>
                                         </li>
                                         <li>
                                             <p>
-                                                 JUNE  9,  2014  @  9:00  PM  EST,  the  administration  will  make  all  bets  public,  and  publish  THE  RANKING  TABLE.   <br>
-
-                                                   The  TABLE  will  be  updated  daily  and  all  users  will  be  able  to  see  every  participant's  picks.  Upon  completion  of  the  World  Cup,  the  winner(s)  and  runner(s)  up  will  be  announced; 
+                                                JUNE 11, 2018 @ 11:00 PM EST, the administration will make all pools public, and
+                                                publish THE RANKING TABLE. <br>
+                                                The TABLE will be updated daily and all users will be able to see every participant&#39;s picks. Upon completion of the World Cup, the winner(s) and runner(s) up will be announced;
                                             </p>
                                         </li>
                                         <h6><b>   Rules </b></h6>
@@ -191,8 +188,13 @@
         </div>
     </div>
 </div>
-<footer class="footer">
-        
-      </footer>
+
+
 @endsection
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script src="{{URL::asset('js/app.js')}}"></script>
+<script src="{{URL::asset('scripts/countdown.js')}}"></script>
+@include('admin.partials.js')

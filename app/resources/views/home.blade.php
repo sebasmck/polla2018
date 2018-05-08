@@ -55,6 +55,7 @@
                                             @foreach ($polls as $poll)
                                             <tr>
                                                 <td>{{$poll->poll_name}}</td>
+
                                                 @if($poll->status == 'Pending')
                                                     <td style="color: #FF0000;">{{$poll->status}}</td>
                                                 @else
@@ -66,23 +67,25 @@
                                                 @else
                                                     <td style="color: #38610B;">{{$poll->complete}}</td>
                                                 @endif
+
                                                 <td>
                                                     @if($poll->status == 'Complete')
                                                     <div class="form-group row mb-0">
-                                                    <div class="col-md-8 offset-md-1">
-                                                        <div class="control">
-                                                            <button class="btn btn-primary" onclick="window.location='{{ route('picks.show', $poll->iduser_poll) }}'">Print Picks</button>
+                                                        <div class="col-md-12">
+                                                            <div class="control">
+                                                                <button class="btn btn-primary" onclick="window.location='{{ route('picks.show', $poll->iduser_poll) }}'">Print Picks</button>
+                                                            </div>
                                                         </div>
-                                                    </div>
                                                     </div>
                                                     @else
                                                     
                                                     @endif
                                                 </td>
-                                                <td><div class="form-group row mb-0">
+                                                <td style="text-align: center;">
+                                                    <div class="form-group row mb-0">
 
                                                     {{-- @if($poll->status == 'Pending') --}}
-                                                        <div class="col-md-8 offset-md-4">
+                                                        <div class="col-md-12">
                                                             <div class="control">
                                                                 <button class="btn btn-primary" onclick="window.location='{{ route('picks.show', $poll->iduser_poll) }}'">Edit my Picks</button>
                                                             </div>
@@ -94,7 +97,7 @@
                                                 </div></td>
                                                 <td>
                                                     @if($poll->status == 'Pending')
-                                                    <div class="col-md-8 offset-md-4">
+                                                    <div class="col-md-12">
                                                         <div class="control">
                                                             {{-- <a href="{{route('picks.destroy', $poll->iduser_poll)}}" class="btn btn-primary">Delete Poll</a> --}}
                                                             {!! Form::open(['method' => 'DELETE','route' => ['picks.destroy', $poll->iduser_poll],'style'=>'display:inline', 'onsubmit' => 'return confirmDelete()']) !!}
@@ -127,13 +130,6 @@
 
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <div class="form-group">
-                                    <button type="" class="btn btn-primary" onclick="window.location='{{ route('login') }}'" style="width: 100%;">
-                                        {{ __('Printable Version of my Picks') }}
-                                    </button>
-                                </div>    
-                            </div>
                             <div class="col-md-10 offset-md-1 ">
                                 <div class="form-group">
                                     <button type="" class="btn btn-primary" onclick="window.location='{{ route('rules') }}'" style="width: 100%;">

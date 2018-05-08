@@ -419,5 +419,5 @@
         $('#EPTS3').html(pts3);
         $('#EPTS4').html(pts4);
 
-        sortTable("Standings5");
+        $("#Standings5").tablesorter({sortList: [[7,1], [8,1], [5,1]]});
     }
