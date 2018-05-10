@@ -85,6 +85,16 @@ class Print_PicksController extends Controller
         $wg=  Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 7)->get()->first();
         $wh = Clasificado::where('id_poll', $iduser_poll)->where('id_fase', 8)->get()->first();
 
+        // Ruben's query
+        $winA = Clasificado::teamsClasificadosWin($iduser_poll,1);
+        $winB = Clasificado::teamsClasificadosWin($iduser_poll,2);
+        $winC = Clasificado::teamsClasificadosWin($iduser_poll,3);
+        $winD = Clasificado::teamsClasificadosWin($iduser_poll,4);
+        $winE = Clasificado::teamsClasificadosWin($iduser_poll,5);
+        $winF = Clasificado::teamsClasificadosWin($iduser_poll,6);
+        $winG = Clasificado::teamsClasificadosWin($iduser_poll,7);
+        $winH = Clasificado::teamsClasificadosWin($iduser_poll,8);
+
          $ss = SecondStage::where('id_poll', $iduser_poll)->get()->first();
         if($ss == null)
         {
@@ -112,6 +122,14 @@ class Print_PicksController extends Controller
         ->with('wg', $wg)
         ->with('wh', $wh)
         ->with('ss', $ss)
+        ->with('winA', $winA)
+        ->with('winB', $winB)
+        ->with('winC', $winC)
+        ->with('winD', $winD)
+        ->with('winE', $winE)
+        ->with('winF', $winF)
+        ->with('winG', $winG)
+        ->with('winH', $winH)
         ->with('countpolls', $countpolls);
         
     }

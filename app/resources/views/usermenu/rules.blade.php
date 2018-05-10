@@ -152,17 +152,13 @@
                                     <br>
                                     
                                     <ul>
-                                        <h6><b>   DISCLAIMER: </b></h6>
-                                        <li>
-                                            The qualified teams and their order of qualification to the 
-                                            subsequent rounds will be determined by the FIFA and their rules, regulations 
-                                            and format and NOT our by World Cup tracker. Please keep in mind, that if there 
-                                            is a tie in points, games won, and goal difference, the FIFA uses a drawing of 
-                                            lots process to determine who passes to the next round, if this is the case of
-                                             your scores your tracker will prompt you to choose your teams manually. Please 
-                                             do so. For official rules for the World Cup competition go to:  
-                                             http://resources.fifa.com/mm/document/tournament/competition/02/84/35/19/regulationsfwc2018en_neutral.pdf
-                                        </li>
+                                        <h6><b>   DISCLAIMER:</b></h6>
+                                       
+                                            <p>The qualified teams and their order of qualification to the subsequent rounds will be determined by the FIFA and their rules, regulations  and format and NOT our by World Cup tracker. Please keep in mind, that if there  is a tie in points, games  won, and goal difference, the FIFA uses a drawing of lots process to determine who passes to the next round, if this is the case of your scores your tracker will prompt you to choose your teams manually. Please do so. For official rules for the World Cup competition go to: <a href="http://resources.fifa.com/mm/document/tournament/competition/02/84/35/19/regulationsfwc2018en_neutral.pdf">http://resources.fifa.com/mm/document/
+                                            tournament/competition/02/84/35/19/
+                                            regulationsfwc2018en_neutral.pdf</a> 
+                                            </p>
+                                        
                                     </ul>
 
                                 <div class="container">

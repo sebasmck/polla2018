@@ -4900,10 +4900,6 @@
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
 
-
-                        
-
-
                                     {{-- Quarter-finals --}}
                                     <div class="col-md-2 quarters second_sta">
                                         <div class="card">
@@ -4916,7 +4912,7 @@
                                             </div>
 
                                             <div class="card-body">
-                                                <div style="height: 40px;"></div>
+                                                <div style="height: 55px;" class="separtos"></div>
                                                 {{-- 1A - 2B --}}
                                                 <div class="row">
                                                     <div class="col-md-12">
@@ -4974,7 +4970,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div style="height: 10px;"></div>
+                                                <div style="height: 10px;" ></div>
 
                                                 {{-- 1C - 2D --}}
                                                 <div class="row">
@@ -5032,7 +5028,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div style="height: 95px;"></div>
+                                                <div style="height: 130px;" class="separtos"></div>
 
                                                 {{-- 1E - 2F --}}
                                                 <div class="row">
@@ -5149,7 +5145,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div style="height: 98px;"></div>
+                                                <div style="height: 130px;" class="separtos"></div>
 
                                                 {{-- 1B - 2A --}}
                                                 <div class="row">
@@ -5264,7 +5260,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div style="height: 100px;"></div>
+                                                <div style="height: 134px;" class="separtos"></div>
 
                                                 {{-- 1F - 2E --}}
                                                 <div class="row">
@@ -5379,7 +5375,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div style="height: 40px;"></div>
+                                                <div style="height: 69px;" class="separtos"></div>
                                             </div>
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
@@ -5398,7 +5394,7 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <div style="height: 130px;"></div>
+                                                        <div style="height: 165px;" class="separtos"></div>
                                                         {{-- 1A - 2B --}}
                                                         <div class="row">
                                                             <div class="col-md-12">
@@ -5487,7 +5483,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <div style="height: 280px;"></div>
+                                                        <div style="height: 355px;" class="separtos"></div>
 
                                                         {{-- 1E - 2F --}}
                                                         <div class="row">
@@ -5572,7 +5568,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <div style="height: 147px;"></div>
+                                                        <div style="height: 181px;" class="separtos"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -5593,7 +5589,7 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <div style="height: 300px;"></div>
+                                                        <div style="height: 387px;" class="separtos"></div>
                                                         {{-- 1A - 2B --}}
                                                         <div class="row">
                                                             <div class="col-md-12">
@@ -5645,7 +5641,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <div style="height: 10px;"></div>
+                                                        <div style="height: 10px;" class="separtos"></div>
 
                                                         {{-- 1C - 2D --}}
                                                         <div class="row">
@@ -5689,11 +5685,11 @@
                                                                 </table>
                                                             </div>
                                                         </div>
-                                                         
+                                                        <div style="height: 407px;" class="separtos"></div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div style="height: 348px;"></div>
+                                            
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
 
@@ -5710,7 +5706,7 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <div style="height: 310px;"></div>
+                                                        <div style="height: 385px;" class="separtos"></div>
                                                         
                                                         <div class="row">
                                                             <div class="col-md-12">
@@ -5757,12 +5753,12 @@
                                                             </div>
                                                         </div>
 
-                                                        <div style="height: 10px;"></div>
+                                                        <div style="height: 437px;" class="separtos"></div>
 
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div style="height: 358px;"></div>
+                                            
                                         </div>  
                                     </div>
 
