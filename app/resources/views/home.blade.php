@@ -69,11 +69,11 @@
                                                 @endif
 
                                                 <td>
-                                                    @if($poll->status == 'Complete')
+                                                    @if($poll->complete == 'Complete')
                                                     <div class="form-group row mb-0">
                                                         <div class="col-md-12">
                                                             <div class="control">
-                                                                <button class="btn btn-primary" onclick="window.location='{{ route('picks.show', $poll->iduser_poll) }}'">Print Picks</button>
+                                                                <button class="btn btn-primary" onclick="window.location='{{ route('printpicks.show', $poll->iduser_poll) }}'">Print Picks</button>
                                                             </div>
                                                         </div>
                                                     </div>
