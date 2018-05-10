@@ -6182,13 +6182,6 @@
                     if(data.error){
                         printErrorMsg(data.error);
                     }else{
-                        // toastr.success('Saved');
-                        // location.reload();
-                        // $('#idgrupoh').removeClass( "active show" );
-                        // $('#idgrupoRoun').addClass( "active show" );
-                        // $('#grupoh').removeClass( "active show" );
-                        // $('#grupoRoun').addClass( "active show" );
-                        // location.reload();
                         toastr.success('Saved');
                         window.location='{{ route("home") }}';
                     }
@@ -6210,56 +6203,56 @@
 
                 // 1
                 $("#WRound1A2B").find('option:eq(0)').prop('selected', true);
-                $(".iWRound1A2B").attr('src', '');
+                $(".iWRound1A2B").attr('src', "");
                 // 2
                 $("#WRound1C2D").find('option:eq(0)').prop('selected', true);
-                $(".iWRound1C2D").attr('src', '');
+                $(".iWRound1C2D").attr('src', "{{asset('img/flags/cup2.png')}}");
                 // 3
                 $("#WRound1E2F").find('option:eq(0)').prop('selected', true);
-                $(".iWRound1E2F").attr('src', '');
+                $(".iWRound1E2F").attr('src', "{{asset('img/flags/cup2.png')}}");
                 // 4
                 $("#WRound1G2H").find('option:eq(0)').prop('selected', true);
-                $(".iWRound1G2H").attr('src', '');
+                $(".iWRound1G2H").attr('src', "{{asset('img/flags/cup2.png')}}");
                 // 5
                 $("#WRound1B2A").find('option:eq(0)').prop('selected', true);
-                $(".iWRound1B2A").attr('src', '');
+                $(".iWRound1B2A").attr('src', "{{asset('img/flags/cup2.png')}}");
                 // 6
                 $("#WRound1D2C").find('option:eq(0)').prop('selected', true);
-                $(".iWRound1D2C").attr('src', '');
+                $(".iWRound1D2C").attr('src', "{{asset('img/flags/cup2.png')}}");
                 // 7
                 $("#WRound1F2E").find('option:eq(0)').prop('selected', true);
-                $(".iWRound1F2E").attr('src', '');
+                $(".iWRound1F2E").attr('src', "{{asset('img/flags/cup2.png')}}");
                 // 8
                 $("#WRound1H2G").find('option:eq(0)').prop('selected', true);
-                $(".iWRound1H2G").attr('src', '');
+                $(".iWRound1H2G").attr('src', "{{asset('img/flags/cup2.png')}}");
 
 
                 // Semi-finals
                 // 1
                 $('select.Wquarter1_2').find('option').not(':first').remove();
-                $(".iWquarter1_2").attr('src', '');
+                $(".iWquarter1_2").attr('src', "{{asset('img/flags/cup2.png')}}");
                 // 2
                 $('select.Wquarter3_4').find('option').not(':first').remove();
-                $(".iWquarter3_4").attr('src', '');
+                $(".iWquarter3_4").attr('src', "{{asset('img/flags/cup2.png')}}");
                 // 3
                 $('select.Wquarter5_6').find('option').not(':first').remove();
-                $(".iWquarter5_6").attr('src', '');
+                $(".iWquarter5_6").attr('src', "{{asset('img/flags/cup2.png')}}");
                 // 4
                 $('select.Wquarter7_8').find('option').not(':first').remove();
-                $(".iWquarter7_8").attr('src', '');
+                $(".iWquarter7_8").attr('src', "{{asset('img/flags/cup2.png')}}");
 
                 // Final
                 // 1
                 $('select.WSemi1_2').find('option').not(':first').remove();
-                $(".iWSemi1_2").attr('src', '');
+                $(".iWSemi1_2").attr('src', "{{asset('img/flags/cup2.png')}}");
                 // 2
                 $('select.WSemi3_4').find('option').not(':first').remove();
-                $(".iWSemi3_4").attr('src', '');
+                $(".iWSemi3_4").attr('src', "{{asset('img/flags/cup2.png')}}");
 
                 // Champion
                 // 1
                 $('select.Winner1').find('option').not(':first').remove();
-                $(".iWinner1").attr('src', '');
+                $(".iWinner1").attr('src', "{{asset('img/flags/cup2.png')}}");
 
             }
 
