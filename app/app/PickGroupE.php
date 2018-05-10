@@ -27,5 +27,6 @@ class PickGroupE extends Model
 		'M5E1',
 		'M6E2',
 		'M6E3',
+		'complete',
 	];
 }

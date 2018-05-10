@@ -8,6 +8,15 @@ use Illuminate\Auth\Events\Registered;
 
 use App\PollsModel;
 
+use App\PicksGroupA;
+use App\PicksGroupB;
+use App\PicksGroupC;
+use App\PicksGroupD;
+use App\PicksGroupE;
+use App\PicksGroupF;
+use App\PicksGroupG;
+use App\PicksGroupH;
+use App\SecondStage;
 
 use App\User;
 
@@ -34,6 +43,7 @@ class HomeController extends Controller
         $id_user = auth()->user()->id;
         $polls = PollsModel::getBbyUser($id_user);
         $countpolls = PollsModel::all()->count();
+
         //$countpolls = PollsModel::where('status', '=', 'Active')->count();
 
         return view('home')->with('polls', $polls)->with('countpolls', $countpolls);

@@ -27,5 +27,6 @@ class PickGroupH extends Model
 						'M5H1',
 						'M6H2',
 						'M6H3',
+						'complete',
 	];
 }

@@ -27,5 +27,6 @@ class PickGroupF extends Model
 				'M5F1',
 				'M6F2',
 				'M6F3',
+				'complete',
 	];
 }

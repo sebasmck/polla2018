@@ -29,6 +29,7 @@ class SecondStage extends Model
 		'final_1',
 		'final_2',
 		'winner',
+		'complete',
 	];
 
 

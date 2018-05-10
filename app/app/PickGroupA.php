@@ -26,5 +26,6 @@ class PickGroupA extends Model
 							'M5A1',
 							'M6A2',
 							'M6A3',
+							'complete',
 	];
 }

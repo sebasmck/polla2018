@@ -18,7 +18,7 @@ use App\Team;
 use App\rivals;
 
 use App\SecondStage;
-
+use Illuminate\Support\Facades\Validator;
 use DB;
 
 class PicksController extends Controller
@@ -115,9 +115,30 @@ class PicksController extends Controller
 
     public function storeGroupA(Request $req){
 
-    	$pick = new PickGroupA;
+        $pick = new PickGroupA;
 
-        Clasificado::updateOrCreate(
+        $validator = Validator::make($req->all(), [
+
+            'M1A1' => 'required',
+            'M1A2' => 'required',
+            'M2A3' => 'required',
+            'M2A4' => 'required',
+            'M3A1' => 'required',
+            'M3A3' => 'required',
+            'M4A4' => 'required',
+            'M4A2' => 'required',
+            'M5A4' => 'required',
+            'M5A1' => 'required',
+            'M6A2' => 'required',
+            'M6A3' => 'required',
+            'WA1'  => 'required',
+            'WA2'  => 'required'
+        ]);
+
+    	
+        if ($validator->passes()) {
+
+            Clasificado::updateOrCreate(
 
             ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
 
@@ -127,8 +148,6 @@ class PicksController extends Controller
                 'id_runnerup' => $req->WA2,
                 'id_fase' => $req->id_fase,
              ]);
-
-        
 
 
         PickGroupA::updateOrCreate(
@@ -150,10 +169,15 @@ class PicksController extends Controller
                 'M5A1' => $req->M5A1,
                 'M6A2' => $req->M6A2,
                 'M6A3' => $req->M6A3,
+                'complete' => 1,
              ]);
 
-    	return response()->json($pick);
-    	
+        return response()->json($pick);
+
+        }else{
+            return response()->json(['error'=>'All fields Are Required']);
+        }
+
     }
 
 
@@ -161,7 +185,27 @@ class PicksController extends Controller
 
         $pick = new PickGroupB;
 
-         Clasificado::updateOrCreate(
+        $validator = Validator::make($req->all(), [
+
+            'M1B1' => 'required',
+            'M1B2' => 'required',
+            'M2B3' => 'required',
+            'M2B4' => 'required',
+            'M3B1' => 'required',
+            'M3B3' => 'required',
+            'M4B4' => 'required',
+            'M4B2' => 'required',
+            'M5B4' => 'required',
+            'M5B1' => 'required',
+            'M6B2' => 'required',
+            'M6B3' => 'required',
+            'WB1'  => 'required',
+            'WB2'  => 'required'
+        ]);
+
+        if ($validator->passes()) {
+
+            Clasificado::updateOrCreate(
 
             ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
 
@@ -191,19 +235,41 @@ class PicksController extends Controller
                 'M5B1' => $req->M5B1,
                 'M6B2' => $req->M6B2,
                 'M6B3' => $req->M6B3,
+                'complete' => 1,
 
              ]);
         
-        return response()->json($pick);
-        
+            return response()->json($pick);
+        }else{
+            return response()->json(['error'=>'All fields Are Required']);
+        }
     }
 
 
     public function storeGroupC(Request $req){
 
         $pick = new PickGroupC;
-        
-        Clasificado::updateOrCreate(
+
+        $validator = Validator::make($req->all(), [
+
+            'M1C1' => 'required',
+            'M1C2' => 'required',
+            'M2C3' => 'required',
+            'M2C4' => 'required',
+            'M3C1' => 'required',
+            'M3C3' => 'required',
+            'M4C4' => 'required',
+            'M4C2' => 'required',
+            'M5C4' => 'required',
+            'M5C1' => 'required',
+            'M6C2' => 'required',
+            'M6C3' => 'required',
+            'WC1'  => 'required',
+            'WC2'  => 'required'
+        ]);
+
+        if ($validator->passes()) {
+            Clasificado::updateOrCreate(
 
             ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
 
@@ -234,19 +300,42 @@ class PicksController extends Controller
                 'M5C1' => $req->M5C1,
                 'M6C2' => $req->M6C2,
                 'M6C3' => $req->M6C3,
+                'complete' => 1,
 
              ]);
         
-        return response()->json($pick);
-        
+            return response()->json($pick);
+        }else{
+            return response()->json(['error'=>'All fields Are Required']);
+        }
+
     }  
 
 
     public function storeGroupD(Request $req){
 
         $pick = new PickGroupD;
-        
-        Clasificado::updateOrCreate(
+
+        $validator = Validator::make($req->all(), [
+
+            'M1D1' => 'required',
+            'M1D2' => 'required',
+            'M2D3' => 'required',
+            'M2D4' => 'required',
+            'M3D1' => 'required',
+            'M3D3' => 'required',
+            'M4D4' => 'required',
+            'M4D2' => 'required',
+            'M5D4' => 'required',
+            'M5D1' => 'required',
+            'M6D2' => 'required',
+            'M6D3' => 'required',
+            'WD1'  => 'required',
+            'WD2'  => 'required'
+        ]);
+
+        if ($validator->passes()) {
+            Clasificado::updateOrCreate(
 
             ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
 
@@ -276,18 +365,43 @@ class PicksController extends Controller
                 'M5D1' => $req->M5D1,
                 'M6D2' => $req->M6D2,
                 'M6D3' => $req->M6D3,
+                'complete' => 1,
 
              ]);
 
-        return response()->json($pick);
+            return response()->json($pick);
+        }else{
+            return response()->json(['error'=>'All fields Are Required']);
+        }
+        
+        
         
     }
 
     public function storeGroupE(Request $req){
 
         $pick = new PickGroupE;
-        
-        Clasificado::updateOrCreate(
+
+        $validator = Validator::make($req->all(), [
+
+            'M1E1' => 'required',
+            'M1E2' => 'required',
+            'M2E3' => 'required',
+            'M2E4' => 'required',
+            'M3E1' => 'required',
+            'M3E3' => 'required',
+            'M4E4' => 'required',
+            'M4E2' => 'required',
+            'M5E4' => 'required',
+            'M5E1' => 'required',
+            'M6E2' => 'required',
+            'M6E3' => 'required',
+            'WE1'  => 'required',
+            'WE2'  => 'required'
+        ]);
+
+        if ($validator->passes()) {
+            Clasificado::updateOrCreate(
 
             ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
 
@@ -317,10 +431,16 @@ class PicksController extends Controller
                 'M5E1' => $req->M5E1,
                 'M6E2' => $req->M6E2,
                 'M6E3' => $req->M6E3,
+                'complete' => 1,
 
              ]);
         
-        return response()->json($pick);
+            return response()->json($pick);
+        }else{
+            return response()->json(['error'=>'All fields Are Required']);
+        }
+        
+        
         
     }
 
@@ -329,7 +449,26 @@ class PicksController extends Controller
 
         $pick = new PickGroupF;
 
-        Clasificado::updateOrCreate(
+        $validator = Validator::make($req->all(), [
+
+            'M1F1' => 'required',
+            'M1F2' => 'required',
+            'M2F3' => 'required',
+            'M2F4' => 'required',
+            'M3F1' => 'required',
+            'M3F3' => 'required',
+            'M4F4' => 'required',
+            'M4F2' => 'required',
+            'M5F4' => 'required',
+            'M5F1' => 'required',
+            'M6F2' => 'required',
+            'M6F3' => 'required',
+            'WF1'  => 'required',
+            'WF2'  => 'required'
+        ]);
+
+        if ($validator->passes()) {
+            Clasificado::updateOrCreate(
 
             ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
 
@@ -359,10 +498,16 @@ class PicksController extends Controller
                 'M5F1' => $req->M5F1,
                 'M6F2' => $req->M6F2,
                 'M6F3' => $req->M6F3,
+                'complete' => 1,
 
              ]);
         
-        return response()->json($pick);
+            return response()->json($pick);
+        }else{
+            return response()->json(['error'=>'All fields Are Required']);
+        }
+
+        
         
     }
 
@@ -370,8 +515,27 @@ class PicksController extends Controller
     public function storeGroupG(Request $req){
 
         $pick = new PickGroupG;
-        
-        Clasificado::updateOrCreate(
+
+        $validator = Validator::make($req->all(), [
+
+            'M1G1' => 'required',
+            'M1G2' => 'required',
+            'M2G3' => 'required',
+            'M2G4' => 'required',
+            'M3G1' => 'required',
+            'M3G3' => 'required',
+            'M4G4' => 'required',
+            'M4G2' => 'required',
+            'M5G4' => 'required',
+            'M5G1' => 'required',
+            'M6G2' => 'required',
+            'M6G3' => 'required',
+            'WG1'  => 'required',
+            'WG2'  => 'required'
+        ]);
+
+        if ($validator->passes()) {
+            Clasificado::updateOrCreate(
 
             ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
 
@@ -402,20 +566,43 @@ class PicksController extends Controller
                 'M5G1' => $req->M5G1,
                 'M6G2' => $req->M6G2,
                 'M6G3' => $req->M6G3,
+                'complete' => 1,
 
              ]);
 
-  
+            return response()->json($pick);
+        }else{
+            return response()->json(['error'=>'All fields Are Required']);
+        }
         
-        return response()->json($pick);
+        
         
     }
 
     public function storeGroupH(Request $req){
 
         $pick = new PickGroupH;
+
+         $validator = Validator::make($req->all(), [
+
+            'M1H1' => 'required',
+            'M1H2' => 'required',
+            'M2H3' => 'required',
+            'M2H4' => 'required',
+            'M3H1' => 'required',
+            'M3H3' => 'required',
+            'M4H4' => 'required',
+            'M4H2' => 'required',
+            'M5H4' => 'required',
+            'M5H1' => 'required',
+            'M6H2' => 'required',
+            'M6H3' => 'required',
+            'WH1'  => 'required',
+            'WH2'  => 'required'
+        ]);
         
-        Clasificado::updateOrCreate(
+         if ($validator->passes()) {
+              Clasificado::updateOrCreate(
 
             ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
 
@@ -446,16 +633,27 @@ class PicksController extends Controller
                 'M5H1' => $req->M5H1,
                 'M6H2' => $req->M6H2,
                 'M6H3' => $req->M6H3,
+                'complete' => 1,
 
              ]);
 
         
-        return response()->json($pick);
+            return response()->json($pick);
+
+         }else{
+            
+            return response()->json(['error'=>'All fields Are Required']);
+         
+         }
+
+       
         
     }
 
 
     public function storeSecondStage(Request $req){
+
+        
 
         $stage = new SecondStage;
 
@@ -480,8 +678,10 @@ class PicksController extends Controller
                 'final_1' => $req->WSemi1_2,
                 'final_2' => $req->WSemi3_4,
                 'winner' => $req->Winner1,
+                'complete' => 1,
 
              ]);
+
 
         return response()->json($stage);
 

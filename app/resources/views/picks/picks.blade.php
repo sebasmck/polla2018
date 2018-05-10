@@ -124,7 +124,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="pikcs">
-                                                                                            <input type="text" name="M1A1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1A1" onblur="match_games()" value="{{ old('M1A1',  isset($ga->M1A1) ? $ga->M1A1 : null) }}">
+                                                                                            <input type="text" name="M1A1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1A1" onblur="match_games()" value="{{ old('M1A1',  isset($ga->M1A1) ? $ga->M1A1 : null) }}" required>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -136,7 +136,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="pikcs">
-                                                                                            <input type="text" name="M1A2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1A2" onblur="match_games()" value="{{ old('M1A2',  isset($ga->M1A2) ? $ga->M1A2 : null) }}">
+                                                                                            <input type="text" name="M1A2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1A2" onblur="match_games()" value="{{ old('M1A2',  isset($ga->M1A2) ? $ga->M1A2 : null) }}" required>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3 div-flag">
@@ -166,11 +166,11 @@
                                                                                         <label class="label_team">Egypt</label>
                                                                                     </div>
                                                                                     <div class="col-md-3 div-flag">
-                                                                                        <img class="img_flags" src="{{asset('img/flags/egypt.png')}}">
+                                                                                        <img class="img_flags" src="{{asset('img/flags/egypt.png')}}" >
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="pikcs">
-                                                                                            <input type="text" name="M2A3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2A3" onblur="match_games()" value="{{ old('M2A3',  isset($ga->M2A3) ? $ga->M2A3 : null) }}">
+                                                                                            <input type="text" name="M2A3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2A3" onblur="match_games()" value="{{ old('M2A3',  isset($ga->M2A3) ? $ga->M2A3 : null) }}" required>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -184,7 +184,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="pikcs">
-                                                                                            <input type="text" name="M2A4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2A4" onblur="match_games()" value="{{ old('M1A2',  isset($ga->M1A2) ? $ga->M1A2 : null) }}">
+                                                                                            <input type="text" name="M2A4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2A4" onblur="match_games()" value="{{ old('M1A2',  isset($ga->M1A2) ? $ga->M1A2 : null) }}" required>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3 div-flag">
@@ -221,7 +221,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="pikcs">
-                                                                                            <input type="text" name="M3A1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3A1" onblur="match_games()" value="{{ old('M3A1',  isset($ga->M3A1) ? $ga->M3A1 : null) }}">
+                                                                                            <input type="text" name="M3A1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3A1" onblur="match_games()" value="{{ old('M3A1',  isset($ga->M3A1) ? $ga->M3A1 : null) }}" required>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -235,7 +235,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="pikcs">
-                                                                                            <input type="text" name="M3A3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3A3" onblur="match_games()" value="{{ old('M3A3',  isset($ga->M3A3) ? $ga->M3A3 : null) }}">
+                                                                                            <input type="text" name="M3A3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3A3" onblur="match_games()" value="{{ old('M3A3',  isset($ga->M3A3) ? $ga->M3A3 : null) }}" required >
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3 div-flag">
@@ -271,7 +271,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="pikcs">
-                                                                                            <input type="text" name="M4A4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4A4" onblur="match_games()" value="{{ old('M4A4',  isset($ga->M4A4) ? $ga->M4A4 : null) }}">
+                                                                                            <input type="text" name="M4A4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4A4" onblur="match_games()" value="{{ old('M4A4',  isset($ga->M4A4) ? $ga->M4A4 : null) }}" required>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -285,7 +285,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="pikcs">
-                                                                                            <input type="text" name="M4A2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4A2" onblur="match_games()" value="{{ old('M4A2',  isset($ga->M4A2) ? $ga->M4A2 : null) }}">
+                                                                                            <input type="text" name="M4A2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4A2" onblur="match_games()" value="{{ old('M4A2',  isset($ga->M4A2) ? $ga->M4A2 : null) }}" required>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3 div-flag">
@@ -321,7 +321,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="pikcs">
-                                                                                            <input type="text" name="M5A4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5A4" onblur="match_games()" value="{{ old('M5A4',  isset($ga->M5A4) ? $ga->M5A4 : null) }}">
+                                                                                            <input type="text" name="M5A4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5A4" onblur="match_games()" value="{{ old('M5A4',  isset($ga->M5A4) ? $ga->M5A4 : null) }}" required>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -335,7 +335,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="pikcs">
-                                                                                            <input type="text" name="M5A1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5A1" onblur="match_games()" value="{{ old('M5A1',  isset($ga->M5A1) ? $ga->M5A1 : null) }}">
+                                                                                            <input type="text" name="M5A1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5A1" onblur="match_games()" value="{{ old('M5A1',  isset($ga->M5A1) ? $ga->M5A1 : null) }}" required>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3 div-flag">
@@ -371,7 +371,7 @@
                                                                                     </div>
                                                                                     <div class="col-md-3">
                                                                                         <div class="pikcs">
-                                                                                            <input type="text" name="M6A2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6A2" onblur="match_games()" value="{{ old('M6A2',  isset($ga->M6A2) ? $ga->M6A2 : null) }}">
+                                                                                            <input type="text" name="M6A2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6A2" onblur="match_games()" value="{{ old('M6A2',  isset($ga->M6A2) ? $ga->M6A2 : null) }}"  required >
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -385,7 +385,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="pikcs">
-                                                                                            <input type="text" name="M6A3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6A3" onblur="match_games()" value="{{ old('M6A3',  isset($ga->M6A3) ? $ga->M6A3 : null) }}">
+                                                                                            <input type="text" name="M6A3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6A3" onblur="match_games()" value="{{ old('M6A3',  isset($ga->M6A3) ? $ga->M6A3 : null) }}" required >
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3 div-flag">
@@ -6624,7 +6624,7 @@
                 type:'json',
                 success:function(data){
                     if(data.error){
-                        printErrorMsg(data.error);
+                        toastr.warning(data.error);
                     }else{
                         toastr.success('Saved');
                         $('#idgrupoa').removeClass( "active show" );
@@ -6647,7 +6647,7 @@
                 type:'json',
                 success:function(data){
                     if(data.error){
-                        printErrorMsg(data.error);
+                        toastr.warning(data.error);
                     }else{
                         toastr.success('Saved');
                         window.location='{{ route("home") }}';
@@ -6666,7 +6666,7 @@
                 type:'json',
                 success:function(data){
                     if(data.error){
-                        printErrorMsg(data.error);
+                        toastr.warning(data.error);
                     }else{
                         toastr.success('Saved');
                         $('#idgrupob').removeClass( "active show" );
@@ -6689,7 +6689,7 @@
                 type:'json',
                 success:function(data){
                     if(data.error){
-                        printErrorMsg(data.error);
+                        toastr.warning(data.error);
                     }else{
                         toastr.success('Saved');
                         window.location='{{ route("home") }}';
@@ -6709,7 +6709,7 @@
                 type:'json',
                 success:function(data){
                     if(data.error){
-                        printErrorMsg(data.error);
+                        toastr.warning(data.error);
                     }else{
                         toastr.success('Saved');
                         $('#idgrupoc').removeClass( "active show" );
@@ -6732,7 +6732,7 @@
                 type:'json',
                 success:function(data){
                     if(data.error){
-                        printErrorMsg(data.error);
+                        toastr.warning(data.error);
                     }else{
                         toastr.success('Saved');
                         window.location='{{ route("home") }}';
@@ -6753,7 +6753,7 @@
                 type:'json',
                 success:function(data){
                     if(data.error){
-                        printErrorMsg(data.error);
+                        toastr.warning(data.error);
                     }else{
                         toastr.success('Saved');
                         $('#idgrupod').removeClass( "active show" );
@@ -6776,7 +6776,7 @@
                 type:'json',
                 success:function(data){
                     if(data.error){
-                        printErrorMsg(data.error);
+                        toastr.warning(data.error);
                     }else{
                         toastr.success('Saved');
                         window.location='{{ route("home") }}';
@@ -6797,7 +6797,7 @@
                 type:'json',
                 success:function(data){
                     if(data.error){
-                        printErrorMsg(data.error);
+                        toastr.warning(data.error);
                     }else{
                         toastr.success('Saved');
                         $('#idgrupoe').removeClass( "active show" );
@@ -6820,7 +6820,7 @@
                 type:'json',
                 success:function(data){
                     if(data.error){
-                        printErrorMsg(data.error);
+                        toastr.warning(data.error);
                     }else{
                         toastr.success('Saved');
                         window.location='{{ route("home") }}';
@@ -6841,7 +6841,7 @@
                 type:'json',
                 success:function(data){
                     if(data.error){
-                        printErrorMsg(data.error);
+                        toastr.warning(data.error);
                     }else{
                         toastr.success('Saved');
                         $('#idgrupof').removeClass( "active show" );
@@ -6864,7 +6864,7 @@
                 type:'json',
                 success:function(data){
                     if(data.error){
-                        printErrorMsg(data.error);
+                        toastr.warning(data.error);
                     }else{
                         toastr.success('Saved');
                         window.location='{{ route("home") }}';
@@ -6885,7 +6885,7 @@
                 type:'json',
                 success:function(data){
                     if(data.error){
-                        printErrorMsg(data.error);
+                        toastr.warning(data.error);
                     }else{
                         toastr.success('Saved');
                         $('#idgrupog').removeClass( "active show" );
@@ -6908,7 +6908,7 @@
                 type:'json',
                 success:function(data){
                     if(data.error){
-                        printErrorMsg(data.error);
+                        toastr.warning(data.error);
                     }else{
                         toastr.success('Saved');
                         window.location='{{ route("home") }}';
@@ -6929,7 +6929,7 @@
                 type:'json',
                 success:function(data){
                     if(data.error){
-                        printErrorMsg(data.error);
+                        toastr.warning(data.error);
                     }else{                        
                         toastr.success('Saved');
                         $('#idgrupoh').removeClass( "active show" );
@@ -6956,7 +6956,7 @@
                 type:'json',
                 success:function(data){
                     if(data.error){
-                        printErrorMsg(data.error);
+                        toastr.warning(data.error);
                     }else{
                         toastr.success('Saved');
                         window.location='{{ route("home") }}';
@@ -6975,7 +6975,7 @@
                 type:'json',
                 success:function(data){
                     if(data.error){
-                        printErrorMsg(data.error);
+                        toastr.warning(data.error);
                     }else{
                         // toastr.success('Saved');
                         // location.reload();
