@@ -63,6 +63,7 @@ Route::post('/storeh', 'PicksController@storeGroupH')->name('storeh');
 Route::post('/storesecondstage', 'PicksController@storeSecondStage')->name('storesecondstage');
 
 Route::Resource('picks', 'PicksController');
+Route::Resource('printpicks', 'Print_PicksController');
 
 
 

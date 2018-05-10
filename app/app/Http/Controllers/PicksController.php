@@ -76,6 +76,8 @@ class PicksController extends Controller
             $ss = new SecondStage;
         }
 
+        $countpolls = PollsModel::all()->count();
+
 
         return view('picks.picks')
         ->with('poll', $poll)
@@ -103,7 +105,8 @@ class PicksController extends Controller
         ->with('winF', $winF)
         ->with('winG', $winG)
         ->with('winH', $winH)
-        ->with('ss', $ss);
+        ->with('ss', $ss)
+        ->with('countpolls', $countpolls);
         // ->with('drop1', $drop1)
         
 

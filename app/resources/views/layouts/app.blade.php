@@ -66,7 +66,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div style="text-align: center; margin-left: 23%;">
-                    Registered Pools: {{-- {{$countpolls}} --}}
+                    Registered Pools: {{$countpolls}}
                 </div>
                 <div style="text-align: center; margin-left: 12%; padding-top:8px;">
                     <ul style="line-height:50%; list-style-type: none;">
