@@ -43,7 +43,7 @@
 
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <input id="nickname" type="text" class="form-control{{ $errors->has('nickname') ? ' is-invalid' : '' }}" name="nickname" value="{{ old('nickname') }}" required placeholder="Nickname">
+                                <input id="nickname" type="text" class="form-control{{ $errors->has('poll_name') ? ' is-invalid' : '' }}" name="poll_name" value="{{ old('poll_name') }}" required placeholder="Nickname">
 
                                 @if ($errors->has('nickname'))
                                     <span class="invalid-feedback">
@@ -144,6 +144,9 @@
         </div>
     </div>
 </div>
+
+@include('admin.partials.js')
+
 <script src="{{URL::asset('js/app.js')}}"></script>
 
 @endsection

@@ -214,7 +214,9 @@ class AdminsController extends Controller
     public function destroy($id)
     {
         $user = User::find($id);
-        
+
+        $user->polls()->delete();
+
         $user->delete();
 
         $users = User::all();
@@ -222,4 +224,18 @@ class AdminsController extends Controller
 
         return view('admin.assign_rep')->with('users', $users)->with('reps', $reps);
     }
+
+
+    public function deletePoll($iduser_poll){
+
+        $poll = PollsModel::find($iduser_poll);
+
+        $poll->delete();
+
+        return redirect()->back();
+        
+
+    }
+
+
 }

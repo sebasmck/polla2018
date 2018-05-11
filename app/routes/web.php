@@ -47,6 +47,8 @@ Route::post('/updaterep', 'AdminsController@updateRep')->name('updaterep');
 
 Route::get('allusers', 'AdminsController@allUsers')->name('allusers');
 
+Route::delete('poll/{iduser_poll}', 'AdminsController@deletePoll')->name('destroypoll');
+
 Route::Resource('admins', 'AdminsController');
 
 // PICKS

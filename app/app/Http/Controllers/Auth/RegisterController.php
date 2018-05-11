@@ -37,11 +37,30 @@ class RegisterController extends Controller
      */
     public function register(Request $request)
     {
-        $pool = array('poll_name' => $request->nickname);
+        // $pool = array('poll_name' => $request->nickname);
 
-        $this->validator_pool_name($pool)->validate();
+        // $this->validator_pool_name($pool)->validate();
 
-        $this->validator($request->all())->validate();
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string|max:255',
+            'lastname' => 'required|string|max:255',
+            'poll_name' => 'required|unique:user_poll|string|max:255',
+            'email' => 'required|confirmed|string|email|max:255|unique:users',
+            'password' => 'required|string|min:6',
+            'city' => 'required|string|min:2',
+            'cellphone' => 'required|string|min:7'
+        ],
+        [   'poll_name.unique' => 'This Nickname has already been chosen.']);
+
+        $notification = array(
+            'message' => 'This nickname has already been chosen!', 
+            'alert-type' => 'warning'
+        );
+
+
+
+        if ($validator->passes()) {
+            // $this->validator($request->all())->validate();
 
         event(new Registered($user = $this->create($request->all())));
 
@@ -57,7 +76,7 @@ class RegisterController extends Controller
 
         $polls = new PollsModel;
         $polls->id_User = $user->id;
-        $polls->poll_name = $user->nickname;
+        $polls->poll_name = $user->poll_name;
         $polls->complete = 'Incomplete';
         $polls->status = 'Pending';
 
@@ -69,6 +88,11 @@ class RegisterController extends Controller
 
         return $this->registered($request, $user, $request->session()->put('message', 'Thank you for registering in pollaworldcup.com! Please allow up to 24 hours for your registration to be accepted.'))
                         ?: redirect($this->redirectPath());
+        }else{
+            return redirect()->back()->with(['error'=> $validator->errors()->all()]);
+        }
+
+        
     }
 
 
@@ -93,23 +117,24 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => 'required|string|max:255',
             'lastname' => 'required|string|max:255',
-            'nickname' => 'required|unique:users|string|max:255',
+            'nickname' => 'required|unique:user_poll|string|max:255',
             'email' => 'required|confirmed|string|email|max:255|unique:users',
             'password' => 'required|string|min:6',
             'city' => 'required|string|min:2',
             'cellphone' => 'required|string|min:7'
-        ]);
+        ],
+        [   'nickname.unique' => 'This Nickname has already been chosen.']);
     }
 
 
   
-    protected function validator_pool_name(array $data)
-    {   
-        return Validator::make($data, [
-            'poll_name' => 'unique:user_poll'
-        ],
-        [   'nickname.unique' => 'This Nickname has already been chosen.']);
-    }
+    // protected function validator_pool_name(array $data)
+    // {   
+    //     return Validator::make($data, [
+    //         'poll_name' => 'unique:user_poll'
+    //     ],
+    //     [   'nickname.unique' => 'This Nickname has already been chosen.']);
+    // }
 
     /**
      * Create a new user instance after a valid registration.
@@ -124,7 +149,7 @@ class RegisterController extends Controller
         return User::create([
             'name' => $data['name'],
             'lastname' => $data['lastname'],
-            'nickname' => $data['nickname'],
+            'nickname' => $data['poll_name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'city' => $data['city'],

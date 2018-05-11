@@ -254,42 +254,13 @@
             } else {
                 return false;
             }
-
-
-        // toastr.options = {
-        //   "closeButton": false,
-        //   "debug": false,
-        //   "newestOnTop": false,
-        //   "progressBar": false,
-        //   "positionClass": "toast-top-right",
-        //   "preventDuplicates": false,
-        //   "onclick": null,
-        //   "showDuration": "300",
-        //   "hideDuration": "1000",
-        //   "timeOut": 0,
-        //   "extendedTimeOut": 0,
-        //   "showEasing": "swing",
-        //   "hideEasing": "linear",
-        //   "showMethod": "fadeIn",
-        //   "hideMethod": "fadeOut",
-        //   "tapToDismiss": false
-        // };
-
-        // toastr.success("<br /><br /><button type='button' id='confirmationRevertYes' class='btn clear'>Yes</button>",'Are you sure you want to delete?');
-
-        // toastr.success("<br /><br /><button type='button' id='confirmationRevertYes' class='btn clear'>Yes</button>",'Are you sure you want to delete?',
-        // {
-        //   closeButton: false,
-        //   allowHtml: true,
-        //   onShown: function (toast) {
-        //       $("#confirmationRevertYes").click(function(){
-        //         console.log('clicked yes');
-        //       });
-        //     }
-        // });
+       
     }
 
+
+
     $(document).ready(function(){
+
 
         $.ajaxSetup({
           headers: {

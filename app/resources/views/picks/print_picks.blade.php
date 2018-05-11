@@ -2,11 +2,7 @@
 
 @section('content')
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 title_polla">
-                <img src="{{ asset('img/logo.png') }}" style="height: 80px;">
-            </div>
-        </div>
+        <br>
         <div class="row justify-content-center">
             <div class="col-md-12">
 
@@ -43,9 +39,6 @@
 		                                    	<table id="myTable" class="display table_picks-print">
                                                     <thead>
                                                         <tr>
-                                                            <th class="th-date">Date</th>
-                                                            <th>1st Team</th>
-                                                            <th>2st Team</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -285,9 +278,6 @@
 			                                        <table id="myTable" class="display table_picks-print" style="width: 100%;">
 			                                                <thead>
 			                                                    <tr>
-			                                                        <th class="th-date">Date</th>
-			                                                        <th>1st Team</th>
-			                                                        <th>2st Team</th>
 			                                                    </tr>
 			                                                </thead>
 			                                                <tbody>
@@ -528,9 +518,6 @@
 		                                    	<table id="myTable" class="display table_picks-print">
                                                     <thead>
                                                         <tr>
-                                                            <th class="th-date">Date</th>
-                                                            <th>1st Team</th>
-                                                            <th>2st Team</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -790,9 +777,6 @@
 		                                    	<table id="myTable" class="display table_picks-print">
                                                     <thead>
                                                         <tr>
-                                                            <th class="th-date">Date</th>
-                                                            <th>1st Team</th>
-                                                            <th>2st Team</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -1045,9 +1029,6 @@
 		                                    	<table id="myTable" class="display table_picks-print">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th class="th-date">Date</th>
-                                                                            <th>1st Team</th>
-                                                                            <th>2st Team</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
@@ -1297,9 +1278,6 @@
 		                                    	<table id="myTable" class="display table_picks-print">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th class="th-date">Date</th>
-                                                                            <th>1st Team</th>
-                                                                            <th>2st Team</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
@@ -1549,9 +1527,6 @@
 		                                    	<table id="myTable" class="display table_picks-print">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th class="th-date">Date</th>
-                                                                            <th>1st Team</th>
-                                                                            <th>2st Team</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
@@ -1811,9 +1786,6 @@
 		                                    	<table id="myTable" class="display table_picks-print">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th class="th-date">Date</th>
-                                                                            <th>1st Team</th>
-                                                                            <th>2st Team</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
@@ -2058,17 +2030,17 @@
                         	</div>
                     	</div>
 
-                    	<div class="row">
+                    	<div style="margin-left: 7%;" class="row">
                     		{{-- Second Stage --}}
 		                        <div class="card">
 		                            
 		                        
-		                            <div class="card-body-print">
+		                            <div class="card-body-print" style="width: 850px;">
 		                                <div class="row">
 		                                    <div class="col-md-12">
 		                                    	<div class="row">
 			                                    	{{-- Round of 16 --}}
-				                                    <div class="col-md-3 second_sta">
+				                                    <div class="col-md-2 second_sta">
 				                                        <div class="card">
 				                                            <div class="card-header-print">
 				                                                <div class="row">
@@ -2077,7 +2049,7 @@
 				                                                    </div>
 				                                                </div>
 				                                            </div>
-				                                            <div class="card-body-print flagsbody" style="text-align: left;">
+				                                            <div class="card-body-print flagsbody" style="text-align: left; line-height: 50%">
 				                                                {{-- 1A --}}
 				                                                <div class="row">
 				                                                    <div class="col-md-12">
@@ -2534,88 +2506,58 @@
 				                                                {{-- 1A - 2B --}}
 				                                                <div class="row">
 				                                                    <div class="col-md-12">
-				                                                        
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                @if($winA == null && $winA)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;"></td>
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>   
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12">
-				                                                                                @if (isset($ss->quarter_1))
-				                                                                                    {!! Form::select('WRound1A2B', [
-				                                                                                      '' => 'Pick a Team',
-				                                                                                      "$winA->id_winner_team" => "$winA->team_name",
-				                                                                                      "$winB->id_runnerup" => "$winB->team_rumup",
-				                                                                                      ], old('value', isset($ss->quarter_1) ? $ss->quarter_1 : null ), [ 'class' =>  'form-control WRound1A2B', 'required', 'id' => 'WRound1A2B']) !!}
-				                                                                                @else
-
-				                                                                                    <select class="form-control WRound1A2B" id="WRound1A2B" name="WRound1A2B">
-				                                                                                        <option>Pick a Team...</option>
-				                                                                                        @if($winA != null && $winB != null)
-				                                                                                        <option value="{{$winA->id_winner_team}}">{{$winA->team_name}}</option>
-
-				                                                                                        <option value="{{$winB->id_runnerup}}">{{$winB->team_rumup}}</option>
-				                                                                                        @endif
-				                                                                                    </select>
-				                                                                                @endif
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
-
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                 @if($ss->quarter1->team_name == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                    
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label>{{$ss->quarter1->team_name}}</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
+                                                                       
 				                                                    </div>
 				                                                </div>
 
 				                                                {{-- 1C - 2D --}}
 				                                                <div class="row">
 				                                                    <div class="col-md-12">
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                 @if($winC == null && $winD)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;"></td>
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12">
-				                                                                                @if (isset($ss->quarter_2))
-				                                                                                    {!! Form::select('WRound1C2D', [
-				                                                                                      '' => 'Pick a Team',
-				                                                                                      "$winC->id_winner_team" => "$winC->team_name",
-				                                                                                      "$winD->id_runnerup" => "$winD->team_rumup",
-				                                                                                      ], old('value', isset($ss->quarter_2) ? $ss->quarter_2 : null ), [ 'class' =>  'form-control WRound1C2D', 'required', 'id' => 'WRound1C2D']) !!}
-				                                                                                @else
-				                                                                                
-				                                                                                    <select class="form-control WRound1C2D" id="WRound1C2D" name="WRound1C2D">
-				                                                                                        <option>Pick a Team...</option>
-				                                                                                        @if($winC != null && $winD != null)
-				                                                                                        <option value="{{$winC->id_winner_team}}">{{$winC->team_name}}</option>
-				                                                                                        <option value="{{$winD->id_runnerup}}">{{$winD->team_rumup}}</option>
-				                                                                                        @endif
-				                                                                                    </select>
-				                                                                                @endif
-
-				                                                                                
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
-
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                 @if($ss->quarter2->team_name == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                    
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label><label>{{$ss->quarter2->team_name}}</label></label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
+				                                                        
 				                                                    </div>
 				                                                </div>
 
@@ -2623,268 +2565,170 @@
 				                                                {{-- 1E - 2F --}}
 				                                                <div class="row">
 				                                                    <div class="col-md-12">
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                 @if($winE == null && $winF)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;"></td>
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12">
-				                                                                                    
-				                                                                                @if (isset($ss->quarter_3))
-				                                                                                    {!! Form::select('WRound1E2F', [
-				                                                                                      '' => 'Pick a Team',
-				                                                                                      "$winE->id_winner_team" => "$winE->team_name",
-				                                                                                      "$winF->id_runnerup" => "$winF->team_rumup",
-				                                                                                      ], old('value', isset($ss->quarter_3) ? $ss->quarter_3 : null ), [ 'class' =>  'form-control WRound1E2F', 'required', 'id' => 'WRound1E2F']) !!}
-				                                                                                @else
-				                                                                                
-				                                                                                    <select class="form-control WRound1E2F" id="WRound1E2F" name="WRound1E2F">
-				                                                                                        <option>Pick a Team...</option>
-				                                                                                        @if($winE != null && $winF != null)
-				                                                                                        <option value="{{$winE->id_winner_team}}">{{$winE->team_name}}</option>
-				                                                                                        <option value="{{$winF->id_runnerup}}">{{$winF->team_rumup}}</option>
-				                                                                                        @endif
-				                                                                                    </select>
-				                                                                                @endif
-
-				                                                                                    
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
-
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                 @if($ss->quarter3->team_name == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                    
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label>{{$ss->quarter3->team_name}}</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
 				                                                    </div>
 				                                                </div>
 
 				                                                {{-- 1G - 2H --}}
 				                                                <div class="row">
 				                                                    <div class="col-md-12">
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                 @if($winG == null && $winH)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;"></td>
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12">
-				                                                                                 
-				                                                                                @if (isset($ss->quarter_4))
-				                                                                                    {!! Form::select('WRound1G2H', [
-				                                                                                      '' => 'Pick a Team',
-				                                                                                      "$winG->id_winner_team" => "$winG->team_name",
-				                                                                                      "$winH->id_runnerup" => "$winH->team_rumup",
-				                                                                                      ], old('value', isset($ss->quarter_4) ? $ss->quarter_4 : null ), [ 'class' =>  'form-control WRound1G2H', 'required', 'id' => 'WRound1G2H']) !!}
-				                                                                                @else
-				                                                                                
-				                                                                                    <select class="form-control WRound1G2H" id="WRound1G2H" name="WRound1G2H">
-				                                                                                        <option>Pick a Team...</option>
-				                                                                                        @if($winG != null && $winH != null)
-				                                                                                        <option value="{{$winG->id_winner_team}}">{{$winG->team_name}}</option>
-				                                                                                        <option value="{{$winH->id_runnerup}}">{{$winH->team_rumup}}</option>
-				                                                                                        @endif
-				                                                                                    </select>
-				                                                                                @endif
-				                                                                                    
-				                                                                                
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
-
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                 @if($ss->quarter4->team_name == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                    
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label>{{$ss->quarter4->team_name}}</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
+				                                                        
 				                                                    </div>
 				                                                </div>
 
 				                                                {{-- 1B - 2A --}}
 				                                                <div class="row">
 				                                                    <div class="col-md-12">
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                 @if($winB == null && $winA)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;"></td>
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12">
-				                                                                                 
-				                                                                                @if (isset($ss->quarter_5))
-				                                                                                    {!! Form::select('WRound1B2A', [
-				                                                                                      '' => 'Pick a Team',
-				                                                                                      "$winB->id_winner_team" => "$winB->team_name",
-				                                                                                      "$winA->id_runnerup" => "$winA->team_rumup",
-				                                                                                      ], old('value', isset($ss->quarter_5) ? $ss->quarter_5 : null ), [ 'class' =>  'form-control WRound1B2A', 'required', 'id' => 'WRound1B2A']) !!}
-				                                                                                @else
-				                                                                                
-				                                                                                <select class="form-control WRound1B2A" id="WRound1B2A" name="WRound1B2A">
-				                                                                                    <option>Pick a Team...</option>
-				                                                                                    @if($winB != null && $winA != null)
-				                                                                                    <option value="{{$winB->id_winner_team}}">{{$winB->team_name}}</option>
-				                                                                                    <option value="{{$winA->id_runnerup}}">{{$winA->team_rumup}}</option>
-				                                                                                    @endif
-				                                                                                </select>
-				                                                                                @endif
-
-				                                                                                
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
-
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                 @if($ss->quarter5->team_name == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                    
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label>{{$ss->quarter5->team_name}}</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
+				                                                        
 				                                                    </div>
 				                                                </div>
 
 				                                                {{-- 1D - 2C --}}
 				                                                <div class="row">
 				                                                    <div class="col-md-12">
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                 @if($winD == null && $winC)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;"></td>
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12">
-				                                                                                @if (isset($ss->quarter_6))
-				                                                                                    {!! Form::select('WRound1D2C', [
-				                                                                                      '' => 'Pick a Team',
-				                                                                                      "$winD->id_winner_team" => "$winD->team_name",
-				                                                                                      "$winC->id_runnerup" => "$winC->team_rumup",
-				                                                                                      ], old('value', isset($ss->quarter_6) ? $ss->quarter_6 : null ), [ 'class' =>  'form-control WRound1D2C', 'required', 'id' => 'WRound1D2C']) !!}
-				                                                                                @else
-				                                                                                
-				                                                                                 <select class="form-control WRound1D2C" id="WRound1D2C" name="WRound1D2C">
-				                                                                                    <option>Pick a Team...</option>
-				                                                                                    @if($winD != null && $winC != null)
-				                                                                                    <option value="{{$winD->id_winner_team}}">{{$winD->team_name}}</option>
-				                                                                                    <option value="{{$winC->id_runnerup}}">{{$winC->team_rumup}}</option>
-				                                                                                    @endif
-				                                                                                </select>
-				                                                                                @endif
-
-				                                                                               
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
-
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                 @if($ss->quarter6->team_name == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                    
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label>{{$ss->quarter6->team_name}}</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
 				                                                    </div>
 				                                                </div>
 
 				                                                {{-- 1F - 2E --}}
 				                                                <div class="row">
 				                                                    <div class="col-md-12">
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                 @if($winF == null && $winE)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;"></td>
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12">
-
-				                                                                                @if (isset($ss->quarter_7))
-				                                                                                    {!! Form::select('WRound1F2E', [
-				                                                                                      '' => 'Pick a Team',
-				                                                                                      "$winF->id_winner_team" => "$winF->team_name",
-				                                                                                      "$winE->id_runnerup" => "$winE->team_rumup",
-				                                                                                      ], old('value', isset($ss->quarter_7) ? $ss->quarter_7 : null ), [ 'class' =>  'form-control WRound1F2E', 'required', 'id' => 'WRound1F2E']) !!}
-				                                                                                @else
-				                                                                                
-				                                                                                <select class="form-control WRound1F2E" id="WRound1F2E" name="WRound1F2E">
-				                                                                                    <option>Pick a Team...</option>
-				                                                                                    @if($winF != null && $winE != null)
-				                                                                                    <option value="{{$winF->id_winner_team}}">{{$winF->team_name}}</option>
-				                                                                                    <option value="{{$winE->id_runnerup}}">{{$winE->team_rumup}}</option>
-				                                                                                    @endif
-				                                                                                </select>
-				                                                                                @endif
-				                                                                               
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
-
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                 @if($ss->quarter7->team_name == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                    
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label>{{$ss->quarter7->team_name}}</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
 				                                                    </div>
 				                                                </div>
 
 				                                                {{-- 1H - 2G --}}
 				                                                <div class="row">
 				                                                    <div class="col-md-12">
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                 @if($winH == null && $winG)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;"></td>
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12">
-				                                                                                 
-				                                                                                @if (isset($ss->quarter_8))
-				                                                                                    {!! Form::select('WRound1H2G', [
-				                                                                                      '' => 'Pick a Team',
-				                                                                                      "$winH->id_winner_team" => "$winH->team_name",
-				                                                                                      "$winG->id_runnerup" => "$winG->team_rumup",
-				                                                                                      ], old('value', isset($ss->quarter_8) ? $ss->quarter_8 : null ), [ 'class' =>  'form-control WRound1H2G', 'required', 'id' => 'WRound1H2G']) !!}
-				                                                                                @else
-				                                                                                
-				                                                                                <select class="form-control WRound1H2G" id="WRound1H2G" name="WRound1H2G">
-				                                                                                    <option>Pick a Team...</option>
-				                                                                                    @if($winH != null && $winG != null)
-				                                                                                    <option value="{{$winH->id_winner_team}}">{{$winH->team_name}}</option>
-				                                                                                    <option value="{{$winG->id_runnerup}}">{{$winG->team_rumup}}</option>
-				                                                                                    @endif
-				                                                                                </select>
-				                                                                                @endif
-
-				                                                                                
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
-
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                 @if($ss->quarter8->team_name == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                    
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label>{{$ss->quarter8->team_name}}</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
 				                                                    </div>
 				                                                </div>
 
@@ -2907,120 +2751,112 @@
 				                                                <div class="row">
 				                                                    <div class="col-md-12">
 				                                                        {{-- 1A - 2B --}}
-				                                                        <div class="row">
-				                                                            <div class="col-md-12">
-				                                                                
-				                                                                <table class="display table_second_stage">
-				                                                                    <tbody>
-				                                                                        <tr>
-				                                                                            <td style="width: 70%;">
-				                                                                                <div class="row">
-				                                                                                    <div class="col-md-12">
-				                                                                                        @if (isset($ss->semi_1))
-				                                                                                            {!! Form::select('Wquarter1_2', [
-				                                                                                            '' => 'Pick a Team',
-				                                                                                            "$ss->semi_1" => $ss->semi1->team_name,
-				                                                                                            ], old('value', isset($ss->semi_1) ? $ss->semi_1 : null ), [ 'class' =>  'form-control Wquarter1_2', 'required', 'id' => 'Wquarter1_2']) !!}
-				                                                                                        @else
-				                                                                                        {!! Form::select('Wquarter1_2', [
-				                                                                                            '' => 'Pick a Team',
-				                                                                                            ], null, [ 'class' =>  'form-control Wquarter1_2', 'required', 'id' => 'Wquarter1_2']) !!}
-				                                                                                        @endif
-				                                                                                        
-				                                                                                    </div>
-				                                                                                </div>
-				                                                                            </td>
-				                                                                        </tr>
-				                                                                    </tbody>
-				                                                                </table>
-				                                                            </div>
-				                                                        </div>
+
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                 @if($ss->semi1->team_name == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                    
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                {{$ss->semi1->team_name}}
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
+				                                                        
 
 				                                                        {{-- 1C - 2D --}}
 				                                                        <div class="row">
-				                                                            <div class="col-md-12">
-				                                                                <table class="display table_second_stage">
-				                                                                    <tbody>
-				                                                                         
-				                                                                        <tr>
-				                                                                            <td style="width: 70%;">
-				                                                                                <div class="row">
-				                                                                                    <div class="col-md-12">
-				                                                                                        @if (isset($ss->semi_2))
-				                                                                                        {!! Form::select('Wquarter3_4', [
-				                                                                                            '' => 'Pick a Team',
-				                                                                                            "$ss->semi_2" => $ss->semi2->team_name,
-				                                                                                            ], old('value', isset($ss->semi_2) ? $ss->semi_2 : null ), [ 'class' =>  'form-control Wquarter3_4', 'required', 'id' => 'Wquarter3_4']) !!}
-				                                                                                        @else
-				                                                                                        {!! Form::select('Wquarter3_4', [
-				                                                                                            '' => 'Pick a Team',
-				                                                                                            ], null, [ 'class' =>  'form-control Wquarter3_4', 'required', 'id' => 'Wquarter3_4']) !!}
-				                                                                                        @endif
-				                                                                                    </div>
-				                                                                                </div>
-				                                                                            </td>
-				                                                                        </tr>
-				                                                                    </tbody>
-				                                                                </table>
-				                                                            </div>
-				                                                        </div>
+                                                                            <div class="col-md-12">
+                                                                                <table class="display table_second_stage">
+                                                                                    <tbody>
+                                                                                       @if($ss->semi2->team_name == null)
+                                                                                       <tr>
+
+                                                                                        <td style="width: 70%;"></td>
+
+                                                                                    </tr>
+                                                                                    @else
+                                                                                    <tr>
+
+                                                                                        <td style="width: 70%;">
+                                                                                            <div class="row">
+                                                                                                <div class="col-md-12" >
+                                                                                                    {{$ss->semi2->team_name}}
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    @endif
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
 
 				                                                        {{-- 1E - 2F --}}
 				                                                        <div class="row">
-				                                                            <div class="col-md-12">
-				                                                                <table class="display table_second_stage">
-				                                                                    <tbody>
-				                                                                        <tr>
-				                                                                            <td style="width: 80%; height: 30px;">
-				                                                                                <div class="row">
-				                                                                                    <div class="col-md-12">
+                                                                            <div class="col-md-12">
+                                                                                <table class="display table_second_stage">
+                                                                                    <tbody>
+                                                                                     @if($ss->semi3->team_name == null)
+                                                                                     <tr>
 
-				                                                                                        @if (isset($ss->semi_3))
-				                                                                                            {!! Form::select('Wquarter5_6', [
-				                                                                                            '' => 'Pick a Team',
-				                                                                                            "$ss->semi_3" => $ss->semi3->team_name,
-				                                                                                            ], old('value', isset($ss->semi_3) ? $ss->semi_3 : null ), [ 'class' =>  'form-control Wquarter5_6', 'required', 'id' => 'Wquarter5_6']) !!}
-				                                                                                        @else
-				                                                                                            {!! Form::select('Wquarter5_6', [
-				                                                                                                '' => 'Pick a Team',
-				                                                                                                ],null, [ 'class' =>  'form-control Wquarter5_6', 'required', 'id' => 'Wquarter5_6']) !!}
-				                                                                                        @endif
-				                                                                                        
-				                                                                                    </div>
-				                                                                                </div>
-				                                                                            </td>
-				                                                                        </tr>
-				                                                                    </tbody>
-				                                                                </table>
-				                                                            </div>
-				                                                        </div>
+                                                                                        <td style="width: 70%;"></td>
+
+                                                                                    </tr>
+                                                                                    @else
+                                                                                    <tr>
+
+                                                                                        <td style="width: 70%;">
+                                                                                            <div class="row">
+                                                                                                <div class="col-md-12" >
+                                                                                                    {{$ss->semi3->team_name}}
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    @endif
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
 
 				                                                        {{-- 1G - 2H --}}
 				                                                        <div class="row">
 				                                                            <div class="col-md-12">
-				                                                                <table class="display table_second_stage">
-				                                                                    <tbody>
-				                                                                        <tr>
-				                                                                            <td style="width: 70%;">
-				                                                                                <div class="row">
-				                                                                                    <div class="col-md-12">
-				                                                                                        @if (isset($ss->semi_4))
-				                                                                                            {!! Form::select('Wquarter7_8', [
-				                                                                                            '' => 'Pick a Team',
-				                                                                                            "$ss->semi_4" => $ss->semi4->team_name,
-				                                                                                            ], old('value', isset($ss->semi_4) ? $ss->semi_4 : null ), [ 'class' =>  'form-control Wquarter7_8', 'required', 'id' => 'Wquarter7_8']) !!}
-				                                                                                        @else
-				                                                                                        {!! Form::select('Wquarter7_8',[
-				                                                                                                '' => 'Pick a Team',
-				                                                                                                ], null, [ 'class' =>  'form-control Wquarter7_8', 'required', 'id' => 'Wquarter7_8']) !!}
-				                                                                                        @endif
-				                                                                                        </div>
-				                                                                                    </div>
-				                                                                                </div>
-				                                                                            </td>
-				                                                                        </tr>
-				                                                                    </tbody>
-				                                                                </table>
+                                                                                <table class="display table_second_stage">
+                                                                                    <tbody>
+                                                                                     @if($ss->semi4->team_name == null)
+                                                                                     <tr>
+
+                                                                                        <td style="width: 70%;"></td>
+
+                                                                                    </tr>
+                                                                                    @else
+                                                                                    <tr>
+
+                                                                                        <td style="width: 70%;">
+                                                                                            <div class="row">
+                                                                                                <div class="col-md-12" >
+                                                                                                    {{$ss->semi4->team_name}}
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    @endif
+                                                                                </tbody>
+                                                                            </table>
 				                                                            </div>
 				                                                        </div>
 				                                                    </div>
@@ -3046,68 +2882,54 @@
 				                                                        {{-- 1A - 2B --}}
 				                                                        <div class="row">
 				                                                            <div class="col-md-12">
-				                                                                
-				                                                                <table class="display table_second_stage">
-				                                                                    <tbody>
-				                                                                        @if($winA == null && $winA)
-				                                                                        <tr>
-				                                                                            
-				                                                                            <td style="width: 70%;"></td>
-				                                                                        </tr>
-				                                                                        @else
-				                                                                        <tr>
-				                                                                            <td style="width: 70%;">
-				                                                                                <div class="row">
-				                                                                                    <div class="col-md-12">
+                                                                                <table class="display table_second_stage">
+                                                                                    <tbody>
+                                                                                     @if($ss->final1->team_name == null)
+                                                                                     <tr>
 
-				                                                                                        @if (isset($ss->final_1))
-				                                                                                            {!! Form::select('WSemi1_2', [
-				                                                                                            '' => 'Pick a Team',
-				                                                                                            "$ss->final_1" => $ss->final1->team_name,
-				                                                                                            ], old('value', isset($ss->final_1) ? $ss->final_1 : null ), [ 'class' =>  'form-control WSemi1_2', 'required', 'id' => 'WSemi1_2']) !!}
-				                                                                                        @else
-				                                                                                        {!! Form::select('WSemi1_2',[
-				                                                                                                '' => 'Pick a Team',
-				                                                                                                ], null, [ 'class' =>  'form-control WSemi1_2', 'required', 'id' => 'WSemi1_2']) !!}
-				                                                                                        @endif
+                                                                                        <td style="width: 70%;"></td>
 
-				                                                                                    </div>
-				                                                                                </div>
-				                                                                            </td>
-				                                                                        </tr>
-				                                                                        @endif
-				                                                                    </tbody>
-				                                                                </table>
+                                                                                    </tr>
+                                                                                    @else
+                                                                                    <tr>
+
+                                                                                        <td style="width: 70%;">
+                                                                                            <div class="row">
+                                                                                                <div class="col-md-12" >
+                                                                                                    {{$ss->final1->team_name}}
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    @endif
+                                                                                </tbody>
+                                                                            </table>
 				                                                            </div>
 				                                                        </div>
 
 				                                                        {{-- 1C - 2D --}}
 				                                                        <div class="row">
 				                                                            <div class="col-md-12">
-				                                                                <table class="display table_second_stage">
-				                                                                    <tbody>
-				                                                                        <tr>
-				                                                                            <td style="width: 80%; height: 30px;">
-				                                                                                <div class="row">
-				                                                                                    <div class="col-md-12">
-				                                                                                         
-				                                                                                         @if (isset($ss->final_2))
-				                                                                                            {!! Form::select('WSemi3_4', [
-				                                                                                            '' => 'Pick a Team',
-				                                                                                            "$ss->final_2" => $ss->final2->team_name,
-				                                                                                            ], old('value', isset($ss->final_2) ? $ss->final_2 : null ), [ 'class' =>  'form-control WSemi3_4', 'required', 'id' => 'WSemi3_4']) !!}
-				                                                                                        @else
-				                                                                                        {!! Form::select('WSemi3_4',[
-				                                                                                                '' => 'Pick a Team',
-				                                                                                                ], null, [ 'class' =>  'form-control WSemi3_4', 'required', 'id' => 'WSemi3_4']) !!}
-				                                                                                        @endif
-
-				                                                                                    </div>
-				                                                                                </div>
-				                                                                            </td>
-				                                                                        </tr>
-				                                                                    </tbody>
-				                                                                </table>
+                                                                                <table class="display table_second_stage">
+                                                                                    <tbody>
+                                                                                     @if($ss->final2->team_name == null)
+                                                                                     <tr>
+                                                                                        <td style="width: 70%;"></td>
+                                                                                    </tr>
+                                                                                    @else
+                                                                                    <tr>
+                                                                                        <td style="width: 70%;">
+                                                                                            <div class="row">
+                                                                                                <div class="col-md-12" >
+                                                                                                    {{$ss->final2->team_name}}
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    @endif
+                                                                                </tbody>
+                                                                            </table>
+				                                                                
 				                                                            </div>
 				                                                        </div>
 				                                                    </div>
@@ -3117,7 +2939,7 @@
 				                                        </div>  {{--  end card --}}
 				                                    </div> {{--  end col div --}}
 
-				                                    <div class="col-md-3 second_sta">
+				                                    <div class="col-md-2 second_sta">
 				                                        <div class="card">
 				                                            <div class="card-header-print">
 				                                                <div class="row">
@@ -3133,36 +2955,25 @@
 				                                                        
 				                                                        <div class="row">
 				                                                            <div class="col-md-12">
-				                                                                
 				                                                                <table class="display table_second_stage">
-				                                                                    <tbody>
-				                                                                        <tr>
-				                                                                            <br>
-				                                                                            
-				                                                                            <td style="width: 70%;">
-				                                                                                <div class="row">
-				                                                                                    <div class="col-md-12">
-
-				                                                                                         @if (isset($ss->winner))
-				                                                                                            {!! Form::select('Winner1', [
-				                                                                                            '' => 'Pick a Team',
-				                                                                                            "$ss->winner" => $ss->winner1->team_name,
-				                                                                                            ], old('value', isset($ss->winner) ? $ss->winner : null ), [ 'class' =>  'form-control Winner1', 'required', 'id' => 'Winner1']) !!}
-				                                                                                        @else
-				                                                                                        {!! Form::select('Winner1',[
-				                                                                                                '' => 'Pick a Team',
-				                                                                                                ], null, [ 'class' =>  'form-control Winner1', 'required', 'id' => 'Winner1']) !!}
-				                                                                                        @endif
-
-				                                                                                         
-				                                                                                        
-
-				                                                                                    </div>
-				                                                                                </div>
-				                                                                            </td>
-				                                                                        </tr>
-				                                                                     </tbody>
-				                                                                </table>
+                                                                                    <tbody>
+                                                                                     @if($ss->winner1->team_name == null)
+                                                                                     <tr>
+                                                                                        <td style="width: 70%;"></td>
+                                                                                    </tr>
+                                                                                    @else
+                                                                                    <tr>
+                                                                                        <td style="width: 70%;">
+                                                                                            <div class="row">
+                                                                                                <div class="col-md-12" >
+                                                                                                    {{$ss->winner1->team_name}}
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    @endif
+                                                                                </tbody>
+                                                                            </table>
 				                                                            </div>
 				                                                        </div>
 
