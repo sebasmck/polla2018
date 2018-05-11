@@ -6130,7 +6130,7 @@
                 type:'json',
                 success:function(data){
                     if(data.error){
-                        printErrorMsg(data.error);
+                        toastr.warning(data.error);
                     }else{                        
                         toastr.success('Saved');
                         $('#idgrupoh').removeClass( "active show" );
@@ -6157,7 +6157,7 @@
                 type:'json',
                 success:function(data){
                     if(data.error){
-                        printErrorMsg(data.error);
+                        toastr.warning(data.error);
                     }else{
                         toastr.success('Saved');
                         window.location='{{ route("home") }}';
@@ -6176,7 +6176,7 @@
                 type:'json',
                 success:function(data){
                     if(data.error){
-                        printErrorMsg(data.error);
+                        toastr.warning(data.error);
                     }else{
                         toastr.success('Saved');
                         window.location='{{ route("home") }}';
@@ -6271,7 +6271,7 @@
                 type:'json',
                 success:function(data){
                     if(data.error){
-                        printErrorMsg(data.error);
+                        toastr.warning(data.error);
                     }else{
                         // toastr.success('Saved');
                         // location.reload();
@@ -6279,7 +6279,6 @@
                         // $('#idgrupoRoun').addClass( "active show" );
                         // $('#grupoh').removeClass( "active show" );
                         // $('#grupoRoun').addClass( "active show" );
-                        // location.reload();
                         toastr.success('Saved');
                         window.location='{{ route("home") }}';
                     }

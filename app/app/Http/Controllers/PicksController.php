@@ -653,11 +653,31 @@ class PicksController extends Controller
 
     public function storeSecondStage(Request $req){
 
-        
 
         $stage = new SecondStage;
 
-        SecondStage::updateOrCreate(
+         $validator = Validator::make($req->all(), [
+
+            'WRound1A2B' => 'required',
+            'WRound1C2D' => 'required',
+            'WRound1E2F' => 'required',
+            'WRound1G2H' => 'required',
+            'WRound1B2A' => 'required',
+            'WRound1D2C' => 'required',
+            'WRound1F2E' => 'required',
+            'WRound1H2G' => 'required',
+            'Wquarter1_2' => 'required',
+            'Wquarter3_4' => 'required',
+            'Wquarter5_6' => 'required',
+            'Wquarter7_8' => 'required',
+            'WSemi1_2'  => 'required',
+            'WSemi3_4'  => 'required',
+            'Winner1'  => 'required',
+        ]);
+
+         if ($validator->passes()) {
+
+            SecondStage::updateOrCreate(
 
              ['id_poll' => $req->id_poll,],
 
@@ -683,8 +703,11 @@ class PicksController extends Controller
              ]);
 
 
-        return response()->json($stage);
+            return response()->json($stage);
 
+         }else{
+            return response()->json(['error'=>'All fields Are Required']);
+         }
 
     }
 
