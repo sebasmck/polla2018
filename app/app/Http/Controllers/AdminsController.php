@@ -230,9 +230,35 @@ class AdminsController extends Controller
 
         $poll = PollsModel::find($iduser_poll);
 
+        $poll->clasificado()->delete();
+
+        $poll->groupa()->delete();
+
+        $poll->groupb()->delete();
+
+        $poll->groupc()->delete();
+
+        $poll->groupd()->delete();
+
+        $poll->groupe()->delete();
+
+        $poll->groupf()->delete();
+
+        $poll->groupg()->delete();
+
+        $poll->grouph()->delete();
+
+        $poll->secondStage()->delete();
+
         $poll->delete();
 
-        return redirect()->back();
+        $notification = array(
+            'message' => 'Pool ' . "$poll->poll_name" . ' Was deleted Successfully', 
+            'alert-type' => 'success'
+        );
+
+    
+        return redirect()->back()->with($notification);
         
 
     }
