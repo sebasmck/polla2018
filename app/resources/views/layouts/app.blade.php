@@ -57,6 +57,7 @@
         @guest
         @else
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/home') }}">
                     Polla World Cup
@@ -65,25 +66,31 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div style="text-align: center; margin-left: 23%;">
+
+
+                <div style="text-align: center; margin-left: 12%;">
                     Registered Pools: {{$countpolls}}
                 </div>
+
                 <div style="text-align: center; margin-left: 12%; padding-top:8px;">
-                    <ul style="line-height:50%; list-style-type: none;">
-                        <li><p style="font-size: 0.7em;">Countdown to worldcup</p></li>
-                        <li><p id="demo" style='margin-bottom: 1px;'></p></li>
-                    </ul>
+                	<ul style="line-height:50%; list-style-type: none;">
+                		<li><p style="font-size: 0.7em;">Countdown to worldcup</p></li>
+                		<li><p id="demo" style='margin-bottom: 1px;'></p></li>
+                	</ul>
                 </div>
+               
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
+					
                     <ul class="navbar-nav mr-auto">
-
+						
                     </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
-                        
+
+
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name.' '.Auth::user()->lastname}} <span class="caret"></span>
@@ -101,7 +108,6 @@
                                     </form>
                                 </div>
                             </li>
-                        
                     </ul>
                 </div>
             </div>

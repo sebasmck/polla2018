@@ -22,11 +22,11 @@ var x = setInterval(function() {
   document.getElementById("demo").innerHTML = 
   "<ul style='list-style-type: none;margin: 5px;padding: 0;overflow: hidden; font-size:0.8em;'>"+ 
     "<li style='float: left;'><p style='margin-top: 2px;'>" + days + "</p><p style='margin-bottom: 1px;'> Days</p></li>"+
-    "<li style='float: left; margin-right: 10px; margin-left: 10px;'> : </li>"+
+    "<li style='float: left; margin-right: 10px; margin-left: 4px;'> : </li>"+
     "<li style='float: left; '><p style='margin-top: 2px;'>" + hours + "</p><p style='margin-bottom: 1px;'> Hours</p></li>"+
-      "<li style='float: left; margin-right: 10px; margin-left: 10px;'> : </li>"+
+      "<li style='float: left; margin-right: 10px; margin-left: 4px;'> : </li>"+
     "<li style='float: left; '><p style='margin-top: 2px;'>" + minutes + "</p><p style='margin-bottom: 1px;'>Mins</p></li>"+
-      "<li style='float: left; margin-right: 10px; margin-left: 10px;'> : </li>"+
+      "<li style='float: left; margin-right: 10px; margin-left: 4px;'> : </li>"+
     "<li style='float: left; '><p style='margin-top: 2px;'>" + seconds + "</p><p style='margin-bottom: 1px;'>secs</p></li>"+
   "</ul>";
 
