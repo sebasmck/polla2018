@@ -417,5 +417,5 @@
         $('#CPTS3').html(pts3);
         $('#CPTS4').html(pts4);
 
-        $("#Standings3").tablesorter({sortList: [[7,1], [8,1], [5,1]]});
+        $("#Standings3").tablesorter({sortList: [[8,1], [7,1], [5,1]]});
     }

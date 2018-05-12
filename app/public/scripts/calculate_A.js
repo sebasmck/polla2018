@@ -423,5 +423,5 @@
         $('#APTS3').html(pts3);
         $('#APTS4').html(pts4);
 
-        $("#Standings1").tablesorter({sortList: [[7,1], [8,1], [5,1]]});
+        $("#Standings1").tablesorter({sortList: [[8,1], [7,1], [5,1]]});
     }
