@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
     <div class="container">
         <div class="row">
             <div class="col-md-12 title_polla">
@@ -263,10 +264,10 @@
 
 
         $.ajaxSetup({
-          headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        }
-    });
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
 
         var postURLPOLLA = "<?php echo url('/pollregistration'); ?>";
 
@@ -290,13 +291,13 @@
               $.each( data.error, function( key, value ) {
                 toastr.warning(value);
       // $(".print-error-msg-gestioncalidadsi").find("ul").append('<li>'+value+'</li>');
-    });
-          }else{
+                });
+            }else{
               location.reload();
-          }
+            }
           } 
-    });  
-});  
+        });  
+        });  
 
 
     });
@@ -304,5 +305,7 @@
     
 
 </script>
+
+
 
 

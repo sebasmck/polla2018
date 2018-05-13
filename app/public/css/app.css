@@ -9669,3 +9669,32 @@ a.text-dark:hover {
     border: solid 0.2px #cccccc40;
     text-align: center;
 }
+
+.modalLoading  {
+    position: fixed;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: Black;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+    -moz-opacity: 0.8;
+}
+.centerModalLoading
+{
+    z-index: 1000;
+    margin: 300px auto;    
+    width: 130px;
+    background-color: transparent;
+    border-radius: 10px;
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -moz-opacity: 1;
+}
+.centerModalLoading img
+{
+    height: 128px;
+    width: 128px;
+}
