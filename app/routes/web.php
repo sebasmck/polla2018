@@ -24,6 +24,8 @@ Route::get('/poolmanagement', 'HomeController@pollManagement')->name('pollmanage
 
 Route::post('/pollregistration', 'HomeController@pollregistration')->name('pollregistration');
 
+Route::get('/exportexcel', 'HomeController@exportExcel')->name('exportexcel');
+
 Route::get('admin', 'HomeController@indexAdmin')->name('admin');
 
 Route::get('assign', 'AdminsController@assignRep')->name('assign');

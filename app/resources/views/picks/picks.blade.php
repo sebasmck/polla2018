@@ -4308,7 +4308,7 @@
                                 <br>
                                 <div class="row">
                                     {{-- Round of 16 --}}
-                                    <div class="col-md-3 second_sta">
+                                    <div class="col  second_sta">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -4901,7 +4901,7 @@
                                     </div> {{--  end col div --}}
 
                                     {{-- Quarter-finals --}}
-                                    <div class="col-md-2 quarters second_sta">
+                                    <div class="col quarters second_sta">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -5381,7 +5381,7 @@
                                     </div> {{--  end col div --}}
 
                                     {{-- Semi-finals --}}
-                                    <div class="col-md-2 second_sta">
+                                    <div class="col second_sta">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -5576,7 +5576,7 @@
                                     </div> {{--  end col div --}}
 
                                     {{-- Semi-finals --}}
-                                    <div class="col-md-2 second_sta">
+                                    <div class="col second_sta">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -5693,7 +5693,7 @@
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
 
-                                    <div class="col-md-3 second_sta">
+                                    <div class="col second_sta">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
