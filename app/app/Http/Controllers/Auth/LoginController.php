@@ -49,7 +49,7 @@ class LoginController extends Controller
             $this->username() => 'required|string',
             'password' => 'required|string',
             'is_aproved' => 'boolean',
-        ]);
+        ],['is_aproved.boolean' => 'You are registered but pending authorization, please contact your city rep to be authorized']);
     }
 
     protected function authenticated($request, $user)

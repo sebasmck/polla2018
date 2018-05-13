@@ -93,7 +93,7 @@ class RegisterController extends Controller
 
             // return view('auth/login')->with(['message' => 'Thank you']);
 
-            return redirect('/')->with(['message' => 'Thank you']);
+            return redirect('/')->with(['message' => 'Thank you for registering in pollaworldcup.com! Please allow up to 24 hours for your registration to be accepted.']);
         }else{
             return redirect()->back()->with(['error'=> $validator->errors()->all()]);
         }
