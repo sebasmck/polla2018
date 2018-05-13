@@ -20,6 +20,8 @@ use App\SecondStage;
 
 use App\User;
 
+use App\Exports;
+
 class HomeController extends Controller
 {
     
@@ -31,7 +33,7 @@ class HomeController extends Controller
 
     public function pollManagement(){
 
-        $allpolls = PollsModel::all();
+        $allpolls = PollsModel::getUserPools();
 
         return view('admin.poll_management')->with('allpolls', $allpolls);
 
@@ -100,6 +102,12 @@ class HomeController extends Controller
         }
         
         
+    }
+
+    public function exportExcel() 
+    {
+        //dd('hola');
+        return Excel::download(new InvoicesExport, 'invoices.xlsx');
     }
 
 }

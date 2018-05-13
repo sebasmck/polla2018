@@ -9508,6 +9508,12 @@ a.text-dark:hover {
     .separtos{
         height: 20 !important;
     }
+
+    .second_sta{
+        position: relative;
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
 }
 
 @media (max-width:384px) { 

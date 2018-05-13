@@ -2508,7 +2508,7 @@
 				                                                    <div class="col-md-12">
                                                                         <table class="display table_second_stage">
                                                                             <tbody>
-                                                                                 @if($ss->quarter1->team_name == null)
+                                                                                 @if($ss->quarter1 == null)
                                                                                 <tr>
                                                                                     
                                                                                     <td style="width: 70%;"></td>
@@ -2537,7 +2537,7 @@
 				                                                    <div class="col-md-12">
                                                                         <table class="display table_second_stage">
                                                                             <tbody>
-                                                                                 @if($ss->quarter2->team_name == null)
+                                                                                 @if($ss->quarter2 == null)
                                                                                 <tr>
                                                                                     
                                                                                     <td style="width: 70%;"></td>
@@ -2567,7 +2567,7 @@
 				                                                    <div class="col-md-12">
                                                                         <table class="display table_second_stage">
                                                                             <tbody>
-                                                                                 @if($ss->quarter3->team_name == null)
+                                                                                 @if($ss->quarter3 == null)
                                                                                 <tr>
                                                                                     
                                                                                     <td style="width: 70%;"></td>
@@ -2595,7 +2595,7 @@
 				                                                    <div class="col-md-12">
                                                                         <table class="display table_second_stage">
                                                                             <tbody>
-                                                                                 @if($ss->quarter4->team_name == null)
+                                                                                 @if($ss->quarter4 == null)
                                                                                 <tr>
                                                                                     
                                                                                     <td style="width: 70%;"></td>
@@ -2624,7 +2624,7 @@
 				                                                    <div class="col-md-12">
                                                                         <table class="display table_second_stage">
                                                                             <tbody>
-                                                                                 @if($ss->quarter5->team_name == null)
+                                                                                 @if($ss->quarter5 == null)
                                                                                 <tr>
                                                                                     
                                                                                     <td style="width: 70%;"></td>
@@ -2653,7 +2653,7 @@
 				                                                    <div class="col-md-12">
                                                                         <table class="display table_second_stage">
                                                                             <tbody>
-                                                                                 @if($ss->quarter6->team_name == null)
+                                                                                 @if($ss->quarter6 == null)
                                                                                 <tr>
                                                                                     
                                                                                     <td style="width: 70%;"></td>
@@ -2681,7 +2681,7 @@
 				                                                    <div class="col-md-12">
                                                                         <table class="display table_second_stage">
                                                                             <tbody>
-                                                                                 @if($ss->quarter7->team_name == null)
+                                                                                 @if($ss->quarter7 == null)
                                                                                 <tr>
                                                                                     
                                                                                     <td style="width: 70%;"></td>
@@ -2709,7 +2709,7 @@
 				                                                    <div class="col-md-12">
                                                                         <table class="display table_second_stage">
                                                                             <tbody>
-                                                                                 @if($ss->quarter8->team_name == null)
+                                                                                 @if($ss->quarter8 == null)
                                                                                 <tr>
                                                                                     
                                                                                     <td style="width: 70%;"></td>
@@ -2754,7 +2754,7 @@
 
                                                                         <table class="display table_second_stage">
                                                                             <tbody>
-                                                                                 @if($ss->semi1->team_name == null)
+                                                                                 @if($ss->semi1 == null)
                                                                                 <tr>
                                                                                     
                                                                                     <td style="width: 70%;"></td>
@@ -2781,7 +2781,7 @@
                                                                             <div class="col-md-12">
                                                                                 <table class="display table_second_stage">
                                                                                     <tbody>
-                                                                                       @if($ss->semi2->team_name == null)
+                                                                                       @if($ss->semi2 == null)
                                                                                        <tr>
 
                                                                                         <td style="width: 70%;"></td>
@@ -2809,7 +2809,7 @@
                                                                             <div class="col-md-12">
                                                                                 <table class="display table_second_stage">
                                                                                     <tbody>
-                                                                                     @if($ss->semi3->team_name == null)
+                                                                                     @if($ss->semi3 == null)
                                                                                      <tr>
 
                                                                                         <td style="width: 70%;"></td>
@@ -2837,7 +2837,7 @@
 				                                                            <div class="col-md-12">
                                                                                 <table class="display table_second_stage">
                                                                                     <tbody>
-                                                                                     @if($ss->semi4->team_name == null)
+                                                                                     @if($ss->semi4 == null)
                                                                                      <tr>
 
                                                                                         <td style="width: 70%;"></td>
@@ -2884,7 +2884,7 @@
 				                                                            <div class="col-md-12">
                                                                                 <table class="display table_second_stage">
                                                                                     <tbody>
-                                                                                     @if($ss->final1->team_name == null)
+                                                                                     @if($ss->final1 == null)
                                                                                      <tr>
 
                                                                                         <td style="width: 70%;"></td>
@@ -2912,7 +2912,7 @@
 				                                                            <div class="col-md-12">
                                                                                 <table class="display table_second_stage">
                                                                                     <tbody>
-                                                                                     @if($ss->final2->team_name == null)
+                                                                                     @if($ss->final2 == null)
                                                                                      <tr>
                                                                                         <td style="width: 70%;"></td>
                                                                                     </tr>
@@ -2957,7 +2957,7 @@
 				                                                            <div class="col-md-12">
 				                                                                <table class="display table_second_stage">
                                                                                     <tbody>
-                                                                                     @if($ss->winner1->team_name == null)
+                                                                                     @if($ss->winner1 == null)
                                                                                      <tr>
                                                                                         <td style="width: 70%;"></td>
                                                                                     </tr>

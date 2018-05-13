@@ -4300,6 +4300,11 @@
 
                             {{-- SECOND STAGE --}}
                             <div class="tab-pane container" id="grupoRoun">
+<<<<<<< HEAD
+                                    <br><br>
+                                    <iframe src="{{route('secondstage.show', $poll->iduser_poll)}}" height="1150" width="1010"></iframe>
+                                
+=======
                                 <form name="secondstage" id="secondstage">
 
                                     @csrf
@@ -4308,7 +4313,7 @@
                                 <br>
                                 <div class="row">
                                     {{-- Round of 16 --}}
-                                    <div class="col-md-3 second_sta">
+                                    <div class="col  second_sta">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -4901,7 +4906,7 @@
                                     </div> {{--  end col div --}}
 
                                     {{-- Quarter-finals --}}
-                                    <div class="col-md-2 quarters second_sta">
+                                    <div class="col quarters second_sta">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -5381,7 +5386,7 @@
                                     </div> {{--  end col div --}}
 
                                     {{-- Semi-finals --}}
-                                    <div class="col-md-2 second_sta">
+                                    <div class="col second_sta">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -5576,7 +5581,7 @@
                                     </div> {{--  end col div --}}
 
                                     {{-- Semi-finals --}}
-                                    <div class="col-md-2 second_sta">
+                                    <div class="col second_sta">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -5693,7 +5698,7 @@
                                         </div>  {{--  end card --}}
                                     </div> {{--  end col div --}}
 
-                                    <div class="col-md-3 second_sta">
+                                    <div class="col second_sta">
                                         <div class="card">
                                             <div class="card-header">
                                                 <div class="row">
@@ -5775,6 +5780,7 @@
 
                                 </form>
                                     </div>
+>>>>>>> d122e8f96ab4111aa9c13de696a438c2b53013da
                                 </div>
                             </div>
                         </div>
@@ -5857,10 +5863,6 @@
 
 <script>
 
-
-
-
-
     $(document).ready(function(){
         
         match_games();
@@ -5876,19 +5878,13 @@
 
 
         function RefreshTable() {
+
         $("#secondstage").load("{{route('picks.show', $poll->iduser_poll)}} #secondstage" ,function(){
 
 
-        // copy of code
+            // after postback a var = flags label needds to be reposted into options on first quarter
 
-
-        $('#reset').click(function(){
-            reset();
-        });
-
-        // mahere
-
-        $("select.WRound1A2B, select.WRound1C2D").change(function(){
+        $("#secondstage").on("change", "select.WRound1A2B, select.WRound1C2D", function(){
 
             var selectedTeamAvalue = $(".WRound1A2B option:selected").val();
             var selectedTeamAtext = $(".WRound1A2B option:selected").text();
@@ -5920,7 +5916,7 @@
 
 
 
-        $("select.WRound1E2F, select.WRound1G2H").change(function(){
+        $("#secondstage").on("change" , "select.WRound1E2F, select.WRound1G2H", function(){
 
             var selectedTeamCvalue = $(".WRound1E2F option:selected").val();
             var selectedTeamCtext = $(".WRound1E2F option:selected").text();
@@ -5950,7 +5946,7 @@
         });
 
 
-        $("select.WRound1B2A, select.WRound1D2C").change(function(){
+        $("#secondstage").on("change", "select.WRound1B2A, select.WRound1D2C", function(){
 
             var selectedTeamEvalue = $(".WRound1B2A option:selected").val();
             var selectedTeamEtext = $(".WRound1B2A option:selected").text();
@@ -5980,7 +5976,7 @@
         });
 
 
-        $("select.WRound1F2E, select.WRound1H2G").change(function(){
+        $("#secondstage").on("change", "select.WRound1F2E, select.WRound1H2G", function(){
 
             var selectedTeamGvalue = $(".WRound1F2E option:selected").val();
             var selectedTeamGtext = $(".WRound1F2E option:selected").text();
@@ -6012,7 +6008,7 @@
 
 
 
-        $("select.Wquarter1_2, select.Wquarter3_4").change(function(){
+        $("#secondstage").on("change", "select.Wquarter1_2, select.Wquarter3_4", function(){
 
             var selectedTeamIvalue = $(".Wquarter1_2 option:selected").val();
             var selectedTeamItext = $(".Wquarter1_2 option:selected").text();
@@ -6043,7 +6039,7 @@
         });
 
 
-        $("select.Wquarter5_6, select.Wquarter7_8").change(function(){
+        $("#secondstage").on("change", "select.Wquarter5_6, select.Wquarter7_8", function(){
 
             var selectedTeamKvalue = $(".Wquarter5_6 option:selected").val();
             var selectedTeamKtext = $(".Wquarter5_6 option:selected").text();
@@ -6072,7 +6068,7 @@
 
         });
 
-        $("select.WSemi1_2, select.WSemi3_4").change(function(){
+        $("#secondstage").on("change", "select.WSemi1_2, select.WSemi3_4", function(){
 
             var selectedTeamMvalue = $(".WSemi1_2 option:selected").val();
             var selectedTeamMtext = $(".WSemi1_2 option:selected").text();
@@ -6101,7 +6097,7 @@
 
         });
 
-        $("select.Winner1").change(function(){
+        $("#secondstage").on("change", "select.Winner1", function(){
 
             // var selectedSemi5Value = $(".Winner1 option:selected").val();
             var selectedWinner = $(".Winner1 option:selected").text();
@@ -6118,147 +6114,10 @@
         }
          });
 
-        
-    
-        
-        $('#submitgrouph').click(function(){
-
-            $.ajax({  
-                url:postURLH,  
-                method:"POST",  
-                data:$('#grouph').serialize(),
-                type:'json',
-                success:function(data){
-                    if(data.error){
-                        toastr.warning(data.error);
-                    }else{                        
-                        toastr.success('Saved');
-                        $('#idgrupoh').removeClass( "active show" );
-                        $('#idgrupoRoun').addClass( "active show" );
-                        $('#grupoh').removeClass( "active show" );
-                        $('#grupoRoun').addClass( "active show" );
-                        RefreshTable();
-
-
-
-                      
-                    }
-                }  
-            }); 
-
-        });
-
-        $('#submitgrouphhome').click(function(){
-
-            $.ajax({  
-                url:postURLH,  
-                method:"POST",  
-                data:$('#grouph').serialize(),
-                type:'json',
-                success:function(data){
-                    if(data.error){
-                        toastr.warning(data.error);
-                    }else{
-                        toastr.success('Saved');
-                        window.location='{{ route("home") }}';
-                    }
-                }  
-            }); 
-
-        });
-
-        $('#submitSecondStage').click(function(){
-
-            $.ajax({  
-                url:postSECONDSTAGE,  
-                method:"POST",  
-                data:$('#secondstage').serialize(),
-                type:'json',
-                success:function(data){
-                    if(data.error){
-                        toastr.warning(data.error);
-                    }else{
-                        toastr.success('Saved');
-                        window.location='{{ route("home") }}';
-                    }
-                }  
-            }); 
-
-        });
-
-                // end copy of code
-
-
-
-            function reset(){
-
-                // $("#WRound1A2B").prepend("<option value='' selected='selected'>Pick a Team</option>");
-                // $("#WRound1A2B").val('');
-
-                // select quarters 
-
-                // 1
-                $("#WRound1A2B").find('option:eq(0)').prop('selected', true);
-                $(".iWRound1A2B").attr('src', "");
-                // 2
-                $("#WRound1C2D").find('option:eq(0)').prop('selected', true);
-                $(".iWRound1C2D").attr('src', "{{asset('img/flags/cup2.png')}}");
-                // 3
-                $("#WRound1E2F").find('option:eq(0)').prop('selected', true);
-                $(".iWRound1E2F").attr('src', "{{asset('img/flags/cup2.png')}}");
-                // 4
-                $("#WRound1G2H").find('option:eq(0)').prop('selected', true);
-                $(".iWRound1G2H").attr('src', "{{asset('img/flags/cup2.png')}}");
-                // 5
-                $("#WRound1B2A").find('option:eq(0)').prop('selected', true);
-                $(".iWRound1B2A").attr('src', "{{asset('img/flags/cup2.png')}}");
-                // 6
-                $("#WRound1D2C").find('option:eq(0)').prop('selected', true);
-                $(".iWRound1D2C").attr('src', "{{asset('img/flags/cup2.png')}}");
-                // 7
-                $("#WRound1F2E").find('option:eq(0)').prop('selected', true);
-                $(".iWRound1F2E").attr('src', "{{asset('img/flags/cup2.png')}}");
-                // 8
-                $("#WRound1H2G").find('option:eq(0)').prop('selected', true);
-                $(".iWRound1H2G").attr('src', "{{asset('img/flags/cup2.png')}}");
-
-
-                // Semi-finals
-                // 1
-                $('select.Wquarter1_2').find('option').not(':first').remove();
-                $(".iWquarter1_2").attr('src', "{{asset('img/flags/cup2.png')}}");
-                // 2
-                $('select.Wquarter3_4').find('option').not(':first').remove();
-                $(".iWquarter3_4").attr('src', "{{asset('img/flags/cup2.png')}}");
-                // 3
-                $('select.Wquarter5_6').find('option').not(':first').remove();
-                $(".iWquarter5_6").attr('src', "{{asset('img/flags/cup2.png')}}");
-                // 4
-                $('select.Wquarter7_8').find('option').not(':first').remove();
-                $(".iWquarter7_8").attr('src', "{{asset('img/flags/cup2.png')}}");
-
-                // Final
-                // 1
-                $('select.WSemi1_2').find('option').not(':first').remove();
-                $(".iWSemi1_2").attr('src', "{{asset('img/flags/cup2.png')}}");
-                // 2
-                $('select.WSemi3_4').find('option').not(':first').remove();
-                $(".iWSemi3_4").attr('src', "{{asset('img/flags/cup2.png')}}");
-
-                // Champion
-                // 1
-                $('select.Winner1').find('option').not(':first').remove();
-                $(".iWinner1").attr('src', "{{asset('img/flags/cup2.png')}}");
-
-            }
 
             // finish reset
 
             // reset trigger 
-
-            $('#reset').click(function(){
-            reset();
-             });
    
             // submit second stage copy
 
@@ -6296,8 +6155,7 @@
 
         function reset(){
 
-            // $("#WRound1A2B").prepend("<option value='' selected='selected'>Pick a Team</option>");
-            // $("#WRound1A2B").val('');
+            
 
             // select quarters 
 
@@ -6362,7 +6220,7 @@
 
         // mahere
 
-        $("select.WRound1A2B, select.WRound1C2D").change(function(){
+        $("#secondstage").on("change", "select.WRound1A2B, select.WRound1C2D", function(){
 
             var selectedTeamAvalue = $(".WRound1A2B option:selected").val();
             var selectedTeamAtext = $(".WRound1A2B option:selected").text();
@@ -6394,7 +6252,7 @@
 
 
 
-        $("select.WRound1E2F, select.WRound1G2H").change(function(){
+        $("#secondstage").on("change", "select.WRound1E2F, select.WRound1G2H", function(){
 
             var selectedTeamCvalue = $(".WRound1E2F option:selected").val();
             var selectedTeamCtext = $(".WRound1E2F option:selected").text();
@@ -6424,7 +6282,7 @@
         });
 
 
-        $("select.WRound1B2A, select.WRound1D2C").change(function(){
+        $("#secondstage").on("change", "select.WRound1B2A, select.WRound1D2C", function(){
 
             var selectedTeamEvalue = $(".WRound1B2A option:selected").val();
             var selectedTeamEtext = $(".WRound1B2A option:selected").text();
@@ -6454,7 +6312,7 @@
         });
 
 
-        $("select.WRound1F2E, select.WRound1H2G").change(function(){
+        $(" #secondstage").on("change","select.WRound1F2E, select.WRound1H2G", function(){
 
             var selectedTeamGvalue = $(".WRound1F2E option:selected").val();
             var selectedTeamGtext = $(".WRound1F2E option:selected").text();
@@ -6486,7 +6344,7 @@
 
 
 
-        $("select.Wquarter1_2, select.Wquarter3_4").change(function(){
+        $("#secondstage").on("change", "select.Wquarter1_2, select.Wquarter3_4", function(){
 
             var selectedTeamIvalue = $(".Wquarter1_2 option:selected").val();
             var selectedTeamItext = $(".Wquarter1_2 option:selected").text();
@@ -6517,7 +6375,7 @@
         });
 
 
-        $("select.Wquarter5_6, select.Wquarter7_8").change(function(){
+        $("#secondstage").on("change", "select.Wquarter5_6, select.Wquarter7_8", function(){
 
             var selectedTeamKvalue = $(".Wquarter5_6 option:selected").val();
             var selectedTeamKtext = $(".Wquarter5_6 option:selected").text();
@@ -6546,7 +6404,7 @@
 
         });
 
-        $("select.WSemi1_2, select.WSemi3_4").change(function(){
+        $("#secondstage").on("change", "select.WSemi1_2, select.WSemi3_4", function(){
 
             var selectedTeamMvalue = $(".WSemi1_2 option:selected").val();
             var selectedTeamMtext = $(".WSemi1_2 option:selected").text();
@@ -6575,7 +6433,7 @@
 
         });
 
-        $("select.Winner1").change(function(){
+        $("#secondstage").on("change", "select.Winner1", function(){
 
             // var selectedSemi5Value = $(".Winner1 option:selected").val();
             var selectedWinner = $(".Winner1 option:selected").text();
@@ -6585,14 +6443,6 @@
             
         });
 
-
-   
-
-     
-        
-        
-
-        
 
 
         //  -----------------------------
@@ -6630,6 +6480,7 @@
                         $('#idgrupob').addClass( "active show" );
                         $('#grupoa').removeClass( "active show" );
                         $('#grupob').addClass( "active show" );
+
                         RefreshTable();
                         reset();
                     }

@@ -61,4 +61,9 @@ class PollsModel extends Model
 		return $this->hasOne('App\SecondStage', 'id_poll', 'iduser_poll');
 	}
 
+	public static function getUserPools()
+	{
+		return PollsModel::join('users', 'users.id', '=', 'user_poll.id_User')
+				->get();
+	}
 }
