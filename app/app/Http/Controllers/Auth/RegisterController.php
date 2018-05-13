@@ -62,32 +62,32 @@ class RegisterController extends Controller
         if ($validator->passes()) {
             // $this->validator($request->all())->validate();
 
-        event(new Registered($user = $this->create($request->all())));
+            event(new Registered($user = $this->create($request->all())));
 
-        $data = array('name' => $user->name,
-                      'lastname' => $user->lastname,
-                      'email' => $user->email,
-                      'password' => $request->password,
-                      'nickname' =>$request->nickname,
-                      'city' => $request->city,
-                      'cellphone' => $request->cellphone,
-                      'referredby' => $request->referredby);
+            $data = array('name' => $user->name,
+                          'lastname' => $user->lastname,
+                          'email' => $user->email,
+                          'password' => $request->password,
+                          'nickname' =>$request->poll_name,
+                          'city' => $request->city,
+                          'cellphone' => $request->cellphone,
+                          'referredby' => $request->referredby);
 
 
-        $polls = new PollsModel;
-        $polls->id_User = $user->id;
-        $polls->poll_name = $user->poll_name;
-        $polls->complete = 'Incomplete';
-        $polls->status = 'Pending';
+            $polls = new PollsModel;
+            $polls->id_User = $user->id;
+            $polls->poll_name = $user->poll_name;
+            $polls->complete = 'Incomplete';
+            $polls->status = 'Pending';
 
-        $polls->save();
+            $polls->save();
 
-        Emails::email_registration_user($user->email, $data);
-        Emails::email_registration_admin($data);
-         
+            Emails::email_registration_user($user->email, $data);
+            Emails::email_registration_admin($data);
+             
 
-        return $this->registered($request, $user, $request->session()->put('message', 'Thank you for registering in pollaworldcup.com! Please allow up to 24 hours for your registration to be accepted.'))
-                        ?: redirect($this->redirectPath());
+            return $this->registered($request, $user, $request->session()->put('message', 'Thank you for registering in pollaworldcup.com! Please allow up to 24 hours for your registration to be accepted.'))
+                            ?: redirect($this->redirectPath());
         }else{
             return redirect()->back()->with(['error'=> $validator->errors()->all()]);
         }
@@ -144,8 +144,6 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-
-
         return User::create([
             'name' => $data['name'],
             'lastname' => $data['lastname'],
