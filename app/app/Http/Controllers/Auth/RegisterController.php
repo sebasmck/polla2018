@@ -64,19 +64,21 @@ class RegisterController extends Controller
 
             event(new Registered($user = $this->create($request->all())));
 
-            $data = array('name' => $user->name,
-                          'lastname' => $user->lastname,
-                          'email' => $user->email,
-                          'password' => $request->password,
-                          'nickname' =>$request->poll_name,
-                          'city' => $request->city,
-                          'cellphone' => $request->cellphone,
-                          'referredby' => $request->referredby);
+
+
+        $data = array('name' => $user->name,
+                      'lastname' => $user->lastname,
+                      'email' => $user->email,
+                      'password' => $request->password,
+                      'nickname' =>$request->poll_name,
+                      'city' => $request->city,
+                      'cellphone' => $request->cellphone,
+                      'referredby' => $request->referredby);
 
 
             $polls = new PollsModel;
             $polls->id_User = $user->id;
-            $polls->poll_name = $user->poll_name;
+            $polls->poll_name = $request->poll_name;
             $polls->complete = 'Incomplete';
             $polls->status = 'Pending';
 
@@ -86,8 +88,12 @@ class RegisterController extends Controller
             Emails::email_registration_admin($data);
              
 
-            return $this->registered($request, $user, $request->session()->put('message', 'Thank you for registering in pollaworldcup.com! Please allow up to 24 hours for your registration to be accepted.'))
-                            ?: redirect($this->redirectPath());
+            // return $this->registered($request, $user, $request->session()->put('message', 'Thank you for registering in pollaworldcup.com! Please allow up to 24 hours for your registration to be accepted.'))
+            //                 ?: redirect($this->redirectPath());
+
+            // return view('auth/login')->with(['message' => 'Thank you']);
+
+            return redirect('/')->with(['message' => 'Thank you']);
         }else{
             return redirect()->back()->with(['error'=> $validator->errors()->all()]);
         }
