@@ -4735,7 +4735,7 @@
                         $('#idgrupoRoun').addClass( "active show" );
                         $('#grupoh').removeClass( "active show" );
                         $('#grupoRoun').addClass( "active show" );
-                        document.getElementById(secondstageframe).contentDocument.location.reload(true);
+                        $( '#secondstageframe' ).attr( 'src', function ( i, val ) { return val; });
                     }
                 }  
             }); 
