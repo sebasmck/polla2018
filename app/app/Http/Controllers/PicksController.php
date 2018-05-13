@@ -702,7 +702,9 @@ class PicksController extends Controller
 
              ]);
 
+            PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Complete'));
 
+            
             return response()->json($stage);
 
          }else{
