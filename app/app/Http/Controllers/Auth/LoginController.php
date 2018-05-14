@@ -39,7 +39,6 @@ class LoginController extends Controller
         return [
             'email' => $request->email,
             'password' => $request->password,
-            'is_approved' => 1,
         ];
     }
 
@@ -48,17 +47,18 @@ class LoginController extends Controller
         $this->validate($request, [
             $this->username() => 'required|string',
             'password' => 'required|string',
-            'is_aproved' => 'boolean',
-        ],['is_aproved.boolean' => 'You are registered but pending authorization, please contact your city rep to be authorized']);
+            'is_approved' => 'boolean',
+        ]);
     }
 
     protected function authenticated($request, $user)
     {
         if($user->role === 'admin') {
             return redirect()->intended('/admin');
+        }else{
+            return redirect()->intended('/home');
         }
 
-        return redirect()->intended('/home');
     }
 
     public function __construct()

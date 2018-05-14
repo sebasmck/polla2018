@@ -32,6 +32,10 @@
                                     <span class="invalid-feedback">
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
+                                @elseif($errors->has('is_approved'))
+                                <span class="invalid-feedback">
+                                        <strong>{{ $errors->first('is_approved') }}</strong>
+                                    </span>
                                 @endif
                             </div>
                         </div>
@@ -61,6 +65,11 @@
                             </div>
                         </div>
                     </form>
+                    @if ($errors->any())
+                            @foreach($errors->all() as $error)
+                                <p>{{$error}}</p>
+                            @endforeach
+                        @endif
                     <div class="form-group row">
                         <div class="col-md-8 offset-md-2">
                             <button type="" class="btn btn-primary" onclick="window.location='{{ route('register') }}'" style="width: 100%;">

@@ -150,6 +150,8 @@ class AdminsController extends Controller
             'alert-type' => 'success'
         );
 
+        dd($notification);
+
         return redirect()->back()->with($notification);
     }
 
@@ -214,6 +216,12 @@ class AdminsController extends Controller
     public function destroy($id)
     {
         $user = User::find($id);
+
+        DB::table('clasificado')->where('id', '=', 1)->delete();
+
+        $user->polls()->clasificado->delete();
+
+       
 
         $user->polls()->delete();
 
