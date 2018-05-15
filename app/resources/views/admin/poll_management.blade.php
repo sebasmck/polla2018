@@ -61,6 +61,7 @@
                                     <th>E-mail</th>
                                     <th>City</th>
                                     <th>Cellphone</th>
+                                    <th>Complete Pool</th>
                                     <th>Status</th>
                                     <th>Action</th>
                                 </tr>
@@ -74,6 +75,7 @@
                                     <td>{{$poll->email}}</td>
                                     <td>{{$poll->city}}</td>
                                     <td>{{$poll->cellphone}}</td>
+                                    <td>{{$poll->complete}}</td>
                                     <td>{{$poll->status}}</td>
                                     <td>
                                       <div class="col-md-6">

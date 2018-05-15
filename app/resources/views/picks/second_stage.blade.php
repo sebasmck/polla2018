@@ -33,7 +33,7 @@
     
 
 </head>
-<body style="background-color: white;" >
+<body style="background-image: none;" >
     <main style="background-image:none;" class="content_web">
     <div style="background-color: white;" class="tab-pane container" id="grupoRoun">
     <form name="secondstage" id="secondstage">
@@ -668,7 +668,7 @@
                                  <div class="row">
                                     <div class="col-md-12">
                                         @if (isset($ss->quarter1->team_name))
-                                        <img  class="img_flags iWRoun d1A2B" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter1->team_name)).'.png'}}">
+                                        <img  class="img_flags iWRound1A2B" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->quarter1->team_name)).'.png'}}">
                                         @else
                                         <img class="img_flags iWRound1A2B" src="{{asset('img/flags/cup2.png')}}">
                                         @endif
@@ -1552,6 +1552,8 @@
                         // $('#grupoRoun').addClass( "active show" );
                         // location.reload();
                         toastr.success('Saved');
+                        parent.location='{{ route("home") }}';
+                        
                     }
                 }  
             }); 

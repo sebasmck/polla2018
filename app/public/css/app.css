@@ -89,6 +89,10 @@ body {
     line-height: 1.6;
     color: #212529;
     text-align: left;
+    background-image: url(../img/fondo.png);
+    background-position: top center;
+    background-size: cover;
+    z-index: -1;
     
 }
 
@@ -9580,11 +9584,10 @@ a.text-dark:hover {
 
 .content_web{
     /*background-color: rgba(226, 224, 230, 0.7);*/
-    background-image: url(../img/fondo.png);
+    /*background-image: url(../img/fondo.png);
     background-position: top center;
     background-size: cover;
-    z-index: -1;
-    padding-bottom: 80px;
+    z-index: -1;*/
 }
 
 

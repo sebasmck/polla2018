@@ -66,7 +66,13 @@
                             {{-- GRUPO A --}}
                             <div class="tab-pane active container" id="grupoa">
                                 <br>
-                                <p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p>
+                                <ul style="line-height:80%">
+                                    <li><p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p></li>
+                                    <li>
+                                        <p>You have to completely fill out the Score and the Winners selections.</p>
+                                    </li>    
+                                </ul>
+                                
                                 <div class="row">
                                     <div class="col-12 col-md-7">
                                         <div class="card">
@@ -602,7 +608,12 @@
 
                             <div class="tab-pane container" id="grupob">
                                 <br>
-                                <p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p>
+                                <ul style="line-height:80%">
+                                    <li><p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p></li>
+                                    <li>
+                                        <p>You have to completely fill out the Score and the Winners selections.</p>
+                                    </li>    
+                                </ul>
                                 <div class="row">
                                     <div class="col-md-7">
                                         <div class="card">
@@ -1130,7 +1141,12 @@
                             {{-- GRUPO C --}}
                             <div class="tab-pane container" id="grupoc"> 
                                 <br>
-                                <p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p>
+                                <ul style="line-height:80%">
+                                    <li><p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p></li>
+                                    <li>
+                                        <p>You have to completely fill out the Score and the Winners selections.</p>
+                                    </li>    
+                                </ul>
                                 <div class="row">
                                     <div class="col-md-7">
                                         <div class="card">
@@ -1658,7 +1674,12 @@
                             {{-- GRUPO D --}}
                             <div class="tab-pane container" id="grupod"> 
                                 <br>
-                                <p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p>
+                                <ul style="line-height:80%">
+                                    <li><p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p></li>
+                                    <li>
+                                        <p>You have to completely fill out the Score and the Winners selections.</p>
+                                    </li>    
+                                </ul>
                                 <div class="row">
                                     <div class="col-md-7">
                                         <div class="card">
@@ -2187,7 +2208,12 @@
                             {{-- GRUPO E --}}
                             <div class="tab-pane container" id="grupoe">
                                 <br>
-                                <p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p>
+                                <ul style="line-height:80%">
+                                    <li><p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p></li>
+                                    <li>
+                                        <p>You have to completely fill out the Score and the Winners selections.</p>
+                                    </li>    
+                                </ul>
                                 <div class="row">
                                     <div class="col-md-7">
                                         <div class="card">
@@ -2715,7 +2741,12 @@
                             {{-- GRUPO F --}}
                             <div class="tab-pane container" id="grupof">
                                 <br>
-                                <p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p>
+                                <ul style="line-height:80%">
+                                    <li><p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p></li>
+                                    <li>
+                                        <p>You have to completely fill out the Score and the Winners selections.</p>
+                                    </li>    
+                                </ul>
                                 <div class="row">
                                     <div class="col-md-7">
                                         <div class="card">
@@ -3243,7 +3274,12 @@
                             {{-- GRUPO G --}}
                             <div class="tab-pane container" id="grupog">
                                 <br>
-                                <p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p>
+                                <ul style="line-height:80%">
+                                    <li><p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p></li>
+                                    <li>
+                                        <p>You have to completely fill out the Score and the Winners selections.</p>
+                                    </li>    
+                                </ul>
                                 <div class="row">
                                     <div class="col-md-7">
                                         <div class="card">
@@ -3773,7 +3809,12 @@
                             {{-- GRUPO H --}}
                             <div class="tab-pane container" id="grupoh">
                                 <br>
-                                <p>Make sure to click on “Save and go to Second Stage” or “Save and go to Home Page” after you have made your Score and Winners selections.</p>
+                               <ul style="line-height:80%">
+                                    <li><p>  Make sure to click on “Save and go to Next Group” or “Save and go to Home Page” after you have made your Score and Winners selections.</p></li>
+                                    <li>
+                                        <p>You have to completely fill out the Score and the Winners selections.</p>
+                                    </li>    
+                                </ul>
                                 <div class="row">
                                     <div class="col-md-7">
                                         <div class="card">
@@ -4307,20 +4348,14 @@
                             </div>
                                 
 
-                                
+                                <input type="hidden" id="imgroute" value="{{asset('img/flags')}}">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-            </div>
-        </div>
-        <br>
-        
-
+    <br>
         {{-- MENU --}}
         <div class="row justify-content-center">
             <div class="col-md-4">
@@ -4357,11 +4392,9 @@
                 </div>
             </div>
         </div>
-
-
-        <input type="hidden" id="imgroute" value="{{asset('img/flags')}}">
-
-     </div>
+    </div>
+</div>
+</div>
 @endsection
 
 
@@ -4754,6 +4787,7 @@
                         toastr.warning(data.error);
                     }else{
                         toastr.success('Saved');
+                        window.location='{{ route("home") }}';
                     }
                 }  
             }); 
