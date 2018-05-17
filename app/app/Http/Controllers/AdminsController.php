@@ -217,18 +217,18 @@ class AdminsController extends Controller
     {
         $user = User::find($id);
 
-        DB::table('clasificado')->where('id', '=', 1)->delete();
+        // DB::table('clasificado')->where('id', '=', 1)->delete(); 
 
-        $user->polls()->clasificado->delete();
+        // $user->polls()->clasificado->delete();
 
        
 
-        $user->polls()->delete();
+        // $user->polls()->delete();
 
-        $user->delete();
+        // $user->delete();
 
-        $users = User::all();
-        $reps = Rep::all();
+        // $users = User::all();
+        // $reps = Rep::all();
 
         return view('admin.assign_rep')->with('users', $users)->with('reps', $reps);
     }
@@ -267,6 +267,29 @@ class AdminsController extends Controller
 
     
         return redirect()->back()->with($notification);
+        
+
+    }
+
+
+    public function deleteRep($id_rep){
+
+        $rep = Rep::find($id_rep);
+
+        if ($rep->delete()) {
+            $notification = array(
+                'message' => 'Rep ' . "$rep->name" . ' Was deleted Successfully', 
+                'alert-type' => 'success'
+            );
+            return redirect()->back()->with($notification);
+        }else{
+            $notification = array(
+                'message' => 'Rep ' . "$rep->name" . ' Could not be deleted, please unlink him/her from any users to continue', 
+                'alert-type' => 'error'
+            );
+        }
+
+        
         
 
     }
