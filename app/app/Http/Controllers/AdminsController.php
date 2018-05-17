@@ -277,16 +277,23 @@ class AdminsController extends Controller
         $rep = Rep::find($id_rep);
 
         if ($rep->delete()) {
+
             $notification = array(
                 'message' => 'Rep ' . "$rep->name" . ' Was deleted Successfully', 
                 'alert-type' => 'success'
             );
+
+            // DB::update('update users set id_rep = NULL where id_rep', '=', $id_rep);
+
+            User::where('id_rep', '=', $id_rep)->update(['id_rep' => NULL]);
+
             return redirect()->back()->with($notification);
         }else{
             $notification = array(
                 'message' => 'Rep ' . "$rep->name" . ' Could not be deleted, please unlink him/her from any users to continue', 
                 'alert-type' => 'error'
             );
+            
         }
 
         
