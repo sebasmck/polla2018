@@ -63,6 +63,8 @@
                                     <th>Cellphone</th>
                                     <th>Complete Pool</th>
                                     <th>Status</th>
+                                    <th>Rep</th>
+                                    <th>Referre By</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -77,13 +79,15 @@
                                     <td>{{$poll->cellphone}}</td>
                                     <td>{{$poll->complete}}</td>
                                     <td>{{$poll->status}}</td>
+                                    <td>{{$poll->rep}}</td>
+                                    <td>{{$poll->referredby}}</td>
                                     <td>
                                       <div class="col-md-6">
                                         <button class="button is-primary is-pulled-left" id="showModal"
                                     data-target="modal-ter" data-id="{{$poll->iduser_poll}}" aria-haspopup="true">Edit Status</button>  
                                       </div>
                                       <div class="col-md-6">
-                                        {!! Form::open(['route' => ['destroypoll', $poll->iduser_poll], 'method' => 'DELETE']) !!}
+                                        {!! Form::open(['route' => ['destroypoll', $poll->iduser_poll], 'method' => 'DELETE', 'onsubmit' => 'return confirmDelete()']) !!}
 
                                           {!!Form::submit('x', ['class' => 'button is-danger', 'style' => 'margin-left:15px;']) !!}
                             
@@ -156,6 +160,16 @@
 
 
         });
+
+        function confirmDelete() {
+            var result = confirm('Are you sure you want to delete?');
+
+            if (result) {
+                    return true;
+                } else {
+                    return false;
+                }
+        }
 
 
     </script>
