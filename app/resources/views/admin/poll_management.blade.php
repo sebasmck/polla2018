@@ -49,14 +49,18 @@
 
                   <section class="section">
                     <div class="container">
+
+
                       <h1 class="title"><b> Current Pools </b></h1>      
-                                  <a href="{{ route('exportexcel') }}">Export to Excel</a>
-                      <hr style="margin-bottom: 0;">
+
+                      {{-- <hr style="margin-bottom: 0;"> --}}
+
+                        <a href="{{ route('exportexcel') }}" class="button is-success is-pulled-left" style="margin-bottom: 25px;">Export to Excel</a>            
+                      
                       <table id="pendings" class="display">
                             <thead>
                                 <tr>
                                     <th>Name</th>
-                                    <th>Last Name</th>
                                     <th>Pool Name</th>
                                     <th>E-mail</th>
                                     <th>City</th>
@@ -70,8 +74,7 @@
                             <tbody>
                             @foreach($allpolls as $poll)
                                 <tr>
-                                    <td>{{$poll->name}}</td>
-                                    <td>{{$poll->lastname}}</td>
+                                    <td>{{$poll->name . ' '. $poll->lastname}}</td>
                                     <td><a href="{{ route('printpicks.show', $poll->iduser_poll) }}">{{$poll->poll_name}}</a></td>
                                     <td>{{$poll->email}}</td>
                                     <td>{{$poll->city}}</td>

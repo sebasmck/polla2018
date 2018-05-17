@@ -8,6 +8,8 @@ use App\User;
 use App\Emails;
 use App\Rep;
 use App\PollsModel;
+use Excel;
+
 use DB;
 
 
@@ -292,12 +294,23 @@ class AdminsController extends Controller
             $notification = array(
                 'message' => 'Rep ' . "$rep->name" . ' Could not be deleted, please unlink him/her from any users to continue', 
                 'alert-type' => 'error'
-            );
-            
+            );   
         }
+    }
 
-        
-        
+
+    public function exportExcel(){
+
+
+    $pools = PollsModel::getUserPools();
+      
+    // $pools = PollsModel::select('poll_name', 'status', 'complete')->get();
+
+    return Excel::create('all_pools', function($excel) use($pools) {
+      $excel->sheet('Sheet 1', function($sheet) use($pools) {
+        $sheet->fromArray($pools);
+      });
+    })->export('xls');
 
     }
 
