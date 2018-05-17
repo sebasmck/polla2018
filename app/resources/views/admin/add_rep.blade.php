@@ -97,15 +97,15 @@
                                     {{-- <a href="/editrep/{{$user->id}}"> <button class="button is-primary is-pulled-right">Edit Rep</button></a>
                                     <p class="is-pulled-left">{{$user->rep->name}}</p> --}}
                                 </td>
-                                    {{-- <td>
+                                    <td>
                                         <div class="col-md-6">
-                                          {!! Form::open(['route' => ['admins.destroy', $user->id], 'method' => 'DELETE']) !!}
+                                          {!! Form::open(['route' => ['deleterep', $rep->id_rep], 'method' => 'DELETE']) !!}
 
                                           {!!Form::submit('x', ['class' => 'button is-danger']) !!}
                             
                                           {!! Form::close() !!}
                                         </div>
-                                    </td> --}}
+                                    </td>
                                 </tr>
 
                             @endforeach

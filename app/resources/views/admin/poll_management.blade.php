@@ -49,14 +49,18 @@
 
                   <section class="section">
                     <div class="container">
+
+
                       <h1 class="title"><b> Current Pools </b></h1>      
-                                  <a href="{{ route('exportexcel') }}">Export to Excel</a>
-                      <hr style="margin-bottom: 0;">
+
+                      {{-- <hr style="margin-bottom: 0;"> --}}
+
+                        <a href="{{ route('exportexcel') }}" class="button is-success is-pulled-left" style="margin-bottom: 25px;">Export to Excel</a>            
+                      
                       <table id="pendings" class="display">
                             <thead>
                                 <tr>
                                     <th>Name</th>
-                                    <th>Last Name</th>
                                     <th>Pool Name</th>
                                     <th>E-mail</th>
                                     <th>City</th>
@@ -65,14 +69,14 @@
                                     <th>Status</th>
                                     <th>Rep</th>
                                     <th>Referre By</th>
-                                    <th>Action</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
                             @foreach($allpolls as $poll)
                                 <tr>
-                                    <td>{{$poll->name}}</td>
-                                    <td>{{$poll->lastname}}</td>
+                                    <td>{{$poll->name . ' '. $poll->lastname}}</td>
                                     <td><a href="{{ route('printpicks.show', $poll->iduser_poll) }}">{{$poll->poll_name}}</a></td>
                                     <td>{{$poll->email}}</td>
                                     <td>{{$poll->city}}</td>
@@ -82,18 +86,14 @@
                                     <td>{{$poll->rep}}</td>
                                     <td>{{$poll->referredby}}</td>
                                     <td>
-                                      <div class="col-md-6">
-                                        <button class="button is-primary is-pulled-left" id="showModal"
-                                    data-target="modal-ter" data-id="{{$poll->iduser_poll}}" aria-haspopup="true">Edit Status</button>  
-                                      </div>
-                                      <div class="col-md-6">
-                                        {!! Form::open(['route' => ['destroypoll', $poll->iduser_poll], 'method' => 'DELETE', 'onsubmit' => 'return confirmDelete()']) !!}
+                                        <button class="button is-primary is-pulled-left" id="showModal" data-target="modal-ter" data-id="{{$poll->iduser_poll}}" aria-haspopup="true">Edit</button>  
+                                    </td>
+                                    <td>
+                                      {!! Form::open(['route' => ['destroypoll', $poll->iduser_poll], 'method' => 'DELETE']) !!}
 
                                           {!!Form::submit('x', ['class' => 'button is-danger', 'style' => 'margin-left:15px;']) !!}
                             
                                           {!! Form::close() !!}
-                                      </div>
-
                                     </td>
                                 </tr>
                             @endforeach

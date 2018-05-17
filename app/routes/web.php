@@ -24,7 +24,7 @@ Route::get('/poolmanagement', 'HomeController@pollManagement')->name('pollmanage
 
 Route::post('/pollregistration', 'HomeController@pollregistration')->name('pollregistration');
 
-Route::get('/exportexcel', 'HomeController@exportExcel')->name('exportexcel');
+Route::get('/exportexcel', 'AdminsController@exportExcel')->name('exportexcel');
 
 Route::get('admin', 'HomeController@indexAdmin')->name('admin');
 
@@ -51,6 +51,8 @@ Route::get('allusers', 'AdminsController@allUsers')->name('allusers');
 
 Route::delete('poll/{iduser_poll}', 'AdminsController@deletePoll')->name('destroypoll');
 
+Route::delete('deleterep/{id_rep}', 'AdminsController@deleteRep')->name('deleterep');
+
 Route::Resource('admins', 'AdminsController');
 
 // PICKS
@@ -67,10 +69,11 @@ Route::post('/storeh', 'PicksController@storeGroupH')->name('storeh');
 Route::post('/storesecondstage', 'PicksController@storeSecondStage')->name('storesecondstage');
 
 Route::Resource('picks', 'PicksController');
+
 Route::Resource('printpicks', 'Print_PicksController');
 
-
 Route::Resource('secondstage', 'SecondStageController');
+
 
 
 

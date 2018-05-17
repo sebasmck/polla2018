@@ -36,7 +36,7 @@
                         <nav class="tabs is-boxed">
                           <ul>
                             <li>
-                              <a href="{{ route('admin') }}">Pending approvals</a>
+                              <a href="{{ route('admin') }}">Pending Approvals</a>
                             </li>
                             <li class="is-active">
                                 <a href="{{ route('assign') }}">User Management</a>
@@ -52,7 +52,7 @@
 
                   <section class="section">
                     <div class="container">
-                    <a class="button is-success is-pulled-right" href="{{route('addRep')}}">Add Rep</a>
+                    <a class="button is-success is-pulled-right" href="{{route('addRep')}}">Add / Delete Reps</a>
                       <h1 class="title"><b> User Management </b></h1>                  
                       <hr style="margin-bottom: 0;">
                       <table id="pendings" class="display">

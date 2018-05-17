@@ -104,10 +104,5 @@ class HomeController extends Controller
         
     }
 
-    public function exportExcel() 
-    {
-        //dd('hola');
-        return Excel::download(new InvoicesExport, 'invoices.xlsx');
-    }
 
 }
