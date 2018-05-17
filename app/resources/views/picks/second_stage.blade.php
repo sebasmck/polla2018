@@ -599,7 +599,7 @@
 </div>
 </div>
 
-<div style="height: 28px;"></div>
+<div style="height: 10px;"></div>
 
 {{-- 2G --}}
 <div class="row">
@@ -608,7 +608,7 @@
             <tbody>
                 @if($winG == null)
                 <tr>
-                    <td style="width: 30%; height: 30px;"></td>
+                    <td style="width: 23%; height: 30px;"></td>
                     <td style="width: 50%; height: 30px;"></td>
                 </tr>
                 @else
@@ -633,6 +633,8 @@
         </table>
     </div>
 </div>
+
+<div style="height: 50px;"></div>
 
 </div>
 </div>  {{--  end card --}}

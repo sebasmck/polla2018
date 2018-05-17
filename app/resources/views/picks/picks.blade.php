@@ -4476,7 +4476,9 @@
                         $('#idgrupoa').removeClass( "active show" );
                         $('#idgrupob').addClass( "active show" );
                         $('#grupoa').removeClass( "active show" );
-                        $('#grupob').addClass( "active show" );                    }
+                        $('#grupob').addClass( "active show" ); 
+                        $( '#secondstageframe' ).attr( 'src', function ( i, val ) { return val; });
+                    }
                 }  
             }); 
 
@@ -4516,6 +4518,7 @@
                         $('#idgrupoc').addClass( "active show" );
                         $('#grupob').removeClass( "active show" );
                         $('#grupoc').addClass( "active show" );
+                        $( '#secondstageframe' ).attr( 'src', function ( i, val ) { return val; });
                     }
                 }  
             }); 
@@ -4557,6 +4560,7 @@
                         $('#idgrupod').addClass( "active show" );
                         $('#grupoc').removeClass( "active show" );
                         $('#grupod').addClass( "active show" );
+                        $( '#secondstageframe' ).attr( 'src', function ( i, val ) { return val; });
                     }
                 }  
             }); 
@@ -4599,6 +4603,7 @@
                         $('#idgrupoe').addClass( "active show" );
                         $('#grupod').removeClass( "active show" );
                         $('#grupoe').addClass( "active show" );
+                        $( '#secondstageframe' ).attr( 'src', function ( i, val ) { return val; });
                     }
                 }  
             }); 
@@ -4641,6 +4646,7 @@
                         $('#idgrupof').addClass( "active show" );
                         $('#grupoe').removeClass( "active show" );
                         $('#grupof').addClass( "active show" );
+                        $( '#secondstageframe' ).attr( 'src', function ( i, val ) { return val; });
                     }
                 }  
             }); 
@@ -4683,6 +4689,7 @@
                         $('#idgrupog').addClass( "active show" );
                         $('#grupof').removeClass( "active show" );
                         $('#grupog').addClass( "active show" );
+                        $( '#secondstageframe' ).attr( 'src', function ( i, val ) { return val; });
                     }
                 }  
             }); 
@@ -4725,7 +4732,7 @@
                         $('#idgrupoh').addClass( "active show" );
                         $('#grupog').removeClass( "active show" );
                         $('#grupoh').addClass( "active show" );
-                        
+                        $( '#secondstageframe' ).attr( 'src', function ( i, val ) { return val; });
                     }
                 }  
             }); 

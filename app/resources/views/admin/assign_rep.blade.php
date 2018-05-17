@@ -69,7 +69,7 @@
                             @foreach($users as $user)
                                 @if($user->is_approved == 1 && $user->role != 'admin')
                                 <tr>
-                                    <td>{{$user->nickname}}</td>
+                                    <td>{{$user->name .' '. $user->lastname}}</td>
                                     <td>{{$user->email}}</td>
                                 <td> <a class="button is-danger" href="{{route('admins.show', $user->id)}}"> View Pools</a> </td>
                                 <td>

@@ -17,6 +17,8 @@ use App\clasificado;
 use App\Team;
 use App\rivals;
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Gate;
 use App\SecondStage;
 use Illuminate\Support\Facades\Validator;
 use DB;
@@ -34,7 +36,14 @@ class PicksController extends Controller
     public function show($iduser_poll){
 
 
-        // Groups input boxes
+        $user = Auth::user();
+        $poll = PollsModel::find($iduser_poll);
+
+
+        if ($user->id == $poll->id_User) {
+          
+        
+            // Groups input boxes
 
         $poll = PollsModel::find($iduser_poll);
         $ga = PollsModel::find($iduser_poll)->groupa;
@@ -108,7 +117,9 @@ class PicksController extends Controller
         ->with('ss', $ss)
         ->with('countpolls', $countpolls);
         // ->with('drop1', $drop1)
-        
+        }else{
+            return redirect('errors.404');   
+        }
 
     }
 
