@@ -63,7 +63,8 @@
                                     <th>Cellphone</th>
                                     <th>Complete Pool</th>
                                     <th>Status</th>
-                                    <th>Action</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -78,18 +79,15 @@
                                     <td>{{$poll->complete}}</td>
                                     <td>{{$poll->status}}</td>
                                     <td>
-                                      <div class="col-md-6">
                                         <button class="button is-primary is-pulled-left" id="showModal"
-                                    data-target="modal-ter" data-id="{{$poll->iduser_poll}}" aria-haspopup="true">Edit Status</button>  
-                                      </div>
-                                      <div class="col-md-6">
-                                        {!! Form::open(['route' => ['destroypoll', $poll->iduser_poll], 'method' => 'DELETE']) !!}
+                                    data-target="modal-ter" data-id="{{$poll->iduser_poll}}" aria-haspopup="true">Edit</button>  
+                                    </td>
+                                    <td>
+                                      {!! Form::open(['route' => ['destroypoll', $poll->iduser_poll], 'method' => 'DELETE']) !!}
 
                                           {!!Form::submit('x', ['class' => 'button is-danger', 'style' => 'margin-left:15px;']) !!}
                             
                                           {!! Form::close() !!}
-                                      </div>
-
                                     </td>
                                 </tr>
                             @endforeach

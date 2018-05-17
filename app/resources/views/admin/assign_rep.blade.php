@@ -52,7 +52,7 @@
 
                   <section class="section">
                     <div class="container">
-                    <a class="button is-success is-pulled-right" href="{{route('addRep')}}">Add Rep</a>
+                    <a class="button is-success is-pulled-right" href="{{route('addRep')}}">Add / Delete Reps</a>
                       <h1 class="title"><b> User Management </b></h1>                  
                       <hr style="margin-bottom: 0;">
                       <table id="pendings" class="display">
