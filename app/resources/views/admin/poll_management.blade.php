@@ -65,10 +65,10 @@
                                     <th>E-mail</th>
                                     <th>City</th>
                                     <th>Cellphone</th>
+                                    <th>Referre By</th>
                                     <th>Complete Pool</th>
                                     <th>Status</th>
                                     <th>Rep</th>
-                                    <th>Referre By</th>
                                     <th>Edit</th>
                                     <th>Delete</th>
                                 </tr>
@@ -81,10 +81,11 @@
                                     <td>{{$poll->email}}</td>
                                     <td>{{$poll->city}}</td>
                                     <td>{{$poll->cellphone}}</td>
+                                    <td>{{$poll->referredby}}</td>
                                     <td>{{$poll->complete}}</td>
                                     <td>{{$poll->status}}</td>
                                     <td>{{$poll->rep}}</td>
-                                    <td>{{$poll->referredby}}</td>
+                                    
                                     <td>
                                         <button class="button is-primary is-pulled-left" id="showModal" data-target="modal-ter" data-id="{{$poll->iduser_poll}}" aria-haspopup="true">Edit</button>  
                                     </td>

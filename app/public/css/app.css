@@ -9701,3 +9701,12 @@ a.text-dark:hover {
     height: 128px;
     width: 128px;
 }
+
+.second_sta .card-body{
+    padding: 0.25rem;
+    font-size: 10px;
+}
+
+.second_sta .card-body select{
+    font-size: .7rem;
+}
