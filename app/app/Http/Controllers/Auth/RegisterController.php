@@ -65,7 +65,7 @@ class RegisterController extends Controller
                       'lastname' => $user->lastname,
                       'email' => $user->email,
                       'password' => $request->password,
-                      'nickname' =>$request->poll_name,
+                      'nickname' =>$request->nickname,
                       'city' => $request->city,
                       'cellphone' => $request->cellphone,
                       'referredby' => $request->referredby);
