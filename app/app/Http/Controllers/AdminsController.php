@@ -152,8 +152,6 @@ class AdminsController extends Controller
             'alert-type' => 'success'
         );
 
-        dd($notification);
-
         return redirect()->back()->with($notification);
     }
 

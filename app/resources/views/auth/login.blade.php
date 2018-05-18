@@ -22,21 +22,16 @@
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
+                        <input type="hidden" name="is_approved" value="1">
+
                         <div class="form-group row">
                             {{-- <label for="email" class="col-sm-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label> --}}
 
                             <div class="col-md-12">
                                 <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus placeholder="E-Mail Address">
-
-                                @if ($errors->has('email'))
                                     <span class="invalid-feedback">
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
-                                @elseif($errors->has('is_approved'))
-                                <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('is_approved') }}</strong>
-                                    </span>
-                                @endif
                             </div>
                         </div>
 

@@ -69,9 +69,9 @@
                 </button>
 
 
-                <div style="text-align: center; margin-left: 12%;">
+                {{-- <div style="text-align: center; margin-left: 12%;">
                     Registered Pools: {{$countpolls}}
-                </div>
+                </div> --}}
 
                 <div style="text-align: center; margin-left: 12%; padding-top:8px;">
                 	<ul style="line-height:50%; list-style-type: none;">

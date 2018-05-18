@@ -9,6 +9,8 @@ Route::post('userregistration', 'Auth\RegisterController@register')->name('userr
 
 Route::get('awaitingconfirmation', 'HomeController@awaiting')->name('awaitingconfirmation');
 
+// Route::post('login', 'Auth\LoginController@login')->name('login');
+
 Auth::routes();
 
 Route::get('home', 'HomeController@index')->name('home');

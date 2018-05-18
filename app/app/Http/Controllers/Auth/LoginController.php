@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 
+use Auth;
+
 class LoginController extends Controller
 {
     /*
@@ -39,7 +41,6 @@ class LoginController extends Controller
         return [
             'email' => $request->email,
             'password' => $request->password,
-            'is_approved' => 1,
         ];
     }
 
@@ -48,17 +49,30 @@ class LoginController extends Controller
         $this->validate($request, [
             $this->username() => 'required|string',
             'password' => 'required|string',
-            'is_approved' => 'boolean',
         ]);
     }
 
     protected function authenticated($request, $user)
     {
-        if($user->role === 'admin') {
-            return redirect()->intended('/admin');
+
+        if ($user->is_approved == 1) {
+            if($user->role === 'admin') {
+                return redirect()->intended('/admin');
+            }else{
+                return redirect()->intended('/home');
+            }
         }else{
-            return redirect()->intended('/home');
+            
+            $notification = array(
+                'message' => 'You need to be approved first.', 
+                'alert-type' => 'warning'
+            );
+
+            Auth::logout();
+
+            return redirect()->back()->with($notification);
         }
+        
 
     }
 
