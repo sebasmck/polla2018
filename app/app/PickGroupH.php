@@ -29,4 +29,8 @@ class PickGroupH extends Model
 						'M6H3',
 						'complete',
 	];
+
+	public static function GetByPool($idpoll){
+		return PickGroupH::where('id_poll','=',$idpoll)->get();
+	}
 }

@@ -1,0 +1,170 @@
+nav-item
+$('#idgrupoa').html();
+
+$('#idgrupoa').removeClass( "active show" );
+$('#idgrupob').addClass( "active show" );
+$('#grupoa').removeClass( "active show" );
+$('#grupob').addClass( "active show" );
+
+DELIMITER ;;
+CREATE DEFINER=`vksbgxbd_pollaworldcup`@`%` PROCEDURE `rivals`(iduser_poll INT, id_fase1 INT, id_fase2 INT)
+BEGIN
+SELECT `id_fase` FROM clasificado;
+END;;
+DELIMITER ;
+
+SELECT clasificado.* , teams.team_name, cru.team_name
+FROM clasificado 
+INNER JOIN teams ON teams.id = clasificado.id_winner_team
+INNER JOIN teams cru ON cru.id = clasificado.id_runnerup
+WHERE id_poll = 57 AND (id_fase = 1 OR id_fase = 2)
+
+select `clasificado`.*, `teams`.`team_name`, `cru`.`team_name` as `team_rumup` 
+from `clasificado` 
+inner join `teams` on `clasificado`.`id_winner_team` = `teams`.`id` 
+inner join `teams` as `cru` on `clasificado`.`id_runnerup` = `cru`.`id` 
+where clasificado.id_poll = 57 AND (id_fase = 1 or id_fase = 2)
+
+
+DELIMITER ;;
+CREATE DEFINER=`vksbgxbd_pollaworldcup`@`%` PROCEDURE `rivasl` (id_poll INT, id_fase1 INT, id_fase2 INT)
+BEGIN
+SELECT `id_winner_team` as `id`, `teams`.`team_name` 
+FROM clasificado
+INNER JOIN `teams` on `teams`.`id` = `clasificado`.`id_winner_team`
+WHERE id_poll = 57 and id_fase = 1
+UNION
+SELECT `id_runnerup` as `id`, `teams`.`team_name` 
+FROM clasificado
+INNER JOIN `teams` on `teams`.`id` = `clasificado`.`id_runnerup`
+WHERE id_poll = 57 and id_fase = 2;
+END;;
+DELIMITER ;
+
+KarenWil2018
+
+
+isset($ga->M5A1) ? $ga->M5A1 : null)
+
+DELIMITER ;;
+CREATE DEFINER=`vksbgxbd_pollaworldcup`@`%` PROCEDURE `rivals`(id_poll INT, id_fase1 INT, id_fase2 INT)
+BEGIN
+SELECT `id_winner_team` as `id`, `teams`.`team_name` 
+FROM clasificado
+INNER JOIN `teams` on `teams`.`id` = `clasificado`.`id_winner_team`
+WHERE `id_poll` = id_poll and `id_fase` = id_fase1
+UNION
+SELECT `id_runnerup` as `id`, `teams`.`team_name` 
+FROM clasificado
+INNER JOIN `teams` on `teams`.`id` = `clasificado`.`id_runnerup`
+WHERE `id_poll` = id_poll and `id_fase` = id_fase2;
+END;;
+DELIMITER ;
+
+
+DELIMITER ;;
+CREATE DEFINER=`vksbgxbd_pollaworldcup`@`%` PROCEDURE `rivasl` (id_poll INT, id_fase1 INT, id_fase2 INT)
+BEGIN
+
+DROP TABLE IF EXISTS rivals;
+CREATE TEMPORARY TABLE rivals (id INT,  team_name VARCHAR(155));
+
+INSERT INTO rivals
+SELECT `id_winner_team` as `id`, `teams`.`team_name` 
+FROM clasificado
+INNER JOIN `teams` on `teams`.`id` = `clasificado`.`id_winner_team`
+WHERE `id_poll` = id_poll and `id_fase` = id_fase1;
+
+INSERT INTO rivals
+SELECT `id_runnerup` as `id`, `teams`.`team_name` 
+FROM clasificado
+INNER JOIN `teams` on `teams`.`id` = `clasificado`.`id_runnerup`
+WHERE `id_poll` = id_poll and `id_fase` = id_fase2;
+
+
+select `id`, `team_name` from rivals
+
+END;;
+DELIMITER ;
+
+
+call rivals(57, 3, 4);
+
+
+
+<table class="display table_second_stage">
+                                                            <tbody>
+                                                                 @if($winA == null)
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;"></td>
+                                                                    <td style="width: 70%; height: 30px;"></td>
+                                                                    
+                                                                </tr>
+                                                                @else
+                                                                <tr>
+                                                                    <td style="width: 30%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winA->team_name)).'.png'}}">
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="width: 70%; height: 30px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12" >
+                                                                                <label>{{$winA->team_name}}</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                @endif
+                                                            </tbody>
+                                                        </table>
+
+            m1_A1 = parseInt(m1_A1);
+			m1_A2 = parseInt(m1_A2);
+
+			m2_A3 = parseInt(m2_A3);
+			m2_A4 = parseInt(m2_A4);
+
+			m3_A1 = parseInt(m3_A1);
+			m3_A3 = parseInt(m3_A3);
+
+			m4_A4 = parseInt(m4_A4);
+			m4_A2 = parseInt(m4_A2);
+
+			m5_A4 = parseInt(m5_A4);
+			m5_A1 = parseInt(m5_A1);
+
+			m6_A2 = parseInt(m6_A2);
+			m6_A3 = parseInt(m6_A3);
+
+
+
+public function destroy($iduser_poll)
+    {
+        $id_user = auth()->user()->id;
+
+        $poll = PollsModel::find($iduser_poll);
+        $poll->clasificado()->delete();
+        $poll->groupa()->delete();
+        $poll->groupb()->delete();
+        $poll->groupc()->delete();
+        $poll->groupd()->delete();
+        $poll->groupe()->delete();
+        $poll->groupf()->delete();
+        $poll->groupg()->delete();
+        $poll->grouph()->delete();
+        $poll->delete();
+
+        $polls = PollsModel::getBbyUser($id_user);
+
+        $notification = array(
+                'message' => 'Pool delete successfully!', 
+                'alert-type' => 'success'
+            );
+
+        return view('home')->with('polls', $polls)->with($notification);
+    }
+
+

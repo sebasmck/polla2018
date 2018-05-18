@@ -30,4 +30,7 @@ class PickGroupB extends Model
 							'complete',
 	];
 
+	public static function GetByPool($idpoll){
+		return PickGroupB::where('id_poll','=',$idpoll)->get();
+	}
 }

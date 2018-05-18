@@ -90,7 +90,7 @@
                                         <button class="button is-primary is-pulled-left" id="showModal" data-target="modal-ter" data-id="{{$poll->iduser_poll}}" aria-haspopup="true">Edit</button>  
                                     </td>
                                     <td>
-                                      {!! Form::open(['route' => ['destroypoll', $poll->iduser_poll], 'method' => 'DELETE']) !!}
+                                      {!! Form::open(['route' => ['destroypoll', $poll->iduser_poll], 'method' => 'DELETE', 'onsubmit' => 'return confirmDelete()']) !!}
 
                                           {!!Form::submit('x', ['class' => 'button is-danger', 'style' => 'margin-left:15px;']) !!}
                             

@@ -83,7 +83,7 @@
                                     </td>
                                     <td>
                                         <div class="col-md-6">
-                                          {!! Form::open(['route' => ['admins.destroy', $user->id], 'method' => 'DELETE']) !!}
+                                          {!! Form::open(['route' => ['admins.destroy', $user->id], 'method' => 'DELETE', 'onsubmit' => 'return confirmDelete()']) !!}
 
                                           {!!Form::submit('x', ['class' => 'button is-danger']) !!}
                             
@@ -141,24 +141,35 @@
         
         $(document).ready( function () {
 
-        $('#pendings').DataTable();
+          $('#pendings').DataTable();
 
-        
-        $(document).on('click', '#showModal', function(){
+          
+          $(document).on('click', '#showModal', function(){
 
-        $('#id').val($(this).data('id'));
-        $(".modal").addClass("is-active");  
+          $('#id').val($(this).data('id'));
+          $(".modal").addClass("is-active");  
 
-        });
+          });
 
-        
+          
 
-        $("#close").click(function() {
-            $(".modal").removeClass("is-active");
-        });
+          $("#close").click(function() {
+              $(".modal").removeClass("is-active");
+          });
 
       
         });
+
+
+        function confirmDelete() {
+            var result = confirm('Are you sure you want to delete?');
+
+            if (result) {
+                    return true;
+                } else {
+                    return false;
+                }
+        }
 
     </script>
 

@@ -34,5 +34,9 @@ class User extends Authenticatable
     public function polls(){
         return $this->hasMany('App\PollsModel', 'id_User', 'id');
     }
+
+    public static function getUserByEmail($email){
+        return User::where('email', '=', $email)->get()->first();
+    }
     
 }
