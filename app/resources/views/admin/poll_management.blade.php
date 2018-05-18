@@ -65,8 +65,10 @@
                                     <th>E-mail</th>
                                     <th>City</th>
                                     <th>Cellphone</th>
+                                    <th>Referre By</th>
                                     <th>Complete Pool</th>
                                     <th>Status</th>
+                                    <th>Rep</th>
                                     <th>Edit</th>
                                     <th>Delete</th>
                                 </tr>
@@ -79,14 +81,16 @@
                                     <td>{{$poll->email}}</td>
                                     <td>{{$poll->city}}</td>
                                     <td>{{$poll->cellphone}}</td>
+                                    <td>{{$poll->referredby}}</td>
                                     <td>{{$poll->complete}}</td>
                                     <td>{{$poll->status}}</td>
+                                    <td>{{$poll->rep}}</td>
+                                    
                                     <td>
-                                        <button class="button is-primary is-pulled-left" id="showModal"
-                                    data-target="modal-ter" data-id="{{$poll->iduser_poll}}" aria-haspopup="true">Edit</button>  
+                                        <button class="button is-primary is-pulled-left" id="showModal" data-target="modal-ter" data-id="{{$poll->iduser_poll}}" aria-haspopup="true">Edit</button>  
                                     </td>
                                     <td>
-                                      {!! Form::open(['route' => ['destroypoll', $poll->iduser_poll], 'method' => 'DELETE']) !!}
+                                      {!! Form::open(['route' => ['destroypoll', $poll->iduser_poll], 'method' => 'DELETE', 'onsubmit' => 'return confirmDelete()']) !!}
 
                                           {!!Form::submit('x', ['class' => 'button is-danger', 'style' => 'margin-left:15px;']) !!}
                             
@@ -157,6 +161,16 @@
 
 
         });
+
+        function confirmDelete() {
+            var result = confirm('Are you sure you want to delete?');
+
+            if (result) {
+                    return true;
+                } else {
+                    return false;
+                }
+        }
 
 
     </script>

@@ -4,10 +4,20 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\PollsModel;
+use App\PickGroupA;
+use App\PickGroupB;
+use App\PickGroupC;
+use App\PickGroupD;
+use App\PickGroupE;
+use App\PickGroupF;
+use App\PickGroupG;
+use App\PickGroupH;
+use App\clasificado;
+
 use App\User;
 use App\Emails;
 use App\Rep;
-use App\PollsModel;
 use Excel;
 
 use DB;
@@ -216,21 +226,48 @@ class AdminsController extends Controller
     public function destroy($id)
     {
         $user = User::find($id);
+        $pools = PollsModel::getBbyUser($user->id);
 
-        // DB::table('clasificado')->where('id', '=', 1)->delete(); 
+        foreach($pools as $poll)
+        {
 
-        // $user->polls()->clasificado->delete();
+          $poll = PollsModel::find($poll->iduser_poll);
 
-       
+          $poll->clasificado()->delete();
 
-        // $user->polls()->delete();
+          $poll->groupa()->delete();
 
-        // $user->delete();
+          $poll->groupb()->delete();
 
-        // $users = User::all();
-        // $reps = Rep::all();
+          $poll->groupc()->delete();
 
-        return view('admin.assign_rep')->with('users', $users)->with('reps', $reps);
+          $poll->groupd()->delete();
+
+          $poll->groupe()->delete();
+
+          $poll->groupf()->delete();
+
+          $poll->groupg()->delete();
+
+          $poll->grouph()->delete();
+
+          $poll->secondStage()->delete();
+
+          $poll->delete();
+        }
+
+
+        $user->delete();
+        
+        
+
+        $notification = array(
+            'message' => 'User ' . $user->nickname . ' Was deleted Successfully', 
+            'alert-type' => 'success'
+        );
+
+    
+        return redirect()->back()->with($notification);
     }
 
 

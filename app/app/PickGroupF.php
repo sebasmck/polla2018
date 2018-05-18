@@ -29,4 +29,8 @@ class PickGroupF extends Model
 				'M6F3',
 				'complete',
 	];
+
+	public static function GetByPool($idpoll){
+		return PickGroupF::where('id_poll','=',$idpoll)->get();
+	}
 }

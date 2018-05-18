@@ -46,7 +46,7 @@
             <br>
             <div class="row">
                 {{-- Round of 16 --}}
-                <div class="col-md-3 second_sta">
+                <div class="col second_sta">
                     <div class="card">
                         <div class="card-header">
                             <div class="row">
@@ -63,59 +63,132 @@
                                     <table class="display table_second_stage">
                                         <tbody>
                                            @if($winA == null)
-                                           <tr>
-                                            <td style="width: 30%; height: 30px;"></td>
-                                            <td style="width: 70%; height: 30px;"></td>
-
-                                        </tr>
-                                        @else
-                                        <tr>
-                                            <td style="width: 30%; height: 30px;">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winA->team_name)).'.png'}}">
+                                            <tr>
+                                                <td style="width: 30%; height: 30px;"></td>
+                                                <td style="width: 70%; height: 30px;"></td>
+                                            </tr>
+                                            @else
+                                            <tr>
+                                                <td style="width: 30%; height: 30px;">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winA->team_name)).'.png'}}">
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </td>
-                                            <td style="width: 70%; height: 30px;">
-                                                <div class="row">
-                                                    <div class="col-md-12" >
-                                                        <label>{{$winA->team_name}}</label>
+                                                </td>
+                                                <td style="width: 70%; height: 30px;">
+                                                    <div class="row">
+                                                        <div class="col-md-12" >
+                                                            <label>{{$winA->team_name}}</label>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        @endif
-                                    </tbody>
-                                </table>
+                                                </td>
+                                            </tr>
+                                            @endif
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
-                        </div>
+
+                            <div style="height: 10px;"></div>
+
+                            {{-- 2B --}}
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <table class="display table_second_stage">
+                                        <tbody>
+                                            @if($winB == null)
+                                            <tr>
+                                                <td style="width: 30%; height: 30px;"></td>
+                                                <td style="width: 70%; height: 30px;"></td>
+                                            </tr>
+                                            @else
+                                            <tr>
+                                                <td style="width: 30%; height: 30px;">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winB->team_rumup)).'.png'}}">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 70%; height: 30px;">
+                                                    <div class="row">
+                                                        <div class="col-md-12" >
+                                                            <label>{{$winB->team_rumup}}</label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+                                            @endif
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            {{-- 1C --}}
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <table class="display table_second_stage">
+                                        <tbody>
+                                           @if($winC == null)
+                                           <tr>
+                                                <td style="width: 30%; height: 30px;"></td>
+                                                <td style="width: 70%; height: 30px;"></td>
+                                            </tr>
+                                            @else
+                                            <tr>
+                                                <td style="width: 30%; height: 30px;">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winC->team_name)).'.png'}}">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td style="width: 70%; height: 30px;">
+                                                    <div class="row">
+                                                        <div class="col-md-12" >
+                                                            <label>{{$winC->team_name}}</label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+                                            @endif
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
 
                         <div style="height: 10px;"></div>
 
-                        {{-- 2B --}}
+                        {{-- 2D --}}
                         <div class="row">
                             <div class="col-md-12">
                                 <table class="display table_second_stage">
                                     <tbody>
-                                        @if($winB == null)
+                                        @if($winD == null)
                                         <tr>
                                             <td style="width: 30%; height: 30px;"></td>
                                             <td style="width: 70%; height: 30px;"></td>
+
                                         </tr>
                                         @else
                                         <tr>
                                             <td style="width: 30%; height: 30px;">
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winB->team_rumup)).'.png'}}">
+                                                        <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winD->team_rumup)).'.png'}}">
                                                     </div>
                                                 </div>
                                             </td>
                                             <td style="width: 70%; height: 30px;">
                                                 <div class="row">
                                                     <div class="col-md-12" >
-                                                        <label>{{$winB->team_rumup}}</label>
+                                                        <label>{{$winD->team_rumup}}</label>
                                                     </div>
                                                 </div>
                                             </td>
@@ -129,13 +202,13 @@
 
                         <hr>
 
-                        {{-- 1C --}}
+                        {{-- 1E --}}
                         <div class="row">
                             <div class="col-md-12">
 
                                 <table class="display table_second_stage">
                                     <tbody>
-                                       @if($winC == null)
+                                       @if($winE == null)
                                        <tr>
                                         <td style="width: 30%; height: 30px;"></td>
                                         <td style="width: 70%; height: 30px;"></td>
@@ -145,14 +218,14 @@
                                         <td style="width: 30%; height: 30px;">
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winC->team_name)).'.png'}}">
+                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winE->team_name)).'.png'}}">
                                                 </div>
                                             </div>
                                         </td>
                                         <td style="width: 70%; height: 30px;">
                                             <div class="row">
                                                 <div class="col-md-12" >
-                                                    <label>{{$winC->team_name}}</label>
+                                                    <label>{{$winE->team_name}}</label>
                                                 </div>
                                             </div>
                                         </td>
@@ -165,80 +238,6 @@
                     </div>
 
                     <div style="height: 10px;"></div>
-
-                    {{-- 2D --}}
-                    <div class="row">
-                        <div class="col-md-12">
-                            <table class="display table_second_stage">
-                                <tbody>
-                                    @if($winD == null)
-                                    <tr>
-                                        <td style="width: 30%; height: 30px;"></td>
-                                        <td style="width: 70%; height: 30px;"></td>
-
-                                    </tr>
-                                    @else
-                                    <tr>
-                                        <td style="width: 30%; height: 30px;">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winD->team_rumup)).'.png'}}">
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td style="width: 70%; height: 30px;">
-                                            <div class="row">
-                                                <div class="col-md-12" >
-                                                    <label>{{$winD->team_rumup}}</label>
-                                                </div>
-                                            </div>
-                                        </td>
-
-                                    </tr>
-                                    @endif
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <hr>
-
-                    {{-- 1E --}}
-                    <div class="row">
-                        <div class="col-md-12">
-
-                            <table class="display table_second_stage">
-                                <tbody>
-                                   @if($winE == null)
-                                   <tr>
-                                    <td style="width: 30%; height: 30px;"></td>
-                                    <td style="width: 70%; height: 30px;"></td>
-                                </tr>
-                                @else
-                                <tr>
-                                    <td style="width: 30%; height: 30px;">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winE->team_name)).'.png'}}">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td style="width: 70%; height: 30px;">
-                                        <div class="row">
-                                            <div class="col-md-12" >
-                                                <label>{{$winE->team_name}}</label>
-                                            </div>
-                                        </div>
-                                    </td>
-
-                                </tr>
-                                @endif
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <div style="height: 10px;"></div>
 
                 {{-- 2F --}}
                 <div class="row">
@@ -641,7 +640,7 @@
 </div> {{--  end col div --}}
 
 {{-- Quarter-finals --}}
-<div class="col-md-2 quarters second_sta">
+<div class="col quarters second_sta">
     <div class="card">
         <div class="card-header">
             <div class="row">
@@ -1121,7 +1120,7 @@
 </div> {{--  end col div --}}
 
 {{-- Semi-finals --}}
-<div class="col-md-2 second_sta">
+<div class="col second_sta">
     <div class="card">
         <div class="card-header">
             <div class="row">
@@ -1316,7 +1315,7 @@
                             </div> {{--  end col div --}}
 
                             {{-- Semi-finals --}}
-                            <div class="col-md-2 second_sta">
+                            <div class="col second_sta">
                                 <div class="card">
                                     <div class="card-header">
                                         <div class="row">
@@ -1433,7 +1432,7 @@
                                             </div>  {{--  end card --}}
                                         </div> {{--  end col div --}}
 
-                                        <div class="col-md-3 second_sta">
+                                        <div class="col second_sta">
                                             <div class="card">
                                                 <div class="card-header">
                                                     <div class="row">

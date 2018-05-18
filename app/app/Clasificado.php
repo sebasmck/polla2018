@@ -34,4 +34,8 @@ class Clasificado extends Model
 					->get()
 					->first();
 	}
+
+	public static function GetbyPool($idpoll){
+		return Clasificado::where('id_poll','=',$idpoll)->get();
+	}
 }

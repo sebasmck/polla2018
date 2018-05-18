@@ -4343,7 +4343,7 @@
                             <div class="tab-pane container" id="grupoRoun">
 
                                     <br><br>
-                                    <iframe id="secondstageframe" src="{{route('secondstage.show', $poll->iduser_poll)}}" height="1150" width="1010"></iframe>
+                                    <iframe id="secondstageframe" src="{{route('secondstage.show', $poll->iduser_poll)}}" height="1150" width="100%"></iframe>
 
                             </div>
                                 
