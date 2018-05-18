@@ -64,7 +64,7 @@ class LoginController extends Controller
         }else{
             
             $notification = array(
-                'message' => 'You need to be approved first.', 
+                'message' => 'You are registered but pending authorization, please contact your city rep to be authorized..', 
                 'alert-type' => 'warning'
             );
 

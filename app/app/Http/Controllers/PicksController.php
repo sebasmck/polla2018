@@ -183,9 +183,13 @@ class PicksController extends Controller
                 'complete' => 1,
              ]);
 
+        PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
+
         return response()->json($pick);
 
         }else{
+
+        PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
             return response()->json(['error'=>'All fields Are Required']);
         }
 
@@ -249,9 +253,13 @@ class PicksController extends Controller
                 'complete' => 1,
 
              ]);
+
+        PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
         
             return response()->json($pick);
         }else{
+
+        PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
             return response()->json(['error'=>'All fields Are Required']);
         }
     }
@@ -314,9 +322,13 @@ class PicksController extends Controller
                 'complete' => 1,
 
              ]);
+
+       PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
         
             return response()->json($pick);
         }else{
+
+        PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
             return response()->json(['error'=>'All fields Are Required']);
         }
 
@@ -380,8 +392,12 @@ class PicksController extends Controller
 
              ]);
 
+        PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
+
             return response()->json($pick);
         }else{
+
+            PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
             return response()->json(['error'=>'All fields Are Required']);
         }
         
@@ -445,9 +461,13 @@ class PicksController extends Controller
                 'complete' => 1,
 
              ]);
+
+        PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
         
             return response()->json($pick);
         }else{
+
+            PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
             return response()->json(['error'=>'All fields Are Required']);
         }
         
@@ -512,9 +532,11 @@ class PicksController extends Controller
                 'complete' => 1,
 
              ]);
+       PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
         
             return response()->json($pick);
         }else{
+            PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
             return response()->json(['error'=>'All fields Are Required']);
         }
 
@@ -580,9 +602,11 @@ class PicksController extends Controller
                 'complete' => 1,
 
              ]);
+        PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
 
             return response()->json($pick);
         }else{
+            PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
             return response()->json(['error'=>'All fields Are Required']);
         }
         
@@ -647,12 +671,14 @@ class PicksController extends Controller
                 'complete' => 1,
 
              ]);
+        PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
 
         
             return response()->json($pick);
 
          }else{
             
+            PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
             return response()->json(['error'=>'All fields Are Required']);
          
          }
