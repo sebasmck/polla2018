@@ -43,7 +43,6 @@ class RegisterController extends Controller
         ],
         [   'poll_name.unique' => 'This Nickname has already been chosen.']);
 
-
         $validator2 = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
             'lastname' => 'required|string|max:255',
@@ -88,23 +87,21 @@ class RegisterController extends Controller
        return redirect('/')->with(['message' => 'Thank you for registering in pollaworldcup.com! Please allow up to 24 hours for your registration to be accepted.']);
 
         }else{
-            // $validator2->errors()->all()
+
+            $array = $validator1->errors()->all();
+            $array2 = $validator2->errors()->all();
+
+
+
+            $csv1 = implode(", ", $array);
+            $csv2 = implode(", ", $array2);
+
             $notification1 = array(
-            'message' => 'This nickname is not available, please try again!', 
+            'message' => $csv1 .' '. $csv2, 
             'alert-type' => 'error'
             );
 
-            $array = $validator2->errors()->all();
-            $csv = implode(", ", $array);
-
-
-            $notification2 = array(
-                'message' => $csv, 
-                'alert-type' => 'error'
-            );
-
-
-            return back()->with($notification1)->with($notification2);
+            return back()->with($notification1);
         }
 
        
