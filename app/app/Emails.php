@@ -32,9 +32,9 @@ class Emails
 
     public static function email_forgot_password($email, $data){
         Mail::send('emails.email_user_forgot',  $data, function($message) use ($email){
-            $message->from('contact@pollaworldcup.com', 'PollaWorldCup.com forgot password');
+            $message->from('contact@pollaworldcup.com', 'PollaWorldCup.com Password Reminder');
             $message->to($email)
-                     ->subject('PollaWorldCup.com Pool Accepted');
+                     ->subject('PollaWorldCup.com Password Reminder');
         });
     }
 }

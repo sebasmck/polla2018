@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+    <div id="status" class="modalLoading" style="display: none">
+        <div class="centerModalLoading">
+            <img src="{{URL::asset('img/loading.gif')}}" alt="">
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-12 title_polla">
@@ -4425,7 +4430,7 @@
 <script>
 
     $(document).ready(function(){
-        
+        $('#status').show();
         match_games();
         match_games_B();
         match_games_C();
@@ -4983,6 +4988,21 @@
 <script src="{{URL::asset('scripts/calculate_F.js')}}"></script>
 <script src="{{URL::asset('scripts/calculate_G.js')}}"></script>
 <script src="{{URL::asset('scripts/calculate_H.js')}}"></script>
+
+<script type="text/javascript">
+
+    $(window).bind("load", function() {
+    $('#status').hide();
+});
+            // $(document).ajaxStart(function () {
+            //     $('#status').show();
+            // });
+            // $(document).ajaxStop(function () {
+            //     
+            // });
+        </script>
+
+
 
 
 
