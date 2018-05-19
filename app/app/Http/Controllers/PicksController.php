@@ -122,10 +122,10 @@ class PicksController extends Controller
         ->with('countpolls', $countpolls);
         // ->with('drop1', $drop1)
         }else{
-            return redirect('errors.404');   
+            return redirect('/home');   
         }
     }else{
-        return redirect('errors.404');
+        return redirect('/home');
     }
 
         
