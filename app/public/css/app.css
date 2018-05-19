@@ -9518,6 +9518,15 @@ a.text-dark:hover {
         padding-right: 15px !important;
         padding-left: 15px !important;
     }
+
+    .col {
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
 }
 
 @media (max-width:384px) { 
@@ -9529,6 +9538,15 @@ a.text-dark:hover {
 
     .separtos{
         height: 20 !important;
+    }
+
+    .col {
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
     }
 
 }

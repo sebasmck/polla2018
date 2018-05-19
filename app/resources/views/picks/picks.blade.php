@@ -4996,15 +4996,21 @@
 <script type="text/javascript">
 
     $(window).bind("load", function() {
-    $('#status').hide();
-});
-            // $(document).ajaxStart(function () {
-            //     $('#status').show();
-            // });
-            // $(document).ajaxStop(function () {
-            //     
-            // });
-        </script>
+        $('#status').hide();
+    });
+
+    // $(document).ajaxStart(function () {
+    //     $('#status').show();
+    // });
+    // $(document).ajaxStop(function () {
+    //     $('#status').hide();
+    // });
+
+    // $(document).on({
+    //     ajaxStart: function() { $('#status').show();   },
+    //     ajaxStop: function() { $('#status').hide();}    
+    // });
+</script>
 
 
 
