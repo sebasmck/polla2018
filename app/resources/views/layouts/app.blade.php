@@ -9,7 +9,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Polla World Cup') }}</title>
+    <title> Polla World Cup | @yield('pagetitle') </title>
     
     <!-- Scripts -->
     {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
@@ -56,6 +56,8 @@
 <body>
     <div id="app">
         @guest
+        
+        
         @else
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
 

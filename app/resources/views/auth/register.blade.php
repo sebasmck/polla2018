@@ -1,5 +1,8 @@
-
 @extends('layouts.app')
+
+@section('pagetitle')
+    Register
+@endsection
 
 @section('content')
 <div class="container">

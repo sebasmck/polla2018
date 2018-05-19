@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('pagetitle')
+    My picks
+@endsection
+
 @section('content')
     <div id="status" class="modalLoading" style="display: none">
         <div class="centerModalLoading">

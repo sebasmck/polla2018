@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
+use Auth;
+
 use App\PollsModel;
 use App\PickGroupA;
 use App\PickGroupB;
@@ -16,9 +19,6 @@ use App\PickGroupH;
 use App\clasificado;
 use App\Team;
 use App\rivals;
-
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Gate;
 use App\SecondStage;
 use Illuminate\Support\Facades\Validator;
 use DB;
@@ -37,10 +37,14 @@ class PicksController extends Controller
 
 
         $user = Auth::user();
+
+        $id = $user->id;
+
         $poll = PollsModel::find($iduser_poll);
 
-
-        if ($user->id == $poll->id_User) {
+        
+        if ((PollsModel::where('iduser_poll', '=', $iduser_poll))->count() > 0) {
+            if ($id == $poll->id_User) {
           
         
             // Groups input boxes
@@ -120,6 +124,11 @@ class PicksController extends Controller
         }else{
             return redirect('errors.404');   
         }
+    }else{
+        return redirect('errors.404');
+    }
+
+        
 
     }
 

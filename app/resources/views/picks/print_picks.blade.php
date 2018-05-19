@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('pagetitle')
+    Print my picks
+@endsection
+
 @section('content')
     <div class="container">
         <br>

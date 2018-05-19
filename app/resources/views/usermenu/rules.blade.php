@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('pagetitle')
+    Rules
+@endsection
+
 @section('content')
 <div class="container">
     <div class="row">
