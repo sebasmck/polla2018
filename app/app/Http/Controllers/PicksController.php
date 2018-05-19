@@ -169,6 +169,18 @@ class PicksController extends Controller
                 'id_fase' => $req->id_fase,
              ]);
 
+            $poll_wa1 = Clasificado::where([
+                ['id_poll', '=', $req->id_poll],
+                ['id_fase', '=' ,'1']])->pluck('id_winner_team');
+
+            var_dump($poll_wa1);
+
+
+
+            if(($req->input('WA1') != $poll_wa1->id_winner_team) || ($req->input('WA2') != $poll_wa1->id_runnerup)) {
+                PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
+            }
+
 
         PickGroupA::updateOrCreate(
 
@@ -192,7 +204,7 @@ class PicksController extends Controller
                 'complete' => 1,
              ]);
 
-        PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
+        
 
         return response()->json($pick);
 
