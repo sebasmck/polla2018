@@ -39,8 +39,9 @@ class PicksController extends Controller
         $user = Auth::user();
         $poll = PollsModel::find($iduser_poll);
 
-
-        if ($user->id == $poll->id_User) {
+        
+        if ((PollsModel::where('iduser_poll', '=', $iduser_poll))->count() > 0) {
+            if ($user->id == $poll->id_User) {
           
         
             // Groups input boxes
@@ -120,6 +121,11 @@ class PicksController extends Controller
         }else{
             return redirect('errors.404');   
         }
+    }else{
+        return redirect('errors.404');
+    }
+
+        
 
     }
 
