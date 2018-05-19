@@ -1,12 +1,43 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="{{ app()->getLocale() }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
 
-@section('pagetitle')
-Login
-@endsection
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-@section('content')
+    <title> Polla World Cup | Login </title>
+    
+    <!-- Scripts -->
+    {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
+    
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
 
-<div class="container">
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/datatable.css') }}" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+                
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="{{URL::asset('js/jquery.tablesorter.js')}}"></script>
+    
+</head>
+<body>
+    <div id="app">
+        
+        <main class="content_web">
+
+            <br><br>
+
+            <div class="container">
     <div class="row">
         <div class="col-md-12 title_polla">
             <img src="{{ asset('img/logo.png') }}" style="height: 205px;">
@@ -96,4 +127,14 @@ Login
 @include('admin.partials.js')
 
 <script src="{{URL::asset('js/app.js')}}"></script>
-@endsection
+
+
+        </main>
+    </div>
+    
+</body>
+</html>
+
+
+
+

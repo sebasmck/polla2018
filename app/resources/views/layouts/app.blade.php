@@ -56,6 +56,8 @@
 <body>
     <div id="app">
         @guest
+        
+        
         @else
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
 
