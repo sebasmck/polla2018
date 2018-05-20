@@ -158,7 +158,8 @@ class PicksController extends Controller
     	
         if ($validator->passes()) {
 
-            Clasificado::updateOrCreate(
+            
+            $clasificadogroupa = Clasificado::updateOrCreate(
 
             ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
 
@@ -169,16 +170,9 @@ class PicksController extends Controller
                 'id_fase' => $req->id_fase,
              ]);
 
-            $poll_wa1 = Clasificado::where([
-                ['id_poll', '=', $req->id_poll],
-                ['id_fase', '=' ,'1']])->pluck('id_winner_team');
 
-            var_dump($poll_wa1);
-
-
-
-            if(($req->input('WA1') != $poll_wa1->id_winner_team) || ($req->input('WA2') != $poll_wa1->id_runnerup)) {
-                PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
+            if($clasificadogroupa->wasChanged()) {
+               PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
             }
 
 
@@ -209,8 +203,6 @@ class PicksController extends Controller
         return response()->json($pick);
 
         }else{
-
-        PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
             return response()->json(['error'=>'All fields Are Required']);
         }
 
@@ -241,7 +233,7 @@ class PicksController extends Controller
 
         if ($validator->passes()) {
 
-            Clasificado::updateOrCreate(
+           $clasificadogroupb = Clasificado::updateOrCreate(
 
             ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
 
@@ -251,6 +243,10 @@ class PicksController extends Controller
                 'id_runnerup' => $req->WB2,
                 'id_fase' => $req->id_fase,
              ]);
+
+            if($clasificadogroupb->wasChanged()) {
+               PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
+            }
 
         PickGroupB::updateOrCreate(
 
@@ -275,12 +271,10 @@ class PicksController extends Controller
 
              ]);
 
-        PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
+        
         
             return response()->json($pick);
         }else{
-
-        PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
             return response()->json(['error'=>'All fields Are Required']);
         }
     }
@@ -309,7 +303,9 @@ class PicksController extends Controller
         ]);
 
         if ($validator->passes()) {
-            Clasificado::updateOrCreate(
+
+
+            $clasificadogroupc = Clasificado::updateOrCreate(
 
             ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
 
@@ -319,6 +315,10 @@ class PicksController extends Controller
                 'id_runnerup' => $req->WC2,
                 'id_fase' => $req->id_fase,
              ]);
+
+            if($clasificadogroupc->wasChanged()) {
+               PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
+            }
 
 
        PickGroupC::updateOrCreate(
@@ -344,12 +344,9 @@ class PicksController extends Controller
 
              ]);
 
-       PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
-        
+       
             return response()->json($pick);
         }else{
-
-        PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
             return response()->json(['error'=>'All fields Are Required']);
         }
 
@@ -379,7 +376,8 @@ class PicksController extends Controller
         ]);
 
         if ($validator->passes()) {
-            Clasificado::updateOrCreate(
+
+            $clasificadogroupd = Clasificado::updateOrCreate(
 
             ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
 
@@ -389,6 +387,10 @@ class PicksController extends Controller
                 'id_runnerup' => $req->WD2,
                 'id_fase' => $req->id_fase,
              ]);
+
+            if($clasificadogroupd->wasChanged()) {
+               PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
+            }
 
         PickGroupD::updateOrCreate(
 
@@ -413,12 +415,8 @@ class PicksController extends Controller
 
              ]);
 
-        PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
-
             return response()->json($pick);
         }else{
-
-            PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
             return response()->json(['error'=>'All fields Are Required']);
         }
         
@@ -449,7 +447,8 @@ class PicksController extends Controller
         ]);
 
         if ($validator->passes()) {
-            Clasificado::updateOrCreate(
+
+            $clasificadogroupe = Clasificado::updateOrCreate(
 
             ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
 
@@ -459,6 +458,12 @@ class PicksController extends Controller
                 'id_runnerup' => $req->WE2,
                 'id_fase' => $req->id_fase,
              ]);
+
+            if($clasificadogroupe->wasChanged()) {
+               PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
+            }
+
+
 
         PickGroupE::updateOrCreate(
 
@@ -483,12 +488,8 @@ class PicksController extends Controller
 
              ]);
 
-        PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
-        
             return response()->json($pick);
         }else{
-
-            PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
             return response()->json(['error'=>'All fields Are Required']);
         }
         
@@ -520,7 +521,8 @@ class PicksController extends Controller
         ]);
 
         if ($validator->passes()) {
-            Clasificado::updateOrCreate(
+
+           $clasificadogroupf = Clasificado::updateOrCreate(
 
             ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
 
@@ -530,6 +532,10 @@ class PicksController extends Controller
                 'id_runnerup' => $req->WF2,
                 'id_fase' => $req->id_fase,
              ]);
+
+            if($clasificadogroupf->wasChanged()) {
+               PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
+            }
 
        PickGroupF::updateOrCreate(
 
@@ -553,11 +559,9 @@ class PicksController extends Controller
                 'complete' => 1,
 
              ]);
-       PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
-        
+              
             return response()->json($pick);
         }else{
-            PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
             return response()->json(['error'=>'All fields Are Required']);
         }
 
@@ -589,7 +593,8 @@ class PicksController extends Controller
         ]);
 
         if ($validator->passes()) {
-            Clasificado::updateOrCreate(
+
+           $clasificadogroupg = Clasificado::updateOrCreate(
 
             ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
 
@@ -599,6 +604,10 @@ class PicksController extends Controller
                 'id_runnerup' => $req->WG2,
                 'id_fase' => $req->id_fase,
              ]);
+
+           if($clasificadogroupg->wasChanged()) {
+               PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
+            }
 
 
         PickGroupG::updateOrCreate(
@@ -623,11 +632,9 @@ class PicksController extends Controller
                 'complete' => 1,
 
              ]);
-        PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
 
             return response()->json($pick);
         }else{
-            PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
             return response()->json(['error'=>'All fields Are Required']);
         }
         
@@ -658,7 +665,7 @@ class PicksController extends Controller
         ]);
         
          if ($validator->passes()) {
-              Clasificado::updateOrCreate(
+            $clasificadogrouph = Clasificado::updateOrCreate(
 
             ['id_poll' => $req->id_poll, 'id_fase' => $req->id_fase],
 
@@ -668,6 +675,10 @@ class PicksController extends Controller
                 'id_runnerup' => $req->WH2,
                 'id_fase' => $req->id_fase,
              ]);
+
+              if($clasificadogrouph->wasChanged()) {
+               PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
+            }
         
 
         PickGroupH::updateOrCreate(
@@ -691,15 +702,9 @@ class PicksController extends Controller
                 'M6H3' => $req->M6H3,
                 'complete' => 1,
 
-             ]);
-        PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
-
-        
+             ]);      
             return response()->json($pick);
-
          }else{
-            
-            PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
             return response()->json(['error'=>'All fields Are Required']);
          
          }
