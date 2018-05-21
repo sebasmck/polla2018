@@ -1,3 +1,4 @@
+@guest
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
@@ -134,6 +135,20 @@
     
 </body>
 </html>
+
+@else
+
+<div class="col-md-2">
+    <ul style="text-align: center; list-style: none;">
+        <li>
+            <img style="height:200px; position:fixed; top: 20%;left: 38%;" src="{{URL::asset('img/logo.png')}}" alt="logo.png">
+        </li>   
+        <li><a style="position:fixed; top: 55%;" href="/home"> Go back Home</a></li>
+    </ul>
+</div>
+
+
+@endguest
 
 
 
