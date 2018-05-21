@@ -15,11 +15,7 @@
                     <div class="card-header-print">
                         <div class="row">
                             <div class="col-md-6">
-                                @if (Auth()->user->role = 'admin')
-                                    <a style="float: left; margin-right: 15px;" href="{{route('assign')}}"><button class="btn btn-primary" id="close"> < Home </button></a>
-                                @else
                                 <a style="float: left; margin-right: 15px;" href="{{route('home')}}"><button class="btn btn-primary" id="close"> < Home </button></a>
-                                @endif
                                 <h5>{{ __('Printable Verision of my Picks') }} </h5>
                             </div>
                            <div class="col-md-6" style="text-align: right;">
