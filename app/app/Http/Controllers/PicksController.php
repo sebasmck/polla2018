@@ -43,7 +43,7 @@ class PicksController extends Controller
         $poll = PollsModel::find($iduser_poll);
 
         
-        if ((PollsModel::where('iduser_poll', '=', $iduser_poll))->count() > 0) {
+        if ((PollsModel::where('iduser_poll', '=', $iduser_poll))->count() > 0 || (Auth::user()->role == 'admin')) {
             if ($id == $poll->id_User) {
           
         
@@ -127,10 +127,7 @@ class PicksController extends Controller
     }else{
         return redirect('/home');
     }
-
-        
-
-    }
+}
 
 
     public function storeGroupA(Request $req){

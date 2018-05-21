@@ -24,47 +24,92 @@ use DB;
 
 
 
-class AdminsController extends Controller
+class AdminsController extends Controller 
 {
 
-    public function allUsers(){
 
+  public function allUsers(){
+
+    $role = Auth()->user()->role;
+
+    if($role != NULL){
+      if($role = 'admin'){
         $users = User::all();
 
         return view('admin.all_users')->with('users', $users);
 
+      }else{
+        return redirect('/');
+      }
+    }else{
+      return redirect('/');
     }
 
-    public function assignRep(){
+  }
 
+  public function assignRep(){
+
+    $role = Auth()->user()->role;
+
+    if($role != NULL){
+      if($role = 'admin'){
         $users = User::all();
         $reps = Rep::all();
 
         return view('admin.assign_rep')->with('users', $users)->with('reps', $reps);
-
+      }else{
+        return redirect('/');
+      }
+    }else{
+      return redirect('/');
     }
 
-    public function assignToUser(Request $req){
+  }
 
+  public function assignToUser(Request $req){
+
+    $role = Auth()->user()->role;
+
+    if($role != NULL){
+      if($role = 'admin'){
         $user = User::find($req->input('id'));
-
         $user->id_rep = $req->input('id_rep');
         $user->save();
 
         return redirect()->back();
-
+      }else{
+        return redirect('/');
+      }
+    }else{
+      return redirect('/');
     }
 
-    public function addRep(){
+  }
 
+  public function addRep(){
+
+    $role = Auth()->user()->role;
+
+    if($role != NULL){
+      if($role = 'admin'){
         $reps = Rep::all();
 
         return view('admin.add_rep')->with('reps', $reps);
+      }else{
+        return redirect('/');
+      }
+    }else{
+      return redirect('/');
     }
+  }
 
 
-    public function storeRep(Request $req){
+  public function storeRep(Request $req){
 
+    $role = Auth()->user()->role;
+
+    if($role != NULL){
+      if($role = 'admin'){
         $rep = new Rep;
 
         $users = User::all();
@@ -76,13 +121,19 @@ class AdminsController extends Controller
         $rep->save();
 
         $notification = array(
-            'message' => 'Rep ' . "$rep->name" . ' Was added Successfully', 
-            'alert-type' => 'success'
+          'message' => 'Rep ' . "$rep->name" . ' Was added Successfully', 
+          'alert-type' => 'success'
         );
 
         // return view('admin.assign_rep')->with($notification)->with('users', $users)->with('reps', $reps);
         return redirect()->back()->with($notification);
+      }else{
+        return redirect('/');
+      }
+    }else{
+      return redirect('/');
     }
+  }
 
     
     /**
@@ -113,14 +164,27 @@ class AdminsController extends Controller
      */
     public function store(Request $req)
     {
-        $rep = new Rep;
 
-        $rep->name = $req->input('name');
-        $rep->email = $req->input('email');
+      $role = Auth()->user()->role;
 
-        $rep->save();
+      if($role != NULL){
+        if($role = 'admin'){
+          $rep = new Rep;
 
-        return redirect()->back();
+          $rep->name = $req->input('name');
+          $rep->email = $req->input('email');
+
+          $rep->save();
+
+          return redirect()->back();
+        }else{
+          return redirect('/');
+        }
+      }else{
+        return redirect('/');
+      }
+
+
     }
 
     /**
@@ -131,11 +195,21 @@ class AdminsController extends Controller
      */
     public function show($id)
     {
-        $polls = User::find($id)->polls;
-        $user = User::find($id);
 
-        return view('admin.user_polls')->with('polls', $polls)->with('user', $user);
+      $role = Auth()->user()->role;
 
+      if($role != NULL){
+        if($role = 'admin'){
+          $polls = User::find($id)->polls;
+          $user = User::find($id);
+
+          return view('admin.user_polls')->with('polls', $polls)->with('user', $user);
+        }else{
+          return redirect('/');
+        }
+      }else{
+        return redirect('/');
+      }
     }
 
     /**
@@ -146,7 +220,13 @@ class AdminsController extends Controller
      */
     public function edit($id)
     {
-        DB::select("call aproval($id)");
+
+
+      $role = Auth()->user()->role;
+
+        if($role != NULL){
+            if($role = 'admin'){
+               DB::select("call aproval($id)");
 
         $user = User::find($id);
 
@@ -163,6 +243,15 @@ class AdminsController extends Controller
         );
 
         return redirect()->back()->with($notification);
+}else{
+                return redirect('/');
+            }
+        }else{
+            return redirect('/');
+        }
+
+
+       
     }
 
     /**
@@ -180,41 +269,71 @@ class AdminsController extends Controller
 
     public function editStatus(Request $req){
 
-        $poll = PollsModel::find($req->input('iduser_poll'));
+      $role = Auth()->user()->role;
 
-        $poll->status = $req->input('status');
-        
-        $poll->save();
+      if($role != NULL){
+        if($role = 'admin'){
+          $poll = PollsModel::find($req->input('iduser_poll'));
 
-        $notification = array(
+          $poll->status = $req->input('status');
+
+          $poll->save();
+
+          $notification = array(
             'message' => " $poll->poll_name " . 'Has changed to: ' . "$poll->status", 
             'alert-type' => 'success'
-        );
+          );
 
-        return redirect()->back()->with($notification);
+          return redirect()->back()->with($notification);
+        }else{
+          return redirect('/');
+        }
+      }else{
+        return redirect('/');
+      }
 
     }
 
 
     public function editRep($id){
 
-        $user = User::find($id);
-        $reps = Rep::all();
-        return view ('admin.editrep')->with('user', $user)->with('reps', $reps);
+      $role = Auth()->user()->role;
 
+      if($role != NULL){
+        if($role = 'admin'){
+          $user = User::find($id);
+          $reps = Rep::all();
+          return view ('admin.editrep')->with('user', $user)->with('reps', $reps);
+        }else{
+          return redirect('/');
+        }
+      }else{
+        return redirect('/');
+      }
     }
 
 
     public function updateRep(Request $req){
-        $user = User::find($req->input('id'));
-        $user->id_rep = $req->input('id_rep');
 
-        $user->save();
+      $role = Auth()->user()->role;
 
-        $users = User::all();
-        $reps = Rep::all();
+      if($role != NULL){
+        if($role = 'admin'){
+          $user = User::find($req->input('id'));
+          $user->id_rep = $req->input('id_rep');
 
-        return view('admin.assign_rep')->with('users', $users)->with('reps', $reps);
+          $user->save();
+
+          $users = User::all();
+          $reps = Rep::all();
+
+          return view('admin.assign_rep')->with('users', $users)->with('reps', $reps);
+        }else{
+          return redirect('/');
+        }
+      }else{
+        return redirect('/');
+      }
     }
 
     /**
@@ -225,7 +344,12 @@ class AdminsController extends Controller
      */
     public function destroy($id)
     {
-        $user = User::find($id);
+
+      $role = Auth()->user()->role;
+
+        if($role != NULL){
+            if($role = 'admin'){
+              $user = User::find($id);
         $pools = PollsModel::getBbyUser($user->id);
 
         foreach($pools as $poll)
@@ -268,56 +392,76 @@ class AdminsController extends Controller
 
     
         return redirect()->back()->with($notification);
+}else{
+                return redirect('/');
+            }
+        }else{
+            return redirect('/');
+        }
+
+        
     }
 
 
     public function deletePoll($iduser_poll){
 
-        $poll = PollsModel::find($iduser_poll);
 
-        $poll->clasificado()->delete();
+      $role = Auth()->user()->role;
 
-        $poll->groupa()->delete();
+      if($role != NULL){
+        if($role = 'admin'){
+          $poll = PollsModel::find($iduser_poll);
 
-        $poll->groupb()->delete();
+          $poll->clasificado()->delete();
 
-        $poll->groupc()->delete();
+          $poll->groupa()->delete();
 
-        $poll->groupd()->delete();
+          $poll->groupb()->delete();
 
-        $poll->groupe()->delete();
+          $poll->groupc()->delete();
 
-        $poll->groupf()->delete();
+          $poll->groupd()->delete();
 
-        $poll->groupg()->delete();
+          $poll->groupe()->delete();
 
-        $poll->grouph()->delete();
+          $poll->groupf()->delete();
 
-        $poll->secondStage()->delete();
+          $poll->groupg()->delete();
 
-        $poll->delete();
+          $poll->grouph()->delete();
 
-        $notification = array(
+          $poll->secondStage()->delete();
+
+          $poll->delete();
+
+          $notification = array(
             'message' => 'Pool ' . "$poll->poll_name" . ' Was deleted Successfully', 
             'alert-type' => 'success'
-        );
+          );
 
-    
-        return redirect()->back()->with($notification);
-        
 
+          return redirect()->back()->with($notification);
+        }else{
+          return redirect('/');
+        }
+      }else{
+        return redirect('/');
+      }
     }
 
 
     public function deleteRep($id_rep){
 
-        $rep = Rep::find($id_rep);
+      $role = Auth()->user()->role;
 
-        if ($rep->delete()) {
+      if($role != NULL){
+        if($role = 'admin'){$rep = Rep::find($id_rep);
+
+          if ($rep->delete()) {
 
             $notification = array(
-                'message' => 'Rep ' . "$rep->name" . ' Was deleted Successfully', 
-                'alert-type' => 'success'
+              'message' => 'Rep ' . "$rep->name" . ' Was deleted Successfully', 
+              'alert-type' => 'success'
             );
 
             // DB::update('update users set id_rep = NULL where id_rep', '=', $id_rep);
@@ -325,27 +469,42 @@ class AdminsController extends Controller
             User::where('id_rep', '=', $id_rep)->update(['id_rep' => NULL]);
 
             return redirect()->back()->with($notification);
-        }else{
+          }else{
             $notification = array(
-                'message' => 'Rep ' . "$rep->name" . ' Could not be deleted, please unlink him/her from any users to continue', 
-                'alert-type' => 'error'
+              'message' => 'Rep ' . "$rep->name" . ' Could not be deleted, please unlink him/her from any users to continue', 
+              'alert-type' => 'error'
             );   
+          }
+        }else{
+          return redirect('/');
         }
+      }else{
+        return redirect('/');
+      }
     }
 
 
     public function exportExcel(){
 
+      $role = Auth()->user()->role;
 
-    $pools = PollsModel::getUserPools();
-      
+      if($role != NULL){
+        if($role = 'admin'){
+          $pools = PollsModel::getUserPools();
+
     // $pools = PollsModel::select('poll_name', 'status', 'complete')->get();
 
-    return Excel::create('all_pools', function($excel) use($pools) {
-      $excel->sheet('Sheet 1', function($sheet) use($pools) {
-        $sheet->fromArray($pools);
-      });
-    })->export('xls');
+          return Excel::create('all_pools', function($excel) use($pools) {
+            $excel->sheet('Sheet 1', function($sheet) use($pools) {
+              $sheet->fromArray($pools);
+            });
+          })->export('xls');
+        }else{
+          return redirect('/');
+        }
+      }else{
+        return redirect('/');
+      }
 
     }
 

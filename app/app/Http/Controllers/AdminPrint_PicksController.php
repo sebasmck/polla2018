@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Auth;
+
 use App\PollsModel;
 use App\PickGroupA;
 use App\PickGroupB;
@@ -16,12 +18,11 @@ use App\PickGroupH;
 use App\clasificado;
 use App\Team;
 use App\rivals;
-
 use App\SecondStage;
-use Auth;
+use Illuminate\Support\Facades\Validator;
 use DB;
 
-class Print_PicksController extends Controller
+class AdminPrint_PicksController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -60,22 +61,9 @@ class Print_PicksController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-
-    public function show($iduser_poll){
-
-        $user = Auth::user();
-
-        $id = $user->id;
-
-
-        $poll = PollsModel::find($iduser_poll);
-
-        
-        if ((PollsModel::where('iduser_poll', '=', $iduser_poll))->count() > 0) {
-            if ($id == $poll->id_User) {
-                  // Groups input boxes
-
-        $poll = PollsModel::find($iduser_poll);
+    public function show($iduser_poll)
+    {
+         $poll = PollsModel::find($iduser_poll);
         $ga = PollsModel::find($iduser_poll)->groupa;
         $gb = PollsModel::find($iduser_poll)->groupb;
         $gc = PollsModel::find($iduser_poll)->groupc;
@@ -105,7 +93,7 @@ class Print_PicksController extends Controller
         $winG = Clasificado::teamsClasificadosWin($iduser_poll,7);
         $winH = Clasificado::teamsClasificadosWin($iduser_poll,8);
 
-         $ss = SecondStage::where('id_poll', $iduser_poll)->get()->first();
+        $ss = SecondStage::where('id_poll', $iduser_poll)->get()->first();
         if($ss == null)
         {
             $ss = new SecondStage;
@@ -113,7 +101,7 @@ class Print_PicksController extends Controller
 
         $countpolls = PollsModel::all()->count();
 
-        return view('picks.print_picks')
+         return view('picks.admin_print_picks')
         ->with('poll', $poll)
         ->with('ga', $ga)
         ->with('gb', $gb)
@@ -141,15 +129,14 @@ class Print_PicksController extends Controller
         ->with('winG', $winG)
         ->with('winH', $winH)
         ->with('countpolls', $countpolls);
-        }else{
-        return redirect('/home');   
-    }
-    }else{
-        return redirect('/home');
-        }
     }
 
-    
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
     public function edit($id)
     {
         //

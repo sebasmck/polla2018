@@ -19,11 +19,13 @@ use App\PicksGroupH;
 use App\SecondStage;
 
 use App\User;
-
+use App\Auth;
 use App\Exports;
 
 class HomeController extends Controller
-{
+{   
+
+
     
     public function __construct()
     {
@@ -33,9 +35,21 @@ class HomeController extends Controller
 
     public function pollManagement(){
 
-        $allpolls = PollsModel::getUserPools();
+        $role = Auth()->user()->role;
 
-        return view('admin.poll_management')->with('allpolls', $allpolls);
+        if($role != NULL){
+            if($role = 'admin'){
+                $allpolls = PollsModel::getUserPools();
+
+                return view('admin.poll_management')->with('allpolls', $allpolls);
+            }else{
+                return redirect('/');
+            }
+        }else{
+            return redirect('/');
+        }
+
+        
 
     }
 
@@ -53,10 +67,21 @@ class HomeController extends Controller
 
     public function indexAdmin()
     {   
-        $users = User::all();
+        $role = Auth()->user()->role;
 
-        return view('admin.home')->with('users', $users);
+        if($role != NULL){
+            if($role = 'admin'){
+                $users = User::all();
+
+                return view('admin.home')->with('users', $users);
+            }else{
+              return redirect('/');
+          }
+      }else{
+        return redirect('/');
     }
+
+}
 
     // Clients awaiting for confirmation.
 

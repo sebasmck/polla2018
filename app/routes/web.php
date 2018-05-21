@@ -72,6 +72,8 @@ Route::post('/storesecondstage', 'PicksController@storeSecondStage')->name('stor
 
 Route::Resource('picks', 'PicksController');
 
+Route::Resource('adminprintpicks', 'AdminPrint_PicksController');
+
 Route::Resource('printpicks', 'Print_PicksController');
 
 Route::Resource('secondstage', 'SecondStageController');

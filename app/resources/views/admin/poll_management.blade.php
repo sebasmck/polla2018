@@ -77,7 +77,7 @@
                             @foreach($allpolls as $poll)
                                 <tr>
                                     <td>{{$poll->name . ' '. $poll->lastname}}</td>
-                                    <td><a href="{{ route('printpicks.show', $poll->iduser_poll) }}">{{$poll->poll_name}}</a></td>
+                                    <td><a href="{{route('adminprintpicks.show', $poll->iduser_poll) }}">{{$poll->poll_name}}</a></td>
                                     <td>{{$poll->email}}</td>
                                     <td>{{$poll->city}}</td>
                                     <td>{{$poll->cellphone}}</td>

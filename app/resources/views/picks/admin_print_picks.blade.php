@@ -15,11 +15,7 @@
                     <div class="card-header-print">
                         <div class="row">
                             <div class="col-md-6">
-                                @if (Auth()->user->role = 'admin')
-                                    <a style="float: left; margin-right: 15px;" href="{{route('assign')}}"><button class="btn btn-primary" id="close"> < Home </button></a>
-                                @else
-                                <a style="float: left; margin-right: 15px;" href="{{route('home')}}"><button class="btn btn-primary" id="close"> < Home </button></a>
-                                @endif
+                                    <a style="float: left; margin-right: 15px;" href="{{route('pollmanagement')}}"><button class="btn btn-primary" id="close"> < Home </button></a>
                                 <h5>{{ __('Printable Verision of my Picks') }} </h5>
                             </div>
                            <div class="col-md-6" style="text-align: right;">
@@ -30,22 +26,22 @@
 
                     
                     <div class="card-body-print">
-                    	<div class="row">
-	                    	<div class="col-md-6">
-	                    		{{-- GRUPO A --}}
-		                        <div class="card">
-		                            <div class="card-header-print">
-		                                <div class="row">
-		                                    <div class="col-md-4">
-		                                        <h6>{{ __('Group A') }} </h6>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                        
-		                            <div class="card-body-print">
-		                                <div class="row">
-		                                    <div class="col-md-12 table-responsive">
-		                                    	<table id="myTable" class="display table_picks-print">
+                        <div class="row">
+                            <div class="col-md-6">
+                                {{-- GRUPO A --}}
+                                <div class="card">
+                                    <div class="card-header-print">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <h6>{{ __('Group A') }} </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="card-body-print">
+                                        <div class="row">
+                                            <div class="col-md-12 table-responsive">
+                                                <table id="myTable" class="display table_picks-print">
                                                     <thead>
                                                         <tr>
                                                         </tr>
@@ -263,268 +259,268 @@
                                                         
                                                     </tbody>
                                             </table> 
-		                                    </div>
-		                                </div>
-		                            </div>
-		                        </div>
-	                        </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-	                        <div class="col-md-6">
-	                        	{{-- GRUPO B --}}
-			                    <div class="card">
-			                        <div class="card-header-print">
-			                            <div class="row">
-			                                <div class="col-md-4">
-			                                    <h6>{{ __('Group B') }} </h6>
-			                                </div>
-			                            </div>
-			                        </div>
+                            <div class="col-md-6">
+                                {{-- GRUPO B --}}
+                                <div class="card">
+                                    <div class="card-header-print">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <h6>{{ __('Group B') }} </h6>
+                                            </div>
+                                        </div>
+                                    </div>
 
-			                        <div class="card-body-print">
-			                            <div class="row">
-			                                <div class="col-md-12 table-responsive">
-			                                    
-			                                        <table id="myTable" class="display table_picks-print" style="width: 100%;">
-			                                                <thead>
-			                                                    <tr>
-			                                                    </tr>
-			                                                </thead>
-			                                                <tbody>
-			                                                    <tr class="A1-A2">
-			                                                        <td class="td-date">
-			                                                            <div class="col-md-12">
-			                                                                 6/15/2018
-			                                                            </div>
-			                                                        </td>
-			                                                        <td>
-			                                                            <div class="row">
-			                                                                <div class="col-md-8 team_left">
-			                                                                    <label class="label_team_print">Portugal</label>
-			                                                                </div>
-			                                                                <div class="col-md-4">
-			                                                                    <div class="pikcs-print">
-			                                                                        <input type="text" readonly name="M1B1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1B1" onblur="match_games_B()" value="{{ old('M1B1',  isset($gb->M1B1) ? $gb->M1B1 : null) }}">
-			                                                                    </div>
-			                                                                </div>
-			                                                            </div>
-			                                                        </td>
-			                                                       {{--  <td>
-			                                                            V
-			                                                        </td> --}}
-			                                                        <td>
-			                                                            <div class="row">
-			                                                                <div class="col-md-4">
-			                                                                    <div class="pikcs-print">
-			                                                                        <input type="text" readonly name="M1B2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1B2" onblur="match_games_B()" value="{{ old('M1B2',  isset($gb->M1B2) ? $gb->M1B2 : null) }}">
-			                                                                    </div>
-			                                                                </div>
-			                                                                <div class="col-md-8 team_right">
-			                                                                    <label class="label_team_print">Spain</label>
-			                                                                </div>
-			                                                            </div>
-			                                                        </td>
-			                                                    </tr>
+                                    <div class="card-body-print">
+                                        <div class="row">
+                                            <div class="col-md-12 table-responsive">
+                                                
+                                                    <table id="myTable" class="display table_picks-print" style="width: 100%;">
+                                                            <thead>
+                                                                <tr>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="A1-A2">
+                                                                    <td class="td-date">
+                                                                        <div class="col-md-12">
+                                                                             6/15/2018
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="row">
+                                                                            <div class="col-md-8 team_left">
+                                                                                <label class="label_team_print">Portugal</label>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="pikcs-print">
+                                                                                    <input type="text" readonly name="M1B1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1B1" onblur="match_games_B()" value="{{ old('M1B1',  isset($gb->M1B1) ? $gb->M1B1 : null) }}">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                   {{--  <td>
+                                                                        V
+                                                                    </td> --}}
+                                                                    <td>
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <div class="pikcs-print">
+                                                                                    <input type="text" readonly name="M1B2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M1B2" onblur="match_games_B()" value="{{ old('M1B2',  isset($gb->M1B2) ? $gb->M1B2 : null) }}">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-8 team_right">
+                                                                                <label class="label_team_print">Spain</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
 
-			                                                    <tr class="A3-A4">
-			                                                        <td class="td-date">
-			                                                            <div class="col-md-12">
-			                                                                6/15/2018
-			                                                            </div>
-			                                                        </td>
-			                                                        <td>
-			                                                            <div class="row">
-			                                                                <div class="col-md-8 team_left">
-			                                                                    <label class="label_team_print">Morocco</label>
-			                                                                </div>
-			                                                                <div class="col-md-4">
-			                                                                    <div class="pikcs-print">
-			                                                                        <input type="text" readonly name="M2B3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2B3" onblur="match_games_B()" value="{{ old('M2B3',  isset($gb->M2B3) ? $gb->M2B3 : null) }}">
-			                                                                    </div>
-			                                                                </div>
-			                                                            </div>
-			                                                        </td>
+                                                                <tr class="A3-A4">
+                                                                    <td class="td-date">
+                                                                        <div class="col-md-12">
+                                                                            6/15/2018
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="row">
+                                                                            <div class="col-md-8 team_left">
+                                                                                <label class="label_team_print">Morocco</label>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="pikcs-print">
+                                                                                    <input type="text" readonly name="M2B3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2B3" onblur="match_games_B()" value="{{ old('M2B3',  isset($gb->M2B3) ? $gb->M2B3 : null) }}">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
 
-			                                                        <td>
-			                                                            <div class="row">
-			                                                                <div class="col-md-4">
-			                                                                    <div class="pikcs-print">
-			                                                                        <input type="text" readonly name="M2B4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2B4" onblur="match_games_B()" value="{{ old('M2B4',  isset($gb->M2B4) ? $gb->M2B4 : null) }}">
-			                                                                    </div>
-			                                                                </div>
-			                                                                <div class="col-md-8 team_right">
-			                                                                    <label class="label_team_print">Iran</label>
-			                                                                </div>
-			                                                                
-			                                                                
-			                                                            </div>
-			                                                        </td>
-			                                                    </tr>
+                                                                    <td>
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <div class="pikcs-print">
+                                                                                    <input type="text" readonly name="M2B4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2B4" onblur="match_games_B()" value="{{ old('M2B4',  isset($gb->M2B4) ? $gb->M2B4 : null) }}">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-8 team_right">
+                                                                                <label class="label_team_print">Iran</label>
+                                                                            </div>
+                                                                            
+                                                                            
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
 
-			                                                    <tr class="A1-A3">
-			                                                        </td>
-			                                                        <td class="td-date">
-			                                                            <div class="col-md-12">
-			                                                                6/20/2018
-			                                                            </div>
-			                                                        </td>
-			                                                        <td>
-			                                                            <div class="row">
-			                                                                <div class="col-md-8 team_left">
-			                                                                    <label class="label_team_print">Portugal</label>
-			                                                                </div>
-			                                                                <div class="col-md-4">
-			                                                                    <div class="pikcs-print">
-			                                                                        <input type="text" readonly name="M3B1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3B1" onblur="match_games_B()" value="{{ old('M3B1',  isset($gb->M3B1) ? $gb->M3B1 : null) }}">
-			                                                                    </div>
-			                                                                </div>
-			                                                            </div>
-			                                                        </td>
-			                                                        {{-- <td>
-			                                                            <div class="col-md-2">
-			                                                                V
-			                                                            </div>
-			                                                        </td> --}}
-			                                                        <td>
-			                                                            <div class="row">
-			                                                                <div class="col-md-4">
-			                                                                    <div class="pikcs-print">
-			                                                                        <input type="text" readonly name="M3B3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3B3" onblur="match_games_B()" value="{{ old('M3B3',  isset($gb->M3B3) ? $gb->M3B3 : null) }}">
-			                                                                    </div>
-			                                                                </div>
-			                                                                <div class="col-md-8 team_right">
-			                                                                    <label class="label_team_print">Morocco</label>
-			                                                                </div>
-			                                                                
-			                                                                
-			                                                            </div>
-			                                                        </td>
-			                                                    </tr>
+                                                                <tr class="A1-A3">
+                                                                    </td>
+                                                                    <td class="td-date">
+                                                                        <div class="col-md-12">
+                                                                            6/20/2018
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="row">
+                                                                            <div class="col-md-8 team_left">
+                                                                                <label class="label_team_print">Portugal</label>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="pikcs-print">
+                                                                                    <input type="text" readonly name="M3B1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3B1" onblur="match_games_B()" value="{{ old('M3B1',  isset($gb->M3B1) ? $gb->M3B1 : null) }}">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    {{-- <td>
+                                                                        <div class="col-md-2">
+                                                                            V
+                                                                        </div>
+                                                                    </td> --}}
+                                                                    <td>
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <div class="pikcs-print">
+                                                                                    <input type="text" readonly name="M3B3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M3B3" onblur="match_games_B()" value="{{ old('M3B3',  isset($gb->M3B3) ? $gb->M3B3 : null) }}">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-8 team_right">
+                                                                                <label class="label_team_print">Morocco</label>
+                                                                            </div>
+                                                                            
+                                                                            
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
 
-			                                                    <tr class="A4-A2">
-			                                                        <td class="td-date">
-			                                                            <div class="col-md-12">
-			                                                                6/20/2018
-			                                                            </div>
-			                                                        </td>
-			                                                        <td>
-			                                                            <div class="row">
-			                                                                <div class="col-md-8 team_left">
-			                                                                    <label class="label_team_print">Iran</label>
-			                                                                </div>
-			                                                                <div class="col-md-4">
-			                                                                    <div class="pikcs-print">
-			                                                                        <input type="text" readonly name="M4B4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4B4" onblur="match_games_B()" value="{{ old('M4B4',  isset($gb->M4B4) ? $gb->M4B4 : null) }}">
-			                                                                    </div>
-			                                                                </div>
-			                                                            </div>
-			                                                        </td>
-			                                                        <td>
-			                                                            <div class="row">
-			                                                                <div class="col-md-4">
-			                                                                    <div class="pikcs-print">
-			                                                                        <input type="text" readonly name="M4B2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4B2" onblur="match_games_B()" value="{{ old('M4B2',  isset($gb->M4B2) ? $gb->M4B2 : null) }}">
-			                                                                    </div>
-			                                                                </div>
-			                                                                <div class="col-md-8 team_right">
-			                                                                    <label class="label_team_print">Spain</label>
-			                                                                </div>
-			                                                                
-			                                                                
-			                                                            </div>
-			                                                        </td>
-			                                                    </tr>
+                                                                <tr class="A4-A2">
+                                                                    <td class="td-date">
+                                                                        <div class="col-md-12">
+                                                                            6/20/2018
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="row">
+                                                                            <div class="col-md-8 team_left">
+                                                                                <label class="label_team_print">Iran</label>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="pikcs-print">
+                                                                                    <input type="text" readonly name="M4B4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4B4" onblur="match_games_B()" value="{{ old('M4B4',  isset($gb->M4B4) ? $gb->M4B4 : null) }}">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <div class="pikcs-print">
+                                                                                    <input type="text" readonly name="M4B2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M4B2" onblur="match_games_B()" value="{{ old('M4B2',  isset($gb->M4B2) ? $gb->M4B2 : null) }}">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-8 team_right">
+                                                                                <label class="label_team_print">Spain</label>
+                                                                            </div>
+                                                                            
+                                                                            
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
 
-			                                                    <tr class="A4-A1">
-			                                                        <td class="td-date"> 
-			                                                            <div class="col-md-12">
-			                                                                6/25/2018
-			                                                            </div>
-			                                                        </td>
-			                                                        <td>
-			                                                            <div class="row">
-			                                                                <div class="col-md-8 team_left">
-			                                                                    <label class="label_team_print">Iran</label>
-			                                                                </div>
-			                                                                <div class="col-md-4">
-			                                                                    <div class="pikcs-print">
-			                                                                        <input type="text" readonly name="M5B4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5B4" onblur="match_games_B()" value="{{ old('M5B4',  isset($gb->M5B4) ? $gb->M5B4 : null) }}">
-			                                                                    </div>
-			                                                                </div>
-			                                                            </div>
-			                                                        </td>
-			                                                        <td>
-			                                                            <div class="row">
-			                                                                <div class="col-md-4">
-			                                                                    <div class="pikcs-print">
-			                                                                        <input type="text" readonly name="M5B1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5B1" onblur="match_games_B()" value="{{ old('M5B1',  isset($gb->M5B1) ? $gb->M5B1 : null) }}">
-			                                                                    </div>
-			                                                                </div>
-			                                                                <div class="col-md-8 team_right">
-			                                                                    <label class="label_team_print">Portugal</label>
-			                                                                </div>
-			                                                                
-			                                                                
-			                                                            </div>
-			                                                        </td>
-			                                                    </tr>
+                                                                <tr class="A4-A1">
+                                                                    <td class="td-date"> 
+                                                                        <div class="col-md-12">
+                                                                            6/25/2018
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="row">
+                                                                            <div class="col-md-8 team_left">
+                                                                                <label class="label_team_print">Iran</label>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="pikcs-print">
+                                                                                    <input type="text" readonly name="M5B4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5B4" onblur="match_games_B()" value="{{ old('M5B4',  isset($gb->M5B4) ? $gb->M5B4 : null) }}">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <div class="pikcs-print">
+                                                                                    <input type="text" readonly name="M5B1" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M5B1" onblur="match_games_B()" value="{{ old('M5B1',  isset($gb->M5B1) ? $gb->M5B1 : null) }}">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-8 team_right">
+                                                                                <label class="label_team_print">Portugal</label>
+                                                                            </div>
+                                                                            
+                                                                            
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
 
-			                                                    <tr class="A2-A3">
-			                                                        <td class="td-date">
-			                                                            <div class="col-md-12">
-			                                                                6/25/2018
-			                                                            </div>
-			                                                        </td>
-			                                                        <td>
-			                                                            <div class="row">
-			                                                                <div class="col-md-8 team_left">
-			                                                                    <label class="label_team_print">Spain</label>
-			                                                                </div>
-			                                                                <div class="col-md-4">
-			                                                                    <div class="pikcs-print">
-			                                                                        <input type="text" readonly name="M6B2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6B2" onblur="match_games_B()" value="{{ old('M6B2',  isset($gb->M6B2) ? $gb->M6B2 : null) }}">
-			                                                                    </div>
-			                                                                </div>
-			                                                            </div>
-			                                                        </td>
-			                                                        <td>
-			                                                            <div class="row">
-			                                                                <div class="col-md-4">
-			                                                                    <div class="pikcs-print">
-			                                                                        <input type="text" readonly name="M6B3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6B3" onblur="match_games_B()" value="{{ old('M6B3',  isset($gb->M6B3) ? $gb->M6B3 : null) }}"> 
-			                                                                    </div>
-			                                                                </div>
-			                                                                <div class="col-md-8 team_right">
-			                                                                    <label class="label_team_print">Morocco</label>
-			                                                                </div>
-			                                                            </div>
-			                                                        </td>
-			                                                    </tr>
-			                                                </tbody>
-			                                        </table> 
+                                                                <tr class="A2-A3">
+                                                                    <td class="td-date">
+                                                                        <div class="col-md-12">
+                                                                            6/25/2018
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="row">
+                                                                            <div class="col-md-8 team_left">
+                                                                                <label class="label_team_print">Spain</label>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="pikcs-print">
+                                                                                    <input type="text" readonly name="M6B2" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6B2" onblur="match_games_B()" value="{{ old('M6B2',  isset($gb->M6B2) ? $gb->M6B2 : null) }}">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <div class="pikcs-print">
+                                                                                    <input type="text" readonly name="M6B3" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M6B3" onblur="match_games_B()" value="{{ old('M6B3',  isset($gb->M6B3) ? $gb->M6B3 : null) }}"> 
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-8 team_right">
+                                                                                <label class="label_team_print">Morocco</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                    </table> 
 
-			                                </div>
-			                            </div>
-			                        </div>
-			                    </div>
-	                        </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="row">
-                        	<div class="col-md-6">
-                        		{{-- GRUPO C --}}
-		                        <div class="card">
-		                            <div class="card-header-print">
-		                                <div class="row">
-		                                    <div class="col-md-4">
-		                                        <h6>{{ __('Group C') }} </h6>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                        
-		                            <div class="card-body-print">
-		                                <div class="row">
-		                                    <div class="col-md-12 table-responsive">
-		                                    	<table id="myTable" class="display table_picks-print">
+                            <div class="col-md-6">
+                                {{-- GRUPO C --}}
+                                <div class="card">
+                                    <div class="card-header-print">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <h6>{{ __('Group C') }} </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="card-body-print">
+                                        <div class="row">
+                                            <div class="col-md-12 table-responsive">
+                                                <table id="myTable" class="display table_picks-print">
                                                     <thead>
                                                         <tr>
                                                         </tr>
@@ -764,26 +760,26 @@
                                                         
                                                     </tbody>
                                             </table> 
-		                                    </div>
-		                                </div>
-		                            </div>
-		                        </div>
-                        	</div>
-                        	<div class="col-md-6">
-                        		{{-- GRUPO D --}}
-		                        <div class="card">
-		                            <div class="card-header-print">
-		                                <div class="row">
-		                                    <div class="col-md-4">
-		                                        <h6>{{ __('Group D') }} </h6>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                        
-		                            <div class="card-body-print">
-		                                <div class="row">
-		                                    <div class="col-md-12 table-responsive">
-		                                    	<table id="myTable" class="display table_picks-print">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                {{-- GRUPO D --}}
+                                <div class="card">
+                                    <div class="card-header-print">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <h6>{{ __('Group D') }} </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="card-body-print">
+                                        <div class="row">
+                                            <div class="col-md-12 table-responsive">
+                                                <table id="myTable" class="display table_picks-print">
                                                     <thead>
                                                         <tr>
                                                         </tr>
@@ -1013,29 +1009,29 @@
                                                         
                                                     </tbody>
                                                 </table> 
-		                                    </div>
-		                                </div>
-		                            </div>
-		                        </div>
-                        	</div>
-                    	</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                    	<div class="row">
-                        	<div class="col-md-6">
-                        		{{-- GRUPO E --}}
-		                        <div class="card">
-		                            <div class="card-header-print">
-		                                <div class="row">
-		                                    <div class="col-md-4">
-		                                        <h6>{{ __('Group E') }} </h6>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                        
-		                            <div class="card-body-print">
-		                                <div class="row">
-		                                    <div class="col-md-12 table-responsive">
-		                                    	<table id="myTable" class="display table_picks-print">
+                        <div class="row">
+                            <div class="col-md-6">
+                                {{-- GRUPO E --}}
+                                <div class="card">
+                                    <div class="card-header-print">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <h6>{{ __('Group E') }} </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="card-body-print">
+                                        <div class="row">
+                                            <div class="col-md-12 table-responsive">
+                                                <table id="myTable" class="display table_picks-print">
                                                                     <thead>
                                                                         <tr>
                                                                         </tr>
@@ -1265,26 +1261,26 @@
                                                                         
                                                                     </tbody>
                                                             </table> 
-		                                    </div>
-		                                </div>
-		                            </div>
-		                        </div>
-                        	</div>
-                        	<div class="col-md-6">
-                        		{{-- GRUPO F --}}
-		                        <div class="card">
-		                            <div class="card-header-print">
-		                                <div class="row">
-		                                    <div class="col-md-4">
-		                                        <h6>{{ __('Group F') }} </h6>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                        
-		                            <div class="card-body-print">
-		                                <div class="row">
-		                                    <div class="col-md-12 table-responsive">
-		                                    	<table id="myTable" class="display table_picks-print">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                {{-- GRUPO F --}}
+                                <div class="card">
+                                    <div class="card-header-print">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <h6>{{ __('Group F') }} </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="card-body-print">
+                                        <div class="row">
+                                            <div class="col-md-12 table-responsive">
+                                                <table id="myTable" class="display table_picks-print">
                                                                     <thead>
                                                                         <tr>
                                                                         </tr>
@@ -1511,29 +1507,29 @@
                                                                         
                                                                     </tbody>
                                                             </table> 
-		                                    </div>
-		                                </div>
-		                            </div>
-		                        </div>
-                        	</div>
-                    	</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                    	<div class="row">
-                        	<div class="col-md-6">
-                        		{{-- GRUPO G --}}
-		                        <div class="card">
-		                            <div class="card-header-print">
-		                                <div class="row">
-		                                    <div class="col-md-4">
-		                                        <h6>{{ __('Group G') }} </h6>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                        
-		                            <div class="card-body-print">
-		                                <div class="row">
-		                                    <div class="col-md-12 table-responsive">
-		                                    	<table id="myTable" class="display table_picks-print">
+                        <div class="row">
+                            <div class="col-md-6">
+                                {{-- GRUPO G --}}
+                                <div class="card">
+                                    <div class="card-header-print">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <h6>{{ __('Group G') }} </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="card-body-print">
+                                        <div class="row">
+                                            <div class="col-md-12 table-responsive">
+                                                <table id="myTable" class="display table_picks-print">
                                                                     <thead>
                                                                         <tr>
                                                                         </tr>
@@ -1773,26 +1769,26 @@
                                                                         
                                                                     </tbody>
                                                             </table> 
-		                                    </div>
-		                                </div>
-		                            </div>
-		                        </div>
-                        	</div>
-                        	<div class="col-md-6">
-                        		{{-- GRUPO H --}}
-		                        <div class="card">
-		                            <div class="card-header-print">
-		                                <div class="row">
-		                                    <div class="col-md-4">
-		                                        <h6>{{ __('Group H') }} </h6>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                        
-		                            <div class="card-body-print">
-		                                <div class="row">
-		                                    <div class="col-md-12 table-responsive">
-		                                    	<table id="myTable" class="display table_picks-print">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                {{-- GRUPO H --}}
+                                <div class="card">
+                                    <div class="card-header-print">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <h6>{{ __('Group H') }} </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="card-body-print">
+                                        <div class="row">
+                                            <div class="col-md-12 table-responsive">
+                                                <table id="myTable" class="display table_picks-print">
                                                                     <thead>
                                                                         <tr>
                                                                         </tr>
@@ -2032,489 +2028,489 @@
                                                                         
                                                                     </tbody>
                                                             </table> 
-		                                    </div>
-		                                </div>
-		                            </div>
-		                        </div>
-                        	</div>
-                    	</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                    	<div style="margin-left: 7%;" class="row">
-                    		{{-- Second Stage --}}
-		                        <div class="card">
-		                            
-		                        
-		                            <div class="card-body-print">
-		                                <div class="row">
-		                                    <div class="col-md-12">
-		                                    	<div class="row">
-			                                    	{{-- Round of 16 --}}
-				                                    <div class="col-md-2 second_sta">
-				                                        <div class="card">
-				                                            <div class="card-header-print">
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        <h6>{{ __('Round of 16') }} </h6>
-				                                                    </div>
-				                                                </div>
-				                                            </div>
-				                                            <div class="card-body-print flagsbody" style="text-align: left; line-height: 50%">
-				                                                {{-- 1A --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                 @if($winA == null)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;"></td>
-				                                                                    
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12" >
-				                                                                                <label>{{$winA->team_name}}</label>
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
-				                                                    </div>
-				                                                </div>
+                        <div style="margin-left: 7%;" class="row">
+                            {{-- Second Stage --}}
+                                <div class="card">
+                                    
+                                
+                                    <div class="card-body-print">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    {{-- Round of 16 --}}
+                                                    <div class="col-md-2 second_sta">
+                                                        <div class="card">
+                                                            <div class="card-header-print">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <h6>{{ __('Round of 16') }} </h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body-print flagsbody" style="text-align: left; line-height: 50%">
+                                                                {{-- 1A --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                 @if($winA == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                    
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label>{{$winA->team_name}}</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
 
-				                                                {{-- 2B --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                @if($winB == null)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;"></td>
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12" >
-				                                                                                <label>{{$winB->team_rumup}}</label>
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
+                                                                {{-- 2B --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                @if($winB == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label>{{$winB->team_rumup}}</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
 
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
-				                                                    </div>
-				                                                </div>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
 
-				                                                {{-- 1C --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                 @if($winC == null)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;"></td>
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12" >
-				                                                                                <label>{{$winC->team_name}}</label>
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
+                                                                {{-- 1C --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                 @if($winC == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label>{{$winC->team_name}}</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
 
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
-				                                                    </div>
-				                                                </div>
-				                                                
-				                                                {{-- 2D --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                @if($winD == null)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;"></td>
-				                                                                    
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12" >
-				                                                                                <label>{{$winD->team_rumup}}</label>
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                {{-- 2D --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                @if($winD == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                    
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label>{{$winD->team_rumup}}</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
 
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
-				                                                    </div>
-				                                                </div>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
 
-				                                                {{-- 1E --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                 @if($winE == null)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;"></td>
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12" >
-				                                                                                <label>{{$winE->team_name}}</label>
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
+                                                                {{-- 1E --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                 @if($winE == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label>{{$winE->team_name}}</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
 
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
-				                                                    </div>
-				                                                </div>
-				                                                
-				                                                {{-- 2F --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                @if($winF == null)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;"></td>
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12" >
-				                                                                                <label>{{$winF->team_rumup}}</label>
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                {{-- 2F --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                @if($winF == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label>{{$winF->team_rumup}}</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
 
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
-				                                                    </div>
-				                                                </div>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
 
-				                                                {{-- 1G --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                 @if($winG == null)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;"></td>
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12" >
-				                                                                                <label>{{$winG->team_name}}</label>
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
-				                                                    </div>
-				                                                </div>
-				                                                
-				                                                {{-- 2H --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                @if($winH == null)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;"></td>
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12" >
-				                                                                                <label>{{$winH->team_rumup}}</label>
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
-				                                                    </div>
-				                                                </div>
+                                                                {{-- 1G --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                 @if($winG == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label>{{$winG->team_name}}</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                {{-- 2H --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                @if($winH == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label>{{$winH->team_rumup}}</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
 
-				                                                {{-- 1B --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                 @if($winB == null)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;"></td>
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12" >
-				                                                                                <label>{{$winB->team_name}}</label>
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
+                                                                {{-- 1B --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                 @if($winB == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label>{{$winB->team_name}}</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
 
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
-				                                                    </div>
-				                                                </div>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
 
-				                                                {{-- 2A --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                @if($winA == null)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;"></td>
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12" >
-				                                                                                <label>{{$winA->team_rumup}}</label>
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
+                                                                {{-- 2A --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                @if($winA == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label>{{$winA->team_rumup}}</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
 
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
-				                                                    </div>
-				                                                </div>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
 
-				                                                {{-- 1D --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                 @if($winD == null)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;"></td>
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12" >
-				                                                                                <label>{{$winD->team_name}}</label>
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
-				                                                    </div>
-				                                                </div>
-				                                                
-				                                                {{-- 2C --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                @if($winC == null)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;"></td>
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12" >
-				                                                                                <label>{{$winC->team_rumup}}</label>
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
-				                                                    </div>
-				                                                </div>
+                                                                {{-- 1D --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                 @if($winD == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label>{{$winD->team_name}}</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                {{-- 2C --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                @if($winC == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label>{{$winC->team_rumup}}</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
 
-				                                                {{-- 1F --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                 @if($winF == null)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;"></td>
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12" >
-				                                                                                <label>{{$winF->team_name}}</label>
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
+                                                                {{-- 1F --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                 @if($winF == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label>{{$winF->team_name}}</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
 
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
-				                                                    </div>
-				                                                </div>
-				                                                
-				                                                {{-- 2E --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                @if($winE == null)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;"></td>
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12" >
-				                                                                                <label>{{$winE->team_rumup}}</label>
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                {{-- 2E --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                @if($winE == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label>{{$winE->team_rumup}}</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
 
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
-				                                                    </div>
-				                                                </div>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
 
-				                                                {{-- 1H --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                 @if($winH == null)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 70%;"></td>
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12" >
-				                                                                                <label>{{$winH->team_name}}</label>
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
+                                                                {{-- 1H --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                 @if($winH == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 70%;"></td>
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label>{{$winH->team_name}}</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
 
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
-				                                                    </div>
-				                                                </div>
-				                                                
-				                                                {{-- 2G --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        <table class="display table_second_stage">
-				                                                            <tbody>
-				                                                                @if($winG == null)
-				                                                                <tr>
-				                                                                    
-				                                                                    <td style="width: 50%; height: 30px;"></td>
-				                                                                </tr>
-				                                                                @else
-				                                                                <tr>
-				                                                                    <td style="width: 70%;">
-				                                                                        <div class="row">
-				                                                                            <div class="col-md-12" >
-				                                                                                <label>{{$winG->team_rumup}}</label>
-				                                                                            </div>
-				                                                                        </div>
-				                                                                    </td>
-				                                                                </tr>
-				                                                                @endif
-				                                                            </tbody>
-				                                                        </table>
-				                                                    </div>
-				                                                </div>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                {{-- 2G --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <table class="display table_second_stage">
+                                                                            <tbody>
+                                                                                @if($winG == null)
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="width: 50%; height: 30px;"></td>
+                                                                                </tr>
+                                                                                @else
+                                                                                <tr>
+                                                                                    <td style="width: 70%;">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" >
+                                                                                                <label>{{$winG->team_rumup}}</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                @endif
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
 
-				                                            </div>
-				                                        </div>  {{--  end card --}}
-				                                    </div> {{--  end col div --}}
+                                                            </div>
+                                                        </div>  {{--  end card --}}
+                                                    </div> {{--  end col div --}}
 
-				                                    {{-- Quarter-finals --}}
-				                                    <div class="col-md-2 quarters second_sta">
-				                                        <div class="card">
-				                                            <div class="card-header-print">
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        <h6>{{ __('Quarter-finals') }} </h6>
-				                                                    </div>
-				                                                </div>
-				                                            </div>
+                                                    {{-- Quarter-finals --}}
+                                                    <div class="col-md-2 quarters second_sta">
+                                                        <div class="card">
+                                                            <div class="card-header-print">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <h6>{{ __('Quarter-finals') }} </h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
 
-				                                            <div class="card-body-print">
-				                                                {{-- 1A - 2B --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
+                                                            <div class="card-body-print">
+                                                                {{-- 1A - 2B --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
                                                                         <table class="display table_second_stage">
                                                                             <tbody>
                                                                                  @if($ss->quarter1 == null)
@@ -2538,12 +2534,12 @@
                                                                             </tbody>
                                                                         </table>
                                                                        
-				                                                    </div>
-				                                                </div>
+                                                                    </div>
+                                                                </div>
 
-				                                                {{-- 1C - 2D --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
+                                                                {{-- 1C - 2D --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
                                                                         <table class="display table_second_stage">
                                                                             <tbody>
                                                                                  @if($ss->quarter2 == null)
@@ -2566,14 +2562,14 @@
                                                                                 @endif
                                                                             </tbody>
                                                                         </table>
-				                                                        
-				                                                    </div>
-				                                                </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
 
 
-				                                                {{-- 1E - 2F --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
+                                                                {{-- 1E - 2F --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
                                                                         <table class="display table_second_stage">
                                                                             <tbody>
                                                                                  @if($ss->quarter3 == null)
@@ -2596,12 +2592,12 @@
                                                                                 @endif
                                                                             </tbody>
                                                                         </table>
-				                                                    </div>
-				                                                </div>
+                                                                    </div>
+                                                                </div>
 
-				                                                {{-- 1G - 2H --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
+                                                                {{-- 1G - 2H --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
                                                                         <table class="display table_second_stage">
                                                                             <tbody>
                                                                                  @if($ss->quarter4 == null)
@@ -2624,13 +2620,13 @@
                                                                                 @endif
                                                                             </tbody>
                                                                         </table>
-				                                                        
-				                                                    </div>
-				                                                </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
 
-				                                                {{-- 1B - 2A --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
+                                                                {{-- 1B - 2A --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
                                                                         <table class="display table_second_stage">
                                                                             <tbody>
                                                                                  @if($ss->quarter5 == null)
@@ -2653,13 +2649,13 @@
                                                                                 @endif
                                                                             </tbody>
                                                                         </table>
-				                                                        
-				                                                    </div>
-				                                                </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
 
-				                                                {{-- 1D - 2C --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
+                                                                {{-- 1D - 2C --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
                                                                         <table class="display table_second_stage">
                                                                             <tbody>
                                                                                  @if($ss->quarter6 == null)
@@ -2682,12 +2678,12 @@
                                                                                 @endif
                                                                             </tbody>
                                                                         </table>
-				                                                    </div>
-				                                                </div>
+                                                                    </div>
+                                                                </div>
 
-				                                                {{-- 1F - 2E --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
+                                                                {{-- 1F - 2E --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
                                                                         <table class="display table_second_stage">
                                                                             <tbody>
                                                                                  @if($ss->quarter7 == null)
@@ -2710,12 +2706,12 @@
                                                                                 @endif
                                                                             </tbody>
                                                                         </table>
-				                                                    </div>
-				                                                </div>
+                                                                    </div>
+                                                                </div>
 
-				                                                {{-- 1H - 2G --}}
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
+                                                                {{-- 1H - 2G --}}
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
                                                                         <table class="display table_second_stage">
                                                                             <tbody>
                                                                                  @if($ss->quarter8 == null)
@@ -2738,28 +2734,28 @@
                                                                                 @endif
                                                                             </tbody>
                                                                         </table>
-				                                                    </div>
-				                                                </div>
+                                                                    </div>
+                                                                </div>
 
-				                                            </div>
-				                                        </div>  {{--  end card --}}
-				                                    </div> {{--  end col div --}}
+                                                            </div>
+                                                        </div>  {{--  end card --}}
+                                                    </div> {{--  end col div --}}
 
-				                                    {{-- Semi-finals --}}
-				                                    <div class="col-md-2 second_sta">
-				                                        <div class="card">
-				                                            <div class="card-header-print">
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        <h6>{{ __('Semi-finals') }} </h6>
-				                                                    </div>
-				                                                </div>
-				                                            </div>
+                                                    {{-- Semi-finals --}}
+                                                    <div class="col-md-2 second_sta">
+                                                        <div class="card">
+                                                            <div class="card-header-print">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <h6>{{ __('Semi-finals') }} </h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
 
-				                                            <div class="card-body-print">
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        {{-- 1A - 2B --}}
+                                                            <div class="card-body-print">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        {{-- 1A - 2B --}}
 
                                                                         <table class="display table_second_stage">
                                                                             <tbody>
@@ -2783,10 +2779,10 @@
                                                                                 @endif
                                                                             </tbody>
                                                                         </table>
-				                                                        
+                                                                        
 
-				                                                        {{-- 1C - 2D --}}
-				                                                        <div class="row">
+                                                                        {{-- 1C - 2D --}}
+                                                                        <div class="row">
                                                                             <div class="col-md-12">
                                                                                 <table class="display table_second_stage">
                                                                                     <tbody>
@@ -2813,8 +2809,8 @@
                                                                         </div>
                                                                     </div>
 
-				                                                        {{-- 1E - 2F --}}
-				                                                        <div class="row">
+                                                                        {{-- 1E - 2F --}}
+                                                                        <div class="row">
                                                                             <div class="col-md-12">
                                                                                 <table class="display table_second_stage">
                                                                                     <tbody>
@@ -2841,9 +2837,9 @@
                                                                         </div>
                                                                     </div>
 
-				                                                        {{-- 1G - 2H --}}
-				                                                        <div class="row">
-				                                                            <div class="col-md-12">
+                                                                        {{-- 1G - 2H --}}
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
                                                                                 <table class="display table_second_stage">
                                                                                     <tbody>
                                                                                      @if($ss->semi4 == null)
@@ -2866,31 +2862,31 @@
                                                                                     @endif
                                                                                 </tbody>
                                                                             </table>
-				                                                            </div>
-				                                                        </div>
-				                                                    </div>
-				                                                </div>
-				                                            </div>
-				                                        </div>  {{--  end card --}}
-				                                    </div> {{--  end col div --}}
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>  {{--  end card --}}
+                                                    </div> {{--  end col div --}}
 
-				                                    {{-- Semi-finals --}}
-				                                    <div class="col-md-2 second_sta">
-				                                        <div class="card">
-				                                            <div class="card-header-print">
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        <h6>{{ __('Final') }} </h6>
-				                                                    </div>
-				                                                </div>
-				                                            </div>
+                                                    {{-- Semi-finals --}}
+                                                    <div class="col-md-2 second_sta">
+                                                        <div class="card">
+                                                            <div class="card-header-print">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <h6>{{ __('Final') }} </h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
 
-				                                            <div class="card-body-print">
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        {{-- 1A - 2B --}}
-				                                                        <div class="row">
-				                                                            <div class="col-md-12">
+                                                            <div class="card-body-print">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        {{-- 1A - 2B --}}
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
                                                                                 <table class="display table_second_stage">
                                                                                     <tbody>
                                                                                      @if($ss->final1 == null)
@@ -2913,12 +2909,12 @@
                                                                                     @endif
                                                                                 </tbody>
                                                                             </table>
-				                                                            </div>
-				                                                        </div>
+                                                                            </div>
+                                                                        </div>
 
-				                                                        {{-- 1C - 2D --}}
-				                                                        <div class="row">
-				                                                            <div class="col-md-12">
+                                                                        {{-- 1C - 2D --}}
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
                                                                                 <table class="display table_second_stage">
                                                                                     <tbody>
                                                                                      @if($ss->final2 == null)
@@ -2938,33 +2934,33 @@
                                                                                     @endif
                                                                                 </tbody>
                                                                             </table>
-				                                                                
-				                                                            </div>
-				                                                        </div>
-				                                                    </div>
-				                                                </div>
-				                                            </div>
-				                                            
-				                                        </div>  {{--  end card --}}
-				                                    </div> {{--  end col div --}}
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>  {{--  end card --}}
+                                                    </div> {{--  end col div --}}
 
-				                                    <div class="col-md-2 second_sta">
-				                                        <div class="card">
-				                                            <div class="card-header-print">
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        <h6>Champion</h6>
-				                                                    </div>
-				                                                </div>
-				                                            </div>
+                                                    <div class="col-md-2 second_sta">
+                                                        <div class="card">
+                                                            <div class="card-header-print">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <h6>Champion</h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
 
-				                                            <div class="card-body-print">
-				                                                <div class="row">
-				                                                    <div class="col-md-12">
-				                                                        
-				                                                        <div class="row">
-				                                                            <div class="col-md-12">
-				                                                                <table class="display table_second_stage">
+                                                            <div class="card-body-print">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <table class="display table_second_stage">
                                                                                     <tbody>
                                                                                      @if($ss->winner1 == null)
                                                                                      <tr>
@@ -2983,22 +2979,22 @@
                                                                                     @endif
                                                                                 </tbody>
                                                                             </table>
-				                                                            </div>
-				                                                        </div>
+                                                                            </div>
+                                                                        </div>
 
 
-				                                                    </div>
-				                                                </div>
-				                                            </div>
-				                                            
-				                                        </div>  
-				                                    </div>
-			                                    </div>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                        </div>
-                    	</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>  
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
 
                    
