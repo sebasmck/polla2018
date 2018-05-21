@@ -36,6 +36,22 @@ class LoginController extends Controller
      * @return void
      */
 
+    // public function __construct()
+    // {
+    //     $this->middleware('guest')->except('logout');
+    // }
+
+
+     public function __construct(){
+        $this->middleware('guest', ['only' => 'showLoginForm']);
+    }
+
+
+
+    public function showLoginForm(){
+        return view('auth.login');
+    }
+
     public function credentials(Request $request)
     {
         return [
@@ -50,6 +66,12 @@ class LoginController extends Controller
             $this->username() => 'required|string',
             'password' => 'required|string',
         ]);
+    }
+
+
+    protected function authenticated(Request $request, User $user)
+    {
+        return redirect()->intended();
     }
 
     protected function authenticated($request, $user)
@@ -76,8 +98,5 @@ class LoginController extends Controller
 
     }
 
-    public function __construct()
-    {
-        $this->middleware('guest')->except('logout');
-    }
+    
 }

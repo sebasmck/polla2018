@@ -1522,6 +1522,13 @@
 </body>
 
 <script>
+{{-- {{asset('img/flags/pick_a_team.png')}} --}}
+    $(document).ready(function(){
+        if($('select.WRound1A2B').value == 'Pick a Team'){
+                // $(".iWRound1A2B").attr('src', '');
+                alert($(".iWRound1A2B").val());
+            }
+        }); 
 
     var url = $("#imgroute").val();
     
@@ -1631,7 +1638,11 @@
 
         // mahere
 
+        
+
         $("#secondstage").on("change", "select.WRound1A2B, select.WRound1C2D", function(){
+
+
 
             var selectedTeamAvalue = $(".WRound1A2B option:selected").val();
             var selectedTeamAtext = $(".WRound1A2B option:selected").text();

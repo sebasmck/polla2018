@@ -18,7 +18,7 @@ use App\Team;
 use App\rivals;
 
 use App\SecondStage;
-
+use Auth;
 use DB;
 
 class Print_PicksController extends Controller
@@ -63,7 +63,16 @@ class Print_PicksController extends Controller
     public function show($iduser_poll)
     {
 
-         // Groups input boxes
+        $user = Auth::user();
+
+        $id = $user->id;
+
+        $poll = PollsModel::find($iduser_poll);
+
+        
+        if ((PollsModel::where('iduser_poll', '=', $iduser_poll))->count() > 0) {
+            if ($id == $poll->id_User) {
+                  // Groups input boxes
 
         $poll = PollsModel::find($iduser_poll);
         $ga = PollsModel::find($iduser_poll)->groupa;
@@ -131,6 +140,14 @@ class Print_PicksController extends Controller
         ->with('winG', $winG)
         ->with('winH', $winH)
         ->with('countpolls', $countpolls);
+            }else{
+            return redirect('/home');   
+        }
+    }else{
+        return redirect('/home');
+    }
+
+       
         
     }
 
