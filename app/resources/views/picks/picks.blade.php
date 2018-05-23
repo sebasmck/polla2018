@@ -199,7 +199,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-3">
                                                                                         <div class="pikcs">
-                                                                                            <input type="text" name="M2A4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2A4" onblur="match_games()" value="{{ old('M1A2',  isset($ga->M1A2) ? $ga->M1A2 : null) }}" required>
+                                                                                            <input type="text" name="M2A4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2A4" onblur="match_games()" value="{{ old('M2A4',  isset($ga->M2A4) ? $ga->M2A4 : null) }}" required>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-md-3 div-flag">
