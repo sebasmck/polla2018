@@ -101,7 +101,7 @@
                                                                 <div class="row">
                                                                     <div class="col-md-4">
                                                                         <div class="pikcs-print">
-                                                                            <input type="text" readonly name="M2A4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2A4" onblur="match_games()" value="{{ old('M1A2',  isset($ga->M1A2) ? $ga->M1A2 : null) }}">
+                                                                            <input type="text" readonly name="M2A4" class="form-control" onKeyPress="return soloNumeros(event)" maxlength="2" id="M2A4" onblur="match_games()" value="{{ old('M2A4',  isset($ga->M2A4) ? $ga->M2A4 : null) }}">
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-8 team_right">
