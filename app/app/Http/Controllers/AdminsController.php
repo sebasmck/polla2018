@@ -135,6 +135,46 @@ class AdminsController extends Controller
     }
   }
 
+  public function phases(){
+
+    $role = Auth()->user()->role;
+
+    if($role != NULL){
+      if($role = 'admin'){
+        $users = User::all();
+        $reps = Rep::all();
+
+        return view('admin.phases');
+      }else{
+        return redirect('/');
+      }
+    }else{
+      return redirect('/');
+    }
+
+  }
+
+  public function changephace(Request $req){
+
+    $role = Auth()->user()->role;
+
+    if($role != NULL){
+      if($role = 'admin'){
+        
+        $user = User::find($req->input('id'));
+        $user->id_rep = $req->input('id_rep');
+        $user->save();
+
+        return redirect()->back();
+      }else{
+        return redirect('/');
+      }
+    }else{
+      return redirect('/');
+    }
+
+  }
+
     
     /**
      * Display a listing of the resource.

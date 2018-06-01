@@ -41,6 +41,9 @@
                             <li class="is-active">
                               <a href="{{ route('pollmanagement') }}">Pool Management</a>
                             </li>
+                            <li>
+                              <a href="{{ route('phases') }}"> Phases Management</a>
+                            </li>
                           </ul>
                         </nav></div>
                       </div>

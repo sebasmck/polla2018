@@ -41,6 +41,9 @@
                             <li>
                               <a href="{{ route('pollmanagement') }}"> Pool Management</a>
                             </li>
+                            <li>
+                              <a href="{{ route('phases') }}"> Phases Management</a>
+                            </li>
                           </ul>
                         </nav></div>
                       </div>
@@ -63,6 +66,7 @@
                                     <th>Cellphone</th>
                                     <th>Referred By</th>
                                     <th>Aprove</th>
+                                    <th>Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -77,6 +81,15 @@
                                     <td>{{$user->cellphone}}</td>
                                     <td>{{$user->referredby}}</td>
                                     <td><a class="button is-danger" href="{{route('admins.edit', $user->id)}}"> Aprove </a></td>
+                                    <td>
+                                        <div class="col-md-6">
+                                          {!! Form::open(['route' => ['admins.destroy', $user->id], 'method' => 'DELETE', 'onsubmit' => 'return confirmDelete()']) !!}
+
+                                          {!!Form::submit('x', ['class' => 'button is-danger']) !!}
+                            
+                                          {!! Form::close() !!}
+                                        </div>
+                                    </td>
                                 </tr>
                                 @endif
                             @endforeach

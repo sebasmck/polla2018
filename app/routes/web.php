@@ -32,6 +32,10 @@ Route::get('admin', 'HomeController@indexAdmin')->name('admin');
 
 Route::get('assign', 'AdminsController@assignRep')->name('assign');
 
+Route::get('phases', 'AdminsController@phases')->name('phases');
+
+Route::get('changephace', 'AdminsController@changephace')->name('changephace');
+
 Route::post('assigntouser', 'AdminsController@assignToUser')->name('assigntouser');
 
 Route::get('addrep', 'AdminsController@addRep')->name('addRep');
