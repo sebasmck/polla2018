@@ -9463,6 +9463,10 @@ a.text-dark:hover {
     border: solid 0.2px #cccccc40;
 }
 
+ .div-flag{
+        padding-left: 2px;
+    }
+
 @media (max-width:768px) { 
     .table_picks{
         border: solid 0.2px #cccccc40;
@@ -9491,6 +9495,10 @@ a.text-dark:hover {
 
     .div-flag{
         display: none;
+    }
+
+    .div-flag{
+        padding-left: 2px;
     }
 
     .col-md-5, .team_left{

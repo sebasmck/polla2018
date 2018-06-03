@@ -72,7 +72,6 @@
                           <footer class="modal-card-foot">
                               <button type="submit" class="button is-success">Save</button>
                             </form>
-                            {{-- <button class="button" id="close">Cancel</button> --}}
                           </footer>
                         </div>
 

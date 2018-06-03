@@ -1081,7 +1081,7 @@
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <div class="row">
-                                                            <div class="col-md-4">
+                                                            <div class="col-md-12">
                                                                 <h4>{{ __('Winners') }} </h4>
                                                             </div>
                                                         </div>
@@ -1614,7 +1614,7 @@
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <div class="row">
-                                                            <div class="col-md-4">
+                                                            <div class="col-md-12">
                                                                 <h4>{{ __('Winners') }} </h4>
                                                             </div>
                                                         </div>
@@ -2147,7 +2147,7 @@
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <div class="row">
-                                                            <div class="col-md-4">
+                                                            <div class="col-md-12">
                                                                 <h4>{{ __('Winners') }} </h4>
                                                             </div>
                                                         </div>
@@ -2681,7 +2681,7 @@
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <div class="row">
-                                                            <div class="col-md-4">
+                                                            <div class="col-md-12">
                                                                 <h4>{{ __('Winners') }} </h4>
                                                             </div>
                                                         </div>
@@ -3214,7 +3214,7 @@
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <div class="row">
-                                                            <div class="col-md-4">
+                                                            <div class="col-md-12">
                                                                 <h4>{{ __('Winners') }} </h4>
                                                             </div>
                                                         </div>
@@ -3747,7 +3747,7 @@
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <div class="row">
-                                                            <div class="col-md-4">
+                                                            <div class="col-md-12">
                                                                 <h4>{{ __('Winners') }} </h4>
                                                             </div>
                                                         </div>
@@ -4282,7 +4282,7 @@
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <div class="row">
-                                                            <div class="col-md-4">
+                                                            <div class="col-md-12">
                                                                 <h4>{{ __('Winners') }} </h4>
                                                             </div>
                                                         </div>
