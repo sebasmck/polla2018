@@ -59,6 +59,8 @@ Route::delete('poll/{iduser_poll}', 'AdminsController@deletePoll')->name('destro
 
 Route::delete('deleterep/{id_rep}', 'AdminsController@deleteRep')->name('deleterep');
 
+Route::post('/changetophase', 'AdminsController@changeToPhase')->name('changetophase');
+
 Route::Resource('admins', 'AdminsController');
 
 // PICKS

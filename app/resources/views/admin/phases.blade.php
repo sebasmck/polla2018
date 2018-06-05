@@ -61,8 +61,8 @@
                             <p class="modal-card-title">Set Phase</p>
                           </header>
                           <section class="modal-card-body">
-                            <form action="{{ route('assigntouser')}}" method="POST">
-                        
+                            <form action="{{ route('changetophase')}}" method="POST">
+                              @csrf
                             <div class="column">
                               <div class="select">
                                 {{ Form::select('id_phase', ['1' => 'Phase 1', '2' => 'Phase 2', '3' => 'Phase 3'], null, ['class' => 'form-control', 'id' => 'id_phase']) }}

@@ -549,4 +549,19 @@ class AdminsController extends Controller
     }
 
 
+    public function changeToPhase(Request $req){
+
+      if ($req->id_phase == 1) {
+        $phase = DB::table('users')->update(array('id_phase' => 1));
+      }elseif($req->id_phase == 2){
+        $phase = DB::table('users')->update(array('id_phase' => 2));
+      }elseif($req->id_phase == 3){
+        $phase = DB::table('users')->update(array('id_phase' => 3));
+      }
+
+      return redirect()->back();
+
+    }
+
+
 }
