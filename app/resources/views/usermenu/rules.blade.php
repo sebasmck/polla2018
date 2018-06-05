@@ -34,7 +34,7 @@
                                     <ol>
                                         <h6><b>   Rules  of  the  Game </b></h6>
                                         <li>
-                                            <p>
+                                            <p  ALIGN="justify" style="padding-right: 25px;">
                                                 Register at www.pollaworldcup.com at your earliest convenience - be prepared to submit: 
                                             </p>
                                             <ul>
@@ -51,14 +51,14 @@
                                         </li>
                                         <br>
                                         <li>
-                                            <p>
+                                            <p  ALIGN="justify" style="padding-right: 25px;">
                                                 Once activated, log in with your email and password. Once logged in, on the main menu page, please click on “Edit my Picks” to fill out your pool. If you would like to add more pools, click on “Add Additional Pool”. You will be prompted to create a unique nickname.
                                                 Each nickname can only be used once. You can then click on “Edit picks” to fill out your pools.
                                             </p>
-                                            <p>
+                                            <p  ALIGN="justify" style="padding-right: 25px;">
                                                 In the tabs group A through group H, predict a score for each game and pick the winner and runner up for each group. Click “Save and go to Next Group” to continue, click any of the group tabs to navigate scores and groups, or “Save and go to Home Page” to go back to Main Menu.
                                             </p>
-                                            <p>
+                                            <p  ALIGN="justify" style="padding-right: 25px;">
                                                 GO TO TAB: Second Round, and... <br>
                                                 From these 16 teams select 8 teams for the Quarter-Finals <br>
                                                 From these 8 teams select 4 for the Semi-finals  <br>
@@ -68,7 +68,7 @@
                                             </p>
                                         </li>
                                         <li>
-                                            <p>
+                                            <p  ALIGN="justify" style="padding-right: 25px;">
                                                 ATTENTION: Your poll will be inactive until you 
                                                     activate it. Contact your city representative to 
                                                     activate your account as soon as possible. You will
@@ -78,19 +78,19 @@
                                             </p>
                                         </li>
                                         <li>
-                                            <p>
+                                            <p  ALIGN="justify" style="padding-right: 25px;">
                                                  You will be able log in to www.pollaworldcup.com with your email and password and change your results as much as you want BEFORE JUNE 11, 2018 @ 6:00 PM EST
                                             </p>
                                         </li>
                                         <li>
-                                            <p>
+                                            <p  ALIGN="justify" style="padding-right: 25px;">
                                                 JUNE 11, 2018 @ 11:00 PM EST, the administration will make all pools public, and
                                                 publish THE RANKING TABLE. <br>
                                                 The TABLE will be updated daily and all users will be able to see every participant&#39;s picks. Upon completion of the World Cup, the winner(s) and runner(s) up will be announced;
                                             </p>
                                         </li>
                                         <h6><b>   Rules </b></h6>
-                                        <p>
+                                        <p  ALIGN="justify" style="padding-right: 25px;">
                                              The  ranking  will  be  determined  and  sorted  according  to  the  score  obtained  by  each  player.  The  first  place  will  be  the  player  with  the  greatest  amount  of  points,  and  the  runner  up  will  be  the  player  with  the  second  greatest  amount  of  points.  In  case  of  a  tie,  participants  will  be  ranked  in  alphabetical  order,  only  for  presentation  purposes.  
                                         </p>
                                     </ol>
@@ -144,7 +144,7 @@
                                             2nd Place: 20%
                                         </li>
                                         <br>
-                                        <p>
+                                        <p  ALIGN="justify" style="padding-right: 25px;">
                                             In case of a draw, the tied players will split the prize in equal amounts. 
                                             So if a tie exists between two players for the first position, the prize 
                                             designated for 1st and 2nd place is added and divided between the tied players. 
@@ -158,7 +158,7 @@
                                     <ul>
                                         <h6><b>   DISCLAIMER:</b></h6>
                                        
-                                            <p>The qualified teams and their order of qualification to the subsequent rounds will be determined by the FIFA and their rules, regulations  and format and NOT our by World Cup tracker. Please keep in mind, that if there  is a tie in points, games  won, and goal difference, the FIFA uses a drawing of lots process to determine who passes to the next round, if this is the case of your scores your tracker will prompt you to choose your teams manually. Please do so. For official rules for the World Cup competition go to: <a href="http://resources.fifa.com/mm/document/tournament/competition/02/84/35/19/regulationsfwc2018en_neutral.pdf">http://resources.fifa.com/mm/document/
+                                            <p  ALIGN="justify" style="padding-right: 25px;">The qualified teams and their order of qualification to the subsequent rounds will be determined by the FIFA and their rules, regulations  and format and NOT our by World Cup tracker. Please keep in mind, that if there  is a tie in points, games  won, and goal difference, the FIFA uses a drawing of lots process to determine who passes to the next round, if this is the case of your scores your tracker will prompt you to choose your teams manually. Please do so. For official rules for the World Cup competition go to: <a href="http://resources.fifa.com/mm/document/tournament/competition/02/84/35/19/regulationsfwc2018en_neutral.pdf">http://resources.fifa.com/mm/document/
                                             tournament/competition/02/84/35/19/
                                             regulationsfwc2018en_neutral.pdf</a> 
                                             </p>
