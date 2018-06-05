@@ -46,20 +46,13 @@ class LoginController extends Controller
 
      public function __construct(){
 
-        $phase = CurrentPhase::first();
-        if ($phase == 1) {
-            $this->middleware('guest', ['only' => 'showLoginForm']);
-        }elseif($phase == 2){
-            return "2";
-        }
+        $this->middleware('guest', ['only' => 'showLoginForm']);
         
     }
 
 
     public function showLoginForm(){
-
         return view('auth.login');
-        
     }
 
     public function credentials(Request $request)

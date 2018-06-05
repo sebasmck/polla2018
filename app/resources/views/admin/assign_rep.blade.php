@@ -86,9 +86,7 @@
                                     @endif
                                     </td>
                                     <td>
-                                      {{if (condition) {
-                                        # code...
-                                      }}}
+                                      
                                     </td>
                                     <td>
                                         <div class="col-md-6">
