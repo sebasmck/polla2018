@@ -1,7 +1,11 @@
 <?php
+use App\CurrentPhase;
 
 Route::get('/', function () {
-    return view('auth/login');
+
+	$phase = CurrentPhase::first();
+
+    return view('auth/login')->with('phase', $phase);
 });
 
 

@@ -32,6 +32,24 @@ class LoginController extends Controller
      */
     protected $redirectTo = '/home';
 
+    public function showLoginForm()
+    {
+        $phase = CurrentPhase::first();
+
+        return view('auth.login')->with('phase', $phase);
+    }
+
+    public function logout(Request $request)
+    {
+        $this->guard()->logout();
+
+        $request->session()->invalidate();
+        
+        $phase = CurrentPhase::first();
+
+        return redirect('/')->with('phase', $phase);
+    }
+
     /**
      * Create a new controller instance.
      *
@@ -48,15 +66,6 @@ class LoginController extends Controller
 
         $this->middleware('guest', ['only' => 'showLoginForm']);
         
-    }
-
-
-    public function showLoginForm(){
-
-        $phase = CurrentPhase::first();
-
-        
-        return view('auth.login')->with('phase', $phase);
     }
 
     public function credentials(Request $request)

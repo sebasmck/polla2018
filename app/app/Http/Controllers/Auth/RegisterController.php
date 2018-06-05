@@ -29,6 +29,15 @@ class RegisterController extends Controller
      */
     // protected $redirectTo = '/awaitingconfirmation';
     protected $redirectTo = '/home';
+
+    public function showRegistrationForm()
+    {
+        $phase = CurrentPhase::first();
+
+        return view('auth.register')->with('phase', $phase);
+    }
+
+
      /**
      * Handle a registration request for the application.
      *
