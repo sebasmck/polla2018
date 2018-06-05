@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 
+use App\CurrentPhase;
+
 use Auth;
 
 class LoginController extends Controller
@@ -43,13 +45,21 @@ class LoginController extends Controller
 
 
      public function __construct(){
-        $this->middleware('guest', ['only' => 'showLoginForm']);
+
+        $phase = CurrentPhase::first();
+        if ($phase == 1) {
+            $this->middleware('guest', ['only' => 'showLoginForm']);
+        }elseif($phase == 2){
+            return "2";
+        }
+        
     }
 
 
-
     public function showLoginForm(){
+
         return view('auth.login');
+        
     }
 
     public function credentials(Request $request)
@@ -72,6 +82,9 @@ class LoginController extends Controller
     protected function authenticated($request, $user)
     {
 
+    if (($user->id_phase != 2) || ($user->role == 'admin')) {
+        
+    
         if ($user->is_approved == 1) {
             if($user->role === 'admin') {
                 return redirect()->intended('/admin');
@@ -89,7 +102,18 @@ class LoginController extends Controller
 
             return redirect()->back()->with($notification);
         }
-        
+    }else{
+
+        $notification = array(
+                'message' => 'This is phase 2', 
+                'alert-type' => 'warning'
+            );
+
+            Auth::logout();
+
+            return redirect()->back()->with($notification);
+
+        }
 
     }
 
