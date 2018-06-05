@@ -98,8 +98,8 @@ class LoginController extends Controller
     }else{
 
         $notification = array(
-                'message' => 'This is phase 2', 
-                'alert-type' => 'warning'
+            'message' => 'This page is currently under maintenance, please try again later.', 
+            'alert-type' => 'error'
             );
 
             Auth::logout();

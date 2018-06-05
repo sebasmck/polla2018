@@ -553,13 +553,13 @@ class AdminsController extends Controller
     public function changeToPhase(Request $req){
 
       if ($req->id_phase == 1) {
-        // $phase = DB::table('users')->where('role', '!=', 'admin')->orWhereNull('role')->update(array('id_phase' => 1));
+        $phase = DB::table('users')->where('role', '!=', 'admin')->orWhereNull('role')->update(array('id_phase' => 1));
         $phase2 = DB::table('current_phase')->update(array('phase' => 1));
       }elseif($req->id_phase == 2){
-        // $phase = DB::table('users')->where('role', '!=', 'admin')->orWhereNull('role')->update(array('id_phase' => 2));
+        $phase = DB::table('users')->where('role', '!=', 'admin')->orWhereNull('role')->update(array('id_phase' => 2));
         $phase2 = DB::table('current_phase')->update(array('phase' => 2));
       }elseif($req->id_phase == 3){
-        // $phase = DB::table('users')->where('role', '!=', 'admin')->orWhereNull('role')->update(array('id_phase' => 3));
+        $phase = DB::table('users')->where('role', '!=', 'admin')->orWhereNull('role')->update(array('id_phase' => 3));
         $phase2 = DB::table('current_phase')->update(array('phase' => 3));
       }
 
