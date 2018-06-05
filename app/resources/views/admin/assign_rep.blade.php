@@ -65,6 +65,7 @@
                                     <th>Email</th>
                                     <th>Pools</th>
                                     <th>Assign</th>
+                                    <th># of Pools</th>
                                     <th>Delete</th>
                                 </tr>
                             </thead>
@@ -83,6 +84,9 @@
                                     <a href="{{route('editrep', $user->id)}}"> <button class="button is-primary is-pulled-right">Edit Rep</button></a>
                                     <p class="is-pulled-left">{{$user->rep->name}}</p>
                                     @endif
+                                    </td>
+                                    <td>
+                                      
                                     </td>
                                     <td>
                                         <div class="col-md-6">

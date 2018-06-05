@@ -55,8 +55,9 @@ class AdminsController extends Controller
       if($role = 'admin'){
         $users = User::all();
         $reps = Rep::all();
+        $polls = PollsModel::all();
 
-        return view('admin.assign_rep')->with('users', $users)->with('reps', $reps);
+        return view('admin.assign_rep')->with('users', $users)->with('reps', $reps)->with('polls', $polls);
       }else{
         return redirect('/');
       }
@@ -426,7 +427,7 @@ class AdminsController extends Controller
         
 
         $notification = array(
-            'message' => 'User ' . $user->nickname . ' Was deleted Successfully', 
+            'message' => 'User: ' . $user->name . ' '. $user->lastname .' Was deleted Successfully', 
             'alert-type' => 'success'
         );
 
@@ -545,6 +546,24 @@ class AdminsController extends Controller
       }else{
         return redirect('/');
       }
+
+    }
+
+
+    public function changeToPhase(Request $req){
+
+      if ($req->id_phase == 1) {
+        $phase = DB::table('users')->where('role', '!=', 'admin')->orWhereNull('role')->update(array('id_phase' => 1));
+        $phase2 = DB::table('current_phase')->update(array('phase' => 1));
+      }elseif($req->id_phase == 2){
+        $phase = DB::table('users')->where('role', '!=', 'admin')->orWhereNull('role')->update(array('id_phase' => 2));
+        $phase2 = DB::table('current_phase')->update(array('phase' => 2));
+      }elseif($req->id_phase == 3){
+        $phase = DB::table('users')->where('role', '!=', 'admin')->orWhereNull('role')->update(array('id_phase' => 3));
+        $phase2 = DB::table('current_phase')->update(array('phase' => 3));
+      }
+
+      return redirect()->back();
 
     }
 

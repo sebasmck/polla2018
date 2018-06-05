@@ -133,7 +133,9 @@
                             @endforeach
                         @endif --}}
 
-                    
+                        @if($phase->phase != 1)
+
+                        @else
                         <div class="form-group row">
                             <div class="col-md-8 offset-md-2">
                                 <button type="submit" class="btn btn-primary" style="width: 100%;">
@@ -141,6 +143,9 @@
                                 </button>
                             </div>
                         </div>
+                        
+                        @endif
+                        
                     </form>
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-2">

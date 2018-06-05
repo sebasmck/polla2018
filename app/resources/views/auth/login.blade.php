@@ -82,7 +82,6 @@
                                     @endif
                                 </div>
                             </div>
-
                             <div class="form-group row">
                                 <div class="col-md-8 offset-md-2">
                                     <button type="submit" class="btn btn-primary" style="width: 100%;">
@@ -90,15 +89,24 @@
                                     </button>
                                 </div>
                             </div>
-                        </form>
-
-                        <div class="form-group row">
+                            @if($phase->phase != 1)
+                                
+                            @else
+                            
+                            <div class="form-group row">
                             <div class="col-md-8 offset-md-2">
                                 <button type="" class="btn btn-primary" onclick="window.location='{{ route('register') }}'" style="width: 100%;">
                                     {{ __('Register') }}
                                 </button>
                             </div>
                         </div>
+
+                            @endif
+
+                            
+                        </form>
+
+                        
 
                         <div class="form-group row">
                             <div class="col-md-8 offset-md-2" style="text-align: center;">

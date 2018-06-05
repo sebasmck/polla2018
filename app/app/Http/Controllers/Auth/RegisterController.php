@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
+use App\CurrentPhase;
+
 use Illuminate\Http\Request;
 use Illuminate\Auth\Events\Registered;
 
@@ -27,6 +29,15 @@ class RegisterController extends Controller
      */
     // protected $redirectTo = '/awaitingconfirmation';
     protected $redirectTo = '/home';
+
+    public function showRegistrationForm()
+    {
+        $phase = CurrentPhase::first();
+
+        return view('auth.register')->with('phase', $phase);
+    }
+
+
      /**
      * Handle a registration request for the application.
      *
@@ -35,6 +46,11 @@ class RegisterController extends Controller
      */
     public function register(Request $request)
     {
+
+      $phase = CurrentPhase::first();
+
+      if ($phase->phase == 1) {
+       
 
         $pool = array('poll_name' => $request->nickname);
 
@@ -103,6 +119,15 @@ class RegisterController extends Controller
 
             return back()->with($notification1);
         }
+
+      }else{
+         $notification1 = array(
+            'message' => 'This page is currently under maintenance, please try again later.', 
+            'alert-type' => 'error'
+            );
+            return back()->with($notification1);
+      }
+
 
        
          

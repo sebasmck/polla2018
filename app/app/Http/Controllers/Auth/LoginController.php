@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 
+use App\CurrentPhase;
+
 use Auth;
 
 class LoginController extends Controller
@@ -30,6 +32,24 @@ class LoginController extends Controller
      */
     protected $redirectTo = '/home';
 
+    public function showLoginForm()
+    {
+        $phase = CurrentPhase::first();
+
+        return view('auth.login')->with('phase', $phase);
+    }
+
+    public function logout(Request $request)
+    {
+        $this->guard()->logout();
+
+        $request->session()->invalidate();
+        
+        $phase = CurrentPhase::first();
+
+        return redirect('/')->with('phase', $phase);
+    }
+
     /**
      * Create a new controller instance.
      *
@@ -43,13 +63,9 @@ class LoginController extends Controller
 
 
      public function __construct(){
+
         $this->middleware('guest', ['only' => 'showLoginForm']);
-    }
-
-
-
-    public function showLoginForm(){
-        return view('auth.login');
+        
     }
 
     public function credentials(Request $request)
@@ -72,6 +88,9 @@ class LoginController extends Controller
     protected function authenticated($request, $user)
     {
 
+    if (($user->id_phase != 2) || ($user->role == 'admin')) {
+        
+    
         if ($user->is_approved == 1) {
             if($user->role === 'admin') {
                 return redirect()->intended('/admin');
@@ -89,7 +108,18 @@ class LoginController extends Controller
 
             return redirect()->back()->with($notification);
         }
-        
+    }else{
+
+        $notification = array(
+            'message' => 'This page is currently under maintenance, please try again later.', 
+            'alert-type' => 'error'
+            );
+
+            Auth::logout();
+
+            return redirect()->back()->with($notification);
+
+        }
 
     }
 

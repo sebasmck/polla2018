@@ -1,7 +1,11 @@
 <?php
+use App\CurrentPhase;
 
 Route::get('/', function () {
-    return view('auth/login');
+
+	$phase = CurrentPhase::first();
+
+    return view('auth/login')->with('phase', $phase);
 });
 
 
@@ -58,6 +62,8 @@ Route::get('allusers', 'AdminsController@allUsers')->name('allusers');
 Route::delete('poll/{iduser_poll}', 'AdminsController@deletePoll')->name('destroypoll');
 
 Route::delete('deleterep/{id_rep}', 'AdminsController@deleteRep')->name('deleterep');
+
+Route::post('/changetophase', 'AdminsController@changeToPhase')->name('changetophase');
 
 Route::Resource('admins', 'AdminsController');
 
