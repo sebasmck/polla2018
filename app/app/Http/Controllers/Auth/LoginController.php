@@ -52,7 +52,11 @@ class LoginController extends Controller
 
 
     public function showLoginForm(){
-        return view('auth.login');
+
+        $phase = CurrentPhase::first();
+
+        
+        return view('auth.login')->with('phase', $phase);
     }
 
     public function credentials(Request $request)
