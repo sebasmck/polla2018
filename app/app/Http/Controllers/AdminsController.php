@@ -55,8 +55,9 @@ class AdminsController extends Controller
       if($role = 'admin'){
         $users = User::all();
         $reps = Rep::all();
+        $polls = PollsModel::all();
 
-        return view('admin.assign_rep')->with('users', $users)->with('reps', $reps);
+        return view('admin.assign_rep')->with('users', $users)->with('reps', $reps)->with('polls', $polls);
       }else{
         return redirect('/');
       }
@@ -426,7 +427,7 @@ class AdminsController extends Controller
         
 
         $notification = array(
-            'message' => 'User ' . $user->nickname . ' Was deleted Successfully', 
+            'message' => 'User: ' . $user->name . ' '. $user->lastname .' Was deleted Successfully', 
             'alert-type' => 'success'
         );
 
