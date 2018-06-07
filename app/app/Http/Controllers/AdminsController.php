@@ -20,6 +20,8 @@ use App\Emails;
 use App\Rep;
 use Excel;
 
+use App\CurrentPhase;
+
 use DB;
 
 
@@ -144,8 +146,9 @@ class AdminsController extends Controller
       if($role = 'admin'){
         $users = User::all();
         $reps = Rep::all();
+        $phase = CurrentPhase::first();
 
-        return view('admin.phases');
+        return view('admin.phases')->with('phase', $phase);
       }else{
         return redirect('/');
       }

@@ -30,7 +30,24 @@ class PicksController extends Controller
 	public function index()
     {	
         
-    }   
+    }
+
+
+    public function adminPick($id){
+
+        $user = PollsModel::where('id_User', '=', $id)->first();
+        if ($user != null) {
+            return redirect()->route('picks.show', ['iduser_poll' => $user->iduser_poll]);
+
+        }else{
+            $id_user = auth()->user()->id;
+            $polls = PollsModel::getBbyUser($id_user);
+            $countpolls = PollsModel::all()->count();
+
+            return view('home')->with('polls', $polls)->with('countpolls', $countpolls);
+        }
+
+    }
 
 
     public function show($iduser_poll){

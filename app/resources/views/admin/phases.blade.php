@@ -72,6 +72,12 @@
                           <footer class="modal-card-foot">
                               <button type="submit" class="button is-success">Save</button>
                             </form>
+                            
+                            @if($phase->phase == 3)
+                              <a href="{{route('picks.show', Auth::user()->id)}}" class="button is-info"> Enter Results</a>
+                            @else
+
+                            @endif
                           </footer>
                         </div>
 
