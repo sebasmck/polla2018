@@ -1528,96 +1528,96 @@
         
         if($('select.WRound1A2B').val() == ''){
             $(".iWRound1A2B").attr('src', "{{asset('img/flags/cup2.png')}}");
-            $('select.Wquarter1_2').find('option').not(':first').remove();
-            $(".iWquarter1_2").attr('src', "{{asset('img/flags/cup2.png')}}");
-            $('select.WSemi1_2').find('option').not(':first').remove();
-            $(".iWSemi1_2").attr('src', "{{asset('img/flags/cup2.png')}}");
+            // $('select.Wquarter1_2').find('option').not(':first').remove();
+            // $(".iWquarter1_2").attr('src', "{{asset('img/flags/cup2.png')}}");
+            // $('select.WSemi1_2').find('option').not(':first').remove();
+            // $(".iWSemi1_2").attr('src', "{{asset('img/flags/cup2.png')}}");
 
-            $('select.Winner1').find('option').not(':first').remove();
-            $(".iWinner1").attr('src', "{{asset('img/flags/cup2.png')}}");
+            // $('select.Winner1').find('option').not(':first').remove();
+            // $(".iWinner1").attr('src', "{{asset('img/flags/cup2.png')}}");
 
         }
 
         if($('select.WRound1C2D').val() == ''){
             $(".iWRound1C2D").attr('src', "{{asset('img/flags/cup2.png')}}");
-            $('select.Wquarter1_2').find('option').not(':first').remove();
-            $(".iWquarter1_2").attr('src', "{{asset('img/flags/cup2.png')}}");
-            $('select.WSemi1_2').find('option').not(':first').remove();
-            $(".iWSemi1_2").attr('src', "{{asset('img/flags/cup2.png')}}");
+            // $('select.Wquarter1_2').find('option').not(':first').remove();
+            // $(".iWquarter1_2").attr('src', "{{asset('img/flags/cup2.png')}}");
+            // $('select.WSemi1_2').find('option').not(':first').remove();
+            // $(".iWSemi1_2").attr('src', "{{asset('img/flags/cup2.png')}}");
 
-            $('select.Winner1').find('option').not(':first').remove();
-            $(".iWinner1").attr('src', "{{asset('img/flags/cup2.png')}}");
+            // $('select.Winner1').find('option').not(':first').remove();
+            // $(".iWinner1").attr('src', "{{asset('img/flags/cup2.png')}}");
         }
 
         if($('select.WRound1E2F').val() == ''){
             $(".iWRound1E2F").attr('src', "{{asset('img/flags/cup2.png')}}");
-            $('select.Wquarter3_4').find('option').not(':first').remove();
-            $(".iWquarter3_4").attr('src', "{{asset('img/flags/cup2.png')}}");
-            $('select.WSemi1_2').find('option').not(':first').remove();
-            $(".iWSemi1_2").attr('src', "{{asset('img/flags/cup2.png')}}");
+            // $('select.Wquarter3_4').find('option').not(':first').remove();
+            // $(".iWquarter3_4").attr('src', "{{asset('img/flags/cup2.png')}}");
+            // $('select.WSemi1_2').find('option').not(':first').remove();
+            // $(".iWSemi1_2").attr('src', "{{asset('img/flags/cup2.png')}}");
 
-            $('select.Winner1').find('option').not(':first').remove();
-            $(".iWinner1").attr('src', "{{asset('img/flags/cup2.png')}}");
+            // $('select.Winner1').find('option').not(':first').remove();
+            // $(".iWinner1").attr('src', "{{asset('img/flags/cup2.png')}}");
 
         }
 
         if($('select.WRound1G2H').val() == ''){
             $(".iWRound1G2H").attr('src', "{{asset('img/flags/cup2.png')}}");
-            $('select.Wquarter3_4').find('option').not(':first').remove();
-            $(".iWquarter3_4").attr('src', "{{asset('img/flags/cup2.png')}}");  
-            $('select.WSemi1_2').find('option').not(':first').remove();
-            $(".iWSemi1_2").attr('src', "{{asset('img/flags/cup2.png')}}");
+            // $('select.Wquarter3_4').find('option').not(':first').remove();
+            // $(".iWquarter3_4").attr('src', "{{asset('img/flags/cup2.png')}}");  
+            // $('select.WSemi1_2').find('option').not(':first').remove();
+            // $(".iWSemi1_2").attr('src', "{{asset('img/flags/cup2.png')}}");
 
-            $('select.Winner1').find('option').not(':first').remove();
-            $(".iWinner1").attr('src', "{{asset('img/flags/cup2.png')}}");
+            // $('select.Winner1').find('option').not(':first').remove();
+            // $(".iWinner1").attr('src', "{{asset('img/flags/cup2.png')}}");
         }
 
         if($('select.WRound1B2A').val() == ''){
             $(".iWRound1B2A").attr('src', "{{asset('img/flags/cup2.png')}}");
-            $('select.Wquarter5_6').find('option').not(':first').remove();
+            // $('select.Wquarter5_6').find('option').not(':first').remove();
 
-            $('select.Wquarter5_6').find('option').not(':first').remove();
-            $(".iWquarter5_6").attr('src', "{{asset('img/flags/cup2.png')}}");
-            $('select.WSemi3_4').find('option').not(':first').remove();
-            $(".iWSemi3_4").attr('src', "{{asset('img/flags/cup2.png')}}");
-            $('select.Winner1').find('option').not(':first').remove();
-            $(".iWinner1").attr('src', "{{asset('img/flags/cup2.png')}}");
+            // $('select.Wquarter5_6').find('option').not(':first').remove();
+            // $(".iWquarter5_6").attr('src', "{{asset('img/flags/cup2.png')}}");
+            // $('select.WSemi3_4').find('option').not(':first').remove();
+            // $(".iWSemi3_4").attr('src', "{{asset('img/flags/cup2.png')}}");
+            // $('select.Winner1').find('option').not(':first').remove();
+            // $(".iWinner1").attr('src', "{{asset('img/flags/cup2.png')}}");
 
 
         }
 
         if($('select.WRound1D2C').val() == ''){
             $(".iWRound1D2C").attr('src', "{{asset('img/flags/cup2.png')}}");
-            $(".iWquarter5_6").attr('src', "{{asset('img/flags/cup2.png')}}");
+            // $(".iWquarter5_6").attr('src', "{{asset('img/flags/cup2.png')}}");
 
-            $('select.Wquarter5_6').find('option').not(':first').remove();
-            $(".iWquarter5_6").attr('src', "{{asset('img/flags/cup2.png')}}"); 
-            $('select.WSemi3_4').find('option').not(':first').remove();
-            $(".iWSemi3_4").attr('src', "{{asset('img/flags/cup2.png')}}");
-            $('select.Winner1').find('option').not(':first').remove();
-            $(".iWinner1").attr('src', "{{asset('img/flags/cup2.png')}}");
+            // $('select.Wquarter5_6').find('option').not(':first').remove();
+            // $(".iWquarter5_6").attr('src', "{{asset('img/flags/cup2.png')}}"); 
+            // $('select.WSemi3_4').find('option').not(':first').remove();
+            // $(".iWSemi3_4").attr('src', "{{asset('img/flags/cup2.png')}}");
+            // $('select.Winner1').find('option').not(':first').remove();
+            // $(".iWinner1").attr('src', "{{asset('img/flags/cup2.png')}}");
 
         }
 
         if($('select.WRound1F2E').val() == ''){
             $(".iWRound1F2E").attr('src', "{{asset('img/flags/cup2.png')}}");
-            $('select.Wquarter7_8').find('option').not(':first').remove();
-            $(".iWquarter7_8").attr('src', "{{asset('img/flags/cup2.png')}}");
-            $('select.WSemi3_4').find('option').not(':first').remove();
-            $(".iWSemi3_4").attr('src', "{{asset('img/flags/cup2.png')}}");
-            $('select.Winner1').find('option').not(':first').remove();
-            $(".iWinner1").attr('src', "{{asset('img/flags/cup2.png')}}");
+            // $('select.Wquarter7_8').find('option').not(':first').remove();
+            // $(".iWquarter7_8").attr('src', "{{asset('img/flags/cup2.png')}}");
+            // $('select.WSemi3_4').find('option').not(':first').remove();
+            // $(".iWSemi3_4").attr('src', "{{asset('img/flags/cup2.png')}}");
+            // $('select.Winner1').find('option').not(':first').remove();
+            // $(".iWinner1").attr('src', "{{asset('img/flags/cup2.png')}}");
 
         }
 
         if($('select.WRound1H2G').val() == ''){
             $(".iWRound1H2G").attr('src', "{{asset('img/flags/cup2.png')}}");
-            $('select.Wquarter7_8').find('option').not(':first').remove();
-            $(".iWquarter7_8").attr('src', "{{asset('img/flags/cup2.png')}}");
-            $('select.WSemi3_4').find('option').not(':first').remove();
-            $(".iWSemi3_4").attr('src', "{{asset('img/flags/cup2.png')}}");
-            $('select.Winner1').find('option').not(':first').remove();
-            $(".iWinner1").attr('src', "{{asset('img/flags/cup2.png')}}");
+            // $('select.Wquarter7_8').find('option').not(':first').remove();
+            // $(".iWquarter7_8").attr('src', "{{asset('img/flags/cup2.png')}}");
+            // $('select.WSemi3_4').find('option').not(':first').remove();
+            // $(".iWSemi3_4").attr('src', "{{asset('img/flags/cup2.png')}}");
+            // $('select.Winner1').find('option').not(':first').remove();
+            // $(".iWinner1").attr('src', "{{asset('img/flags/cup2.png')}}");
         }
 
         }); 

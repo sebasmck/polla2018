@@ -90,16 +90,16 @@
                                 </div>
                             </div>
                             @if($phase->phase != 1)
-                                
+
                             @else
                             
                             <div class="form-group row">
-                            <div class="col-md-8 offset-md-2">
-                                <button type="" class="btn btn-primary" onclick="window.location='{{ route('register') }}'" style="width: 100%;">
-                                    {{ __('Register') }}
-                                </button>
+                                <div class="col-md-8 offset-md-2">
+                                    <button type="" class="btn btn-primary" onclick="window.location='{{ route('register') }}'" style="width: 100%;">
+                                        {{ __('Register') }}
+                                    </button>
+                                </div>
                             </div>
-                        </div>
 
                             @endif
 
