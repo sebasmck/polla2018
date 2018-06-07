@@ -111,7 +111,7 @@ class LoginController extends Controller
     }else{
 
         $notification = array(
-            'message' => 'This page is currently under maintenance, please try again later.', 
+            'message' => 'Registration is closed. World Cup mode coming soon.', 
             'alert-type' => 'error'
             );
 
