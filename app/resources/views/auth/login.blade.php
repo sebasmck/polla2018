@@ -90,7 +90,7 @@
                                 </div>
                             </div>
                             @if($phase->phase != 1)
-
+                                {{--show nothing --}}
                             @else
                             
                             <div class="form-group row">

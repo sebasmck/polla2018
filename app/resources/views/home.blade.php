@@ -21,7 +21,11 @@
                                 <h4>{{ __('My Pools') }} </h4>
                             </div>
                             <div class="col-md-4">
+                                @if(Auth()->user()->id_phase == 3)
+
+                                @else
                                 <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary" id="myBtn" style="width: 100%; padding-top: 0;"> Add Additional Pool <span style="font-size: 19px;     font-weight: 700;"></span></button>
+                                @endif
                             </div>
                         </div>
                         
@@ -29,6 +33,9 @@
                     </div>
 
                     <div class="card-body">
+                        @if(Auth()->user()->id_phase == 3)
+
+                        @else
                         <ul style="line-height:80%" >
                             <li>
                                 <p>Your registered Pool is below. To enter your picks, select “Edit my Picks”.</p>
@@ -40,6 +47,7 @@
                                 <p>Once a Pool is complete, you will be able to Print your Picks.</p>
                             </li>
                         </ul>
+                        @endif
 
                         
                          <div class="row">
@@ -47,6 +55,13 @@
                         
                                 <table id="myTable" class="table table_pool">
                                         <thead>
+                                            @if(Auth()->user()->id_phase == 3)
+                                            <tr>
+                                                <th>Nickname</th>
+                                                <th>Score</th>
+                                                <th>Ranking</th>
+                                            </tr>
+                                            @else
                                             <tr>
                                                 <th>Nickname</th>
                                                 <th>Status</th>
@@ -55,9 +70,13 @@
                                                 <th></th>
                                                 <th></th>
                                             </tr>
+                                            @endif
                                         </thead>
                                         <tbody>
                                             @foreach ($polls as $poll)
+
+                                            @if(Auth()->user()->id_phase != 3)
+
                                             <tr>
                                                 <td>{{$poll->poll_name}}</td>
 
@@ -111,11 +130,18 @@
                                                         </div>
                                                     </div>
                                                     @else
-                                                    
+                                                        
                                                     @endif
                                                 </td>
                                                 
                                             </tr>
+
+                                            @else
+                                                <td>{{$poll->poll_name}}</td>
+                                                <td>score</td>
+                                                <td>1/300</td>
+                                            @endif
+
                                             @endforeach
                                         </tbody>
                                 </table> 
@@ -127,12 +153,60 @@
         </div>
         <br>
 
-        {{-- MENU --}}
+
+        @if(Auth()->user()->id_phase == 3)
+            {{-- MENU --}}
         <div class="row justify-content-center">
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-header"><h4>{{ __('Menu') }}</h4></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 ">
+                                <div class="form-group">
+                                    <button type="" class="btn btn-primary" onclick="window.location='{{ route('rules') }}'" style="width: 100%;">
+                                        {{ __('Read the Rules') }}
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-10 offset-md-1 ">
+                                <div class="form-group">
+                                    <button type="" class="btn btn-primary" style="width: 100%;">
+                                        {{ __('Worldcup Results (starts June 12th)') }}
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-10 offset-md-1 ">
+                                 <div class="form-group">
+                                    <button type="" class="btn btn-primary" style="width: 100%;">
+                                        {{ __('Ranking and Poolwide picks') }}
+                                        <br>
+                                        {{(__('(starts June 12th)'))}}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header"><h4>{{ __('Prizes') }}</h4></div>
 
+                    <div class="card-body">
+                        <div class="row">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @else
+
+            <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header"><h4>{{ __('Menu') }}</h4></div>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-10 offset-md-1 ">
@@ -164,7 +238,13 @@
             </div>
         </div>
 
-    
+        @endif
+
+        
+
+
+
+
 
 
 

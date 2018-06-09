@@ -76,18 +76,25 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+                @if(Auth::user()->id_phase == 3)
 
+                @else
                 <div style="text-align: center; margin-left: 12%;">
-
                     Registered Pools: {{isset($countpolls) ? $countpolls : null}}
                 </div>
+                @endif
 
+
+                @if(Auth::user()->id_phase == 3)
+
+                @else
                 <div style="text-align: center; margin-left: 12%; padding-top:8px;">
                 	<ul style="line-height:50%; list-style-type: none;">
                 		<li><p style="font-size: 0.7em;">Countdown to worldcup</p></li>
                 		<li><p id="demo" style='margin-bottom: 1px;'></p></li>
                 	</ul>
                 </div>
+                @endif
                
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
