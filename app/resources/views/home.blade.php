@@ -164,16 +164,16 @@
                         <div class="row">
                             <div class="col-md-10 offset-md-1 ">
                                  <div class="form-group">
-                                    <button type="" class="btn btn-primary" style="width: 100%;">
+                                    <a href="{{route('ranking')}}"><button type="" class="btn btn-primary" style="width: 100%;">
                                         {{ __('Ranking and Poolwide picks') }}
-                                    </button>
+                                    </button></a>
                                 </div>
                             </div>
                             <div class="col-md-10 offset-md-1 ">
                                 <div class="form-group">
-                                    <button type="" class="btn btn-primary" style="width: 100%;">
+                                    <a href="{{route('finalresults.show', 'testing1234')}}"><button type="" class="btn btn-primary" style="width: 100%;">
                                         {{ __('Worldcup Results') }}
-                                    </button>
+                                    </button></a>
                                 </div>
                             </div>
                             <div class="col-md-10 offset-md-1 ">
@@ -194,9 +194,9 @@
                     <div class="card-body">
                         <div class="row">
                             <div style="line-height: 250%; font-size: 1.5em;" class="container">
-                                <b>1st place: </b> 300 * 0.3 * 0.95 * 0.8 = $ 68.40
+                                <b>1st place: </b> {{$activepolls}} x 0.3 x 0.95 x 0.8 = $ {{round(($activepolls * 0.3 * 0.95 * 0.8),2 )}} 
                                 <br>
-                                <b>2nd place:</b> 300 * 0.3 * 0.95 * 0.2 = $17.10
+                                <b>2nd place:</b> {{$activepolls}} x 0.3 x 0.95 x 0.2 = $ {{round(($activepolls * 0.3 * 0.95 * 0.2), 2)}} 
                             </div>
                         </div>
                     </div>

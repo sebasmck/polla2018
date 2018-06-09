@@ -144,6 +144,7 @@ class AdminsController extends Controller
 
     if($role != NULL){
       if($role = 'admin'){
+        
         $users = User::all();
         $reps = Rep::all();
         $phase = CurrentPhase::first();

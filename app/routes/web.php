@@ -79,8 +79,12 @@ Route::post('/storef', 'PicksController@storeGroupF')->name('storef');
 Route::post('/storeg', 'PicksController@storeGroupG')->name('storeg');
 Route::post('/storeh', 'PicksController@storeGroupH')->name('storeh');
 Route::post('/storesecondstage', 'PicksController@storeSecondStage')->name('storesecondstage');
+Route::get('/ranking', 'PicksController@Ranking')->name('ranking');
+
 
 Route::Resource('picks', 'PicksController');
+
+Route::Resource('finalresults', 'FinalResultsController');
 
 Route::Resource('adminprintpicks', 'AdminPrint_PicksController');
 

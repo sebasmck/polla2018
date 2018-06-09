@@ -32,6 +32,9 @@ class PicksController extends Controller
         
     }
 
+    public function Ranking(){
+        return view('picks.ranking');
+    }
 
     public function adminPick($id){
 
@@ -789,13 +792,6 @@ class PicksController extends Controller
          }
 
     }
-
-
-
-
-
-
-
 
 
 

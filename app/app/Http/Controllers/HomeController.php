@@ -59,10 +59,12 @@ class HomeController extends Controller
         $id_user = auth()->user()->id;
         $polls = PollsModel::getBbyUser($id_user);
         $countpolls = PollsModel::all()->count();
-
-        //$countpolls = PollsModel::where('status', '=', 'Active')->count();
-
-        return view('home')->with('polls', $polls)->with('countpolls', $countpolls);
+        $activepolls = PollsModel::where('status', '=', 'active')->count();
+        
+        return view('home')
+        ->with('polls', $polls)
+        ->with('countpolls', $countpolls)
+        ->with('activepolls', $activepolls);
     }
 
     public function indexAdmin()

@@ -65,7 +65,11 @@
                               @csrf
                             <div class="column">
                               <div class="select">
-                                {{ Form::select('id_phase', ['1' => 'Phase 1', '2' => 'Phase 2', '3' => 'Phase 3'], null, ['class' => 'form-control', 'id' => 'id_phase']) }}
+                                {!! Form::select('id_phase', 
+                                ['1' => 'Phase 1', 
+                                '2' => 'Phase 2', 
+                                '3' => 'Phase 3'], 
+                                old('value', isset($phase->id_phase) ? $phase->id_phase : null ), ['class' => 'form-control', 'id' => 'id_phase']) !!}
                               </div>
                             </div>
                             </section>
@@ -103,9 +107,6 @@
         $(document).ready( function () {
 
           $('#pendings').DataTable();
-
-          
-          
 
       
         });
