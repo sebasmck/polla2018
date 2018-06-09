@@ -157,11 +157,25 @@
         @if(Auth()->user()->id_phase == 3)
             {{-- MENU --}}
         <div class="row justify-content-center">
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <div class="card">
                     <div class="card-header"><h4>{{ __('Menu') }}</h4></div>
                     <div class="card-body">
                         <div class="row">
+                            <div class="col-md-10 offset-md-1 ">
+                                 <div class="form-group">
+                                    <button type="" class="btn btn-primary" style="width: 100%;">
+                                        {{ __('Ranking and Poolwide picks') }}
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-10 offset-md-1 ">
+                                <div class="form-group">
+                                    <button type="" class="btn btn-primary" style="width: 100%;">
+                                        {{ __('Worldcup Results') }}
+                                    </button>
+                                </div>
+                            </div>
                             <div class="col-md-10 offset-md-1 ">
                                 <div class="form-group">
                                     <button type="" class="btn btn-primary" onclick="window.location='{{ route('rules') }}'" style="width: 100%;">
@@ -169,33 +183,21 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="col-md-10 offset-md-1 ">
-                                <div class="form-group">
-                                    <button type="" class="btn btn-primary" style="width: 100%;">
-                                        {{ __('Worldcup Results (starts June 12th)') }}
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="col-md-10 offset-md-1 ">
-                                 <div class="form-group">
-                                    <button type="" class="btn btn-primary" style="width: 100%;">
-                                        {{ __('Ranking and Poolwide picks') }}
-                                        <br>
-                                        {{(__('(starts June 12th)'))}}
-                                    </button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <div class="card">
                     <div class="card-header"><h4>{{ __('Prizes') }}</h4></div>
 
                     <div class="card-body">
                         <div class="row">
-                            
+                            <div style="line-height: 250%; font-size: 1.5em;" class="container">
+                                <b>1st place: </b> 300 * 0.3 * 0.95 * 0.8 = $ 68.40
+                                <br>
+                                <b>2nd place:</b> 300 * 0.3 * 0.95 * 0.2 = $17.10
+                            </div>
                         </div>
                     </div>
                 </div>
