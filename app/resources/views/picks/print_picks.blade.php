@@ -2035,9 +2035,11 @@
                         	</div>
                     	</div>
 
-                    	<div style="margin-left: 7%;" class="row">
+                        <br>
+
+                    	<div style="margin-left: 10%;" class="row">
                     		{{-- Second Stage --}}
-		                        <div class="card">
+		                        <div style="width: 800px;" class="card">
 		                            
 		                        
 		                            <div class="card-body-print">
@@ -2045,7 +2047,7 @@
 		                                    <div class="col-md-12">
 		                                    	<div class="row">
 			                                    	{{-- Round of 16 --}}
-				                                    <div class="col-md-2 second_sta">
+				                                    <div style="margin-left:7%;" class="col-md-2 second_sta">
 				                                        <div class="card">
 				                                            <div class="card-header-print">
 				                                                <div class="row">

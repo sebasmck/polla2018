@@ -61,7 +61,7 @@
                             <p class="modal-card-title">Set Phase</p>
                           </header>
                           <section class="modal-card-body">
-                            <form action="{{ route('changetophase')}}" method="POST">
+                            <form action="{{ route('changetophase')}}" onsubmit="return confirmChange()" method="POST">
                               @csrf
                             <div class="column">
                               <div class="select">
@@ -77,7 +77,7 @@
                               <button type="submit" class="button is-success">Save</button>
                             </form>
                             
-                            @if($phase->phase == 3)
+                            @if($phase->phase == 3 && Auth()->user()->email == 'admin@pollaworldcup.com')
                               <a href="{{route('picks.show', Auth::user()->id)}}" class="button is-info"> Enter Results</a>
                             @else
 
@@ -88,7 +88,6 @@
                     </div>
                   </section>
     </body>
-
 
     
 
@@ -112,8 +111,8 @@
         });
 
 
-        function confirmDelete() {
-            var result = confirm('Are you sure you want to delete?');
+        function confirmChange() {
+            var result = confirm('Please confirm change');
 
             if (result) {
                     return true;

@@ -75,7 +75,7 @@
                                         <tbody>
                                             @foreach ($polls as $poll)
 
-                                            @if(Auth()->user()->id_phase != 3)
+                                            @if(Auth()->user()->id_phase != 3 || Auth()->user()->id_phase == NULL)
 
                                             <tr>
                                                 <td>{{$poll->poll_name}}</td>
@@ -173,7 +173,7 @@
                             </div>
                             <div class="col-md-10 offset-md-1 ">
                                 <div class="form-group">
-                                    <a href="{{route('finalresults.show', 'testing1234')}}"><button type="" class="btn btn-primary" style="width: 100%;">
+                                    <a href="{{route('finalresults.show', 'finalresults')}}"><button type="" class="btn btn-primary" style="width: 100%;">
                                         {{ __('Worldcup Results') }}
                                     </button></a>
                                 </div>
