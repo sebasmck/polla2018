@@ -137,9 +137,11 @@
                                             </tr>
 
                                             @else
+                                            <tr>
                                                 <td>{{$poll->poll_name}}</td>
                                                 <td>score</td>
                                                 <td>1/300</td>
+                                            </tr>
                                             @endif
 
                                             @endforeach
