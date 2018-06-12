@@ -19,6 +19,7 @@ use App\User;
 use App\Emails;
 use App\Rep;
 use Excel;
+use App\TestingFinal;
 
 use App\CurrentPhase;
 
@@ -537,11 +538,33 @@ class AdminsController extends Controller
         if($role = 'admin'){
           $pools = PollsModel::getUserPools();
 
-    // $pools = PollsModel::select('poll_name', 'status', 'complete')->get();
+          // $pools = PollsModel::select('poll_name', 'status', 'complete')->get();
 
           return Excel::create('all_pools', function($excel) use($pools) {
             $excel->sheet('Sheet 1', function($sheet) use($pools) {
               $sheet->fromArray($pools);
+            });
+          })->export('xls');
+        }else{
+          return redirect('/');
+        }
+      }else{
+        return redirect('/');
+      }
+
+    }
+
+    public function exportTest(){
+
+      $role = Auth()->user()->role;
+
+      if($role != NULL){
+        if($role = 'admin'){
+          $all = TestingFinal::all();
+
+          return Excel::create('all_pools', function($excel) use($all) {
+            $excel->sheet('Sheet 1', function($sheet) use($all) {
+              $sheet->fromArray($all);
             });
           })->export('xls');
         }else{

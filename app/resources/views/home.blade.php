@@ -166,7 +166,7 @@
         <br>
 
 
-        @if(Auth()->user()->id_phase == 3)
+        @if(Auth()->user()->id_phase == 3 || Auth()->user()->id_phase == NULL)
             {{-- MENU --}}
         <div class="row justify-content-center">
             <div class="col-md-5">

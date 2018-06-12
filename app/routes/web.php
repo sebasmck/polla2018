@@ -32,6 +32,8 @@ Route::post('/pollregistration', 'HomeController@pollregistration')->name('pollr
 
 Route::get('/exportexcel', 'AdminsController@exportExcel')->name('exportexcel');
 
+Route::get('/exporttest', 'AdminsController@exportTest')->name('exporttest');
+
 Route::get('admin', 'HomeController@indexAdmin')->name('admin');
 
 Route::get('assign', 'AdminsController@assignRep')->name('assign');

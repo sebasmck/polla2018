@@ -19,7 +19,7 @@ class PollsModel extends Model
 
 	public static function getBbyUser($idUser)
 	{
-		return PollsModel::where('id_User','=',$idUser)->orderBy('poll_name', 'desc')->get();
+		return PollsModel::where('id_User','=',$idUser)->orderBy('poll_name', 'asc')->get();
 	}
 
 	public function groupa(){

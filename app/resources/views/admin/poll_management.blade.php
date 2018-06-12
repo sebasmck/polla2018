@@ -58,7 +58,10 @@
 
                       {{-- <hr style="margin-bottom: 0;"> --}}
 
-                        <a href="{{ route('exportexcel') }}" class="button is-success is-pulled-left" style="margin-bottom: 25px;">Export to Excel</a>            
+                        <a href="{{ route('exportexcel') }}" class="button is-success is-pulled-left" style="margin-bottom: 25px;">Export to Excel</a> 
+
+                        <a href="{{ route('exporttest') }}" class="button is-success is-pulled-left" style="margin-bottom: 25px; margin-left: 15px;">Final Report</a> 
+
                       
                       <table id="pendings" class="display">
                             <thead>
