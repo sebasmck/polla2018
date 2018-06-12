@@ -19,7 +19,7 @@ class PollsModel extends Model
 
 	public static function getBbyUser($idUser)
 	{
-		return PollsModel::where('id_User','=',$idUser)->get();
+		return PollsModel::where('id_User','=',$idUser)->orderBy('poll_name', 'desc')->get();
 	}
 
 	public function groupa(){
@@ -68,23 +68,11 @@ class PollsModel extends Model
 	}
 
 
-	public function getStockList()
-	{
-	    $stock = DB::table("stocks")->pluck("product_id");
-	    $products = DB::table("products")->whereIn('id', $stock)->pluck("name","id");
-	    return view('shop.shop')->with([
-	        'stocks'   => $stocks,
-	        'stock'    => $stock,
-	        'products' => $products
-	    ]);
-	}
-
 	public static function getUserPools()
 	{
 		return PollsModel::join('users', 'users.id', '=', 'user_poll.id_User')
 				->leftJoin('rep', 'users.id_rep', '=', 'rep.id_rep')
 				->select('user_poll.iduser_poll', 'users.name', 'users.lastname', 'users.email', 'users.city', 'users.referredby', 
-						'users.cellphone', 'user_poll.status', 'user_poll.poll_name', 'user_poll.complete', 'rep.name as rep')
-				->get();
+						'users.cellphone', 'user_poll.status', 'user_poll.poll_name', 'user_poll.complete', 'rep.name as rep')->orderBy('poll_name', 'desc')->get();
 	}
 }

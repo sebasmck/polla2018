@@ -39,7 +39,7 @@ class HomeController extends Controller
 
         if($role != NULL){
             if($role = 'admin'){
-                $allpolls = PollsModel::getUserPools()->orderBy('poll_name', 'desc');
+                $allpolls = PollsModel::getUserPools();
 
                 return view('admin.poll_management')->with('allpolls', $allpolls);
             }else{
