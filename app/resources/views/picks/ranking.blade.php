@@ -42,18 +42,18 @@
                                         <tbody>
                                             @foreach ($polls as $poll)
                                             @if(Auth()->user()->id == $poll->id_User)
-                                            <tr style="background: yellow;">
-                                                <td>#</td>
+                                            <tr style="border: solid 1px #004782; background-color: #ebe9ed;">
+                                                <td>{{$poll->ranking}}/{{$activepolls}}</td>
                                                 <td><a href="{{route('adminprintpicks.show', $poll->iduser_poll) }}">{{$poll->poll_name}}</a></td>
-                                                <td>#</td>
+                                                <td>{{$poll->score}}</td>
                                                 <td>#</td>
                                                 <td>{{$poll->finalWinner($poll->iduser_poll)}}</td>
                                             </tr>
                                             @else
                                             <tr>
-                                                <td>#</td>
+                                                <td>{{$poll->ranking}}/{{$activepolls}}</td>
                                                 <td><a href="{{route('adminprintpicks.show', $poll->iduser_poll) }}">{{$poll->poll_name}}</a></td>
-                                                <td>#</td>
+                                                <td>{{$poll->score}}</td>
                                                 <td>#</td>
                                                 <td>{{$poll->finalWinner($poll->iduser_poll)}}</td>
                                             </tr>
@@ -86,7 +86,8 @@
 
 <script>
     $(document).ready(function(){
-        $('#ranking').DataTable();
+        // $('#ranking').DataTable();
+        // $("#ranking").tablesorter({sortList: [[2,1], [1,1]]});
     });
 </script>
 

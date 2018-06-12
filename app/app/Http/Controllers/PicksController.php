@@ -20,6 +20,7 @@ use App\rivals;
 use App\SecondStage;
 use Illuminate\Support\Facades\Validator;
 use App\CurrentPhase;
+use App\Ranking_pools;
 
 use DB;
 
@@ -34,8 +35,9 @@ class PicksController extends Controller
 
     public function Ranking(){
 
-        $polls = PollsModel::where('status', '=', 'active')->get();
-        return view('picks.ranking')->with('polls', $polls);
+        $polls = Ranking_pools::where('status', '=', 'active')->get();
+        $activepolls = Ranking_pools::where('status', '=', 'active')->count();
+        return view('picks.ranking')->with('polls', $polls)->with('activepolls', $activepolls);
     }
 
     public function adminPick($id){
