@@ -86,7 +86,7 @@
                                     @endif
                                     </td>
                                     <td>
-                                      
+                                      <center> {{$user->allPools($user->id)}}</center> 
                                     </td>
                                     <td>
                                         <div class="col-md-6">

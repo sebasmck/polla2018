@@ -38,5 +38,9 @@ class User extends Authenticatable
     public static function getUserByEmail($email){
         return User::where('email', '=', $email)->get()->first();
     }
+
+    public function allPools($id){
+        return PollsModel::where('id_User', '=', $id)->count();
+    }
     
 }
