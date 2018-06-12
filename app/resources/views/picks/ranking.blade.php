@@ -44,7 +44,7 @@
                                             @if(Auth()->user()->id == $poll->id_User)
                                             <tr style="background: yellow;">
                                                 <td>#</td>
-                                                <td>{{$poll->poll_name}}</td>
+                                                <td><a href="{{route('adminprintpicks.show', $poll->iduser_poll) }}">{{$poll->poll_name}}</a></td>
                                                 <td>#</td>
                                                 <td>#</td>
                                                 <td>{{$poll->finalWinner($poll->iduser_poll)}}</td>
@@ -52,7 +52,7 @@
                                             @else
                                             <tr>
                                                 <td>#</td>
-                                                <td>{{$poll->poll_name}}</td>
+                                                <td><a href="{{route('adminprintpicks.show', $poll->iduser_poll) }}">{{$poll->poll_name}}</a></td>
                                                 <td>#</td>
                                                 <td>#</td>
                                                 <td>{{$poll->finalWinner($poll->iduser_poll)}}</td>

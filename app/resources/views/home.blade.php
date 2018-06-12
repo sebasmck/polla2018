@@ -59,6 +59,7 @@
                                             <tr>
                                                 <th>Nickname</th>
                                                 <th>Score</th>
+                                                <th>Print Picks</th>
                                                 <th>Ranking</th>
                                             </tr>
                                             @else
@@ -75,7 +76,7 @@
                                         <tbody>
                                             @foreach ($polls as $poll)
 
-                                            @if(Auth()->user()->id_phase != 3 || Auth()->user()->id_phase == NULL)
+                                            @if(Auth()->user()->id_phase != 3)
 
                                             <tr>
                                                 <td>{{$poll->poll_name}}</td>
@@ -140,7 +141,16 @@
                                             <tr>
                                                 <td>{{$poll->poll_name}}</td>
                                                 <td>score</td>
-                                                <td>1/300</td>
+                                                <td>
+                                                <div class="form-group row mb-0">
+                                                        <div class="col-md-12">
+                                                            <div class="control">
+                                                                <button class="btn btn-primary" onclick="window.location='{{ route('printpicks.show', $poll->iduser_poll) }}'">Print Picks</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>1/{{$activepolls}}</td>
                                             </tr>
                                             @endif
 
@@ -195,10 +205,12 @@
 
                     <div class="card-body">
                         <div class="row">
-                            <div style="line-height: 250%; font-size: 1.5em;" class="container">
-                                <b>1st place: </b> {{$activepolls}} x 0.3 x 0.95 x 0.8 = $ {{round(($activepolls * 0.3 * 0.95 * 0.8),2 )}} 
+                            <div style="line-height: 150%; font-size: 1.5em; " class="container">
+                                <center> <b>1st place: </b> $ {{round(($activepolls * 0.3 * 0.95 * 0.8),2 )}} </center>
                                 <br>
-                                <b>2nd place:</b> {{$activepolls}} x 0.3 x 0.95 x 0.2 = $ {{round(($activepolls * 0.3 * 0.95 * 0.2), 2)}} 
+                                <center>
+                                <b>2nd place:</b>  $ {{round(($activepolls * 0.3 * 0.95 * 0.2), 2)}} 
+                                </center>
                             </div>
                         </div>
                     </div>
