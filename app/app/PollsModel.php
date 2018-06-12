@@ -75,4 +75,9 @@ class PollsModel extends Model
 				->select('user_poll.iduser_poll', 'users.name', 'users.lastname', 'users.email', 'users.city', 'users.referredby', 
 						'users.cellphone', 'user_poll.status', 'user_poll.poll_name', 'user_poll.complete', 'rep.name as rep')->orderBy('poll_name', 'desc')->get();
 	}
+
+	public static function getBbyUserOrderByScore($idUser)
+	{
+		return PollsModel::where('id_User','=',$idUser)->orderBy('score', 'desc')->get();
+	}
 }

@@ -69,7 +69,7 @@
                                 ['1' => 'Phase 1', 
                                 '2' => 'Phase 2', 
                                 '3' => 'Phase 3'], 
-                                old('value', isset($phase->id_phase) ? $phase->id_phase : null ), ['class' => 'form-control', 'id' => 'id_phase']) !!}
+                                old('value', isset($phase->phase) ? $phase->phase : null ), ['class' => 'form-control', 'id' => 'id_phase']) !!}
                               </div>
                             </div>
                             </section>

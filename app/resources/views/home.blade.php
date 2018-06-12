@@ -59,8 +59,8 @@
                                             <tr>
                                                 <th>Nickname</th>
                                                 <th>Score</th>
-                                                <th>Print Picks</th>
                                                 <th>Ranking</th>
+                                                <th>Print Picks</th>
                                             </tr>
                                             @else
                                             <tr>
@@ -140,7 +140,8 @@
                                             @else
                                             <tr>
                                                 <td>{{$poll->poll_name}}</td>
-                                                <td>score</td>
+                                                <td>{{$poll->score}}</td>
+                                                <td>{{$poll->ranking}}/{{$activepolls}}</td>
                                                 <td>
                                                 <div class="form-group row mb-0">
                                                         <div class="col-md-12">
@@ -150,7 +151,7 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td>1/{{$activepolls}}</td>
+                                                
                                             </tr>
                                             @endif
 
@@ -344,6 +345,9 @@
             $('#myModal').modal('show');
             console.log('hola');
         @endif
+
+
+        $("#myTable").tablesorter({sortList: [[1,1], [0,1]]});
     });
 
 
