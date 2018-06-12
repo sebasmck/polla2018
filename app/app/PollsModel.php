@@ -73,7 +73,7 @@ class PollsModel extends Model
 		return PollsModel::join('users', 'users.id', '=', 'user_poll.id_User')
 				->leftJoin('rep', 'users.id_rep', '=', 'rep.id_rep')
 				->select('user_poll.iduser_poll', 'users.name', 'users.lastname', 'users.email', 'users.city', 'users.referredby', 
-						'users.cellphone', 'user_poll.status', 'user_poll.poll_name', 'user_poll.complete', 'rep.name as rep')->orderBy('poll_name', 'desc')->get();
+						'users.cellphone', 'user_poll.status', 'user_poll.poll_name', 'user_poll.complete', 'rep.name as rep')->orderBy('poll_name', 'asc')->get();
 	}
 
 	public static function getBbyUserOrderByScore($idUser)

@@ -16,11 +16,15 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <a style="float: left; margin-right: 15px;" href="{{route('home')}}"><button class="btn btn-primary" id="close"> < Home </button></a>
-                                <h5>{{ __('Printable Verision of my Picks') }} </h5>
+                                <h5>{{ __('Printable Version of my Picks') }} </h5>
                             </div>
-                           <div class="col-md-6" style="text-align: right;">
-                                <h5>{{ __('Nickname: ').$poll->poll_name }} </h5>
-                            </div>
+                            @if(Auth()->user()->role == '')
+
+                            @else
+                               <div class="col-md-6" style="text-align: right;">
+                                    <h5>{{ __('Nickname: ').$poll->poll_name }} </h5>
+                               </div>
+                           @endif
                         </div>
                     </div>
 
