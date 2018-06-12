@@ -29,8 +29,7 @@
                     <div class="card-body">
                          <div class="row">
                             <div class="col-md-12 table-responsive">
-                        
-                                <table id="myTable" class="table table_pool">
+                                <table id="ranking" class="table table_pool">
                                         <thead>
                                             <tr>
                                                 <th>Ranking</th>
@@ -41,15 +40,25 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            {{-- @foreach ($polls as $poll) --}}
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
+                                            @foreach ($polls as $poll)
+                                            @if(Auth()->user()->id == $poll->id_User)
+                                            <tr style="background: yellow;">
+                                                <td>#</td>
+                                                <td>{{$poll->poll_name}}</td>
+                                                <td>#</td>
+                                                <td>#</td>
+                                                <td>{{$poll->finalWinner($poll->iduser_poll)}}</td>
                                             </tr>
-                                            {{-- @endforeach --}}
+                                            @else
+                                            <tr>
+                                                <td>#</td>
+                                                <td>{{$poll->poll_name}}</td>
+                                                <td>#</td>
+                                                <td>#</td>
+                                                <td>{{$poll->finalWinner($poll->iduser_poll)}}</td>
+                                            </tr>
+                                            @endif
+                                            @endforeach
                                         </tbody>
                                 </table> 
                             </div>
@@ -76,7 +85,9 @@
 @include('admin.partials.js')
 
 <script>
-
+    $(document).ready(function(){
+        $('#ranking').DataTable();
+    });
 </script>
 
 

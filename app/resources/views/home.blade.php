@@ -378,7 +378,7 @@
               // toastr.warning(data.error);
               $.each( data.error, function( key, value ) {
                 toastr.warning(value);
-      // $(".print-error-msg-gestioncalidadsi").find("ul").append('<li>'+value+'</li>');
+                    // $(".print-error-msg-gestioncalidadsi").find("ul").append('<li>'+value+'</li>');
                 });
             }else{
               location.reload();

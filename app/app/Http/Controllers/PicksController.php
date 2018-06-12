@@ -4,9 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-
 use Auth;
-
 use App\PollsModel;
 use App\PickGroupA;
 use App\PickGroupB;
@@ -35,7 +33,9 @@ class PicksController extends Controller
     }
 
     public function Ranking(){
-        return view('picks.ranking');
+
+        $polls = PollsModel::where('status', '=', 'active')->get();
+        return view('picks.ranking')->with('polls', $polls);
     }
 
     public function adminPick($id){

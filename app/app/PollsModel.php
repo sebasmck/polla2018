@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\SecondStage;
 
 class PollsModel extends Model
 {
@@ -59,6 +60,23 @@ class PollsModel extends Model
 
 	public function secondStage(){
 		return $this->hasOne('App\SecondStage', 'id_poll', 'iduser_poll');
+	}
+
+	public function finalWinner($id){
+		$idwinner = SecondStage::where('id_poll', '=', $id)->value('winner');
+		return Team::where('id', '=', $idwinner)->value('team_name');
+	}
+
+
+	public function getStockList()
+	{
+	    $stock = DB::table("stocks")->pluck("product_id");
+	    $products = DB::table("products")->whereIn('id', $stock)->pluck("name","id");
+	    return view('shop.shop')->with([
+	        'stocks'   => $stocks,
+	        'stock'    => $stock,
+	        'products' => $products
+	    ]);
 	}
 
 	public static function getUserPools()
