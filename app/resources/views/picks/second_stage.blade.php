@@ -684,8 +684,8 @@
                                         @if (isset($ss->quarter_1))
                                         {!! Form::select('WRound1A2B', [
                                           '' => 'Pick a Team',
-                                          "$wa->id_winner_team" => "$wa->getTeamName($wa->id_winner_team)",
-                                          "$wb->id_winner_team" => "$wb->getTeamName($wb->id_winner_team)",
+                                          "$wa->id_winner_team" => "{$wa->getTeamName($wa->id_winner_team)}",
+                                          "$wb->id_winner_team" => "{$wb->getTeamName($wb->id_winner_team)}",
                                           ], old('value', isset($ss->quarter_1) ? $ss->quarter_1 : null ), [ 'class' =>  'form-control WRound1A2B', 'required', 'id' => 'WRound1A2B']) !!}
                                           @else
 
@@ -741,8 +741,8 @@
                                     @if (isset($ss->quarter_2))
                                     {!! Form::select('WRound1C2D', [
                                       '' => 'Pick a Team',
-                                      "$wc->id_winner_team" => "$wc->getTeamName($wc->id_winner_team)",
-                                      "$wd->id_winner_team" => "$wd->getTeamName($wd->id_winner_team)",
+                                      "$wc->id_winner_team" => "{$wc->getTeamName($wc->id_winner_team)}",
+                                      "$wd->id_winner_team" => "{$wd->getTeamName($wd->id_winner_team)}",
                                       ], old('value', isset($ss->quarter_2) ? $ss->quarter_2 : null ), [ 'class' =>  'form-control WRound1C2D', 'required', 'id' => 'WRound1C2D']) !!}
                                       @else
 
@@ -799,8 +799,8 @@
                                 @if (isset($ss->quarter_3))
                                 {!! Form::select('WRound1E2F', [
                                   '' => 'Pick a Team',
-                                  "$we->id_winner_team" => "$we->getTeamName($we->id_winner_team)",
-                                  "$wf->id_winner_team" => "$wf->getTeamName($wf->id_winner_team)",
+                                  "$we->id_winner_team" => "{$we->getTeamName($we->id_winner_team)}",
+                                  "$wf->id_winner_team" => "{$wf->getTeamName($wf->id_winner_team)}",
                                   ], old('value', isset($ss->quarter_3) ? $ss->quarter_3 : null ), [ 'class' =>  'form-control WRound1E2F', 'required', 'id' => 'WRound1E2F']) !!}
                                   @else
 
@@ -857,8 +857,8 @@
                             @if (isset($ss->quarter_4))
                             {!! Form::select('WRound1G2H', [
                               '' => 'Pick a Team',
-                              "$wg->id_winner_team" => "$wg->getTeamName($wg->id_winner_team)",
-                              "$winH->id_runnerup" => "$winH->team_rumup",
+                              "$wg->id_winner_team" => "{$wg->getTeamName($wg->id_winner_team)}",
+                              "$wh->id_runnerup" => "{$wh->getTeamName($wh->id_runnerup)}",
                               ], old('value', isset($ss->quarter_4) ? $ss->quarter_4 : null ), [ 'class' =>  'form-control WRound1G2H', 'required', 'id' => 'WRound1G2H']) !!}
                               @else
 
@@ -915,8 +915,8 @@
                             @if (isset($ss->quarter_5))
                             {!! Form::select('WRound1B2A', [
                               '' => 'Pick a Team',
-                              "$wb->id_runnerup" => "$wb->getTeamName($wb->id_runnerup)",
-                              "$wa->id_runnerup" => "$wa->getTeamName($wa->id_runnerup)",
+                              "$wb->id_runnerup" => "{$wb->getTeamName($wb->id_runnerup)}",
+                              "$wa->id_runnerup" => "{$wa->getTeamName($wa->id_runnerup)}",
                               ], old('value', isset($ss->quarter_5) ? $ss->quarter_5 : null ), [ 'class' =>  'form-control WRound1B2A', 'required', 'id' => 'WRound1B2A']) !!}
                               @else
 
@@ -972,8 +972,8 @@
                             @if (isset($ss->quarter_6))
                             {!! Form::select('WRound1D2C', [
                               '' => 'Pick a Team',
-                              "$wd->id_runnerup" => "$wd->getTeamName($wd->id_runnerup)",
-                              "$wc->id_runnerup" => "$wc->getTeamName($wc->id_runnerup)",
+                              "$wd->id_runnerup" => "{$wd->getTeamName($wd->id_runnerup)}",
+                              "$wc->id_runnerup" => "{$wc->getTeamName($wc->id_runnerup)}",
                               ], old('value', isset($ss->quarter_6) ? $ss->quarter_6 : null ), [ 'class' =>  'form-control WRound1D2C', 'required', 'id' => 'WRound1D2C']) !!}
                               @else
 
@@ -1030,8 +1030,8 @@
                             @if (isset($ss->quarter_7))
                             {!! Form::select('WRound1F2E', [
                               '' => 'Pick a Team',
-                              "$wf->id_runnerup" => "$wf->getTeamName($wf->id_runnerup)",
-                              "$we->id_runnerup" => "$we->getTeamName($we->id_runnerup)",
+                              "$wf->id_runnerup" => "{$wf->getTeamName($wf->id_runnerup)}",
+                              "$we->id_runnerup" => "{$we->getTeamName($we->id_runnerup)}",
                               ], old('value', isset($ss->quarter_7) ? $ss->quarter_7 : null ), [ 'class' =>  'form-control WRound1F2E', 'required', 'id' => 'WRound1F2E']) !!}
                               @else
 
@@ -1087,8 +1087,8 @@
                             @if (isset($ss->quarter_8))
                             {!! Form::select('WRound1H2G', [
                               '' => 'Pick a Team',
-                              "$wh->id_runnerup" => "$wh->getTeamName($wh->id_runnerup)",
-                              "$wg->id_runnerup" => "$wg->getTeamName($wg->id_runnerup)",
+                              "$wh->id_runnerup" => "{$wh->getTeamName($wh->id_runnerup)}",
+                              "$wg->id_runnerup" => "{$wg->getTeamName($wg->id_runnerup)}",
                               ], old('value', isset($ss->quarter_8) ? $ss->quarter_8 : null ), [ 'class' =>  'form-control WRound1H2G', 'required', 'id' => 'WRound1H2G']) !!}
                               @else
 
