@@ -692,9 +692,9 @@
                                           <select class="form-control WRound1A2B" id="WRound1A2B" name="WRound1A2B">
                                             <option>Pick a Team...</option>
                                             @if($winA != null && $winB != null)
-                                            <option value="{{$winA->id_winner_team}}">{{$winA->team_name}}</option>
+                                            <option value="{{$wa->id_winner_team}}">{{$wa->getTeamName($wa->id_winner_team)}}</option>
 
-                                            <option value="{{$winB->id_runnerup}}">{{$winB->team_rumup}}</option>
+                                            <option value="{{$wb->id_winner_team}}">{{$wb->getTeamName($wb->id_winner_team)}}</option>
                                             @endif
                                         </select>
                                         @endif

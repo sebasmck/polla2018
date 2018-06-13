@@ -1131,6 +1131,7 @@ class PicksController extends Controller
             PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Complete'));
 
             DB::select("call scores()");
+            
             return response()->json($stage);
         }else{
             $validator = Validator::make($req->all(), [
