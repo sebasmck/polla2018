@@ -58,7 +58,7 @@ class HomeController extends Controller
     public function index()
     {
         $id_user = auth()->user()->id;
-        $polls = PollsModel::getBbyUser($id_user);
+        $polls = Ranking_pools::getBbyUser($id_user);
         $countpolls = PollsModel::all()->count();
         $activepolls = PollsModel::where('status', '=', 'active')->count();
         

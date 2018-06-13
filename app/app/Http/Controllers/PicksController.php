@@ -36,7 +36,9 @@ class PicksController extends Controller
     public function Ranking(){
 
         $polls = Ranking_pools::where('status', '=', 'active')->get();
+        //$polls = Ranking_pools::ranking();
         $activepolls = Ranking_pools::where('status', '=', 'active')->count();
+
         return view('picks.ranking')->with('polls', $polls)->with('activepolls', $activepolls);
     }
 

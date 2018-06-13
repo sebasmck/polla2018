@@ -46,7 +46,7 @@
                                                 <td>{{$poll->ranking}}/{{$activepolls}}</td>
                                                 <td><a href="{{route('adminprintpicks.show', $poll->iduser_poll) }}">{{$poll->poll_name}}</a></td>
                                                 <td>{{$poll->score}}</td>
-                                                <td>#</td>
+                                                <td>{{$poll->finalFinalist($poll->iduser_poll)}}</td>
                                                 <td>{{$poll->finalWinner($poll->iduser_poll)}}</td>
                                             </tr>
                                             @else
@@ -54,7 +54,7 @@
                                                 <td>{{$poll->ranking}}/{{$activepolls}}</td>
                                                 <td><a href="{{route('adminprintpicks.show', $poll->iduser_poll) }}">{{$poll->poll_name}}</a></td>
                                                 <td>{{$poll->score}}</td>
-                                                <td>#</td>
+                                                <td>{{$poll->finalFinalist($poll->iduser_poll)}}</td>
                                                 <td>{{$poll->finalWinner($poll->iduser_poll)}}</td>
                                             </tr>
                                             @endif
