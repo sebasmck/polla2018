@@ -94,6 +94,7 @@ class SecondStageController extends Controller
         $winG = Clasificado::teamsClasificadosWin($iduser_poll,7);
         $winH = Clasificado::teamsClasificadosWin($iduser_poll,8);
 
+        // whether or not these are empty
         
         // second stage results
 

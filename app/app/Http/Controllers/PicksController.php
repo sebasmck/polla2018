@@ -172,6 +172,7 @@ class PicksController extends Controller
              ]);
 
 
+
             if($clasificadogroupa->wasChanged()) {
                PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Incomplete'));
             }
@@ -198,6 +199,8 @@ class PicksController extends Controller
                 'M6A3' => $req->M6A3,
                 'complete' => 1,
              ]);
+
+        DB::select("call scores()");
         
         return response()->json($pick);
 
@@ -263,7 +266,7 @@ class PicksController extends Controller
                 'complete' => 1,
              ]);
 
-        
+        DB::select("call scores()");
 
         return response()->json($pick);
 
@@ -319,6 +322,8 @@ class PicksController extends Controller
                 'complete' => 1,
 
              ]);
+
+            DB::select("call scores()");
             return response()->json($pick);
         }else{
             $validator = Validator::make($req->all(), [
@@ -379,7 +384,7 @@ class PicksController extends Controller
 
              ]);
 
-        
+            DB::select("call scores()");
         
             return response()->json($pick);
         }else{
@@ -435,7 +440,8 @@ class PicksController extends Controller
 
              ]);
 
-       
+            DB::select("call scores()");
+
             return response()->json($pick);
         }else{
 
@@ -499,6 +505,7 @@ class PicksController extends Controller
 
              ]);
 
+            DB::select("call scores()");
        
             return response()->json($pick);
         }else{
@@ -552,6 +559,8 @@ class PicksController extends Controller
                 'complete' => 1,
 
              ]);
+
+            DB::select("call scores()");
 
             return response()->json($pick);
         }else{
@@ -613,6 +622,9 @@ class PicksController extends Controller
 
              ]);
 
+
+             DB::select("call scores()");
+
             return response()->json($pick);
         }else{
             return response()->json(['error'=>'All fields Are Required']);
@@ -667,6 +679,7 @@ class PicksController extends Controller
                 'complete' => 1,
 
              ]);
+        DB::select("call scores()");
 
             return response()->json($pick);
         }else{
@@ -729,7 +742,7 @@ class PicksController extends Controller
                 'complete' => 1,
 
              ]);
-
+            DB::select("call scores()");
             return response()->json($pick);
         }else{
             return response()->json(['error'=>'All fields Are Required']);
@@ -782,7 +795,7 @@ class PicksController extends Controller
                 'complete' => 1,
 
              ]);
-              
+              DB::select("call scores()");
             return response()->json($pick);
         }else{
             $validator = Validator::make($req->all(), [
@@ -842,7 +855,7 @@ class PicksController extends Controller
                 'complete' => 1,
 
              ]);
-              
+              DB::select("call scores()");
             return response()->json($pick);
         }else{
             return response()->json(['error'=>'All fields Are Required']);
@@ -896,7 +909,7 @@ class PicksController extends Controller
                 'complete' => 1,
 
              ]);
-
+            DB::select("call scores()");
             return response()->json($pick);
         }else{
             $validator = Validator::make($req->all(), [
@@ -957,7 +970,7 @@ class PicksController extends Controller
                 'complete' => 1,
 
              ]);
-
+            DB::select("call scores()");
             return response()->json($pick);
         }else{
             return response()->json(['error'=>'All fields Are Required']);
@@ -1009,7 +1022,8 @@ class PicksController extends Controller
                 'M6H3' => $req->M6H3,
                 'complete' => 1,
 
-             ]);      
+             ]);
+            DB::select("call scores()");
             return response()->json($pick);
         }else{
             $validator = Validator::make($req->all(), [
@@ -1069,6 +1083,7 @@ class PicksController extends Controller
                 'complete' => 1,
 
              ]);      
+            DB::select("call scores()");
             return response()->json($pick);
          }else{
             return response()->json(['error'=>'All fields Are Required']);
@@ -1113,7 +1128,7 @@ class PicksController extends Controller
 
             PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Complete'));
 
-            
+            DB::select("call scores()");
             return response()->json($stage);
         }else{
             $validator = Validator::make($req->all(), [
@@ -1164,6 +1179,7 @@ class PicksController extends Controller
 
             PollsModel::where('iduser_poll', $req->id_poll)->update(array('complete' => 'Complete'));
 
+            DB::select("call scores()");
             
             return response()->json($stage);
 

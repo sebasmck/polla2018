@@ -62,7 +62,7 @@
 
                                     <table class="display table_second_stage">
                                         <tbody>
-                                           @if($winA == null)
+                                           @if($wa->id_winner_team == null)
                                             <tr>
                                                 <td style="width: 30%; height: 30px;"></td>
                                                 <td style="width: 70%; height: 30px;"></td>
@@ -72,14 +72,14 @@
                                                 <td style="width: 30%; height: 30px;">
                                                     <div class="row">
                                                         <div class="col-md-12">
-                                                            <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winA->team_name)).'.png'}}">
+                                                            <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wa->getTeamName($wa->id_winner_team))).'.png'}}">
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td style="width: 70%; height: 30px;">
                                                     <div class="row">
                                                         <div class="col-md-12" >
-                                                            <label>{{$winA->team_name}}</label>
+                                                            <label>{{$wa->getTeamName($wa->id_winner_team)}}</label>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -97,7 +97,7 @@
                                 <div class="col-md-12">
                                     <table class="display table_second_stage">
                                         <tbody>
-                                            @if($winB == null)
+                                            @if($wb->id_winner_team == null)
                                             <tr>
                                                 <td style="width: 30%; height: 30px;"></td>
                                                 <td style="width: 70%; height: 30px;"></td>
@@ -107,14 +107,14 @@
                                                 <td style="width: 30%; height: 30px;">
                                                     <div class="row">
                                                         <div class="col-md-12">
-                                                            <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winB->team_rumup)).'.png'}}">
+                                                            <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wb->getTeamName($wb->id_winner_team))).'.png'}}">
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td style="width: 70%; height: 30px;">
                                                     <div class="row">
                                                         <div class="col-md-12" >
-                                                            <label>{{$winB->team_rumup}}</label>
+                                                            <label>{{$wb->getTeamName($wb->id_winner_team)}}</label>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -352,7 +352,7 @@
 
                     <table class="display table_second_stage">
                         <tbody>
-                           @if($winB == null)
+                           @if($wb->id_runnerup == null)
                            <tr>
                             <td style="width: 30%; height: 30px;"></td>
                             <td style="width: 70%; height: 30px;"></td>
@@ -362,14 +362,14 @@
                             <td style="width: 30%; height: 30px;">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winB->team_name)).'.png'}}">
+                                        <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wb->getTeamName($wb->id_runnerup))).'.png'}}">
                                     </div>
                                 </div>
                             </td>
                             <td style="width: 70%; height: 30px;">
                                 <div class="row">
                                     <div class="col-md-12" >
-                                        <label>{{$winB->team_name}}</label>
+                                        <label>{{$wb->getTeamName($wb->id_runnerup)}}</label>
                                     </div>
                                 </div>
                             </td>
@@ -388,7 +388,7 @@
             <div class="col-md-12">
                 <table class="display table_second_stage">
                     <tbody>
-                        @if($winA == null)
+                        @if($wa->id_runnerup == NULL)
                         <tr>
                             <td style="width: 30%; height: 30px;"></td>
                             <td style="width: 70%; height: 30px;"></td>
@@ -398,14 +398,14 @@
                             <td style="width: 30%; height: 30px;">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winA->team_rumup)).'.png'}}">
+                                        <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wa->getTeamName($wa->id_runnerup))).'.png'}}">
                                     </div>
                                 </div>
                             </td>
                             <td style="width: 70%; height: 30px;">
                                 <div class="row">
                                     <div class="col-md-12" >
-                                        <label>{{$winA->team_rumup}}</label>
+                                        <label>{{$wa->getTeamName($wa->id_runnerup)}}</label>
                                     </div>
                                 </div>
                             </td>

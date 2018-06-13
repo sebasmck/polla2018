@@ -38,4 +38,8 @@ class Clasificado extends Model
 	public static function GetbyPool($idpoll){
 		return Clasificado::where('id_poll','=',$idpoll)->get();
 	}
+
+	public static function getTeamName($id){
+		return Team::where('id', '=', $id)->value('team_name');
+	}
 }
