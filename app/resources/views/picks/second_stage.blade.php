@@ -97,7 +97,7 @@
                                 <div class="col-md-12">
                                     <table class="display table_second_stage">
                                         <tbody>
-                                            @if(empty($wb->id_winner_team) || $wb->id_winner_team == NULL)
+                                            @if(empty($wb->id_runnerup) || $wb->id_runnerup == NULL)
                                             <tr>
                                                 <td style="width: 30%; height: 30px;"></td>
                                                 <td style="width: 70%; height: 30px;"></td>
@@ -107,14 +107,14 @@
                                                 <td style="width: 30%; height: 30px;">
                                                     <div class="row">
                                                         <div class="col-md-12">
-                                                            <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wb->getTeamName($wb->id_winner_team))).'.png'}}">
+                                                            <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wb->getTeamName($wb->id_runnerup))).'.png'}}">
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td style="width: 70%; height: 30px;">
                                                     <div class="row">
                                                         <div class="col-md-12" >
-                                                            <label>{{$wb->getTeamName($wb->id_winner_team)}}</label>
+                                                            <label>{{$wb->getTeamName($wb->id_runnerup)}}</label>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -170,7 +170,7 @@
                             <div class="col-md-12">
                                 <table class="display table_second_stage">
                                     <tbody>
-                                        @if(empty($wd->id_winner_team) || $wd->id_winner_team == NULL)
+                                        @if(empty($wd->id_runnerup) || $wd->id_runnerup == NULL)
                                         <tr>
                                             <td style="width: 30%; height: 30px;"></td>
                                             <td style="width: 70%; height: 30px;"></td>
@@ -181,14 +181,14 @@
                                             <td style="width: 30%; height: 30px;">
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wd->getTeamName($wd->id_winner_team))).'.png'}}">
+                                                        <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wd->getTeamName($wd->id_runnerup))).'.png'}}">
                                                     </div>
                                                 </div>
                                             </td>
                                             <td style="width: 70%; height: 30px;">
                                                 <div class="row">
                                                     <div class="col-md-12" >
-                                                        <label>{{$wd->getTeamName($wd->id_winner_team)}}</label>
+                                                        <label>{{$wd->getTeamName($wd->id_runnerup)}}</label>
                                                     </div>
                                                 </div>
                                             </td>
@@ -244,7 +244,7 @@
                     <div class="col-md-12">
                         <table class="display table_second_stage">
                             <tbody>
-                                @if(empty($wf->id_winner_team) || $wf->id_winner_team == NULL)
+                                @if(empty($wf->id_runnerup) || $wf->id_runnerup == NULL)
                                 <tr>
                                     <td style="width: 30%; height: 30px;"></td>
                                     <td style="width: 70%; height: 30px;"></td>
@@ -254,14 +254,14 @@
                                     <td style="width: 30%; height: 30px;">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wf->getTeamName($wf->id_winner_team))).'.png'}}">
+                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wf->getTeamName($wf->id_runnerup))).'.png'}}">
                                             </div>
                                         </div>
                                     </td>
                                     <td style="width: 70%; height: 30px;">
                                         <div class="row">
                                             <div class="col-md-12" >
-                                                <label>{{$wf->getTeamName($wf->id_winner_team)}}</label>
+                                                <label>{{$wf->getTeamName($wf->id_runnerup)}}</label>
                                             </div>
                                         </div>
                                     </td>
@@ -316,7 +316,7 @@
                 <div class="col-md-12">
                     <table class="display table_second_stage">
                         <tbody>
-                            @if(empty($wh->id_winner_team) || $wh->id_winner_team == NULL)
+                            @if(empty($wh->id_runnerup) || $wh->id_winner_team == NULL)
                             <tr>
                                 <td style="width: 30%; height: 30px;"></td>
                                 <td style="width: 70%; height: 30px;"></td>
@@ -326,14 +326,14 @@
                                 <td style="width: 30%; height: 30px;">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winH->team_rumup)).'.png'}}">
+                                            <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wh->getTeamName($wh->id_runnerup))).'.png'}}">
                                         </div>
                                     </div>
                                 </td>
                                 <td style="width: 70%; height: 30px;">
                                     <div class="row">
                                         <div class="col-md-12" >
-                                            <label>{{$winH->team_rumup}}</label>
+                                            <label>{{$wh->getTeamName($wh->id_runnerup)}}</label>
                                         </div>
                                     </div>
                                 </td>
@@ -352,44 +352,8 @@
 
                     <table class="display table_second_stage">
                         <tbody>
-                           @if(empty($wb->id_runnerup) || $wb->id_runnerup == NULL)
+                           @if(empty($wa->id_runnerup) || $wa->id_runnerup == NULL)
                            <tr>
-                            <td style="width: 30%; height: 30px;"></td>
-                            <td style="width: 70%; height: 30px;"></td>
-                        </tr>
-                        @else
-                        <tr>
-                            <td style="width: 30%; height: 30px;">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wb->getTeamName($wb->id_runnerup))).'.png'}}">
-                                    </div>
-                                </div>
-                            </td>
-                            <td style="width: 70%; height: 30px;">
-                                <div class="row">
-                                    <div class="col-md-12" >
-                                        <label>{{$wb->getTeamName($wb->id_runnerup)}}</label>
-                                    </div>
-                                </div>
-                            </td>
-
-                        </tr>
-                        @endif
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <div style="height: 10px;"></div>
-
-        {{-- 2A --}}
-        <div class="row">
-            <div class="col-md-12">
-                <table class="display table_second_stage">
-                    <tbody>
-                        @if(empty($wa->id_runnerup) || $wa->id_runnerup == NULL)
-                        <tr>
                             <td style="width: 30%; height: 30px;"></td>
                             <td style="width: 70%; height: 30px;"></td>
                         </tr>
@@ -417,6 +381,42 @@
             </div>
         </div>
 
+        <div style="height: 10px;"></div>
+
+        {{-- 2A --}}
+        <div class="row">
+            <div class="col-md-12">
+                <table class="display table_second_stage">
+                    <tbody>
+                        @if(empty($wb->id_winner_team) || $wb->id_winner_team == NULL)
+                        <tr>
+                            <td style="width: 30%; height: 30px;"></td>
+                            <td style="width: 70%; height: 30px;"></td>
+                        </tr>
+                        @else
+                        <tr>
+                            <td style="width: 30%; height: 30px;">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wb->getTeamName($wb->id_winner_team))).'.png'}}">
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width: 70%; height: 30px;">
+                                <div class="row">
+                                    <div class="col-md-12" >
+                                        <label>{{$wb->getTeamName($wb->id_winner_team)}}</label>
+                                    </div>
+                                </div>
+                            </td>
+
+                        </tr>
+                        @endif
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
         <hr>
 
         {{-- 1D --}}
@@ -425,43 +425,8 @@
 
                 <table class="display table_second_stage">
                     <tbody>
-                       @if(empty($wd->id_runnerup) || $wd->id_runnerup == NULL)
+                       @if(empty($wc->id_runnerup) || $wc->id_runnerup == NULL)
                        <tr>
-                        <td style="width: 30%; height: 30px;"></td>
-                        <td style="width: 70%; height: 30px;"></td>
-                    </tr>
-                    @else
-                    <tr>
-                        <td style="width: 30%; height: 30px;">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wd->getTeamName($wd->id_runnerup))).'.png'}}">
-                                </div>
-                            </div>
-                        </td>
-                        <td style="width: 70%; height: 30px;">
-                            <div class="row">
-                                <div class="col-md-12" >
-                                    <label>{{$wd->getTeamName($wd->id_runnerup)}}</label>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    @endif
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <div style="height: 10px;"></div>
-
-    {{-- 2C --}}
-    <div class="row">
-        <div class="col-md-12">
-            <table class="display table_second_stage">
-                <tbody>
-                    @if(empty($wc->id_runnerup) || $wc->id_runnerup == NULL)
-                    <tr>
                         <td style="width: 30%; height: 30px;"></td>
                         <td style="width: 70%; height: 30px;"></td>
                     </tr>
@@ -488,6 +453,41 @@
         </div>
     </div>
 
+    <div style="height: 10px;"></div>
+
+    {{-- 2C --}}
+    <div class="row">
+        <div class="col-md-12">
+            <table class="display table_second_stage">
+                <tbody>
+                    @if(empty($wd->id_winner_team) || $wd->id_winner_team == NULL)
+                    <tr>
+                        <td style="width: 30%; height: 30px;"></td>
+                        <td style="width: 70%; height: 30px;"></td>
+                    </tr>
+                    @else
+                    <tr>
+                        <td style="width: 30%; height: 30px;">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wd->getTeamName($wd->id_winner_team))).'.png'}}">
+                                </div>
+                            </div>
+                        </td>
+                        <td style="width: 70%; height: 30px;">
+                            <div class="row">
+                                <div class="col-md-12" >
+                                    <label>{{$wd->getTeamName($wd->id_winner_team)}}</label>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    @endif
+                </tbody>
+            </table>
+        </div>
+    </div>
+
     <hr>
 
     {{-- 1F --}}
@@ -496,44 +496,8 @@
 
             <table class="display table_second_stage">
                 <tbody>
-                   @if(empty($wf->id_runnerup) || $wf->id_runnerup == NULL)
+                   @if(empty($we->id_runnerup) || $we->id_runnerup == NULL)
                    <tr>
-                    <td style="width: 30%; height: 30px;"></td>
-                    <td style="width: 70%; height: 30px;"></td>
-                </tr>
-                @else
-                <tr>
-                    <td style="width: 30%; height: 30px;">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wf->getTeamName($wf->id_runnerup))).'.png'}}">
-                            </div>
-                        </div>
-                    </td>
-                    <td style="width: 70%; height: 30px;">
-                        <div class="row">
-                            <div class="col-md-12" >
-                                <label>{{$wf->getTeamName($wf->id_runnerup)}}</label>
-                            </div>
-                        </div>
-                    </td>
-
-                </tr>
-                @endif
-            </tbody>
-        </table>
-    </div>
-</div>
-
-<div style="height: 10px;"></div>
-
-{{-- 2E --}}
-<div class="row">
-    <div class="col-md-12">
-        <table class="display table_second_stage">
-            <tbody>
-                @if(empty($we->id_runnerup) || $we->id_runnerup == NULL)
-                <tr>
                     <td style="width: 30%; height: 30px;"></td>
                     <td style="width: 70%; height: 30px;"></td>
                 </tr>
@@ -561,6 +525,42 @@
     </div>
 </div>
 
+<div style="height: 10px;"></div>
+
+{{-- 2E --}}
+<div class="row">
+    <div class="col-md-12">
+        <table class="display table_second_stage">
+            <tbody>
+                @if(empty($wf->id_winner_team) || $wf->id_winner_team == NULL)
+                <tr>
+                    <td style="width: 30%; height: 30px;"></td>
+                    <td style="width: 70%; height: 30px;"></td>
+                </tr>
+                @else
+                <tr>
+                    <td style="width: 30%; height: 30px;">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wf->getTeamName($wf->id_winner_team))).'.png'}}">
+                            </div>
+                        </div>
+                    </td>
+                    <td style="width: 70%; height: 30px;">
+                        <div class="row">
+                            <div class="col-md-12" >
+                                <label>{{$wf->getTeamName($wf->id_winner_team)}}</label>
+                            </div>
+                        </div>
+                    </td>
+
+                </tr>
+                @endif
+            </tbody>
+        </table>
+    </div>
+</div>
+
 <hr>
 
 {{-- 1H --}}
@@ -569,7 +569,7 @@
 
         <table class="display table_second_stage">
             <tbody>
-               @if(empty($wh->id_runnerup) || $wh->id_runnerup == NULL)
+               @if(empty($wg->id_runnerup) || $wg->id_runnerup == NULL)
                <tr>
                 <td style="width: 30%; height: 30px;"></td>
                 <td style="width: 70%; height: 30px;"></td>
@@ -579,14 +579,14 @@
                 <td style="width: 30%; height: 30px;">
                     <div class="row">
                         <div class="col-md-12">
-                            <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wh->getTeamName($wh->id_runnerup))).'.png'}}">
+                            <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wg->getTeamName($wg->id_runnerup))).'.png'}}">
                         </div>
                     </div>
                 </td>
                 <td style="width: 70%; height: 30px;">
                     <div class="row">
                         <div class="col-md-12" >
-                            <label>{{$wh->getTeamName($wh->id_runnerup)}}</label>
+                            <label>{{$wg->getTeamName($wg->id_runnerup)}}</label>
                         </div>
                     </div>
                 </td>
@@ -605,7 +605,7 @@
     <div class="col-md-12">
         <table class="display table_second_stage">
             <tbody>
-                @if(empty($wg->id_runnerup) || $wg->id_runnerup == NULL)
+                @if(empty($wh->id_winner_team) || $wh->id_winner_team == NULL)
                 <tr>
                     <td style="width: 23%; height: 30px;"></td>
                     <td style="width: 50%; height: 30px;"></td>
@@ -615,14 +615,14 @@
                     <td style="width: 30%; height: 30px;">
                         <div class="row">
                             <div class="col-md-12">
-                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wg->getTeamName($wg->id_runnerup))).'.png'}}">
+                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wh->getTeamName($wh->id_winner_team))).'.png'}}">
                             </div>
                         </div>
                     </td>
                     <td style="width: 70%; height: 30px;">
                         <div class="row">
                             <div class="col-md-12" >
-                                <label>{{$wg->getTeamName($wg->id_runnerup)}}</label>
+                                <label>{{$wh->getTeamName($wh->id_winner_team)}}</label>
                             </div>
                         </div>
                     </td>
@@ -685,7 +685,7 @@
                                         {!! Form::select('WRound1A2B', [
                                           '' => 'Pick a Team',
                                           "$wa->id_winner_team" => "{$wa->getTeamName($wa->id_winner_team)}",
-                                          "$wb->id_winner_team" => "{$wb->getTeamName($wb->id_winner_team)}",
+                                          "$wb->id_runnerup" => "{$wb->getTeamName($wb->id_runnerup)}",
                                           ], old('value', isset($ss->quarter_1) ? $ss->quarter_1 : null ), [ 'class' =>  'form-control WRound1A2B', 'required', 'id' => 'WRound1A2B']) !!}
                                           @else
 
@@ -694,7 +694,7 @@
                                             @if($winA != null && $winB != null)
                                             <option value="{{$wa->id_winner_team}}">{{$wa->getTeamName($wa->id_winner_team)}}</option>
 
-                                            <option value="{{$wb->id_winner_team}}">{{$wb->getTeamName($wb->id_winner_team)}}</option>
+                                            <option value="{{$wb->id_runnerup}}">{{$wb->getTeamName($wb->id_runnerup)}}</option>
                                             @endif
                                         </select>
                                         @endif
@@ -742,7 +742,7 @@
                                     {!! Form::select('WRound1C2D', [
                                       '' => 'Pick a Team',
                                       "$wc->id_winner_team" => "{$wc->getTeamName($wc->id_winner_team)}",
-                                      "$wd->id_winner_team" => "{$wd->getTeamName($wd->id_winner_team)}",
+                                      "$wd->id_runnerup" => "{$wd->getTeamName($wd->id_runnerup)}",
                                       ], old('value', isset($ss->quarter_2) ? $ss->quarter_2 : null ), [ 'class' =>  'form-control WRound1C2D', 'required', 'id' => 'WRound1C2D']) !!}
                                       @else
 
@@ -750,7 +750,7 @@
                                         <option>Pick a Team...</option>
                                         @if($winC != null && $winD != null)
                                         <option value="{{$wc->id_winner_team}}">{{$wc->getTeamName($wc->id_winner_team)}}</option>
-                                        <option value="{{$wd->id_winner_team}}">{{$wd->getTeamName($wd->id_winner_team)}}</option>
+                                        <option value="{{$wd->id_runnerup}}">{{$wd->getTeamName($wd->id_runnerup)}}</option>
                                         @endif
                                     </select>
                                     @endif
@@ -800,7 +800,7 @@
                                 {!! Form::select('WRound1E2F', [
                                   '' => 'Pick a Team',
                                   "$we->id_winner_team" => "{$we->getTeamName($we->id_winner_team)}",
-                                  "$wf->id_winner_team" => "{$wf->getTeamName($wf->id_winner_team)}",
+                                  "$wf->id_runnerup" => "{$wf->getTeamName($wf->id_runnerup)}",
                                   ], old('value', isset($ss->quarter_3) ? $ss->quarter_3 : null ), [ 'class' =>  'form-control WRound1E2F', 'required', 'id' => 'WRound1E2F']) !!}
                                   @else
 
@@ -808,7 +808,7 @@
                                     <option>Pick a Team...</option>
                                     @if($winE != null && $winF != null)
                                     <option value="{{$we->id_winner_team}}">{{$we->getTeamName($we->id_winner_team)}}</option>
-                                    <option value="{{$wf->id_winner_team}}">{{$wf->getTeamName($wf->id_winner_team)}}</option>
+                                    <option value="{{$wf->id_runnerup}}">{{$wf->getTeamName($wf->id_runnerup)}}</option>
                                     @endif
                                 </select>
                                 @endif
@@ -915,16 +915,16 @@
                             @if (isset($ss->quarter_5))
                             {!! Form::select('WRound1B2A', [
                               '' => 'Pick a Team',
-                              "$wb->id_runnerup" => "{$wb->getTeamName($wb->id_runnerup)}",
                               "$wa->id_runnerup" => "{$wa->getTeamName($wa->id_runnerup)}",
+                              "$wb->id_winner_team" => "{$wb->getTeamName($wb->id_winner_team)}",
                               ], old('value', isset($ss->quarter_5) ? $ss->quarter_5 : null ), [ 'class' =>  'form-control WRound1B2A', 'required', 'id' => 'WRound1B2A']) !!}
                               @else
 
                               <select class="form-control WRound1B2A" id="WRound1B2A" name="WRound1B2A">
                                 <option>Pick a Team...</option>
                                 @if($winB != null && $winA != null)
-                                <option value="{{$wb->id_runnerup}}">{{$wb->getTeamName($wb->id_runnerup)}}</option>
                                 <option value="{{$wa->id_runnerup}}">{{$wa->getTeamName($wa->id_runnerup)}}</option>
+                                <option value="{{$wb->id_winner_team}}">{{$wb->getTeamName($wb->id_winner_team)}}</option>
                                 @endif
                             </select>
                             @endif
@@ -972,16 +972,16 @@
                             @if (isset($ss->quarter_6))
                             {!! Form::select('WRound1D2C', [
                               '' => 'Pick a Team',
-                              "$wd->id_runnerup" => "{$wd->getTeamName($wd->id_runnerup)}",
                               "$wc->id_runnerup" => "{$wc->getTeamName($wc->id_runnerup)}",
+                              "$wd->id_winner_team" => "{$wd->getTeamName($wd->id_winner_team)}",
                               ], old('value', isset($ss->quarter_6) ? $ss->quarter_6 : null ), [ 'class' =>  'form-control WRound1D2C', 'required', 'id' => 'WRound1D2C']) !!}
                               @else
 
                               <select class="form-control WRound1D2C" id="WRound1D2C" name="WRound1D2C">
                                 <option>Pick a Team...</option>
                                 @if($winD != null && $winC != null)
-                                <option value="{{$wd->id_runnerup}}">{{$wd->getTeamName($wd->id_runnerup)}}</option>
                                 <option value="{{$wc->id_runnerup}}">{{$wc->getTeamName($wc->id_runnerup)}}</option>
+                                <option value="{{$wd->id_winner_team}}">{{$wd->getTeamName($wd->id_winner_team)}}</option>
                                 @endif
                             </select>
                             @endif
@@ -1030,16 +1030,16 @@
                             @if (isset($ss->quarter_7))
                             {!! Form::select('WRound1F2E', [
                               '' => 'Pick a Team',
-                              "$wf->id_runnerup" => "{$wf->getTeamName($wf->id_runnerup)}",
                               "$we->id_runnerup" => "{$we->getTeamName($we->id_runnerup)}",
+                              "$wf->id_winner_team" => "{$wf->getTeamName($wf->id_winner_team)}",
                               ], old('value', isset($ss->quarter_7) ? $ss->quarter_7 : null ), [ 'class' =>  'form-control WRound1F2E', 'required', 'id' => 'WRound1F2E']) !!}
                               @else
 
                               <select class="form-control WRound1F2E" id="WRound1F2E" name="WRound1F2E">
                                 <option>Pick a Team...</option>
                                 @if($winF != null && $winE != null)
-                                <option value="{{$wf->id_runnerup}}">{{$wf->getTeamName($wf->id_runnerup)}}</option>
                                 <option value="{{$we->id_runnerup}}">{{$we->getTeamName($we->id_runnerup)}}</option>
+                                <option value="{{$wf->id_winner_team}}">{{$wf->getTeamName($wf->id_winner_team)}}</option>
                                 @endif
                             </select>
                             @endif
@@ -1087,16 +1087,16 @@
                             @if (isset($ss->quarter_8))
                             {!! Form::select('WRound1H2G', [
                               '' => 'Pick a Team',
-                              "$wh->id_runnerup" => "{$wh->getTeamName($wh->id_runnerup)}",
                               "$wg->id_runnerup" => "{$wg->getTeamName($wg->id_runnerup)}",
+                              "$wh->id_winner_team" => "{$wh->getTeamName($wh->id_winner_team)}",
                               ], old('value', isset($ss->quarter_8) ? $ss->quarter_8 : null ), [ 'class' =>  'form-control WRound1H2G', 'required', 'id' => 'WRound1H2G']) !!}
                               @else
 
                               <select class="form-control WRound1H2G" id="WRound1H2G" name="WRound1H2G">
                                 <option>Pick a Team...</option>
                                 @if($winH != null && $winG != null)
-                                <option value="{{$wh->id_runnerup}}">{{$wh->getTeamName($wh->id_runnerup)}}</option>
                                 <option value="{{$wg->id_runnerup}}">{{$wg->getTeamName($wg->id_runnerup)}}</option>
+                                <option value="{{$wh->id_winner_team}}">{{$wh->getTeamName($wh->id_winner_team)}}</option>
                                 @endif
                             </select>
                             @endif
