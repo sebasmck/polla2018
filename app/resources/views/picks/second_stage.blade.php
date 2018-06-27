@@ -920,16 +920,16 @@
                             @if (isset($ss->quarter_5))
                             {!! Form::select('WRound1B2A', [
                               '' => 'Pick a Team',
-                              "$wb->id_winner_team" => "{$wb->getTeamName($wb->id_winner_team)}",
                               "$wa->id_runnerup" => "{$wa->getTeamName($wa->id_runnerup)}",
+                              "$wb->id_winner_team" => "{$wb->getTeamName($wb->id_winner_team)}",
                               ], old('value', isset($ss->quarter_5) ? $ss->quarter_5 : null ), [ 'class' =>  'form-control WRound1B2A', 'required', 'id' => 'WRound1B2A']) !!}
                               @else
 
                               <select class="form-control WRound1B2A" id="WRound1B2A" name="WRound1B2A">
                                 <option value="">Pick a Team...</option>
                                 @if($winB != null && $winA != null)
-                                <option value="{{$wb->id_winner_team}}">{{$wb->getTeamName($wb->id_winner_team)}}</option>
                                 <option value="{{$wa->id_runnerup}}">{{$wa->getTeamName($wa->id_runnerup)}}</option>
+                                <option value="{{$wb->id_winner_team}}">{{$wb->getTeamName($wb->id_winner_team)}}</option>
                                 @endif
                             </select>
                             @endif
@@ -977,16 +977,16 @@
                             @if (isset($ss->quarter_6))
                             {!! Form::select('WRound1D2C', [
                               '' => 'Pick a Team',
-                              "$wd->id_winner_team" => "{$wd->getTeamName($wd->id_winner_team)}",
                               "$wc->id_runnerup" => "{$wc->getTeamName($wc->id_runnerup)}",
+                              "$wd->id_winner_team" => "{$wd->getTeamName($wd->id_winner_team)}",
                               ], old('value', isset($ss->quarter_6) ? $ss->quarter_6 : null ), [ 'class' =>  'form-control WRound1D2C', 'required', 'id' => 'WRound1D2C']) !!}
                               @else
 
                               <select class="form-control WRound1D2C" id="WRound1D2C" name="WRound1D2C">
                                 <option value="">Pick a Team...</option>
                                 @if($winD != null && $winC != null)
-                                <option value="{{$wd->id_winner_team}}">{{$wd->getTeamName($wd->id_winner_team)}}</option>
                                 <option value="{{$wc->id_runnerup}}">{{$wc->getTeamName($wc->id_runnerup)}}</option>
+                                <option value="{{$wd->id_winner_team}}">{{$wd->getTeamName($wd->id_winner_team)}}</option>
                                 @endif
                             </select>
                             @endif
@@ -1035,16 +1035,16 @@
                             @if (isset($ss->quarter_7))
                             {!! Form::select('WRound1F2E', [
                               '' => 'Pick a Team',
-                              "$wf->id_winner_team" => "{$wf->getTeamName($wf->id_winner_team)}",
                               "$we->id_runnerup" => "{$we->getTeamName($we->id_runnerup)}",
+                              "$wf->id_winner_team" => "{$wf->getTeamName($wf->id_winner_team)}",
                               ], old('value', isset($ss->quarter_7) ? $ss->quarter_7 : null ), [ 'class' =>  'form-control WRound1F2E', 'required', 'id' => 'WRound1F2E']) !!}
                               @else
 
                               <select class="form-control WRound1F2E" id="WRound1F2E" name="WRound1F2E">
                                 <option value="">Pick a Team...</option>
                                 @if($winF != null && $winE != null)
-                                <option value="{{$wf->id_winner_team}}">{{$wf->getTeamName($wf->id_winner_team)}}</option>
                                 <option value="{{$we->id_runnerup}}">{{$we->getTeamName($we->id_runnerup)}}</option>
+                                <option value="{{$wf->id_winner_team}}">{{$wf->getTeamName($wf->id_winner_team)}}</option>
                                 @endif
                             </select>
                             @endif
@@ -1092,16 +1092,16 @@
                             @if (isset($ss->quarter_8))
                             {!! Form::select('WRound1H2G', [
                               '' => 'Pick a Team',
-                              "$wh->id_winner_team" => "{$wh->getTeamName($wh->id_winner_team)}",
                               "$wg->id_runnerup" => "{$wg->getTeamName($wg->id_runnerup)}",
+                              "$wh->id_winner_team" => "{$wh->getTeamName($wh->id_winner_team)}",
                               ], old('value', isset($ss->quarter_8) ? $ss->quarter_8 : null ), [ 'class' =>  'form-control WRound1H2G', 'required', 'id' => 'WRound1H2G']) !!}
                               @else
 
                               <select class="form-control WRound1H2G" id="WRound1H2G" name="WRound1H2G">
                                 <option value="">Pick a Team...</option>
                                 @if($winH != null && $winG != null)
-                                <option value="{{$wh->id_winner_team}}">{{$wh->getTeamName($wh->id_winner_team)}}</option>
                                 <option value="{{$wg->id_runnerup}}">{{$wg->getTeamName($wg->id_runnerup)}}</option>
+                                <option value="{{$wh->id_winner_team}}">{{$wh->getTeamName($wh->id_winner_team)}}</option>
                                 @endif
                             </select>
                             @endif
