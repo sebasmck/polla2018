@@ -34,6 +34,11 @@
 
 </head>
 <body style="background-image: none;" >
+    <div id="status" class="modalLoading" style="display: none">
+        <div class="centerModalLoading">
+            <img src="{{URL::asset('img/loading.gif')}}" alt="">
+        </div>
+    </div>
     <main style="background-image:none;" class="content_web">
     <div style="background-color: white;" class="tab-pane container" id="grupoRoun">
     <form name="secondstage" id="secondstage">
@@ -97,7 +102,7 @@
                                 <div class="col-md-12">
                                     <table class="display table_second_stage">
                                         <tbody>
-                                            @if(empty($wb->id_winner_team) || $wb->id_winner_team == NULL)
+                                            @if(empty($wb->id_runnerup) || $wb->id_runnerup == NULL)
                                             <tr>
                                                 <td style="width: 30%; height: 30px;"></td>
                                                 <td style="width: 70%; height: 30px;"></td>
@@ -107,14 +112,14 @@
                                                 <td style="width: 30%; height: 30px;">
                                                     <div class="row">
                                                         <div class="col-md-12">
-                                                            <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wb->getTeamName($wb->id_winner_team))).'.png'}}">
+                                                            <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wb->getTeamName($wb->id_runnerup))).'.png'}}">
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td style="width: 70%; height: 30px;">
                                                     <div class="row">
                                                         <div class="col-md-12" >
-                                                            <label>{{$wb->getTeamName($wb->id_winner_team)}}</label>
+                                                            <label>{{$wb->getTeamName($wb->id_runnerup)}}</label>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -170,7 +175,7 @@
                             <div class="col-md-12">
                                 <table class="display table_second_stage">
                                     <tbody>
-                                        @if(empty($wd->id_winner_team) || $wd->id_winner_team == NULL)
+                                        @if(empty($wd->id_runnerup) || $wd->id_runnerup == NULL)
                                         <tr>
                                             <td style="width: 30%; height: 30px;"></td>
                                             <td style="width: 70%; height: 30px;"></td>
@@ -181,14 +186,14 @@
                                             <td style="width: 30%; height: 30px;">
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wd->getTeamName($wd->id_winner_team))).'.png'}}">
+                                                        <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wd->getTeamName($wd->id_runnerup))).'.png'}}">
                                                     </div>
                                                 </div>
                                             </td>
                                             <td style="width: 70%; height: 30px;">
                                                 <div class="row">
                                                     <div class="col-md-12" >
-                                                        <label>{{$wd->getTeamName($wd->id_winner_team)}}</label>
+                                                        <label>{{$wd->getTeamName($wd->id_runnerup)}}</label>
                                                     </div>
                                                 </div>
                                             </td>
@@ -254,14 +259,14 @@
                                     <td style="width: 30%; height: 30px;">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wf->getTeamName($wf->id_winner_team))).'.png'}}">
+                                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wf->getTeamName($wf->id_runnerup))).'.png'}}">
                                             </div>
                                         </div>
                                     </td>
                                     <td style="width: 70%; height: 30px;">
                                         <div class="row">
                                             <div class="col-md-12" >
-                                                <label>{{$wf->getTeamName($wf->id_winner_team)}}</label>
+                                                <label>{{$wf->getTeamName($wf->id_runnerup)}}</label>
                                             </div>
                                         </div>
                                     </td>
@@ -326,14 +331,14 @@
                                 <td style="width: 30%; height: 30px;">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($winH->team_rumup)).'.png'}}">
+                                            <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wh->getTeamName($wh->id_runnerup))).'.png'}}">
                                         </div>
                                     </div>
                                 </td>
                                 <td style="width: 70%; height: 30px;">
                                     <div class="row">
                                         <div class="col-md-12" >
-                                            <label>{{$winH->team_rumup}}</label>
+                                            <label>{{$wh->getTeamName($wh->id_runnerup)}}</label>
                                         </div>
                                     </div>
                                 </td>
@@ -362,14 +367,14 @@
                             <td style="width: 30%; height: 30px;">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wb->getTeamName($wb->id_runnerup))).'.png'}}">
+                                        <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wb->getTeamName($wb->id_winner_team))).'.png'}}">
                                     </div>
                                 </div>
                             </td>
                             <td style="width: 70%; height: 30px;">
                                 <div class="row">
                                     <div class="col-md-12" >
-                                        <label>{{$wb->getTeamName($wb->id_runnerup)}}</label>
+                                        <label>{{$wb->getTeamName($wb->id_winner_team)}}</label>
                                     </div>
                                 </div>
                             </td>
@@ -435,14 +440,14 @@
                         <td style="width: 30%; height: 30px;">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wd->getTeamName($wd->id_runnerup))).'.png'}}">
+                                    <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wd->getTeamName($wd->id_winner_team))).'.png'}}">
                                 </div>
                             </div>
                         </td>
                         <td style="width: 70%; height: 30px;">
                             <div class="row">
                                 <div class="col-md-12" >
-                                    <label>{{$wd->getTeamName($wd->id_runnerup)}}</label>
+                                    <label>{{$wd->getTeamName($wd->id_winner_team)}}</label>
                                 </div>
                             </div>
                         </td>
@@ -506,14 +511,14 @@
                     <td style="width: 30%; height: 30px;">
                         <div class="row">
                             <div class="col-md-12">
-                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wf->getTeamName($wf->id_runnerup))).'.png'}}">
+                                <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wf->getTeamName($wf->id_winner_team))).'.png'}}">
                             </div>
                         </div>
                     </td>
                     <td style="width: 70%; height: 30px;">
                         <div class="row">
                             <div class="col-md-12" >
-                                <label>{{$wf->getTeamName($wf->id_runnerup)}}</label>
+                                <label>{{$wf->getTeamName($wf->id_winner_team)}}</label>
                             </div>
                         </div>
                     </td>
@@ -579,14 +584,14 @@
                 <td style="width: 30%; height: 30px;">
                     <div class="row">
                         <div class="col-md-12">
-                            <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wh->getTeamName($wh->id_runnerup))).'.png'}}">
+                            <img class="img_flags" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($wh->getTeamName($wh->id_winner_team))).'.png'}}">
                         </div>
                     </div>
                 </td>
                 <td style="width: 70%; height: 30px;">
                     <div class="row">
                         <div class="col-md-12" >
-                            <label>{{$wh->getTeamName($wh->id_runnerup)}}</label>
+                            <label>{{$wh->getTeamName($wh->id_winner_team)}}</label>
                         </div>
                     </div>
                 </td>
@@ -685,16 +690,16 @@
                                         {!! Form::select('WRound1A2B', [
                                           '' => 'Pick a Team',
                                           "$wa->id_winner_team" => "{$wa->getTeamName($wa->id_winner_team)}",
-                                          "$wb->id_winner_team" => "{$wb->getTeamName($wb->id_winner_team)}",
+                                          "$wb->id_runnerup" => "{$wb->getTeamName($wb->id_runnerup)}",
                                           ], old('value', isset($ss->quarter_1) ? $ss->quarter_1 : null ), [ 'class' =>  'form-control WRound1A2B', 'required', 'id' => 'WRound1A2B']) !!}
                                           @else
 
                                           <select class="form-control WRound1A2B" id="WRound1A2B" name="WRound1A2B">
-                                            <option>Pick a Team...</option>
+                                            <option value="">Pick a Team...</option>
                                             @if($winA != null && $winB != null)
                                             <option value="{{$wa->id_winner_team}}">{{$wa->getTeamName($wa->id_winner_team)}}</option>
 
-                                            <option value="{{$wb->id_winner_team}}">{{$wb->getTeamName($wb->id_winner_team)}}</option>
+                                            <option value="{{$wb->id_runnerup}}">{{$wb->getTeamName($wb->id_runnerup)}}</option>
                                             @endif
                                         </select>
                                         @endif
@@ -742,15 +747,15 @@
                                     {!! Form::select('WRound1C2D', [
                                       '' => 'Pick a Team',
                                       "$wc->id_winner_team" => "{$wc->getTeamName($wc->id_winner_team)}",
-                                      "$wd->id_winner_team" => "{$wd->getTeamName($wd->id_winner_team)}",
+                                      "$wd->id_runnerup" => "{$wd->getTeamName($wd->id_runnerup)}",
                                       ], old('value', isset($ss->quarter_2) ? $ss->quarter_2 : null ), [ 'class' =>  'form-control WRound1C2D', 'required', 'id' => 'WRound1C2D']) !!}
                                       @else
 
                                       <select class="form-control WRound1C2D" id="WRound1C2D" name="WRound1C2D">
-                                        <option>Pick a Team...</option>
+                                        <option value="">Pick a Team...</option>
                                         @if($winC != null && $winD != null)
                                         <option value="{{$wc->id_winner_team}}">{{$wc->getTeamName($wc->id_winner_team)}}</option>
-                                        <option value="{{$wd->id_winner_team}}">{{$wd->getTeamName($wd->id_winner_team)}}</option>
+                                        <option value="{{$wd->id_runnerup}}">{{$wd->getTeamName($wd->id_runnerup)}}</option>
                                         @endif
                                     </select>
                                     @endif
@@ -800,15 +805,15 @@
                                 {!! Form::select('WRound1E2F', [
                                   '' => 'Pick a Team',
                                   "$we->id_winner_team" => "{$we->getTeamName($we->id_winner_team)}",
-                                  "$wf->id_winner_team" => "{$wf->getTeamName($wf->id_winner_team)}",
+                                  "$wf->id_runnerup" => "{$wf->getTeamName($wf->id_runnerup)}",
                                   ], old('value', isset($ss->quarter_3) ? $ss->quarter_3 : null ), [ 'class' =>  'form-control WRound1E2F', 'required', 'id' => 'WRound1E2F']) !!}
                                   @else
 
                                   <select class="form-control WRound1E2F" id="WRound1E2F" name="WRound1E2F">
-                                    <option>Pick a Team...</option>
+                                    <option value="">Pick a Team...</option>
                                     @if($winE != null && $winF != null)
                                     <option value="{{$we->id_winner_team}}">{{$we->getTeamName($we->id_winner_team)}}</option>
-                                    <option value="{{$wf->id_winner_team}}">{{$wf->getTeamName($wf->id_winner_team)}}</option>
+                                    <option value="{{$wf->id_runnerup}}">{{$wf->getTeamName($wf->id_runnerup)}}</option>
                                     @endif
                                 </select>
                                 @endif
@@ -863,7 +868,7 @@
                               @else
 
                               <select class="form-control WRound1G2H" id="WRound1G2H" name="WRound1G2H">
-                                <option>Pick a Team...</option>
+                                <option value="">Pick a Team...</option>
                                 @if($winG != null && $winH != null)
                                 <option value="{{$wg->id_winner_team}}">{{$wg->getTeamName($wg->id_winner_team)}}</option>
                                 <option value="{{$wh->id_runnerup}}">{{$wh->getTeamName($wh->id_runnerup)}}</option>
@@ -915,15 +920,15 @@
                             @if (isset($ss->quarter_5))
                             {!! Form::select('WRound1B2A', [
                               '' => 'Pick a Team',
-                              "$wb->id_runnerup" => "{$wb->getTeamName($wb->id_runnerup)}",
+                              "$wb->id_winner_team" => "{$wb->getTeamName($wb->id_winner_team)}",
                               "$wa->id_runnerup" => "{$wa->getTeamName($wa->id_runnerup)}",
                               ], old('value', isset($ss->quarter_5) ? $ss->quarter_5 : null ), [ 'class' =>  'form-control WRound1B2A', 'required', 'id' => 'WRound1B2A']) !!}
                               @else
 
                               <select class="form-control WRound1B2A" id="WRound1B2A" name="WRound1B2A">
-                                <option>Pick a Team...</option>
+                                <option value="">Pick a Team...</option>
                                 @if($winB != null && $winA != null)
-                                <option value="{{$wb->id_runnerup}}">{{$wb->getTeamName($wb->id_runnerup)}}</option>
+                                <option value="{{$wb->id_winner_team}}">{{$wb->getTeamName($wb->id_winner_team)}}</option>
                                 <option value="{{$wa->id_runnerup}}">{{$wa->getTeamName($wa->id_runnerup)}}</option>
                                 @endif
                             </select>
@@ -972,15 +977,15 @@
                             @if (isset($ss->quarter_6))
                             {!! Form::select('WRound1D2C', [
                               '' => 'Pick a Team',
-                              "$wd->id_runnerup" => "{$wd->getTeamName($wd->id_runnerup)}",
+                              "$wd->id_winner_team" => "{$wd->getTeamName($wd->id_winner_team)}",
                               "$wc->id_runnerup" => "{$wc->getTeamName($wc->id_runnerup)}",
                               ], old('value', isset($ss->quarter_6) ? $ss->quarter_6 : null ), [ 'class' =>  'form-control WRound1D2C', 'required', 'id' => 'WRound1D2C']) !!}
                               @else
 
                               <select class="form-control WRound1D2C" id="WRound1D2C" name="WRound1D2C">
-                                <option>Pick a Team...</option>
+                                <option value="">Pick a Team...</option>
                                 @if($winD != null && $winC != null)
-                                <option value="{{$wd->id_runnerup}}">{{$wd->getTeamName($wd->id_runnerup)}}</option>
+                                <option value="{{$wd->id_winner_team}}">{{$wd->getTeamName($wd->id_winner_team)}}</option>
                                 <option value="{{$wc->id_runnerup}}">{{$wc->getTeamName($wc->id_runnerup)}}</option>
                                 @endif
                             </select>
@@ -1030,15 +1035,15 @@
                             @if (isset($ss->quarter_7))
                             {!! Form::select('WRound1F2E', [
                               '' => 'Pick a Team',
-                              "$wf->id_runnerup" => "{$wf->getTeamName($wf->id_runnerup)}",
+                              "$wf->id_winner_team" => "{$wf->getTeamName($wf->id_winner_team)}",
                               "$we->id_runnerup" => "{$we->getTeamName($we->id_runnerup)}",
                               ], old('value', isset($ss->quarter_7) ? $ss->quarter_7 : null ), [ 'class' =>  'form-control WRound1F2E', 'required', 'id' => 'WRound1F2E']) !!}
                               @else
 
                               <select class="form-control WRound1F2E" id="WRound1F2E" name="WRound1F2E">
-                                <option>Pick a Team...</option>
+                                <option value="">Pick a Team...</option>
                                 @if($winF != null && $winE != null)
-                                <option value="{{$wf->id_runnerup}}">{{$wf->getTeamName($wf->id_runnerup)}}</option>
+                                <option value="{{$wf->id_winner_team}}">{{$wf->getTeamName($wf->id_winner_team)}}</option>
                                 <option value="{{$we->id_runnerup}}">{{$we->getTeamName($we->id_runnerup)}}</option>
                                 @endif
                             </select>
@@ -1087,15 +1092,15 @@
                             @if (isset($ss->quarter_8))
                             {!! Form::select('WRound1H2G', [
                               '' => 'Pick a Team',
-                              "$wh->id_runnerup" => "{$wh->getTeamName($wh->id_runnerup)}",
+                              "$wh->id_winner_team" => "{$wh->getTeamName($wh->id_winner_team)}",
                               "$wg->id_runnerup" => "{$wg->getTeamName($wg->id_runnerup)}",
                               ], old('value', isset($ss->quarter_8) ? $ss->quarter_8 : null ), [ 'class' =>  'form-control WRound1H2G', 'required', 'id' => 'WRound1H2G']) !!}
                               @else
 
                               <select class="form-control WRound1H2G" id="WRound1H2G" name="WRound1H2G">
-                                <option>Pick a Team...</option>
+                                <option value="">Pick a Team...</option>
                                 @if($winH != null && $winG != null)
-                                <option value="{{$wh->id_runnerup}}">{{$wh->getTeamName($wh->id_runnerup)}}</option>
+                                <option value="{{$wh->id_winner_team}}">{{$wh->getTeamName($wh->id_winner_team)}}</option>
                                 <option value="{{$wg->id_runnerup}}">{{$wg->getTeamName($wg->id_runnerup)}}</option>
                                 @endif
                             </select>
@@ -1157,15 +1162,15 @@
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     @if (isset($ss->semi_1))
-                                                    {!! Form::select('Wquarter1_2', [
+                                                        {!! Form::select('Wquarter1_2', [
                                                         '' => 'Pick a Team',
                                                         "$ss->semi_1" => $ss->semi1->team_name,
                                                         ], old('value', isset($ss->semi_1) ? $ss->semi_1 : null ), [ 'class' =>  'form-control Wquarter1_2', 'required', 'id' => 'Wquarter1_2']) !!}
-                                                        @else
+                                                    @else
                                                         {!! Form::select('Wquarter1_2', [
                                                             '' => 'Pick a Team',
                                                             ], null, [ 'class' =>  'form-control Wquarter1_2', 'required', 'id' => 'Wquarter1_2']) !!}
-                                                            @endif
+                                                    @endif
 
                                                         </div>
                                                     </div>
@@ -1619,7 +1624,226 @@
             // $(".iWinner1").attr('src', "{{asset('img/flags/cup2.png')}}");
         }
 
-        }); 
+
+        // var selectedTeamAvalue = $(".WRound1A2B option:selected").val();
+        // var selectedTeamAtext = $(".WRound1A2B option:selected").text();
+
+        // var selectedTeamBvalue = $(".WRound1C2D option:selected").val();
+        // var selectedTeamBtext = $(".WRound1C2D option:selected").text();
+
+        // if (selectedTeamAvalue != '' && selectedTeamBvalue != ''){
+        //     $('select.Wquarter1_2').find('option:eq(0)').prop('selected', true);
+        //     $('select.Wquarter1_2').find("option:gt(0)").remove();
+
+
+        //     $(".iWquarter1_2").attr('src', '{{asset('img/flags/pick_a_team.png')}}');
+
+        //     $(".iWRound1A2B").attr('src', url + '/' + selectedTeamAtext.replace(/ /g,"_").toLowerCase() + '.png');
+
+        //     $(".iWRound1C2D").attr('src', url + '/' + selectedTeamBtext.replace(/ /g,"_").toLowerCase() + '.png');
+
+            
+        //     $('select.Wquarter1_2').append($('<option/>', { 
+        //             value: selectedTeamAvalue,
+        //             text : selectedTeamAtext 
+        //         }));
+        //     $('select.Wquarter1_2').append($('<option/>', { 
+        //             value: selectedTeamBvalue,
+        //             text : selectedTeamBtext 
+        //         }));
+        // }
+
+        // var selectedTeamCvalue = $(".WRound1E2F option:selected").val();
+        // var selectedTeamCtext = $(".WRound1E2F option:selected").text();
+
+        // var selectedTeamDvalue = $(".WRound1G2H option:selected").val();
+        // var selectedTeamDtext = $(".WRound1G2H option:selected").text();
+        
+        // if (selectedTeamCvalue != '' && selectedTeamDvalue != ''){
+
+
+        //     $('select.Wquarter3_4').find('option:eq(0)').prop('selected', true);
+        //     $('select.Wquarter3_4').find("option:gt(0)").remove();
+
+        //     $(".iWquarter3_4").attr('src', '{{asset('img/flags/pick_a_team.png')}}');
+
+        //     $(".iWRound1E2F").attr('src', url + '/' + selectedTeamCtext.replace(/ /g,"_").toLowerCase() + '.png');
+
+        //     $(".iWRound1G2H").attr('src', url + '/' + selectedTeamDtext.replace(/ /g,"_").toLowerCase() + '.png');
+            
+
+        //     $('select.Wquarter3_4').append($('<option/>', { 
+        //             value: selectedTeamCvalue,
+        //             text : selectedTeamCtext 
+        //         }));
+        //     $('select.Wquarter3_4').append($('<option/>', { 
+        //             value: selectedTeamDvalue,
+        //             text : selectedTeamDtext 
+        //         }));
+
+        // }
+
+
+        // var selectedTeamEvalue = $(".WRound1B2A option:selected").val();
+        // var selectedTeamEtext = $(".WRound1B2A option:selected").text();
+
+        // var selectedTeamFvalue = $(".WRound1D2C option:selected").val();
+        // var selectedTeamFtext = $(".WRound1D2C option:selected").text();
+
+        // if (selectedTeamEvalue != '' && selectedTeamFvalue != ''){
+
+        //     $(".iWquarter5_6").attr('src', '{{asset('img/flags/pick_a_team.png')}}');
+
+        //     $('select.Wquarter5_6').find('option:eq(0)').prop('selected', true);
+        //     $('select.Wquarter5_6').find("option:gt(0)").remove();
+
+        //     $(".iWRound1B2A").attr('src', url + '/' + selectedTeamEtext.replace(/ /g,"_").toLowerCase() + '.png');
+
+        //     $(".iWRound1D2C").attr('src', url + '/' + selectedTeamFtext.replace(/ /g,"_").toLowerCase() + '.png');
+            
+
+        //     $('select.Wquarter5_6').append($('<option/>', { 
+        //             value: selectedTeamEvalue,
+        //             text : selectedTeamEtext 
+        //         }));
+        //     $('select.Wquarter5_6').append($('<option/>', { 
+        //             value: selectedTeamFvalue,
+        //             text : selectedTeamFtext 
+        //         }));
+
+        // }
+
+
+        // var selectedTeamGvalue = $(".WRound1F2E option:selected").val();
+        // var selectedTeamGtext = $(".WRound1F2E option:selected").text();
+
+        // var selectedTeamHvalue = $(".WRound1H2G option:selected").val();
+        // var selectedTeamHtext = $(".WRound1H2G option:selected").text();
+
+
+        // if (selectedTeamGvalue != '' && selectedTeamHvalue != ''){
+
+        //     $(".iWquarter7_8").attr('src', '{{asset('img/flags/pick_a_team.png')}}');
+
+        //     $('select.Wquarter7_8').find('option:eq(0)').prop('selected', true);
+        //     $('select.Wquarter7_8').find("option:gt(0)").remove();
+
+            
+        //     $(".iWRound1F2E").attr('src', url + '/' + selectedTeamGtext.replace(/ /g,"_").toLowerCase() + '.png');
+
+        //     $(".iWRound1H2G").attr('src', url + '/' + selectedTeamHtext.replace(/ /g,"_").toLowerCase() + '.png');
+            
+
+        //     $('select.Wquarter7_8').append($('<option/>', { 
+        //             value: selectedTeamGvalue,
+        //             text : selectedTeamGtext 
+        //         }));
+        //     $('select.Wquarter7_8').append($('<option/>', { 
+        //             value: selectedTeamHvalue,
+        //             text : selectedTeamHtext 
+        //         }));
+
+        // }
+
+
+        // /*
+        // * FINAL
+        // */
+
+        // var selectedTeamIvalue = $(".Wquarter1_2 option:selected").val();
+        // var selectedTeamItext = $(".Wquarter1_2 option:selected").text();
+
+        // var selectedTeamJvalue = $(".Wquarter3_4 option:selected").val();
+        // var selectedTeamJtext = $(".Wquarter3_4 option:selected").text();
+
+        // if (selectedTeamIvalue != '' && selectedTeamJvalue != ''){
+
+        //     $(".iWSemi1_2").attr('src', '{{asset('img/flags/pick_a_team.png')}}');
+
+        //     $('select.WSemi1_2').find('option:eq(0)').prop('selected', true);
+        //     $('select.WSemi1_2').find("option:gt(0)").remove();
+
+
+        //     $(".iWquarter1_2").attr('src', url + '/' + selectedTeamItext.replace(/ /g,"_").toLowerCase() + '.png');
+
+        //     $(".iWquarter3_4").attr('src', url + '/' + selectedTeamJtext.replace(/ /g,"_").toLowerCase() + '.png');
+            
+
+        //     $('select.WSemi1_2').append($('<option/>', { 
+        //             value: selectedTeamIvalue,
+        //             text : selectedTeamItext 
+        //         }));
+        //     $('select.WSemi1_2').append($('<option/>', { 
+        //             value: selectedTeamJvalue,
+        //             text : selectedTeamJtext 
+        //         }));
+
+        // }
+
+
+        // var selectedTeamKvalue = $(".Wquarter5_6 option:selected").val();
+        // var selectedTeamKtext = $(".Wquarter5_6 option:selected").text();
+
+        // var selectedTeamLvalue = $(".Wquarter7_8 option:selected").val();
+        // var selectedTeamLtext = $(".Wquarter7_8 option:selected").text();
+
+        // if (selectedTeamKvalue != '' && selectedTeamLvalue != ''){
+
+        //     $(".iWSemi3_4").attr('src', '{{asset('img/flags/pick_a_team.png')}}');
+
+        //     $('select.WSemi3_4').find('option:eq(0)').prop('selected', true);
+        //     $('select.WSemi3_4').find("option:gt(0)").remove();
+
+        //     $(".iWquarter5_6").attr('src', url + '/' + selectedTeamKtext.replace(/ /g,"_").toLowerCase() + '.png');
+
+        //     $(".iWquarter7_8").attr('src', url + '/' + selectedTeamLtext.replace(/ /g,"_").toLowerCase() + '.png');
+
+
+        //     $('select.WSemi3_4').append($('<option/>', { 
+        //             value: selectedTeamKvalue,
+        //             text : selectedTeamKtext 
+        //         }));
+        //     $('select.WSemi3_4').append($('<option/>', { 
+        //             value: selectedTeamLvalue,
+        //             text : selectedTeamLtext 
+        //         }));
+        // }
+
+
+        // /*
+        // * Campeon
+        // */
+
+        // if (selectedTeamMvalue != '' && selectedTeamNvalue != ''){
+
+        //     var selectedTeamMvalue = $(".WSemi1_2 option:selected").val();
+        //     var selectedTeamMtext = $(".WSemi1_2 option:selected").text();
+
+        //     var selectedTeamNvalue = $(".WSemi3_4 option:selected").val();
+        //     var selectedTeamNtext = $(".WSemi3_4 option:selected").text();
+
+        //     $(".iWinner1").attr('src', '{{asset('img/flags/pick_a_team.png')}}');
+
+        //     $('select.Winner1').find('option:eq(0)').prop('selected', true);
+        //     $('select.Winner1').find("option:gt(0)").remove();
+
+        //     $(".iWSemi1_2").attr('src', url + '/' + selectedTeamMtext.replace(/ /g,"_").toLowerCase() + '.png');
+
+        //     $(".iWSemi3_4").attr('src', url + '/' + selectedTeamNtext.replace(/ /g,"_").toLowerCase() + '.png');
+            
+
+        //     $('select.Winner1').append($('<option/>', { 
+        //             value: selectedTeamMvalue,
+        //             text : selectedTeamMtext 
+        //         }));
+        //     $('select.Winner1').append($('<option/>', { 
+        //             value: selectedTeamNvalue,
+        //             text : selectedTeamNtext 
+        //         }));
+
+        // }
+
+    }); 
 
     var url = $("#imgroute").val();
     
@@ -1634,6 +1858,7 @@
 
     $('#submitSecondStage').click(function(){
 
+            $('#status').show();
             $.ajax({  
                 url:postSECONDSTAGE,  
                 method:"POST",  
@@ -1654,6 +1879,7 @@
                         parent.location='{{ route("home") }}';
                         
                     }
+                    $('#status').hide();
                 }  
             }); 
 

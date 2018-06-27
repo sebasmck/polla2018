@@ -110,6 +110,7 @@ class PicksController extends Controller
         // second stage results
 
         $ss = SecondStage::where('id_poll', $iduser_poll)->get()->first();
+
         if($ss == null)
         {
             $ss = new SecondStage;
