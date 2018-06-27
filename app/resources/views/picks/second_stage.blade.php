@@ -1194,7 +1194,7 @@
                                                     <div class="row">
                                                         <div class="col-md-12">
 
-                                                            @if (isset($ss->semi1->team_name))
+                                                            @if (isset($ss->semi2->team_name))
                                                             <img class="img_flags iWquarter3_4" src="{{asset('img/flags/').'/'.str_replace(' ', '_', strtolower($ss->semi2->team_name)).'.png'}}">
                                                             @else
                                                             <img class="img_flags iWquarter3_4" src="{{asset('img/flags/cup2.png')}}">
