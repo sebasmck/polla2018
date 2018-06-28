@@ -1625,6 +1625,10 @@
         }
 
 
+        /*
+        * LOADING SEMI-FINALS 
+        */
+
         var selectedTeamAvalue = $(".WRound1A2B option:selected").val();
         var selectedTeamAtext = $(".WRound1A2B option:selected").text();
 
@@ -1632,25 +1636,30 @@
         var selectedTeamBtext = $(".WRound1C2D option:selected").text();
 
         if (selectedTeamAvalue != '' && selectedTeamBvalue != ''){
-            $('select.Wquarter1_2').find('option:eq(0)').prop('selected', true);
-            $('select.Wquarter1_2').find("option:gt(0)").remove();
+            var selectedTeamQ1_2value = $(".Wquarter1_2 option:selected").val();
+
+            if (selectedTeamQ1_2value == ''){
+                $('select.Wquarter1_2').find('option:eq(0)').prop('selected', true);
+                $('select.Wquarter1_2').find("option:gt(0)").remove();
 
 
-            $(".iWquarter1_2").attr('src', '{{asset('img/flags/pick_a_team.png')}}');
+                $(".iWquarter1_2").attr('src', '{{asset('img/flags/pick_a_team.png')}}');
 
-            $(".iWRound1A2B").attr('src', url + '/' + selectedTeamAtext.replace(/ /g,"_").toLowerCase() + '.png');
+                $(".iWRound1A2B").attr('src', url + '/' + selectedTeamAtext.replace(/ /g,"_").toLowerCase() + '.png');
 
-            $(".iWRound1C2D").attr('src', url + '/' + selectedTeamBtext.replace(/ /g,"_").toLowerCase() + '.png');
+                $(".iWRound1C2D").attr('src', url + '/' + selectedTeamBtext.replace(/ /g,"_").toLowerCase() + '.png');
 
-            
-            $('select.Wquarter1_2').append($('<option/>', { 
-                    value: selectedTeamAvalue,
-                    text : selectedTeamAtext 
-                }));
-            $('select.Wquarter1_2').append($('<option/>', { 
-                    value: selectedTeamBvalue,
-                    text : selectedTeamBtext 
-                }));
+                
+                $('select.Wquarter1_2').append($('<option/>', { 
+                        value: selectedTeamAvalue,
+                        text : selectedTeamAtext 
+                    }));
+                $('select.Wquarter1_2').append($('<option/>', { 
+                        value: selectedTeamBvalue,
+                        text : selectedTeamBtext 
+                    }));
+            }
+       
         }
 
         var selectedTeamCvalue = $(".WRound1E2F option:selected").val();
@@ -1660,26 +1669,29 @@
         var selectedTeamDtext = $(".WRound1G2H option:selected").text();
         
         if (selectedTeamCvalue != '' && selectedTeamDvalue != ''){
+            var selectedTeamQ3_4value = $(".Wquarter3_4 option:selected").val();
 
+            if (selectedTeamQ3_4value == ''){
 
-            $('select.Wquarter3_4').find('option:eq(0)').prop('selected', true);
-            $('select.Wquarter3_4').find("option:gt(0)").remove();
+                $('select.Wquarter3_4').find('option:eq(0)').prop('selected', true);
+                $('select.Wquarter3_4').find("option:gt(0)").remove();
 
-            $(".iWquarter3_4").attr('src', '{{asset('img/flags/pick_a_team.png')}}');
+                $(".iWquarter3_4").attr('src', '{{asset('img/flags/pick_a_team.png')}}');
 
-            $(".iWRound1E2F").attr('src', url + '/' + selectedTeamCtext.replace(/ /g,"_").toLowerCase() + '.png');
+                $(".iWRound1E2F").attr('src', url + '/' + selectedTeamCtext.replace(/ /g,"_").toLowerCase() + '.png');
 
-            $(".iWRound1G2H").attr('src', url + '/' + selectedTeamDtext.replace(/ /g,"_").toLowerCase() + '.png');
-            
+                $(".iWRound1G2H").attr('src', url + '/' + selectedTeamDtext.replace(/ /g,"_").toLowerCase() + '.png');
+                
 
-            $('select.Wquarter3_4').append($('<option/>', { 
-                    value: selectedTeamCvalue,
-                    text : selectedTeamCtext 
-                }));
-            $('select.Wquarter3_4').append($('<option/>', { 
-                    value: selectedTeamDvalue,
-                    text : selectedTeamDtext 
-                }));
+                $('select.Wquarter3_4').append($('<option/>', { 
+                        value: selectedTeamCvalue,
+                        text : selectedTeamCtext 
+                    }));
+                $('select.Wquarter3_4').append($('<option/>', { 
+                        value: selectedTeamDvalue,
+                        text : selectedTeamDtext 
+                    }));
+            }
 
         }
 
@@ -1691,25 +1703,28 @@
         var selectedTeamFtext = $(".WRound1D2C option:selected").text();
 
         if (selectedTeamEvalue != '' && selectedTeamFvalue != ''){
+            var selectedTeamQ5_6value = $(".Wquarter5_6 option:selected").val();
 
-            $(".iWquarter5_6").attr('src', '{{asset('img/flags/pick_a_team.png')}}');
+            if (selectedTeamQ5_6value == ''){
+                $(".iWquarter5_6").attr('src', '{{asset('img/flags/pick_a_team.png')}}');
 
-            $('select.Wquarter5_6').find('option:eq(0)').prop('selected', true);
-            $('select.Wquarter5_6').find("option:gt(0)").remove();
+                $('select.Wquarter5_6').find('option:eq(0)').prop('selected', true);
+                $('select.Wquarter5_6').find("option:gt(0)").remove();
 
-            $(".iWRound1B2A").attr('src', url + '/' + selectedTeamEtext.replace(/ /g,"_").toLowerCase() + '.png');
+                $(".iWRound1B2A").attr('src', url + '/' + selectedTeamEtext.replace(/ /g,"_").toLowerCase() + '.png');
 
-            $(".iWRound1D2C").attr('src', url + '/' + selectedTeamFtext.replace(/ /g,"_").toLowerCase() + '.png');
-            
+                $(".iWRound1D2C").attr('src', url + '/' + selectedTeamFtext.replace(/ /g,"_").toLowerCase() + '.png');
+                
 
-            $('select.Wquarter5_6').append($('<option/>', { 
-                    value: selectedTeamEvalue,
-                    text : selectedTeamEtext 
-                }));
-            $('select.Wquarter5_6').append($('<option/>', { 
-                    value: selectedTeamFvalue,
-                    text : selectedTeamFtext 
-                }));
+                $('select.Wquarter5_6').append($('<option/>', { 
+                        value: selectedTeamEvalue,
+                        text : selectedTeamEtext 
+                    }));
+                $('select.Wquarter5_6').append($('<option/>', { 
+                        value: selectedTeamFvalue,
+                        text : selectedTeamFtext 
+                    }));
+            }
 
         }
 
@@ -1722,27 +1737,30 @@
 
 
         if (selectedTeamGvalue != '' && selectedTeamHvalue != ''){
+            var selectedTeamQ7_8value = $(".Wquarter7_8 option:selected").val();
 
-            $(".iWquarter7_8").attr('src', '{{asset('img/flags/pick_a_team.png')}}');
+            if (selectedTeamQ7_8value == ''){
 
-            $('select.Wquarter7_8').find('option:eq(0)').prop('selected', true);
-            $('select.Wquarter7_8').find("option:gt(0)").remove();
+                $(".iWquarter7_8").attr('src', '{{asset('img/flags/pick_a_team.png')}}');
 
-            
-            $(".iWRound1F2E").attr('src', url + '/' + selectedTeamGtext.replace(/ /g,"_").toLowerCase() + '.png');
+                $('select.Wquarter7_8').find('option:eq(0)').prop('selected', true);
+                $('select.Wquarter7_8').find("option:gt(0)").remove();
 
-            $(".iWRound1H2G").attr('src', url + '/' + selectedTeamHtext.replace(/ /g,"_").toLowerCase() + '.png');
-            
+                
+                $(".iWRound1F2E").attr('src', url + '/' + selectedTeamGtext.replace(/ /g,"_").toLowerCase() + '.png');
 
-            $('select.Wquarter7_8').append($('<option/>', { 
-                    value: selectedTeamGvalue,
-                    text : selectedTeamGtext 
-                }));
-            $('select.Wquarter7_8').append($('<option/>', { 
-                    value: selectedTeamHvalue,
-                    text : selectedTeamHtext 
-                }));
+                $(".iWRound1H2G").attr('src', url + '/' + selectedTeamHtext.replace(/ /g,"_").toLowerCase() + '.png');
+                
 
+                $('select.Wquarter7_8').append($('<option/>', { 
+                        value: selectedTeamGvalue,
+                        text : selectedTeamGtext 
+                    }));
+                $('select.Wquarter7_8').append($('<option/>', { 
+                        value: selectedTeamHvalue,
+                        text : selectedTeamHtext 
+                    }));
+            }
         }
 
 
@@ -1757,26 +1775,30 @@
         var selectedTeamJtext = $(".Wquarter3_4 option:selected").text();
 
         if (selectedTeamIvalue != '' && selectedTeamJvalue != ''){
+            var selectedTeamF1value = $(".WSemi1_2 option:selected").val();
 
-            $(".iWSemi1_2").attr('src', '{{asset('img/flags/pick_a_team.png')}}');
+            if (selectedTeamF1value == ''){
 
-            $('select.WSemi1_2').find('option:eq(0)').prop('selected', true);
-            $('select.WSemi1_2').find("option:gt(0)").remove();
+                $(".iWSemi1_2").attr('src', '{{asset('img/flags/pick_a_team.png')}}');
+
+                $('select.WSemi1_2').find('option:eq(0)').prop('selected', true);
+                $('select.WSemi1_2').find("option:gt(0)").remove();
 
 
-            $(".iWquarter1_2").attr('src', url + '/' + selectedTeamItext.replace(/ /g,"_").toLowerCase() + '.png');
+                $(".iWquarter1_2").attr('src', url + '/' + selectedTeamItext.replace(/ /g,"_").toLowerCase() + '.png');
 
-            $(".iWquarter3_4").attr('src', url + '/' + selectedTeamJtext.replace(/ /g,"_").toLowerCase() + '.png');
-            
+                $(".iWquarter3_4").attr('src', url + '/' + selectedTeamJtext.replace(/ /g,"_").toLowerCase() + '.png');
+                
 
-            $('select.WSemi1_2').append($('<option/>', { 
-                    value: selectedTeamIvalue,
-                    text : selectedTeamItext 
-                }));
-            $('select.WSemi1_2').append($('<option/>', { 
-                    value: selectedTeamJvalue,
-                    text : selectedTeamJtext 
-                }));
+                $('select.WSemi1_2').append($('<option/>', { 
+                        value: selectedTeamIvalue,
+                        text : selectedTeamItext 
+                    }));
+                $('select.WSemi1_2').append($('<option/>', { 
+                        value: selectedTeamJvalue,
+                        text : selectedTeamJtext 
+                    }));
+            }
 
         }
 
@@ -1788,25 +1810,29 @@
         var selectedTeamLtext = $(".Wquarter7_8 option:selected").text();
 
         if (selectedTeamKvalue != '' && selectedTeamLvalue != ''){
+            var selectedTeamF2value = $(".WSemi3_4 option:selected").val();
 
-            $(".iWSemi3_4").attr('src', '{{asset('img/flags/pick_a_team.png')}}');
+            if (selectedTeamF2value == ''){
 
-            $('select.WSemi3_4').find('option:eq(0)').prop('selected', true);
-            $('select.WSemi3_4').find("option:gt(0)").remove();
+                $(".iWSemi3_4").attr('src', '{{asset('img/flags/pick_a_team.png')}}');
 
-            $(".iWquarter5_6").attr('src', url + '/' + selectedTeamKtext.replace(/ /g,"_").toLowerCase() + '.png');
+                $('select.WSemi3_4').find('option:eq(0)').prop('selected', true);
+                $('select.WSemi3_4').find("option:gt(0)").remove();
 
-            $(".iWquarter7_8").attr('src', url + '/' + selectedTeamLtext.replace(/ /g,"_").toLowerCase() + '.png');
+                $(".iWquarter5_6").attr('src', url + '/' + selectedTeamKtext.replace(/ /g,"_").toLowerCase() + '.png');
+
+                $(".iWquarter7_8").attr('src', url + '/' + selectedTeamLtext.replace(/ /g,"_").toLowerCase() + '.png');
 
 
-            $('select.WSemi3_4').append($('<option/>', { 
-                    value: selectedTeamKvalue,
-                    text : selectedTeamKtext 
-                }));
-            $('select.WSemi3_4').append($('<option/>', { 
-                    value: selectedTeamLvalue,
-                    text : selectedTeamLtext 
-                }));
+                $('select.WSemi3_4').append($('<option/>', { 
+                        value: selectedTeamKvalue,
+                        text : selectedTeamKtext 
+                    }));
+                $('select.WSemi3_4').append($('<option/>', { 
+                        value: selectedTeamLvalue,
+                        text : selectedTeamLtext 
+                    }));
+            }
         }
 
 
@@ -1814,32 +1840,36 @@
         * Campeon
         */
 
+        var selectedTeamMvalue = $(".WSemi1_2 option:selected").val();
+        var selectedTeamMtext = $(".WSemi1_2 option:selected").text();
+
+        var selectedTeamNvalue = $(".WSemi3_4 option:selected").val();
+        var selectedTeamNtext = $(".WSemi3_4 option:selected").text();
+
         if (selectedTeamMvalue != '' && selectedTeamNvalue != ''){
+            var selectedTeamCHvalue = $(".Winner1 option:selected").val();
 
-            var selectedTeamMvalue = $(".WSemi1_2 option:selected").val();
-            var selectedTeamMtext = $(".WSemi1_2 option:selected").text();
+            if (selectedTeamCHvalue == ''){
 
-            var selectedTeamNvalue = $(".WSemi3_4 option:selected").val();
-            var selectedTeamNtext = $(".WSemi3_4 option:selected").text();
+                $(".iWinner1").attr('src', '{{asset('img/flags/pick_a_team.png')}}');
 
-            $(".iWinner1").attr('src', '{{asset('img/flags/pick_a_team.png')}}');
+                $('select.Winner1').find('option:eq(0)').prop('selected', true);
+                $('select.Winner1').find("option:gt(0)").remove();
 
-            $('select.Winner1').find('option:eq(0)').prop('selected', true);
-            $('select.Winner1').find("option:gt(0)").remove();
+                $(".iWSemi1_2").attr('src', url + '/' + selectedTeamMtext.replace(/ /g,"_").toLowerCase() + '.png');
 
-            $(".iWSemi1_2").attr('src', url + '/' + selectedTeamMtext.replace(/ /g,"_").toLowerCase() + '.png');
+                $(".iWSemi3_4").attr('src', url + '/' + selectedTeamNtext.replace(/ /g,"_").toLowerCase() + '.png');
+                
 
-            $(".iWSemi3_4").attr('src', url + '/' + selectedTeamNtext.replace(/ /g,"_").toLowerCase() + '.png');
-            
-
-            $('select.Winner1').append($('<option/>', { 
-                    value: selectedTeamMvalue,
-                    text : selectedTeamMtext 
-                }));
-            $('select.Winner1').append($('<option/>', { 
-                    value: selectedTeamNvalue,
-                    text : selectedTeamNtext 
-                }));
+                $('select.Winner1').append($('<option/>', { 
+                        value: selectedTeamMvalue,
+                        text : selectedTeamMtext 
+                    }));
+                $('select.Winner1').append($('<option/>', { 
+                        value: selectedTeamNvalue,
+                        text : selectedTeamNtext 
+                    }));
+            }
 
         }
 
